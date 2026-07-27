@@ -1,0 +1,35 @@
+name: Data Hivemind (12-hour refresh)
+
+on:
+  schedule:
+    - cron: "0 0,12 * * *"   # midnight and noon UTC
+  workflow_dispatch:          # the manual "Run workflow" button
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write         # lets the bot commit the refreshed JSON
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build static data (FEC + Census + polls)
+        env:
+          FEC_API_KEY: ${{ secrets.FEC_API_KEY }}
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+        run: node scripts/build-data.js
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data
+          git diff --staged --quiet || git commit -m "Hivemind: refresh seat data"
+          git push
