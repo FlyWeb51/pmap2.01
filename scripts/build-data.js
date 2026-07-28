@@ -91,6 +91,12 @@ function toFrontendProfileShape(p) {
       "Bachelor's or higher": p.bachelors_or_higher_pct != null ? p.bachelors_or_higher_pct + "%" : "—",
       "Poverty rate": p.poverty_rate_pct != null ? p.poverty_rate_pct + "%" : "—",
       "Homeownership": p.homeownership_rate_pct != null ? p.homeownership_rate_pct + "%" : "—",
+      "White (non-Hispanic)": p.white_pct != null ? p.white_pct + "%" : "—",
+      "Black": p.black_pct != null ? p.black_pct + "%" : "—",
+      "Hispanic / Latino": p.hispanic_pct != null ? p.hispanic_pct + "%" : "—",
+      "Asian": p.asian_pct != null ? p.asian_pct + "%" : "—",
+      "Native American": p.native_pct != null ? p.native_pct + "%" : "—",
+      "Other / multiracial": p.other_pct != null ? p.other_pct + "%" : "—",
     },
   };
 }
