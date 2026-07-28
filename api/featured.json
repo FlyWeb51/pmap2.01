@@ -1,0 +1,10 @@
+{
+  "_help": "Manually override which candidates are featured for a seat, e.g. when money alone misidentifies the real top-tier field. Key = seat code (AZ-01, TX-senate). Value = list of name fragments as in FEC data. FEC-flagged incumbents are always shown regardless. Once real nominees are known, use api/nominees.json instead — it takes priority over this file.",
+  "AZ-01": [
+    "TREBLE",
+    "FEELY",
+    "GALAN-WOODS",
+    "SHAH",
+    "SCHWEIKERT"
+  ]
+}
