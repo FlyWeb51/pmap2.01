@@ -580,6 +580,13 @@ async function getNominees(){
   catch(e){ NOMINEES={}; }
   return NOMINEES;
 }
+let FEATURED=null;
+async function getFeatured(){
+  if(FEATURED) return FEATURED;
+  try{ const r=await fetch("api/featured.json",{cache:"no-store"}); FEATURED=r.ok?await r.json():{}; }
+  catch(e){ FEATURED={}; }
+  return FEATURED;
+}
 function candCard(c,isNom){
   const t=c.totals;
   const pc = c.party==="DEM"?"var(--nd)":c.party==="REP"?"var(--lr)":"var(--ind)";
@@ -603,10 +610,15 @@ async function renderRace(out, cands, raceKey){
   });
   const money = c => (c.totals && c.totals.receipts) || 0;
   let main, rest;
+  const feats = (await getFeatured())[raceKey] || [];
+  const isFeat = c => feats.some(n => c.name.toUpperCase().includes(String(n).toUpperCase()));
   const nomSet = cands.filter(isNom);
   if (nomSet.length) {
     main = cands.filter(c => isNom(c));
     rest = cands.filter(c => !isNom(c));
+  } else if (feats.length) {
+    main = cands.filter(c => isFeat(c) || c.incumbent_challenge === "Incumbent");
+    rest = cands.filter(c => !main.includes(c));
   } else {
     const total = cands.reduce((s, c) => s + money(c), 0);
     const topByParty = {};
@@ -614,7 +626,8 @@ async function renderRace(out, cands, raceKey){
     const featured = new Set();
     if (topByParty.DEM) featured.add(topByParty.DEM);
     if (topByParty.REP) featured.add(topByParty.REP);
-    for (const c of cands) if (total > 0 && money(c) / total >= 0.15) featured.add(c);
+    for (const c of cands) if (total > 0 && money(c) / total >= 0.10) featured.add(c);
+    for (const c of cands) if (c.incumbent_challenge === "Incumbent") featured.add(c);
     main = cands.filter(c => featured.has(c));
     if (!main.length) main = cands.slice(0, 3);
     rest = cands.filter(c => !main.includes(c));
