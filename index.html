@@ -501,8 +501,11 @@ function select(x){
       <div class="kv"><span class="k">Class</span><span class="v num">${m.k}</span></div>
       <div class="kv"><span class="k">Term ends</span><span class="v num">${m.e}</span></div>
       <div id="fec-out-${i}"><button class="cta" data-fec="${i}">Load FEC totals</button></div>`).join("")+
-      `<p class="note">Money data is live from the FEC API — open this file in a browser (the chat preview blocks outside requests).</p>`;
+      `<div class="d-sec">2026 Senate race — all candidates</div>
+      <div id="srace-out"><button class="cta" id="srace-go">Load all candidates &amp; FEC totals</button>
+        <p class="note">Every candidate FEC has on file for this state's 2026 Senate race.</p></div>`;
     body.querySelectorAll("[data-fec]").forEach(btn=>btn.onclick=()=>loadFEC(pair[+btn.dataset.fec],"fec-out-"+btn.dataset.fec));
+    const sg=document.getElementById("srace-go"); if(sg)sg.onclick=()=>loadSenateRace(st);
   }else{
     rEl.style.color="#0b0f16";
     rEl.style.background=x.rating?RCOLOR[RANK[x.rating]]:css("--vac");
@@ -570,28 +573,75 @@ function renderFEC(out,t,cid,m,outId){
     <div class="kv"><span class="k">Through</span><span class="v num">${t.coverage_end_date?t.coverage_end_date.slice(0,10):"—"}</span></div>
     <p class="note">FEC ID ${cid}. Burn rate = spending / receipts.</p>`;
 }
+let NOMINEES=null;
+async function getNominees(){
+  if(NOMINEES) return NOMINEES;
+  try{ const r=await fetch("api/nominees.json",{cache:"no-store"}); NOMINEES=r.ok?await r.json():{}; }
+  catch(e){ NOMINEES={}; }
+  return NOMINEES;
+}
+function candCard(c,isNom){
+  const t=c.totals;
+  const pc = c.party==="DEM"?"var(--nd)":c.party==="REP"?"var(--lr)":"var(--ind)";
+  return `<div style="border:1px solid ${isNom?pc:"var(--line)"};border-radius:8px;padding:10px;margin-bottom:8px">
+    <div style="font-weight:700">${c.name} <span style="color:${pc};font-weight:600">(${c.party||"?"})</span>${isNom?` <span style="background:${pc};color:#0b0f16;border-radius:6px;padding:1px 7px;font-size:11px;font-weight:800;margin-left:4px">NOMINEE</span>`:""}</div>
+    ${c.incumbent_challenge?`<div class="note" style="margin-top:1px">${c.incumbent_challenge}</div>`:""}
+    ${t?`<div class="kv"><span class="k">Raised</span><span class="v num money">${fmtUSD(t.receipts)}</span></div>
+    <div class="kv"><span class="k">Spent</span><span class="v num money">${fmtUSD(t.disbursements)}</span></div>
+    <div class="kv"><span class="k">Cash on hand</span><span class="v num money">${fmtUSD(t.cash_on_hand)}</span></div>`
+    :`<p class="note">No totals filed yet.</p>`}
+  </div>`;
+}
+async function renderRace(out, cands, raceKey){
+  const noms = (await getNominees())[raceKey] || [];
+  const isNom = c => noms.some(n => c.name.toUpperCase().includes(String(n).toUpperCase()));
+  const hasIncumbent = cands.some(c=>c.incumbent_challenge==="Incumbent");
+  const mostlyOpen = cands.length>0 && cands.filter(c=>c.incumbent_challenge==="Open seat").length > cands.length/2;
+  cands = cands.slice().sort((a,b)=>{
+    const nd=(isNom(b)?1:0)-(isNom(a)?1:0); if(nd) return nd;
+    return ((b.totals&&b.totals.receipts)||0)-((a.totals&&a.totals.receipts)||0);
+  });
+  const money = c => (c.totals && c.totals.receipts) || 0;
+  let main, rest;
+  const nomSet = cands.filter(isNom);
+  if (nomSet.length) {
+    main = cands.filter(c => isNom(c));
+    rest = cands.filter(c => !isNom(c));
+  } else {
+    const total = cands.reduce((s, c) => s + money(c), 0);
+    const topByParty = {};
+    for (const c of cands) { const p = c.party || "?"; if (!topByParty[p] || money(c) > money(topByParty[p])) topByParty[p] = c; }
+    const featured = new Set();
+    if (topByParty.DEM) featured.add(topByParty.DEM);
+    if (topByParty.REP) featured.add(topByParty.REP);
+    for (const c of cands) if (total > 0 && money(c) / total >= 0.15) featured.add(c);
+    main = cands.filter(c => featured.has(c));
+    if (!main.length) main = cands.slice(0, 3);
+    rest = cands.filter(c => !main.includes(c));
+  }
+  const moreId = "race-more-"+raceKey.replace(/[^A-Za-z0-9-]/g,"");
+  out.innerHTML =
+    ((mostlyOpen||!hasIncumbent)?`<div style="border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:8px;font-weight:700">OPEN SEAT — incumbent not seeking re-election</div>`:"")+
+    main.map(c=>candCard(c,isNom(c))).join("")+
+    (rest.length?`<div id="${moreId}" style="display:none">${rest.map(c=>candCard(c,isNom(c))).join("")}</div>
+      <button class="cta" onclick="var m=document.getElementById('${moreId}');var open=m.style.display!=='none';m.style.display=open?'none':'block';this.textContent=open?'Show all ${cands.length} filed candidates':'Show fewer';">Show all ${cands.length} filed candidates</button>`:"")+
+    `<p class="note">Source: FEC, 2026 cycle · sorted by money raised${noms.length?" · nominees first (from api/nominees.json)":""}.</p>`;
+}
 async function loadRace(x){
   const out=document.getElementById("race-out"); if(!out)return;
   out.innerHTML=`<p class="note">Fetching every candidate FEC has on file for this seat…</p>`;
   const districtNum = APPORTION[x.st]===1 ? "00" : String(x.d).padStart(2,"0");
   const d = await backendGet(`/api/fec-race?state=${x.st}&district=${districtNum}&office=H&cycle=2026`);
-  if(!d||!d.candidates){
-    out.innerHTML=`<p class="note">Live race data needs the site backend deployed with a free FEC key — this pulls every filed candidate for ${x.label} by seat, not by guessing names.</p>`;
-    return;
-  }
-  if(!d.candidates.length){ out.innerHTML=`<p class="note">FEC has no candidates filed yet for ${x.label} this cycle.</p>`; return; }
-  out.innerHTML = d.candidates.map(c=>{
-    const t=c.totals;
-    const pc = c.party==="DEM"?"var(--nd)":c.party==="REP"?"var(--lr)":"var(--ind)";
-    return `<div style="border:1px solid var(--line);border-radius:8px;padding:10px;margin-bottom:8px">
-      <div style="font-weight:700">${c.name} <span style="color:${pc};font-weight:600">(${c.party||"?"})</span></div>
-      ${c.incumbent_challenge?`<div class="note" style="margin-top:1px">${c.incumbent_challenge}</div>`:""}
-      ${t?`<div class="kv"><span class="k">Raised</span><span class="v num money">${fmtUSD(t.receipts)}</span></div>
-      <div class="kv"><span class="k">Spent</span><span class="v num money">${fmtUSD(t.disbursements)}</span></div>
-      <div class="kv"><span class="k">Cash on hand</span><span class="v num money">${fmtUSD(t.cash_on_hand)}</span></div>`
-      :`<p class="note">No totals filed yet.</p>`}
-    </div>`;
-  }).join("")+`<p class="note">Source: FEC candidates &amp; totals API, 2026 cycle. Every candidate FEC has registered for this seat — including primary challengers.</p>`;
+  if(!d||!d.candidates){ out.innerHTML=`<p class="note">Race data hasn't been generated yet — run the Data Hivemind workflow in GitHub Actions to refresh it.</p>`; return; }
+  if(!d.candidates.length){ out.innerHTML=`<p class="note">FEC has no candidates filed yet for this seat this cycle.</p>`; return; }
+  renderRace(out, d.candidates, `${x.st}-${districtNum}`);
+}
+async function loadSenateRace(st){
+  const out=document.getElementById("srace-out"); if(!out)return;
+  out.innerHTML=`<p class="note">Fetching every Senate candidate FEC has on file for ${st}…</p>`;
+  const d = await backendGet(`/api/fec-race?state=${st}&district=senate&office=S&cycle=2026`);
+  if(!d||!d.candidates||!d.candidates.length){ out.innerHTML=`<p class="note">No 2026 Senate candidates on file for ${st} — this seat may not be on the 2026 ballot.</p>`; return; }
+  renderRace(out, d.candidates, `${st}-senate`);
 }
 async function loadCensus(x){
   const out=document.getElementById("census-out"); if(!out)return;
