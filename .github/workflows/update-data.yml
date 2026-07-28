@@ -29,11 +29,14 @@ jobs:
       - name: Patch frontend (idempotent)
         run: node scripts/patch-frontend.js
 
+      - name: Scrape polls (Wikipedia -> inbox for review)
+        run: node scripts/scrape-polls.js
+
       - name: Commit refreshed data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data
+          git add data api/polls-inbox.json
           git diff --staged --quiet || git commit -m "Hivemind: refresh seat data"
           git pull --rebase origin main
           git push
