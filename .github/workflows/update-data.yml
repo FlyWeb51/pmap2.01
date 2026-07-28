@@ -26,6 +26,9 @@ jobs:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
         run: node scripts/build-data.js
 
+      - name: Patch frontend (idempotent)
+        run: node scripts/patch-frontend.js
+
       - name: Commit refreshed data
         run: |
           git config user.name 'github-actions[bot]'
