@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 U.S. House — Polling &amp; Ratings</title>
+<style>
+  :root{
+    --bg:#0e1420; --panel:#0a0f18; --panel2:#111a29; --line:#1e2a3d;
+    --ink:#e8edf5; --dim:#8b98ac; --dimmer:#66738a;
+    --sd:#1f5fc4; --nd:#6fa3ec; --td:#a9c8f4; --tr:#f0b3b3; --nr:#e88a8a; --sr:#b93838;
+    --toss:#b48ce0; --gold:#d9b45c; --focus:#6ea8ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:14px/1.55 "Archivo","Segoe UI",system-ui,sans-serif}
+  .num{font-family:"IBM Plex Mono","SF Mono",Consolas,monospace;font-variant-numeric:tabular-nums}
+  a{color:var(--focus)}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 20px 60px}
+
+  header{border-bottom:1px solid var(--line);background:var(--panel);margin:0 -20px 20px;padding:14px 20px}
+  .hrow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+        max-width:1160px;margin:0 auto}
+  .back{display:inline-flex;align-items:center;gap:6px;color:var(--dim);text-decoration:none;
+        font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;
+        border:1px solid var(--line);border-radius:6px;background:var(--panel2)}
+  .back:hover{color:var(--ink);border-color:var(--dim)}
+  h1{margin:0;font-size:17px;letter-spacing:.06em;text-transform:uppercase}
+  .sub{font-size:11px;color:var(--dim);letter-spacing:.05em;margin-top:2px}
+
+  .fix{background:#2a1416;border:1px solid #6d2b30;border-left:3px solid var(--sr);
+       border-radius:6px;padding:12px 14px;margin-bottom:14px;font-size:13px;color:#f3c9cc}
+  .fix b{color:#ff9ba3}
+  .warn{background:#241d0e;border:1px solid #5e4d1a;border-left:3px solid var(--gold);
+        border-radius:6px;padding:11px 14px;margin-bottom:20px;font-size:12.5px;color:#e8d69a}
+  .warn b{color:var(--gold)}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:9px;margin-bottom:20px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:11px 13px}
+  .card .lbl{font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--dimmer)}
+  .card .val{font-size:22px;font-weight:700;margin-top:3px;letter-spacing:-.4px}
+  .card .note{font-size:10.5px;color:var(--dimmer);margin-top:2px;line-height:1.35}
+  .d{color:var(--nd)} .r{color:var(--nr)} .t{color:var(--toss)} .g{color:var(--gold)}
+
+  nav.tabs{display:flex;gap:0;border-bottom:1px solid var(--line);margin-bottom:16px;flex-wrap:wrap}
+  nav.tabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--dim);
+        padding:9px 15px;font:inherit;font-size:12.5px;cursor:pointer}
+  nav.tabs button:hover{color:var(--ink)}
+  nav.tabs button.on{color:var(--ink);border-bottom-color:var(--focus);font-weight:600}
+
+  .panel{display:none} .panel.on{display:block}
+  .ptitle{font-size:14.5px;font-weight:700;margin:0 0 4px}
+  .pdesc{color:var(--dim);font-size:12.5px;margin:0 0 13px;max-width:800px}
+  .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+  select,input[type=search]{background:var(--panel2);color:var(--ink);border:1px solid var(--line);
+        border-radius:6px;padding:6px 9px;font:inherit;font-size:12.5px}
+  .chk{display:flex;align-items:center;gap:5px;color:var(--dim);font-size:12.5px;cursor:pointer}
+  .chart{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:15px}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .axis{stroke:var(--line)} .zero{stroke:var(--dimmer);stroke-dasharray:3 3}
+  .glabel{fill:var(--dimmer);font-size:10px}
+  .bar{cursor:pointer} .bar:hover{opacity:.75} .est{opacity:.4}
+  .legend{display:flex;gap:15px;flex-wrap:wrap;color:var(--dim);font-size:11.5px;margin-top:11px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+
+  table{width:100%;border-collapse:collapse;font-size:12.5px}
+  th{position:sticky;top:0;background:var(--panel2);text-align:left;padding:8px 9px;
+     border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap}
+  td{padding:6px 9px;border-bottom:1px solid #16202f}
+  tr:hover td{background:#111a29}
+  .tblwrap{max-height:620px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+  .pill{display:inline-block;padding:1px 7px;border-radius:20px;font-size:10px;font-weight:700}
+  .pill.poll{background:#08301c;color:#5ee08d;border:1px solid #14532d}
+  .pill.rating{background:#2a2716;color:#cbb95a;border:1px solid #4d4a1f}
+  .flag{color:var(--gold);cursor:help}
+  #tip{position:fixed;pointer-events:none;background:#05080d;border:1px solid var(--line);
+       border-radius:6px;padding:7px 10px;font-size:12px;opacity:0;transition:opacity .1s;z-index:50;max-width:280px}
+  footer{margin-top:30px;padding-top:15px;border-top:1px solid var(--line);color:var(--dimmer);font-size:11.5px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <a class="back" href="../">&larr; Election Center</a>
+    <div style="flex:1;min-width:200px">
+      <h1>2026 U.S. House — Polling &amp; Ratings</h1>
+      <div class="sub">432 rated districts · rebuilt <span id="gen"></span></div>
+    </div>
+    <div style="font-size:11.5px;color:var(--dim);text-align:right">
+      <a href="docs/METHODOLOGY.md">Methodology</a> ·
+      <a href="data/house_2026_v2.json">Data (JSON)</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="fix">
+  <b>Correction, July 29.</b> An earlier version of this page reported a national average of D&nbsp;+1.18 and
+  a projected Democratic range of 222–244 seats. Those figures were wrong. They came from a source file whose
+  party labels were scrambled — it listed Rep. Robert Aderholt (R-AL) as a Democratic incumbent and rated
+  AL-07, Terri Sewell's safe Democratic seat, as Solid Republican. In all, <b id="fixn"></b> districts were
+  mislabelled. This page has been rebuilt from Election Center's own ratings snapshot, which splits
+  <b>212 D-side / 220 R-side</b> and matches the current chamber. <b>The corrected projection points the other
+  way:</b> Democrats now land at <b id="fixrange"></b> seats, short of the 218 needed unless they take nearly
+  every tossup.
+</div>
+
+<div class="warn">
+  <b>Only <span id="pb"></span> district has a real public poll.</b> Individual House districts are barely
+  polled — everything else here is a <b>rating-derived estimate</b>, drawn faded and tagged
+  <span class="pill rating">rating</span>. The one genuinely dated polling series on this page is the
+  national generic ballot, under <b>Generic ballot</b>. 3 of 435 seats are unrated (vacant).
+  Candidate names are withheld unless verified — see the district table.
+</div>
+
+<div class="cards" id="cards"></div>
+
+<nav class="tabs">
+  <button data-p="generic" class="on">Generic ballot</button>
+  <button data-p="bars">Margin by district</button>
+  <button data-p="seats">Seat projection</button>
+  <button data-p="dist">Distribution</button>
+  <button data-p="table">All 432 districts</button>
+</nav>
+
+<section class="panel on" id="p-generic">
+  <p class="ptitle">National generic ballot — the real polling</p>
+  <p class="pdesc">139 dated public polls, March through July 2026. Dots are individual polls; the line is a
+    weighted rolling average (30-day half-life, √sample size capped at 2×, likely-voter samples favoured,
+    partisan-sponsored polls halved). This is the only series here with enough dated polling to plot over time.</p>
+  <div class="chart"><svg id="svg-gb"></svg></div>
+  <div class="legend">
+    <span><i style="background:var(--nd)"></i>Democratic share</span>
+    <span><i style="background:var(--nr)"></i>Republican share</span>
+    <span><i style="background:var(--gold)"></i>weighted average line</span>
+  </div>
+  <p class="pdesc" style="margin-top:14px"><b>Worth noticing:</b> the national mood sits at
+    <span class="d" id="gbm"></span>, yet the district ratings still favour Republicans in
+    <span class="r" id="rside"></span> seats. That gap is the map — a party can win the national vote
+    comfortably and still fall short of 218.</p>
+</section>
+
+<section class="panel" id="p-bars">
+  <p class="ptitle">How far ahead is the leader in each race?</p>
+  <p class="pdesc">One diverging bar per district — right for a Democratic advantage, left for Republican.
+    Faded bars are rating-derived estimates rather than measured polling. Closest races first.</p>
+  <div class="controls">
+    <select id="b-scope">
+      <option value="comp">Competitive only (within 10 pts)</option>
+      <option value="poll">Poll-backed only</option>
+      <option value="all">All 432 districts</option>
+    </select>
+    <select id="b-sort">
+      <option value="close">Sort: closest first</option>
+      <option value="d">Sort: most Democratic</option>
+      <option value="r">Sort: most Republican</option>
+      <option value="abc">Sort: district A–Z</option>
+    </select>
+  </div>
+  <div class="chart"><svg id="svg-bars"></svg></div>
+</section>
+
+<section class="panel" id="p-seats">
+  <p class="ptitle">Seat projection</p>
+  <p class="pdesc">Every district sorted by margin, most Republican to most Democratic. The line is the
+    cumulative Democratic seat count; where it crosses 218 decides control. Seats inside ±2 points are shaded
+    purple and counted as undecided rather than awarded.</p>
+  <div class="chart"><svg id="svg-seats"></svg></div>
+  <div class="legend">
+    <span><i style="background:var(--sd)"></i>D-favoured</span>
+    <span><i style="background:var(--toss)"></i>Too close (±2)</span>
+    <span><i style="background:var(--sr)"></i>R-favoured</span>
+    <span><i style="background:var(--gold)"></i>218 = majority</span>
+  </div>
+  <div class="chart" style="margin-top:13px"><svg id="svg-bal"></svg></div>
+</section>
+
+<section class="panel" id="p-dist">
+  <p class="ptitle">Distribution of ratings</p>
+  <p class="pdesc">How many seats sit in each rating band. The towers at the edges are the safe seats — a few
+    dozen races decide the chamber and the rest are settled before anyone votes.</p>
+  <div class="chart"><svg id="svg-dist"></svg></div>
+</section>
+
+<section class="panel" id="p-table">
+  <p class="ptitle">All 432 rated districts</p>
+  <p class="pdesc">Click any column to sort. A <span class="flag">&#9873;</span> marks a district where the
+    uploaded head-to-head CSV disagrees with this rating — <span id="disn"></span> of them, which is why that
+    file isn't driving these numbers. <b>Candidate names are shown only where verified against a primary
+    source.</b> The uploaded CSV supplied names for 424 districts, but it lists Tom O'Halleran — a Democrat —
+    as the Republican in AZ-02, so its party assignments are unreliable in the same way its ratings were.
+    Blank is more useful than wrong.</p>
+  <div class="controls">
+    <input type="search" id="t-q" placeholder="Search district, state, candidate…" style="min-width:240px">
+    <select id="t-f">
+      <option value="all">All districts</option>
+      <option value="poll">Poll-backed only</option>
+      <option value="toss">Tossups (±2)</option>
+      <option value="named">Verified candidates</option>
+      <option value="flag">CSV disagrees</option>
+    </select>
+    <span id="t-count" style="color:var(--dim);font-size:12.5px"></span>
+  </div>
+  <div class="tblwrap"><table>
+    <thead><tr>
+      <th data-k="district">District</th><th data-k="demCandidate">Democrat</th>
+      <th data-k="repCandidate">Republican</th><th data-k="rating">Rating</th>
+      <th data-k="margin">Margin</th><th data-k="evidence">Basis</th><th>Source</th>
+    </tr></thead>
+    <tbody id="tbody"></tbody>
+  </table></div>
+</section>
+
+<footer>
+  Margins are signed percentage points, positive = Democratic. Ratings from Election Center's embedded snapshot.
+  Generic ballot from 139 public polls. Not a forecast — no simulation, turnout model, or correlated-error
+  modelling. See <a href="docs/METHODOLOGY.md">METHODOLOGY.md</a>.
+</footer>
+</div>
+<div id="tip"></div>
+
+<script>
+const DATA=__DATA__, R=DATA.races, S=DATA.summary, GB=DATA.genericBallot;
+const $=s=>document.querySelector(s);
+const NS="http://www.w3.org/2000/svg";
+const el=(n,a={})=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e;};
+const fmt=m=>(m>0?"D +":m<0?"R +":"Even ")+(m?Math.abs(m).toFixed(1):"");
+const col=m=>m>2?"var(--sd)":m<-2?"var(--sr)":"var(--toss)";
+
+$("#gen").textContent=new Date(S.generated).toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+$("#fixn").textContent=S.csvDisagreements;
+$("#fixrange").textContent=S.dRangeLow+"–"+S.dRangeHigh;
+$("#pb").textContent=S.pollBackedSeats;
+$("#disn").textContent=S.csvDisagreements;
+$("#gbm").textContent="D +"+GB.average.margin.toFixed(1);
+$("#rside").textContent=S.rSide;
+
+$("#cards").innerHTML=[
+ ["Generic ballot","D +"+GB.average.margin.toFixed(1),"d",GB.average.dem.toFixed(1)+"% D / "+GB.average.rep.toFixed(1)+"% R · "+S.genericPollCount+" real polls"],
+ ["D-favoured seats",S.safeD,"d","rating margin above +2"],
+ ["R-favoured seats",S.safeR,"r","rating margin below −2"],
+ ["Too close to call",S.tossups,"t","inside ±2 — polling error"],
+ ["Projected D range",S.dRangeLow+"–"+S.dRangeHigh,S.dRangeHigh>=218?"g":"r","218 needed · "+(S.dRangeLow>=218?"majority":"short of majority")],
+ ["Median district",fmt(S.median),S.median>0?"d":"r","the seat in the middle"],
+ ["Districts with a real poll",S.pollBackedSeats,"g","of 432 rated"]
+].map(([l,v,c,n])=>`<div class="card"><div class="lbl">${l}</div><div class="val ${c}">${v}</div><div class="note">${n}</div></div>`).join("");
+
+document.querySelectorAll("nav.tabs button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("nav.tabs button").forEach(x=>x.classList.remove("on"));
+  document.querySelectorAll(".panel").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on");$("#p-"+b.dataset.p).classList.add("on");
+});
+
+const tip=$("#tip");
+function hook(n,h){n.onmousemove=e=>{tip.innerHTML=h;tip.style.opacity=1;
+  tip.style.left=Math.min(e.clientX+14,innerWidth-295)+"px";tip.style.top=(e.clientY+16)+"px";};
+  n.onmouseleave=()=>tip.style.opacity=0;}
+const card=r=>`<b>${r.district}</b> — ${r.rating}<br>${fmt(r.margin)} <span style="color:var(--dimmer)">(${r.evidence==="poll"?"real poll":"rating estimate"})</span>`
+  +(r.demCandidate||r.repCandidate?`<br><span style="color:var(--dim)">${r.demCandidate||"TBD"} (D) vs ${r.repCandidate||"TBD"} (R)</span>`:"")
+  +(r.poll?`<br><span style="color:#5ee08d">${r.poll.pollster} ${r.poll.date}: ${r.poll.dem}/${r.poll.rep}</span>`:"");
+
+/* ---- generic ballot trend ---- */
+function drawGB(){
+  const s=GB.series, polls=GB.polls;
+  const W=1120,H=380,L=44,Rp=48,T=18,B=38,iw=W-L-Rp,ih=H-T-B;
+  const t0=+new Date(s[0].date),t1=+new Date(s[s.length-1].date),span=Math.max(t1-t0,864e5);
+  const lo=30,hi=60;
+  const X=d=>L+((+new Date(d)-t0)/span)*iw, Y=v=>T+ih-((v-lo)/(hi-lo))*ih;
+  const svg=$("#svg-gb");svg.innerHTML="";svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  for(let v=lo;v<=hi;v+=5){
+    svg.appendChild(el("line",{x1:L,x2:W-Rp,y1:Y(v),y2:Y(v),class:"axis",opacity:.35}));
+    const t=el("text",{x:L-7,y:Y(v)+3.5,class:"glabel","text-anchor":"end"});t.textContent=v+"%";svg.appendChild(t);
+  }
+  polls.forEach(p=>{
+    [["dem","var(--nd)"],["rep","var(--nr)"]].forEach(([k,c])=>{
+      const cc=el("circle",{cx:X(p.date),cy:Y(p[k]),r:3,fill:c,opacity:.4});
+      hook(cc,`<b>${p.pollster}</b>${p.lean?" ("+p.lean+")":""}<br>${p.date} · n=${p.n||"?"} ${p.population||""}<br>D ${p.dem}% · R ${p.rep}%`);
+      svg.appendChild(cc);
+    });
+  });
+  [["dem","var(--sd)"],["rep","var(--sr)"]].forEach(([k,c])=>{
+    svg.appendChild(el("path",{d:"M"+s.map(p=>X(p.date).toFixed(1)+","+Y(p[k]).toFixed(1)).join("L"),
+      fill:"none",stroke:c,"stroke-width":2.5}));
+  });
+  const last=s[s.length-1];
+  [["D "+last.dem.toFixed(1)+"%",last.dem,"var(--nd)"],["R "+last.rep.toFixed(1)+"%",last.rep,"var(--nr)"]]
+    .forEach(([txt,v,c])=>{const t=el("text",{x:W-Rp+7,y:Y(v)+4,fill:c,"font-size":"12","font-weight":"700"});
+      t.textContent=txt;svg.appendChild(t);});
+  s.filter((_,i)=>i%Math.ceil(s.length/6)===0).concat([last]).forEach(p=>{
+    const t=el("text",{x:X(p.date),y:H-12,class:"glabel","text-anchor":"middle"});
+    t.textContent=new Date(p.date).toLocaleDateString("en-US",{month:"short",day:"numeric"});svg.appendChild(t);});
+}
+
+/* ---- margin bars ---- */
+function drawBars(){
+  const scope=$("#b-scope").value,sort=$("#b-sort").value;
+  let rows=R.slice();
+  if(scope==="comp")rows=rows.filter(r=>Math.abs(r.margin)<=10);
+  else if(scope==="poll")rows=rows.filter(r=>r.evidence==="poll");
+  rows.sort(sort==="close"?(a,b)=>Math.abs(a.margin)-Math.abs(b.margin)
+    :sort==="d"?(a,b)=>b.margin-a.margin:sort==="r"?(a,b)=>a.margin-b.margin
+    :(a,b)=>a.district.localeCompare(b.district));
+  const dense=rows.length>80,rh=dense?5:18,gap=dense?1:3;
+  const L=dense?24:96,Rp=54,W=1120,H=rows.length*(rh+gap)+40;
+  const max=Math.max(10,...rows.map(r=>Math.abs(r.margin)));
+  const half=(W-L-Rp)/2,mid=L+half,X=m=>mid+(m/max)*half;
+  const svg=$("#svg-bars");svg.innerHTML="";svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  [-max,-max/2,0,max/2,max].forEach(v=>{
+    svg.appendChild(el("line",{x1:X(v),x2:X(v),y1:12,y2:H-22,class:v===0?"zero":"axis",opacity:v===0?1:.3}));
+    const t=el("text",{x:X(v),y:H-8,class:"glabel","text-anchor":"middle"});
+    t.textContent=v===0?"even":(v>0?"D+":"R+")+Math.abs(v).toFixed(0);svg.appendChild(t);});
+  rows.forEach((r,i)=>{
+    const y=14+i*(rh+gap),w=Math.abs(X(r.margin)-mid);
+    const g=el("g",{class:"bar"+(r.evidence==="rating"?" est":"")});
+    g.appendChild(el("rect",{x:r.margin>=0?mid:mid-w,y,width:Math.max(w,1.2),height:rh,rx:1.5,
+      fill:r.margin>0?"var(--sd)":"var(--sr)"}));
+    if(!dense){
+      const a=el("text",{x:L-8,y:y+rh-4,class:"glabel","text-anchor":"end",fill:"var(--dim)","font-size":"11"});
+      a.textContent=r.district;g.appendChild(a);
+      const b=el("text",{x:(r.margin>=0?mid+w+6:mid-w-6),y:y+rh-4,class:"glabel",
+        "text-anchor":r.margin>=0?"start":"end",fill:"var(--dim)","font-size":"11"});
+      b.textContent=fmt(r.margin);g.appendChild(b);}
+    hook(g,card(r));svg.appendChild(g);});
+}
+["#b-scope","#b-sort"].forEach(s=>$(s).onchange=drawBars);
+
+/* ---- seat projection ---- */
+function drawSeats(){
+  const rows=R.slice().sort((a,b)=>a.margin-b.margin);
+  const W=1120,H=330,L=44,Rp=54,T=14,B=32,iw=W-L-Rp,ih=H-T-B,bw=iw/rows.length;
+  const svg=$("#svg-seats");svg.innerHTML="";svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const yc=n=>T+ih-(n/rows.length)*ih;
+  [0,108,218,324,432].forEach(n=>{const y=yc(n),maj=n===218;
+    svg.appendChild(el("line",{x1:L,x2:W-Rp,y1:y,y2:y,stroke:maj?"var(--gold)":"var(--line)",
+      "stroke-dasharray":maj?"5 4":"0",opacity:maj?.9:.45}));
+    const t=el("text",{x:L-7,y:y+3.5,class:"glabel","text-anchor":"end",fill:maj?"var(--gold)":"var(--dimmer)"});
+    t.textContent=n;svg.appendChild(t);});
+  rows.forEach((r,i)=>{const g=el("g",{class:"bar"+(r.evidence==="rating"?" est":"")});
+    g.appendChild(el("rect",{x:L+i*bw,y:T+ih-24,width:Math.max(bw-.4,.6),height:24,fill:col(r.margin)}));
+    hook(g,card(r));svg.appendChild(g);});
+  let pts=[],c=0;
+  for(let i=rows.length-1;i>=0;i--){c++;pts.push([L+i*bw,yc(c)]);}
+  pts.reverse();
+  svg.appendChild(el("path",{d:"M"+pts.map(p=>p[0].toFixed(1)+","+p[1].toFixed(1)).join("L"),
+    fill:"none",stroke:"var(--nd)","stroke-width":2}));
+  const ci=rows.length-218;
+  if(ci>=0&&ci<rows.length){
+    svg.appendChild(el("line",{x1:L+ci*bw,x2:L+ci*bw,y1:T,y2:T+ih,stroke:"var(--gold)",
+      "stroke-width":1.5,"stroke-dasharray":"4 4",opacity:.85}));
+    const t=el("text",{x:L+ci*bw+7,y:T+13,class:"glabel",fill:"var(--gold)","font-size":"11"});
+    t.textContent="218th seat: "+rows[ci].district+" ("+fmt(rows[ci].margin)+")";svg.appendChild(t);}
+  [["most Republican",L,"start"],["most Democratic",W-Rp,"end"]].forEach(([x,p,a])=>{
+    const t=el("text",{x:p,y:H-9,class:"glabel","text-anchor":a});t.textContent=x;svg.appendChild(t);});
+  drawBal();
+}
+function drawBal(){
+  const W=1120,H=76,svg=$("#svg-bal");svg.innerHTML="";svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const tot=432,u=W/tot,y=22,h=30;
+  let x=0;
+  [[S.safeR,"var(--sr)",S.safeR+" R"],[S.tossups,"var(--toss)",S.tossups+" tossup"],[S.safeD,"var(--sd)",S.safeD+" D"]]
+    .forEach(([n,c,lab])=>{svg.appendChild(el("rect",{x,y,width:n*u,height:h,fill:c}));
+      if(n*u>56){const t=el("text",{x:x+n*u/2,y:y+20,"text-anchor":"middle",fill:"#fff","font-size":"12","font-weight":"700"});
+        t.textContent=lab;svg.appendChild(t);}x+=n*u;});
+  svg.appendChild(el("line",{x1:218*u,x2:218*u,y1:y-9,y2:y+h+9,stroke:"var(--gold)","stroke-width":2}));
+  const t=el("text",{x:218*u,y:y-13,"text-anchor":"middle",fill:"var(--gold)","font-size":"11"});
+  t.textContent="218 to control";svg.appendChild(t);
+  const t2=el("text",{x:0,y:y+h+22,fill:"var(--dim)","font-size":"11.5"});
+  t2.textContent="Democrats land between "+S.dRangeLow+" and "+S.dRangeHigh+" of 432 rated seats — "
+    +(S.dRangeLow>=218?"a majority either way.":"short of 218 unless nearly every tossup breaks their way.");
+  svg.appendChild(t2);
+}
+
+/* ---- distribution ---- */
+function drawDist(){
+  const order=["Solid D","Likely D","Lean D","Tilt D","Tilt R","Lean R","Likely R","Solid R"];
+  const cols={"Solid D":"var(--sd)","Likely D":"#3f7fdd","Lean D":"var(--nd)","Tilt D":"var(--td)",
+    "Tilt R":"var(--tr)","Lean R":"var(--nr)","Likely R":"#d95c5c","Solid R":"var(--sr)"};
+  const bins=order.map(k=>({k,n:S.ratingCounts[k]||0}));
+  const W=1120,H=340,L=44,Rp=14,T=18,B=48,iw=W-L-Rp,ih=H-T-B,bw=iw/bins.length;
+  const max=Math.max(...bins.map(b=>b.n));
+  const svg=$("#svg-dist");svg.innerHTML="";svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  [0,.25,.5,.75,1].forEach(f=>{const y=T+ih-f*ih;
+    svg.appendChild(el("line",{x1:L,x2:W-Rp,y1:y,y2:y,class:"axis",opacity:.35}));
+    const t=el("text",{x:L-7,y:y+3.5,class:"glabel","text-anchor":"end"});t.textContent=Math.round(f*max);svg.appendChild(t);});
+  bins.forEach((b,i)=>{const x=L+i*bw+6,w=bw-12,hh=(b.n/max)*ih;
+    const g=el("g",{class:"bar"});
+    g.appendChild(el("rect",{x,y:T+ih-hh,width:w,height:hh,rx:3,fill:cols[b.k],opacity:.85}));
+    const t=el("text",{x:x+w/2,y:T+ih-hh-7,"text-anchor":"middle",fill:"var(--ink)","font-size":"12","font-weight":"700"});
+    t.textContent=b.n;g.appendChild(t);
+    hook(g,`<b>${b.k}</b><br>${b.n} seats`);svg.appendChild(g);
+    b.k.split(" ").forEach((ln,j)=>{const l=el("text",{x:x+w/2,y:T+ih+17+j*12,class:"glabel","text-anchor":"middle"});
+      l.textContent=ln;svg.appendChild(l);});});
+}
+
+/* ---- table ---- */
+let sk="district",sd=1;
+function drawTable(){
+  const q=$("#t-q").value.trim().toLowerCase(),f=$("#t-f").value;
+  let rows=R.filter(r=>{
+    if(f==="poll"&&r.evidence!=="poll")return false;
+    if(f==="toss"&&Math.abs(r.margin)>2)return false;
+    if(f==="named"&&!(r.demCandidate&&r.repCandidate))return false;
+    if(f==="flag"&&!r.csvRatingDisagrees)return false;
+    if(!q)return true;
+    return [r.district,r.state,r.demCandidate||"",r.repCandidate||"",r.rating].join(" ").toLowerCase().includes(q);
+  });
+  rows.sort((a,b)=>{const x=a[sk],y=b[sk];
+    if(typeof x==="number")return (x-y)*sd;
+    return String(x||"").localeCompare(String(y||""))*sd;});
+  $("#t-count").textContent=rows.length+" of 432";
+  $("#tbody").innerHTML=rows.map(r=>`<tr>
+    <td><b>${r.district}</b>${r.csvRatingDisagrees?' <span class="flag" title="Uploaded CSV disagrees with this rating">&#9873;</span>':""}</td>
+    <td>${r.demCandidate||'<span style="color:var(--dimmer)">TBD</span>'}</td>
+    <td>${r.repCandidate||'<span style="color:var(--dimmer)">TBD</span>'}</td>
+    <td>${r.rating}</td>
+    <td class="num" style="color:${col(r.margin)}">${fmt(r.margin)}</td>
+    <td><span class="pill ${r.evidence}">${r.evidence}</span></td>
+    <td>${r.poll?`<a href="${r.poll.url}" target="_blank" rel="noopener">poll ↗</a>`
+      :r.sourceUrl?`<a href="${r.sourceUrl}" target="_blank" rel="noopener">ref ↗</a>`:"—"}</td></tr>`).join("");
+}
+document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{
+  const k=th.dataset.k;sd=(k===sk)?-sd:1;sk=k;drawTable();});
+$("#t-q").oninput=drawTable;$("#t-f").onchange=drawTable;
+
+drawGB();drawBars();drawSeats();drawDist();drawTable();
+</script>
+</body>
+</html>
