@@ -1,17 +1,39 @@
 [
   {
+    "raceId": "AZ-H-02-2026",
+    "pollster": "GBAO",
+    "pollsterNote": "Democratic firm - partisan sponsored, weighted at 0.5",
+    "fieldDates": "2026-06-15",
+    "completedDate": "2026-06-15",
+    "sampleSize": 500,
+    "population": "LV",
+    "moe": 4.4,
+    "sponsor": "D",
+    "methodology": "Likely voters, 500 respondents, margin of error +/- 4.4",
+    "weight": 0.5,
+    "reviewStatus": "approved",
+    "results": [
+      { "candidate": "Jonathan Nez (D)", "pct": 41.0 },
+      { "candidate": "Eli Crane (R)", "pct": 44.0 },
+      { "candidate": "Undecided", "pct": 15.0 }
+    ],
+    "sourceUrl": "https://pollingsource.com/house/AZ-02",
+    "notes": "R +3.0, inside the +/- 4.4 margin of error - a statistical tie. Cross-confirmed by Pollsmax and PollingSource, both showing 41.0 D / 44.0 R from this single poll."
+  },
+  {
     "raceId": "AZ-H-01-2026",
     "pollster": "Example Polling Co.",
     "fieldDates": "2026-06-01 to 2026-06-04",
     "sampleSize": 600,
     "methodology": "Live phone + online panel",
     "weight": 1,
-    "reviewStatus": "approved",
+    "reviewStatus": "example",
     "results": [
       { "candidate": "Jane Smith", "pct": 47.0 },
       { "candidate": "John Doe", "pct": 44.0 },
       { "candidate": "Undecided", "pct": 9.0 }
     ],
-    "sourceUrl": "https://example.com/poll-report"
+    "sourceUrl": "https://example.com/poll-report",
+    "notes": "Schema reference record only. reviewStatus is deliberately NOT approved so the API filters it out and these placeholder names never reach the live site. Copy this shape when adding a real poll, then set reviewStatus to approved."
   }
 ]
