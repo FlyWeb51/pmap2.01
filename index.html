@@ -852,5 +852,67 @@ header(); applyView(); setTab("house");
   setTimeout(init,900);
 })();
 </script>
+<script>
+/* Schema-tolerant polling renderer. The update-data workflow regenerates
+   data/polls/*.json from api/polls-data.json using pct/fieldDates, while the
+   original loadPolls expected percentage/endDate -> NaN. Accept both, and fall
+   back to the national generic ballot when a race has no poll. */
+(function(){
+  var GB=null, tried=false;
+  function n(v){ v=Number(v); return isFinite(v)?v:null; }
+  function pv(r){ return n(r.percentage!==undefined?r.percentage:r.pct); }
+  function dv(p){ return p.endDate||p.completedDate||p.fieldDates||""; }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];}); }
+  async function gb(){ if(tried) return GB; tried=true;
+    try{ var r=await fetch("data/generic-ballot.json"); if(r.ok) GB=await r.json(); }catch(e){}
+    return GB; }
+  window.loadPolls=async function(x){
+    var out=document.getElementById("poll-out"); if(!out) return;
+    var id=x.st+"-H-"+String(x.d).padStart(2,"0")+"-2026";
+    out.innerHTML='<p class="note">Loading polling...</p>';
+    var pd=null; try{ pd=await backendGet("/api/polls?race_id="+encodeURIComponent(id)); }catch(e){}
+    var polls=(pd&&(pd.polls||pd.data))||[];
+    polls=polls.filter(function(p){ return !p.reviewStatus||p.reviewStatus==="approved"; });
+    if(!polls.length){
+      var g=await gb();
+      var h='<p class="note"><b>No polling for this race.</b><br>No public poll has been '
+      h+='published for '+esc(id.replace("-2026",""))+'. Most House districts are never polled.</p>';
+      if(g&&g.average){
+        h+='<div class="d-sec" style="margin-top:10px">National generic ballot</div>';
+        h+='<div class="kv"><span class="k">Democrats</span><span class="v num">'+g.average.dem.toFixed(1)+'%</span></div>';
+        h+='<div class="kv"><span class="k">Republicans</span><span class="v num">'+g.average.rep.toFixed(1)+'%</span></div>';
+        h+='<div class="kv"><span class="k">Margin</span><span class="v num">'+(g.average.margin>0?"D +":"R +")+Math.abs(g.average.margin).toFixed(1)+'</span></div>';
+        h+='<p class="note">Weighted average of '+g.meta.pollCount+' national polls ('+g.meta.dateRange[0]+' to '+g.meta.dateRange[1]+'). ';
+        h+='A national indicator, not a prediction for this district.</p>';
+      }
+      out.innerHTML=h; return;
+    }
+    var tot={}, ws=0;
+    polls.forEach(function(p){ var w=Number(p.weight)||Number(p.sampleSize)||1; ws+=w;
+      (p.results||[]).forEach(function(r){ var v=pv(r); if(v===null)return;
+        tot[r.candidate]=(tot[r.candidate]||0)+v*w; }); });
+    var avg=Object.keys(tot).map(function(k){return {c:k,v:tot[k]/(ws||1)};})
+      .sort(function(a,b){return b.v-a.v;});
+    var head=avg.filter(function(a){return !/undecided|other|someone else/i.test(a.c);});
+    var und=avg.filter(function(a){return /undecided/i.test(a.c);});
+    var h=head.map(function(a){ return '<div class="kv"><span class="k">'+esc(a.c)
+      +(polls.length>1?" &middot; weighted avg":"")+'</span><span class="v num">'+a.v.toFixed(1)+'%</span></div>'; }).join("");
+    if(head.length>=2){ var m=head[0].v-head[1].v;
+      h+='<div class="kv"><span class="k">Margin</span><span class="v num">'
+        +esc(head[0].c.replace(/\s*\(.*/,""))+" +"+m.toFixed(1)+'</span></div>'; }
+    und.forEach(function(a){ h+='<div class="kv"><span class="k">Undecided</span><span class="v num">'+a.v.toFixed(1)+'%</span></div>'; });
+    h+=polls.map(function(p){
+      var res=(p.results||[]).map(function(r){ var v=pv(r);
+        return esc(r.candidate)+" "+(v===null?"--":v.toFixed(1)+"%"); }).join(" &middot; ");
+      var d=dv(p);
+      return '<p class="note"><b>'+esc(p.pollster||"Poll")+(p.sponsor?" ("+esc(p.sponsor)+")":"")+'</b>'
+        +(d?" &middot; "+esc(d):"")+" &middot; n="+(p.sampleSize||"?")+" "+esc(p.population||"")
+        +(p.moe?" &middot; \u00b1"+p.moe:"")+"<br>"+res
+        +(p.sourceUrl?' &middot; <a href="'+esc(p.sourceUrl)+'" target="_blank" rel="noopener">source</a>':"")+"</p>"; }).join("");
+    out.innerHTML=h;
+  };
+})();
+</script>
 </body>
 </html>
