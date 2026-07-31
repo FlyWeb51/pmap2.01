@@ -963,134 +963,169 @@ header(); applyView(); setTab("house");
 })();
 </script>
 <style>
-#pred{position:absolute;right:14px;bottom:14px;z-index:30;background:rgba(10,15,24,.96);
-  border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:230px;display:none}
+#pred{position:absolute;right:0;top:0;bottom:0;width:212px;z-index:35;background:var(--panel);
+  border-left:1px solid var(--line);padding:12px 12px 16px;overflow-y:auto;display:none}
 #pred.on{display:block}
-#pred h4{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 8px}
-#pred .tot{display:flex;justify-content:space-between;align-items:baseline;font-size:22px;font-weight:700}
-#pred .tot .dd{color:var(--nd)} #pred .tot .rr{color:var(--lr)}
-#pred .bar{position:relative;height:12px;border-radius:3px;overflow:hidden;background:var(--vac);margin:8px 0 4px;display:flex}
-#pred .bar i{display:block;height:100%}
-#pred .tick{position:absolute;top:-3px;bottom:-3px;left:50%;width:2px;background:var(--ink)}
-#pred .msg{font-size:11.5px;color:var(--ink-dim);min-height:30px;line-height:1.4}
-#pred .btns{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
-#pred button{flex:1;min-width:66px;background:var(--panel-2);border:1px solid var(--line);color:var(--ink);
-  border-radius:6px;padding:6px 8px;font-size:11px;cursor:pointer;font-family:inherit}
-#pred button:hover{border-color:var(--ink-dim);background:#16202f}
-#pred .hint{font-size:10.5px;color:#66738a;margin-top:7px;line-height:1.4}
+#pred::-webkit-scrollbar{width:8px}#pred::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+#pred h4{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 6px}
+#pred h4.sp{margin-top:14px}
+.brush{display:flex;align-items:center;gap:8px;width:100%;background:var(--panel-2);
+  border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin-bottom:4px;
+  color:var(--ink);font-size:12px;cursor:pointer;font-family:inherit;text-align:left}
+.brush:hover{border-color:var(--ink-dim)}
+.brush.sel{border-color:var(--focus);background:#16202f;font-weight:600}
+.brush i{width:13px;height:13px;border-radius:3px;flex:none;border:1px solid rgba(255,255,255,.18)}
+.brush .n{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-dim)}
+#pscore{border-top:1px solid var(--line);margin-top:14px;padding-top:10px}
+#pscore .tot{display:flex;justify-content:space-between;align-items:baseline}
+#pscore .tot b{font-size:21px;font-family:"IBM Plex Mono",monospace}
+#pscore .bar{position:relative;height:11px;border-radius:3px;overflow:hidden;background:var(--vac);
+  margin:7px 0 5px;display:flex}
+#pscore .bar i{display:block;height:100%}
+#pscore .tick{position:absolute;top:-3px;bottom:-3px;left:50%;width:2px;background:var(--ink)}
+#pscore .msg{font-size:11px;color:var(--ink-dim);line-height:1.4;min-height:28px}
+#pred .act{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+#pred .act button{flex:1;min-width:60px;background:var(--panel-2);border:1px solid var(--line);
+  color:var(--ink);border-radius:6px;padding:6px 4px;font-size:10.5px;cursor:pointer;font-family:inherit}
+#pred .act button:hover{border-color:var(--ink-dim);background:#16202f}
+#pred .hint{font-size:10px;color:#66738a;margin-top:9px;line-height:1.45}
+body.predicting #detail{width:300px}
 </style>
 <script>
-/* Build-your-own-map. Reuses the existing district geometry rather than
-   shipping a second copy: districtFill() is called once per district in the
-   same order drawHouse() appends paths, so index N of .dsq is ORDER[N]. */
+/* Build-your-own-map with a brush palette. Reuses the existing district
+   geometry rather than shipping a second copy: districtFill() is called once
+   per district in the same order drawHouse() appends paths, so index N of
+   .dsq is ORDER[N]. */
 (function(){
-  var ORDER=[], META=[], picks=[], on=false, ready=false;
-  var C={0:"#2c3647",1:"#1f5fc4",2:"#b93838"};
+  var ORDER=[],META=[],picks=[],on=false,ready=false,wrapped=false,brush=1;
+  var CATS=[
+    {k:1,label:"Solid D",  c:"#1f5fc4", side:"D"},
+    {k:2,label:"Likely D", c:"#3f7fdd", side:"D"},
+    {k:3,label:"Lean D",   c:"#6fa3ec", side:"D"},
+    {k:4,label:"Toss-up",  c:"#b48ce0", side:null},
+    {k:5,label:"Lean R",   c:"#f0b3b3", side:"R"},
+    {k:6,label:"Likely R", c:"#d95c5c", side:"R"},
+    {k:7,label:"Solid R",  c:"#b93838", side:"R"},
+    {k:0,label:"Erase",    c:"#2c3647", side:null}
+  ];
+  var COLOR={},SIDE={};
+  CATS.forEach(function(c){ COLOR[c.k]=c.c; SIDE[c.k]=c.side; });
+  function paths(){ return document.querySelectorAll(".dsq"); }
+
   function build(){
-    if(ready) return; 
+    if(ready) return;
     var o=window.districtFill; if(typeof o!=="function") return;
     ORDER=[];META=[];
-    window.districtFill=function(x){ ORDER.push(x.id); META.push({id:x.id,rating:x.rating||"",party:x.party||""}); return o(x); };
+    window.districtFill=function(x){ ORDER.push(x.id);
+      META.push({id:x.id,label:x.label||x.id,rating:x.rating||"",party:x.party||""}); return o(x); };
     try{ drawHouse(); }catch(e){}
     window.districtFill=o;
-    if(ORDER.length!==document.querySelectorAll(".dsq").length) return;
+    if(!ORDER.length||ORDER.length!==paths().length) return;
     picks=new Array(ORDER.length).fill(0);
     ready=true;
   }
-  function paths(){ return document.querySelectorAll(".dsq"); }
-  function paint(){
-    var p=paths();
-    for(var i=0;i<p.length&&i<picks.length;i++) p[i].setAttribute("fill",C[picks[i]]);
-    score();
-  }
-  function score(){
-    var d=0,r=0;
-    picks.forEach(function(v){ if(v===1)d++; else if(v===2)r++; });
-    var left=picks.length-d-r;
-    document.getElementById("pd").textContent=d;
-    document.getElementById("pr").textContent=r;
-    var t=picks.length||435;
-    document.getElementById("pbd").style.width=(d/t*100)+"%";
-    document.getElementById("pbr").style.width=(r/t*100)+"%";
-    var m=document.getElementById("pmsg");
-    if(d>=218) m.innerHTML="<b style='color:var(--nd)'>Democrats reach 218.</b> "+left+" left to call.";
-    else if(r>=218) m.innerHTML="<b style='color:var(--lr)'>Republicans reach 218.</b> "+left+" left to call.";
-    else m.innerHTML="Nobody at 218 yet. D need <b>"+(218-d)+"</b>, R need <b>"+(218-r)+"</b>, "+left+" uncalled.";
-  }
-  function encode(){
-    var s="";
-    for(var i=0;i<picks.length;i+=4){
-      var b=0; for(var j=0;j<4;j++) b=(b<<2)|((picks[i+j]||0)&3);
-      s+=String.fromCharCode(b);
-    }
-    return btoa(s).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
-  }
-  function decode(str){
-    try{
-      var s=atob(str.replace(/-/g,"+").replace(/_/g,"/"));
-      var out=[];
-      for(var i=0;i<s.length;i++){ var b=s.charCodeAt(i);
-        out.push((b>>6)&3,(b>>4)&3,(b>>2)&3,b&3); }
-      return out.slice(0,ORDER.length);
-    }catch(e){ return null; }
-  }
-  function fromRatings(){
-    picks=META.map(function(m){
-      var t=(m.rating||"").toLowerCase();
-      if(t.indexOf("d")>-1&&t.indexOf("r")===-1) return 1;
-      if(t.indexOf("r")>-1&&t.indexOf("d")===-1) return 2;
-      return (m.party==="D")?1:(m.party==="R")?2:0;
-    });
-    paint();
-  }
-  /* Anything that calls redraw() - filters, the mode bar, the list - repaints
-     with rating colours. While predict is active, re-assert our colours after. */
-  var wrapped=false;
   function wrapRedraw(){
     if(wrapped||typeof window.redraw!=="function") return;
     var orig=window.redraw;
     window.redraw=function(){ var r=orig.apply(this,arguments); if(on) setTimeout(paint,0); return r; };
     wrapped=true;
   }
-  function enter(){
-    build(); if(!ready) return;
-    wrapRedraw();
-    on=true;
-    document.getElementById("pred").classList.add("on");
-    var h=location.hash.match(/pick=([A-Za-z0-9_\-]+)/);
-    if(h){ var p=decode(h[1]); if(p&&p.length===ORDER.length) picks=p; }
+  function paint(){
+    var p=paths();
+    for(var i=0;i<p.length&&i<picks.length;i++) p[i].setAttribute("fill",COLOR[picks[i]]);
+    score();
+  }
+  function score(){
+    var d=0,r=0,t=0,n={};
+    CATS.forEach(function(c){ n[c.k]=0; });
+    picks.forEach(function(v){ n[v]=(n[v]||0)+1;
+      if(SIDE[v]==="D") d++; else if(SIDE[v]==="R") r++; else if(v===4) t++; });
+    CATS.forEach(function(c){ var e=document.getElementById("bn"+c.k); if(e) e.textContent=n[c.k]||0; });
+    var tot=picks.length||435;
+    document.getElementById("pd").textContent=d;
+    document.getElementById("pr").textContent=r;
+    document.getElementById("pbd").style.width=(d/tot*100)+"%";
+    document.getElementById("pbr").style.width=(r/tot*100)+"%";
+    var left=tot-d-r;
+    var m=document.getElementById("pmsg");
+    if(d>=218) m.innerHTML="<b style='color:var(--nd)'>Democrats reach 218.</b>";
+    else if(r>=218) m.innerHTML="<b style='color:var(--lr)'>Republicans reach 218.</b>";
+    else m.innerHTML="D need <b>"+(218-d)+"</b>, R need <b>"+(218-r)+"</b>.<br>"+t+" toss-up, "+(left-t)+" unset.";
+  }
+  function encode(){ var s="";
+    for(var i=0;i<picks.length;i+=2) s+=String.fromCharCode(((picks[i]||0)<<4)|(picks[i+1]||0));
+    return btoa(s).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); }
+  function decode(str){ try{
+      var s=atob(str.replace(/-/g,"+").replace(/_/g,"/")),o=[];
+      for(var i=0;i<s.length;i++){ var b=s.charCodeAt(i); o.push((b>>4)&15,b&15); }
+      return o.slice(0,ORDER.length);
+    }catch(e){ return null; } }
+  function fromRatings(){
+    picks=META.map(function(m){
+      var t=(m.rating||"").toLowerCase().replace(/[^a-z ]/g,"");
+      var isD=/\bd\b|democrat/.test(t), isR=/\br\b|republican/.test(t);
+      if(/toss|tilt/.test(t)) return 4;
+      if(/solid/.test(t))  return isD?1:isR?7:4;
+      if(/likely/.test(t)) return isD?2:isR?6:4;
+      if(/lean/.test(t))   return isD?3:isR?5:4;
+      return m.party==="D"?1:m.party==="R"?7:0;
+    });
     paint();
   }
-  function exit(){
-    on=false;
-    document.getElementById("pred").classList.remove("on");
-    try{ redraw(); }catch(e){}
+  function setBrush(k){ brush=k;
+    [].forEach.call(document.querySelectorAll("#pred .brush"),function(b){
+      b.classList.toggle("sel", +b.dataset.k===k); });
   }
+  function enter(){ build(); if(!ready) return; wrapRedraw(); on=true;
+    document.getElementById("pred").classList.add("on");
+    document.body.classList.add("predicting");
+    var h=location.hash.match(/pick=([A-Za-z0-9_\-]+)/);
+    if(h){ var q=decode(h[1]); if(q&&q.length===ORDER.length) picks=q; }
+    paint(); }
+  function exit(){ on=false;
+    document.getElementById("pred").classList.remove("on");
+    document.body.classList.remove("predicting");
+    try{ redraw(); }catch(e){} }
+
   function ui(){
     var main=document.querySelector("main"); if(!main||document.getElementById("pred")) return;
     var box=document.createElement("div"); box.id="pred";
-    box.innerHTML=
-      '<h4>Your map</h4>'+
-      '<div class="tot"><span class="dd num" id="pd">0</span>'+
-      '<span style="font-size:10px;color:var(--ink-dim);letter-spacing:.1em">218 TO WIN</span>'+
-      '<span class="rr num" id="pr">0</span></div>'+
-      '<div class="bar"><i id="pbd" style="background:var(--sd);width:0"></i>'+
-      '<i id="pbr" style="background:var(--sr);width:0;margin-left:auto"></i>'+
-      '<span class="tick"></span></div>'+
-      '<div class="msg" id="pmsg"></div>'+
-      '<div class="btns"><button id="pfill">From ratings</button>'+
-      '<button id="pclr">Clear</button><button id="pshare">Copy link</button></div>'+
-      '<div class="hint">Click a district to cycle D &rarr; R &rarr; clear.</div>';
+    var h="<h4>Inspect</h4>";
+    h+='<button class="brush" data-k="-1"><i style="background:transparent;border-style:dashed"></i>'+
+       'View district stats</button>';
+    h+='<h4 class="sp">Paint</h4>';
+    CATS.forEach(function(c){
+      h+='<button class="brush'+(c.k===1?" sel":"")+'" data-k="'+c.k+'">'+
+         '<i style="background:'+c.c+'"></i>'+c.label+'<span class="n" id="bn'+c.k+'">0</span></button>';
+    });
+    h+='<div id="pscore"><h4>Your map</h4>'+
+       '<div class="tot"><b class="num" id="pd" style="color:var(--nd)">0</b>'+
+       '<span style="font-size:9.5px;color:var(--ink-dim);letter-spacing:.1em">218</span>'+
+       '<b class="num" id="pr" style="color:var(--lr)">0</b></div>'+
+       '<div class="bar"><i id="pbd" style="background:var(--sd);width:0"></i>'+
+       '<i id="pbr" style="background:var(--sr);width:0;margin-left:auto"></i>'+
+       '<span class="tick"></span></div><div class="msg" id="pmsg"></div>'+
+       '<div class="act"><button id="pfill">From ratings</button>'+
+       '<button id="pclr">Clear all</button><button id="pshare">Copy link</button></div>'+
+       '<div class="hint">Pick a colour, then click districts to paint them. '+
+       'Choose <b>View district stats</b> to open a seat\u2019s money, demographics and polling instead.</div></div>';
+    box.innerHTML=h;
     main.appendChild(box);
+
+    box.addEventListener("click",function(e){
+      var b=e.target.closest(".brush"); if(!b) return;
+      setBrush(+b.dataset.k);
+    });
     document.getElementById("pfill").onclick=fromRatings;
     document.getElementById("pclr").onclick=function(){ picks=picks.map(function(){return 0;}); paint(); };
     document.getElementById("pshare").onclick=function(){
-      var u=location.origin+location.pathname+"#pick="+encode();
-      var b=document.getElementById("pshare");
+      var code=encode(), u=location.origin+location.pathname+"#pick="+code;
       if(navigator.clipboard) navigator.clipboard.writeText(u);
-      location.hash="pick="+encode();
+      location.hash="pick="+code;
+      var b=document.getElementById("pshare");
       b.textContent="Copied"; setTimeout(function(){b.textContent="Copy link";},1400);
     };
+
     var bar=document.getElementById("modebtn");
     if(bar&&!bar.querySelector('[data-m="predict"]')){
       var btn=document.createElement("button"); btn.textContent="Predict";
@@ -1101,21 +1136,23 @@ header(); applyView(); setTab("house");
         if(b.getAttribute("data-m")==="predict"){
           [].forEach.call(bar.querySelectorAll("button"),function(o){o.classList.remove("on");});
           b.classList.add("on");
-          /* The site's own modebtn handler runs after this one and calls
-             redraw(), which would repaint over the predict colours. Stop it. */
           e.stopPropagation(); e.preventDefault();
           enter(); setTimeout(paint,0); setTimeout(paint,120);
         } else if(on){ exit(); }
       },true);
     }
+
     var svg=document.getElementById("map");
     if(svg) svg.addEventListener("click",function(e){
       if(!on) return;
       var t=e.target.closest(".dsq"); if(!t) return;
+      /* Inspect brush: let the click through so the site opens its own detail
+         panel with FEC money, census profile and polling for that seat. */
+      if(brush===-1) return;
       e.stopPropagation(); e.preventDefault();
       var p=paths(), i=[].indexOf.call(p,t); if(i<0) return;
-      picks[i]=(picks[i]+1)%3;
-      t.setAttribute("fill",C[picks[i]]); score();
+      picks[i]=brush;
+      t.setAttribute("fill",COLOR[brush]); score();
     },true);
   }
   function init(){ ui(); }
