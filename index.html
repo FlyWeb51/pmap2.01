@@ -1090,7 +1090,11 @@ header(); applyView(); setTab("house");
         var b=e.target.closest("button"); if(!b) return;
         if(b.getAttribute("data-m")==="predict"){
           [].forEach.call(bar.querySelectorAll("button"),function(o){o.classList.remove("on");});
-          b.classList.add("on"); enter();
+          b.classList.add("on");
+          /* The site's own modebtn handler runs after this one and calls
+             redraw(), which would repaint over the predict colours. Stop it. */
+          e.stopPropagation(); e.preventDefault();
+          enter(); setTimeout(paint,0); setTimeout(paint,120);
         } else if(on){ exit(); }
       },true);
     }
