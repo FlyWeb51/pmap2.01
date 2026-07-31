@@ -1,0 +1,18 @@
+{
+  "_help": "Mark nominees here after each primary. Key = seat code matching the data files (AZ-05, TX-senate, VT-00). Value = list of name fragments as they appear in FEC data, e.g. KEENAN matches KEENAN, DANIEL. The site badges them, sorts them first, and tucks the rest behind Show All.",
+  "_source": "Arizona seeded 2026-07-30 from PollingSource certified primary results (primary held 2026-07-21). Only candidates carrying an explicit primary-winner check are listed. Populate other states by running scripts/fetch-nominees.js and reviewing api/nominees-inbox.json.",
+  "_warnings": {
+    "AZ-05": "LEE is a common surname fragment - verify it does not over-match other filers in the FEC field for this seat.",
+    "AZ-03": "Republican Nicholas Glenn drew 273 votes with no winner check on the source page (likely write-in). Included provisionally - drop if FEC shows no qualified R nominee."
+  },
+  "AZ-01": ["SHAH", "FEELY"],
+  "AZ-02": ["NEZ", "CRANE"],
+  "AZ-03": ["ANSARI", "GLENN"],
+  "AZ-04": ["STANTON", "JASSER"],
+  "AZ-05": ["LEE", "LAMB"],
+  "AZ-06": ["MENDOZA", "CISCOMANI"],
+  "AZ-07": ["GRIJALVA", "BUTIEREZ"],
+  "AZ-08": ["GREENE-PLACENTIA", "HAMADEH"],
+  "AZ-09": ["STERBINSKY", "GOSAR"],
+  "TX-senate": []
+}
