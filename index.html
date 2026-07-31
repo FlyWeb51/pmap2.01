@@ -1043,8 +1043,18 @@ header(); applyView(); setTab("house");
     });
     paint();
   }
+  /* Anything that calls redraw() - filters, the mode bar, the list - repaints
+     with rating colours. While predict is active, re-assert our colours after. */
+  var wrapped=false;
+  function wrapRedraw(){
+    if(wrapped||typeof window.redraw!=="function") return;
+    var orig=window.redraw;
+    window.redraw=function(){ var r=orig.apply(this,arguments); if(on) setTimeout(paint,0); return r; };
+    wrapped=true;
+  }
   function enter(){
     build(); if(!ready) return;
+    wrapRedraw();
     on=true;
     document.getElementById("pred").classList.add("on");
     var h=location.hash.match(/pick=([A-Za-z0-9_\-]+)/);
@@ -1113,5 +1123,19 @@ header(); applyView(); setTab("house");
   setTimeout(init,1000);
 })();
 </script>
+<style>
+/* Map linework. State outlines were #020409 at 1.15px with non-scaling-stroke,
+   so they stayed chunky at every zoom and clotted where districts are dense
+   (the Northeast especially). Softer colour, thinner, rounded joins. */
+.stoutline{stroke:rgba(6,10,18,.62) !important;stroke-width:.75 !important;
+  stroke-linejoin:round;stroke-linecap:round;shape-rendering:geometricPrecision}
+.dsq{stroke:rgba(14,20,32,.7) !important;stroke-width:.35 !important;
+  stroke-linejoin:round;shape-rendering:geometricPrecision}
+.dsq:hover{stroke:#fff !important;stroke-width:1.3 !important}
+.dsq.active{stroke:#fff !important;stroke-width:2 !important}
+.stshape{stroke:rgba(40,54,74,.85);stroke-linejoin:round}
+.leader{opacity:.45}
+#map{shape-rendering:geometricPrecision}
+</style>
 </body>
 </html>
