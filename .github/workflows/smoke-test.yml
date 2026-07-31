@@ -1,0 +1,28 @@
+name: Data smoke test
+
+# Runs against the DEPLOYED site, not the repo. Every data bug this project has
+# hit looked fine in git and broke in the browser: /api/*.json 404ing on Vercel,
+# poll averages shaped as objects instead of arrays, placeholder poll records
+# reaching production. A filesystem check would have passed all of them.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Twice daily, 40 minutes after the Data Hivemind refresh, so it catches
+    # schema drift introduced by the regenerated data files.
+    - cron: "40 0,12 * * *"
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Smoke-test deployed data
+        run: node scripts/smoke-test-data.js https://pmap2-01.vercel.app
