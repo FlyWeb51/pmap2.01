@@ -116,7 +116,6 @@
   .pill{display:inline-block;padding:1px 7px;border-radius:20px;font-size:10px;font-weight:700}
   .pill.poll{background:#08301c;color:#5ee08d;border:1px solid #14532d}
   .pill.rating{background:#2a2716;color:#cbb95a;border:1px solid #4d4a1f}
-  .flag{color:var(--gold);cursor:help}
   .xh line{stroke:var(--dimmer);stroke-dasharray:3 3;pointer-events:none}
   .xh circle{pointer-events:none}
   #tip{position:fixed;pointer-events:none;background:#05080d;border:1px solid var(--line);
@@ -237,9 +236,7 @@
 
 <section class="panel" id="p-table">
   <p class="ptitle">All 432 rated districts</p>
-  <p class="pdesc">Click any column to sort. A <span class="flag">&#9873;</span> marks a district where the
-    uploaded head-to-head CSV disagrees with this rating — <span id="disn"></span> of them, which is why that
-    file isn't driving these numbers. <b>Candidate names are shown only where verified against a primary
+  <p class="pdesc">Click any column to sort. <b>Candidate names are shown only where verified against a primary
     source.</b> The uploaded CSV supplied names for 424 districts, but it lists Tom O'Halleran — a Democrat —
     as the Republican in AZ-02, so its party assignments are unreliable in the same way its ratings were.
     Blank is more useful than wrong.</p>
@@ -250,7 +247,6 @@
       <option value="poll">Poll-backed only</option>
       <option value="toss">Tossups (±2)</option>
       <option value="named">Verified candidates</option>
-      <option value="flag">CSV disagrees</option>
     </select>
     <span id="t-count" style="color:var(--dim);font-size:12.5px"></span>
   </div>
@@ -282,12 +278,11 @@ const fmt=m=>(m>0?"D +":m<0?"R +":"Even ")+(m?Math.abs(m).toFixed(1):"");
 const col=m=>m>2?"var(--sd)":m<-2?"var(--sr)":"var(--toss)";
 
 $("#gen").textContent=new Date(S.generated).toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
-$("#fixn").textContent=S.csvDisagreements;
+$("#fixn").textContent=S.firstCsvDisagreements;
 $("#fixrange").textContent=S.dRangeLow+"–"+S.dRangeHigh;
 ["#pbA","#pbB"].forEach(function(k){var e=$(k); if(e) e.textContent=S.pollBackedSeats;});
 if($("#roA")) $("#roA").textContent=(S.ratedSeats-S.pollBackedSeats);
 if($("#gbA")) $("#gbA").textContent=S.genericPollCount;
-$("#disn").textContent=S.csvDisagreements;
 $("#gbm").textContent="D +"+GB.average.margin.toFixed(1);
 $("#rside").textContent=S.rSide;
 
@@ -464,7 +459,7 @@ function showRace(r,g){
   c.innerHTML='<button class="rc-x" id="rc-close" aria-label="Close">&times;</button>'
     +'<h5>'+esc(r.district)+' <span style="color:'+col(r.margin)+'">'+fmt(r.margin)+'</span></h5>'
     +'<div class="rc-sub">'+esc(r.rating)+' &middot; '+(p?"poll-backed":"rating-derived")
-      +(r.csvRatingDisagrees?' &middot; <span style="color:var(--gold)">uploaded CSV disagrees with this rating</span>':'')+'</div>'
+      +'</div>'
     +'<div class="rc-grid">'
       +'<div><div class="rc-k">Democrat</div><div class="rc-v">'+(dem?esc(dem):'<span style="color:var(--dimmer)">not verified</span>')+'</div></div>'
       +'<div><div class="rc-k">Republican</div><div class="rc-v">'+(rep?esc(rep):'<span style="color:var(--dimmer)">not verified</span>')+'</div></div>'
@@ -556,7 +551,6 @@ function drawTable(){
     if(f==="poll"&&r.evidence!=="poll")return false;
     if(f==="toss"&&Math.abs(r.margin)>2)return false;
     if(f==="named"&&!(r.demCandidate&&r.repCandidate))return false;
-    if(f==="flag"&&!r.csvRatingDisagrees)return false;
     if(!q)return true;
     return [r.district,r.state,r.demCandidate||"",r.repCandidate||"",r.rating].join(" ").toLowerCase().includes(q);
   });
@@ -565,7 +559,7 @@ function drawTable(){
     return String(x||"").localeCompare(String(y||""))*sd;});
   $("#t-count").textContent=rows.length+" of 432";
   $("#tbody").innerHTML=rows.map(r=>`<tr>
-    <td><b>${r.district}</b>${r.csvRatingDisagrees?' <span class="flag" title="Uploaded CSV disagrees with this rating">&#9873;</span>':""}</td>
+    <td><b>${r.district}</b></td>
     <td>${r.demCandidate||'<span style="color:var(--dimmer)">TBD</span>'}</td>
     <td>${r.repCandidate||'<span style="color:var(--dimmer)">TBD</span>'}</td>
     <td>${r.rating}</td>

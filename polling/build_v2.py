@@ -70,7 +70,6 @@ for dist in sorted(ratings):
         "csvDem": nm.get("dem"), "csvRep": nm.get("rep"),
         "poll": poll,
         "sourceUrl": nm.get("sourceUrl") or None,
-        "csvRatingDisagrees": bool(nm.get("csvRating")) and nm["csvRating"] != rating,
     })
 
 marg = [r["margin"] for r in races]
@@ -78,7 +77,22 @@ safeD = sum(1 for m in marg if m >  TOSSUP)
 safeR = sum(1 for m in marg if m < -TOSSUP)
 toss  = len(marg) - safeD - safeR
 byrat = collections.Counter(r["rating"] for r in races)
-disagree = sum(1 for r in races if r["csvRatingDisagrees"])
+# The published correction is about the FIRST uploaded CSV, so it must be measured
+# against that file - not the later head-to-head one. Conflating them understated
+# the error as 124 when the real figure is 205.
+def _norm(t):
+    t = t.lower().replace("democratic", "d").replace("republican", "r")
+    return t.replace("toss up", "tossup").replace("-", "").replace(" ", "")
+
+first = {}
+with (UP / "2026_All_435_House_Seats_Polling_Data - Untitled.csv").open(encoding="utf-8-sig") as f:
+    for row in csv.DictReader(f):
+        code = row["District Code"].strip()
+        st_, num_ = code.split("-", 1)
+        key = f"{st_}-{num_.zfill(2)}" if num_.isdigit() else code
+        first[key] = row["Consensus Race Rating"].strip()
+shared  = [r for r in races if r["district"] in first]
+disagree = sum(1 for r in shared if _norm(first[r["district"]]) != _norm(r["rating"]))
 
 # ---- generic ballot -----------------------------------------------------
 gb = json.loads((ROOT.parent/"sitedata"/"generic-ballot.json").read_text())
@@ -93,7 +107,8 @@ summary = {
     "dRangeLow": safeD, "dRangeHigh": safeD + toss,
     "median": round(statistics.median(marg), 2),
     "pollBackedSeats": sum(1 for r in races if r["evidence"] == "poll"),
-    "csvDisagreements": disagree,
+    "firstCsvDisagreements": disagree,
+    "firstCsvCompared": len(shared),
     "genericBallot": gb["average"], "genericPollCount": gb["meta"]["pollCount"],
     "genericRange": gb["meta"]["dateRange"],
 }
@@ -108,7 +123,7 @@ print("median margin:", summary["median"])
 print("verified names: %d districts" % sum(1 for r in races if r["demCandidate"]))
 print("csv names withheld (untrusted): %d had a non-TBD name" % sum(
     1 for r in races if r.get("csvDem") or r.get("csvRep")))
-print("head-to-head CSV rating disagreements vs site:", disagree, "of", len(races))
+print("FIRST CSV disagreements vs site ratings:", disagree, "of", len(shared))
 print("generic ballot: D %.2f R %.2f margin D%+.2f from %d polls (%s -> %s)" % (
     gb["average"]["dem"], gb["average"]["rep"], gb["average"]["margin"],
     gb["meta"]["pollCount"], gb["meta"]["dateRange"][0], gb["meta"]["dateRange"][1]))
