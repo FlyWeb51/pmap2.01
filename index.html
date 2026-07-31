@@ -962,5 +962,152 @@ header(); applyView(); setTab("house");
   setTimeout(reorder,800);
 })();
 </script>
+<style>
+#pred{position:absolute;right:14px;bottom:14px;z-index:30;background:rgba(10,15,24,.96);
+  border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:230px;display:none}
+#pred.on{display:block}
+#pred h4{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 8px}
+#pred .tot{display:flex;justify-content:space-between;align-items:baseline;font-size:22px;font-weight:700}
+#pred .tot .dd{color:var(--nd)} #pred .tot .rr{color:var(--lr)}
+#pred .bar{position:relative;height:12px;border-radius:3px;overflow:hidden;background:var(--vac);margin:8px 0 4px;display:flex}
+#pred .bar i{display:block;height:100%}
+#pred .tick{position:absolute;top:-3px;bottom:-3px;left:50%;width:2px;background:var(--ink)}
+#pred .msg{font-size:11.5px;color:var(--ink-dim);min-height:30px;line-height:1.4}
+#pred .btns{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+#pred button{flex:1;min-width:66px;background:var(--panel-2);border:1px solid var(--line);color:var(--ink);
+  border-radius:6px;padding:6px 8px;font-size:11px;cursor:pointer;font-family:inherit}
+#pred button:hover{border-color:var(--ink-dim);background:#16202f}
+#pred .hint{font-size:10.5px;color:#66738a;margin-top:7px;line-height:1.4}
+</style>
+<script>
+/* Build-your-own-map. Reuses the existing district geometry rather than
+   shipping a second copy: districtFill() is called once per district in the
+   same order drawHouse() appends paths, so index N of .dsq is ORDER[N]. */
+(function(){
+  var ORDER=[], META=[], picks=[], on=false, ready=false;
+  var C={0:"#2c3647",1:"#1f5fc4",2:"#b93838"};
+  function build(){
+    if(ready) return; 
+    var o=window.districtFill; if(typeof o!=="function") return;
+    ORDER=[];META=[];
+    window.districtFill=function(x){ ORDER.push(x.id); META.push({id:x.id,rating:x.rating||"",party:x.party||""}); return o(x); };
+    try{ drawHouse(); }catch(e){}
+    window.districtFill=o;
+    if(ORDER.length!==document.querySelectorAll(".dsq").length) return;
+    picks=new Array(ORDER.length).fill(0);
+    ready=true;
+  }
+  function paths(){ return document.querySelectorAll(".dsq"); }
+  function paint(){
+    var p=paths();
+    for(var i=0;i<p.length&&i<picks.length;i++) p[i].setAttribute("fill",C[picks[i]]);
+    score();
+  }
+  function score(){
+    var d=0,r=0;
+    picks.forEach(function(v){ if(v===1)d++; else if(v===2)r++; });
+    var left=picks.length-d-r;
+    document.getElementById("pd").textContent=d;
+    document.getElementById("pr").textContent=r;
+    var t=picks.length||435;
+    document.getElementById("pbd").style.width=(d/t*100)+"%";
+    document.getElementById("pbr").style.width=(r/t*100)+"%";
+    var m=document.getElementById("pmsg");
+    if(d>=218) m.innerHTML="<b style='color:var(--nd)'>Democrats reach 218.</b> "+left+" left to call.";
+    else if(r>=218) m.innerHTML="<b style='color:var(--lr)'>Republicans reach 218.</b> "+left+" left to call.";
+    else m.innerHTML="Nobody at 218 yet. D need <b>"+(218-d)+"</b>, R need <b>"+(218-r)+"</b>, "+left+" uncalled.";
+  }
+  function encode(){
+    var s="";
+    for(var i=0;i<picks.length;i+=4){
+      var b=0; for(var j=0;j<4;j++) b=(b<<2)|((picks[i+j]||0)&3);
+      s+=String.fromCharCode(b);
+    }
+    return btoa(s).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+  }
+  function decode(str){
+    try{
+      var s=atob(str.replace(/-/g,"+").replace(/_/g,"/"));
+      var out=[];
+      for(var i=0;i<s.length;i++){ var b=s.charCodeAt(i);
+        out.push((b>>6)&3,(b>>4)&3,(b>>2)&3,b&3); }
+      return out.slice(0,ORDER.length);
+    }catch(e){ return null; }
+  }
+  function fromRatings(){
+    picks=META.map(function(m){
+      var t=(m.rating||"").toLowerCase();
+      if(t.indexOf("d")>-1&&t.indexOf("r")===-1) return 1;
+      if(t.indexOf("r")>-1&&t.indexOf("d")===-1) return 2;
+      return (m.party==="D")?1:(m.party==="R")?2:0;
+    });
+    paint();
+  }
+  function enter(){
+    build(); if(!ready) return;
+    on=true;
+    document.getElementById("pred").classList.add("on");
+    var h=location.hash.match(/pick=([A-Za-z0-9_\-]+)/);
+    if(h){ var p=decode(h[1]); if(p&&p.length===ORDER.length) picks=p; }
+    paint();
+  }
+  function exit(){
+    on=false;
+    document.getElementById("pred").classList.remove("on");
+    try{ redraw(); }catch(e){}
+  }
+  function ui(){
+    var main=document.querySelector("main"); if(!main||document.getElementById("pred")) return;
+    var box=document.createElement("div"); box.id="pred";
+    box.innerHTML=
+      '<h4>Your map</h4>'+
+      '<div class="tot"><span class="dd num" id="pd">0</span>'+
+      '<span style="font-size:10px;color:var(--ink-dim);letter-spacing:.1em">218 TO WIN</span>'+
+      '<span class="rr num" id="pr">0</span></div>'+
+      '<div class="bar"><i id="pbd" style="background:var(--sd);width:0"></i>'+
+      '<i id="pbr" style="background:var(--sr);width:0;margin-left:auto"></i>'+
+      '<span class="tick"></span></div>'+
+      '<div class="msg" id="pmsg"></div>'+
+      '<div class="btns"><button id="pfill">From ratings</button>'+
+      '<button id="pclr">Clear</button><button id="pshare">Copy link</button></div>'+
+      '<div class="hint">Click a district to cycle D &rarr; R &rarr; clear.</div>';
+    main.appendChild(box);
+    document.getElementById("pfill").onclick=fromRatings;
+    document.getElementById("pclr").onclick=function(){ picks=picks.map(function(){return 0;}); paint(); };
+    document.getElementById("pshare").onclick=function(){
+      var u=location.origin+location.pathname+"#pick="+encode();
+      var b=document.getElementById("pshare");
+      if(navigator.clipboard) navigator.clipboard.writeText(u);
+      location.hash="pick="+encode();
+      b.textContent="Copied"; setTimeout(function(){b.textContent="Copy link";},1400);
+    };
+    var bar=document.getElementById("modebtn");
+    if(bar&&!bar.querySelector('[data-m="predict"]')){
+      var btn=document.createElement("button"); btn.textContent="Predict";
+      btn.setAttribute("data-m","predict"); btn.title="Build your own map";
+      bar.appendChild(btn);
+      bar.addEventListener("click",function(e){
+        var b=e.target.closest("button"); if(!b) return;
+        if(b.getAttribute("data-m")==="predict"){
+          [].forEach.call(bar.querySelectorAll("button"),function(o){o.classList.remove("on");});
+          b.classList.add("on"); enter();
+        } else if(on){ exit(); }
+      },true);
+    }
+    var svg=document.getElementById("map");
+    if(svg) svg.addEventListener("click",function(e){
+      if(!on) return;
+      var t=e.target.closest(".dsq"); if(!t) return;
+      e.stopPropagation(); e.preventDefault();
+      var p=paths(), i=[].indexOf.call(p,t); if(i<0) return;
+      picks[i]=(picks[i]+1)%3;
+      t.setAttribute("fill",C[picks[i]]); score();
+    },true);
+  }
+  function init(){ ui(); }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
+  setTimeout(init,1000);
+})();
+</script>
 </body>
 </html>
