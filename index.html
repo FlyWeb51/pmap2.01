@@ -963,7 +963,9 @@ header(); applyView(); setTab("house");
 })();
 </script>
 <style>
-#pred{position:absolute;right:0;top:0;bottom:0;width:212px;z-index:35;background:var(--panel);
+/* Fixed, not absolute: <main> ends 300px short of the viewport (the detail
+   panel parks there), so right:0 inside it left a dead strip. */
+#pred{position:fixed;right:0;bottom:0;width:212px;z-index:35;background:var(--panel);
   border-left:1px solid var(--line);padding:12px 12px 16px;overflow-y:auto;display:none}
 #pred.on{display:block}
 #pred::-webkit-scrollbar{width:8px}#pred::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
@@ -989,7 +991,8 @@ header(); applyView(); setTab("house");
   color:var(--ink);border-radius:6px;padding:6px 4px;font-size:10.5px;cursor:pointer;font-family:inherit}
 #pred .act button:hover{border-color:var(--ink-dim);background:#16202f}
 #pred .hint{font-size:10px;color:#66738a;margin-top:9px;line-height:1.45}
-body.predicting #detail{width:300px}
+body.predicting #modebtn{right:226px}
+body.predicting .legend{max-width:190px}
 </style>
 <script>
 /* Build-your-own-map with a brush palette. Reuses the existing district
@@ -1079,6 +1082,8 @@ body.predicting #detail{width:300px}
   function enter(){ build(); if(!ready) return; wrapRedraw(); on=true;
     document.getElementById("pred").classList.add("on");
     document.body.classList.add("predicting");
+    var host=document.getElementById("body")||document.querySelector("main");
+    if(host) document.getElementById("pred").style.top=Math.round(host.getBoundingClientRect().top)+"px";
     var h=location.hash.match(/pick=([A-Za-z0-9_\-]+)/);
     if(h){ var q=decode(h[1]); if(q&&q.length===ORDER.length) picks=q; }
     paint(); }
