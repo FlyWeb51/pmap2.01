@@ -873,7 +873,16 @@ header(); applyView(); setTab("house");
     out.innerHTML='<p class="note">Loading polling...</p>';
     var pd=null; try{ pd=await backendGet("/api/polls?race_id="+encodeURIComponent(id)); }catch(e){}
     var polls=(pd&&(pd.polls||pd.data))||[];
-    polls=polls.filter(function(p){ return !p.reviewStatus||p.reviewStatus==="approved"; });
+    polls=polls.filter(function(p){
+          if(p.reviewStatus&&p.reviewStatus!=="approved") return false;
+          /* Reject placeholder/scaffold records. A stale data/polls/AZ-H-01-2026.json
+             shipped "Example Polling Co. / Jane Smith / John Doe" to production, so
+             filter defensively rather than trusting reviewStatus alone. */
+          var who=((p.pollster||"")+" "+(p.sourceUrl||"")).toLowerCase();
+          if(/example|placeholder|sample poll|test poll|lorem|foo|dummy/.test(who)) return false;
+          var names=(p.results||[]).map(function(r){return String(r.candidate||"").toLowerCase();}).join(" ");
+          if(/jane smith|john doe|candidate [a-z]\b|tbd/.test(names)) return false;
+          return true; });
     if(!polls.length){
       var g=await gb();
       var h='<p class="note"><b>No polling for this race.</b><br>No public poll has been '
