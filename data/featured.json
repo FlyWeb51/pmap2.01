@@ -1,0 +1,11 @@
+{
+  "_help": "Manually override which candidates are featured for a seat, e.g. when money alone misidentifies the real top-tier field. Key = seat code (AZ-01, TX-senate). Value = list of name fragments as in FEC data. FEC-flagged incumbents are always shown regardless. Once real nominees are known, use nominees.json instead - it takes priority over this file.",
+  "_note": "Served from data/ because Vercel treats /api as serverless functions and will not serve .json files there. api/featured.json is kept in sync as the editable source of record.",
+  "AZ-01": [
+    "TREBLE",
+    "FEELY",
+    "GALAN-WOODS",
+    "SHAH",
+    "SCHWEIKERT"
+  ]
+}
