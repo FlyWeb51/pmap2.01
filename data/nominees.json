@@ -1,18 +1,1218 @@
 {
   "_help": "Mark nominees here after each primary. Key = seat code matching the data files (AZ-05, TX-senate, VT-00). Value = list of name fragments as they appear in FEC data, e.g. KEENAN matches KEENAN, DANIEL. The site badges them, sorts them first, and tucks the rest behind Show All.",
-  "_source": "Arizona seeded 2026-07-30 from PollingSource certified primary results (primary held 2026-07-21). Only candidates carrying an explicit primary-winner check are listed. Populate other states by running scripts/fetch-nominees.js and reviewing api/nominees-inbox.json.",
-  "_warnings": {
-    "AZ-05": "LEE is a common surname fragment - verify it does not over-match other filers in the FEC field for this seat.",
-    "AZ-03": "Republican Nicholas Glenn drew 273 votes with no winner check on the source page (likely write-in). Included provisionally - drop if FEC shows no qualified R nominee."
-  },
-  "AZ-01": ["SHAH", "FEELY"],
-  "AZ-02": ["NEZ", "CRANE"],
-  "AZ-03": ["ANSARI", "GLENN"],
-  "AZ-04": ["STANTON", "JASSER"],
-  "AZ-05": ["LEE", "LAMB"],
-  "AZ-06": ["MENDOZA", "CISCOMANI"],
-  "AZ-07": ["GRIJALVA", "BUTIEREZ"],
-  "AZ-08": ["GREENE-PLACENTIA", "HAMADEH"],
-  "AZ-09": ["STERBINSKY", "GOSAR"],
-  "TX-senate": []
+  "_generated": "2026-07-31T06:03:19.134Z",
+  "_source": "Bulk-promoted from api/nominees-inbox.json (PollingSource certified primary results). Unreviewed - see _review for the seats most likely to be wrong.",
+  "AL-03": [
+    "ROGERS"
+  ],
+  "AL-04": [
+    "PUSCZEK",
+    "ADERHOLT"
+  ],
+  "AL-05": [
+    "SNEED"
+  ],
+  "AZ-01": [
+    "SHAH",
+    "FEELY"
+  ],
+  "AZ-02": [
+    "NEZ",
+    "CRANE"
+  ],
+  "AZ-03": [
+    "ANSARI"
+  ],
+  "AZ-04": [
+    "STANTON",
+    "JASSER"
+  ],
+  "AZ-05": [
+    "LEE",
+    "LAMB"
+  ],
+  "AZ-06": [
+    "MENDOZA",
+    "CISCOMANI"
+  ],
+  "AZ-07": [
+    "GRIJALVA",
+    "BUTIEREZ"
+  ],
+  "AZ-08": [
+    "GREENE-PLACENTIA",
+    "HAMADEH"
+  ],
+  "AZ-09": [
+    "STERBINSKY",
+    "GOSAR"
+  ],
+  "AR-02": [
+    "JONES",
+    "HILL"
+  ],
+  "AR-04": [
+    "RUSSELL"
+  ],
+  "CA-01": [
+    "MCGUIRE",
+    "GALLAGHER"
+  ],
+  "CA-02": [
+    "HUFFMAN",
+    "LITTAU"
+  ],
+  "CA-03": [
+    "BERA",
+    "TUCKER"
+  ],
+  "CA-04": [
+    "THOMPSON",
+    "JONES"
+  ],
+  "CA-05": [
+    "MASUDA",
+    "MCCLINTOCK"
+  ],
+  "CA-06": [
+    "PAN",
+    "KILEY"
+  ],
+  "CA-07": [
+    "VANG",
+    "MATSUI"
+  ],
+  "CA-08": [
+    "GARAMENDI",
+    "RECILE"
+  ],
+  "CA-09": [
+    "HARDER",
+    "MCBRIDE"
+  ],
+  "CA-10": [
+    "DESAULNIER",
+    "FRESE"
+  ],
+  "CA-11": [
+    "WIENER",
+    "CHAN"
+  ],
+  "CA-12": [
+    "SIMON",
+    "JOYCE"
+  ],
+  "CA-13": [
+    "GRAY",
+    "LINCOLN"
+  ],
+  "CA-14": [
+    "WAHAB",
+    "HERNANDEZ"
+  ],
+  "CA-15": [
+    "MULLIN",
+    "HOELTER"
+  ],
+  "CA-16": [
+    "LICCARDO",
+    "SOULE"
+  ],
+  "CA-17": [
+    "KHANNA",
+    "TANDON"
+  ],
+  "CA-18": [
+    "LOFGREN",
+    "LEWIS"
+  ],
+  "CA-19": [
+    "PANETTA",
+    "VERBICA"
+  ],
+  "CA-20": [
+    "SCOTTER",
+    "FONG"
+  ],
+  "CA-21": [
+    "COSTA",
+    "KIRKLAND"
+  ],
+  "CA-22": [
+    "VILLEGAS",
+    "VALADAO"
+  ],
+  "CA-23": [
+    "HODGE",
+    "OBERNOLTE"
+  ],
+  "CA-24": [
+    "CARBAJAL",
+    "SMITH"
+  ],
+  "CA-25": [
+    "RUIZ",
+    "MALES"
+  ],
+  "CA-26": [
+    "IRWIN",
+    "GALLUCCI"
+  ],
+  "CA-27": [
+    "WHITESIDES",
+    "GIBBS"
+  ],
+  "CA-28": [
+    "CHU",
+    "VERLATO"
+  ],
+  "CA-29": [
+    "RIVAS",
+    "DUENAS"
+  ],
+  "CA-30": [
+    "FRIEDMAN",
+    "MEYERS"
+  ],
+  "CA-31": [
+    "CISNEROS",
+    "CHING"
+  ],
+  "CA-32": [
+    "SHERMAN",
+    "THOMPSON"
+  ],
+  "CA-33": [
+    "AGUILAR",
+    "VARGAS"
+  ],
+  "CA-34": [
+    "GOMEZ",
+    "GONZALES-TORRES"
+  ],
+  "CA-35": [
+    "TORRES",
+    "CARGILE"
+  ],
+  "CA-36": [
+    "LIEU",
+    "BRIGNANO"
+  ],
+  "CA-37": [
+    "KAMLAGER-DOVE",
+    "MOTA"
+  ],
+  "CA-38": [
+    "SOLIS",
+    "CASAS"
+  ],
+  "CA-39": [
+    "TAKANO",
+    "MANOS"
+  ],
+  "CA-40": [
+    "CALVERT",
+    "KIM"
+  ],
+  "CA-41": [
+    "SANCHEZ",
+    "CLEMMONS"
+  ],
+  "CA-42": [
+    "GARCIA",
+    "BURLEY"
+  ],
+  "CA-43": [
+    "WATERS",
+    "MORALES"
+  ],
+  "CA-44": [
+    "BARRAGAN",
+    "ANGEL"
+  ],
+  "CA-45": [
+    "TRAN",
+    "VO"
+  ],
+  "CA-46": [
+    "CORREA",
+    "PAN"
+  ],
+  "CA-47": [
+    "MIN",
+    "ROUX"
+  ],
+  "CA-48": [
+    "WILPERT",
+    "DESMOND"
+  ],
+  "CA-49": [
+    "LEVIN",
+    "KURDIAN"
+  ],
+  "CA-50": [
+    "PETERS",
+    "COHEN"
+  ],
+  "CA-51": [
+    "JACOBS",
+    "CABRERA"
+  ],
+  "CA-52": [
+    "VARGAS",
+    "BELLE"
+  ],
+  "CO-01": [
+    "KIROS",
+    "PETERSON"
+  ],
+  "CO-02": [
+    "NEGUSE",
+    "DENNISON"
+  ],
+  "CO-03": [
+    "ROMERO",
+    "HURD"
+  ],
+  "CO-04": [
+    "LAUBACHER",
+    "BOEBERT"
+  ],
+  "CO-05": [
+    "KILLIN",
+    "CRANK"
+  ],
+  "CO-06": [
+    "CROW",
+    "CLARK"
+  ],
+  "CO-07": [
+    "PETTERSEN",
+    "BENNETT"
+  ],
+  "CO-08": [
+    "RUTINEL",
+    "EVANS"
+  ],
+  "GA-01": [
+    "HOLLOWELL",
+    "KINGSTON"
+  ],
+  "GA-02": [
+    "BISHOP",
+    "DAY"
+  ],
+  "GA-03": [
+    "KELLER",
+    "JACK"
+  ],
+  "GA-04": [
+    "JOHNSON",
+    "DUFFIE"
+  ],
+  "GA-05": [
+    "WILLIAMS",
+    "SALVESEN"
+  ],
+  "GA-06": [
+    "MCBATH",
+    "MARTIN"
+  ],
+  "GA-07": [
+    "KOZYCKI",
+    "MCCORMICK"
+  ],
+  "GA-08": [
+    "ESTI",
+    "SCOTT"
+  ],
+  "GA-09": [
+    "GEGEN",
+    "CLYDE"
+  ],
+  "GA-10": [
+    "DELANCY",
+    "GAINES"
+  ],
+  "GA-11": [
+    "HARDEN",
+    "COWAN"
+  ],
+  "GA-12": [
+    "SMITH",
+    "ALLEN"
+  ],
+  "GA-13": [
+    "CLARK",
+    "CHAVEZ"
+  ],
+  "GA-14": [
+    "HARRIS",
+    "FULLER"
+  ],
+  "ID-01": [
+    "PETERSON",
+    "FULCHER"
+  ],
+  "ID-02": [
+    "GILBREATH",
+    "SIMPSON"
+  ],
+  "IL-01": [
+    "JACKSON",
+    "MAXWELL"
+  ],
+  "IL-02": [
+    "MILLER",
+    "NOACK"
+  ],
+  "IL-03": [
+    "RAMIREZ",
+    "OAKLEY"
+  ],
+  "IL-04": [
+    "GARCIA",
+    "CASTILLO"
+  ],
+  "IL-05": [
+    "QUIGLEY",
+    "HANSON"
+  ],
+  "IL-06": [
+    "CASTEN",
+    "CONFORTI"
+  ],
+  "IL-07": [
+    "FORD",
+    "KOPPIE"
+  ],
+  "IL-08": [
+    "BEAN",
+    "DAVIS"
+  ],
+  "IL-09": [
+    "BISS",
+    "ELLESON"
+  ],
+  "IL-10": [
+    "SCHNEIDER",
+    "LAMBRECHT"
+  ],
+  "IL-11": [
+    "FOSTER",
+    "WALTER"
+  ],
+  "IL-12": [
+    "FORTIER",
+    "BOST"
+  ],
+  "IL-13": [
+    "BUDZINSKI",
+    "WILSON"
+  ],
+  "IL-14": [
+    "UNDERWOOD",
+    "MARTER"
+  ],
+  "IL-15": [
+    "TODD",
+    "MILLER"
+  ],
+  "IL-16": [
+    "NOLLEY",
+    "LAHOOD"
+  ],
+  "IL-17": [
+    "SORENSEN",
+    "VANCIL"
+  ],
+  "IN-01": [
+    "MRVAN",
+    "REGNITZ"
+  ],
+  "IN-02": [
+    "DECIO",
+    "YAKYM"
+  ],
+  "IN-03": [
+    "THOMPSON",
+    "STUTZMAN"
+  ],
+  "IN-04": [
+    "COX",
+    "BAIRD"
+  ],
+  "IN-05": [
+    "FORD",
+    "SPARTZ"
+  ],
+  "IN-06": [
+    "WIRTH",
+    "SHREVE"
+  ],
+  "IN-07": [
+    "CARSON",
+    "MCAULEY"
+  ],
+  "IN-08": [
+    "ALLEN",
+    "MESSMER"
+  ],
+  "IN-09": [
+    "MEYER",
+    "HOUCHIN"
+  ],
+  "IA-01": [
+    "BOHANNAN",
+    "MILLER-MEEKS"
+  ],
+  "IA-02": [
+    "JAMES",
+    "MITCHELL"
+  ],
+  "IA-03": [
+    "GARRIOTT",
+    "NUNN"
+  ],
+  "IA-04": [
+    "DAWSON",
+    "MCGOWAN"
+  ],
+  "KY-01": [
+    "COMER"
+  ],
+  "KY-02": [
+    "WINGFIELD",
+    "GUTHRIE"
+  ],
+  "KY-03": [
+    "RODRIGUEZ"
+  ],
+  "KY-04": [
+    "STRANGE",
+    "GALLREIN"
+  ],
+  "KY-05": [
+    "ROGERS"
+  ],
+  "KY-06": [
+    "DEMBO",
+    "ALVARADO"
+  ],
+  "ME-01": [
+    "PINGREE",
+    "RUSSELL"
+  ],
+  "ME-02": [
+    "DUNLAP",
+    "LEPAGE"
+  ],
+  "MD-01": [
+    "SCHWARTZ",
+    "HARRIS"
+  ],
+  "MD-02": [
+    "OLSZEWSKI",
+    "WALLACE"
+  ],
+  "MD-03": [
+    "ELFRETH",
+    "FLOWERS"
+  ],
+  "MD-04": [
+    "IVEY",
+    "MCDERMOTT"
+  ],
+  "MD-05": [
+    "BOAFO",
+    "CHAFFEE"
+  ],
+  "MD-06": [
+    "DELANEY",
+    "FICKER"
+  ],
+  "MD-07": [
+    "MFUME",
+    "COLLIER"
+  ],
+  "MD-08": [
+    "RASKIN",
+    "RILEY"
+  ],
+  "MS-01": [
+    "JOHNSON",
+    "KELLY"
+  ],
+  "MS-02": [
+    "THOMPSON",
+    "ELLER"
+  ],
+  "MS-03": [
+    "CHIARADIO",
+    "GUEST"
+  ],
+  "MS-04": [
+    "HULUM",
+    "EZELL"
+  ],
+  "MT-01": [
+    "FORSTAG",
+    "FLINT",
+    "SHEEDY"
+  ],
+  "MT-02": [
+    "MILLER",
+    "DOWNING",
+    "MCCRACKEN"
+  ],
+  "NE-01": [
+    "BACKEMEYER",
+    "FLOOD",
+    "SANDMAN"
+  ],
+  "NE-02": [
+    "POWELL",
+    "HARDING",
+    "FOREMAN"
+  ],
+  "NE-03": [
+    "STILLE",
+    "SMITH",
+    "ELSE"
+  ],
+  "NV-01": [
+    "TITUS",
+    "BUCK"
+  ],
+  "NV-02": [
+    "BENITEZ-THOMPSON",
+    "FLIPPO"
+  ],
+  "NV-03": [
+    "LEE",
+    "DONNELL"
+  ],
+  "NV-04": [
+    "WHIPPLE"
+  ],
+  "NJ-02": [
+    "MULLOCK"
+  ],
+  "NJ-03": [
+    "MCGUIRE"
+  ],
+  "NJ-04": [
+    "PEACE"
+  ],
+  "NJ-06": [
+    "PALLONE"
+  ],
+  "NJ-07": [
+    "BENNETT"
+  ],
+  "NJ-08": [
+    "MENENDEZ"
+  ],
+  "NJ-09": [
+    "PINO"
+  ],
+  "NJ-10": [
+    "MCIVER"
+  ],
+  "NJ-11": [
+    "MEJIA"
+  ],
+  "NJ-12": [
+    "HAMAWY",
+    "MELE"
+  ],
+  "NM-01": [
+    "STANSBURY",
+    "OKPAREKE"
+  ],
+  "NM-02": [
+    "VASQUEZ",
+    "CUNNINGHAM"
+  ],
+  "NM-03": [
+    "FERNANDEZ",
+    "ZAMORA"
+  ],
+  "NY-01": [
+    "GALLANT"
+  ],
+  "NY-03": [
+    "SUOZZI",
+    "LIPETRI"
+  ],
+  "NY-04": [
+    "DRISCOLL"
+  ],
+  "NY-06": [
+    "MENG"
+  ],
+  "NY-07": [
+    "VALDEZ"
+  ],
+  "NY-09": [
+    "CLARKE"
+  ],
+  "NY-10": [
+    "LANDER"
+  ],
+  "NY-11": [
+    "DECILLIS"
+  ],
+  "NY-12": [
+    "LASHER"
+  ],
+  "NY-13": [
+    "CHEVALIER"
+  ],
+  "NY-14": [
+    "OCASIO-CORTEZ"
+  ],
+  "NY-15": [
+    "TORRES"
+  ],
+  "NY-17": [
+    "CONLEY"
+  ],
+  "NY-19": [
+    "OBERACKER"
+  ],
+  "NY-21": [
+    "GENDEBIEN",
+    "CONSTANTINO"
+  ],
+  "NY-23": [
+    "GIES"
+  ],
+  "NY-24": [
+    "ELLMAN"
+  ],
+  "NY-25": [
+    "MORELLE"
+  ],
+  "NC-01": [
+    "BUCKHOUT"
+  ],
+  "NC-03": [
+    "."
+  ],
+  "NC-04": [
+    "FOUSHEE"
+  ],
+  "NC-05": [
+    "HUBBARD",
+    "FOXX"
+  ],
+  "NC-06": [
+    "JEFFERSON"
+  ],
+  "NC-07": [
+    "ROUZER"
+  ],
+  "NC-08": [
+    "WATSON"
+  ],
+  "NC-09": [
+    "OJEDA"
+  ],
+  "NC-10": [
+    "BELL",
+    "HARRIGAN"
+  ],
+  "NC-11": [
+    "AGER",
+    "EDWARDS"
+  ],
+  "NC-12": [
+    "ADAMS",
+    "CODIGA"
+  ],
+  "NC-13": [
+    "BARRINGER",
+    "KNOTT"
+  ],
+  "NC-14": [
+    "WOMACK",
+    "MOORE"
+  ],
+  "OH-01": [
+    "LANDSMAN",
+    "CONROY"
+  ],
+  "OH-02": [
+    "MAZZUCKELLI",
+    "TAYLOR"
+  ],
+  "OH-03": [
+    "BEATTY",
+    "DULANEY"
+  ],
+  "OH-04": [
+    "KOLASINSKI",
+    "JORDAN"
+  ],
+  "OH-05": [
+    "SHAVER",
+    "LATTA"
+  ],
+  "OH-06": [
+    "KIRTLEY",
+    "RULLI"
+  ],
+  "OH-07": [
+    "POINDEXTER",
+    "MILLER"
+  ],
+  "OH-08": [
+    "ENOCH",
+    "DAVIDSON"
+  ],
+  "OH-09": [
+    "KAPTUR",
+    "MERRIN"
+  ],
+  "OH-10": [
+    "KNICKERBOCKER",
+    "TURNER"
+  ],
+  "OH-11": [
+    "BROWN",
+    "KIRCHNER"
+  ],
+  "OH-12": [
+    "CHRISTIAN",
+    "BALDERSON"
+  ],
+  "OH-13": [
+    "SYKES",
+    "COLEMAN"
+  ],
+  "OH-14": [
+    "JUKIC",
+    "JOYCE"
+  ],
+  "OH-15": [
+    "LEONARD",
+    "CAREY"
+  ],
+  "OK-01": [
+    "TEDFORD"
+  ],
+  "OK-02": [
+    "WADE",
+    "BRECHEEN"
+  ],
+  "OK-03": [
+    "BYRD",
+    "LUCAS"
+  ],
+  "OK-04": [
+    "JACOB",
+    "COLE"
+  ],
+  "OK-05": [
+    "NELSON"
+  ],
+  "OR-01": [
+    "BONAMICI",
+    "KAHL"
+  ],
+  "OR-02": [
+    "BECK",
+    "BENTZ"
+  ],
+  "OR-03": [
+    "DEXTER",
+    "AYLES"
+  ],
+  "OR-04": [
+    "HOYLE",
+    "DESPAIN"
+  ],
+  "OR-05": [
+    "BYNUM",
+    "ADAIR"
+  ],
+  "OR-06": [
+    "SALINAS",
+    "RUSS"
+  ],
+  "PA-01": [
+    "HARVIE",
+    "FITZPATRICK"
+  ],
+  "PA-02": [
+    "BOYLE",
+    "ARRIAGA"
+  ],
+  "PA-03": [
+    "RABB"
+  ],
+  "PA-04": [
+    "DEAN",
+    "STUSKI"
+  ],
+  "PA-05": [
+    "SCANLON",
+    "MANGANARO"
+  ],
+  "PA-06": [
+    "HOULAHAN",
+    "YOUNG"
+  ],
+  "PA-07": [
+    "BROOKS",
+    "MACKENZIE"
+  ],
+  "PA-08": [
+    "COGNETTI",
+    "BRESNAHAN"
+  ],
+  "PA-09": [
+    "WALLACE",
+    "MEUSER"
+  ],
+  "PA-10": [
+    "STELSON",
+    "PERRY"
+  ],
+  "PA-11": [
+    "MANNION",
+    "SMUCKER"
+  ],
+  "PA-12": [
+    "LEE",
+    "HAYES"
+  ],
+  "PA-13": [
+    "FARNHAM",
+    "JOYCE"
+  ],
+  "PA-14": [
+    "BRADSTOCK",
+    "RESCHENTHALER"
+  ],
+  "PA-15": [
+    "BILGER",
+    "THOMPSON"
+  ],
+  "PA-16": [
+    "WAGNER",
+    "KELLY"
+  ],
+  "PA-17": [
+    "DELUZIO",
+    "GUY"
+  ],
+  "SC-01": [
+    "LACORE",
+    "HONEYCUTT"
+  ],
+  "SC-02": [
+    "KHALIFA",
+    "WILSON"
+  ],
+  "SC-03": [
+    "LEHMACHER"
+  ],
+  "SC-04": [
+    "TIMMONS"
+  ],
+  "SC-05": [
+    "DITTMER"
+  ],
+  "SC-06": [
+    "CLYBURN",
+    "PETERSON"
+  ],
+  "TX-01": [
+    "PRINCE",
+    "MORAN"
+  ],
+  "TX-02": [
+    "FINNIE",
+    "TOTH"
+  ],
+  "TX-03": [
+    "HUNT",
+    "SELF"
+  ],
+  "TX-04": [
+    "PEARCE",
+    "FALLON"
+  ],
+  "TX-05": [
+    "HOCKETT",
+    "GOODEN"
+  ],
+  "TX-06": [
+    "MINTON",
+    "ELLZEY"
+  ],
+  "TX-07": [
+    "FLETCHER",
+    "HALE"
+  ],
+  "TX-08": [
+    "JONES",
+    "STEINMANN"
+  ],
+  "TX-09": [
+    "GUTIERREZ",
+    "MEALER"
+  ],
+  "TX-10": [
+    "ROURK",
+    "GOBER"
+  ],
+  "TX-11": [
+    "REYNOLDS",
+    "PFLUGER"
+  ],
+  "TX-12": [
+    "PRILLIMAN",
+    "GOLDMAN"
+  ],
+  "TX-13": [
+    "NAIR",
+    "JACKSON"
+  ],
+  "TX-14": [
+    "BARTIE",
+    "WEBER"
+  ],
+  "TX-15": [
+    "PULIDO",
+    "CRUZ"
+  ],
+  "TX-16": [
+    "ESCOBAR"
+  ],
+  "TX-17": [
+    "SHEPARD",
+    "SESSIONS"
+  ],
+  "TX-18": [
+    "MENEFEE",
+    "WHITFIELD"
+  ],
+  "TX-19": [
+    "RABLE",
+    "SELL"
+  ],
+  "TX-20": [
+    "CASTRO",
+    "BAEZ"
+  ],
+  "TX-21": [
+    "HOOK",
+    "TEIXEIRA"
+  ],
+  "TX-22": [
+    "GREENE-SCOTT",
+    "NEHLS"
+  ],
+  "TX-23": [
+    "STOUT",
+    "HERRERA"
+  ],
+  "TX-24": [
+    "BURGE",
+    "DUYNE"
+  ],
+  "TX-25": [
+    "SIMS",
+    "WILLIAMS"
+  ],
+  "TX-26": [
+    "SHOOK",
+    "GILL"
+  ],
+  "TX-27": [
+    "LLOYD",
+    "CLOUD"
+  ],
+  "TX-28": [
+    "CUELLAR",
+    "TIJERINA"
+  ],
+  "TX-29": [
+    "GARCIA",
+    "FIERRO"
+  ],
+  "TX-30": [
+    "HAYNES",
+    "JACKSON"
+  ],
+  "TX-31": [
+    "EARLY",
+    "CARTER"
+  ],
+  "TX-32": [
+    "BARRIOS",
+    "YARBROUGH"
+  ],
+  "TX-33": [
+    "ALLRED",
+    "GILLESPIE"
+  ],
+  "TX-34": [
+    "GONZALEZ",
+    "FLORES"
+  ],
+  "TX-35": [
+    "GARCIA",
+    "CRUZ"
+  ],
+  "TX-36": [
+    "HART",
+    "BABIN"
+  ],
+  "TX-37": [
+    "CASAR"
+  ],
+  "TX-38": [
+    "MCDONOUGH",
+    "BONCK"
+  ],
+  "UT-01": [
+    "MCADAMS"
+  ],
+  "UT-02": [
+    "MOORE"
+  ],
+  "UT-03": [
+    "MALOY"
+  ],
+  "WV-01": [
+    "GEORGE",
+    "MILLER"
+  ],
+  "WV-02": [
+    "PARSI",
+    "MOORE"
+  ],
+  "TX-senate": [],
+  "_review": {
+    "oneNominee": [
+      "AL-03:ROGERS",
+      "AL-05:SNEED",
+      "AZ-03:ANSARI",
+      "AR-04:RUSSELL",
+      "KY-01:COMER",
+      "KY-03:RODRIGUEZ",
+      "KY-05:ROGERS",
+      "NV-04:WHIPPLE",
+      "NJ-02:MULLOCK",
+      "NJ-03:MCGUIRE",
+      "NJ-04:PEACE",
+      "NJ-06:PALLONE",
+      "NJ-07:BENNETT",
+      "NJ-08:MENENDEZ",
+      "NJ-09:PINO",
+      "NJ-10:MCIVER",
+      "NJ-11:MEJIA",
+      "NY-01:GALLANT",
+      "NY-04:DRISCOLL",
+      "NY-06:MENG",
+      "NY-07:VALDEZ",
+      "NY-09:CLARKE",
+      "NY-10:LANDER",
+      "NY-11:DECILLIS",
+      "NY-12:LASHER",
+      "NY-13:CHEVALIER",
+      "NY-14:OCASIO-CORTEZ",
+      "NY-15:TORRES",
+      "NY-17:CONLEY",
+      "NY-19:OBERACKER",
+      "NY-23:GIES",
+      "NY-24:ELLMAN",
+      "NY-25:MORELLE",
+      "NC-01:BUCKHOUT",
+      "NC-03:.",
+      "NC-04:FOUSHEE",
+      "NC-06:JEFFERSON",
+      "NC-07:ROUZER",
+      "NC-08:WATSON",
+      "NC-09:OJEDA",
+      "OK-01:TEDFORD",
+      "OK-05:NELSON",
+      "PA-03:RABB",
+      "SC-03:LEHMACHER",
+      "SC-04:TIMMONS",
+      "SC-05:DITTMER",
+      "TX-16:ESCOBAR",
+      "TX-37:CASAR",
+      "UT-01:MCADAMS",
+      "UT-02:MOORE",
+      "UT-03:MALOY"
+    ],
+    "threePlusNames": [
+      "MT-01:FORSTAG/FLINT/SHEEDY",
+      "MT-02:MILLER/DOWNING/MCCRACKEN",
+      "NE-01:BACKEMEYER/FLOOD/SANDMAN",
+      "NE-02:POWELL/HARDING/FOREMAN",
+      "NE-03:STILLE/SMITH/ELSE"
+    ],
+    "commonSurname": [
+      "AZ-05:LEE",
+      "AR-02:JONES",
+      "CA-04:THOMPSON/JONES",
+      "CA-12:JOYCE",
+      "CA-24:SMITH",
+      "CA-32:THOMPSON",
+      "CA-42:GARCIA",
+      "CO-01:PETERSON",
+      "GA-12:SMITH",
+      "ID-01:PETERSON",
+      "IL-01:JACKSON",
+      "IL-02:MILLER",
+      "IL-04:GARCIA",
+      "IL-15:MILLER",
+      "IN-03:THOMPSON",
+      "MS-02:THOMPSON",
+      "MT-02:MILLER",
+      "NE-03:SMITH",
+      "NV-03:LEE",
+      "NC-14:MOORE",
+      "OH-07:MILLER",
+      "OH-14:JOYCE",
+      "PA-12:LEE",
+      "PA-13:JOYCE",
+      "PA-15:THOMPSON",
+      "SC-06:PETERSON",
+      "TX-08:JONES",
+      "TX-13:JACKSON",
+      "TX-29:GARCIA",
+      "TX-30:JACKSON",
+      "TX-35:GARCIA",
+      "UT-02:MOORE",
+      "WV-01:MILLER",
+      "WV-02:MOORE"
+    ],
+    "notHeldYet": [
+      "AK (Aug 18 2026)",
+      "CT (Aug 11 2026)",
+      "DE (Sep 15 2026)",
+      "FL (Aug 18 2026)",
+      "HI (Aug 8 2026)",
+      "KS (Aug 4 2026)",
+      "MA (Sep 1 2026)",
+      "MI (Aug 4 2026)",
+      "MN (Aug 11 2026)",
+      "MO (Aug 4 2026)",
+      "NH (Sep 8 2026)",
+      "RI (Sep 8 2026)",
+      "TN (Aug 6 2026)",
+      "VT (Aug 11 2026)",
+      "VA (Aug 4 2026)",
+      "WA (Aug 4 2026)",
+      "WI (Aug 11 2026)",
+      "WY (Aug 18 2026)"
+    ]
+  }
 }
