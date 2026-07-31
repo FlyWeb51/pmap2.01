@@ -31,17 +31,29 @@
   h1{margin:0;font-size:17px;letter-spacing:.06em;text-transform:uppercase}
   .sub{font-size:11px;color:var(--dim);letter-spacing:.05em;margin-top:2px}
 
-  .fix{background:#2a1416;border:1px solid #6d2b30;border-left:3px solid var(--sr);
-       border-radius:6px;padding:12px 14px;margin-bottom:14px;font-size:13px;color:#f3c9cc}
-  .fix b{color:#ff9ba3}
-  .warn{background:#241d0e;border:1px solid #5e4d1a;border-left:3px solid var(--gold);
-        border-radius:6px;padding:11px 14px;margin-bottom:20px;font-size:12.5px;color:#e8d69a}
-  .warn b{color:var(--gold)}
+  /* One calm disclosure instead of two stacked alarm boxes. The corrections stay
+     on the page - they just no longer shout over the data they describe. */
+  details.notes{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+       margin-bottom:18px;font-size:12.5px;color:var(--dim)}
+  details.notes>summary{cursor:pointer;list-style:none;padding:10px 14px;display:flex;
+       align-items:center;gap:10px;color:var(--ink);font-size:12.5px}
+  details.notes>summary::-webkit-details-marker{display:none}
+  details.notes>summary:hover{background:var(--panel2)}
+  details.notes>summary .chev{margin-left:auto;color:var(--dimmer);font-size:11px;transition:transform .15s}
+  details.notes[open]>summary .chev{transform:rotate(90deg)}
+  .tagline{display:inline-flex;align-items:center;gap:6px;padding:2px 9px;border-radius:20px;
+       font-size:11px;background:var(--panel2);border:1px solid var(--line);color:var(--dim)}
+  .tagline b{color:var(--ink)}
+  .notes .body{padding:0 14px 13px;line-height:1.6;border-top:1px solid var(--line);padding-top:11px}
+  .notes .body p{margin:0 0 9px}
+  .notes .body p:last-child{margin-bottom:0}
+  .notes b{color:var(--ink)}
+  .notes .amber{color:var(--gold)}
 
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:9px;margin-bottom:20px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:11px 13px}
   .card .lbl{font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--dimmer)}
-  .card .val{font-size:22px;font-weight:700;margin-top:3px;letter-spacing:-.4px}
+  .card .val{font-size:21px;font-weight:700;margin-top:3px;letter-spacing:-.4px}
   .card .note{font-size:10.5px;color:var(--dimmer);margin-top:2px;line-height:1.35}
   .d{color:var(--nd)} .r{color:var(--nr)} .t{color:var(--toss)} .g{color:var(--gold)}
 
@@ -52,8 +64,8 @@
   nav.tabs button.on{color:var(--ink);border-bottom-color:var(--focus);font-weight:600}
 
   .panel{display:none} .panel.on{display:block}
-  .ptitle{font-size:14.5px;font-weight:700;margin:0 0 4px}
-  .pdesc{color:var(--dim);font-size:12.5px;margin:0 0 13px;max-width:800px}
+  .ptitle{font-size:15px;font-weight:700;margin:0 0 5px;letter-spacing:-.2px}
+  .pdesc{color:var(--dim);font-size:12.5px;margin:0 0 13px;max-width:74ch;line-height:1.6}
   .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
   select,input[type=search]{background:var(--panel2);color:var(--ink);border:1px solid var(--line);
         border-radius:6px;padding:6px 9px;font:inherit;font-size:12.5px}
@@ -76,6 +88,8 @@
   .pill.poll{background:#08301c;color:#5ee08d;border:1px solid #14532d}
   .pill.rating{background:#2a2716;color:#cbb95a;border:1px solid #4d4a1f}
   .flag{color:var(--gold);cursor:help}
+  .xh line{stroke:var(--dimmer);stroke-dasharray:3 3;pointer-events:none}
+  .xh circle{pointer-events:none}
   #tip{position:fixed;pointer-events:none;background:#05080d;border:1px solid var(--line);
        border-radius:6px;padding:7px 10px;font-size:12px;opacity:0;transition:opacity .1s;z-index:50;max-width:280px}
   footer{margin-top:30px;padding-top:15px;border-top:1px solid var(--line);color:var(--dimmer);font-size:11.5px}
@@ -99,24 +113,28 @@
 
 <div class="wrap">
 
-<div class="fix">
-  <b>Correction, July 29.</b> An earlier version of this page reported a national average of D&nbsp;+1.18 and
-  a projected Democratic range of 222–244 seats. Those figures were wrong. They came from a source file whose
-  party labels were scrambled — it listed Rep. Robert Aderholt (R-AL) as a Democratic incumbent and rated
-  AL-07, Terri Sewell's safe Democratic seat, as Solid Republican. In all, <b id="fixn"></b> districts were
-  mislabelled. This page has been rebuilt from Election Center's own ratings snapshot, which splits
-  <b>212 D-side / 220 R-side</b> and matches the current chamber. <b>The corrected projection points the other
-  way:</b> Democrats now land at <b id="fixrange"></b> seats, short of the 218 needed unless they take nearly
-  every tossup.
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px">
+  <span class="tagline"><b id="pbA"></b>&nbsp;district with direct polling</span>
+  <span class="tagline"><b id="roA"></b>&nbsp;rating-derived</span>
+  <span class="tagline"><b>432</b>&nbsp;rated &middot; 3 unrated (vacant)</span>
+  <span class="tagline"><b id="gbA"></b>&nbsp;generic-ballot polls</span>
 </div>
 
-<div class="warn">
-  <b>Only <span id="pb"></span> district has a real public poll.</b> Individual House districts are barely
-  polled — everything else here is a <b>rating-derived estimate</b>, drawn faded and tagged
-  <span class="pill rating">rating</span>. The one genuinely dated polling series on this page is the
-  national generic ballot, under <b>Generic ballot</b>. 3 of 435 seats are unrated (vacant).
-  Candidate names are withheld unless verified — see the district table.
-</div>
+<details class="notes">
+  <summary>How to read this page &mdash; and a correction from July 29 <span class="chev">&#9656;</span></summary>
+  <div class="body">
+    <p><b>Most numbers here are estimates, not polls.</b> Only <b id="pbB"></b> of 432 rated districts has a
+    real public poll. Individual House districts are barely polled, so the rest are
+    <b>rating-derived</b> &mdash; drawn faded and tagged <span class="pill rating">rating</span> throughout.
+    The one genuinely dated series is the national generic ballot.</p>
+    <p><span class="amber">Correction, July 29.</span> An earlier version reported a national average of
+    D&nbsp;+1.18 and a Democratic range of 222&ndash;244 seats. Those were wrong &mdash; they came from a
+    source file with scrambled party labels, which listed Rep. Robert Aderholt (R-AL) as a Democrat and rated
+    Terri Sewell's safe Democratic seat as Solid Republican. <b id="fixn"></b> districts were mislabelled.
+    Rebuilt from Election Center's own ratings snapshot (212 D-side / 220 R-side, matching the current
+    chamber). The corrected projection points the other way: Democrats land at <b id="fixrange"></b> seats.</p>
+  </div>
+</details>
 
 <div class="cards" id="cards"></div>
 
@@ -130,9 +148,8 @@
 
 <section class="panel on" id="p-generic">
   <p class="ptitle">National generic ballot — the real polling</p>
-  <p class="pdesc">139 dated public polls, March through July 2026. Dots are individual polls; the line is a
-    weighted rolling average (30-day half-life, √sample size capped at 2×, likely-voter samples favoured,
-    partisan-sponsored polls halved). This is the only series here with enough dated polling to plot over time.</p>
+  <p class="pdesc">139 dated public polls, March&ndash;July 2026. Dots are individual polls; the lines are a weighted
+    rolling average. <b>Move across the chart to read any date.</b></p>
   <div class="chart"><svg id="svg-gb"></svg></div>
   <div class="legend">
     <span><i style="background:var(--nd)"></i>Democratic share</span>
@@ -147,8 +164,7 @@
 
 <section class="panel" id="p-bars">
   <p class="ptitle">How far ahead is the leader in each race?</p>
-  <p class="pdesc">One diverging bar per district — right for a Democratic advantage, left for Republican.
-    Faded bars are rating-derived estimates rather than measured polling. Closest races first.</p>
+  <p class="pdesc">Right for a Democratic advantage, left for Republican. Faded bars are rating-derived. Hover any bar for detail.</p>
   <div class="controls">
     <select id="b-scope">
       <option value="comp">Competitive only (within 10 pts)</option>
@@ -167,9 +183,8 @@
 
 <section class="panel" id="p-seats">
   <p class="ptitle">Seat projection</p>
-  <p class="pdesc">Every district sorted by margin, most Republican to most Democratic. The line is the
-    cumulative Democratic seat count; where it crosses 218 decides control. Seats inside ±2 points are shaded
-    purple and counted as undecided rather than awarded.</p>
+  <p class="pdesc">Districts sorted by margin. The line is the cumulative Democratic seat count; where it crosses 218
+    decides control. Seats inside ±2 points count as undecided.</p>
   <div class="chart"><svg id="svg-seats"></svg></div>
   <div class="legend">
     <span><i style="background:var(--sd)"></i>D-favoured</span>
@@ -182,8 +197,7 @@
 
 <section class="panel" id="p-dist">
   <p class="ptitle">Distribution of ratings</p>
-  <p class="pdesc">How many seats sit in each rating band. The towers at the edges are the safe seats — a few
-    dozen races decide the chamber and the rest are settled before anyone votes.</p>
+  <p class="pdesc">Seats per rating band. The towers at the edges are safe seats &mdash; a few dozen races decide the chamber.</p>
   <div class="chart"><svg id="svg-dist"></svg></div>
 </section>
 
@@ -235,7 +249,9 @@ const col=m=>m>2?"var(--sd)":m<-2?"var(--sr)":"var(--toss)";
 $("#gen").textContent=new Date(S.generated).toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
 $("#fixn").textContent=S.csvDisagreements;
 $("#fixrange").textContent=S.dRangeLow+"–"+S.dRangeHigh;
-$("#pb").textContent=S.pollBackedSeats;
+["#pbA","#pbB"].forEach(function(k){var e=$(k); if(e) e.textContent=S.pollBackedSeats;});
+if($("#roA")) $("#roA").textContent=(S.ratedSeats-S.pollBackedSeats);
+if($("#gbA")) $("#gbA").textContent=S.genericPollCount;
 $("#disn").textContent=S.csvDisagreements;
 $("#gbm").textContent="D +"+GB.average.margin.toFixed(1);
 $("#rside").textContent=S.rSide;
@@ -294,6 +310,39 @@ function drawGB(){
   s.filter((_,i)=>i%Math.ceil(s.length/6)===0).concat([last]).forEach(p=>{
     const t=el("text",{x:X(p.date),y:H-12,class:"glabel","text-anchor":"middle"});
     t.textContent=new Date(p.date).toLocaleDateString("en-US",{month:"short",day:"numeric"});svg.appendChild(t);});
+
+  /* Crosshair readout. Previously only the individual dots responded, so the
+     gaps between polls were dead space. Now anywhere across the plot reports
+     the averaged D/R and margin for the nearest date. */
+  const g=el("g",{class:"xh",style:"opacity:0"});
+  const vline=el("line",{y1:T,y2:T+ih,stroke:"var(--dimmer)"});
+  const cd=el("circle",{r:4.5,fill:"var(--nd)",stroke:"#0e1420","stroke-width":1.5});
+  const cr=el("circle",{r:4.5,fill:"var(--nr)",stroke:"#0e1420","stroke-width":1.5});
+  g.appendChild(vline);g.appendChild(cd);g.appendChild(cr);svg.appendChild(g);
+  const hit=el("rect",{x:L,y:T,width:iw,height:ih,fill:"transparent",style:"cursor:crosshair"});
+  svg.appendChild(hit);
+  function near(px){
+    let best=s[0],bd=Infinity;
+    for(const p of s){const d=Math.abs(X(p.date)-px); if(d<bd){bd=d;best=p;}}
+    return best;
+  }
+  hit.addEventListener("mousemove",function(ev){
+    const r=svg.getBoundingClientRect();
+    const px=(ev.clientX-r.left)/r.width*W;
+    const p=near(px), x=X(p.date);
+    vline.setAttribute("x1",x);vline.setAttribute("x2",x);
+    cd.setAttribute("cx",x);cd.setAttribute("cy",Y(p.dem));
+    cr.setAttribute("cx",x);cr.setAttribute("cy",Y(p.rep));
+    g.setAttribute("style","opacity:1");
+    tip.innerHTML='<b>'+new Date(p.date).toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"})+'</b>'
+      +'<br><span style="color:var(--nd)">Democrats '+p.dem.toFixed(1)+'%</span>'
+      +'<br><span style="color:var(--nr)">Republicans '+p.rep.toFixed(1)+'%</span>'
+      +'<br><span style="color:var(--dim)">Margin '+(p.margin>0?"D +":"R +")+Math.abs(p.margin).toFixed(1)+'</span>';
+    tip.style.opacity=1;
+    tip.style.left=Math.min(ev.clientX+16,innerWidth-215)+"px";
+    tip.style.top=(ev.clientY+16)+"px";
+  });
+  hit.addEventListener("mouseleave",function(){ g.setAttribute("style","opacity:0"); tip.style.opacity=0; });
 }
 
 /* ---- margin bars ---- */
