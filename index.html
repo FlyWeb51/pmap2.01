@@ -923,5 +923,44 @@ header(); applyView(); setTab("house");
   };
 })();
 </script>
+<style>
+/* Hide the FEC key row: power-user field occupying permanent sidebar space and
+   clipping the district list. Kept in the DOM so loadFEC still reads DEMO_KEY. */
+.keyrow{display:none !important}
+#list{padding-bottom:14px}
+.d-body{padding-bottom:22px}
+</style>
+<script>
+(function(){
+  /* Polling rendered last, below Campaign Finance and District Profile, so the
+     headline number sat off the bottom of the panel. Promote it above finance. */
+  var busy=false;
+  function reorder(){
+    if(busy) return;
+    var body=document.querySelector(".d-body"); if(!body) return;
+    var out=document.getElementById("poll-out"); if(!out) return;
+    var poll=null, fin=null;
+    [].forEach.call(body.querySelectorAll(".d-sec"),function(s){
+      var t=(s.textContent||"").toLowerCase();
+      if(t.indexOf("polling")>-1) poll=s;
+      if(t.indexOf("campaign finance")>-1) fin=s;
+    });
+    if(!poll||!fin) return;
+    var pollIsAfter=!!(fin.compareDocumentPosition(poll)&Node.DOCUMENT_POSITION_FOLLOWING);
+    if(!pollIsAfter) return;
+    busy=true;
+    body.insertBefore(poll,fin);
+    body.insertBefore(out,fin);
+    busy=false;
+  }
+  var d=document.getElementById("detail");
+  if(d&&window.MutationObserver){
+    new MutationObserver(function(){ setTimeout(reorder,0); })
+      .observe(d,{childList:true,subtree:true});
+  }
+  document.addEventListener("click",function(){ setTimeout(reorder,120); setTimeout(reorder,600); },true);
+  setTimeout(reorder,800);
+})();
+</script>
 </body>
 </html>
