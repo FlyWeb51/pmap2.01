@@ -1,0 +1,49 @@
+name: Promote nominees (inbox -> live)
+
+# Deliberately separate from the fetch workflow and manual-only. Fetching is
+# safe and repeatable; promoting overwrites what the public site shows, so it
+# stays a decision someone makes rather than something that happens on a timer.
+#
+# Writes api/nominees.json AND data/nominees.json (the browser reads data/).
+
+on:
+  workflow_dispatch:
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Promote inbox into live nominee files
+        run: node scripts/promote-nominees.js
+
+      - name: Sanity check output
+        run: |
+          node -e "
+            const a = require('./api/nominees.json');
+            const b = require('./data/nominees.json');
+            const seats = k => Object.keys(k).filter(x => !x.startsWith('_')).length;
+            if (JSON.stringify(a) !== JSON.stringify(b))
+              throw new Error('api/ and data/ copies diverged');
+            if (!seats(a)) throw new Error('no seats written');
+            console.log('OK: ' + seats(a) + ' seats, both copies identical');
+          "
+
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add api/nominees.json data/nominees.json
+          git diff --staged --quiet || git commit -m "Nominees: promote inbox to live"
+          git pull --rebase origin main
+          git push
