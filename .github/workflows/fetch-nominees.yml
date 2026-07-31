@@ -1,0 +1,58 @@
+name: Fetch nominees (primary winners)
+
+# Separate from the 12-hour Data Hivemind on purpose: this hits a third-party
+# site 50 times and is the newer, less-proven scraper. If it breaks, the main
+# data refresh keeps running untouched.
+#
+# Writes ONLY to api/nominees-inbox.json. Promoting entries into
+# api/nominees.json (and data/nominees.json, which is the copy the browser
+# actually reads) stays a human step.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly, Mondays 09:00 UTC. Primaries land on Tuesdays, so this picks up
+    # results once they have settled rather than mid-count.
+    - cron: "0 9 * * 1"
+
+jobs:
+  fetch-nominees:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch nominees (50 state pages -> inbox for review)
+        run: node scripts/fetch-nominees.js
+
+      - name: Show what changed
+        run: |
+          echo "----- inbox summary -----"
+          node -e "
+            const d = require('./api/nominees-inbox.json');
+            const seats = Object.entries(d.seats || {});
+            const changed = seats.filter(([, v]) => v.changed);
+            console.log('seats parsed: ' + seats.length);
+            console.log('differ from live nominees.json: ' + changed.length);
+            const states = Object.entries(d.states || {});
+            const empty = states.filter(([, v]) => !v.seatsParsed);
+            console.log('states returning zero seats: ' + empty.length +
+              (empty.length ? ' -> ' + empty.map(([s]) => s).join(', ') : ''));
+          "
+
+      - name: Commit inbox
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add api/nominees-inbox.json
+          git diff --staged --quiet || git commit -m "Nominees: refresh inbox for review"
+          git pull --rebase origin main
+          git push
