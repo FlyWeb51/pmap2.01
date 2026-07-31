@@ -580,14 +580,14 @@ function renderFEC(out,t,cid,m,outId){
 let NOMINEES=null;
 async function getNominees(){
   if(NOMINEES) return NOMINEES;
-  try{ const r=await fetch("api/nominees.json",{cache:"no-store"}); NOMINEES=r.ok?await r.json():{}; }
+  try{ const r=await fetch("data/nominees.json",{cache:"no-store"}).then(function(r){return r.ok?r:fetch("api/nominees.json",{cache:"no-store"});}); NOMINEES=r.ok?await r.json():{}; }
   catch(e){ NOMINEES={}; }
   return NOMINEES;
 }
 let FEATURED=null;
 async function getFeatured(){
   if(FEATURED) return FEATURED;
-  try{ const r=await fetch("api/featured.json",{cache:"no-store"}); FEATURED=r.ok?await r.json():{}; }
+  try{ const r=await fetch("data/featured.json",{cache:"no-store"}).then(function(r){return r.ok?r:fetch("api/featured.json",{cache:"no-store"});}); FEATURED=r.ok?await r.json():{}; }
   catch(e){ FEATURED={}; }
   return FEATURED;
 }
