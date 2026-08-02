@@ -88,6 +88,7 @@
   .modebtn{position:absolute;right:14px;top:12px;z-index:20;display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
   .modebtn button{background:var(--panel);border:0;color:var(--ink-dim);padding:7px 12px;font-size:11px;cursor:pointer}
   .modebtn button.on{background:var(--panel-2);color:var(--ink);font-weight:600}
+  .dsq.selected,.stshape.selected{stroke:#fff;stroke-width:2.5px;filter:drop-shadow(0 0 4px rgba(255,255,255,.7))}
   #tt{position:absolute;pointer-events:none;background:rgba(10,15,24,.95);border:1px solid var(--line);border-radius:6px;padding:7px 10px;font-size:11.5px;z-index:40;display:none;max-width:240px;line-height:1.45}
   #board{position:absolute;inset:0;overflow-y:auto;padding:18px 24px;display:none}
   #board::-webkit-scrollbar{width:8px}#board::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
@@ -189,6 +190,7 @@
     <div class="modebtn" id="modebtn">
       <button class="on" data-m="rating">Rating</button>
       <button data-m="party">Current party</button>
+      <button data-m="kalshi">Kalshi odds</button>
     </div>
     <div class="zoomctl">
       <button id="z-in" aria-label="Zoom in">+</button>
@@ -326,7 +328,25 @@ function applyView(){ svg.setAttribute("viewBox",`${view.x} ${view.y} ${view.w} 
 
 let mode="rating", tab="house", selected=null;
 let filt={rating:"",party:"",state:"",q:""};
-function districtFill(x){ return mode==="party"?PCOLOR(x.party):(x.rating?RCOLOR[RANK[x.rating]]:css("--vac")); }
+let KALSHI_HOUSE=null, KALSHI_SENATE=null;
+async function loadKalshiAll(){
+  if(KALSHI_HOUSE) return;
+  try{ KALSHI_HOUSE=await(await fetch("data/kalshi/all-house.json",{cache:"no-store"})).json(); }catch{ KALSHI_HOUSE={}; }
+  try{ KALSHI_SENATE=await(await fetch("data/kalshi/all-senate.json",{cache:"no-store"})).json(); }catch{ KALSHI_SENATE={}; }
+}
+function kalshiColor(entry){
+  if(!entry) return css("--vac");
+  const d=entry.democrat?entry.democrat.pct:null, r=entry.republican?entry.republican.pct:null;
+  if(d==null&&r==null) return css("--vac");
+  const margin=(d??0)-(r??0);
+  if(margin>=30)return RCOLOR[0]; if(margin>=10)return RCOLOR[1]; if(margin>=2)return RCOLOR[2];
+  if(margin>-2)return margin>=0?RCOLOR[3]:RCOLOR[4];
+  if(margin>-10)return RCOLOR[5]; if(margin>-30)return RCOLOR[6]; return RCOLOR[7];
+}
+function districtFill(x){
+  if(mode==="kalshi"){ const key=`${x.st}-${String(x.d).padStart(2,"0")}`; return kalshiColor(KALSHI_HOUSE&&KALSHI_HOUSE[key]); }
+  return mode==="party"?PCOLOR(x.party):(x.rating?RCOLOR[RANK[x.rating]]:css("--vac"));
+}
 function passes(x){
   if(filt.state&&x.st!==filt.state)return false;
   if(filt.party&&(filt.party==="V"?x.party!=="V":x.party!==filt.party))return false;
@@ -339,11 +359,11 @@ function passes(x){
 
 function drawBase(interactive){
   for(const st of Object.keys(STATES)){
-    const p=el("path",{d:STATES[st].p,class:"stshape"+(interactive?" sen":"")});
+    const p=el("path",{d:STATES[st].p,class:"stshape"+(interactive?" sen":"")+(selected&&selected.stSen===st?" selected":"")});
     if(interactive){
       const pair=senOf(st);
       const ps=[...new Set(pair.map(m=>m.p))];
-      p.style.fill = pair.length? (ps.length===1?PCOLOR(ps[0]):css("--split")) : css("--land");
+      p.style.fill = mode==="kalshi" ? kalshiColor(KALSHI_SENATE&&KALSHI_SENATE[st]) : (pair.length? (ps.length===1?PCOLOR(ps[0]):css("--split")) : css("--land"));
       const up=pair.some(m=>m.e.startsWith("2027"));
       if(up) p.classList.add("upseat");
       if(filt.state&&st!==filt.state || filt.party&&!pair.some(m=>m.p===filt.party) || filt.q&&!pair.some(m=>m.n.toLowerCase().includes(filt.q))) p.classList.add("dim");
@@ -375,7 +395,7 @@ function drawHouse(){
     const d=DPATHS[x.id]; if(!d) return;
     let fill=districtFill(x);
     if(x.flip && mode==="rating") fill=`url(#flip${RANK[x.rating]})`;
-    const p=el("path",{d,fill,class:"dsq"+(passes(x)?"":" dim")});
+    const p=el("path",{d,fill,class:"dsq"+(passes(x)?"":" dim")+(selected&&selected.id===x.id?" selected":"")});
     p.addEventListener("click",()=>select(x));
     p.addEventListener("mousemove",e=>tooltip(e,ttHouse(x)));
     p.addEventListener("mouseleave",hideTT);
@@ -492,6 +512,7 @@ function renderBoard(){
 /* ---------- Detail + FEC ---------- */
 function select(x){
   selected=x;
+  redraw();
   const rEl=document.getElementById("d-rating");
   const body=document.getElementById("d-body");
   if(x.stSen){
@@ -831,7 +852,7 @@ document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>setTab(b.data
 document.querySelectorAll("#modebtn button").forEach(b=>b.onclick=()=>{
   mode=b.dataset.m;
   document.querySelectorAll("#modebtn button").forEach(x=>x.classList.toggle("on",x===b));
-  redraw();
+  if(mode==="kalshi"){ loadKalshiAll().then(redraw); } else { redraw(); }
 });
 function bindFilter(id,key){
   document.getElementById(id).addEventListener(id==="f-q"?"input":"change",e=>{
