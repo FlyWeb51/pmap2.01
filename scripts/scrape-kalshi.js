@@ -87,8 +87,11 @@ const ALL_HOUSE_DISTRICTS = [
 ];
 
 async function fetchHouseDistrict(district) {
-  // district is "AZ-01" style; Kalshi ticker guess has no hyphen: AZ01
-  const compact = district.replace("-", "");
+  // district is "AZ-01" style. Kalshi's real ticker drops the leading zero
+  // on single-digit districts (confirmed: AZ-01 -> "HOUSEAZ1-26", not
+  // "HOUSEAZ01-26") -- so parse the number and rebuild without padding.
+  const [state, distNumRaw] = district.split("-");
+  const compact = state + parseInt(distNumRaw, 10);
   const [dMarket, rMarket] = await Promise.all([
     fetchMarket(`HOUSE${compact}-26-D`).catch(() => null),
     fetchMarket(`HOUSE${compact}-26-R`).catch(() => null),
