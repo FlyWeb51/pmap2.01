@@ -83,6 +83,48 @@ function parseWinners(slice) {
   return winners;
 }
 
+/**
+ * The state page labels nominees explicitly:
+ *   "James Talarico Nominee $68,555,930 raised"
+ * That is far more reliable than inferring from the primary-results check
+ * marks, and it is the only place Senate nominees appear at all. Texas is the
+ * case that forced this: Ken Paxton beat Cornyn in a runoff, so every source
+ * that keys off the incumbent still shows Cornyn.
+ */
+function parseNomineeSection(text, heading) {
+  const start = text.indexOf(heading);
+  if (start === -1) return {};
+  /* Section runs to the next TOP-LEVEL heading. Note indexOf("## ") is wrong
+     here: "### Democrat" contains "## " starting at index 1, so a plain search
+     truncates the section after two lines. Match a line start with exactly two
+     hashes instead. */
+  const rest = text.slice(start + heading.length);
+  const nextTop = rest.search(/\n##[^#]/);
+  const end = nextTop === -1 ? text.length : start + heading.length + nextTop;
+  const body = text.slice(start, end);
+
+  const out = {};
+  let party = null;
+  for (const raw of body.split("\n")) {
+    const line = raw.trim();
+    if (!line) continue;
+    const head = line.match(/^###\s+(Democrat|Republican|Independent|L|G)\b/i);
+    if (head) { party = head[1][0].toUpperCase(); continue; }
+    if (!party || (party !== "D" && party !== "R")) continue;
+    if (!/\bNominee\b/.test(line)) continue;
+    // strip the label and anything after it (money, "Incumbent", etc.)
+    const name = line.split(/\bNominee\b/)[0]
+      .replace(/\bIncumbent\b/gi, "")
+      .replace(/\$[\d,]+.*$/, "")
+      .trim();
+    const frag = surnameFragment(name);
+    if (frag && !(out[party] || []).includes(frag)) {
+      (out[party] = out[party] || []).push(frag);
+    }
+  }
+  return out;
+}
+
 function parseState(st, html) {
   const text = toText(html);
 
@@ -105,7 +147,12 @@ function parseState(st, html) {
     if (winners.length) seats[mark.code] = winners;
   });
 
-  return { primaryDate, completed, seats, districtsSeen: marks.length };
+  // Senate seats are not districts - they live under their own heading.
+  const senNom = parseNomineeSection(text, "U.S. Senate");
+  const senate = [];
+  ["D", "R"].forEach((p) => (senNom[p] || []).forEach((n) => senate.push(n)));
+
+  return { primaryDate, completed, seats, districtsSeen: marks.length, senate };
 }
 
 async function main() {
@@ -134,7 +181,16 @@ async function main() {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const html = await res.text();
-      const { primaryDate, completed, seats, districtsSeen } = parseState(st, html);
+      const { primaryDate, completed, seats, districtsSeen, senate } = parseState(st, html);
+      if (senate && senate.length) {
+        inbox.seats[`${st}-senate`] = {
+          nominees: senate,
+          primaryDate,
+          completed,
+          alreadyLive: Array.isArray(live[`${st}-senate`]) ? live[`${st}-senate`] : null,
+          changed: JSON.stringify(live[`${st}-senate`] || null) !== JSON.stringify(senate),
+        };
+      }
 
       inbox.states[st] = { primaryDate, completed, districtsSeen, seatsParsed: Object.keys(seats).length };
 
