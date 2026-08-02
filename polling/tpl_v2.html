@@ -142,19 +142,17 @@
 <div class="wrap">
 
 <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px">
-  <span class="tagline"><b id="pbA"></b>&nbsp;district with direct polling</span>
+  <span class="tagline"><b id="pbA"></b>&nbsp;districts with real polling</span>
   <span class="tagline"><b id="roA"></b>&nbsp;rating-derived</span>
   <span class="tagline"><b>432</b>&nbsp;rated &middot; 3 unrated (vacant)</span>
   <span class="tagline"><b id="gbA"></b>&nbsp;generic-ballot polls</span>
+  <span class="tagline"><b id="tpA"></b>&nbsp;district polls ingested</span>
 </div>
 
 <details class="notes">
   <summary>How to read this page &mdash; and a correction from July 29 <span class="chev">&#9656;</span></summary>
   <div class="body">
-    <p><b>Most numbers here are estimates, not polls.</b> Only <b id="pbB"></b> of 432 rated districts has a
-    real public poll. Individual House districts are barely polled, so the rest are
-    <b>rating-derived</b> &mdash; drawn faded and tagged <span class="pill rating">rating</span> throughout.
-    The one genuinely dated series is the national generic ballot.</p>
+    <p><b>Two kinds of number appear here.</b> <b id="pbB"></b> of 432 rated districts now carry real general-election polling &mdash; <b id="tpB"></b> individual polls, ingested with fielding dates, sample sizes and pollster sponsorship. The remaining districts are <b>rating-derived</b>: inferred from the race rating rather than measured, drawn faded and tagged <span class="pill rating">rating</span>. Use the <b>Poll-backed only</b> filter to see just the measured races.</p>
     <p><span class="amber">Correction, July 29.</span> An earlier version reported a national average of
     D&nbsp;+1.18 and a Democratic range of 222&ndash;244 seats. Those were wrong &mdash; they came from a
     source file with scrambled party labels, which listed Rep. Robert Aderholt (R-AL) as a Democrat and rated
@@ -177,7 +175,7 @@
 <section class="panel on" id="p-generic">
   <p class="ptitle">National generic ballot — the real polling</p>
   <p class="pdesc">139 dated public polls, March&ndash;July 2026. Dots are individual polls; the lines are a weighted
-    rolling average. <b>Move across the chart to read any date.</b></p>
+    rolling average. <b>Move across the chart to read any date.</b> District-level polling is under <b>Margin by district</b>.</p>
   <div class="chart"><svg id="svg-gb"></svg></div>
   <div class="legend">
     <span><i style="background:var(--nd)"></i>Democratic share</span>
@@ -283,6 +281,7 @@ $("#fixrange").textContent=S.dRangeLow+"–"+S.dRangeHigh;
 ["#pbA","#pbB"].forEach(function(k){var e=$(k); if(e) e.textContent=S.pollBackedSeats;});
 if($("#roA")) $("#roA").textContent=(S.ratedSeats-S.pollBackedSeats);
 if($("#gbA")) $("#gbA").textContent=S.genericPollCount;
+["#tpA","#tpB"].forEach(function(k){var e=$(k); if(e) e.textContent=S.totalPollsIngested||0;});
 $("#gbm").textContent="D +"+GB.average.margin.toFixed(1);
 $("#rside").textContent=S.rSide;
 

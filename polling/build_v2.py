@@ -40,9 +40,25 @@ for r in raw:
     }
 
 # ---- real polls ----------------------------------------------------------
-POLLS = {"AZ-02": {"pollster":"GBAO (D)","date":"2026-06-15","n":500,"population":"LV",
-                   "dem":41.0,"rep":44.0,"margin":-3.0,"moe":4.4,"sponsor":"D",
-                   "url":"https://pollingsource.com/house/AZ-02"}}
+# Ingested from the 538-format export by ingest_538.py. 68 districts now carry
+# genuine general-election polling; previously exactly one did.
+ING = pathlib.Path("/sessions/vibrant-happy-davinci/mnt/outputs/ingest/data")
+POLLS = {}
+if (ING / "poll-index.json").exists():
+    _idx = json.loads((ING / "poll-index.json").read_text())
+    for raceId, meta in _idx.get("house", {}).items():
+        detail = json.loads((ING / "polls" / f"{raceId}.json").read_text())
+        latest = detail["polls"][0]
+        d = next((r["percentage"] for r in latest["results"] if r["candidate"].endswith("(D)")), None)
+        r_ = next((r["percentage"] for r in latest["results"] if r["candidate"].endswith("(R)")), None)
+        POLLS[meta["code"]] = {
+            "pollster": latest["pollster"], "date": latest["endDate"],
+            "n": latest.get("sampleSize"), "population": latest.get("population"),
+            "dem": d, "rep": r_, "margin": meta["margin"],
+            "pollCount": meta["polls"], "latest": meta["latest"],
+            "url": latest.get("sourceUrl"),
+            "sponsor": ("D" if "(D)" in latest["pollster"] else "R" if "(R)" in latest["pollster"] else None),
+        }
 
 # Candidate names VERIFIED against primary sources. The head-to-head CSV's names
 # are not trusted: it puts Tom O'Halleran (a Democrat) in the Republican column
@@ -107,6 +123,7 @@ summary = {
     "dRangeLow": safeD, "dRangeHigh": safeD + toss,
     "median": round(statistics.median(marg), 2),
     "pollBackedSeats": sum(1 for r in races if r["evidence"] == "poll"),
+    "totalPollsIngested": sum(p.get("pollCount",1) for p in POLLS.values()),
     "firstCsvDisagreements": disagree,
     "firstCsvCompared": len(shared),
     "genericBallot": gb["average"], "genericPollCount": gb["meta"]["pollCount"],
