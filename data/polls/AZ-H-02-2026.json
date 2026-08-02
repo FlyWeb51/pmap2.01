@@ -1,35 +1,24 @@
 {
-  "race_id": "AZ-H-02-2026",
+  "raceId": "AZ-H-02-2026",
+  "count": 1,
   "polls": [
     {
-      "raceId": "AZ-H-02-2026",
-      "pollster": "GBAO",
-      "pollsterNote": "Democratic firm - partisan sponsored, weighted at 0.5",
-      "fieldDates": "2026-06-15",
-      "completedDate": "2026-06-15",
+      "pollster": "GBAO (D)",
+      "endDate": "2026-06-15",
       "sampleSize": 500,
       "population": "LV",
-      "moe": 4.4,
-      "sponsor": "D",
-      "methodology": "Likely voters, 500 respondents, margin of error +/- 4.4",
-      "weight": 0.5,
-      "reviewStatus": "approved",
       "results": [
         {
           "candidate": "Jonathan Nez (D)",
-          "pct": 41
+          "percentage": 41.0
         },
         {
           "candidate": "Eli Crane (R)",
-          "pct": 44
-        },
-        {
-          "candidate": "Undecided",
-          "pct": 15
+          "percentage": 44.0
         }
       ],
-      "sourceUrl": "https://pollingsource.com/house/AZ-02",
-      "notes": "R +3.0, inside the +/- 4.4 margin of error - a statistical tie. Cross-confirmed by Pollsmax and PollingSource, both showing 41.0 D / 44.0 R from this single poll."
+      "sourceUrl": "https://drive.google.com/file/d/1nYHNj0SrZ2WcXLhQ1feyfeGpF-5SHJgx/view?_hsenc=p2ANqtz-_370ZM_DgL09QvWKjXqErDmW-qDpRcYp2VqC2MXui7ViQOnoWB4mfGluBGCcI23a7Zp4VtCHMDy7BSg4Muyh54L2QT711RO2KTeWpUskkrwaOaZ1Y&_hsmi=2",
+      "note": "Partisan-sponsored, weighted at half strength."
     }
   ]
 }

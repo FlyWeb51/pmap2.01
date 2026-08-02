@@ -1,29 +1,60 @@
 {
-  "race_id": "AZ-H-01-2026",
+  "raceId": "AZ-H-01-2026",
+  "count": 3,
   "polls": [
     {
-      "raceId": "AZ-H-01-2026",
-      "pollster": "Example Polling Co.",
-      "fieldDates": "2026-06-01 to 2026-06-04",
-      "sampleSize": 600,
-      "methodology": "Live phone + online panel",
-      "weight": 1,
-      "reviewStatus": "approved",
+      "pollster": "GrayHouse",
+      "endDate": "2025-11-17",
+      "sampleSize": 500,
+      "population": "LV",
       "results": [
         {
-          "candidate": "Jane Smith",
-          "pct": 47
+          "candidate": "Generic Democrat (D)",
+          "percentage": 43.0
         },
         {
-          "candidate": "John Doe",
-          "pct": 44
-        },
-        {
-          "candidate": "Undecided",
-          "pct": 9
+          "candidate": "Gina Swoboda (R)",
+          "percentage": 40.0
         }
       ],
-      "sourceUrl": "https://example.com/poll-report"
+      "sourceUrl": "https://www.grayhouse.com/post/new-polling-shows-nfl-pro-bowler-jay-feely-running-in-az-district-1-is-republicans-best-hope-to-win",
+      "note": null
+    },
+    {
+      "pollster": "GrayHouse",
+      "endDate": "2025-11-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "percentage": 42.0
+        },
+        {
+          "candidate": "Thomas (Jay) Feely (R)",
+          "percentage": 42.0
+        }
+      ],
+      "sourceUrl": "https://www.grayhouse.com/post/new-polling-shows-nfl-pro-bowler-jay-feely-running-in-az-district-1-is-republicans-best-hope-to-win",
+      "note": null
+    },
+    {
+      "pollster": "Clarity Campaign Labs (D)",
+      "endDate": "2025-11-05",
+      "sampleSize": 676,
+      "population": "LV",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "percentage": 45.0
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "percentage": 46.0
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1mv8EHWdA9ZWXKeyrmlpxudIM7z23cCJH/view",
+      "note": "Partisan-sponsored, weighted at half strength."
     }
   ]
 }
