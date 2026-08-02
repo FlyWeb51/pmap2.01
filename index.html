@@ -534,6 +534,8 @@ function select(x){
         <p class="note">Looks up every candidate FEC has on file for this seat this cycle — the primary field, not just the incumbent.</p></div>
       <div class="d-sec">District profile</div>
       <div id="census-out"><button class="cta" id="census-go">Load Census profile</button></div>
+      <div class="d-sec">Prediction market (Kalshi)</div>
+      <div id="hkalshi-out"><p class="note">Checking Kalshi…</p></div>
       <div class="d-sec">Polling</div>
       <div id="poll-out"><p class="note">Checking for entered polls…</p></div>`;
     const rg=document.getElementById("race-go");
@@ -541,6 +543,7 @@ function select(x){
     const cg=document.getElementById("census-go");
     if(cg)cg.onclick=()=>loadCensus(x);
     loadPolls(x);
+    loadKalshiHouse(x);
   }
   renderList();
   document.getElementById("detail").classList.add("open");
@@ -723,6 +726,29 @@ async function loadSenatePolls(st) {
     backendGet(`/api/poll-average?race_id=${encodeURIComponent(raceId)}`)
   ]);
   renderPolls(out, raceId, pollData, averageData);
+}
+async function loadKalshiHouse(x) {
+  const out = document.getElementById("hkalshi-out");
+  if (!out) return;
+  const district = APPORTION[x.st]===1 ? `${x.st}-01` : `${x.st}-${String(x.d).padStart(2,"0")}`;
+  let data;
+  try {
+    const r = await fetch(`data/kalshi/${district}.json`, { cache: "no-store" });
+    if (!r.ok) throw new Error("not found");
+    data = await r.json();
+  } catch {
+    out.innerHTML = `<p class="note">No Kalshi market listed for this district (checked every 30 min, competitive districts only).</p>`;
+    return;
+  }
+  const row = (label, entry, color) => entry ? `
+    <div class="kv">
+      <span class="k">${label} <span style="color:${color}">●</span></span>
+      <span class="v num">${entry.pct}%</span>
+    </div>` : "";
+  out.innerHTML =
+    row("Democrat", data.democrat, "var(--nd)") +
+    row("Republican", data.republican, "var(--lr)") +
+    `<p class="note">Live prediction-market odds from Kalshi, refreshed every 30 minutes. This is a market price, not a poll. Fetched: ${new Date(data.fetchedAt).toLocaleString()}</p>`;
 }
 async function loadKalshi(st) {
   const out = document.getElementById("skalshi-out");
