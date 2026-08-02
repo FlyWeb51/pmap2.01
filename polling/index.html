@@ -83,6 +83,23 @@
   .rowbg{fill:transparent}
   .bar:hover .rowbg{fill:rgba(255,255,255,.045)}
   .bcount{color:var(--dimmer);font-size:11.5px;margin-left:auto}
+  .gbwrap{margin-top:18px}
+  .gbwrap h4{font-size:13px;margin:0 0 4px}
+  .gbtools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:9px 0 10px}
+  .gbtools .n{color:var(--dimmer);font-size:11.5px;margin-left:auto}
+  .gbscroll{max-height:460px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+  .gbscroll::-webkit-scrollbar{width:9px}
+  .gbscroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px}
+  table.gb{width:100%;border-collapse:collapse;font-size:12px}
+  table.gb th{position:sticky;top:0;background:var(--panel2);text-align:left;padding:7px 9px;
+    border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;font-weight:600;z-index:2}
+  table.gb th:hover{color:#fff}
+  table.gb td{padding:6px 9px;border-bottom:1px solid #16202f;white-space:nowrap}
+  table.gb tr:hover td{background:#111a29}
+  .lean{display:inline-block;padding:1px 6px;border-radius:20px;font-size:10px;font-weight:700}
+  .lean.D{background:#10233f;color:var(--nd);border:1px solid #1e3a5f}
+  .lean.R{background:#33161a;color:var(--nr);border:1px solid #5c2329}
+  .lean.none{color:var(--dimmer)}
   .racecard{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--focus);
        border-radius:8px;padding:12px 14px;margin-bottom:12px;font-size:12.5px;position:relative}
   .racecard[hidden]{display:none}
@@ -182,6 +199,31 @@
     <span><i style="background:var(--nr)"></i>Republican share</span>
     <span><i style="background:var(--gold)"></i>weighted average line</span>
   </div>
+  <div class="gbwrap">
+    <h4>Every poll behind this average</h4>
+    <p class="pdesc" style="margin-bottom:0">All <span id="gbN"></span> polls, newest first. Click a column to
+      sort. Partisan-sponsored polls are tagged and count at half weight in the average.</p>
+    <div class="gbtools">
+      <input type="search" id="gb-q" placeholder="Search pollster…" style="min-width:190px">
+      <select id="gb-f">
+        <option value="all">All pollsters</option>
+        <option value="ind">Independent only</option>
+        <option value="D">Democratic-sponsored</option>
+        <option value="R">Republican-sponsored</option>
+      </select>
+      <span class="n" id="gb-count"></span>
+    </div>
+    <div class="gbscroll"><table class="gb">
+      <thead><tr>
+        <th data-g="date">Date</th><th data-g="pollster">Pollster</th><th data-g="lean">Lean</th>
+        <th data-g="n">Sample</th><th data-g="population">Type</th>
+        <th data-g="dem">D&nbsp;%</th><th data-g="rep">R&nbsp;%</th><th data-g="margin">Margin</th>
+        <th>Source</th>
+      </tr></thead>
+      <tbody id="gbbody"></tbody>
+    </table></div>
+  </div>
+
   <p class="pdesc" style="margin-top:14px"><b>Worth noticing:</b> the national mood sits at
     <span class="d" id="gbm"></span>, yet the district ratings still favour Republicans in
     <span class="r" id="rside"></span> seats. That gap is the map — a party can win the national vote
@@ -571,7 +613,42 @@ document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{
   const k=th.dataset.k;sd=(k===sk)?-sd:1;sk=k;drawTable();});
 $("#t-q").oninput=drawTable;$("#t-f").onchange=drawTable;
 
-drawGB();drawBars();drawSeats();drawDist();drawTable();
+/* ---- every generic-ballot poll, listed ---- */
+let gk="date",gd=-1;
+function drawGBTable(){
+  const q=$("#gb-q").value.trim().toLowerCase(), f=$("#gb-f").value;
+  let rows=(GB.polls||[]).filter(p=>{
+    if(f==="ind" && p.lean) return false;
+    if((f==="D"||f==="R") && p.lean!==f) return false;
+    return !q || (p.pollster||"").toLowerCase().includes(q);
+  });
+  rows.sort((a,b)=>{
+    let x=a[gk],y=b[gk];
+    if(gk==="date"){ x=+new Date(a.date); y=+new Date(b.date); }  /* +: Date objects fall through to string compare */
+    if(gk==="lean"){ x=a.lean||""; y=b.lean||""; }
+    if(typeof x==="number"&&typeof y==="number") return (x-y)*gd;
+    return String(x??"").localeCompare(String(y??""))*gd;
+  });
+  $("#gb-count").textContent=rows.length+" of "+(GB.polls||[]).length;
+  $("#gbbody").innerHTML=rows.map(p=>`<tr>
+    <td class="num">${esc(p.date)}</td>
+    <td>${esc(p.pollster)}</td>
+    <td>${p.lean?`<span class="lean ${p.lean}">${p.lean}</span>`:'<span class="lean none">&mdash;</span>'}</td>
+    <td class="num">${p.n?p.n.toLocaleString():"&mdash;"}</td>
+    <td>${esc(p.population||"&mdash;")}</td>
+    <td class="num" style="color:var(--nd)">${p.dem.toFixed(1)}</td>
+    <td class="num" style="color:var(--nr)">${p.rep.toFixed(1)}</td>
+    <td class="num" style="color:${p.margin>0?"var(--nd)":"var(--nr)"}">${fmt(p.margin)}</td>
+    <td>${p.sourceUrl?`<a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">link &#8599;</a>`:"&mdash;"}</td>
+  </tr>`).join("");
+}
+document.querySelectorAll("table.gb th[data-g]").forEach(th=>th.onclick=()=>{
+  const k=th.dataset.g; gd=(k===gk)?-gd:(k==="date"?-1:1); gk=k; drawGBTable();
+});
+$("#gb-q").oninput=drawGBTable; $("#gb-f").onchange=drawGBTable;
+if($("#gbN")) $("#gbN").textContent=(GB.polls||[]).length;
+
+drawGB();drawGBTable();drawBars();drawSeats();drawDist();drawTable();
 </script>
 </body>
 </html>
