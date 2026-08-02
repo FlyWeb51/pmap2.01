@@ -507,9 +507,15 @@ function select(x){
       <div id="fec-out-${i}"><button class="cta" data-fec="${i}">Load FEC totals</button></div>`).join("")+
       `<div class="d-sec">2026 Senate race — all candidates</div>
       <div id="srace-out"><button class="cta" id="srace-go">Load all candidates &amp; FEC totals</button>
-        <p class="note">Every candidate FEC has on file for this state's 2026 Senate race.</p></div>`;
+        <p class="note">Every candidate FEC has on file for this state's 2026 Senate race.</p></div>
+      <div class="d-sec">Prediction market (Kalshi)</div>
+      <div id="skalshi-out"><p class="note">Checking Kalshi…</p></div>
+      <div class="d-sec">Polling</div>
+      <div id="spoll-out"><p class="note">Checking for entered polls…</p></div>`;
     body.querySelectorAll("[data-fec]").forEach(btn=>btn.onclick=()=>loadFEC(pair[+btn.dataset.fec],"fec-out-"+btn.dataset.fec));
     const sg=document.getElementById("srace-go"); if(sg)sg.onclick=()=>loadSenateRace(st);
+    loadKalshi(st);
+    loadSenatePolls(st);
   }else{
     rEl.style.color="#0b0f16";
     rEl.style.background=x.rating?RCOLOR[RANK[x.rating]]:css("--vac");
@@ -669,14 +675,7 @@ async function loadCensus(x){
   out.innerHTML=Object.entries(p).map(([k,v])=>`<div class="kv"><span class="k">${k}</span><span class="v num">${v}</span></div>`).join("")+
     `<p class="note">ACS 5-year estimates · district context, not candidate points.</p>`;
 }
-async function loadPolls(x) {
-  const out = document.getElementById("poll-out");
-  if (!out) return;
-  const raceId = `${x.st}-H-${String(x.d).padStart(2, "0")}-2026`;
-  const [pollData, averageData] = await Promise.all([
-    backendGet(`/api/polls?race_id=${encodeURIComponent(raceId)}`),
-    backendGet(`/api/poll-average?race_id=${encodeURIComponent(raceId)}`)
-  ]);
+function renderPolls(out, raceId, pollData, averageData) {
   if (!pollData || !pollData.polls) {
     out.innerHTML = `<p class="note">No open live polling feed exists. With the site deployed, approved polls in api/polls-data.json appear here with a transparent weighted average.</p>`;
     return;
@@ -689,21 +688,63 @@ async function loadPolls(x) {
   const averageHtml = average.map(result => `
     <div class="kv">
       <span class="k">${escapeHtml(result.candidate)} · weighted avg</span>
-      <span class="v num">${Number(result.percentage).toFixed(1)}%</span>
+      <span class="v num">${Number(result.pct).toFixed(1)}%</span>
     </div>
   `).join("");
   const pollHtml = pollData.polls.map(poll => {
     const results = (poll.results || []).map(result =>
-      `${escapeHtml(result.candidate)} ${Number(result.percentage).toFixed(1)}%`
+      `${escapeHtml(result.candidate)} ${Number(result.pct).toFixed(1)}%`
     ).join(" · ");
     return `<p class="note">
       <b>${escapeHtml(poll.pollster)}</b> ·
-      ${escapeHtml(poll.endDate || "")} ·
+      ${escapeHtml(poll.fieldDates || poll.completedDate || "")} ·
       n=${poll.sampleSize || "?"} ${escapeHtml(poll.population || "")}<br>
-      ${results}${poll.undecided != null ? ` · Undecided ${poll.undecided}%` : ""}
+      ${results}
     </p>`;
   }).join("");
   out.innerHTML = averageHtml + pollHtml;
+}
+async function loadPolls(x) {
+  const out = document.getElementById("poll-out");
+  if (!out) return;
+  const raceId = `${x.st}-H-${String(x.d).padStart(2, "0")}-2026`;
+  const [pollData, averageData] = await Promise.all([
+    backendGet(`/api/polls?race_id=${encodeURIComponent(raceId)}`),
+    backendGet(`/api/poll-average?race_id=${encodeURIComponent(raceId)}`)
+  ]);
+  renderPolls(out, raceId, pollData, averageData);
+}
+async function loadSenatePolls(st) {
+  const out = document.getElementById("spoll-out");
+  if (!out) return;
+  const raceId = `${st}-senate`;
+  const [pollData, averageData] = await Promise.all([
+    backendGet(`/api/polls?race_id=${encodeURIComponent(raceId)}`),
+    backendGet(`/api/poll-average?race_id=${encodeURIComponent(raceId)}`)
+  ]);
+  renderPolls(out, raceId, pollData, averageData);
+}
+async function loadKalshi(st) {
+  const out = document.getElementById("skalshi-out");
+  if (!out) return;
+  let data;
+  try {
+    const r = await fetch(`data/kalshi/${st}-senate.json`, { cache: "no-store" });
+    if (!r.ok) throw new Error("not found");
+    data = await r.json();
+  } catch {
+    out.innerHTML = `<p class="note">No Kalshi market listed for this race (refreshed every 30 min).</p>`;
+    return;
+  }
+  const row = (label, entry, color) => entry ? `
+    <div class="kv">
+      <span class="k">${label} <span style="color:${color}">●</span></span>
+      <span class="v num">${entry.pct}%</span>
+    </div>` : "";
+  out.innerHTML =
+    row("Democrat", data.democrat, "var(--nd)") +
+    row("Republican", data.republican, "var(--lr)") +
+    `<p class="note">Live prediction-market odds from Kalshi (external-api.kalshi.com), refreshed every 30 minutes. This is a market price, not a poll — it reflects what traders are willing to bet, not a survey of voters. Fetched: ${new Date(data.fetchedAt).toLocaleString()}</p>`;
 }
 /* ---------- Counties tab ---------- */
 async function renderCounties(){
