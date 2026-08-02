@@ -1132,7 +1132,55 @@ body.predicting .legend{max-width:190px}
     window.redraw=function(){ var r=orig.apply(this,arguments); if(on) setTimeout(paint,0); return r; };
     wrapped=true;
   }
-  function paint(){
+  var sel={};                       /* index -> brush, marked but not committed */
+  function applyMark(node,i){
+    var k=sel[i];
+    if(k===undefined){ node.removeAttribute("stroke"); node.removeAttribute("stroke-width");
+      node.setAttribute("fill",COLOR[picks[i]]); return; }
+    node.setAttribute("fill",COLOR[picks[i]]);
+    node.setAttribute("stroke",COLOR[k]);
+    node.setAttribute("stroke-width","2.4");
+  }
+  function marks(){ return Object.keys(sel).length; }
+  function commitFill(){
+    var p=paths();
+    Object.keys(sel).forEach(function(i){ picks[i]=sel[i]; });
+    sel={}; paint();
+  }
+  function clearFill(){
+    var p=paths();
+    if(marks()){ Object.keys(sel).forEach(function(i){ picks[i]=0; }); sel={}; }
+    else { picks=picks.map(function(){return 0;}); }
+    paint();
+  }
+  /* Kalshi market odds -> rating bands. Their own workflow already fetches
+     data/kalshi/all-house.json, so this reuses that file. */
+  var KAL=null;
+  function bandFor(pct){
+    if(pct>=85) return 1; if(pct>=65) return 2; if(pct>=55) return 3; return 4;
+  }
+  async function fromKalshi(btn){
+    if(!KAL){
+      btn.textContent="Loading\u2026";
+      try{ KAL=await(await fetch("data/kalshi/all-house.json",{cache:"no-store"})).json(); }
+      catch(e){ KAL={}; }
+      btn.textContent="Kalshi odds";
+    }
+    var hit=0;
+    META.forEach(function(m,i){
+      var k=KAL[m.id]||KAL[m.id.replace(/-(\d)$/,"-0$1")];
+      if(!k||!k.democrat||!k.republican) return;
+      var dp=Number(k.democrat.pct), rp=Number(k.republican.pct);
+      if(!isFinite(dp)||!isFinite(rp)) return;
+      var band=bandFor(Math.max(dp,rp));
+      picks[i]= dp>=rp ? band : (band===4?4:8-band);   /* 1,2,3 -> 7,6,5 */
+      hit++;
+    });
+    sel={}; paint();
+    var m=document.getElementById("pmsg");
+    if(m) m.innerHTML="Filled <b>"+hit+"</b> districts from Kalshi market odds.";
+  }
+  function paint(){  function paint(){
     var p=paths();
     for(var i=0;i<p.length&&i<picks.length;i++) p[i].setAttribute("fill",COLOR[picks[i]]);
     score();
@@ -1152,7 +1200,8 @@ body.predicting .legend{max-width:190px}
     var m=document.getElementById("pmsg");
     if(d>=218) m.innerHTML="<b style='color:var(--nd)'>Democrats reach 218.</b>";
     else if(r>=218) m.innerHTML="<b style='color:var(--lr)'>Republicans reach 218.</b>";
-    else m.innerHTML="D need <b>"+(218-d)+"</b>, R need <b>"+(218-r)+"</b>.<br>"+t+" toss-up, "+(left-t)+" unset.";
+    else m.innerHTML="D need <b>"+(218-d)+"</b>, R need <b>"+(218-r)+"</b>.<br>"+t+" toss-up, "+(left-t)+" unset."
+      +(marks()?"<br><span style='color:var(--focus)'>"+marks()+" marked, not yet filled</span>":"");
   }
   function encode(){ var s="";
     for(var i=0;i<picks.length;i+=2) s+=String.fromCharCode(((picks[i]||0)<<4)|(picks[i+1]||0));
@@ -1209,9 +1258,13 @@ body.predicting .legend{max-width:190px}
        '<div class="bar"><i id="pbd" style="background:var(--sd);width:0"></i>'+
        '<i id="pbr" style="background:var(--sr);width:0;margin-left:auto"></i>'+
        '<span class="tick"></span></div><div class="msg" id="pmsg"></div>'+
-       '<div class="act"><button id="pfill">From ratings</button>'+
+       '<div class="act"><button id="pdofill">Fill marked</button>'+
+       '<button id="punfill">Unfill</button>'+
+       '<button id="pkalshi">Kalshi odds</button>'+
+       '<button id="pfill">From ratings</button>'+
        '<button id="pclr">Clear all</button><button id="pshare">Copy link</button></div>'+
-       '<div class="hint">Pick a colour, then click districts to paint them. '+
+       '<div class="hint">Pick a colour, then click districts to <b>mark</b> them \u2014 they keep their rating '+
+       'colour with a coloured outline. <b>Fill marked</b> commits them, <b>Unfill</b> clears. '+
        'Choose <b>View district stats</b> to open a seat\u2019s money, demographics and polling instead.</div></div>';
     box.innerHTML=h;
     main.appendChild(box);
@@ -1221,6 +1274,13 @@ body.predicting .legend{max-width:190px}
       setBrush(+b.dataset.k);
     });
     document.getElementById("pfill").onclick=fromRatings;
+    document.getElementById("pdofill").onclick=function(){
+      if(!marks()){ var m=document.getElementById("pmsg");
+        if(m) m.innerHTML="Nothing marked yet \u2014 click districts first."; return; }
+      commitFill();
+    };
+    document.getElementById("punfill").onclick=clearFill;
+    document.getElementById("pkalshi").onclick=function(){ fromKalshi(this); };
     document.getElementById("pclr").onclick=function(){ picks=picks.map(function(){return 0;}); paint(); };
     document.getElementById("pshare").onclick=function(){
       var code=encode(), u=location.origin+location.pathname+"#pick="+code;
@@ -1255,8 +1315,10 @@ body.predicting .legend{max-width:190px}
       if(brush===-1) return;
       e.stopPropagation(); e.preventDefault();
       var p=paths(), i=[].indexOf.call(p,t); if(i<0) return;
-      picks[i]=brush;
-      t.setAttribute("fill",COLOR[brush]); score();
+      /* Click marks the district; Fill commits it. Keeps the rating colour
+         visible while you decide. */
+      if(sel[i]===brush){ delete sel[i]; } else { sel[i]=brush; }
+      applyMark(t,i); score();
     },true);
   }
   function init(){ ui(); }
