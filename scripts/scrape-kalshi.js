@@ -197,6 +197,24 @@ async function main() {
     await new Promise((r) => setTimeout(r, 350));
   }
 
+  // Combined files: one fetch instead of 485, for map-fill features
+  const allSenate = {};
+  const allHouse = {};
+  for (const state of SENATE_STATES) {
+    try {
+      const p = path.join(OUT_DIR, `${state}-senate.json`);
+      if (fs.existsSync(p)) allSenate[state] = JSON.parse(fs.readFileSync(p, "utf8"));
+    } catch {}
+  }
+  for (const district of ALL_HOUSE_DISTRICTS) {
+    try {
+      const p = path.join(OUT_DIR, `${district}.json`);
+      if (fs.existsSync(p)) allHouse[district] = JSON.parse(fs.readFileSync(p, "utf8"));
+    } catch {}
+  }
+  fs.writeFileSync(path.join(OUT_DIR, "all-senate.json"), JSON.stringify(allSenate));
+  fs.writeFileSync(path.join(OUT_DIR, "all-house.json"), JSON.stringify(allHouse));
+
   fs.writeFileSync(
     path.join(OUT_DIR, "meta.json"),
     JSON.stringify({
