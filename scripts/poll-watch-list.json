@@ -1,42 +1,20 @@
 [
   {
-    "_comment": "Each entry: raceId matches your site's race id format; wikiPage is the exact Wikipedia article title.",
-    "_note": "Start small and add races as they get real polling. Most House races won't have Wikipedia polling tables until fall 2026."
+    "_comment": "Each entry: raceId matches your site's race id format; wikiPage is the exact article title; site is 'wikipedia' (default) or 'ballotpedia'. PollingSource and Pollsmax races are NOT listed here -- they're discovered/enumerated automatically in scrape-polls.js."
   },
-  {
-    "raceId": "generic-ballot",
-    "wikiPage": "2026 United States House of Representatives elections"
-  },
-  {
-    "raceId": "TX-senate",
-    "wikiPage": "2026 United States Senate election in Texas"
-  },
-  {
-    "raceId": "GA-senate",
-    "wikiPage": "2026 United States Senate election in Georgia"
-  },
-  {
-    "raceId": "NC-senate",
-    "wikiPage": "2026 United States Senate election in North Carolina"
-  },
-  {
-    "raceId": "ME-senate",
-    "wikiPage": "2026 United States Senate election in Maine"
-  },
-  {
-    "raceId": "MI-senate",
-    "wikiPage": "2026 United States Senate election in Michigan"
-  },
-  {
-    "raceId": "NH-senate",
-    "wikiPage": "2026 United States Senate election in New Hampshire"
-  },
-  {
-    "raceId": "MN-senate",
-    "wikiPage": "2026 United States Senate election in Minnesota"
-  },
-  {
-    "raceId": "AZ-senate",
-    "wikiPage": "2026 United States Senate election in Arizona"
-  }
+  { "raceId": "generic-ballot", "wikiPage": "2026 United States House of Representatives elections", "site": "wikipedia" },
+  { "raceId": "generic-ballot-ballotpedia", "wikiPage": "Ballotpedia's Polling Index: Generic congressional vote", "site": "ballotpedia" },
+  { "raceId": "TX-senate", "wikiPage": "2026 United States Senate election in Texas", "site": "wikipedia" },
+  { "raceId": "GA-senate", "wikiPage": "2026 United States Senate election in Georgia", "site": "wikipedia" },
+  { "raceId": "NC-senate", "wikiPage": "2026 United States Senate election in North Carolina", "site": "wikipedia" },
+  { "raceId": "ME-senate", "wikiPage": "2026 United States Senate election in Maine", "site": "wikipedia" },
+  { "raceId": "MI-senate", "wikiPage": "2026 United States Senate election in Michigan", "site": "wikipedia" },
+  { "raceId": "NH-senate", "wikiPage": "2026 United States Senate election in New Hampshire", "site": "wikipedia" },
+  { "raceId": "MN-senate", "wikiPage": "2026 United States Senate election in Minnesota", "site": "wikipedia" },
+  { "raceId": "AZ-senate", "wikiPage": "2026 United States Senate election in Arizona", "site": "wikipedia" },
+  { "raceId": "IA-senate", "wikiPage": "2026 United States Senate election in Iowa", "site": "wikipedia" },
+  { "raceId": "AK-senate", "wikiPage": "2026 United States Senate election in Alaska", "site": "wikipedia" },
+  { "raceId": "NE-senate", "wikiPage": "2026 United States Senate election in Nebraska", "site": "wikipedia" },
+  { "raceId": "SC-senate", "wikiPage": "2026 United States Senate election in South Carolina", "site": "wikipedia" },
+  { "raceId": "OH-senate", "wikiPage": "2026 United States Senate election in Ohio", "site": "wikipedia" }
 ]
