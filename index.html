@@ -74,7 +74,7 @@
   .dsq.dim{opacity:.14}
   .stoutline{fill:none;stroke:#020409;stroke-width:1.15;vector-effect:non-scaling-stroke;pointer-events:none}
   .upseat{stroke:var(--money);stroke-width:2}
-  .stlbl{fill:var(--ink-dim);font-size:8px;font-family:"IBM Plex Mono",monospace;letter-spacing:.05em;pointer-events:none;text-anchor:middle}
+  .stlbl{fill:var(--ink);font-size:10px;font-weight:700;font-family:"IBM Plex Mono",monospace;letter-spacing:.05em;pointer-events:none;text-anchor:middle;paint-order:stroke;stroke:rgba(11,15,22,.85);stroke-width:2.5px;stroke-linejoin:round}
   .zoomctl{position:absolute;left:14px;bottom:14px;display:flex;flex-direction:column;gap:6px;z-index:20}
   .zoomctl button{width:32px;height:32px;background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:6px;font-size:16px;cursor:pointer}
   .zoomctl button:hover{border-color:var(--ink-dim)}
@@ -166,6 +166,7 @@
       <select id="f-state"><option value="">All states</option></select>
       <label for="f-q">Search</label>
       <input type="text" id="f-q" placeholder="Member or district…" autocomplete="off">
+      <label style="display:flex;align-items:center;gap:6px;margin-top:10px;cursor:pointer"><input type="checkbox" id="f-elections" style="width:auto;accent-color:var(--money)"> <span style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-dim)">2026 elections only (Senate)</span></label>
     </div>
     <div class="count-line" id="count-line"></div>
     <div id="list" tabindex="0"></div>
@@ -327,7 +328,7 @@ const svg=document.getElementById("map");
 function applyView(){ svg.setAttribute("viewBox",`${view.x} ${view.y} ${view.w} ${view.h}`); }
 
 let mode="rating", tab="house", selected=null;
-let filt={rating:"",party:"",state:"",q:""};
+let filt={rating:"",party:"",state:"",q:"",electionsOnly:false};
 let KALSHI_HOUSE=null, KALSHI_SENATE=null;
 async function loadKalshiAll(){
   if(KALSHI_HOUSE) return;
@@ -366,7 +367,7 @@ function drawBase(interactive){
       p.style.fill = mode==="kalshi" ? kalshiColor(KALSHI_SENATE&&KALSHI_SENATE[st]) : (pair.length? (ps.length===1?PCOLOR(ps[0]):css("--split")) : css("--land"));
       const up=pair.some(m=>m.e.startsWith("2027"));
       if(up) p.classList.add("upseat");
-      if(filt.state&&st!==filt.state || filt.party&&!pair.some(m=>m.p===filt.party) || filt.q&&!pair.some(m=>m.n.toLowerCase().includes(filt.q))) p.classList.add("dim");
+      if(filt.state&&st!==filt.state || filt.party&&!pair.some(m=>m.p===filt.party) || filt.q&&!pair.some(m=>m.n.toLowerCase().includes(filt.q)) || (filt.electionsOnly&&!up)) p.classList.add("dim");
       p.addEventListener("click",()=>select({stSen:st}));
       p.addEventListener("mousemove",e=>tooltip(e,
         `<b>${STATE_NAMES[st]}</b><br>`+pair.map(m=>`${m.n} (${m.p})${m.e.startsWith("2027")?" · <span style='color:var(--money)'>up 2026</span>":""}`).join("<br>")));
@@ -477,7 +478,7 @@ function renderList(){
     const up=rows.filter(m=>m.e.startsWith("2027")), rest=rows.filter(m=>!m.e.startsWith("2027"));
     document.getElementById("count-line").textContent=rows.length+" senators · "+up.length+" seats on the 2026 ballot";
     if(up.length){ lhead(list,"On the 2026 ballot",up.length,"var(--money)"); up.forEach(m=>senRow(list,m)); }
-    if(rest.length){ lhead(list,"Not up until 2028+",rest.length); rest.forEach(m=>senRow(list,m)); }
+    if(rest.length && !filt.electionsOnly){ lhead(list,"Not up until 2028+",rest.length); rest.forEach(m=>senRow(list,m)); }
   }else{
     const rows=DISTRICTS.filter(passes);
     document.getElementById("count-line").textContent=rows.length+" districts shown";
@@ -517,26 +518,35 @@ function select(x){
   const body=document.getElementById("d-body");
   if(x.stSen){
     const st=x.stSen, pair=senOf(st);
+    const upMember=pair.find(m=>m.e.startsWith("2027"));
+    const otherMember=pair.find(m=>m!==upMember);
     rEl.style.background=css("--panel-2"); rEl.style.color="var(--ink-dim)";
     rEl.textContent="U.S. Senate";
     document.getElementById("d-name").textContent=STATE_NAMES[st];
-    document.getElementById("d-seat").textContent=pair.filter(m=>m.e.startsWith("2027")).length?"Seat on the 2026 ballot":"No seat up in 2026";
-    body.innerHTML=pair.map((m,i)=>`
-      <div class="d-sec">${m.n} <span style="color:${PCOLOR(m.p)}">(${m.p})</span></div>
-      <div class="kv"><span class="k">Class</span><span class="v num">${m.k}</span></div>
-      <div class="kv"><span class="k">Term ends</span><span class="v num">${m.e}</span></div>
-      <div id="fec-out-${i}"><button class="cta" data-fec="${i}">Load FEC totals</button></div>`).join("")+
-      `<div class="d-sec">2026 Senate race — all candidates</div>
-      <div id="srace-out"><button class="cta" id="srace-go">Load all candidates &amp; FEC totals</button>
-        <p class="note">Every candidate FEC has on file for this state's 2026 Senate race.</p></div>
-      <div class="d-sec">Prediction market (Kalshi)</div>
-      <div id="skalshi-out"><p class="note">Checking Kalshi…</p></div>
-      <div class="d-sec">Polling</div>
-      <div id="spoll-out"><p class="note">Checking for entered polls…</p></div>`;
-    body.querySelectorAll("[data-fec]").forEach(btn=>btn.onclick=()=>loadFEC(pair[+btn.dataset.fec],"fec-out-"+btn.dataset.fec));
-    const sg=document.getElementById("srace-go"); if(sg)sg.onclick=()=>loadSenateRace(st);
-    loadKalshi(st);
-    loadSenatePolls(st);
+    document.getElementById("d-seat").textContent=upMember?"Seat on the 2026 ballot":"No seat up in 2026";
+    if(upMember){
+      body.innerHTML=
+        `<div class="d-sec">Current officeholder</div>
+        <div class="kv"><span class="k">${upMember.n}</span><span class="v" style="color:${PCOLOR(upMember.p)}">${upMember.p}</span></div>
+        <div class="kv"><span class="k">Class ${upMember.k} · term ends</span><span class="v num">${upMember.e}</span></div>`+
+        (otherMember?`<p class="note" style="margin-top:4px">Other seat: ${otherMember.n} (${otherMember.p}), not up until ${otherMember.e.slice(0,4)}.</p>`:``)+
+        `<div class="d-sec">2026 Senate race — the two people running</div>
+        <div id="srace-out"><button class="cta" id="srace-go">Load all candidates &amp; FEC totals</button>
+          <p class="note">The real field for this seat — incumbent and challenger(s) FEC has on file, not a guess.</p></div>
+        <div class="d-sec">Prediction market (Kalshi)</div>
+        <div id="skalshi-out"><p class="note">Checking Kalshi…</p></div>
+        <div class="d-sec">Polling</div>
+        <div id="spoll-out"><p class="note">Checking for entered polls…</p></div>`;
+      const sg=document.getElementById("srace-go"); if(sg)sg.onclick=()=>loadSenateRace(st);
+      loadKalshi(st);
+      loadSenatePolls(st);
+    }else{
+      body.innerHTML=pair.map(m=>`
+        <div class="d-sec">${m.n} <span style="color:${PCOLOR(m.p)}">(${m.p})</span></div>
+        <div class="kv"><span class="k">Class</span><span class="v num">${m.k}</span></div>
+        <div class="kv"><span class="k">Term ends</span><span class="v num">${m.e}</span></div>`).join("")+
+        `<p class="note" style="margin-top:8px">Neither Senate seat in ${STATE_NAMES[st]} is up for election in 2026.</p>`;
+    }
   }else{
     rEl.style.color="#0b0f16";
     rEl.style.background=x.rating?RCOLOR[RANK[x.rating]]:css("--vac");
@@ -860,6 +870,7 @@ function bindFilter(id,key){
   });
 }
 bindFilter("f-rating","rating");bindFilter("f-party","party");bindFilter("f-state","state");bindFilter("f-q","q");
+document.getElementById("f-elections").addEventListener("change",e=>{filt.electionsOnly=e.target.checked; redraw();});
 const ssel=document.getElementById("f-state");
 Object.keys(STATE_NAMES).sort().forEach(st=>{const o=document.createElement("option");o.value=st;o.textContent=STATE_NAMES[st];ssel.appendChild(o);});
 function redraw(){
