@@ -13597,5 +13597,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
     "scrapedAt": "2026-08-04T01:43:37.295Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "Texas Southern University",
+    "partisanLean": null,
+    "fieldDates": "July 27–30, 2026",
+    "sampleSize": 1200,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 45
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-08-04T13:55:44.611Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Reuters/Ipsos",
+    "partisanLean": null,
+    "fieldDates": "2026-08-03",
+    "sampleSize": 3542,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 42
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 37
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-04T13:55:58.747Z"
   }
 ]
