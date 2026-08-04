@@ -13551,5 +13551,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/OH-07",
     "scrapedAt": "2026-08-03T14:35:17.989Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Pollsmax average (latest input: EPIC-MRA)",
+    "partisanLean": null,
+    "fieldDates": "July 31, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 43.1
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45.1
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/michigan/",
+    "scrapedAt": "2026-08-04T01:43:33.054Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: Wedgewood Polls)",
+    "partisanLean": null,
+    "fieldDates": "July 31, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 46.3
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-08-04T01:43:37.295Z"
   }
 ]
