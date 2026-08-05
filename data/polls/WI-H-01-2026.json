@@ -1,10 +1,12 @@
 {
   "raceId": "WI-H-01-2026",
-  "count": 2,
+  "count": 1,
+  "alternativeMatchupsDropped": 0,
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-16",
+      "weight": 0.0137,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -15,24 +17,6 @@
         {
           "candidate": "Bryan Steil (R)",
           "percentage": 50.0
-        }
-      ],
-      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
-    },
-    {
-      "pollster": "Ragnar Research Partners (R)",
-      "endDate": "2026-03-16",
-      "sampleSize": 400,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Generic Democrat (D)",
-          "percentage": 44.0
-        },
-        {
-          "candidate": "Generic Republican (R)",
-          "percentage": 42.0
         }
       ],
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",

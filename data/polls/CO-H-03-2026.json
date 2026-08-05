@@ -1,10 +1,12 @@
 {
   "raceId": "CO-H-03-2026",
-  "count": 4,
+  "count": 1,
+  "alternativeMatchupsDropped": 2,
   "polls": [
     {
       "pollster": "Keating Research, Inc. (D)",
       "endDate": "2026-07-23",
+      "weight": 0.3023,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -18,60 +20,6 @@
         }
       ],
       "sourceUrl": "https://x.com/RomeroForCO/status/2082843915510817044",
-      "note": "Partisan-sponsored, weighted at half strength."
-    },
-    {
-      "pollster": "Ragnar Research Partners (R)",
-      "endDate": "2026-03-12",
-      "sampleSize": 400,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Alex Kelloff (D)",
-          "percentage": 41.0
-        },
-        {
-          "candidate": "Jeff Hurd (R)",
-          "percentage": 46.0
-        }
-      ],
-      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
-    },
-    {
-      "pollster": "Ragnar Research Partners (R)",
-      "endDate": "2026-03-12",
-      "sampleSize": 400,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Generic Democrat (D)",
-          "percentage": 37.0
-        },
-        {
-          "candidate": "Generic Republican (R)",
-          "percentage": 47.0
-        }
-      ],
-      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
-    },
-    {
-      "pollster": "Expedition Strategies (D)",
-      "endDate": "2026-01-12",
-      "sampleSize": 400,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Alex Kelloff (D)",
-          "percentage": 39.0
-        },
-        {
-          "candidate": "Jeff Hurd (R)",
-          "percentage": 48.0
-        }
-      ],
-      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/01/21/what-davos-really-thinks-of-trump-00738555",
       "note": "Partisan-sponsored, weighted at half strength."
     }
   ]

@@ -1,10 +1,12 @@
 {
   "raceId": "AK-H-01-2026",
-  "count": 9,
+  "count": 6,
+  "alternativeMatchupsDropped": 1,
   "polls": [
     {
       "pollster": "The Bullfinch Group",
       "endDate": "2026-07-16",
+      "weight": 0.5375,
       "sampleSize": 546,
       "population": "LV",
       "results": [
@@ -23,6 +25,7 @@
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-29",
+      "weight": 0.3782,
       "sampleSize": 593,
       "population": "LV",
       "results": [
@@ -41,24 +44,7 @@
     {
       "pollster": "Tavern Research (I)",
       "endDate": "2026-05-27",
-      "sampleSize": 452,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Generic Democrat (D)",
-          "percentage": 45.0
-        },
-        {
-          "candidate": "Nick Begich (R)",
-          "percentage": 55.0
-        }
-      ],
-      "sourceUrl": "https://www.tavernresearch.com/research-and-writings/ak-al-begich-leads-independent-runs-closest",
-      "note": "Partisan-sponsored, weighted at half strength."
-    },
-    {
-      "pollster": "Tavern Research (I)",
-      "endDate": "2026-05-27",
+      "weight": 0.077,
       "sampleSize": 452,
       "population": "LV",
       "results": [
@@ -77,6 +63,7 @@
     {
       "pollster": "Change Research (I)",
       "endDate": "2026-03-20",
+      "weight": 0.0188,
       "sampleSize": 624,
       "population": "LV",
       "results": [
@@ -95,6 +82,7 @@
     {
       "pollster": "Public Policy Polling (I)",
       "endDate": "2026-02-12",
+      "weight": 0.008,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -113,6 +101,7 @@
     {
       "pollster": "Data for Progress",
       "endDate": "2025-10-23",
+      "weight": 0.0014,
       "sampleSize": 823,
       "population": "LV",
       "results": [
@@ -126,42 +115,6 @@
         }
       ],
       "sourceUrl": "https://www.dataforprogress.org/blog/2025/10/31/in-the-midst-of-a-health-care-and-affordability-crisis-in-alaska-peltola-and-begich-lead-their-races",
-      "note": null
-    },
-    {
-      "pollster": "Data for Progress",
-      "endDate": "2025-07-27",
-      "sampleSize": 678,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Generic Democrat (D)",
-          "percentage": 38.0
-        },
-        {
-          "candidate": "Generic Republican (R)",
-          "percentage": 48.0
-        }
-      ],
-      "sourceUrl": "https://www.dataforprogress.org/blog/2025/8/8/mary-peltola-would-be-front-runner-for-alaska-governor",
-      "note": null
-    },
-    {
-      "pollster": "Data for Progress",
-      "endDate": "2025-03-07",
-      "sampleSize": 1008,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Mary S. Peltola (D)",
-          "percentage": 46.0
-        },
-        {
-          "candidate": "Nick Begich (R)",
-          "percentage": 46.0
-        }
-      ],
-      "sourceUrl": "https://www.dataforprogress.org/memos/2025/3/13/oil-taxes-rural-subsistence-public-school-funding-these-are-a-few-of-alaska-voters-favorite-things",
       "note": null
     }
   ]

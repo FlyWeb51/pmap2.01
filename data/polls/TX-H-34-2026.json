@@ -1,10 +1,12 @@
 {
   "raceId": "TX-H-34-2026",
-  "count": 3,
+  "count": 2,
+  "alternativeMatchupsDropped": 0,
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-06-16",
+      "weight": 0.115,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -23,6 +25,7 @@
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-29",
+      "weight": 0.0529,
       "sampleSize": 777,
       "population": "LV",
       "results": [
@@ -33,24 +36,6 @@
         {
           "candidate": "Eric Flores (R)",
           "percentage": 41.0
-        }
-      ],
-      "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
-      "note": "Partisan-sponsored, weighted at half strength."
-    },
-    {
-      "pollster": "co/efficient (R)",
-      "endDate": "2026-04-29",
-      "sampleSize": 777,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Generic Democrat (D)",
-          "percentage": 44.0
-        },
-        {
-          "candidate": "Generic Republican (R)",
-          "percentage": 48.0
         }
       ],
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",

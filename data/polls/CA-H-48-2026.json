@@ -1,10 +1,12 @@
 {
   "raceId": "CA-H-48-2026",
-  "count": 2,
+  "count": 1,
+  "alternativeMatchupsDropped": 1,
   "polls": [
     {
       "pollster": "Lake Research Partners (D)",
       "endDate": "2026-07-14",
+      "weight": 0.2456,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -18,24 +20,6 @@
         }
       ],
       "sourceUrl": "https://hub.nationaljournal.com/the-dncs-99-problems",
-      "note": "Partisan-sponsored, weighted at half strength."
-    },
-    {
-      "pollster": "Blueprint Polling (D)",
-      "endDate": "2025-10-26",
-      "sampleSize": 517,
-      "population": "LV",
-      "results": [
-        {
-          "candidate": "Ammar Campa-Najjar (D)",
-          "percentage": 43.0
-        },
-        {
-          "candidate": "Darrell Issa (R)",
-          "percentage": 40.0
-        }
-      ],
-      "sourceUrl": "https://www.politico.com/f/?id=0000019a-38d9-dc69-abda-fadb16eb0000",
       "note": "Partisan-sponsored, weighted at half strength."
     }
   ]
