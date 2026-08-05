@@ -84,42 +84,67 @@ function parseWinners(slice) {
 }
 
 /**
- * The state page labels nominees explicitly:
- *   "James Talarico Nominee $68,555,930 raised"
- * That is far more reliable than inferring from the primary-results check
- * marks, and it is the only place Senate nominees appear at all. Texas is the
- * case that forced this: Ken Paxton beat Cornyn in a runoff, so every source
- * that keys off the incumbent still shows Cornyn.
+ * Nominees, read from the page's HTML structure rather than its text.
+ *
+ * An earlier version parsed markdown-style "### Democrat" headings. Those only
+ * exist in a markdown rendering of the page - the raw HTML this script fetches
+ * has no such markers, so it silently found zero Senate nominees. The real
+ * markup is:
+ *
+ *   <h2>... U.S. Senate ...</h2>
+ *     <div class="party-column"> <h3|h4>Republican</h3|h4>
+ *       <div class="candidate-row primary-winner">
+ *         Ken Paxton <span class="winner-badge">Nominee</span> $9,248,699 raised
+ *
+ * Texas is why this matters: Paxton beat Cornyn in the May runoff, so anything
+ * keyed off the incumbent still shows Cornyn.
  */
-function parseNomineeSection(text, heading) {
-  const start = text.indexOf(heading);
+function stripTags(h) {
+  return h.replace(/<[^>]+>/g, " ")
+          .replace(/&amp;/g, "&")
+          .replace(/&#\d+;/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+}
+
+function parseNomineeSection(html, sectionRe) {
+  const h2s = [...html.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/gi)];
+  let start = -1, end = html.length;
+  for (let i = 0; i < h2s.length; i++) {
+    if (sectionRe.test(stripTags(h2s[i][1]))) {
+      start = h2s[i].index;
+      if (h2s[i + 1]) end = h2s[i + 1].index;
+      break;
+    }
+  }
   if (start === -1) return {};
-  /* Section runs to the next TOP-LEVEL heading. Note indexOf("## ") is wrong
-     here: "### Democrat" contains "## " starting at index 1, so a plain search
-     truncates the section after two lines. Match a line start with exactly two
-     hashes instead. */
-  const rest = text.slice(start + heading.length);
-  const nextTop = rest.search(/\n##[^#]/);
-  const end = nextTop === -1 ? text.length : start + heading.length + nextTop;
-  const body = text.slice(start, end);
+  const body = html.slice(start, end);
 
   const out = {};
-  let party = null;
-  for (const raw of body.split("\n")) {
-    const line = raw.trim();
-    if (!line) continue;
-    const head = line.match(/^###\s+(Democrat|Republican|Independent|L|G)\b/i);
-    if (head) { party = head[1][0].toUpperCase(); continue; }
-    if (!party || (party !== "D" && party !== "R")) continue;
-    if (!/\bNominee\b/.test(line)) continue;
-    // strip the label and anything after it (money, "Incumbent", etc.)
-    const name = line.split(/\bNominee\b/)[0]
-      .replace(/\bIncumbent\b/gi, "")
-      .replace(/\$[\d,]+.*$/, "")
-      .trim();
-    const frag = surnameFragment(name);
-    if (frag && !(out[party] || []).includes(frag)) {
-      (out[party] = out[party] || []).push(frag);
+  const cols = [...body.matchAll(
+    /<div[^>]*class="[^"]*party-column[^"]*"[^>]*>([\s\S]*?)(?=<div[^>]*class="[^"]*party-column|$)/gi)];
+  for (const c of cols) {
+    const chunk = c[1];
+    const head = chunk.match(/<(?:h3|h4)\b[^>]*>([\s\S]*?)<\/(?:h3|h4)>/i);
+    const pName = head ? stripTags(head[1]) : "";
+    let party = null;
+    if (/^democrat/i.test(pName)) party = "D";
+    else if (/^republican/i.test(pName)) party = "R";
+    if (!party) continue;
+
+    const wins = [...chunk.matchAll(
+      /<div[^>]*class="[^"]*candidate-row[^"]*primary-winner[^"]*"[^>]*>([\s\S]*?)<\/div>/gi)];
+    for (const w of wins) {
+      const txt = stripTags(w[1]);
+      if (!/\bNominee\b/.test(txt)) continue;
+      const name = txt.split(/\bNominee\b/)[0]
+        .replace(/\bIncumbent\b/gi, "")
+        .replace(/\$[\d,]+.*$/, "")
+        .trim();
+      const frag = surnameFragment(name);
+      if (frag && !(out[party] || []).includes(frag)) {
+        (out[party] = out[party] || []).push(frag);
+      }
     }
   }
   return out;
@@ -148,7 +173,7 @@ function parseState(st, html) {
   });
 
   // Senate seats are not districts - they live under their own heading.
-  const senNom = parseNomineeSection(text, "U.S. Senate");
+  const senNom = parseNomineeSection(html, /U\.S\.\s*Senate/i);
   const senate = [];
   ["D", "R"].forEach((p) => (senNom[p] || []).forEach((n) => senate.push(n)));
 
