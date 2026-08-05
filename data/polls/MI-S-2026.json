@@ -1,8 +1,26 @@
 {
   "raceId": "MI-S-2026",
-  "count": 17,
-  "alternativeMatchupsDropped": 39,
+  "count": 19,
+  "alternativeMatchupsDropped": 41,
   "polls": [
+    {
+      "pollster": "EPIC-MRA",
+      "endDate": "2026-07-31",
+      "sampleSize": 600,
+      "population": "LV",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "percentage": 43.0
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "percentage": 46.0
+        }
+      ],
+      "sourceUrl": "https://x.com/MIRSnews/status/2083770042475516025",
+      "note": null
+    },
     {
       "pollster": "SoCal Strategies (R)",
       "endDate": "2026-07-30",
@@ -20,6 +38,24 @@
       ],
       "sourceUrl": "https://socalstrategies.substack.com/p/abdul-el-sayed-holds-17-point-primary/",
       "note": "Partisan-sponsored, weighted at half strength."
+    },
+    {
+      "pollster": "Mitchell Research & Communications",
+      "endDate": "2026-07-29",
+      "sampleSize": 672,
+      "population": "LV",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "percentage": 45.0
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "percentage": 45.0
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/5f14ae6fb2a20e01e9c6d608/t/6a6d26262f442f133d15fa49/1785538087149/MITCHELL+MI+Poll+Nov+Electio+Press+Release+7-31-2026+305PM_A.pdf",
+      "note": null
     },
     {
       "pollster": "Glengariff Group, Inc.",
