@@ -13781,5 +13781,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/TX-15",
     "scrapedAt": "2026-08-05T13:53:46.409Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Quantus Insights",
+    "partisanLean": null,
+    "fieldDates": "2026-08-04",
+    "sampleSize": 1048,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 49
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-06T01:47:15.616Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Marquette",
+    "partisanLean": null,
+    "fieldDates": "2026-07-29",
+    "sampleSize": 572,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-06T01:47:15.616Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Wick",
+    "partisanLean": null,
+    "fieldDates": "2026-06-30",
+    "sampleSize": 1175,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff",
+        "pct": 46.7
+      },
+      {
+        "candidate": "Mike Collins",
+        "pct": 42.9
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-08-06T01:47:30.629Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "FOX News ±2.3",
+    "partisanLean": null,
+    "fieldDates": "2026-06-27",
+    "sampleSize": 1002,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ossoff",
+        "pct": 56
+      },
+      {
+        "candidate": "Collins",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-08-06T01:47:30.629Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "New York Times/Siena University ±3.1",
+    "partisanLean": null,
+    "fieldDates": "2026-06-27",
+    "sampleSize": 601,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Roy Cooper",
+        "pct": 50
+      },
+      {
+        "candidate": "Michael Whatley",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-08-06T01:47:56.411Z"
+  },
+  {
+    "raceId": "OH-07",
+    "pollster": "PollingSource",
+    "partisanLean": null,
+    "fieldDates": "2026-06-30",
+    "sampleSize": null,
+    "population": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Brian Poindexter",
+        "pct": 44
+      },
+      {
+        "candidate": "Max Miller",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/OH-07",
+    "scrapedAt": "2026-08-06T01:51:07.551Z"
   }
 ]
