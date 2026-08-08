@@ -960,7 +960,7 @@ header(); applyView(); setTab("house");
   var GB=null, tried=false;
   function n(v){ v=Number(v); return isFinite(v)?v:null; }
   function pv(r){ return n(r.percentage!==undefined?r.percentage:r.pct); }
-  function dv(p){ return p.endDate||p.completedDate||p.fieldDates||""; }
+  function dv(p){ var s=p.endDateUS||p.endDate||p.completedDate||p.fieldDates||""; var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(s); return m?(+m[2])+"/"+(+m[3])+"/"+m[1]:s; }
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){
     return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];}); }
   async function gb(){ if(tried) return GB; tried=true;
