@@ -1,23 +1,34 @@
 {
   "raceId": "IA-S-2026",
-  "count": 8,
+  "count": 9,
   "alternativeMatchupsDropped": 8,
+  "supersededByNomineeChange": 0,
+  "unsettled": null,
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-08-04",
+      "endDateUS": "8/4/2026",
+      "weight": 0.9091,
+      "sampleSize": 712,
+      "population": "LV",
+      "results": [
+        { "candidate": "Josh Turek (D)", "percentage": 44.98 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 47.52 }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/iowa-2026-poll/",
+      "note": null
+    },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-27",
-      "weight": 0.4227,
+      "endDateUS": "6/27/2026",
+      "weight": 0.4036,
       "sampleSize": 1003,
       "population": "RV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 50.0
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 46.0
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 50.0 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 46.0 }
       ],
       "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-close-senate-contest-brewing-iowa",
       "note": null
@@ -25,18 +36,13 @@
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
-      "weight": 0.3633,
+      "endDateUS": "6/27/2026",
+      "weight": 0.3468,
       "sampleSize": 600,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 46.01
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 48.48
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 46.01 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 48.48 }
       ],
       "sourceUrl": "https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-iowa-poll-crosstabs.html",
       "note": null
@@ -44,18 +50,13 @@
     {
       "pollster": "Cygnal (R)",
       "endDate": "2026-06-19",
-      "weight": 0.151,
+      "endDateUS": "6/19/2026",
+      "weight": 0.1442,
       "sampleSize": 600,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 44.2
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 46.0
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 44.2 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 46.0 }
       ],
       "sourceUrl": "https://taxrelief.org/itr-foundation-poll-shows-iowans-want-taxpayer-protection/",
       "note": "Partisan-sponsored, weighted at half strength."
@@ -63,18 +64,13 @@
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-06-11",
-      "weight": 0.162,
+      "endDateUS": "6/11/2026",
+      "weight": 0.1547,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 47.0
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 45.0
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 47.0 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 45.0 }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/06/22/the-next-geopolitical-crisis-00969509?",
       "note": "Partisan-sponsored, weighted at half strength."
@@ -82,37 +78,27 @@
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-06-04",
-      "weight": 0.0926,
+      "endDateUS": "6/4/2026",
+      "weight": 0.0884,
       "sampleSize": 557,
       "population": "RV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 46.0
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 46.0
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 46.0 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 46.0 }
       ],
-      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/06/08/ron-klain-picks-his-2028-horse-00953194?nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=0000014e-f10d-dd93-ad7f-f90de50d0003",
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/06/08/ron-klain-picks-his-2028-horse-00953194",
       "note": "Partisan-sponsored, weighted at half strength."
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0464,
+      "endDateUS": "4/9/2026",
+      "weight": 0.0443,
       "sampleSize": 377,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 46.0
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 45.0
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 46.0 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 45.0 }
       ],
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
       "note": null
@@ -120,37 +106,27 @@
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-03-16",
-      "weight": 0.0238,
+      "endDateUS": "3/16/2026",
+      "weight": 0.0227,
       "sampleSize": 1200,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 43.0
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 47.0
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 43.0 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 47.0 }
       ],
-      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/04/13/what-dems-should-take-from-orbans-defeat-00868714?nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=4d735b47-a8a7-41f4-9c35-277919f359ed",
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/04/13/what-dems-should-take-from-orbans-defeat-00868714",
       "note": "Partisan-sponsored, weighted at half strength."
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-01-11",
-      "weight": 0.0104,
+      "endDateUS": "1/11/2026",
+      "weight": 0.0099,
       "sampleSize": 1108,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Josh Turek (D)",
-          "percentage": 41.0
-        },
-        {
-          "candidate": "Ashley Hinson (R)",
-          "percentage": 44.0
-        }
+        { "candidate": "Josh Turek (D)", "percentage": 41.0 },
+        { "candidate": "Ashley Hinson (R)", "percentage": 44.0 }
       ],
       "sourceUrl": "https://x.com/Bencjacobs/status/2020894441196663099",
       "note": null
