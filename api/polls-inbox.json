@@ -14218,5 +14218,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/OH-07",
     "scrapedAt": "2026-08-07T12:57:48.334Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "Change Research",
+    "partisanLean": "D",
+    "fieldDates": "July 29 – August 1, 2026",
+    "sampleSize": 967,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 41
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-08-08T00:59:35.232Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Change Research",
+    "partisanLean": null,
+    "fieldDates": "2026-08-01",
+    "sampleSize": 967,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 50
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-08-08T01:00:29.331Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Pollsmax average (latest input: Emerson College)",
+    "partisanLean": null,
+    "fieldDates": "August 4, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 44.7
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 48.2
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/iowa/",
+    "scrapedAt": "2026-08-08T01:04:28.229Z"
+  },
+  {
+    "raceId": "ME",
+    "pollster": "Pollsmax average (latest input: Hart Research (D))",
+    "partisanLean": null,
+    "fieldDates": "August 1, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.4
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 48.5
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/maine/",
+    "scrapedAt": "2026-08-08T01:04:29.153Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Pollsmax average (latest input: Change Research (D))",
+    "partisanLean": null,
+    "fieldDates": "August 1, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 48.4
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.2
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/north-carolina/",
+    "scrapedAt": "2026-08-08T01:04:32.570Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: YouGov)",
+    "partisanLean": null,
+    "fieldDates": "July 31, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.3
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 46.2
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-08-08T01:04:34.277Z"
   }
 ]
