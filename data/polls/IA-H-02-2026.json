@@ -1,23 +1,34 @@
 {
   "raceId": "IA-H-02-2026",
-  "count": 1,
+  "count": 2,
   "alternativeMatchupsDropped": 0,
+  "supersededByNomineeChange": 0,
+  "unsettled": null,
   "polls": [
+    {
+      "pollster": "Global Strategy Group (D)",
+      "endDate": "2026-07-19",
+      "endDateUS": "7/19/2026",
+      "weight": 0.2632,
+      "sampleSize": null,
+      "population": "LV",
+      "results": [
+        { "candidate": "Lindsay James (D)", "percentage": 46.0 },
+        { "candidate": "Joe Mitchell (R)", "percentage": 45.0 }
+      ],
+      "sourceUrl": "https://static.notus.org/27/58/c93f2d1946c0814f583fa25c7a31/hmp-ia-02-poll.pdf",
+      "note": "Partisan-sponsored, weighted at half strength."
+    },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-14",
-      "weight": 0.0313,
+      "endDateUS": "4/14/2026",
+      "weight": 0.0299,
       "sampleSize": 673,
       "population": "RV",
       "results": [
-        {
-          "candidate": "Lindsay James (D)",
-          "percentage": 36.0
-        },
-        {
-          "candidate": "Joe Mitchell (R)",
-          "percentage": 33.0
-        }
+        { "candidate": "Lindsay James (D)", "percentage": 36.0 },
+        { "candidate": "Joe Mitchell (R)", "percentage": 33.0 }
       ],
       "sourceUrl": "https://x.com/jamesd0wns/status/2049820806016860519",
       "note": "Partisan-sponsored, weighted at half strength."
