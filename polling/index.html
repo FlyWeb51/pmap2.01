@@ -313,6 +313,10 @@ const DATA={"summary":{"generated":"2026-08-05T05:23:29+00:00","ratedSeats":432,
 const $=s=>document.querySelector(s);
 const NS="http://www.w3.org/2000/svg";
 const el=(n,a={})=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e;};
+/* ISO (2026-07-27) -> US (7/27/2026). Deliberately NOT via new Date(iso):
+   that parses as UTC and renders the previous day in every US timezone. */
+const usDate=v=>{const m=String(v==null?"":v).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  return m?(+m[2])+"/"+(+m[3])+"/"+m[1]:String(v==null?"":v);};
 const esc=t=>String(t==null?"":t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
 const fmt=m=>(m>0?"D +":m<0?"R +":"Even ")+(m?Math.abs(m).toFixed(1):"");
 const col=m=>m>2?"var(--sd)":m<-2?"var(--sr)":"var(--toss)";
@@ -366,7 +370,7 @@ function drawGB(){
   polls.forEach(p=>{
     [["dem","var(--nd)"],["rep","var(--nr)"]].forEach(([k,c])=>{
       const cc=el("circle",{cx:X(p.date),cy:Y(p[k]),r:3,fill:c,opacity:.4});
-      hook(cc,`<b>${p.pollster}</b>${p.lean?" ("+p.lean+")":""}<br>${p.date} · n=${p.n||"?"} ${p.population||""}<br>D ${p.dem}% · R ${p.rep}%`);
+      hook(cc,`<b>${p.pollster}</b>${p.lean?" ("+p.lean+")":""}<br>${usDate(p.date)} · n=${p.n||"?"} ${p.population||""}<br>D ${p.dem}% · R ${p.rep}%`);
       svg.appendChild(cc);
     });
   });
@@ -490,7 +494,7 @@ function showRace(r,g){
   const why = p
     ? "This is a measured result. "+esc(p.pollster)+" surveyed "+(p.n||"?")+" "
       +(p.population==="LV"?"likely voters":p.population==="RV"?"registered voters":"adults")
-      +" ending "+esc(p.date)+(p.moe?", margin of error \u00b1"+p.moe:"")+". "
+      +" ending "+esc(usDate(p.date))+(p.moe?", margin of error \u00b1"+p.moe:"")+". "
       +(p.moe&&Math.abs(r.margin)<p.moe ? "<b>The lead is inside the margin of error \u2014 a statistical tie.</b> " : "")
       +(p.sponsor?"Partisan-sponsored ("+esc(p.sponsor)+"), so it is weighted at half strength in any average.":"")
     : "<b>No poll exists for this district.</b> The margin shown is inferred from its <b>"+esc(r.rating)
@@ -504,7 +508,7 @@ function showRace(r,g){
     +'<div class="rc-grid">'
       +'<div><div class="rc-k">Democrat</div><div class="rc-v">'+(dem?esc(dem):'<span style="color:var(--dimmer)">not verified</span>')+'</div></div>'
       +'<div><div class="rc-k">Republican</div><div class="rc-v">'+(rep?esc(rep):'<span style="color:var(--dimmer)">not verified</span>')+'</div></div>'
-      +(p?'<div><div class="rc-k">Poll</div><div class="rc-v">'+esc(p.pollster)+' &middot; '+esc(p.date)+'</div></div>'
+      +(p?'<div><div class="rc-k">Poll</div><div class="rc-v">'+esc(p.pollster)+' &middot; '+esc(usDate(p.date))+'</div></div>'
           +'<div><div class="rc-k">Result</div><div class="rc-v">D '+p.dem+'% &middot; R '+p.rep+'%</div></div>':'')
     +'</div>'
     +'<div class="rc-why">'+why+'</div>'
@@ -631,7 +635,7 @@ function drawGBTable(){
   });
   $("#gb-count").textContent=rows.length+" of "+(GB.polls||[]).length;
   $("#gbbody").innerHTML=rows.map(p=>`<tr>
-    <td class="num">${esc(p.date)}</td>
+    <td class="num">${esc(usDate(p.date))}</td>
     <td>${esc(p.pollster)}</td>
     <td>${p.lean?`<span class="lean ${p.lean}">${p.lean}</span>`:'<span class="lean none">&mdash;</span>'}</td>
     <td class="num">${p.n?p.n.toLocaleString():"&mdash;"}</td>
