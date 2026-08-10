@@ -1,23 +1,35 @@
 {
   "raceId": "AR-S-2026",
-  "count": 1,
+  "count": 2,
   "alternativeMatchupsDropped": 0,
+  "supersededByNomineeChange": 0,
+  "duplicateQuestionsMerged": 0,
+  "unsettled": null,
   "polls": [
+    {
+      "pollster": "2040 Strategy Group (D)",
+      "endDate": "2026-07-25",
+      "endDateUS": "7/25/2026",
+      "weight": 0.3125,
+      "sampleSize": 586,
+      "population": "LV",
+      "results": [
+        { "candidate": "Hallie Shoffner (D)", "percentage": 43.0 },
+        { "candidate": "Tom Cotton (R)", "percentage": 46.0 }
+      ],
+      "sourceUrl": "https://arktimes.com/arkansas-blog/2026/08/05/dem-senate-hopeful-shoffner-pulls-promising-poll-numbers-against-unlikeable-cotton",
+      "note": "Partisan-sponsored, weighted at half strength."
+    },
     {
       "pollster": "GrayHouse (R)",
       "endDate": "2026-02-09",
-      "weight": 0.0072,
+      "endDateUS": "2/9/2026",
+      "weight": 0.0065,
       "sampleSize": 550,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Hallie Shoffner (D)",
-          "percentage": 36.0
-        },
-        {
-          "candidate": "Tom Cotton (R)",
-          "percentage": 58.0
-        }
+        { "candidate": "Hallie Shoffner (D)", "percentage": 36.0 },
+        { "candidate": "Tom Cotton (R)", "percentage": 58.0 }
       ],
       "sourceUrl": "https://www.grayhouse.com/post/ar-senate",
       "note": "Partisan-sponsored, weighted at half strength."
