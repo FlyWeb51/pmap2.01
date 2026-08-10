@@ -1,6 +1,6 @@
 {
   "_help": "Auto-fetched nominee candidates awaiting human review. Move verified entries into api/nominees.json. Surname fragments are fuzzy on purpose - check that each one matches exactly one candidate in that seat's FEC field before promoting it.",
-  "_generated": "2026-08-05T05:05:57.394Z",
+  "_generated": "2026-08-10T10:14:29.589Z",
   "_source": "https://pollingsource.com/primaries/<ST>",
   "states": {
     "AL": {
@@ -19,7 +19,7 @@
       "primaryDate": "Jul 21 \n 2026",
       "completed": true,
       "districtsSeen": 9,
-      "seatsParsed": 9
+      "seatsParsed": 6
     },
     "AR": {
       "primaryDate": "Mar 3 \n 2026",
@@ -65,9 +65,9 @@
     },
     "HI": {
       "primaryDate": "Aug 8 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 2,
-      "seatsParsed": 0
+      "seatsParsed": 2
     },
     "ID": {
       "primaryDate": "May 19 \n 2026",
@@ -94,8 +94,8 @@
       "seatsParsed": 4
     },
     "KS": {
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "districtsSeen": 4,
       "seatsParsed": 4
     },
@@ -130,10 +130,10 @@
       "seatsParsed": 0
     },
     "MI": {
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "districtsSeen": 13,
-      "seatsParsed": 8
+      "seatsParsed": 10
     },
     "MN": {
       "primaryDate": "Aug 11 \n 2026",
@@ -148,8 +148,8 @@
       "seatsParsed": 4
     },
     "MO": {
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "districtsSeen": 8,
       "seatsParsed": 8
     },
@@ -250,10 +250,10 @@
       "seatsParsed": 0
     },
     "TN": {
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
       "districtsSeen": 9,
-      "seatsParsed": 0
+      "seatsParsed": 8
     },
     "TX": {
       "primaryDate": "Mar 3 \n 2026",
@@ -274,16 +274,16 @@
       "seatsParsed": 0
     },
     "VA": {
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "districtsSeen": 11,
-      "seatsParsed": 5
+      "seatsParsed": 7
     },
     "WA": {
       "primaryDate": null,
       "completed": null,
       "districtsSeen": 10,
-      "seatsParsed": 6
+      "seatsParsed": 7
     },
     "WV": {
       "primaryDate": "May 12 \n 2026",
@@ -363,34 +363,9 @@
       ],
       "changed": false
     },
-    "AZ-02": {
-      "nominees": [
-        "NEZ",
-        "CRANE"
-      ],
-      "primaryDate": "Jul 21 \n 2026",
-      "completed": true,
-      "alreadyLive": [
-        "NEZ",
-        "CRANE"
-      ],
-      "changed": false
-    },
-    "AZ-03": {
-      "nominees": [
-        "ANSARI"
-      ],
-      "primaryDate": "Jul 21 \n 2026",
-      "completed": true,
-      "alreadyLive": [
-        "ANSARI"
-      ],
-      "changed": false
-    },
     "AZ-04": {
       "nominees": [
-        "STANTON",
-        "JASSER"
+        "STANTON"
       ],
       "primaryDate": "Jul 21 \n 2026",
       "completed": true,
@@ -398,7 +373,7 @@
         "STANTON",
         "JASSER"
       ],
-      "changed": false
+      "changed": true
     },
     "AZ-05": {
       "nominees": [
@@ -413,22 +388,8 @@
       ],
       "changed": false
     },
-    "AZ-06": {
-      "nominees": [
-        "MENDOZA",
-        "CISCOMANI"
-      ],
-      "primaryDate": "Jul 21 \n 2026",
-      "completed": true,
-      "alreadyLive": [
-        "MENDOZA",
-        "CISCOMANI"
-      ],
-      "changed": false
-    },
     "AZ-07": {
       "nominees": [
-        "GRIJALVA",
         "BUTIEREZ"
       ],
       "primaryDate": "Jul 21 \n 2026",
@@ -437,7 +398,7 @@
         "GRIJALVA",
         "BUTIEREZ"
       ],
-      "changed": false
+      "changed": true
     },
     "AZ-08": {
       "nominees": [
@@ -454,8 +415,7 @@
     },
     "AZ-09": {
       "nominees": [
-        "STERBINSKY",
-        "GOSAR"
+        "STERBINSKY"
       ],
       "primaryDate": "Jul 21 \n 2026",
       "completed": true,
@@ -463,7 +423,7 @@
         "STERBINSKY",
         "GOSAR"
       ],
-      "changed": false
+      "changed": true
     },
     "AR-senate": {
       "nominees": [
@@ -1226,7 +1186,6 @@
     },
     "CO-04": {
       "nominees": [
-        "LAUBACHER",
         "BOEBERT"
       ],
       "primaryDate": "Jun 30 \n 2026",
@@ -1235,7 +1194,7 @@
         "LAUBACHER",
         "BOEBERT"
       ],
-      "changed": false
+      "changed": true
     },
     "CO-05": {
       "nominees": [
@@ -1481,9 +1440,28 @@
       ],
       "changed": false
     },
+    "HI-01": {
+      "nominees": [
+        "CASE"
+      ],
+      "primaryDate": "Aug 8 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "HI-02": {
+      "nominees": [
+        "TOKUDA"
+      ],
+      "primaryDate": "Aug 8 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "ID-senate": {
       "nominees": [
-        "ROTH"
+        "ROTH",
+        "RISCH"
       ],
       "primaryDate": "May 19 \n 2026",
       "completed": true,
@@ -1926,13 +1904,23 @@
       ],
       "changed": false
     },
+    "KS-senate": {
+      "nominees": [
+        "HAMILTON",
+        "MARSHALL"
+      ],
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "KS-01": {
       "nominees": [
         "REINHOLD",
         "MANN"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -1940,8 +1928,8 @@
       "nominees": [
         "SCHMIDT"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -1950,8 +1938,8 @@
         "DAVIDS",
         "JENKINS"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -1960,8 +1948,8 @@
         "TYNDELL",
         "ESTES"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2059,6 +2047,7 @@
     },
     "ME-senate": {
       "nominees": [
+        "JACKSON",
         "COLLINS"
       ],
       "primaryDate": "Jun 9 \n 2026",
@@ -2196,12 +2185,32 @@
       ],
       "changed": false
     },
+    "MI-senate": {
+      "nominees": [
+        "EL-SAYED",
+        "ROGERS"
+      ],
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "MI-01": {
       "nominees": [
+        "BARR",
         "BERGMAN"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MI-02": {
+      "nominees": [
+        "AMBROSE"
+      ],
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2209,8 +2218,8 @@
       "nominees": [
         "DEBOER"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2219,8 +2228,8 @@
         "MCCANN",
         "HUIZENGA"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2228,8 +2237,8 @@
       "nominees": [
         "LAWRENCE"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2237,17 +2246,18 @@
       "nominees": [
         "SMITH"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
     "MI-10": {
       "nominees": [
+        "HINES",
         "BOUCHARD"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2255,8 +2265,8 @@
       "nominees": [
         "MOSS"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2264,8 +2274,17 @@
       "nominees": [
         "TLAIB"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MI-13": {
+      "nominees": [
+        "MCKINNEY"
+      ],
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2336,8 +2355,8 @@
         "BELL",
         "BERRY"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2346,8 +2365,8 @@
         "WELLMAN",
         "WAGNER"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2356,8 +2375,8 @@
         "MANN",
         "ONDER"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2366,8 +2385,8 @@
         "HERRERA",
         "ALFORD"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2375,8 +2394,8 @@
       "nominees": [
         "BRATTIN"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2385,8 +2404,8 @@
         "SMEAD",
         "STIGALL"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2394,8 +2413,8 @@
       "nominees": [
         "BURLISON"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -2404,8 +2423,8 @@
         "REICHARD",
         "SMITH"
       ],
-      "primaryDate": null,
-      "completed": null,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -3675,8 +3694,7 @@
     },
     "SC-senate": {
       "nominees": [
-        "ANDREWS",
-        "GRAHAM"
+        "ANDREWS"
       ],
       "primaryDate": "Jun 9 \n 2026",
       "completed": true,
@@ -3757,9 +3775,96 @@
     },
     "SD-senate": {
       "nominees": [
+        "BEAUDION",
         "ROUNDS"
       ],
       "primaryDate": "Jun 2 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-senate": {
+      "nominees": [
+        "BRADSHAW",
+        "HAGERTY"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-01": {
+      "nominees": [
+        "BURKE"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-03": {
+      "nominees": [
+        "GOLLADAY"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-04": {
+      "nominees": [
+        "BRODERICK",
+        "DESJARLAIS"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-05": {
+      "nominees": [
+        "MOLDER",
+        "HATCHER"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-06": {
+      "nominees": [
+        "CROLEY",
+        "GARRETT"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-07": {
+      "nominees": [
+        "COPELAND"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-08": {
+      "nominees": [
+        "KUHN"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "TN-09": {
+      "nominees": [
+        "PEARSON",
+        "TAYLOR"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
       "completed": true,
       "alreadyLive": null,
       "changed": true
@@ -4297,12 +4402,22 @@
       ],
       "changed": false
     },
+    "VA-senate": {
+      "nominees": [
+        "WARNER",
+        "MIZUSAWA"
+      ],
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "VA-01": {
       "nominees": [
         "TAYLOR"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -4310,8 +4425,8 @@
       "nominees": [
         "LURIA"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -4320,8 +4435,8 @@
         "PERRIELLO",
         "MCGUIRE"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -4329,8 +4444,8 @@
       "nominees": [
         "OLLIVANT"
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -4338,8 +4453,26 @@
       "nominees": [
         "."
       ],
-      "primaryDate": "Nov 3 \n 2026",
-      "completed": false,
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "VA-09": {
+      "nominees": [
+        "POWERS"
+      ],
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "VA-10": {
+      "nominees": [
+        "BECKWITH"
+      ],
+      "primaryDate": "Aug 4 \n 2026",
+      "completed": true,
       "alreadyLive": null,
       "changed": true
     },
@@ -4387,6 +4520,16 @@
       "nominees": [
         "RANDALL",
         "FOX"
+      ],
+      "primaryDate": null,
+      "completed": null,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "WA-07": {
+      "nominees": [
+        "JAYAPAL",
+        "SHETH"
       ],
       "primaryDate": null,
       "completed": null,
