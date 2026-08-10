@@ -1,23 +1,35 @@
 {
   "raceId": "KY-H-06-2026",
-  "count": 2,
+  "count": 3,
   "alternativeMatchupsDropped": 3,
+  "supersededByNomineeChange": 0,
+  "duplicateQuestionsMerged": 0,
+  "unsettled": null,
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team (D)",
+      "endDate": "2026-07-30",
+      "endDateUS": "7/30/2026",
+      "weight": 0.3155,
+      "sampleSize": 474,
+      "population": "LV",
+      "results": [
+        { "candidate": "Zach Dembo (D)", "percentage": 47.0 },
+        { "candidate": "Ralph Alvarado (R)", "percentage": 47.0 }
+      ],
+      "sourceUrl": "https://www.kentucky.com/news/politics-government/article316781408.html",
+      "note": "Partisan-sponsored, weighted at half strength."
+    },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-06-28",
-      "weight": 0.1697,
+      "endDateUS": "6/28/2026",
+      "weight": 0.1547,
       "sampleSize": null,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Zach Dembo (D)",
-          "percentage": 39.0
-        },
-        {
-          "candidate": "Ralph Alvarado (R)",
-          "percentage": 42.0
-        }
+        { "candidate": "Zach Dembo (D)", "percentage": 39.0 },
+        { "candidate": "Ralph Alvarado (R)", "percentage": 42.0 }
       ],
       "sourceUrl": "https://insideelections.com/kentucky-6-new-poll-fuels-democratic-optimism/",
       "note": "Partisan-sponsored, weighted at half strength."
@@ -25,18 +37,13 @@
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-25",
-      "weight": 0.0404,
+      "endDateUS": "4/25/2026",
+      "weight": 0.0369,
       "sampleSize": 675,
       "population": "RV",
       "results": [
-        {
-          "candidate": "Zach Dembo (D)",
-          "percentage": 37.0
-        },
-        {
-          "candidate": "Ralph Alvarado (R)",
-          "percentage": 37.0
-        }
+        { "candidate": "Zach Dembo (D)", "percentage": 37.0 },
+        { "candidate": "Ralph Alvarado (R)", "percentage": 37.0 }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/05/12/lawmakers-want-more-answers-on-iran-00917015",
       "note": "Partisan-sponsored, weighted at half strength."
