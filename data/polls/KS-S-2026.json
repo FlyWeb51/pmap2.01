@@ -1,42 +1,35 @@
 {
   "raceId": "KS-S-2026",
   "count": 2,
-  "alternativeMatchupsDropped": 2,
+  "alternativeMatchupsDropped": 3,
+  "supersededByNomineeChange": 0,
+  "duplicateQuestionsMerged": 0,
+  "unsettled": null,
   "polls": [
     {
-      "pollster": "GQR (D)",
-      "endDate": "2026-04-27",
-      "weight": 0.0405,
-      "sampleSize": 500,
+      "pollster": "GBAO (D)",
+      "endDate": "2026-07-13",
+      "endDateUS": "7/13/2026",
+      "weight": 0.2397,
+      "sampleSize": 600,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Patrick Schmidt (D)",
-          "percentage": 45.0
-        },
-        {
-          "candidate": "Roger Marshall (R)",
-          "percentage": 49.0
-        }
+        { "candidate": "Adam Hamilton (D)", "percentage": 43.0 },
+        { "candidate": "Roger Marshall (R)", "percentage": 47.0 }
       ],
-      "sourceUrl": "https://x.com/JacobRubashkin/status/2052495746461471175?s=20",
+      "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/08/07/the-gops-new-economic-anchor-01029005",
       "note": "Partisan-sponsored, weighted at half strength."
     },
     {
       "pollster": "Tavern Research",
       "endDate": "2026-01-28",
-      "weight": 0.0147,
+      "endDateUS": "1/28/2026",
+      "weight": 0.0134,
       "sampleSize": 1013,
       "population": "LV",
       "results": [
-        {
-          "candidate": "Patrick Schmidt (D)",
-          "percentage": 46.0
-        },
-        {
-          "candidate": "Roger Marshall (R)",
-          "percentage": 54.0
-        }
+        { "candidate": "Adam Hamilton (D)", "percentage": 46.0 },
+        { "candidate": "Roger Marshall (R)", "percentage": 54.0 }
       ],
       "sourceUrl": "https://mailchi.mp/noahforkansas/041726icymi?e=eabd966005",
       "note": null
