@@ -14725,5 +14725,109 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/OH-07",
     "scrapedAt": "2026-08-11T13:38:41.635Z"
+  },
+  {
+    "raceId": "AK-senate",
+    "pollster": "style=\"text-align:left;|Alaska Survey Research",
+    "partisanLean": null,
+    "fieldDates": "August 2–5, 2026",
+    "sampleSize": 1371,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Dan S. Sullivan (R)",
+        "pct": 49
+      },
+      {
+        "candidate": "Mary Peltola (D)",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+    "scrapedAt": "2026-08-12T01:11:06.882Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "Trafalgar Group",
+    "partisanLean": "R",
+    "fieldDates": "August 8–10, 2026",
+    "sampleSize": 1027,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Russell Fry",
+        "pct": 18
+      },
+      {
+        "candidate": "Darline Graham",
+        "pct": 26
+      },
+      {
+        "candidate": "Mark Lynch",
+        "pct": 8
+      },
+      {
+        "candidate": "Ralph Norman",
+        "pct": 20
+      },
+      {
+        "candidate": "Mark Sanford",
+        "pct": 18
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-08-12T01:11:11.116Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Economist/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-08-10",
+    "sampleSize": 1420,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 46
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 40
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-12T01:11:13.526Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Pollsmax average (latest input: Change Research (D))",
+    "partisanLean": null,
+    "fieldDates": "August 6, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 48.2
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.7
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/north-carolina/",
+    "scrapedAt": "2026-08-12T01:15:59.191Z"
   }
 ]
