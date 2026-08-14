@@ -15458,5 +15458,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/OH-07",
     "scrapedAt": "2026-08-13T13:00:37.816Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "Harper Polling",
+    "partisanLean": "R",
+    "fieldDates": "August 9 - 10, 2026",
+    "sampleSize": 600,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 39
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 51.5
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-08-14T01:10:40.201Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "Beacon Research (D)/ Shaw & Co. Research",
+    "partisanLean": "R",
+    "fieldDates": "August 6–10, 2026",
+    "sampleSize": 1006,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 47
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-08-14T01:10:42.549Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "FOX News",
+    "partisanLean": null,
+    "fieldDates": "2026-08-10",
+    "sampleSize": 1006,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "El-Sayed",
+        "pct": 47
+      },
+      {
+        "candidate": "Rogers",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-08-14T01:11:25.509Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Carolina Journal/Harper",
+    "partisanLean": null,
+    "fieldDates": "2026-08-10",
+    "sampleSize": 600,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 52
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-08-14T01:11:33.302Z"
+  },
+  {
+    "raceId": "ME",
+    "pollster": "Pollsmax average (latest input: Fox News / Beacon Research)",
+    "partisanLean": null,
+    "fieldDates": "August 10, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.4
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 48.6
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/maine/",
+    "scrapedAt": "2026-08-14T01:15:54.046Z"
+  },
+  {
+    "raceId": "OH",
+    "pollster": "Pollsmax average (latest input: Tulchin Research (D))",
+    "partisanLean": null,
+    "fieldDates": "August 4, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 44.8
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 47.6
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/ohio/",
+    "scrapedAt": "2026-08-14T01:15:58.352Z"
   }
 ]
