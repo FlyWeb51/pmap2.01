@@ -16217,5 +16217,74 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
     "scrapedAt": "2026-08-16T00:48:35.191Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Iowa State Fair Straw",
+    "partisanLean": null,
+    "fieldDates": "2026-08-15",
+    "sampleSize": null,
+    "population": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Josh Turek",
+        "pct": 35.1
+      },
+      {
+        "candidate": "Ashley Hinson",
+        "pct": 61.1
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/IA",
+    "scrapedAt": "2026-08-16T12:28:01.322Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Senate Majority PAC",
+    "partisanLean": null,
+    "fieldDates": "2026-08-10",
+    "sampleSize": null,
+    "population": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed",
+        "pct": 50
+      },
+      {
+        "candidate": "Mike Rogers",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-08-16T12:28:17.829Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "GBAO (D)  D-sponsored",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-10",
+    "sampleSize": 800,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed",
+        "pct": 50
+      },
+      {
+        "candidate": "Mike Rogers",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-08-16T12:28:17.829Z"
   }
 ]
