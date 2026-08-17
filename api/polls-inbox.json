@@ -16286,5 +16286,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/MI",
     "scrapedAt": "2026-08-16T12:28:17.829Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Financial Times",
+    "partisanLean": null,
+    "fieldDates": "2026-08-11",
+    "sampleSize": 1857,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-17T00:46:13.459Z"
+  },
+  {
+    "raceId": "OH",
+    "pollster": "Pollsmax average (latest input: Wedgewood Polls)",
+    "partisanLean": null,
+    "fieldDates": "August 13, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.3
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 47.1
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/ohio/",
+    "scrapedAt": "2026-08-17T00:51:26.255Z"
   }
 ]
