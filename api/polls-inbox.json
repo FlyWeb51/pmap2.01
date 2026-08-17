@@ -16332,5 +16332,74 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://www.pollsmax.com/senate/ohio/",
     "scrapedAt": "2026-08-17T00:51:26.255Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Platform Communications",
+    "partisanLean": null,
+    "fieldDates": "2026-08-13",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "David Crowley",
+        "pct": 48
+      },
+      {
+        "candidate": "Tom Tiffany",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-17T12:32:44.919Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Beacon",
+    "partisanLean": null,
+    "fieldDates": "2026-08-10",
+    "sampleSize": 1006,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed",
+        "pct": 47
+      },
+      {
+        "candidate": "Mike Rogers",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-08-17T12:33:21.000Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Pollsmax average (latest input: Fabrizio, Lee & Associates (R))",
+    "partisanLean": null,
+    "fieldDates": "July 16, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 49.5
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.8
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/georgia/",
+    "scrapedAt": "2026-08-17T12:37:55.824Z"
   }
 ]
