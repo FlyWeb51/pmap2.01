@@ -16746,5 +16746,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/GA",
     "scrapedAt": "2026-08-19T00:48:04.681Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "rowspan=\"2\" |TIPP Insights",
+    "partisanLean": "R",
+    "fieldDates": "rowspan=\"2\" |August 6–10, 2026",
+    "sampleSize": 1528,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 43
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-08-19T12:34:01.482Z"
+  },
+  {
+    "raceId": "MN-senate",
+    "pollster": "KTSP/SurveyUSA",
+    "partisanLean": null,
+    "fieldDates": "August 13–17, 2026",
+    "sampleSize": 661,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan (DFL)",
+        "pct": 46
+      },
+      {
+        "candidate": "Michele Tafoya (R)",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+    "scrapedAt": "2026-08-19T12:34:03.883Z"
+  },
+  {
+    "raceId": "AK-senate",
+    "pollster": "style=\"text-align:left;|Data for Progress",
+    "partisanLean": "D",
+    "fieldDates": "July 28 – August 4, 2026",
+    "sampleSize": 605,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Dan S. Sullivan (R)",
+        "pct": 47
+      },
+      {
+        "candidate": "Mary Peltola (D)",
+        "pct": 53
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+    "scrapedAt": "2026-08-19T12:34:07.138Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Pollsmax average (latest input: InsiderAdvantage (R))",
+    "partisanLean": null,
+    "fieldDates": "August 17, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 50.1
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.6
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/georgia/",
+    "scrapedAt": "2026-08-19T12:34:34.563Z"
   }
 ]
