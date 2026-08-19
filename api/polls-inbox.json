@@ -16585,5 +16585,166 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/OH-15",
     "scrapedAt": "2026-08-18T12:38:31.007Z"
+  },
+  {
+    "raceId": "GA-senate",
+    "pollster": "InsiderAdvantage",
+    "partisanLean": "R",
+    "fieldDates": "August 16–17, 2026",
+    "sampleSize": 800,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff (D)",
+        "pct": 50
+      },
+      {
+        "candidate": "Mike Collins (R)",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+    "scrapedAt": "2026-08-19T00:47:30.026Z"
+  },
+  {
+    "raceId": "GA-senate",
+    "pollster": "Beacon Research (D)/ Shaw & Co. Research",
+    "partisanLean": "R",
+    "fieldDates": "June 23–27, 2026",
+    "sampleSize": 1002,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff (D)",
+        "pct": 56
+      },
+      {
+        "candidate": "Mike Collins (R)",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+    "scrapedAt": "2026-08-19T00:47:30.026Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Echelon Insights",
+    "partisanLean": null,
+    "fieldDates": "2026-08-17",
+    "sampleSize": 1002,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 50
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-19T00:47:46.104Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Economist/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-08-17",
+    "sampleSize": 1450,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 46
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-19T00:47:46.104Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Reuters/Ipsos",
+    "partisanLean": null,
+    "fieldDates": "2026-08-17",
+    "sampleSize": 876,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 41
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 36
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-19T00:47:46.104Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Morning Consult",
+    "partisanLean": null,
+    "fieldDates": "2026-08-16",
+    "sampleSize": 29719,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 46
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-19T00:47:46.104Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "InsiderAdvantage",
+    "partisanLean": null,
+    "fieldDates": "2026-08-17",
+    "sampleSize": 800,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ossoff",
+        "pct": 50
+      },
+      {
+        "candidate": "Collins",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-08-19T00:48:04.681Z"
   }
 ]
