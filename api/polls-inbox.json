@@ -17091,5 +17091,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://www.pollsmax.com/senate/michigan/",
     "scrapedAt": "2026-08-20T01:01:08.006Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Emerson ±2.7",
+    "partisanLean": null,
+    "fieldDates": "2026-08-17",
+    "sampleSize": 1000,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-20T12:34:39.045Z"
+  },
+  {
+    "raceId": "AR",
+    "pollster": "J.L. Partners",
+    "partisanLean": null,
+    "fieldDates": "2026-08-18",
+    "sampleSize": 803,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Hallie Shoffner",
+        "pct": 35
+      },
+      {
+        "candidate": "Tom Cotton",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/AR",
+    "scrapedAt": "2026-08-20T12:34:46.012Z"
+  },
+  {
+    "raceId": "AR",
+    "pollster": "Hendrix College",
+    "partisanLean": null,
+    "fieldDates": "2026-08-12",
+    "sampleSize": 1217,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Hallie Shoffner",
+        "pct": 47
+      },
+      {
+        "candidate": "Tom Cotton",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/AR",
+    "scrapedAt": "2026-08-20T12:34:46.012Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Susquehanna ±3.7",
+    "partisanLean": null,
+    "fieldDates": "2026-08-17",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed",
+        "pct": 46
+      },
+      {
+        "candidate": "Mike Rogers",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-08-20T12:35:13.382Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Susquehanna Polling & Research",
+    "partisanLean": "R",
+    "fieldDates": "2026-08-17",
+    "sampleSize": 800,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed",
+        "pct": 46
+      },
+      {
+        "candidate": "Mike Rogers",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-08-20T12:35:13.382Z"
+  },
+  {
+    "raceId": "PA-01",
+    "pollster": "Global Strategy Group",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-09",
+    "sampleSize": 500,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Bob Harvie",
+        "pct": 43
+      },
+      {
+        "candidate": "Brian Fitzpatrick",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/PA-01",
+    "scrapedAt": "2026-08-20T12:39:05.420Z"
   }
 ]
