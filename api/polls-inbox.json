@@ -17574,5 +17574,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/NC",
     "scrapedAt": "2026-08-22T00:46:17.011Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "rowspan=\"2\"|High Point University/YouGov",
+    "partisanLean": null,
+    "fieldDates": "rowspan=\"2\"|August 3–12, 2026",
+    "sampleSize": 800,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 41
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-08-22T12:28:40.655Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "High Point University",
+    "partisanLean": null,
+    "fieldDates": "2026-08-12",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democratic",
+        "pct": 45
+      },
+      {
+        "candidate": "Republican",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-22T12:28:53.047Z"
+  },
+  {
+    "raceId": "MN",
+    "pollster": "Deep Root Analytics",
+    "partisanLean": "R",
+    "fieldDates": "2026-08-18",
+    "sampleSize": 597,
+    "population": "RV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan",
+        "pct": 50
+      },
+      {
+        "candidate": "Michele Tafoya",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MN",
+    "scrapedAt": "2026-08-22T12:29:30.637Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "High Point University/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-08-12",
+    "sampleSize": 800,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Roy Cooper",
+        "pct": 48
+      },
+      {
+        "candidate": "Michael Whatley",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-08-22T12:29:38.265Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "High point",
+    "partisanLean": null,
+    "fieldDates": "2026-08-12",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Roy Cooper",
+        "pct": 50
+      },
+      {
+        "candidate": "Michael Whatley",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-08-22T12:29:38.265Z"
+  },
+  {
+    "raceId": "FL-22",
+    "pollster": "Tavern Research",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-12",
+    "sampleSize": 551,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "PIa Dandiya",
+        "pct": 50
+      },
+      {
+        "candidate": "Casey Askar",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/FL-22",
+    "scrapedAt": "2026-08-22T12:31:20.088Z"
   }
 ]
