@@ -17505,5 +17505,74 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/NY-21",
     "scrapedAt": "2026-08-21T12:38:56.833Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "rowspan=\"2\" |High Point University/YouGov",
+    "partisanLean": null,
+    "fieldDates": "rowspan=\"2\" |August 3-12, 2026",
+    "sampleSize": 800,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 41
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-08-22T00:45:20.315Z"
+  },
+  {
+    "raceId": "MN-senate",
+    "pollster": "Deep Root Analytics",
+    "partisanLean": "R",
+    "fieldDates": "August 17–18, 2026",
+    "sampleSize": 597,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan (DFL)",
+        "pct": 50
+      },
+      {
+        "candidate": "Michele Tafoya (R)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+    "scrapedAt": "2026-08-22T00:45:24.878Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "High Point University",
+    "partisanLean": null,
+    "fieldDates": "2026-08-12",
+    "sampleSize": 660,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 50
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-08-22T00:46:17.011Z"
   }
 ]
