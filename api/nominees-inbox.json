@@ -1,6 +1,6 @@
 {
   "_help": "Auto-fetched nominee candidates awaiting human review. Move verified entries into api/nominees.json. Surname fragments are fuzzy on purpose - check that each one matches exactly one candidate in that seat's FEC field before promoting it.",
-  "_generated": "2026-08-17T09:38:12.615Z",
+  "_generated": "2026-08-24T09:43:28.697Z",
   "_source": "https://pollingsource.com/primaries/<ST>",
   "states": {
     "AL": {
@@ -11,7 +11,7 @@
     },
     "AK": {
       "primaryDate": "Aug 18 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 0,
       "seatsParsed": 0
     },
@@ -53,9 +53,9 @@
     },
     "FL": {
       "primaryDate": "Aug 18 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 28,
-      "seatsParsed": 0
+      "seatsParsed": 20
     },
     "GA": {
       "primaryDate": "May 19 \n 2026",
@@ -232,7 +232,7 @@
       "seatsParsed": 17
     },
     "RI": {
-      "primaryDate": "Sep 8 \n 2026",
+      "primaryDate": "Sep 9 \n 2026",
       "completed": false,
       "districtsSeen": 2,
       "seatsParsed": 0
@@ -299,7 +299,7 @@
     },
     "WY": {
       "primaryDate": "Aug 18 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 0,
       "seatsParsed": 0
     }
@@ -1298,6 +1298,206 @@
         "SHEA"
       ],
       "primaryDate": "Aug 11 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-senate": {
+      "nominees": [
+        "NIXON",
+        "MOODY"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-01": {
+      "nominees": [
+        "PATRONIS",
+        "CHICO"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-02": {
+      "nominees": [
+        "ROGERS"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-04": {
+      "nominees": [
+        "HOLLOWAY"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-05": {
+      "nominees": [
+        "GRAGE",
+        "RUTHERFORD"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-06": {
+      "nominees": [
+        "FINE"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-07": {
+      "nominees": [
+        "DALTON",
+        "ELIJAH"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-11": {
+      "nominees": [
+        "PERICOLA"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-12": {
+      "nominees": [
+        "OVERMAN"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-13": {
+      "nominees": [
+        "GRAY"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-14": {
+      "nominees": [
+        "BELTRAN"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-15": {
+      "nominees": [
+        "PEOPLE"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-16": {
+      "nominees": [
+        "KIRSCHNER",
+        "GRUTERS"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-17": {
+      "nominees": [
+        "MONTAVON"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-19": {
+      "nominees": [
+        "ARIAS",
+        "SCHWARTZEL"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-20": {
+      "nominees": [
+        "SCHULTZ",
+        "ANDERSEN"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-21": {
+      "nominees": [
+        "MARTIN"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-22": {
+      "nominees": [
+        "DANDIYA",
+        "ASKAR"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-23": {
+      "nominees": [
+        "FRANKEL",
+        "ADEIMY"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-25": {
+      "nominees": [
+        "MOSKOWITZ",
+        "SINGER"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-27": {
+      "nominees": [
+        "RODRIGUEZ",
+        "SALAZAR"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
       "completed": true,
       "alreadyLive": null,
       "changed": true
@@ -4762,6 +4962,15 @@
         "ALFONSO"
       ],
       "primaryDate": "Aug 11 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "WY-senate": {
+      "nominees": [
+        "HAGEMAN"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
       "completed": true,
       "alreadyLive": null,
       "changed": true
