@@ -17781,5 +17781,74 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://www.pollsmax.com/senate/north-carolina/",
     "scrapedAt": "2026-08-23T12:34:17.710Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "University of Texas/Texas Politics Project",
+    "partisanLean": null,
+    "fieldDates": "August 5–13, 2026",
+    "sampleSize": 1200,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 39
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-08-25T12:36:20.051Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Ipsos",
+    "partisanLean": null,
+    "fieldDates": "2026-08-24",
+    "sampleSize": null,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democratic",
+        "pct": 41
+      },
+      {
+        "candidate": "Republican",
+        "pct": 35
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-25T12:36:37.935Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Reuters/Ipsos",
+    "partisanLean": null,
+    "fieldDates": "2026-08-24",
+    "sampleSize": 951,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 41
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 35
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-25T12:36:37.936Z"
   }
 ]
