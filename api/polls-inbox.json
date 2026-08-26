@@ -17873,5 +17873,120 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
     "scrapedAt": "2026-08-26T00:48:02.182Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Noble Predictive Insights ±4.0",
+    "partisanLean": null,
+    "fieldDates": "2026-08-16",
+    "sampleSize": 2533,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 47
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-26T12:38:41.704Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "GrayHouse",
+    "partisanLean": "R",
+    "fieldDates": "2026-08-11",
+    "sampleSize": null,
+    "population": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democratic",
+        "pct": 49
+      },
+      {
+        "candidate": "Republican",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-26T12:38:41.704Z"
+  },
+  {
+    "raceId": "OK",
+    "pollster": "Cole Hargrave",
+    "partisanLean": null,
+    "fieldDates": "2026-08-09",
+    "sampleSize": null,
+    "population": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jasmine Thomas",
+        "pct": 25
+      },
+      {
+        "candidate": "Kevin Hern",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/OK",
+    "scrapedAt": "2026-08-26T12:39:42.662Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "UT",
+    "partisanLean": null,
+    "fieldDates": "2026-08-13",
+    "sampleSize": null,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "James Talarico",
+        "pct": 42
+      },
+      {
+        "candidate": "Ken Paxton",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/TX",
+    "scrapedAt": "2026-08-26T12:39:56.986Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "University of Texas/Texas Politics Project",
+    "partisanLean": null,
+    "fieldDates": "2026-08-13",
+    "sampleSize": 1200,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "James Talarico",
+        "pct": 42
+      },
+      {
+        "candidate": "Ken Paxton",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/TX",
+    "scrapedAt": "2026-08-26T12:39:56.986Z"
   }
 ]
