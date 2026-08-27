@@ -18080,5 +18080,235 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
     "scrapedAt": "2026-08-27T05:39:32.916Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "Texas Public Opinion Research",
+    "partisanLean": "D",
+    "fieldDates": "August 21–24, 2026",
+    "sampleSize": 1000,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 42
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-08-27T21:35:46.443Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "McLaughlin",
+    "partisanLean": "R",
+    "fieldDates": "2026-08-24",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democratic",
+        "pct": 48
+      },
+      {
+        "candidate": "Republican",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-27T21:36:01.440Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Verasight",
+    "partisanLean": null,
+    "fieldDates": "2026-08-19",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democratic",
+        "pct": 51
+      },
+      {
+        "candidate": "Republican",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-27T21:36:01.440Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Suffolk University",
+    "partisanLean": null,
+    "fieldDates": "2026-08-23",
+    "sampleSize": 500,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Josh Turek",
+        "pct": 41
+      },
+      {
+        "candidate": "Ashley Hinson",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/IA",
+    "scrapedAt": "2026-08-27T21:36:20.900Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Suffolk",
+    "partisanLean": null,
+    "fieldDates": "2026-08-22",
+    "sampleSize": null,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Josh Turek",
+        "pct": 41
+      },
+      {
+        "candidate": "Ashley Hinson",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/IA",
+    "scrapedAt": "2026-08-27T21:36:20.900Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "TSU",
+    "partisanLean": null,
+    "fieldDates": "2026-08-22",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "James Talarico",
+        "pct": 50
+      },
+      {
+        "candidate": "Ken Paxton",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/TX",
+    "scrapedAt": "2026-08-27T21:37:16.645Z"
+  },
+  {
+    "raceId": "OH-01",
+    "pollster": "Quantus Insights",
+    "partisanLean": "R",
+    "fieldDates": "2026-08-24",
+    "sampleSize": 509,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Greg Landsman",
+        "pct": 47
+      },
+      {
+        "candidate": "Eric Conroy",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/OH-01",
+    "scrapedAt": "2026-08-27T21:40:15.395Z"
+  },
+  {
+    "raceId": "TX-15",
+    "pollster": "Public Policy Research/Texas Southern University",
+    "partisanLean": null,
+    "fieldDates": "2026-08-22",
+    "sampleSize": 700,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Bobby Pulido",
+        "pct": 50
+      },
+      {
+        "candidate": "Monica De La Cruz",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/TX-15",
+    "scrapedAt": "2026-08-27T21:40:47.193Z"
+  },
+  {
+    "raceId": "TX-28",
+    "pollster": "Public Policy Research/Texas Southern University",
+    "partisanLean": null,
+    "fieldDates": "2026-08-22",
+    "sampleSize": 600,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Henry Cuellar",
+        "pct": 45
+      },
+      {
+        "candidate": "Tano Tijerina",
+        "pct": 34
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/TX-28",
+    "scrapedAt": "2026-08-27T21:40:51.745Z"
+  },
+  {
+    "raceId": "TX-34",
+    "pollster": "Public Policy Research/Texas Southern University",
+    "partisanLean": null,
+    "fieldDates": "2026-08-22",
+    "sampleSize": 700,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Vicente Gonzalez",
+        "pct": 45
+      },
+      {
+        "candidate": "Eric Flores",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/TX-34",
+    "scrapedAt": "2026-08-27T21:40:53.480Z"
   }
 ]
