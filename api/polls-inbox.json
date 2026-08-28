@@ -18471,5 +18471,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/AZ-02",
     "scrapedAt": "2026-08-28T07:38:25.371Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "GQR",
+    "partisanLean": "D",
+    "fieldDates": "August 19–25, 2026",
+    "sampleSize": 422,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Karishma Manzur",
+        "pct": 15
+      },
+      {
+        "candidate": "Chris Pappas",
+        "pct": 71
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-08-28T21:48:11.721Z"
+  },
+  {
+    "raceId": "MN",
+    "pollster": "SurveyUSA",
+    "partisanLean": null,
+    "fieldDates": "2026-08-28",
+    "sampleSize": 661,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan",
+        "pct": 46
+      },
+      {
+        "candidate": "Michele Tafoya",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MN",
+    "scrapedAt": "2026-08-28T21:49:03.922Z"
   }
 ]
