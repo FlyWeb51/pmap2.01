@@ -18310,5 +18310,166 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/TX-34",
     "scrapedAt": "2026-08-27T21:40:53.480Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "M",
+    "partisanLean": null,
+    "fieldDates": "2026-08-23",
+    "sampleSize": null,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Shapiro",
+        "pct": 50
+      },
+      {
+        "candidate": "Garrity",
+        "pct": 25
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-28T07:36:46.936Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Angus Reid",
+    "partisanLean": null,
+    "fieldDates": "2026-08-11",
+    "sampleSize": null,
+    "population": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 45
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 36
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-28T07:36:46.936Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Suffolk",
+    "partisanLean": null,
+    "fieldDates": "2026-08-22",
+    "sampleSize": 500,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Josh Turek",
+        "pct": 40.8
+      },
+      {
+        "candidate": "Ashley Hinson",
+        "pct": 45.4
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/IA",
+    "scrapedAt": "2026-08-28T07:37:07.606Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "TPOR",
+    "partisanLean": null,
+    "fieldDates": "2026-08-24",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "James Talarico",
+        "pct": 48
+      },
+      {
+        "candidate": "Ken Paxton",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/TX",
+    "scrapedAt": "2026-08-28T07:38:06.845Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Texas Public Opinion Research",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-24",
+    "sampleSize": 1000,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "James Talarico",
+        "pct": 48
+      },
+      {
+        "candidate": "Ken Paxton",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/TX",
+    "scrapedAt": "2026-08-28T07:38:06.845Z"
+  },
+  {
+    "raceId": "AZ-02",
+    "pollster": "Peak Insights",
+    "partisanLean": null,
+    "fieldDates": "2026-08-20",
+    "sampleSize": 400,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jonathan Nez",
+        "pct": 42
+      },
+      {
+        "candidate": "Eli Crane",
+        "pct": 53
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/AZ-02",
+    "scrapedAt": "2026-08-28T07:38:25.371Z"
+  },
+  {
+    "raceId": "AZ-02",
+    "pollster": "GBAO",
+    "partisanLean": "D",
+    "fieldDates": "2026-06-15",
+    "sampleSize": 500,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jonathan Nez",
+        "pct": 41
+      },
+      {
+        "candidate": "Eli Crane",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/AZ-02",
+    "scrapedAt": "2026-08-28T07:38:25.371Z"
   }
 ]
