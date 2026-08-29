@@ -18517,5 +18517,101 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/MN",
     "scrapedAt": "2026-08-28T21:49:03.922Z"
+  },
+  {
+    "raceId": "NE-senate",
+    "pollster": "Impact Research",
+    "partisanLean": "D",
+    "fieldDates": "August 9–13, 2026",
+    "sampleSize": 600,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Pete Ricketts (R)",
+        "pct": 47
+      },
+      {
+        "candidate": "Dan Osborn (I)",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+    "scrapedAt": "2026-08-29T04:47:08.864Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "Trafalgar Group",
+    "partisanLean": "R",
+    "fieldDates": "August 22–24, 2026",
+    "sampleSize": 1031,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Darline Graham",
+        "pct": 48
+      },
+      {
+        "candidate": "Ralph Norman",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-08-29T04:47:09.946Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "Impact Research",
+    "partisanLean": "D",
+    "fieldDates": "August 18–24, 2026",
+    "sampleSize": 700,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Darline Graham (R)",
+        "pct": 41
+      },
+      {
+        "candidate": "Annie Andrews (D)",
+        "pct": 41
+      },
+      {
+        "candidate": "Kasie Whitener (L)",
+        "pct": 5
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-08-29T04:47:09.946Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Quantus Insights",
+    "partisanLean": null,
+    "fieldDates": "2026-08-28",
+    "sampleSize": 1200,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 50
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-29T04:47:12.770Z"
   }
 ]
