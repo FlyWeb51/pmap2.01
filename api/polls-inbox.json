@@ -18613,5 +18613,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
     "scrapedAt": "2026-08-29T04:47:12.770Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Quantus",
+    "partisanLean": null,
+    "fieldDates": "2026-08-28",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 50
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-08-29T16:05:52.068Z"
+  },
+  {
+    "raceId": "MS",
+    "pollster": "Data for Progress (D)  ±4.1 D-sponsored",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-15",
+    "sampleSize": 1018,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Scott Colom",
+        "pct": 38
+      },
+      {
+        "candidate": "Cindy Hyde-Smith",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MS",
+    "scrapedAt": "2026-08-29T16:06:36.574Z"
+  },
+  {
+    "raceId": "MS",
+    "pollster": "Data FP",
+    "partisanLean": null,
+    "fieldDates": "2026-08-15",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Scott Colom",
+        "pct": 38
+      },
+      {
+        "candidate": "Cindy Hyde-Smith",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MS",
+    "scrapedAt": "2026-08-29T16:06:36.574Z"
+  },
+  {
+    "raceId": "NC-07",
+    "pollster": "Public Policy Polling (D)  ±2.0 D-sponsored",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-20",
+    "sampleSize": 517,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Kimberly Hardy",
+        "pct": 39
+      },
+      {
+        "candidate": "David Rouzer",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/NC-07",
+    "scrapedAt": "2026-08-29T16:09:34.166Z"
   }
 ]
