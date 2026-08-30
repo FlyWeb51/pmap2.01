@@ -18705,5 +18705,120 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/NC-07",
     "scrapedAt": "2026-08-29T16:09:34.166Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "rowspan=2 |EPIC-MRA",
+    "partisanLean": null,
+    "fieldDates": "rowspan=2|August 22–28, 2026",
+    "sampleSize": 600,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 50
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-08-30T02:52:36.895Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "EPIC-MRA",
+    "partisanLean": null,
+    "fieldDates": "2026-08-28",
+    "sampleSize": 600,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "El-Sayed",
+        "pct": 47
+      },
+      {
+        "candidate": "Rogers",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-08-30T02:53:25.531Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Pollsmax average (latest input: Suffolk University)",
+    "partisanLean": null,
+    "fieldDates": "August 22, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 43.3
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 47.9
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/iowa/",
+    "scrapedAt": "2026-08-30T02:58:15.304Z"
+  },
+  {
+    "raceId": "NH",
+    "pollster": "Pollsmax average (latest input: University of New Hampshire)",
+    "partisanLean": null,
+    "fieldDates": "August 24, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 46.9
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 41.3
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/new-hampshire/",
+    "scrapedAt": "2026-08-30T02:58:18.693Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: Slingshot Strategies (D))",
+    "partisanLean": null,
+    "fieldDates": "August 24, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 44.7
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45.8
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-08-30T02:58:21.194Z"
   }
 ]
