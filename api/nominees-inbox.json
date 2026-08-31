@@ -1,6 +1,6 @@
 {
   "_help": "Auto-fetched nominee candidates awaiting human review. Move verified entries into api/nominees.json. Surname fragments are fuzzy on purpose - check that each one matches exactly one candidate in that seat's FEC field before promoting it.",
-  "_generated": "2026-08-24T09:43:28.697Z",
+  "_generated": "2026-08-31T16:41:53.151Z",
   "_source": "https://pollingsource.com/primaries/<ST>",
   "states": {
     "AL": {
@@ -55,7 +55,7 @@
       "primaryDate": "Aug 18 \n 2026",
       "completed": true,
       "districtsSeen": 28,
-      "seatsParsed": 20
+      "seatsParsed": 21
     },
     "GA": {
       "primaryDate": "May 19 \n 2026",
@@ -1324,6 +1324,7 @@
     },
     "FL-02": {
       "nominees": [
+        "GREEN",
         "ROGERS"
       ],
       "primaryDate": "Aug 18 \n 2026",
@@ -1476,6 +1477,15 @@
       "nominees": [
         "FRANKEL",
         "ADEIMY"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-24": {
+      "nominees": [
+        "GILBERT"
       ],
       "primaryDate": "Aug 18 \n 2026",
       "completed": true,
@@ -1670,7 +1680,7 @@
     },
     "GA-13": {
       "nominees": [
-        "CLARK",
+        "BLAIR",
         "CHAVEZ"
       ],
       "primaryDate": "May 19 \n 2026",
@@ -1679,7 +1689,7 @@
         "CLARK",
         "CHAVEZ"
       ],
-      "changed": false
+      "changed": true
     },
     "GA-14": {
       "nominees": [
@@ -3656,6 +3666,7 @@
     },
     "OK-senate": {
       "nominees": [
+        "THOMAS",
         "HERN"
       ],
       "primaryDate": "Jun 16 \n 2026",
@@ -4033,7 +4044,8 @@
     },
     "SC-senate": {
       "nominees": [
-        "ANDREWS"
+        "ANDREWS",
+        "GRAHAM"
       ],
       "primaryDate": "Jun 9 \n 2026",
       "completed": true,
@@ -4968,6 +4980,7 @@
     },
     "WY-senate": {
       "nominees": [
+        "BYRD",
         "HAGEMAN"
       ],
       "primaryDate": "Aug 18 \n 2026",
