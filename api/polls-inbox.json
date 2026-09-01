@@ -19096,5 +19096,74 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/IA",
     "scrapedAt": "2026-08-31T18:35:26.417Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "Abacus Data",
+    "partisanLean": null,
+    "fieldDates": "August 26–28, 2026",
+    "sampleSize": 327,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 42
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-09-01T02:35:57.805Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Reuters/Ipsos",
+    "partisanLean": null,
+    "fieldDates": "2026-08-31",
+    "sampleSize": 924,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 43
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 38
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-01T02:36:08.962Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Morning Consult",
+    "partisanLean": null,
+    "fieldDates": "2026-08-30",
+    "sampleSize": 24000,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 47
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-01T02:36:08.962Z"
   }
 ]
