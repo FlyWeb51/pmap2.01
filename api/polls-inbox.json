@@ -19767,5 +19767,120 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
     "scrapedAt": "2026-09-03T02:29:48.988Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "Fabrizio, Lee, & Associates",
+    "partisanLean": "R",
+    "fieldDates": "August 27–30, 2026",
+    "sampleSize": 600,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chris Pappas (D)",
+        "pct": 36
+      },
+      {
+        "candidate": "John E. Sununu (R)",
+        "pct": 37
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-09-03T15:56:35.402Z"
+  },
+  {
+    "raceId": "IA-senate",
+    "pollster": "Emerson College",
+    "partisanLean": null,
+    "fieldDates": "August 31-September 1, 2026",
+    "sampleSize": 750,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ashley Hinson (R)",
+        "pct": 50
+      },
+      {
+        "candidate": "Josh Turek (D)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+    "scrapedAt": "2026-09-03T15:56:39.111Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Emerson ±2.7",
+    "partisanLean": null,
+    "fieldDates": "2026-09-01",
+    "sampleSize": 750,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Josh Turek",
+        "pct": 45
+      },
+      {
+        "candidate": "Ashley Hinson",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/IA",
+    "scrapedAt": "2026-09-03T15:57:04.690Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Overton Insights (R) R-sponsored",
+    "partisanLean": null,
+    "fieldDates": "2026-08-26",
+    "sampleSize": 1167,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "James Talarico",
+        "pct": 50
+      },
+      {
+        "candidate": "Ken Paxton",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/TX",
+    "scrapedAt": "2026-09-03T15:58:01.796Z"
+  },
+  {
+    "raceId": "AZ-02",
+    "pollster": "GBAO",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-24",
+    "sampleSize": 500,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jonathan Nez",
+        "pct": 44
+      },
+      {
+        "candidate": "Eli Crane",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/AZ-02",
+    "scrapedAt": "2026-09-03T15:58:20.127Z"
   }
 ]
