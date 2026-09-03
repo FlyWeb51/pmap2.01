@@ -19721,5 +19721,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/NM",
     "scrapedAt": "2026-09-02T16:08:35.415Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Harvard-Harris",
+    "partisanLean": null,
+    "fieldDates": "2026-08-30",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 49
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-03T02:29:48.988Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": null,
+    "fieldDates": "2026-08-27",
+    "sampleSize": 2231,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 41
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 36
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-03T02:29:48.988Z"
   }
 ]
