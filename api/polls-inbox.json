@@ -20020,5 +20020,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/NM-02",
     "scrapedAt": "2026-09-04T15:51:00.196Z"
+  },
+  {
+    "raceId": "AK",
+    "pollster": "Pollsmax average (latest input: Alaska Survey Research)",
+    "partisanLean": null,
+    "fieldDates": "August 23, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.6
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 48.6
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/alaska/",
+    "scrapedAt": "2026-09-05T02:02:36.269Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: Overton Insights)",
+    "partisanLean": null,
+    "fieldDates": "August 26, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.1
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 46.4
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-09-05T02:02:44.636Z"
   }
 ]
