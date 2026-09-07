@@ -1,6 +1,6 @@
 {
   "_help": "Auto-fetched nominee candidates awaiting human review. Move verified entries into api/nominees.json. Surname fragments are fuzzy on purpose - check that each one matches exactly one candidate in that seat's FEC field before promoting it.",
-  "_generated": "2026-08-31T16:41:53.151Z",
+  "_generated": "2026-09-07T14:45:59.161Z",
   "_source": "https://pollingsource.com/primaries/<ST>",
   "states": {
     "AL": {
@@ -125,9 +125,9 @@
     },
     "MA": {
       "primaryDate": "Sep 1 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 9,
-      "seatsParsed": 0
+      "seatsParsed": 9
     },
     "MI": {
       "primaryDate": "Aug 4 \n 2026",
@@ -2448,6 +2448,100 @@
         "RILEY"
       ],
       "changed": false
+    },
+    "MA-senate": {
+      "nominees": [
+        "MARKEY",
+        "DEATON"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-01": {
+      "nominees": [
+        "NEAL"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-02": {
+      "nominees": [
+        "MCGOVERN"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-03": {
+      "nominees": [
+        "TRAHAN",
+        "GROSSI"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-04": {
+      "nominees": [
+        "STALCUP"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-05": {
+      "nominees": [
+        "CLARK"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-06": {
+      "nominees": [
+        "JONES"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-07": {
+      "nominees": [
+        "PRESSLEY"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-08": {
+      "nominees": [
+        "LYNCH",
+        "BURKE"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "MA-09": {
+      "nominees": [
+        "KEATING",
+        "MACALLISTER"
+      ],
+      "primaryDate": "Sep 1 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
     },
     "MI-senate": {
       "nominees": [
