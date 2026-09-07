@@ -20135,5 +20135,74 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/FL-13",
     "scrapedAt": "2026-09-06T14:46:54.152Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "rowspan=\"2\"|Abacus Data",
+    "partisanLean": null,
+    "fieldDates": "rowspan=\"2\"|August 26–28, 2026",
+    "sampleSize": 306,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Darline Graham (R)",
+        "pct": 55
+      },
+      {
+        "candidate": "Annie Andrews (D)",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-09-07T02:15:11.054Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Financial Times",
+    "partisanLean": null,
+    "fieldDates": "2026-09-02",
+    "sampleSize": 1837,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 52
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-07T02:15:13.930Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "The Honest Poll",
+    "partisanLean": null,
+    "fieldDates": "2026-09-01",
+    "sampleSize": 812,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 53
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-07T02:15:13.930Z"
   }
 ]
