@@ -20204,5 +20204,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
     "scrapedAt": "2026-09-07T02:15:13.930Z"
+  },
+  {
+    "raceId": "NV-02",
+    "pollster": "Strategies 360",
+    "partisanLean": null,
+    "fieldDates": "2026-08-26",
+    "sampleSize": 400,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Teresa Benitez-Thompson",
+        "pct": 42
+      },
+      {
+        "candidate": "David Flippo",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/NV-02",
+    "scrapedAt": "2026-09-08T16:17:49.727Z"
+  },
+  {
+    "raceId": "TN-05",
+    "pollster": "Impact Research",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-24",
+    "sampleSize": 500,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chaz Molder",
+        "pct": 40
+      },
+      {
+        "candidate": "Charlie Hatcher",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/TN-05",
+    "scrapedAt": "2026-09-08T16:18:38.040Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Pollsmax average (latest input: Emerson College)",
+    "partisanLean": null,
+    "fieldDates": "September 1, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 44.2
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 49.3
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/iowa/",
+    "scrapedAt": "2026-09-08T16:19:14.797Z"
+  },
+  {
+    "raceId": "NH",
+    "pollster": "Pollsmax average (latest input: Fabrizio, Lee & Associates (R))",
+    "partisanLean": null,
+    "fieldDates": "August 30, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.9
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 40.6
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/new-hampshire/",
+    "scrapedAt": "2026-09-08T16:19:18.223Z"
   }
 ]
