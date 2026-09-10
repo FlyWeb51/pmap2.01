@@ -20526,5 +20526,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/NY-21",
     "scrapedAt": "2026-09-09T16:02:54.851Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "Univision/YouGov",
+    "partisanLean": null,
+    "fieldDates": "August 27 – September 4, 2026",
+    "sampleSize": 1000,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 43
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-09-10T02:03:55.793Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "SSRS",
+    "partisanLean": null,
+    "fieldDates": "August 31 – September 6, 2026",
+    "sampleSize": 880,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 45
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-09-10T02:03:59.162Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "SSRS",
+    "partisanLean": null,
+    "fieldDates": "August 31 – September 6, 2026",
+    "sampleSize": 843,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 47
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-09-10T02:04:00.347Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Economist/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-09-08",
+    "sampleSize": 1015,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 49
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 38
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-10T02:04:10.818Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Morning Consult",
+    "partisanLean": null,
+    "fieldDates": "2026-09-06",
+    "sampleSize": 24000,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 46
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-10T02:04:10.819Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "CNN",
+    "partisanLean": null,
+    "fieldDates": "2026-09-06",
+    "sampleSize": 843,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "El-Sayed",
+        "pct": 47
+      },
+      {
+        "candidate": "Rogers",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-09-10T02:04:49.215Z"
   }
 ]
