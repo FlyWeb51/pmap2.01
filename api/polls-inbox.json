@@ -21377,5 +21377,212 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/TN-09",
     "scrapedAt": "2026-09-11T15:43:11.988Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": "R",
+    "fieldDates": "September 8–10, 2026",
+    "sampleSize": 1000,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chris Pappas (D)",
+        "pct": 45
+      },
+      {
+        "candidate": "John E. Sununu (R)",
+        "pct": 34
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-09-12T02:10:32.643Z"
+  },
+  {
+    "raceId": "MN-senate",
+    "pollster": "Quantus Insights",
+    "partisanLean": null,
+    "fieldDates": "September 8–10, 2026",
+    "sampleSize": 720,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan (DFL)",
+        "pct": 48
+      },
+      {
+        "candidate": "Michele Tafoya (R)",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+    "scrapedAt": "2026-09-12T02:10:33.717Z"
+  },
+  {
+    "raceId": "IA-senate",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": "R",
+    "fieldDates": "September 8–10, 2026",
+    "sampleSize": 1031,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ashley Hinson (R)",
+        "pct": 40
+      },
+      {
+        "candidate": "Josh Turek (D)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+    "scrapedAt": "2026-09-12T02:10:35.908Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Cygnal",
+    "partisanLean": null,
+    "fieldDates": "2026-09-02",
+    "sampleSize": 1500,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-12T02:10:41.108Z"
+  },
+  {
+    "raceId": "ME",
+    "pollster": "Pollsmax average (latest input: YouGov)",
+    "partisanLean": null,
+    "fieldDates": "September 8, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.6
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45.5
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/maine/",
+    "scrapedAt": "2026-09-12T02:15:36.129Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Pollsmax average (latest input: Trafalgar Group (R))",
+    "partisanLean": null,
+    "fieldDates": "September 9, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.9
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 44.5
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/michigan/",
+    "scrapedAt": "2026-09-12T02:15:36.973Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Pollsmax average (latest input: East Carolina University)",
+    "partisanLean": null,
+    "fieldDates": "September 3, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 48.2
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.3
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/north-carolina/",
+    "scrapedAt": "2026-09-12T02:15:39.509Z"
+  },
+  {
+    "raceId": "OH",
+    "pollster": "Pollsmax average (latest input: InsiderAdvantage (R))",
+    "partisanLean": null,
+    "fieldDates": "September 9, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 46
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 46.4
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/ohio/",
+    "scrapedAt": "2026-09-12T02:15:40.342Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: InsiderAdvantage (R))",
+    "partisanLean": null,
+    "fieldDates": "September 9, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.7
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-09-12T02:15:41.180Z"
   }
 ]
