@@ -21837,5 +21837,120 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
     "scrapedAt": "2026-09-13T01:58:15.747Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "InsiderAdvantage",
+    "partisanLean": "R",
+    "fieldDates": "September 8–9, 2026",
+    "sampleSize": 1200,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Darline Graham (R)",
+        "pct": 45
+      },
+      {
+        "candidate": "Annie Andrews (D)",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-09-13T15:26:05.161Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "ActiVote",
+    "partisanLean": null,
+    "fieldDates": "2026-09-10",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democratic",
+        "pct": 52.3
+      },
+      {
+        "candidate": "Republican",
+        "pct": 47.7
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-13T15:26:07.316Z"
+  },
+  {
+    "raceId": "MT",
+    "pollster": "Rutgers University Eagleton Institute of Politics",
+    "partisanLean": null,
+    "fieldDates": "2026-09-07",
+    "sampleSize": 845,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Alani Bankhead",
+        "pct": 16
+      },
+      {
+        "candidate": "Kurt Alme",
+        "pct": 38
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MT",
+    "scrapedAt": "2026-09-13T15:26:53.202Z"
+  },
+  {
+    "raceId": "AL-02",
+    "pollster": "Tulchin Research (D)  D-sponsored",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-31",
+    "sampleSize": null,
+    "population": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Shomari Figures",
+        "pct": 47
+      },
+      {
+        "candidate": "Rhett Marques",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/AL-02",
+    "scrapedAt": "2026-09-13T15:27:32.311Z"
+  },
+  {
+    "raceId": "FL-22",
+    "pollster": "Tulchin Research",
+    "partisanLean": "D",
+    "fieldDates": "2026-08-31",
+    "sampleSize": null,
+    "population": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Pia Dandiya",
+        "pct": 46
+      },
+      {
+        "candidate": "Casey Askar",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/FL-22",
+    "scrapedAt": "2026-09-13T15:28:25.667Z"
   }
 ]
