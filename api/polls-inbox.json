@@ -21952,5 +21952,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/FL-22",
     "scrapedAt": "2026-09-13T15:28:25.667Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "SoCal Strategies",
+    "partisanLean": "R",
+    "fieldDates": "September 12–13, 2026",
+    "sampleSize": 649,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 45
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-09-14T02:17:07.557Z"
+  },
+  {
+    "raceId": "GA-senate",
+    "pollster": "Trafalgar Group",
+    "partisanLean": "R",
+    "fieldDates": "September 10–12, 2026",
+    "sampleSize": 1091,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff (D)",
+        "pct": 49
+      },
+      {
+        "candidate": "Mike Collins (R)",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+    "scrapedAt": "2026-09-14T02:17:08.638Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "The Trafalgar Group",
+    "partisanLean": "R",
+    "fieldDates": "September 8–10, 2026",
+    "sampleSize": 1084,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 42
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-09-14T02:17:09.739Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "CBS News",
+    "partisanLean": null,
+    "fieldDates": "2026-09-11",
+    "sampleSize": 1750,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 54
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-14T02:17:22.411Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Trafalgar Group",
+    "partisanLean": null,
+    "fieldDates": "2026-09-12",
+    "sampleSize": 1091,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ossoff",
+        "pct": 49
+      },
+      {
+        "candidate": "Collins",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-09-14T02:17:39.250Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Trafalgar Group",
+    "partisanLean": null,
+    "fieldDates": "2026-09-10",
+    "sampleSize": 1084,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 48
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-09-14T02:18:05.636Z"
   }
 ]
