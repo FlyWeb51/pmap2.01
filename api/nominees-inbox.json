@@ -1,6 +1,6 @@
 {
   "_help": "Auto-fetched nominee candidates awaiting human review. Move verified entries into api/nominees.json. Surname fragments are fuzzy on purpose - check that each one matches exactly one candidate in that seat's FEC field before promoting it.",
-  "_generated": "2026-09-07T14:45:59.161Z",
+  "_generated": "2026-09-14T15:38:30.012Z",
   "_source": "https://pollingsource.com/primaries/<ST>",
   "states": {
     "AL": {
@@ -173,9 +173,9 @@
     },
     "NH": {
       "primaryDate": "Sep 8 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 2,
-      "seatsParsed": 0
+      "seatsParsed": 2
     },
     "NJ": {
       "primaryDate": "Jun 2 \n 2026",
@@ -233,9 +233,9 @@
     },
     "RI": {
       "primaryDate": "Sep 9 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 2,
-      "seatsParsed": 0
+      "seatsParsed": 2
     },
     "SC": {
       "primaryDate": "Jun 9 \n 2026",
@@ -3015,6 +3015,36 @@
       ],
       "changed": false
     },
+    "NH-senate": {
+      "nominees": [
+        "PAPPAS",
+        "SUNUNU"
+      ],
+      "primaryDate": "Sep 8 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "NH-01": {
+      "nominees": [
+        "SHAHEEN",
+        "DILORENZO"
+      ],
+      "primaryDate": "Sep 8 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "NH-02": {
+      "nominees": [
+        "GOODLANDER",
+        "WILLIAMS"
+      ],
+      "primaryDate": "Sep 8 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "NJ-senate": {
       "nominees": [
         "BOOKER",
@@ -4135,6 +4165,35 @@
         "GUY"
       ],
       "changed": false
+    },
+    "RI-senate": {
+      "nominees": [
+        "REED",
+        "MCKAY"
+      ],
+      "primaryDate": "Sep 9 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "RI-01": {
+      "nominees": [
+        "AMO",
+        "KEENAN"
+      ],
+      "primaryDate": "Sep 9 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "RI-02": {
+      "nominees": [
+        "MAGAZINER"
+      ],
+      "primaryDate": "Sep 9 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
     },
     "SC-senate": {
       "nominees": [
