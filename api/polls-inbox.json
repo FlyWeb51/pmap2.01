@@ -22182,5 +22182,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/NV-02",
     "scrapedAt": "2026-09-14T17:39:20.880Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "co/efficient",
+    "partisanLean": "R",
+    "fieldDates": "September 9–11, 2026",
+    "sampleSize": 958,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chris Pappas (D)",
+        "pct": 46
+      },
+      {
+        "candidate": "John E. Sununu (R)",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-09-15T02:34:36.325Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": null,
+    "fieldDates": "2026-09-09",
+    "sampleSize": 1905,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 47
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-15T02:34:45.626Z"
   }
 ]
