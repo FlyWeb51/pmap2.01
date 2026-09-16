@@ -22435,5 +22435,235 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/NJ-07",
     "scrapedAt": "2026-09-15T16:15:05.953Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "Mason-Dixon",
+    "partisanLean": null,
+    "fieldDates": "September 8–10, 2026",
+    "sampleSize": 625,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 43
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-09-16T02:16:42.246Z"
+  },
+  {
+    "raceId": "GA-senate",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": null,
+    "fieldDates": "September 14, 2026",
+    "sampleSize": 1019,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff (D)",
+        "pct": 51
+      },
+      {
+        "candidate": "Mike Collins (R)",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+    "scrapedAt": "2026-09-16T02:16:43.374Z"
+  },
+  {
+    "raceId": "MN-senate",
+    "pollster": "co/efficient",
+    "partisanLean": "R",
+    "fieldDates": "September 14–15, 2026",
+    "sampleSize": 833,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan (DFL)",
+        "pct": 43
+      },
+      {
+        "candidate": "Michele Tafoya (R)",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+    "scrapedAt": "2026-09-16T02:16:48.964Z"
+  },
+  {
+    "raceId": "IA-senate",
+    "pollster": "Cygnal",
+    "partisanLean": "R",
+    "fieldDates": "September 9–11, 2026",
+    "sampleSize": 500,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ashley Hinson (R)",
+        "pct": 43
+      },
+      {
+        "candidate": "Josh Turek (D)",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+    "scrapedAt": "2026-09-16T02:16:51.218Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": null,
+    "fieldDates": "2026-09-14",
+    "sampleSize": 1019,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ossoff",
+        "pct": 51
+      },
+      {
+        "candidate": "Collins",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-09-16T02:17:14.331Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Pollsmax average (latest input: Trafalgar Group (R))",
+    "partisanLean": null,
+    "fieldDates": "September 10, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 50.2
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.4
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/georgia/",
+    "scrapedAt": "2026-09-16T02:21:44.626Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Pollsmax average (latest input: Rasmussen Reports (R))",
+    "partisanLean": null,
+    "fieldDates": "September 10, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 44.4
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 47.1
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/iowa/",
+    "scrapedAt": "2026-09-16T02:21:45.473Z"
+  },
+  {
+    "raceId": "NH",
+    "pollster": "Pollsmax average (latest input: co/efficient (B))",
+    "partisanLean": null,
+    "fieldDates": "September 11, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.9
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 40.6
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/new-hampshire/",
+    "scrapedAt": "2026-09-16T02:21:49.084Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Pollsmax average (latest input: Trafalgar Group (R))",
+    "partisanLean": null,
+    "fieldDates": "September 10, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 48.3
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.2
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/north-carolina/",
+    "scrapedAt": "2026-09-16T02:21:49.922Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: SoCal Strategies (R))",
+    "partisanLean": null,
+    "fieldDates": "September 13, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 45.9
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45.9
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-09-16T02:21:51.604Z"
   }
 ]
