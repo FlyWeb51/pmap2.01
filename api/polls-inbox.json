@@ -23470,5 +23470,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/NE-01",
     "scrapedAt": "2026-09-17T16:04:38.149Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "Harper Polling",
+    "partisanLean": "R",
+    "fieldDates": "September 13–15, 2026",
+    "sampleSize": 608,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 34
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-09-18T02:07:28.213Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "RMG Research",
+    "partisanLean": null,
+    "fieldDates": "2026-09-15",
+    "sampleSize": 2000,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 52
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-18T02:07:40.340Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Carolina Journal/Harper",
+    "partisanLean": null,
+    "fieldDates": "2026-09-15",
+    "sampleSize": 608,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 49
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 34
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-09-18T02:08:20.657Z"
+  },
+  {
+    "raceId": "OH",
+    "pollster": "Trafalgar Group",
+    "partisanLean": null,
+    "fieldDates": "2026-09-16",
+    "sampleSize": 1085,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Brown",
+        "pct": 45
+      },
+      {
+        "candidate": "Husted",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/OH",
+    "scrapedAt": "2026-09-18T02:08:31.283Z"
   }
 ]
