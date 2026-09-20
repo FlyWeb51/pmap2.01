@@ -24515,5 +24515,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
     "scrapedAt": "2026-09-20T02:16:33.545Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Trafalgar Group (R)  ±1.8",
+    "partisanLean": "R",
+    "fieldDates": "2026-09-18",
+    "sampleSize": 1089,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Josh Turek",
+        "pct": 42
+      },
+      {
+        "candidate": "Ashley Hinson",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/IA",
+    "scrapedAt": "2026-09-20T15:22:32.598Z"
+  },
+  {
+    "raceId": "PA-01",
+    "pollster": "Public Opinion Strategies (R)  R-sponsored",
+    "partisanLean": "R",
+    "fieldDates": "2026-09-14",
+    "sampleSize": 400,
+    "population": "RV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Bob Harvie",
+        "pct": 40
+      },
+      {
+        "candidate": "Brian Fitzpatrick",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/PA-01",
+    "scrapedAt": "2026-09-20T15:26:26.668Z"
   }
 ]
