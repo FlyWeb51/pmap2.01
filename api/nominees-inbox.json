@@ -1,6 +1,6 @@
 {
   "_help": "Auto-fetched nominee candidates awaiting human review. Move verified entries into api/nominees.json. Surname fragments are fuzzy on purpose - check that each one matches exactly one candidate in that seat's FEC field before promoting it.",
-  "_generated": "2026-09-14T15:38:30.012Z",
+  "_generated": "2026-09-21T15:38:35.478Z",
   "_source": "https://pollingsource.com/primaries/<ST>",
   "states": {
     "AL": {
@@ -47,7 +47,7 @@
     },
     "DE": {
       "primaryDate": "Sep 15 \n 2026",
-      "completed": false,
+      "completed": true,
       "districtsSeen": 0,
       "seatsParsed": 0
     },
@@ -1298,6 +1298,16 @@
         "SHEA"
       ],
       "primaryDate": "Aug 11 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "DE-senate": {
+      "nominees": [
+        "COONS",
+        "KATZ"
+      ],
+      "primaryDate": "Sep 15 \n 2026",
       "completed": true,
       "alreadyLive": null,
       "changed": true
