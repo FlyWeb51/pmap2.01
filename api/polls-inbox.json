@@ -24561,5 +24561,28 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/PA-01",
     "scrapedAt": "2026-09-20T15:26:26.668Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "NBC News",
+    "partisanLean": null,
+    "fieldDates": "2026-09-15",
+    "sampleSize": 1000,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 50
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-21T02:17:32.144Z"
   }
 ]
