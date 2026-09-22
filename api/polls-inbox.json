@@ -24699,5 +24699,212 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
     "scrapedAt": "2026-09-22T02:23:18.393Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "Texas Southern University",
+    "partisanLean": null,
+    "fieldDates": "September 15–19, 2026",
+    "sampleSize": 1800,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 46
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-09-22T16:10:07.638Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "Suffolk University",
+    "partisanLean": null,
+    "fieldDates": "September 16–20, 2026",
+    "sampleSize": 500,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 47
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 40
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-09-22T16:10:12.549Z"
+  },
+  {
+    "raceId": "IA-senate",
+    "pollster": "Marist College",
+    "partisanLean": null,
+    "fieldDates": "September 17–20, 2026",
+    "sampleSize": 1050,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ashley Hinson (R)",
+        "pct": 42
+      },
+      {
+        "candidate": "Josh Turek (D)",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+    "scrapedAt": "2026-09-22T16:10:17.311Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Economist/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-09-21",
+    "sampleSize": 975,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 52
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 38
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-22T16:10:22.861Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Rasmussen Reports ±2.1",
+    "partisanLean": null,
+    "fieldDates": "2026-09-16",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democratic",
+        "pct": 49
+      },
+      {
+        "candidate": "Republican",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-22T16:10:22.861Z"
+  },
+  {
+    "raceId": "FL",
+    "pollster": "InsiderAdvantage (R) ±1.9",
+    "partisanLean": null,
+    "fieldDates": "2026-09-21",
+    "sampleSize": 600,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Angie Nixon",
+        "pct": 42
+      },
+      {
+        "candidate": "Ashley Moody",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/FL",
+    "scrapedAt": "2026-09-22T16:10:37.823Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Marist College ±4.3",
+    "partisanLean": null,
+    "fieldDates": "2026-09-20",
+    "sampleSize": 1050,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Josh Turek",
+        "pct": 50
+      },
+      {
+        "candidate": "Ashley Hinson",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/IA",
+    "scrapedAt": "2026-09-22T16:10:42.252Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Suffolk University",
+    "partisanLean": null,
+    "fieldDates": "2026-09-20",
+    "sampleSize": 500,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "El-Sayed",
+        "pct": 47
+      },
+      {
+        "candidate": "Rogers",
+        "pct": 40
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-09-22T16:10:59.482Z"
+  },
+  {
+    "raceId": "VA-01",
+    "pollster": "DCCC Targeting Team",
+    "partisanLean": "D",
+    "fieldDates": "2026-09-17",
+    "sampleSize": 519,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Shannon Taylor",
+        "pct": 46
+      },
+      {
+        "candidate": "Rob Wittman",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/VA-01",
+    "scrapedAt": "2026-09-22T16:15:16.756Z"
   }
 ]
