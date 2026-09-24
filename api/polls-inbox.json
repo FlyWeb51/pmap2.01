@@ -25297,5 +25297,166 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/ME-02",
     "scrapedAt": "2026-09-23T16:00:34.562Z"
+  },
+  {
+    "raceId": "GA-senate",
+    "pollster": "rowspan=\"3\"|YouGov",
+    "partisanLean": null,
+    "fieldDates": "rowspan=\"3\"|September 15–18, 2026",
+    "sampleSize": 3416,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff (D)",
+        "pct": 51
+      },
+      {
+        "candidate": "Mike Collins (R)",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+    "scrapedAt": "2026-09-24T02:11:22.437Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "Quantus Insights",
+    "partisanLean": "R",
+    "fieldDates": "September 21–22, 2026",
+    "sampleSize": 686,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 43
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-09-24T02:11:23.576Z"
+  },
+  {
+    "raceId": "NC-senate",
+    "pollster": "rowspan=\"3\"|YouGov",
+    "partisanLean": null,
+    "fieldDates": "rowspan=\"3\"|September 15–18, 2026",
+    "sampleSize": 3864,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Michael Whatley (R)",
+        "pct": 41
+      },
+      {
+        "candidate": "Roy Cooper (D)",
+        "pct": 52
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+    "scrapedAt": "2026-09-24T02:11:23.576Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Echelon Insights",
+    "partisanLean": null,
+    "fieldDates": "2026-09-21",
+    "sampleSize": 1002,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-24T02:11:35.651Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-09-18",
+    "sampleSize": 3303,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ossoff",
+        "pct": 52
+      },
+      {
+        "candidate": "Collins",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-09-24T02:11:53.702Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Quantus Insights",
+    "partisanLean": null,
+    "fieldDates": "2026-09-22",
+    "sampleSize": 688,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 48
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-09-24T02:12:22.273Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-09-18",
+    "sampleSize": 3745,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 53
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-09-24T02:12:22.273Z"
   }
 ]
