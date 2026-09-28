@@ -1,13 +1,13 @@
 {
   "_help": "Auto-fetched nominee candidates awaiting human review. Move verified entries into api/nominees.json. Surname fragments are fuzzy on purpose - check that each one matches exactly one candidate in that seat's FEC field before promoting it.",
-  "_generated": "2026-09-21T15:38:35.478Z",
+  "_generated": "2026-09-28T17:19:58.273Z",
   "_source": "https://pollingsource.com/primaries/<ST>",
   "states": {
     "AL": {
       "primaryDate": "May 19 \n 2026",
       "completed": true,
       "districtsSeen": 7,
-      "seatsParsed": 6
+      "seatsParsed": 7
     },
     "AK": {
       "primaryDate": "Aug 18 \n 2026",
@@ -55,7 +55,7 @@
       "primaryDate": "Aug 18 \n 2026",
       "completed": true,
       "districtsSeen": 28,
-      "seatsParsed": 21
+      "seatsParsed": 23
     },
     "GA": {
       "primaryDate": "May 19 \n 2026",
@@ -253,7 +253,7 @@
       "primaryDate": "Aug 6 \n 2026",
       "completed": true,
       "districtsSeen": 9,
-      "seatsParsed": 8
+      "seatsParsed": 9
     },
     "TX": {
       "primaryDate": "Mar 3 \n 2026",
@@ -295,7 +295,7 @@
       "primaryDate": "Aug 11 \n 2026",
       "completed": true,
       "districtsSeen": 8,
-      "seatsParsed": 5
+      "seatsParsed": 7
     },
     "WY": {
       "primaryDate": "Aug 18 \n 2026",
@@ -368,11 +368,32 @@
       ],
       "changed": false
     },
+    "AL-06": {
+      "nominees": [
+        "MERCER",
+        "PALMER"
+      ],
+      "primaryDate": "May 19 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "AL-07": {
       "nominees": [
         "AKIN"
       ],
       "primaryDate": "May 19 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "AK-senate": {
+      "nominees": [
+        "LESLIE",
+        "PELTOLA",
+        "SULLIVAN"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
       "completed": true,
       "alreadyLive": null,
       "changed": true
@@ -1342,6 +1363,15 @@
       "alreadyLive": null,
       "changed": true
     },
+    "FL-03": {
+      "nominees": [
+        "HARP"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "FL-04": {
       "nominees": [
         "HOLLOWAY"
@@ -1374,6 +1404,15 @@
       "nominees": [
         "DALTON",
         "ELIJAH"
+      ],
+      "primaryDate": "Aug 18 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "FL-09": {
+      "nominees": [
+        "GREEN"
       ],
       "primaryDate": "Aug 18 \n 2026",
       "completed": true,
@@ -1690,7 +1729,7 @@
     },
     "GA-13": {
       "nominees": [
-        "BLAIR",
+        ".",
         "CHAVEZ"
       ],
       "primaryDate": "May 19 \n 2026",
@@ -2734,6 +2773,7 @@
     },
     "MN-08": {
       "nominees": [
+        "SWANSON",
         "STAUBER"
       ],
       "primaryDate": "Aug 11 \n 2026",
@@ -3810,14 +3850,15 @@
     },
     "OK-01": {
       "nominees": [
-        "TEDFORD"
+        "TEDFORD",
+        "LAHMEYER"
       ],
       "primaryDate": "Jun 16 \n 2026",
       "completed": true,
       "alreadyLive": [
         "TEDFORD"
       ],
-      "changed": false
+      "changed": true
     },
     "OK-02": {
       "nominees": [
@@ -4315,6 +4356,16 @@
       "alreadyLive": null,
       "changed": true
     },
+    "TN-02": {
+      "nominees": [
+        "BARNETT",
+        "BURCHETT"
+      ],
+      "primaryDate": "Aug 6 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "TN-03": {
       "nominees": [
         "GOLLADAY"
@@ -4589,14 +4640,15 @@
     },
     "TX-16": {
       "nominees": [
-        "ESCOBAR"
+        "ESCOBAR",
+        "BAUMAN"
       ],
       "primaryDate": "Mar 3 \n 2026",
       "completed": true,
       "alreadyLive": [
         "ESCOBAR"
       ],
-      "changed": false
+      "changed": true
     },
     "TX-17": {
       "nominees": [
@@ -4679,7 +4731,8 @@
     "TX-23": {
       "nominees": [
         "STOUT",
-        "HERRERA"
+        "HERRERA",
+        "GONZALES"
       ],
       "primaryDate": "Mar 3 \n 2026",
       "completed": true,
@@ -4687,7 +4740,7 @@
         "STOUT",
         "HERRERA"
       ],
-      "changed": false
+      "changed": true
     },
     "TX-24": {
       "nominees": [
@@ -4796,7 +4849,8 @@
     "TX-32": {
       "nominees": [
         "BARRIOS",
-        "YARBROUGH"
+        "YARBROUGH",
+        "BINKLEY"
       ],
       "primaryDate": "Mar 3 \n 2026",
       "completed": true,
@@ -4804,7 +4858,7 @@
         "BARRIOS",
         "YARBROUGH"
       ],
-      "changed": false
+      "changed": true
     },
     "TX-33": {
       "nominees": [
@@ -4860,14 +4914,15 @@
     },
     "TX-37": {
       "nominees": [
-        "CASAR"
+        "CASAR",
+        "PENA"
       ],
       "primaryDate": "Mar 3 \n 2026",
       "completed": true,
       "alreadyLive": [
         "CASAR"
       ],
-      "changed": false
+      "changed": true
     },
     "TX-38": {
       "nominees": [
@@ -5132,9 +5187,28 @@
       "alreadyLive": null,
       "changed": true
     },
+    "WI-06": {
+      "nominees": [
+        "SMITH"
+      ],
+      "primaryDate": "Aug 11 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
     "WI-07": {
       "nominees": [
+        "CLARK",
         "ALFONSO"
+      ],
+      "primaryDate": "Aug 11 \n 2026",
+      "completed": true,
+      "alreadyLive": null,
+      "changed": true
+    },
+    "WI-08": {
+      "nominees": [
+        "CROSSON"
       ],
       "primaryDate": "Aug 11 \n 2026",
       "completed": true,
