@@ -28073,5 +28073,120 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/MO-02",
     "scrapedAt": "2026-09-29T17:34:10.342Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "Pulse Decision Science (R)<!--this is the source used by NYT in its polls collection page -->",
+    "partisanLean": null,
+    "fieldDates": "September 24–27, 2026",
+    "sampleSize": 800,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 48
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-09-30T02:56:51.302Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "Trafalgar Group",
+    "partisanLean": "R",
+    "fieldDates": "September 23–25, 2026",
+    "sampleSize": 1087,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Darline Graham (R)",
+        "pct": 43
+      },
+      {
+        "candidate": "Annie Andrews (D)",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-09-30T02:57:03.606Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Harvard-Harris",
+    "partisanLean": null,
+    "fieldDates": "2026-09-28",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-30T02:57:06.174Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Quinnipiac",
+    "partisanLean": null,
+    "fieldDates": "2026-09-27",
+    "sampleSize": 1032,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-09-30T02:57:06.174Z"
+  },
+  {
+    "raceId": "TX-15",
+    "pollster": "Barbara Jordan Public Policy Research and Survey Center at Texas Southern University",
+    "partisanLean": null,
+    "fieldDates": "2026-08-22",
+    "sampleSize": 700,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Bobby Pulido",
+        "pct": 50
+      },
+      {
+        "candidate": "Monica De La Cruz",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/TX-15",
+    "scrapedAt": "2026-09-30T03:13:19.473Z"
   }
 ]
