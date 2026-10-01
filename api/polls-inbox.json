@@ -28694,5 +28694,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/WI-01",
     "scrapedAt": "2026-09-30T17:39:29.763Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": null,
+    "fieldDates": "September 28–29, 2026",
+    "sampleSize": 1128,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 45
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-10-01T03:04:36.602Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "co/efficient",
+    "partisanLean": "R",
+    "fieldDates": "September 28–30, 2026",
+    "sampleSize": 1240,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 48
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-10-01T03:04:39.914Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "rowspan=\"2\" |Beacon Research (D)/ Shaw & Co. Research",
+    "partisanLean": "R",
+    "fieldDates": "rowspan=\"2\"|September 24–28, 2026",
+    "sampleSize": 1028,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 50
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-10-01T03:04:41.084Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Quantus",
+    "partisanLean": null,
+    "fieldDates": "2026-09-28",
+    "sampleSize": null,
+    "population": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51.4
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-01T03:04:51.097Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "FOX News",
+    "partisanLean": null,
+    "fieldDates": "2026-09-28",
+    "sampleSize": 1028,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "El-Sayed",
+        "pct": 50
+      },
+      {
+        "candidate": "Rogers",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-10-01T03:05:33.421Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Catawba College/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-09-15",
+    "sampleSize": 885,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 48
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 37
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-10-01T03:05:43.061Z"
   }
 ]
