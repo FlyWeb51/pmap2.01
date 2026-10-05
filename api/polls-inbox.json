@@ -31531,5 +31531,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/WI-01",
     "scrapedAt": "2026-10-04T16:37:37.850Z"
+  },
+  {
+    "raceId": "AK-senate",
+    "pollster": "style=\"text-align:left;|New York Times/Siena University",
+    "partisanLean": null,
+    "fieldDates": "September 24–October 1, 2026",
+    "sampleSize": 504,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Dan S. Sullivan (R)",
+        "pct": 43
+      },
+      {
+        "candidate": "Mary Peltola (D)",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+    "scrapedAt": "2026-10-05T02:58:11.547Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "NBC News/Telemundo",
+    "partisanLean": null,
+    "fieldDates": "2026-09-28",
+    "sampleSize": 800,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 59
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 35
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-05T02:58:15.979Z"
   }
 ]
