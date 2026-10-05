@@ -31577,5 +31577,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
     "scrapedAt": "2026-10-05T02:58:15.979Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "Maine People's Resource Center",
+    "partisanLean": null,
+    "fieldDates": "September 25–29, 2026",
+    "sampleSize": 684,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 47
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-10-05T20:11:36.358Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "YouGov - CBS News",
+    "partisanLean": null,
+    "fieldDates": "2026-10-02",
+    "sampleSize": 1572,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 54
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-05T20:11:47.507Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Rasmussen Reports ±2.1",
+    "partisanLean": null,
+    "fieldDates": "2026-09-27",
+    "sampleSize": 1794,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 47
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-05T20:11:47.507Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Wedgewood Polls",
+    "partisanLean": null,
+    "fieldDates": "2026-10-03",
+    "sampleSize": 600,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff",
+        "pct": 55
+      },
+      {
+        "candidate": "Mike Collins",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-10-05T20:12:06.071Z"
   }
 ]
