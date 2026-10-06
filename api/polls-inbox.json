@@ -31669,5 +31669,74 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/GA",
     "scrapedAt": "2026-10-05T20:12:06.071Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "Mitchell Research & Communications",
+    "partisanLean": null,
+    "fieldDates": "October 1, 2026",
+    "sampleSize": 682,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 46
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-10-06T03:50:16.858Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Morning Consult ±4.0",
+    "partisanLean": null,
+    "fieldDates": "2026-10-04",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 50
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-06T03:50:26.673Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Mitchell Research",
+    "partisanLean": null,
+    "fieldDates": "2026-10-01",
+    "sampleSize": 680,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "El-Sayed",
+        "pct": 46
+      },
+      {
+        "candidate": "Rogers",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-10-06T03:51:02.979Z"
   }
 ]
