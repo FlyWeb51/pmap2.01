@@ -31738,5 +31738,189 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/MI",
     "scrapedAt": "2026-10-06T03:51:02.979Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "Marist University",
+    "partisanLean": null,
+    "fieldDates": "October 1–4, 2026",
+    "sampleSize": 1505,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 47
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-10-06T17:48:40.855Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "Saint Anselm College",
+    "partisanLean": null,
+    "fieldDates": "September 28–29, 2026",
+    "sampleSize": 1042,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chris Pappas (D)",
+        "pct": 51
+      },
+      {
+        "candidate": "John E. Sununu (R)",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-10-06T17:48:43.370Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Reuters/Ipsos ±3.8",
+    "partisanLean": null,
+    "fieldDates": "2026-10-05",
+    "sampleSize": 3526,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 44
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 37
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-06T17:48:52.590Z"
+  },
+  {
+    "raceId": "ME",
+    "pollster": "Marist University ±4.3",
+    "partisanLean": null,
+    "fieldDates": "2026-10-04",
+    "sampleSize": 1505,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Troy Jackson",
+        "pct": 51
+      },
+      {
+        "candidate": "Susan Collins",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/ME",
+    "scrapedAt": "2026-10-06T17:49:31.029Z"
+  },
+  {
+    "raceId": "ME",
+    "pollster": "Maine People's Resource Center",
+    "partisanLean": "D",
+    "fieldDates": "2026-09-29",
+    "sampleSize": 684,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Troy Jackson",
+        "pct": 49
+      },
+      {
+        "candidate": "Susan Collins",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/ME",
+    "scrapedAt": "2026-10-06T17:49:31.029Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Mitchell Research & Communications",
+    "partisanLean": null,
+    "fieldDates": "2026-10-01",
+    "sampleSize": 682,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed",
+        "pct": 46
+      },
+      {
+        "candidate": "Mike Rogers",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-10-06T17:49:32.909Z"
+  },
+  {
+    "raceId": "NM",
+    "pollster": "SurveyUSA",
+    "partisanLean": null,
+    "fieldDates": "2026-09-30",
+    "sampleSize": 567,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ben Ray Luján",
+        "pct": 54
+      },
+      {
+        "candidate": "Larry Marker",
+        "pct": 36
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NM",
+    "scrapedAt": "2026-10-06T17:49:52.962Z"
+  },
+  {
+    "raceId": "FL-16",
+    "pollster": "Public Policy Polling (D)  ±2.0",
+    "partisanLean": "D",
+    "fieldDates": "2026-10-02",
+    "sampleSize": 530,
+    "population": "RV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Kelly Kirschner",
+        "pct": 39
+      },
+      {
+        "candidate": "Sydney Gruters",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/house/FL-16",
+    "scrapedAt": "2026-10-06T17:54:45.507Z"
   }
 ]
