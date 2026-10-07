@@ -31922,5 +31922,143 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/FL-16",
     "scrapedAt": "2026-10-06T17:54:45.507Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "YouGov",
+    "partisanLean": null,
+    "fieldDates": "September 28 – October 5, 2026",
+    "sampleSize": 3625,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 44
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 50
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-10-07T03:16:43.268Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "style=\"text-align:left;|YouGov",
+    "partisanLean": null,
+    "fieldDates": "September 22 – October 4, 2026",
+    "sampleSize": 3949,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 49
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-10-07T03:16:47.880Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "style=\"text-align:left;|YouGov",
+    "partisanLean": null,
+    "fieldDates": "September 28 – October 5, 2026",
+    "sampleSize": 1520,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chris Pappas (D)",
+        "pct": 51
+      },
+      {
+        "candidate": "John E. Sununu (R)",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-10-07T03:16:48.986Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Economist/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-10-05",
+    "sampleSize": 1173,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 51
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 40
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-07T03:16:57.745Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-10-05",
+    "sampleSize": 3947,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "El-Sayed",
+        "pct": 49
+      },
+      {
+        "candidate": "Rogers",
+        "pct": 48
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-10-07T03:17:38.484Z"
+  },
+  {
+    "raceId": "OH",
+    "pollster": "YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-09-30",
+    "sampleSize": 3777,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Brown",
+        "pct": 49
+      },
+      {
+        "candidate": "Husted",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/OH",
+    "scrapedAt": "2026-10-07T03:17:59.255Z"
   }
 ]
