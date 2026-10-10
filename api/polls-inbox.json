@@ -33302,5 +33302,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/house/TN-05",
     "scrapedAt": "2026-10-09T18:09:48.830Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": "R",
+    "fieldDates": "October 5–8, 2026",
+    "sampleSize": 804,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 47
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-10-10T03:18:14.965Z"
+  },
+  {
+    "raceId": "MI-senate",
+    "pollster": "Z to A Research",
+    "partisanLean": "D",
+    "fieldDates": "September 28 – October 1, 2026",
+    "sampleSize": 483,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed (D)",
+        "pct": 49
+      },
+      {
+        "candidate": "Mike Rogers (R)",
+        "pct": 42
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+    "scrapedAt": "2026-10-10T03:18:16.306Z"
+  },
+  {
+    "raceId": "MN-senate",
+    "pollster": "Morning Consult (D)<ref>{{cite web |title= morning take | The Daily Agenda Poll |url= https://www.thedailyagenda.com/p/morning-take-the-daily-agenda-poll/",
+    "partisanLean": null,
+    "fieldDates": "publisher=The Daily Poll|access-date=October 9th, 2026 |date=September 30, 2026}}</ref>",
+    "sampleSize": 7,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan (DFL)",
+        "pct": 3.1
+      },
+      {
+        "candidate": "Michele Tafoya (R)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+    "scrapedAt": "2026-10-10T03:18:18.708Z"
+  },
+  {
+    "raceId": "ME",
+    "pollster": "Marist University",
+    "partisanLean": null,
+    "fieldDates": "2026-10-04",
+    "sampleSize": 1505,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Troy Jackson",
+        "pct": 51
+      },
+      {
+        "candidate": "Susan Collins",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/ME",
+    "scrapedAt": "2026-10-10T03:19:03.722Z"
   }
 ]
