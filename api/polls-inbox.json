@@ -33854,5 +33854,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/GA",
     "scrapedAt": "2026-10-11T02:48:44.843Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Wedgewood Polls",
+    "partisanLean": null,
+    "fieldDates": "2026-10-09",
+    "sampleSize": 607,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Abdul El-Sayed",
+        "pct": 53
+      },
+      {
+        "candidate": "Mike Rogers",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MI",
+    "scrapedAt": "2026-10-11T17:09:40.522Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Trafalgar Group (R)  ±1.8",
+    "partisanLean": "R",
+    "fieldDates": "2026-10-08",
+    "sampleSize": 1086,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "James Talarico",
+        "pct": 47
+      },
+      {
+        "candidate": "Ken Paxton",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/TX",
+    "scrapedAt": "2026-10-11T17:10:17.998Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Pollsmax average (latest input: Wedgewood Polls)",
+    "partisanLean": null,
+    "fieldDates": "October 9, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.8
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 44.4
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/michigan/",
+    "scrapedAt": "2026-10-11T17:28:12.561Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: Trafalgar Group (R))",
+    "partisanLean": null,
+    "fieldDates": "October 8, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.6
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-10-11T17:28:16.937Z"
   }
 ]
