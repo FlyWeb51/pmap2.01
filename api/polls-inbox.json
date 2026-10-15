@@ -36987,5 +36987,189 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/TX",
     "scrapedAt": "2026-10-14T16:21:18.127Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "Suffolk University",
+    "partisanLean": null,
+    "fieldDates": "October 8–11, 2026",
+    "sampleSize": 500,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 47
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-10-15T02:22:59.858Z"
+  },
+  {
+    "raceId": "IA-senate",
+    "pollster": "YouGov",
+    "partisanLean": null,
+    "fieldDates": "October 6–12, 2026",
+    "sampleSize": 2245,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ashley Hinson (R)",
+        "pct": 46
+      },
+      {
+        "candidate": "Josh Turek (D)",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+    "scrapedAt": "2026-10-15T02:23:06.215Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "RMG Research",
+    "partisanLean": "R",
+    "fieldDates": "2026-10-13",
+    "sampleSize": null,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 54
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-15T02:23:12.783Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "FOX News",
+    "partisanLean": null,
+    "fieldDates": "2026-10-12",
+    "sampleSize": 1202,
+    "population": "RV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 54
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-15T02:23:12.783Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Economist/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-10-12",
+    "sampleSize": 1176,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 49
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 41
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-15T02:23:12.783Z"
+  },
+  {
+    "raceId": "RI",
+    "pollster": "Emerson 2024 err 2.7",
+    "partisanLean": null,
+    "fieldDates": "2026-10-11",
+    "sampleSize": 800,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jack Reed",
+        "pct": 59
+      },
+      {
+        "candidate": "Ray McKay",
+        "pct": 25
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/RI",
+    "scrapedAt": "2026-10-15T02:24:31.914Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Pollsmax average (latest input: SurveyUSA (D))",
+    "partisanLean": null,
+    "fieldDates": "October 11, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 49.6
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 41.1
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/north-carolina/",
+    "scrapedAt": "2026-10-15T02:25:00.132Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: Quantus Insights (R))",
+    "partisanLean": null,
+    "fieldDates": "October 11, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.7
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 44.9
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-10-15T02:25:01.828Z"
   }
 ]
