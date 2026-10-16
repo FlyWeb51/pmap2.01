@@ -1,0 +1,53 @@
+name: NYT Polls (every 6 hours)
+
+# Downloads The New York Times polling datasets (CC BY 4.0, credit required)
+# from the links in scripts/nyt-polls-sources.json, plus any CSVs committed
+# into data/nyt-drop/, and writes data/polls-nyt/.
+
+on:
+  schedule:
+    - cron: "21 */6 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/nyt-polls-sources.json"
+      - "data/nyt-drop/**.csv"
+
+concurrency:
+  group: nyt-polls
+  cancel-in-progress: false
+
+jobs:
+  refresh-nyt-polls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch and convert NYT polls
+        run: node scripts/fetch-nyt-polls.js
+
+      - name: Rebuild national overview data
+        run: node scripts/build-overview.js
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A data/polls-nyt data/overview.json
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "NYT polls: refresh"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
