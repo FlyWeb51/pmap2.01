@@ -32,6 +32,12 @@ jobs:
       - name: Scrape polls (Wikipedia -> inbox for review)
         run: node scripts/scrape-polls.js
 
+      - name: Promote checked polls to the site (inbox -> data/polls)
+        run: node scripts/promote-polls.js
+
+      - name: Rebuild national overview data
+        run: node scripts/build-overview.js
+
       - name: Commit refreshed data
         run: |
           git config user.name 'github-actions[bot]'
