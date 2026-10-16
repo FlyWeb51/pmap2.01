@@ -1,45 +1,85 @@
 {
   "raceId": "WA-H-03-2026",
-  "count": 2,
-  "alternativeMatchupsDropped": 0,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.468Z",
   "polls": [
+    {
+      "pollster": "OPB/DHM Research",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-27",
+      "sampleSize": 543,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Gluesenkamp Perez (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Braun (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/WA-03"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6583
+    },
     {
       "pollster": "Emerson College (D)",
       "endDate": "2026-07-10",
-      "weight": 0.2239,
+      "weight": 0.1018,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Marie Gluesenkamp Perez (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "John Braun (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://www.nwprogressive.org/weblog/2026/07/wa-03-is-still-washingtons-tossup-district-marie-gluesenkamp-perez-and-john-braun-are-tied-ahead-of-2026-top-two-election.html",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-29",
-      "weight": 0.0594,
+      "weight": 0.027,
       "sampleSize": 982,
       "population": "LV",
       "results": [
         {
           "candidate": "Marie Gluesenkamp Perez (D)",
-          "percentage": 34.0
+          "party": "D",
+          "pct": 34,
+          "percentage": 34
         },
         {
           "candidate": "John Braun (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

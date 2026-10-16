@@ -1,26 +1,65 @@
 {
   "raceId": "KY-S-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 2,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.448Z",
   "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-08-27",
+      "fieldDates": "2026-08-27",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Charles Booker (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Andy Barr (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KY"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.169
+    },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-12-19",
-      "weight": 0.0021,
+      "weight": 0.0005,
       "sampleSize": 650,
       "population": "RV",
       "results": [
         {
           "candidate": "Charles Booker (D)",
-          "percentage": 40.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
           "candidate": "Nate Morris (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.kentucky.com/news/politics-government/article314061118.html",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/KY"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-12-19",
+      "otherMatchup": true
     }
   ]
 }

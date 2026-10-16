@@ -1,64 +1,86 @@
 {
   "raceId": "NE-S-2026",
   "count": 3,
-  "alternativeMatchupsDropped": 2,
+  "updated_at": "2026-10-16T21:07:58.458Z",
   "polls": [
     {
       "pollster": "Tavern Research (I)",
       "endDate": "2026-05-11",
-      "weight": 0.0854,
+      "weight": 0.0194,
       "sampleSize": 1165,
       "population": "LV",
       "results": [
         {
           "candidate": "Dan Osborn (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Pete Ricketts (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://www.tavernresearch.com/research-and-writings/nebraska-senate-poll",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/NE"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-11"
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-02-05",
-      "weight": 0.0068,
+      "weight": 0.0031,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Dan Osborn (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Pete Ricketts (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://omaha.com/news/state-regional/government-politics/article_d133be6b-85f6-4773-a16c-0edeb903c3e4.html",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Change Research (D)",
       "endDate": "2025-04-01",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 524,
       "population": "LV",
       "results": [
         {
           "candidate": "Dan Osborn (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Pete Ricketts (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://nebraskapublicmedia.org/es/news/news-articles/senate-candidate-dan-osborn-hits-campaign-trail-with-populist-blue-collar-message/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

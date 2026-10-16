@@ -1,26 +1,61 @@
 {
   "raceId": "FL-H-02-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 3,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.442Z",
   "polls": [
     {
       "pollster": "Patriot Polling (R)",
       "endDate": "2026-07-26",
-      "weight": 0.44,
+      "weight": 0.2001,
       "sampleSize": 922,
       "population": "LV",
       "results": [
         {
           "candidate": "Nicholas Zateslo (D)",
+          "party": "D",
+          "pct": 39.1,
           "percentage": 39.1
         },
         {
           "candidate": "Keith Gross (R)",
+          "party": "R",
+          "pct": 58.5,
           "percentage": 58.5
         }
       ],
       "sourceUrl": "https://washingtonreporter.news/exclusive-floridas-2nd-district-out-of-play-for-democrats-according-to-gop-candidate-keith-grosss-polling/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Patriot Polling",
+      "endDate": "2026-07-26",
+      "fieldDates": "2026-07-26",
+      "sampleSize": 922,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Yen Bailey (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Keith Gross (R)",
+          "party": "R",
+          "pct": 62,
+          "percentage": 62
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.085,
+      "otherMatchup": true
     }
   ]
 }

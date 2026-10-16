@@ -1,23 +1,37 @@
 {
   "raceId": "IN-H-05-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 0,
-  "supersededByNomineeChange": 0,
-  "unsettled": null,
+  "updated_at": "2026-10-16T21:07:58.447Z",
   "polls": [
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-07-20",
       "endDateUS": "7/20/2026",
-      "weight": 0.2693,
-      "sampleSize": null,
+      "weight": 0.0574,
+      "sampleSize": 400,
       "population": "LV",
       "results": [
-        { "candidate": "J.D. Ford (D)", "percentage": 46.0 },
-        { "candidate": "Victoria Spartz (R)", "percentage": 48.0 }
+        {
+          "candidate": "J.D. Ford (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Victoria Spartz (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
       ],
       "sourceUrl": "https://x.com/DanSpehler/status/2085077555984396724?s=20",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/IN-05"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-20"
     }
   ]
 }

@@ -1,26 +1,92 @@
 {
   "raceId": "NE-H-01-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.457Z",
   "polls": [
+    {
+      "pollster": "Global Strategy Group D-sponsored",
+      "endDate": "2026-09-03",
+      "fieldDates": "2026-09-03",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Chris Backemeyer (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Mike Flood (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NE-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1987
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-05-19",
+      "fieldDates": "2026-05-19",
+      "sampleSize": 1079,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Chris Backemeyer (D)",
+          "party": "D",
+          "pct": 33,
+          "percentage": 33
+        },
+        {
+          "candidate": "Mike Flood (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NE-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0225
+    },
     {
       "pollster": "Zenith Research (I)",
       "endDate": "2026-05-11",
-      "weight": 0.0451,
+      "weight": 0.0103,
       "sampleSize": 401,
       "population": "RV",
       "results": [
         {
           "candidate": "Chris Backemeyer (D)",
-          "percentage": 38.0
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
         },
         {
           "candidate": "Mike Flood (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://x.com/admcrlsn/status/2054957057552331099/photo/1",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/NE-01"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-11"
     }
   ]
 }

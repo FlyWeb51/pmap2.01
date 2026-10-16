@@ -1,26 +1,88 @@
 {
   "raceId": "NJ-H-07-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 1,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.459Z",
   "polls": [
+    {
+      "pollster": "StimSight Research",
+      "endDate": "2026-09-12",
+      "fieldDates": "2026-09-12",
+      "sampleSize": 498,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Rebecca Bennett (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Tom Kean Jr. (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NJ-07"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4458
+    },
     {
       "pollster": "Z to A Research (D)",
       "endDate": "2026-05-26",
-      "weight": 0.0734,
+      "weight": 0.0334,
       "sampleSize": 430,
       "population": "LV",
       "results": [
         {
           "candidate": "Rebecca Bennett (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Thomas H. Kean Jr. (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://newjerseyglobe.com/congress/shah-leads-kean-in-head-to-head-matchup-allied-groups-poll-says/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Z to A Research",
+      "endDate": "2026-05-26",
+      "fieldDates": "2026-05-26",
+      "sampleSize": 430,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Rebecca Bennett (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Tom Kean Jr. (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NJ-07"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0167
     }
   ]
 }

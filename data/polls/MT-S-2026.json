@@ -1,159 +1,459 @@
 {
   "raceId": "MT-S-2026",
-  "count": 8,
-  "alternativeMatchupsDropped": 5,
+  "count": 17,
+  "updated_at": "2026-10-16T21:07:58.455Z",
   "polls": [
     {
-      "pollster": "GQR (I)",
-      "endDate": "2026-07-26",
-      "weight": 0.324,
-      "sampleSize": 500,
+      "pollster": "Concord Public Opinion Partners",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-10-08",
+      "sampleSize": 405,
       "population": "LV",
+      "partisan": "D",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 44.0
+          "party": "D",
+          "pct": 13,
+          "percentage": 13
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 52.0
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
         }
       ],
-      "sourceUrl": "https://www.gelliottmorris.com/p/2026-07-28-exclusive-independent-leads-democrat-against-republican-montana",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3665
+    },
+    {
+      "pollster": "American Pulse Research",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-24",
+      "sampleSize": 604,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Alani Ines Bankhead (D)",
+          "party": "D",
+          "pct": 19,
+          "percentage": 19
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3239
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-15",
+      "fieldDates": "2026-09-15",
+      "sampleSize": 625,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 23,
+          "percentage": 23
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2676
+    },
+    {
+      "pollster": "Rutgers University Eagleton Institute of Politics",
+      "endDate": "2026-09-07",
+      "fieldDates": "2026-09-07",
+      "sampleSize": 845,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 16,
+          "percentage": 16
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4656
+    },
+    {
+      "pollster": "Peak Insights",
+      "endDate": "2026-08-25",
+      "fieldDates": "2026-08-25",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 19,
+          "percentage": 19
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1614
+    },
+    {
+      "pollster": "Hart Research D-sponsored",
+      "endDate": "2026-08-04",
+      "fieldDates": "2026-08-04",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 15,
+          "percentage": 15
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1147
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-07-27",
+      "fieldDates": "2026-07-27",
+      "sampleSize": 517,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 24,
+          "percentage": 24
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0767
     },
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.324,
+      "weight": 0.1473,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 40.0
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
         }
       ],
       "sourceUrl": "https://www.gelliottmorris.com/p/2026-07-28-exclusive-independent-leads-democrat-against-republican-montana",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.324,
+      "weight": 0.1473,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 22.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://www.gelliottmorris.com/p/2026-07-28-exclusive-independent-leads-democrat-against-republican-montana",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GQR (I)",
+      "endDate": "2026-07-26",
+      "weight": 0.1473,
+      "sampleSize": 500,
+      "population": "LV",
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 22,
+          "percentage": 22
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.gelliottmorris.com/p/2026-07-28-exclusive-independent-leads-democrat-against-republican-montana",
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-07-26",
+      "fieldDates": "2026-07-26",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 22,
+          "percentage": 22
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0737
     },
     {
       "pollster": "The Bullfinch Group",
       "endDate": "2026-07-16",
-      "weight": 0.6478,
+      "weight": 0.1473,
       "sampleSize": 793,
       "population": "LV",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 22.0
+          "party": "D",
+          "pct": 22,
+          "percentage": 22
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 36.0
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
         }
       ],
       "sourceUrl": "https://independentcentervoice.com/insights/july-2026-statewide-survey-montana-s-u-s-senate-race",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Bullfinch Group",
+      "endDate": "2026-07-16",
+      "fieldDates": "2026-07-16",
+      "sampleSize": 793,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 22,
+          "percentage": 22
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MT"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0736
     },
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-06-24",
-      "weight": 0.1957,
+      "weight": 0.089,
       "sampleSize": 800,
       "population": "LV",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 49.0
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
       "sourceUrl": "https://www.mtfreedompac.org/press-releases",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-06-24",
-      "weight": 0.1957,
+      "weight": 0.089,
       "sampleSize": 800,
       "population": "LV",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 22.0
+          "party": "D",
+          "pct": 22,
+          "percentage": 22
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://www.mtfreedompac.org/press-releases",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "GrayHouse",
       "endDate": "2026-06-24",
-      "weight": 0.3094,
+      "weight": 0.0703,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 25.0
+          "party": "D",
+          "pct": 25,
+          "percentage": 25
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.insideelections.com/news/article/montana-senate-new-poll-confirms-gop-edge",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Public Opinion Strategies (R)",
       "endDate": "2026-06-11",
-      "weight": 0.1146,
+      "weight": 0.0521,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Alani Bankhead (D)",
-          "percentage": 25.0
+          "party": "D",
+          "pct": 25,
+          "percentage": 25
         },
         {
           "candidate": "Kurt Alme (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://www.semafor.com/article/06/18/2026/divided-montana-senate-field-helps-republicans",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

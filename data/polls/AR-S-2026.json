@@ -1,38 +1,147 @@
 {
   "raceId": "AR-S-2026",
-  "count": 2,
-  "alternativeMatchupsDropped": 0,
-  "supersededByNomineeChange": 0,
-  "duplicateQuestionsMerged": 0,
-  "unsettled": null,
+  "count": 5,
+  "updated_at": "2026-10-16T21:07:58.439Z",
   "polls": [
+    {
+      "pollster": "GrayHouse",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-10-04",
+      "sampleSize": 550,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Hallie Shoffner (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Tom Cotton (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AR"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3894
+    },
+    {
+      "pollster": "J.L. Partners",
+      "endDate": "2026-08-18",
+      "fieldDates": "2026-08-18",
+      "sampleSize": 803,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Hallie Shoffner (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Tom Cotton (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AR"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3177
+    },
+    {
+      "pollster": "Hendrix College",
+      "endDate": "2026-08-12",
+      "fieldDates": "2026-08-12",
+      "sampleSize": 1217,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Hallie Shoffner (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Tom Cotton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AR"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3405
+    },
     {
       "pollster": "2040 Strategy Group (D)",
       "endDate": "2026-07-25",
       "endDateUS": "7/25/2026",
-      "weight": 0.3125,
+      "weight": 0.0779,
       "sampleSize": 586,
       "population": "LV",
       "results": [
-        { "candidate": "Hallie Shoffner (D)", "percentage": 43.0 },
-        { "candidate": "Tom Cotton (R)", "percentage": 46.0 }
+        {
+          "candidate": "Hallie Shoffner (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Tom Cotton (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
       ],
       "sourceUrl": "https://arktimes.com/arkansas-blog/2026/08/05/dem-senate-hopeful-shoffner-pulls-promising-poll-numbers-against-unlikeable-cotton",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/AR"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-25"
     },
     {
       "pollster": "GrayHouse (R)",
       "endDate": "2026-02-09",
       "endDateUS": "2/9/2026",
-      "weight": 0.0065,
+      "weight": 0.0033,
       "sampleSize": 550,
       "population": "LV",
       "results": [
-        { "candidate": "Hallie Shoffner (D)", "percentage": 36.0 },
-        { "candidate": "Tom Cotton (R)", "percentage": 58.0 }
+        {
+          "candidate": "Hallie Shoffner (D)",
+          "party": "D",
+          "pct": 36,
+          "percentage": 36
+        },
+        {
+          "candidate": "Tom Cotton (R)",
+          "party": "R",
+          "pct": 58,
+          "percentage": 58
+        }
       ],
       "sourceUrl": "https://www.grayhouse.com/post/ar-senate",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

@@ -1,26 +1,118 @@
 {
   "raceId": "VA-S-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 4,
+  "updated_at": "2026-10-16T21:07:58.468Z",
   "polls": [
+    {
+      "pollster": "Christopher Newport University",
+      "endDate": "2026-10-10",
+      "fieldDates": "2026-10-10",
+      "sampleSize": 702,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Mark Warner (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Bert Mizusawa (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/VA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0107,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "The Public Sentiment Institute",
+      "endDate": "2026-06-16",
+      "fieldDates": "2026-06-16",
+      "sampleSize": 996,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Mark Warner (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Kim Farington (R)",
+          "party": "R",
+          "pct": 33,
+          "percentage": 33
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/VA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0825
+    },
+    {
+      "pollster": "The Public Sentiment Institute/ Virginia Project",
+      "endDate": "2026-05-05",
+      "fieldDates": "2026-05-05",
+      "sampleSize": 1047,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Mark Warner (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Kim Farington (R)",
+          "party": "R",
+          "pct": 29,
+          "percentage": 29
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/VA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.016
+    },
     {
       "pollster": "Responsive Management",
       "endDate": "2025-01-15",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 806,
       "population": "A",
       "results": [
         {
           "candidate": "Mark R. Warner (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Glenn Youngkin (R)",
-          "percentage": 38.0
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
         }
       ],
       "sourceUrl": "https://wilder.vcu.edu/news-and-events/news-posts/commonwealth-poll-virginians-overwhelmingly-concerned-about-cost-of-living.html",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     }
   ]
 }

@@ -1,102 +1,164 @@
 {
   "raceId": "WI-H-03-2026",
-  "count": 5,
-  "alternativeMatchupsDropped": 0,
+  "count": 6,
+  "updated_at": "2026-10-16T21:07:58.469Z",
   "polls": [
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-06-25",
-      "weight": 0.1638,
+      "weight": 0.0745,
       "sampleSize": 535,
       "population": "LV",
       "results": [
         {
           "candidate": "Rebecca Cooke (D)",
-          "percentage": 50.0
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
         },
         {
           "candidate": "Derrick Van Orden (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-rebecca-cooke-leads-derrick-van-orden-in-wi-03",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-06-25",
-      "weight": 0.1638,
+      "weight": 0.0745,
       "sampleSize": 535,
       "population": "LV",
       "results": [
         {
           "candidate": "Rebecca Cooke (D)",
-          "percentage": 50.0
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
         },
         {
           "candidate": "Derrick Van Orden (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://x.com/cjwarnke/status/2074099699020128352",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "FM3 Research",
+      "endDate": "2026-06-25",
+      "fieldDates": "2026-06-25",
+      "sampleSize": 535,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Rebecca Cooke (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Derrick Van Orden (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/WI-03"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0372
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-31",
-      "weight": 0.0889,
+      "weight": 0.0202,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Rebecca Cooke (D)",
-          "percentage": 50.0
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
         },
         {
           "candidate": "Derrick Van Orden (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://drive.google.com/file/d/1dTP7FcvzgV49WVSyQ6MtgpX7W48_1SsR/edit",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/WI-03"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-31"
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-02-17",
-      "weight": 0.0082,
+      "weight": 0.0037,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Rebecca Cooke (D)",
-          "percentage": 49.0
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
         },
         {
           "candidate": "Derrick Van Orden (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://drive.google.com/file/d/1iNmbcsNYlPvxu_q6Za5CrngdWc2u3lZ4/view",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-10-15",
-      "weight": 0.0005,
+      "weight": 0.0002,
       "sampleSize": 609,
       "population": "RV",
       "results": [
         {
           "candidate": "Rebecca Cooke (D)",
-          "percentage": 44.0
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Derrick Van Orden (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/weekly-score/2025/10/20/how-one-dem-group-is-rethinking-canvassing-00615012",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

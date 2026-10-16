@@ -1,83 +1,626 @@
 {
   "raceId": "MN-S-2026",
-  "count": 4,
-  "alternativeMatchupsDropped": 4,
+  "count": 22,
+  "updated_at": "2026-10-16T21:07:58.454Z",
   "polls": [
+    {
+      "pollster": "KSTP/SurveyUSA",
+      "endDate": "2026-10-12",
+      "fieldDates": "October 8–12, 2026",
+      "sampleSize": 718,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0705
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-10-07",
+      "fieldDates": "October 5–7, 2026",
+      "sampleSize": 856,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5207
+    },
+    {
+      "pollster": "Morning Consult",
+      "endDate": "2026-10-07",
+      "fieldDates": "October 2–7, 2026",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5065
+    },
+    {
+      "pollster": "Mason-Dixon Polling & Strategy",
+      "endDate": "2026-10-07",
+      "fieldDates": "October 5–7, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0067
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-10-04",
+      "fieldDates": "October 1–4, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4697
+    },
+    {
+      "pollster": "Big Data Poll",
+      "endDate": "2026-09-30",
+      "fieldDates": "September 29–30, 2026",
+      "sampleSize": 622,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3776
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-29",
+      "fieldDates": "September 28–29, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5125
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-09-16",
+      "fieldDates": "2026-09-16",
+      "sampleSize": 654,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5603
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-15",
+      "fieldDates": "September 14–15, 2026",
+      "sampleSize": 833,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.309
+    },
+    {
+      "pollster": "KSTP/SurveyUSA",
+      "endDate": "2026-09-14",
+      "fieldDates": "September 9–14, 2026",
+      "sampleSize": 654,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.535
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-10",
+      "fieldDates": "September 8–10, 2026",
+      "sampleSize": 720,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2559
+    },
+    {
+      "pollster": "TIPP Insights",
+      "endDate": "2026-09-02",
+      "fieldDates": "August 31 – September 2, 2026",
+      "sampleSize": 1494,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2758
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-08-28",
+      "fieldDates": "2026-08-28",
+      "sampleSize": 661,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3632
+    },
+    {
+      "pollster": "Deep Root Analytics",
+      "endDate": "2026-08-18",
+      "fieldDates": "August 17–18, 2026",
+      "sampleSize": 597,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1233
+    },
+    {
+      "pollster": "KTSP/SurveyUSA",
+      "endDate": "2026-08-17",
+      "fieldDates": "August 13–17, 2026",
+      "sampleSize": 661,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2817
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-08-17",
+      "fieldDates": "2026-08-17",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.245
+    },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-28",
-      "weight": 0.1054,
+      "weight": 0.024,
       "sampleSize": 808,
       "population": "LV",
       "results": [
         {
           "candidate": "Peggy Flanagan (D)",
-          "percentage": 51.0
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
         },
         {
           "candidate": "Michele Tafoya (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://x.com/NenoNicolosio/status/2062572053346111489?s=20",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/MN"
+      ],
+      "partisan": "D",
+      "fieldDates": "May 26–28, 2026"
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-02-08",
-      "weight": 0.0189,
+      "weight": 0.0043,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
         {
           "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 47.1,
           "percentage": 47.1
         },
         {
           "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 40.6,
           "percentage": 40.6
         }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/minnesota-2026-poll-democrats-lead-gop-as-voters-cite-threats-to-democracy/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-02-08",
+      "fieldDates": "February 6–8, 2026",
+      "sampleSize": 1000,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Craig (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0037,
+      "otherMatchup": true
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2025-07-11",
-      "weight": 0.0001,
+      "weight": 0,
       "sampleSize": 604,
       "population": "LV",
       "results": [
         {
           "candidate": "Peggy Flanagan (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Michele Tafoya (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.scribd.com/document/967381321/MEMO-Poll-Memo-MN-Senate-Dec-2025",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2025-07-11",
-      "weight": 0.0001,
+      "weight": 0,
       "sampleSize": 604,
       "population": "LV",
       "results": [
         {
           "candidate": "Peggy Flanagan (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Michele Tafoya (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://x.com/NenoNicolosio/status/2000509589566210355",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2025-07-11",
+      "fieldDates": "July 8–11, 2025",
+      "sampleSize": 604,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Angie Craig (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

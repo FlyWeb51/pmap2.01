@@ -1,26 +1,92 @@
 {
   "raceId": "AL-H-02-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.439Z",
   "polls": [
+    {
+      "pollster": "Tulchin Research D-sponsored",
+      "endDate": "2026-08-31",
+      "fieldDates": "2026-08-31",
+      "sampleSize": null,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Shomari Figures (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Rhett Marques (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/AL-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1439
+    },
+    {
+      "pollster": "DCCC D-sponsored",
+      "endDate": "2026-07-30",
+      "fieldDates": "2026-07-30",
+      "sampleSize": 421,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Shomari Figures (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Rhett Marques (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/AL-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0742
+    },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-06-25",
-      "weight": 0.1416,
+      "weight": 0.0322,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Shomari Figures (D)",
-          "percentage": 44.0
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Rhett Marques (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://hub.nationaljournal.com/serving-maine-up-on-a-golden-platner",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/AL-02"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-06-25"
     }
   ]
 }

@@ -1,135 +1,1050 @@
 {
   "raceId": "IA-S-2026",
-  "count": 9,
-  "alternativeMatchupsDropped": 8,
-  "supersededByNomineeChange": 0,
-  "unsettled": null,
+  "count": 36,
+  "updated_at": "2026-10-16T21:07:58.446Z",
   "polls": [
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-12",
+      "fieldDates": "October 6–12, 2026",
+      "sampleSize": 2245,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.7867
+    },
+    {
+      "pollster": "Marist University",
+      "endDate": "2026-10-11",
+      "fieldDates": "October 8–11, 2026",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.873
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-06",
+      "fieldDates": "October 5–6, 2026",
+      "sampleSize": 650,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8867
+    },
+    {
+      "pollster": "SSRS",
+      "endDate": "2026-10-05",
+      "fieldDates": "September 29 – October 5, 2026",
+      "sampleSize": 801,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9619
+    },
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2026-10-04",
+      "fieldDates": "October 1–4, 2026",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7426
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-10-01",
+      "fieldDates": "September 22 – October 1, 2026",
+      "sampleSize": 606,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7628
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-30",
+      "fieldDates": "September 28–30, 2026",
+      "sampleSize": 1048,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4901
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-29",
+      "fieldDates": "September 28–29, 2026",
+      "sampleSize": 738,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4019
+    },
+    {
+      "pollster": "Beacon Research/ Shaw & Co. Research",
+      "endDate": "2026-09-28",
+      "fieldDates": "September 24–28, 2026",
+      "sampleSize": 1008,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4589
+    },
+    {
+      "pollster": "Big Data (I)",
+      "endDate": "2026-09-26",
+      "fieldDates": "September 23–26, 2026",
+      "sampleSize": null,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46.5,
+          "percentage": 46.5
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5247
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-23",
+      "fieldDates": "September 22–23, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4461
+    },
+    {
+      "pollster": "Marist University",
+      "endDate": "2026-09-20",
+      "fieldDates": "September 17–20, 2026",
+      "sampleSize": 1050,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7008
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-18",
+      "fieldDates": "September 16–18, 2026",
+      "sampleSize": 1089,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3786
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-16",
+      "fieldDates": "September 14–16, 2026",
+      "sampleSize": 831,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3158
+    },
+    {
+      "pollster": "Cygnal R-sponsored",
+      "endDate": "2026-09-11",
+      "fieldDates": "September 9–11, 2026",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2182
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-10",
+      "fieldDates": "September 8–10, 2026",
+      "sampleSize": 1031,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3062
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-08",
+      "fieldDates": "September 3 – 8, 2026",
+      "sampleSize": 2169,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.733
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-09-01",
+      "fieldDates": "August 31-September 1, 2026",
+      "sampleSize": 750,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4243
+    },
+    {
+      "pollster": "Global Strategy Group D-sponsored",
+      "endDate": "2026-08-31",
+      "fieldDates": "August 27–31, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2141
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-29",
+      "fieldDates": "2026-08-29",
+      "sampleSize": 2500,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/IA",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3232
+    },
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-08-29",
+      "fieldDates": "August 27–29, 2026",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3541
+    },
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2026-08-23",
+      "fieldDates": "August 20–23, 2026",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2814
+    },
+    {
+      "pollster": "Abacus data",
+      "endDate": "2026-08-22",
+      "fieldDates": "2026-08-22",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.275
+    },
+    {
+      "pollster": "Iowa State Fair Straw",
+      "endDate": "2026-08-15",
+      "fieldDates": "2026-08-15",
+      "sampleSize": null,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 35.1,
+          "percentage": 35.1
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 61.1,
+          "percentage": 61.1
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1988
+    },
     {
       "pollster": "Emerson College",
       "endDate": "2026-08-04",
       "endDateUS": "8/4/2026",
-      "weight": 0.9091,
+      "weight": 0.2165,
       "sampleSize": 712,
       "population": "LV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 44.98 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 47.52 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 44.98,
+          "percentage": 44.98
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 47.52,
+          "percentage": 47.52
+        }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/iowa-2026-poll/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "fieldDates": "August 2-4, 2026"
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-27",
       "endDateUS": "6/27/2026",
-      "weight": 0.4036,
+      "weight": 0.0481,
       "sampleSize": 1003,
       "population": "RV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 50.0 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 46.0 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
       ],
       "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-close-senate-contest-brewing-iowa",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "partisan": "R",
+      "fieldDates": "June 23–27, 2026"
     },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
       "endDateUS": "6/27/2026",
-      "weight": 0.3468,
+      "weight": 0.0826,
       "sampleSize": 600,
       "population": "LV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 46.01 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 48.48 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46.01,
+          "percentage": 46.01
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 48.48,
+          "percentage": 48.48
+        }
       ],
       "sourceUrl": "https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-iowa-poll-crosstabs.html",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-06-27",
+      "fieldDates": "June 15–27, 2026",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0826
     },
     {
       "pollster": "Cygnal (R)",
       "endDate": "2026-06-19",
       "endDateUS": "6/19/2026",
-      "weight": 0.1442,
+      "weight": 0.0343,
       "sampleSize": 600,
       "population": "LV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 44.2 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 46.0 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 44.2,
+          "percentage": 44.2
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
       ],
       "sourceUrl": "https://taxrelief.org/itr-foundation-poll-shows-iowans-want-taxpayer-protection/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://pollingsource.com/senate/IA"
+      ],
+      "partisan": "R",
+      "fieldDates": "June 16–19, 2026"
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-06-11",
       "endDateUS": "6/11/2026",
-      "weight": 0.1547,
+      "weight": 0.0368,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 47.0 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 45.0 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/06/22/the-next-geopolitical-crisis-00969509?",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "partisan": "D",
+      "fieldDates": "June 8–11, 2026"
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-06-04",
       "endDateUS": "6/4/2026",
-      "weight": 0.0884,
+      "weight": 0.021,
       "sampleSize": 557,
       "population": "RV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 46.0 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 46.0 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/06/08/ron-klain-picks-his-2028-horse-00953194",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "partisan": "D",
+      "fieldDates": "June 3–4, 2026"
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
       "endDateUS": "4/9/2026",
-      "weight": 0.0443,
+      "weight": 0.0053,
       "sampleSize": 377,
       "population": "LV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 46.0 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 45.0 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
       ],
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "partisan": "R",
+      "fieldDates": "April 3–9, 2026"
     },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-03-16",
       "endDateUS": "3/16/2026",
-      "weight": 0.0227,
+      "weight": 0.0108,
       "sampleSize": 1200,
       "population": "LV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 43.0 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 47.0 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/04/13/what-dems-should-take-from-orbans-defeat-00868714",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-03-16",
+      "fieldDates": "March 10–16, 2026",
+      "sampleSize": 1200,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0046
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-01-11",
       "endDateUS": "1/11/2026",
-      "weight": 0.0099,
+      "weight": 0.0012,
       "sampleSize": 1108,
       "population": "LV",
       "results": [
-        { "candidate": "Josh Turek (D)", "percentage": 41.0 },
-        { "candidate": "Ashley Hinson (R)", "percentage": 44.0 }
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
       ],
       "sourceUrl": "https://x.com/Bencjacobs/status/2020894441196663099",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "partisan": "D",
+      "fieldDates": "January 8–11, 2026"
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-08-19",
+      "fieldDates": "August 18–19, 2025",
+      "sampleSize": 572,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Joni Ernst (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Jackie Norris (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

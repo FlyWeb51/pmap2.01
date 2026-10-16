@@ -1,45 +1,61 @@
 {
   "raceId": "CO-H-05-2026",
   "count": 2,
-  "alternativeMatchupsDropped": 0,
+  "updated_at": "2026-10-16T21:07:58.441Z",
   "polls": [
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-07-21",
-      "weight": 0.2739,
+      "weight": 0.0623,
       "sampleSize": 450,
       "population": "LV",
       "results": [
         {
           "candidate": "Jessica Killin (D)",
-          "percentage": 44.0
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Jeff Crank (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://coloradosun.com/2026/07/28/jessica-killin-jeff-crank-polling/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/CO-05"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-21"
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2025-11-03",
-      "weight": 0.0007,
+      "weight": 0.0003,
       "sampleSize": 450,
       "population": "LV",
       "results": [
         {
           "candidate": "Jessica Killin (D)",
-          "percentage": 40.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
           "candidate": "Jeff Crank (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://globalstrategygroup.app.box.com/s/iwvsjiw4tgc1cifp0g2iqw711tdlm8tr",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

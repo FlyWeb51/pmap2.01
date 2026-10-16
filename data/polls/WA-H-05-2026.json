@@ -1,26 +1,36 @@
 {
   "raceId": "WA-H-05-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 2,
+  "updated_at": "2026-10-16T21:07:58.468Z",
   "polls": [
     {
       "pollster": "Tavern Research (I)",
       "endDate": "2026-05-25",
-      "weight": 0.0832,
+      "weight": 0.0189,
       "sampleSize": 578,
       "population": "LV",
       "results": [
         {
           "candidate": "David Womack (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Michael Baumgartner (R)",
-          "percentage": 54.0
+          "party": "R",
+          "pct": 54,
+          "percentage": 54
         }
       ],
       "sourceUrl": "https://www.tavernresearch.com/research-and-writings//wa-05-baumgartner-leads-democrats-trails-independent",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/WA-05"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-25"
     }
   ]
 }

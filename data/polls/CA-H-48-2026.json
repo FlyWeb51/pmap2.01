@@ -1,26 +1,92 @@
 {
   "raceId": "CA-H-48-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 1,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.441Z",
   "polls": [
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-09-01",
+      "fieldDates": "2026-09-01",
+      "sampleSize": 522,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Marni von Wilpert (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Jim Desmond (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/CA-48"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.354
+    },
     {
       "pollster": "Lake Research Partners (D)",
       "endDate": "2026-07-14",
-      "weight": 0.2456,
+      "weight": 0.0558,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Marni von Wilpert (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Jim Desmond (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://hub.nationaljournal.com/the-dncs-99-problems",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/CA-48"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-14"
+    },
+    {
+      "pollster": "Lake Research",
+      "endDate": "2026-07-14",
+      "fieldDates": "2026-07-14",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Marni von Wilpert (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jim Desmond (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/CA-48"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1117
     }
   ]
 }

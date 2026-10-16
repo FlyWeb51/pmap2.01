@@ -1,64 +1,222 @@
 {
   "raceId": "NC-H-01-2026",
-  "count": 3,
-  "alternativeMatchupsDropped": 0,
+  "count": 8,
+  "updated_at": "2026-10-16T21:07:58.456Z",
   "polls": [
+    {
+      "pollster": "co/efficient R-sponsored",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-10-08",
+      "sampleSize": 623,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Don Davis (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Laurie Buckhout (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4546
+    },
+    {
+      "pollster": "Neighborhood Research R-sponsored",
+      "endDate": "2026-10-06",
+      "fieldDates": "2026-10-06",
+      "sampleSize": 303,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Don Davis (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Laurie Buckhout (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3027
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-10-04",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Don Davis (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Laurie Buckhout (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3713
+    },
+    {
+      "pollster": "GBAO D-sponsored",
+      "endDate": "2026-09-11",
+      "fieldDates": "2026-09-11",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Don Davis (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Laurie Buckhout (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2182
+    },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-06-28",
-      "weight": 0.1697,
+      "weight": 0.0772,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Don Davis (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Laurie Buckhout (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://x.com/nicholaswu12/status/2072383841000440013?s=20",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-06-28",
+      "fieldDates": "2026-06-28",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Don Davis (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Laurie Buckhout (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0386
     },
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-29",
-      "weight": 0.055,
+      "weight": 0.025,
       "sampleSize": 842,
       "population": "LV",
       "results": [
         {
           "candidate": "Don Davis (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Laurie Buckhout (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-02-02",
-      "weight": 0.0058,
+      "weight": 0.0026,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Don Davis (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "Laurie Buckhout (R)",
-          "percentage": 39.0
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
         }
       ],
       "sourceUrl": "https://x.com/nicholaswu12/status/2029953742385131930?s=20",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

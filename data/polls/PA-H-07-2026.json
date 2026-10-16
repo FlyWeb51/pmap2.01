@@ -1,26 +1,88 @@
 {
   "raceId": "PA-H-07-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.462Z",
   "polls": [
+    {
+      "pollster": "Franklin & Marshall College",
+      "endDate": "2026-09-20",
+      "fieldDates": "2026-09-20",
+      "sampleSize": 357,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Bob Brooks (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Ryan Mackenzie (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/PA-07"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4087
+    },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-02",
-      "weight": 0.1861,
+      "weight": 0.0846,
       "sampleSize": null,
       "population": "LV",
       "results": [
         {
           "candidate": "Bob Brooks (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Ryan E. Mackenzie (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://www.notus.org/newsletters/the-maine-vacancy",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-07-02",
+      "fieldDates": "2026-07-02",
+      "sampleSize": 550,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Bob Brooks (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ryan Mackenzie (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/PA-07"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0444
     }
   ]
 }

@@ -1,64 +1,86 @@
 {
   "raceId": "AZ-H-06-2026",
   "count": 3,
-  "alternativeMatchupsDropped": 0,
+  "updated_at": "2026-10-16T21:07:58.440Z",
   "polls": [
     {
       "pollster": "Normington, Petts & Associates (D)",
       "endDate": "2026-06-11",
-      "weight": 0.1146,
+      "weight": 0.026,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "JoAnna Mendoza (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Juan Ciscomani (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://x.com/cjwarnke/status/2069028347359674463/photo/1",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/AZ-06"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-06-11"
     },
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-14",
-      "weight": 0.0131,
+      "weight": 0.006,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "JoAnna Mendoza (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Juan Ciscomani (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-10-15",
-      "weight": 0.0004,
+      "weight": 0.0002,
       "sampleSize": 581,
       "population": "RV",
       "results": [
         {
           "candidate": "JoAnna Mendoza (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "Juan Ciscomani (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/weekly-score/2025/10/20/how-one-dem-group-is-rethinking-canvassing-00615012",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

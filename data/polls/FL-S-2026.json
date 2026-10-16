@@ -1,254 +1,770 @@
 {
   "raceId": "FL-S-2026",
-  "count": 13,
-  "alternativeMatchupsDropped": 7,
+  "count": 28,
+  "updated_at": "2026-10-16T21:07:58.444Z",
   "polls": [
+    {
+      "pollster": "MDW Communications",
+      "endDate": "2026-10-10",
+      "fieldDates": "2026-10-10",
+      "sampleSize": 2351,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.853
+    },
+    {
+      "pollster": "Stetson University",
+      "endDate": "2026-10-09",
+      "fieldDates": "2026-10-09",
+      "sampleSize": 716,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9975
+    },
+    {
+      "pollster": "St. Pete Polls",
+      "endDate": "2026-10-07",
+      "fieldDates": "2026-10-07",
+      "sampleSize": 836,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0291
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-10-05",
+      "sampleSize": 3813,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.5199
+    },
+    {
+      "pollster": "James Madison Institute",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-10-04",
+      "sampleSize": 1171,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1364
+    },
+    {
+      "pollster": "Mason-Dixon",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 625,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7746
+    },
+    {
+      "pollster": "Change Research",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-27",
+      "sampleSize": 1063,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4605
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-21",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3012
+    },
+    {
+      "pollster": "Stetson University",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-21",
+      "sampleSize": 830,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7085
+    },
+    {
+      "pollster": "St. Pete Polls",
+      "endDate": "2026-09-17",
+      "fieldDates": "2026-09-17",
+      "sampleSize": 913,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6775
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-10",
+      "sampleSize": 733,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2582
+    },
+    {
+      "pollster": "Change Research D-sponsored",
+      "endDate": "2026-09-09",
+      "fieldDates": "2026-09-09",
+      "sampleSize": 1107,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3101
+    },
     {
       "pollster": "University of North Florida",
       "endDate": "2026-07-17",
-      "weight": 0.6855,
+      "weight": 0.1559,
       "sampleSize": 848,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
+          "party": "D",
+          "pct": 40.2,
           "percentage": 40.2
         },
         {
           "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 49.9,
           "percentage": 49.9
         }
       ],
       "sourceUrl": "https://floridapolitics.com/archives/808426-unf-poll-jolly-donalds/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of North Florida",
+      "endDate": "2026-07-17",
+      "fieldDates": "2026-07-17",
+      "sampleSize": 848,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1559
+    },
+    {
+      "pollster": "Change Research",
+      "endDate": "2026-07-11",
+      "fieldDates": "2026-07-11",
+      "sampleSize": 1348,
+      "population": "RV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Alexander Vindman (D)",
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.077,
+      "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.3499,
+      "weight": 0.0796,
       "sampleSize": 1015,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://changeresearch.com/wp-content/uploads/2026/06/Florida-June-Poll-Memo.pdf",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.3526,
+      "weight": 0.0802,
       "sampleSize": 1273,
       "population": "RV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://changeresearch.com/wp-content/uploads/2026/06/Florida-June-Poll-Memo.pdf",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of North Florida",
+      "endDate": "2026-06-07",
+      "fieldDates": "2026-06-07",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0601
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-05-21",
-      "weight": 0.0997,
+      "weight": 0.0227,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://floridapolitics.com/archives/798776-alex-vindman-campaign-polling-shows-him-within-striking-distance-of-ashley-moody/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-21",
+      "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.2301,
+      "weight": 0.0514,
       "sampleSize": 2070,
       "population": "RV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://changeresearch.com/florida-governors-race-may-2026/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.2243,
+      "weight": 0.051,
       "sampleSize": 1593,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://changeresearch.com/florida-governors-race-may-2026/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Cherry Communications (R)",
       "endDate": "2026-05-09",
-      "weight": 0.0587,
+      "weight": 0.0267,
       "sampleSize": 604,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 40.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://floridapolitics.com/archives/796600-florida-chamber-poll-floridas-republican-tilt-holds-steady/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
       "endDate": "2026-04-13",
-      "weight": 0.0546,
+      "weight": 0.0124,
       "sampleSize": 434,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 49.0
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
       "sourceUrl": "https://www2.stetson.edu/today/2026/04/stetson-poll-republicans-lead-in-florida-2026-races-but-many-voters-still-undecided/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0482,
+      "weight": 0.011,
       "sampleSize": 406,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 50.0
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "MDW Communications",
       "endDate": "2026-04-03",
-      "weight": 0.0891,
+      "weight": 0.0203,
       "sampleSize": 1834,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
+          "party": "D",
+          "pct": 42.2,
           "percentage": 42.2
         },
         {
           "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 43.4,
           "percentage": 43.4
         }
       ],
       "sourceUrl": "https://files.constantcontact.com/633ccf07901/581e6534-4e18-43a0-bffb-7cc7221a349a.pdf?rdr=true",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-03",
-      "weight": 0.0224,
+      "weight": 0.0102,
       "sampleSize": 574,
       "population": "RV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 40.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://floridapolitics.com/archives/789481-alex-vindman-internal-poll-shows-him-within-striking-distance-of-ashley-moody/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-31",
-      "weight": 0.0651,
+      "weight": 0.0148,
       "sampleSize": 1125,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 38.0
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
         },
         {
           "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 45.9,
           "percentage": 45.9
         }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/florida-2026-poll-donalds-leads-gop-primary-for-governor-republicans-outpace-democrats-in-florida-elections/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "University of North Florida",
       "endDate": "2026-03-02",
-      "weight": 0.0276,
+      "weight": 0.0063,
       "sampleSize": 772,
       "population": "LV",
       "results": [
         {
           "candidate": "Alexander Vindman (D)",
-          "percentage": 38.0
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
         },
         {
           "candidate": "Ashley Moody (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://floridapolitics.com/archives/783199-desantis-more-popular-trump-poll/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     }
   ]
 }

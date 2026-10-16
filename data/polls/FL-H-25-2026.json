@@ -1,26 +1,90 @@
 {
   "raceId": "FL-H-25-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 3,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.443Z",
   "polls": [
+    {
+      "pollster": "Beacon Insights",
+      "endDate": "2026-05-20",
+      "fieldDates": "2026-05-20",
+      "sampleSize": 461,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Jared Moskowitz (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Scott Singer (R)",
+          "party": "R",
+          "pct": 33,
+          "percentage": 33
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-25"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0271
+    },
     {
       "pollster": "Middle Seat (D)",
       "endDate": "2026-05-06",
-      "weight": 0.0535,
+      "weight": 0.0243,
       "sampleSize": 576,
       "population": "LV",
       "results": [
         {
           "candidate": "Oliver Larkin (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "George Moraitis (R)",
-          "percentage": 34.0
+          "party": "R",
+          "pct": 34,
+          "percentage": 34
         }
       ],
       "sourceUrl": "https://punchbowl.news/fl-25-polling-memo/?refcode=&emci=daace617-7279-f111-ac9c-000d3a14b6d6&emdi=951fd585-7479-f111-ac9c-000d3a14b6d6&ceid=29481628",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Middle Seat",
+      "endDate": "2026-05-06",
+      "fieldDates": "2026-05-06",
+      "sampleSize": 576,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Oliver Larkin (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Scott Singer (R)",
+          "party": "R",
+          "pct": 33,
+          "percentage": 33
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-25"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0207,
+      "otherMatchup": true
     }
   ]
 }

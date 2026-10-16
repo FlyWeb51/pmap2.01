@@ -1,26 +1,32 @@
 {
   "raceId": "IA-H-03-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 1,
+  "updated_at": "2026-10-16T21:07:58.446Z",
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-14",
-      "weight": 0.0131,
+      "weight": 0.006,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Sarah Trone Garriott (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "Zach Nunn (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

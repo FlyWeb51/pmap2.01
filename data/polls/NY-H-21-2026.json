@@ -1,26 +1,232 @@
 {
   "raceId": "NY-H-21-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 8,
+  "updated_at": "2026-10-16T21:07:58.460Z",
   "polls": [
+    {
+      "pollster": "Siena University",
+      "endDate": "2026-10-06",
+      "fieldDates": "2026-10-06",
+      "sampleSize": 496,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Blake Gendebien (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Anthony Constantino (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7746
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-10-04",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Blake Gendebien (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Anthony Constantino (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3713
+    },
+    {
+      "pollster": "Public Policy Polling D-sponsored",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-10",
+      "sampleSize": 557,
+      "population": "RV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Blake Gendebien (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Anthony Constantino (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2026
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-09-02",
+      "fieldDates": "2026-09-02",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Blake Gendebien (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Anthony Constantino (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1773
+    },
+    {
+      "pollster": "J.L. Partners",
+      "endDate": "2026-08-17",
+      "fieldDates": "2026-08-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Blake Gendebien (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Anthony Constantino (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1225
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-08-13",
+      "fieldDates": "2026-08-13",
+      "sampleSize": 612,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Blake Gendebien (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Anthony Constantino (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2471
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-08-08",
+      "fieldDates": "2026-08-08",
+      "sampleSize": 612,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Blake Gendebien (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Anthony Constantino (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2201
+    },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-31",
-      "weight": 0.0889,
+      "weight": 0.0202,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Blake Gendebien (D)",
-          "percentage": 44.0
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Anthony Constantino (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.politico.com/news/2026/06/25/a-district-that-went-20-for-trump-now-in-play-for-democrats-00976934",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/NY-21"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-31"
     }
   ]
 }

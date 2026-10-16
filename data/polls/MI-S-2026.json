@@ -1,368 +1,2128 @@
 {
   "raceId": "MI-S-2026",
-  "count": 19,
-  "alternativeMatchupsDropped": 41,
+  "count": 76,
+  "updated_at": "2026-10-16T21:07:58.451Z",
   "polls": [
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-14",
+      "sampleSize": 798,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.182
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-10-10",
+      "fieldDates": "October 9–10, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6607
+    },
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-10-09",
+      "fieldDates": "October 8–9, 2026",
+      "sampleSize": 607,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9184
+    },
+    {
+      "pollster": "The Tyson Group",
+      "endDate": "2026-10-08",
+      "fieldDates": "October 6–8, 2026",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4461
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-10-06",
+      "fieldDates": "2026-10-06",
+      "sampleSize": 762,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.48
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-04",
+      "fieldDates": "September 22 – October 4, 2026",
+      "sampleSize": 3949,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.4852
+    },
+    {
+      "pollster": "Mitchell Research & Communications",
+      "endDate": "2026-10-01",
+      "fieldDates": "October 1, 2026",
+      "sampleSize": 682,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8092
+    },
+    {
+      "pollster": "Z to A Research",
+      "endDate": "2026-10-01",
+      "fieldDates": "September 28 – October 1, 2026",
+      "sampleSize": 483,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2894
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-30",
+      "fieldDates": "September 28–30, 2026",
+      "sampleSize": 1085,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4987
+    },
+    {
+      "pollster": "Beacon Research/ Shaw & Co. Research",
+      "endDate": "2026-09-28",
+      "fieldDates": "September 24–28, 2026",
+      "sampleSize": 1028,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4635
+    },
+    {
+      "pollster": "FOX News",
+      "endDate": "2026-09-28",
+      "fieldDates": "2026-09-28",
+      "sampleSize": 1028,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.927
+    },
+    {
+      "pollster": "Marist University",
+      "endDate": "2026-09-27",
+      "fieldDates": "September 24–27, 2026",
+      "sampleSize": 1235,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8935
+    },
+    {
+      "pollster": "Guidant Polling & Strategy",
+      "endDate": "2026-09-27",
+      "fieldDates": "September 20–27, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.799
+    },
+    {
+      "pollster": "The Tyson Group",
+      "endDate": "2026-09-27",
+      "fieldDates": "September 24–27, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2941
+    },
+    {
+      "pollster": "Big Data Poll R-sponsored",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-24",
+      "sampleSize": 678,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3432
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-23",
+      "fieldDates": "September 21–23, 2026",
+      "sampleSize": 843,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3739
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-09-22",
+      "fieldDates": "September 15–22, 2026",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6165
+    },
+    {
+      "pollster": "NY Times/Siena",
+      "endDate": "2026-09-22",
+      "fieldDates": "2026-09-22",
+      "sampleSize": 605,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6191
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-22",
+      "fieldDates": "2026-09-22",
+      "sampleSize": 1099,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8344
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-09-22",
+      "fieldDates": "September 19–22, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3559
+    },
+    {
+      "pollster": "Cygnal/Beacon Research R-sponsored",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-21",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3012
+    },
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2026-09-20",
+      "fieldDates": "September 16–20, 2026",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5374
+    },
+    {
+      "pollster": "Torchlight Strategies R-sponsored",
+      "endDate": "2026-09-19",
+      "fieldDates": "September 15–19, 2026",
+      "sampleSize": 643,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2977
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-17",
+      "fieldDates": "September 16–17, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3884
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-09-14",
+      "fieldDates": "September 12–14, 2026",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6616
+    },
+    {
+      "pollster": "The Washington Post/SSPG",
+      "endDate": "2026-09-14",
+      "fieldDates": "September 10–14, 2026",
+      "sampleSize": 803,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5928
+    },
+    {
+      "pollster": "Washington Post",
+      "endDate": "2026-09-14",
+      "fieldDates": "2026-09-14",
+      "sampleSize": 803,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5928
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-09",
+      "fieldDates": "September 7–9, 2026",
+      "sampleSize": 1079,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3061
+    },
+    {
+      "pollster": "SSRS",
+      "endDate": "2026-09-06",
+      "fieldDates": "August 31 – September 6, 2026",
+      "sampleSize": 843,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5049
+    },
+    {
+      "pollster": "CNN",
+      "endDate": "2026-09-06",
+      "fieldDates": "2026-09-06",
+      "sampleSize": 843,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5049
+    },
+    {
+      "pollster": "Glengariff Group",
+      "endDate": "2026-09-03",
+      "fieldDates": "August 31–September 3, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3378
+    },
+    {
+      "pollster": "Detroit News/Glengariff",
+      "endDate": "2026-09-03",
+      "fieldDates": "2026-09-03",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3974
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-29",
+      "fieldDates": "2026-08-29",
+      "sampleSize": 332,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2634
+    },
+    {
+      "pollster": "EPIC-MRA",
+      "endDate": "2026-08-28",
+      "fieldDates": "August 22–28, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2941
+    },
+    {
+      "pollster": "EPIC-MRA",
+      "endDate": "2026-08-28",
+      "fieldDates": "2026-08-28",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.346
+    },
+    {
+      "pollster": "Michigan State University/YouGov",
+      "endDate": "2026-08-20",
+      "fieldDates": "August 10–20, 2026",
+      "sampleSize": 913,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3193
+    },
+    {
+      "pollster": "Michigan State University/YouGov",
+      "endDate": "2026-08-20",
+      "fieldDates": "2026-08-20",
+      "sampleSize": 779,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3277
+    },
+    {
+      "pollster": "Susquehanna Polling & Research",
+      "endDate": "2026-08-17",
+      "fieldDates": "August 11–17, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1549
+    },
+    {
+      "pollster": "ToWin",
+      "endDate": "2026-08-14",
+      "fieldDates": "2026-08-14",
+      "sampleSize": null,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 43.5,
+          "percentage": 43.5
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 47.8,
+          "percentage": 47.8
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1943
+    },
+    {
+      "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
+      "endDate": "2026-08-11",
+      "fieldDates": "August 9–11, 2026",
+      "sampleSize": 877,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1412
+    },
+    {
+      "pollster": "Beacon Research/ Shaw & Co. Research",
+      "endDate": "2026-08-10",
+      "fieldDates": "August 6–10, 2026",
+      "sampleSize": 1006,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.133
+    },
+    {
+      "pollster": "FOX News",
+      "endDate": "2026-08-10",
+      "fieldDates": "2026-08-10",
+      "sampleSize": 1006,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.266
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-08-10",
+      "fieldDates": "August 6–10, 2026",
+      "sampleSize": 800,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.112
+    },
+    {
+      "pollster": "Senate Majority PAC",
+      "endDate": "2026-08-10",
+      "fieldDates": "2026-08-10",
+      "sampleSize": null,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1771
+    },
+    {
+      "pollster": "GBAO D-sponsored",
+      "endDate": "2026-08-10",
+      "fieldDates": "2026-08-10",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1318
+    },
+    {
+      "pollster": "TIPP Insights",
+      "endDate": "2026-08-10",
+      "fieldDates": "August 6–10, 2026",
+      "sampleSize": 1528,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1639
+    },
+    {
+      "pollster": "TIPP",
+      "endDate": "2026-08-10",
+      "fieldDates": "2026-08-10",
+      "sampleSize": 1215,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3248
+    },
     {
       "pollster": "EPIC-MRA",
       "endDate": "2026-07-31",
-      "weight": 0.7968,
+      "weight": 0.1812,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://x.com/MIRSnews/status/2083770042475516025",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+        "https://pollingsource.com/senate/MI"
+      ],
+      "fieldDates": "July 24–31, 2026"
     },
     {
       "pollster": "SoCal Strategies (R)",
       "endDate": "2026-07-30",
-      "weight": 0.4021,
+      "weight": 0.0914,
       "sampleSize": 640,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://socalstrategies.substack.com/p/abdul-el-sayed-holds-17-point-primary/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "partisan": "R",
+      "fieldDates": "July 28–30, 2026"
     },
     {
       "pollster": "Mitchell Research & Communications",
       "endDate": "2026-07-29",
-      "weight": 0.8052,
+      "weight": 0.1831,
       "sampleSize": 672,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://static1.squarespace.com/static/5f14ae6fb2a20e01e9c6d608/t/6a6d26262f442f133d15fa49/1785538087149/MITCHELL+MI+Poll+Nov+Electio+Press+Release+7-31-2026+305PM_A.pdf",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "fieldDates": "July 28–29, 2026"
+    },
+    {
+      "pollster": "MIRS/Mitchell Research",
+      "endDate": "2026-07-29",
+      "fieldDates": "2026-07-29",
+      "sampleSize": 672,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1831
     },
     {
       "pollster": "Glengariff Group, Inc.",
       "endDate": "2026-07-24",
-      "weight": 0.6778,
+      "weight": 0.1541,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 38.7,
           "percentage": 38.7
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 49.0
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
       "sourceUrl": "https://mea.org/latest-statewide-poll-7-2026/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "fieldDates": "2026-07-24"
+    },
+    {
+      "pollster": "Glengariff Group",
+      "endDate": "2026-07-24",
+      "fieldDates": "July 22–24, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Haley Stevens (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.131,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "MEA/Glengariff",
+      "endDate": "2026-07-24",
+      "fieldDates": "2026-07-24",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "El-Sayed (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Rogers (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1541
     },
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-06-30",
-      "weight": 0.4891,
+      "weight": 0.1112,
       "sampleSize": 947,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 45.2,
           "percentage": 45.2
         },
         {
           "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44.1,
           "percentage": 44.1
         }
       ],
       "sourceUrl": "https://quantusinsights.org/f/michigan-senate-el-sayed-leads-primary-fall-race-remains-tight",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Wedgewood Polls",
       "endDate": "2026-06-28",
-      "weight": 0.3724,
+      "weight": 0.0847,
       "sampleSize": 602,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 49.0
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://sites.google.com/view/wedgewood-polls/polls",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Data for Progress (D)",
       "endDate": "2026-06-22",
-      "weight": 0.1759,
+      "weight": 0.04,
       "sampleSize": 709,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://workingfamilies.org/wp-content/uploads/2026/07/DFP-__-WFP-Michigan-Senate-Race-Memorandum.pdf",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "D",
+      "fieldDates": "June 15–22, 2026"
     },
     {
       "pollster": "Zenith Research (D)",
       "endDate": "2026-06-14",
-      "weight": 0.1347,
+      "weight": 0.0306,
       "sampleSize": 602,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://drive.google.com/file/d/1tC6hr1QiRdiegnxdJjAf0WkOE-XfZwEI/view",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "D",
+      "fieldDates": "June 11–14, 2026"
     },
     {
       "pollster": "Mitchell Research & Communications",
       "endDate": "2026-06-13",
-      "weight": 0.3086,
+      "weight": 0.0702,
       "sampleSize": 827,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://www.freep.com/story/news/politics/2026/06/16/john-james-mike-cox-michigan-gop-primary-governor/90569723007/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "fieldDates": "June 11–13, 2026"
     },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-06-04",
-      "weight": 0.0975,
+      "weight": 0.0222,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://drive.google.com/file/d/15KbOIW_L4iGdkgIbMWDr2m80N0ZUr3d3/view",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "D",
+      "fieldDates": "June 2–4, 2026"
     },
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2026-05-23",
-      "weight": 0.1126,
+      "weight": 0.0512,
       "sampleSize": 1163,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 43.43,
           "percentage": 43.43
         },
         {
           "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 42.14,
           "percentage": 42.14
         }
       ],
       "sourceUrl": "https://tippinsights.com/league-of-american-workers-survey-michigan/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2026-05-23",
-      "weight": 0.1134,
+      "weight": 0.0516,
       "sampleSize": 1456,
       "population": "RV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 39.77,
           "percentage": 39.77
         },
         {
           "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 39.65,
           "percentage": 39.65
         }
       ],
       "sourceUrl": "https://tippinsights.com/league-of-american-workers-survey-michigan/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "TIPP Insights",
+      "endDate": "2026-05-23",
+      "fieldDates": "May 20–23, 2026",
+      "sampleSize": 1456,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0244
     },
     {
       "pollster": "Mitchell Research & Communications",
       "endDate": "2026-05-07",
-      "weight": 0.1125,
+      "weight": 0.0256,
       "sampleSize": 607,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://www.dropbox.com/scl/fi/852uovvc2zfsqrnphdn9q/MIRS-MITCHELL-DEM-Primary-Press-Release-5-11-26-150PM_A.docx?rlkey=v522wmle6zvzlajt6m6nfoj78&e=1&st=l7aslgpl&dl=0",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "fieldDates": "May 1–7, 2026"
     },
     {
       "pollster": "Glengariff Group, Inc.",
       "endDate": "2026-05-01",
-      "weight": 0.0973,
+      "weight": 0.0221,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 39.8,
           "percentage": 39.8
         },
         {
           "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44.7,
           "percentage": 44.7
         }
       ],
       "sourceUrl": "https://www.detroitchamber.com/chamber-poll-voters-views-on-candidates-2026-election/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "fieldDates": "April 28 – May 1, 2026"
+    },
+    {
+      "pollster": "Glengariff Group",
+      "endDate": "2026-05-01",
+      "fieldDates": "April 28 – May 1, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Haley Stevens (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0188,
+      "otherMatchup": true
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-01-25",
-      "weight": 0.0137,
+      "weight": 0.0031,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 42.5,
           "percentage": 42.5
         },
         {
           "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 42.8,
           "percentage": 42.8
         }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/michigan-2026-poll-crowded-democratic-senate-primary-remains-wide-open/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "fieldDates": "January 24–25, 2026"
     },
     {
       "pollster": "Glengariff Group, Inc.",
       "endDate": "2026-01-06",
-      "weight": 0.0068,
+      "weight": 0.0016,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 41.6,
           "percentage": 41.6
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://www.detroitnews.com/story/news/politics/2026/01/13/michigan-race-for-governor-polling-john-james-jocelyn-benson-mike-duggan/88134923007/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Glengariff Group",
+      "endDate": "2026-01-06",
+      "fieldDates": "January 2–6, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0013
     },
     {
       "pollster": "Mitchell Research & Communications",
       "endDate": "2025-11-21",
-      "weight": 0.0024,
+      "weight": 0.0005,
       "sampleSize": 616,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 38.0
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://mirs-polls.s3.us-east-2.amazonaws.com/c7ba70f28c3812c553cbf07db509f469.pdf",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "fieldDates": "November 18–21, 2025"
+    },
+    {
+      "pollster": "EPIC-MRA",
+      "endDate": "2025-11-11",
+      "fieldDates": "November 6–11, 2025",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Haley Stevens (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0004,
+      "otherMatchup": true
     },
     {
       "pollster": "Rosetta Stone",
       "endDate": "2025-10-25",
-      "weight": 0.0013,
+      "weight": 0.0001,
       "sampleSize": 637,
       "population": "LV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
-          "percentage": 31.0
+          "party": "D",
+          "pct": 31,
+          "percentage": 31
         },
         {
           "candidate": "Mike Rogers (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://x.com/IAPolls2022/status/1986533537747472500",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "R",
+      "fieldDates": "October 23–25, 2025"
+    },
+    {
+      "pollster": "Normington Petts",
+      "endDate": "2025-06-16",
+      "fieldDates": "June 12–16, 2025",
+      "sampleSize": 700,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Haley Stevens (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     },
     {
       "pollster": "Glengariff Group, Inc.",
       "endDate": "2025-05-08",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 600,
       "population": "RV",
       "results": [
         {
           "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 40.8,
           "percentage": 40.8
         },
         {
           "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 46.9,
           "percentage": 46.9
         }
       ],
       "sourceUrl": "https://www.detroitchamber.com/wp-content/uploads/2025/05/Detroit-Regional-Chamber_Glengariff-Group_May-2025-Political-Survey-Report.pdf",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Mitchell Research",
+      "endDate": "2025-03-13",
+      "fieldDates": "March 13, 2025",
+      "sampleSize": 688,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Dana Nessel (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Other / Undecided",
+          "party": null,
+          "pct": 11,
+          "percentage": 11
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Target Insyght",
+      "endDate": "2025-03-06",
+      "fieldDates": "March 3–6, 2025",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Haley Stevens (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

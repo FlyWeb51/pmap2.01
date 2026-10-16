@@ -1,26 +1,36 @@
 {
   "raceId": "CA-H-22-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 1,
+  "updated_at": "2026-10-16T21:07:58.440Z",
   "polls": [
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-06-21",
-      "weight": 0.1826,
+      "weight": 0.0415,
       "sampleSize": 800,
       "population": "LV",
       "results": [
         {
           "candidate": "Randy Villegas (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "David G. Valadao (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/07/21/trump-to-hill-im-not-that-into-you-01005915",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/CA-22"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-06-21"
     }
   ]
 }

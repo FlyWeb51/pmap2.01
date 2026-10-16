@@ -1,23 +1,391 @@
 {
   "raceId": "SC-S-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 10,
-  "supersededByNomineeChange": 0,
-  "unsettled": "Republican nominee TBD - special primary 2026-08-11 following Sen. Graham's death",
+  "count": 13,
+  "updated_at": "2026-10-16T21:07:58.464Z",
   "polls": [
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-10-08",
+      "sampleSize": 837,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/SC",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5269
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-29",
+      "fieldDates": "September 28–29, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://pollingsource.com/senate/SC"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5125
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-25",
+      "fieldDates": "2026-09-25",
+      "sampleSize": 1087,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 42.3,
+          "percentage": 42.3
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 43.4,
+          "percentage": 43.4
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/SC",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4447
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-14",
+      "fieldDates": "2026-09-14",
+      "sampleSize": 1006,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/SC",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3318
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-09",
+      "fieldDates": "2026-09-09",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/SC",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3228
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-29",
+      "fieldDates": "August 29, 2026",
+      "sampleSize": 2500,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 55,
+          "percentage": 55
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2747
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-08-24",
+      "fieldDates": "August 18–24, 2026",
+      "sampleSize": 700,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Kasie Whitener (L)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://pollingsource.com/senate/SC"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1704
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-08-22",
+      "fieldDates": "August 14–22, 2026",
+      "sampleSize": 900,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Kasie Whitener (L)",
+          "party": "O",
+          "pct": 6,
+          "percentage": 6
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1568
+    },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-07-17",
       "endDateUS": "7/17/2026",
-      "weight": 0.243,
+      "weight": 0.1157,
       "sampleSize": 577,
       "population": "RV",
       "results": [
-        { "candidate": "Annie Andrews (D)", "percentage": 42.0 },
-        { "candidate": "John Warren (R)", "percentage": 36.0 }
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "John Warren (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
       ],
       "sourceUrl": "https://www.instagram.com/p/DbGVaEmyFLs/?hl=en",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-07-17",
+      "fieldDates": "2026-07-17",
+      "sampleSize": 577,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Russell Fry (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/SC",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0546,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-06-22",
+      "fieldDates": "2026-06-22",
+      "sampleSize": 700,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Lindsey Graham (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/SC",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0397
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-03-01",
+      "fieldDates": "February 25 – March 1, 2026",
+      "sampleSize": 700,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Lindsey Graham (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0025
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-11-22",
+      "fieldDates": "November 21–22, 2025",
+      "sampleSize": 704,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Lindsey Graham (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0003
     }
   ]
 }

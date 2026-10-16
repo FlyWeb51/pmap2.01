@@ -1,26 +1,118 @@
 {
   "raceId": "FL-H-22-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 4,
+  "updated_at": "2026-10-16T21:07:58.443Z",
   "polls": [
+    {
+      "pollster": "Tulchin Research",
+      "endDate": "2026-08-31",
+      "fieldDates": "2026-08-31",
+      "sampleSize": null,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Pia Dandiya (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Casey Askar (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-22"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1439
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-08-12",
+      "fieldDates": "2026-08-12",
+      "sampleSize": 551,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "PIa Dandiya (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Casey Askar (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-22"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1145
+    },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-06-25",
-      "weight": 0.1416,
+      "weight": 0.0644,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Pia Dandiya (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Belinda Keiser (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://www.nationaljournal.com/s/732493/dccc-faces-pressure-to-reevaluate-role-after-primary-mishaps/?unlock=73COOYQ67JOR43BA",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-06-25",
+      "fieldDates": "2026-06-25",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Pia Dandiya (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Belinda Keiser (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-22"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0322,
+      "otherMatchup": true
     }
   ]
 }

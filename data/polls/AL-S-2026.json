@@ -1,26 +1,63 @@
 {
   "raceId": "AL-S-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.439Z",
   "polls": [
+    {
+      "pollster": "RMG Research",
+      "endDate": "2026-09-25",
+      "fieldDates": "2026-09-25",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Everett Wess (D)",
+          "party": "D",
+          "pct": 33,
+          "percentage": 33
+        },
+        {
+          "candidate": "Barry Moore (R)",
+          "party": "R",
+          "pct": 54,
+          "percentage": 54
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3433
+    },
     {
       "pollster": "yes. every kid. foundation.",
       "endDate": "2026-07-11",
-      "weight": 0.5024,
+      "weight": 0.1142,
       "sampleSize": 601,
       "population": "LV",
       "results": [
         {
           "candidate": "Everett Wess (D)",
-          "percentage": 32.0
+          "party": "D",
+          "pct": 32,
+          "percentage": 32
         },
         {
           "candidate": "Barry Moore (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://yeseverykidfoundation.org/alabama-likely-voters-support-fully-funding-the-choose-act/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/AL"
+      ],
+      "fieldDates": "2026-07-11"
     }
   ]
 }

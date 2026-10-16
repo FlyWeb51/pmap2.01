@@ -1,45 +1,57 @@
 {
   "raceId": "MN-H-01-2026",
   "count": 2,
-  "alternativeMatchupsDropped": 0,
+  "updated_at": "2026-10-16T21:07:58.452Z",
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-14",
-      "weight": 0.0131,
+      "weight": 0.006,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Jake Johnson (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "Brad Finstad (R)",
-          "percentage": 52.0
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
         }
       ],
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-02-03",
-      "weight": 0.0064,
+      "weight": 0.0029,
       "sampleSize": 708,
       "population": "RV",
       "results": [
         {
           "candidate": "Jake Johnson (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Brad Finstad (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/weekly-score/2026/02/09/the-big-ads-from-the-big-game-00770981",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

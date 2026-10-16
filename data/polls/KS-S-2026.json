@@ -1,38 +1,395 @@
 {
   "raceId": "KS-S-2026",
-  "count": 2,
-  "alternativeMatchupsDropped": 3,
-  "supersededByNomineeChange": 0,
-  "duplicateQuestionsMerged": 0,
-  "unsettled": null,
+  "count": 14,
+  "updated_at": "2026-10-16T21:07:58.448Z",
   "polls": [
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-14",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7247
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-10-10",
+      "fieldDates": "2026-10-10",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6607
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-10-04",
+      "sampleSize": 2255,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.4852
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-10-04",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4067
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 1095,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5127
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-30",
+      "sampleSize": 605,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7447
+    },
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-24",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5894
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-09-16",
+      "fieldDates": "2026-09-16",
+      "sampleSize": 750,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6
+    },
+    {
+      "pollster": "Global Strategy Group D-sponsored",
+      "endDate": "2026-09-16",
+      "fieldDates": "2026-09-16",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3099
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-10",
+      "sampleSize": 915,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2885
+    },
+    {
+      "pollster": "OSZ",
+      "endDate": "2026-08-08",
+      "fieldDates": "2026-08-08",
+      "sampleSize": null,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1691
+    },
+    {
+      "pollster": "Public Policy Polling D-sponsored",
+      "endDate": "2026-08-08",
+      "fieldDates": "2026-08-08",
+      "sampleSize": 569,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1061
+    },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-13",
       "endDateUS": "7/13/2026",
-      "weight": 0.2397,
+      "weight": 0.1195,
       "sampleSize": 600,
       "population": "LV",
       "results": [
-        { "candidate": "Adam Hamilton (D)", "percentage": 43.0 },
-        { "candidate": "Roger Marshall (R)", "percentage": 47.0 }
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/08/07/the-gops-new-economic-anchor-01029005",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Tavern Research",
       "endDate": "2026-01-28",
       "endDateUS": "1/28/2026",
-      "weight": 0.0134,
+      "weight": 0.0034,
       "sampleSize": 1013,
       "population": "LV",
       "results": [
-        { "candidate": "Adam Hamilton (D)", "percentage": 46.0 },
-        { "candidate": "Roger Marshall (R)", "percentage": 54.0 }
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 54,
+          "percentage": 54
+        }
       ],
       "sourceUrl": "https://mailchi.mp/noahforkansas/041726icymi?e=eabd966005",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

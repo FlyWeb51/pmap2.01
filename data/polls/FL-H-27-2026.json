@@ -1,26 +1,88 @@
 {
   "raceId": "FL-H-27-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 5,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.444Z",
   "polls": [
+    {
+      "pollster": "Tulchin Research",
+      "endDate": "2026-09-13",
+      "fieldDates": "2026-09-13",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Eliott Rodriguez (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "María Elvira Salazar (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-27"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2504
+    },
+    {
+      "pollster": "Bendixen & Amandi International D-sponsored",
+      "endDate": "2026-08-30",
+      "fieldDates": "2026-08-30",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Eliott Rodriguez (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "María Elvira Salazar (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/FL-27"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1812
+    },
     {
       "pollster": "Blueprint Polling",
       "endDate": "2026-03-08",
-      "weight": 0.0218,
+      "weight": 0.005,
       "sampleSize": 451,
       "population": "RV",
       "results": [
         {
           "candidate": "Eliott Rodriguez (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
-          "candidate": "Mar\u00eda Elvira Salazar (R)",
-          "percentage": 46.0
+          "candidate": "María Elvira Salazar (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://floridapolitics.com/archives/784817-__trashed-35/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

@@ -1,26 +1,116 @@
 {
   "raceId": "WI-H-01-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 4,
+  "updated_at": "2026-10-16T21:07:58.469Z",
   "polls": [
+    {
+      "pollster": "Impact Research D-sponsored",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Mitchell Berman (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Bryan Steil (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/WI-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3464
+    },
+    {
+      "pollster": "DCCC Analytics Department",
+      "endDate": "2026-09-23",
+      "fieldDates": "2026-09-23",
+      "sampleSize": 495,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Mitchell Berman (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Bryan Steil (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/WI-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.573
+    },
+    {
+      "pollster": "Impact Research D-sponsored",
+      "endDate": "2026-08-09",
+      "fieldDates": "2026-08-09",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Mitchell Berman (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Bryan Steil (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/WI-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0911
+    },
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-16",
-      "weight": 0.0137,
+      "weight": 0.0062,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Mitchell Berman (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Bryan Steil (R)",
-          "percentage": 50.0
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

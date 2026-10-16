@@ -1,45 +1,141 @@
 {
   "raceId": "SC-H-01-2026",
-  "count": 2,
-  "alternativeMatchupsDropped": 1,
+  "count": 5,
+  "updated_at": "2026-10-16T21:07:58.464Z",
   "polls": [
     {
-      "pollster": "GQR (D)",
-      "endDate": "2026-07-22",
-      "weight": 0.2954,
-      "sampleSize": null,
+      "pollster": "co/efficient",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 837,
       "population": "LV",
+      "partisan": "R",
       "results": [
         {
           "candidate": "Nancy Lacore (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
-          "candidate": "Jenny Costa Honeycutt (R)",
-          "percentage": 50.0
+          "candidate": "Honeycutt (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
-      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-nancy-lacore-has-a-clear-path-to-victory-in-sc-01",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/SC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4482
+    },
+    {
+      "pollster": "Public Policy Polling D-sponsored",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-10",
+      "sampleSize": 536,
+      "population": "RV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Nancy Lacore (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Honeycutt (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/SC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1987
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-07-22",
-      "weight": 0.2954,
+      "weight": 0.1343,
       "sampleSize": null,
       "population": "LV",
       "results": [
         {
           "candidate": "Nancy Lacore (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Jenny Costa Honeycutt (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
       "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-nancy-lacore-has-a-clear-path-to-victory-in-sc-01",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GQR (D)",
+      "endDate": "2026-07-22",
+      "weight": 0.1343,
+      "sampleSize": null,
+      "population": "LV",
+      "results": [
+        {
+          "candidate": "Nancy Lacore (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Jenny Costa Honeycutt (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-nancy-lacore-has-a-clear-path-to-victory-in-sc-01",
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-07-22",
+      "fieldDates": "2026-07-22",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Nancy Lacore (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Honeycutt (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/SC-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0601
     }
   ]
 }

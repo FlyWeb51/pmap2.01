@@ -1,26 +1,91 @@
 {
   "raceId": "NV-H-02-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.460Z",
   "polls": [
+    {
+      "pollster": "GBAO D-sponsored",
+      "endDate": "2026-09-03",
+      "fieldDates": "2026-09-03",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Teresa Benitez-Thompson (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "David Flippo (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NV-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1814
+    },
+    {
+      "pollster": "Strategies 360",
+      "endDate": "2026-08-26",
+      "fieldDates": "2026-08-26",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Teresa Benitez-Thompson (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "David Flippo (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NV-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2697
+    },
     {
       "pollster": "Wedgewood Polls",
       "endDate": "2026-07-12",
-      "weight": 0.3924,
+      "weight": 0.0892,
       "sampleSize": 350,
       "population": "LV",
       "results": [
         {
           "candidate": "Teresa Benitez-Thompson (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "David Flippo (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://x.com/WedgewoodPolls/status/2076798406132212168?s=20",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/NV-02"
+      ],
+      "fieldDates": "2026-07-12"
     }
   ]
 }

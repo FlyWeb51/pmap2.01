@@ -1,26 +1,147 @@
 {
   "raceId": "ID-H-01-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 5,
+  "updated_at": "2026-10-16T21:07:58.447Z",
   "polls": [
+    {
+      "pollster": "Change Research",
+      "endDate": "2026-07-30",
+      "fieldDates": "2026-07-30",
+      "sampleSize": 606,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Kaylee Peterson (D)",
+          "party": "D",
+          "pct": 27,
+          "percentage": 27
+        },
+        {
+          "candidate": "Russ Fulcher (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ID-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.089
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-07-23",
+      "fieldDates": "2026-07-23",
+      "sampleSize": 480,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Kaylee Peterson (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Russ Fulcher (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ID-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1347
+    },
     {
       "pollster": "SurveyUSA (I)",
       "endDate": "2026-07-14",
-      "weight": 0.2406,
+      "weight": 0.1094,
       "sampleSize": 480,
       "population": "LV",
       "results": [
         {
           "candidate": "Kaylee Peterson (D)",
-          "percentage": 35.0
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
         },
         {
           "candidate": "Russ Fulcher (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.surveyusa.com/client/PollReport.aspx?g=48a62c75-2dbc-4948-9e01-cbeccf52c3d6",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/ID-01"
+      ],
+      "fieldDates": "2026-07-14"
+    },
+    {
+      "pollster": "SurveyUSA (I)",
+      "endDate": "2026-07-14",
+      "fieldDates": "2026-07-14",
+      "sampleSize": 478,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Kaylee Peterson (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Russ Fulcher (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ID-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1092
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-07-14",
+      "fieldDates": "2026-07-14",
+      "sampleSize": 480,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Kaylee Peterson (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Russ Fulcher (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ID-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1094
     }
   ]
 }

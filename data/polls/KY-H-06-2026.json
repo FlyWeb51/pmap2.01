@@ -1,52 +1,225 @@
 {
   "raceId": "KY-H-06-2026",
-  "count": 3,
-  "alternativeMatchupsDropped": 3,
-  "supersededByNomineeChange": 0,
-  "duplicateQuestionsMerged": 0,
-  "unsettled": null,
+  "count": 8,
+  "updated_at": "2026-10-16T21:07:58.448Z",
   "polls": [
+    {
+      "pollster": "Change Research",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-10-05",
+      "sampleSize": 524,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/KY-06"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.389
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-30",
+      "sampleSize": 401,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/KY-06"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3032
+    },
+    {
+      "pollster": "Lake Research Partners",
+      "endDate": "2026-08-23",
+      "fieldDates": "2026-08-23",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/KY-06"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1258
+    },
     {
       "pollster": "DCCC Targeting Team (D)",
       "endDate": "2026-07-30",
       "endDateUS": "7/30/2026",
-      "weight": 0.3155,
+      "weight": 0.1574,
       "sampleSize": 474,
       "population": "LV",
       "results": [
-        { "candidate": "Zach Dembo (D)", "percentage": 47.0 },
-        { "candidate": "Ralph Alvarado (R)", "percentage": 47.0 }
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
       ],
       "sourceUrl": "https://www.kentucky.com/news/politics-government/article316781408.html",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "DCCC",
+      "endDate": "2026-07-30",
+      "fieldDates": "2026-07-30",
+      "sampleSize": 474,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/KY-06"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0669
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-06-28",
       "endDateUS": "6/28/2026",
-      "weight": 0.1547,
+      "weight": 0.0772,
       "sampleSize": null,
       "population": "LV",
       "results": [
-        { "candidate": "Zach Dembo (D)", "percentage": 39.0 },
-        { "candidate": "Ralph Alvarado (R)", "percentage": 42.0 }
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
       ],
       "sourceUrl": "https://insideelections.com/kentucky-6-new-poll-fuels-democratic-optimism/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-06-28",
+      "fieldDates": "2026-06-28",
+      "sampleSize": 440,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/KY-06"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0308
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-25",
       "endDateUS": "4/25/2026",
-      "weight": 0.0369,
+      "weight": 0.0184,
       "sampleSize": 675,
       "population": "RV",
       "results": [
-        { "candidate": "Zach Dembo (D)", "percentage": 37.0 },
-        { "candidate": "Ralph Alvarado (R)", "percentage": 37.0 }
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/05/12/lawmakers-want-more-answers-on-iran-00917015",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

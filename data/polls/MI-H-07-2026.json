@@ -1,64 +1,140 @@
 {
   "raceId": "MI-H-07-2026",
-  "count": 3,
-  "alternativeMatchupsDropped": 4,
+  "count": 5,
+  "updated_at": "2026-10-16T21:07:58.450Z",
   "polls": [
+    {
+      "pollster": "Global Strategy Group D-sponsored",
+      "endDate": "2026-08-13",
+      "fieldDates": "2026-08-13",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "William Lawrence (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Tom Barrett (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/MI-07"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1117,
+      "otherMatchup": true
+    },
     {
       "pollster": "Data for Progress (D)",
       "endDate": "2026-06-30",
-      "weight": 0.2208,
+      "weight": 0.1004,
       "sampleSize": 772,
       "population": "LV",
       "results": [
         {
           "candidate": "Matt Maasdam (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Tom Barrett (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://www.semafor.com/article/07/06/2026/progressives-see-polling-candidate-momentum-in-michigan",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Data for Progress",
+      "endDate": "2026-06-30",
+      "fieldDates": "2026-06-30",
+      "sampleSize": 772,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "William Lawrence (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Tom Barrett (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/MI-07"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0502,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-25",
-      "weight": 0.0355,
+      "weight": 0.0161,
       "sampleSize": 519,
       "population": "RV",
       "results": [
         {
           "candidate": "Matt Maasdam (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Tom Barrett (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://x.com/new_poli/status/2054277257191964939",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2025-10-28",
-      "weight": 0.0012,
+      "weight": 0.0003,
       "sampleSize": 557,
       "population": "RV",
       "results": [
         {
           "candidate": "Matt Maasdam (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Tom Barrett (R)",
-          "percentage": 39.0
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
         }
       ],
       "sourceUrl": "https://x.com/PollTracker2024/status/1985825601861619788",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

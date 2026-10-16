@@ -1,26 +1,32 @@
 {
   "raceId": "CA-H-40-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 1,
+  "updated_at": "2026-10-16T21:07:58.441Z",
   "polls": [
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-01-19",
-      "weight": 0.0053,
+      "weight": 0.0024,
       "sampleSize": 800,
       "population": "LV",
       "results": [
         {
           "candidate": "Esther Kim-Varet (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Young Kim (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://drive.google.com/file/d/1er2TfEQFwvfr_zFH3SjAE0dVvdcHjWRj/view",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

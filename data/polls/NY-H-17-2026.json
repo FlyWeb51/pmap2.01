@@ -1,45 +1,145 @@
 {
   "raceId": "NY-H-17-2026",
-  "count": 2,
-  "alternativeMatchupsDropped": 0,
+  "count": 5,
+  "updated_at": "2026-10-16T21:07:58.460Z",
   "polls": [
+    {
+      "pollster": "McLaughlin & Associates R-sponsored",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-30",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Cait Conley (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Lawler (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-17"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3028
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-09-29",
+      "fieldDates": "2026-09-29",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Cait Conley (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Lawler (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-17"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5917
+    },
     {
       "pollster": "co/efficient",
       "endDate": "2026-07-22",
-      "weight": 0.9498,
+      "weight": 0.108,
       "sampleSize": 1292,
       "population": "LV",
       "results": [
         {
           "candidate": "Cait Conley (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Mike Lawler (R)",
-          "percentage": 50.0
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
       "sourceUrl": "https://coefficient.org/b96b92b3.pdf",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/NY-17"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-07-22"
     },
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-07-01",
-      "weight": 0.1835,
+      "weight": 0.0834,
       "sampleSize": 509,
       "population": "LV",
       "results": [
         {
           "candidate": "Cait Conley (D)",
-          "percentage": 51.0
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
         },
         {
           "candidate": "Mike Lawler (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/07/08/inside-the-battle-for-maine-00989731",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "FM3 Research",
+      "endDate": "2026-07-01",
+      "fieldDates": "2026-07-01",
+      "sampleSize": 509,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Cait Conley (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Lawler (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-17"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0417
     }
   ]
 }

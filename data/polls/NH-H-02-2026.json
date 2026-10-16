@@ -1,121 +1,213 @@
 {
   "raceId": "NH-H-02-2026",
-  "count": 6,
-  "alternativeMatchupsDropped": 0,
+  "count": 8,
+  "updated_at": "2026-10-16T21:07:58.458Z",
   "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-21",
+      "sampleSize": 702,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Maggie Goodlander (D)",
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "Lily Tang Williams (R)",
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NH-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6516
+    },
+    {
+      "pollster": "Saint Anselm College",
+      "endDate": "2026-08-18",
+      "fieldDates": "2026-08-18",
+      "sampleSize": 701,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Maggie Goodlander (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Lily Tang Williams (R)",
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NH-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2968
+    },
     {
       "pollster": "St. Anselm",
       "endDate": "2026-06-25",
-      "weight": 0.3609,
+      "weight": 0.0821,
       "sampleSize": 802,
       "population": "RV",
       "results": [
         {
           "candidate": "Maggie Goodlander (D)",
-          "percentage": 50.0
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
         },
         {
           "candidate": "Lily Tang Williams (R)",
-          "percentage": 31.0
+          "party": "R",
+          "pct": 31,
+          "percentage": 31
         }
       ],
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/saint-anselm-college-survey-center-june-poll-finds-democrats-expand-generic-ballot-lead",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2026-03-18",
-      "weight": 0.0352,
+      "weight": 0.008,
       "sampleSize": 739,
       "population": "RV",
       "results": [
         {
           "candidate": "Maggie Goodlander (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Lily Tang Williams (R)",
-          "percentage": 36.0
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
         }
       ],
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-democrats-gaining-ground-republicans-face-political-headwinds",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-01-19",
-      "weight": 0.0125,
+      "weight": 0.0028,
       "sampleSize": 1094,
       "population": "LV",
       "results": [
         {
           "candidate": "Maggie Goodlander (D)",
-          "percentage": 54.0
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
         },
         {
           "candidate": "Lily Tang Williams (R)",
-          "percentage": 40.0
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
         }
       ],
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/922/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2025-11-19",
-      "weight": 0.0027,
+      "weight": 0.0006,
       "sampleSize": 1102,
       "population": "RV",
       "results": [
         {
           "candidate": "Maggie Goodlander (D)",
-          "percentage": 40.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
           "candidate": "Lily Tang Williams (R)",
-          "percentage": 35.0
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
         }
       ],
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-declining-optimism-democracy-dominant-issue-and-early-partisan-divides-ahead-2026",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2025-09-23",
-      "weight": 0.0006,
+      "weight": 0.0001,
       "sampleSize": 508,
       "population": "LV",
       "results": [
         {
           "candidate": "Maggie Goodlander (D)",
-          "percentage": 51.0
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
         },
         {
           "candidate": "Lily Tang Williams (R)",
-          "percentage": 39.0
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
         }
       ],
       "sourceUrl": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1887&context=survey_center_polls",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2025-08-27",
-      "weight": 0.0004,
+      "weight": 0.0001,
       "sampleSize": 881,
       "population": "RV",
       "results": [
         {
           "candidate": "Maggie Goodlander (D)",
-          "percentage": 49.0
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
         },
         {
           "candidate": "Lily Tang Williams (R)",
-          "percentage": 31.0
+          "party": "R",
+          "pct": 31,
+          "percentage": 31
         }
       ],
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-survey-center-poll-reveals-shifting-political-landscape-ahead-2028-primary",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

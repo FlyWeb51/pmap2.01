@@ -1,23 +1,61 @@
 {
   "raceId": "IL-H-04-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
-  "supersededByNomineeChange": 0,
-  "unsettled": null,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.447Z",
   "polls": [
     {
       "pollster": "The Bullfinch Group",
       "endDate": "2026-08-03",
       "endDateUS": "8/3/2026",
-      "weight": 0.7657,
+      "weight": 0.1823,
       "sampleSize": 653,
       "population": "RV",
       "results": [
-        { "candidate": "Patty Garcia (D)", "percentage": 34.0 },
-        { "candidate": "Lupe Castillo (R)", "percentage": 15.0 }
+        {
+          "candidate": "Patty Garcia (D)",
+          "party": "D",
+          "pct": 34,
+          "percentage": 34
+        },
+        {
+          "candidate": "Lupe Castillo (R)",
+          "party": "R",
+          "pct": 15,
+          "percentage": 15
+        }
       ],
       "sourceUrl": "https://independentcentervoice.com/insights/july-2026-district-survey-illinoiss-4th-congressional-district",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Independent Center Voice",
+      "endDate": "2026-08-01",
+      "fieldDates": "2026-08-01",
+      "sampleSize": 653,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Patty Garcia (D)",
+          "party": "D",
+          "pct": 34,
+          "percentage": 34
+        },
+        {
+          "candidate": "Lupe Castillo (R)",
+          "party": "R",
+          "pct": 15,
+          "percentage": 15
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/IL-04"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1741
     }
   ]
 }

@@ -1,26 +1,89 @@
 {
   "raceId": "TN-H-05-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.465Z",
   "polls": [
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 552,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Chaz Molder (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Charlie Hatcher (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/TN-05"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.364
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-08-24",
+      "fieldDates": "2026-08-24",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Chaz Molder (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Charlie Hatcher (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/TN-05"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.144
+    },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-13",
-      "weight": 0.0619,
+      "weight": 0.0282,
       "sampleSize": 558,
       "population": "LV",
       "results": [
         {
           "candidate": "Chaz Molder (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Andy Ogles (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://www.nationaljournal.com/s/732074/exclusive-internal-poll-gives-dems-hope-in-tn-05/?unlock=WPL7HCG2TH9QWY2X",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     }
   ]
 }

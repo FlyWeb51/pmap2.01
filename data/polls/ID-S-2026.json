@@ -1,64 +1,113 @@
 {
   "raceId": "ID-S-2026",
-  "count": 3,
-  "alternativeMatchupsDropped": 0,
+  "count": 4,
+  "updated_at": "2026-10-16T21:07:58.447Z",
   "polls": [
     {
       "pollster": "Peak Insights (R)",
       "endDate": "2026-06-07",
-      "weight": 0.1044,
+      "weight": 0.0475,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "David Roth (D)",
-          "percentage": 15.0
+          "party": "D",
+          "pct": 15,
+          "percentage": 15
         },
         {
           "candidate": "James E. Risch (R)",
-          "percentage": 55.0
+          "party": "R",
+          "pct": 55,
+          "percentage": 55
         }
       ],
       "sourceUrl": "https://senatorrisch.com/polling/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Peak Insights",
+      "endDate": "2026-06-07",
+      "fieldDates": "2026-06-07",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "David Roth (D)",
+          "party": "D",
+          "pct": 15,
+          "percentage": 15
+        },
+        {
+          "candidate": "Jim Risch (R)",
+          "party": "R",
+          "pct": 55,
+          "percentage": 55
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ID"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0237
     },
     {
       "pollster": "The Bullfinch Group (I)",
       "endDate": "2026-06-01",
-      "weight": 0.1018,
+      "weight": 0.0463,
       "sampleSize": 774,
       "population": "RV",
       "results": [
         {
           "candidate": "David Roth (D)",
-          "percentage": 33.0
+          "party": "D",
+          "pct": 33,
+          "percentage": 33
         },
         {
           "candidate": "James E. Risch (R)",
-          "percentage": 50.0
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
       "sourceUrl": "https://www.thebullfinchgroup.com/post/for-immediate-release-independent-todd-achilles-surges-on-informed-ballot",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "The Bullfinch Group (I)",
       "endDate": "2026-06-01",
-      "weight": 0.1018,
+      "weight": 0.0463,
       "sampleSize": 774,
       "population": "RV",
       "results": [
         {
           "candidate": "David Roth (D)",
-          "percentage": 15.0
+          "party": "D",
+          "pct": 15,
+          "percentage": 15
         },
         {
           "candidate": "James E. Risch (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.thebullfinchgroup.com/post/for-immediate-release-independent-todd-achilles-surges-on-informed-ballot",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/ID"
+      ],
+      "fieldDates": "2026-06-01"
     }
   ]
 }

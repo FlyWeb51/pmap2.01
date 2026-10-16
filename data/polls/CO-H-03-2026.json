@@ -1,26 +1,36 @@
 {
   "raceId": "CO-H-03-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 2,
+  "updated_at": "2026-10-16T21:07:58.441Z",
   "polls": [
     {
       "pollster": "Keating Research, Inc. (D)",
       "endDate": "2026-07-23",
-      "weight": 0.3023,
+      "weight": 0.0687,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Dwayne Romero (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Jeff Hurd (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://x.com/RomeroForCO/status/2082843915510817044",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/CO-03"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-23"
     }
   ]
 }

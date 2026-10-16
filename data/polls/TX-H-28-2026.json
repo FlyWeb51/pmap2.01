@@ -1,45 +1,89 @@
 {
   "raceId": "TX-H-28-2026",
-  "count": 2,
-  "alternativeMatchupsDropped": 0,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.466Z",
   "polls": [
     {
-      "pollster": "Pulse Decision Science (R)",
-      "endDate": "2026-06-23",
-      "weight": 0.1352,
-      "sampleSize": 400,
+      "pollster": "Public Policy Research/Texas Southern University",
+      "endDate": "2026-08-22",
+      "fieldDates": "2026-08-22",
+      "sampleSize": 600,
       "population": "LV",
+      "partisan": null,
       "results": [
         {
           "candidate": "Henry Cuellar (D)",
-          "percentage": 33.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Tano Tijerina (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 34,
+          "percentage": 34
         }
       ],
-      "sourceUrl": "https://x.com/birenbomb/status/2072354489642942795",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/TX-28"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3012
     },
     {
       "pollster": "Pulse Decision Science (R)",
       "endDate": "2026-06-23",
-      "weight": 0.1352,
+      "weight": 0.0615,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Henry Cuellar (D)",
-          "percentage": 38.0
+          "party": "D",
+          "pct": 33,
+          "percentage": 33
         },
         {
           "candidate": "Tano Tijerina (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://x.com/birenbomb/status/2072354489642942795",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Pulse Decision Science (R)",
+      "endDate": "2026-06-23",
+      "weight": 0.0307,
+      "sampleSize": 400,
+      "population": "LV",
+      "results": [
+        {
+          "candidate": "Henry Cuellar (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Tano Tijerina (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://x.com/birenbomb/status/2072354489642942795",
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/TX-28"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-06-23"
     }
   ]
 }

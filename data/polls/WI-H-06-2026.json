@@ -1,26 +1,32 @@
 {
   "raceId": "WI-H-06-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "updated_at": "2026-10-16T21:07:58.469Z",
   "polls": [
     {
       "pollster": "Tavern Research (I)",
       "endDate": "2026-05-28",
-      "weight": 0.0775,
+      "weight": 0.0352,
       "sampleSize": 437,
       "population": "LV",
       "results": [
         {
           "candidate": "Brad Smith (D)",
-          "percentage": 39.0
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
         },
         {
           "candidate": "Glenn Grothman (R)",
-          "percentage": 61.0
+          "party": "R",
+          "pct": 61,
+          "percentage": 61
         }
       ],
       "sourceUrl": "https://www.tavernresearch.com/research-and-writings/wi06-grothman-independent-halves-margin",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

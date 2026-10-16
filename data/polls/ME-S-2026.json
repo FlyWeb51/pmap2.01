@@ -1,65 +1,1629 @@
 {
   "raceId": "ME-S-2026",
-  "count": 4,
-  "alternativeMatchupsDropped": 0,
-  "supersededByNomineeChange": 45,
-  "unsettled": null,
+  "count": 58,
+  "updated_at": "2026-10-16T21:07:58.449Z",
   "polls": [
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-10-14",
+      "fieldDates": "October 13–14, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7247
+    },
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2026-10-11",
+      "fieldDates": "October 8–11, 2026",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.873
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-10-08",
+      "fieldDates": "October 5–8, 2026",
+      "sampleSize": 804,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5164
+    },
+    {
+      "pollster": "The Washington Post/SSPG",
+      "endDate": "2026-10-05",
+      "fieldDates": "September 30 – October 5, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9613
+    },
+    {
+      "pollster": "Marist University",
+      "endDate": "2026-10-04",
+      "fieldDates": "October 1–4, 2026",
+      "sampleSize": 1505,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1595
+    },
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-10-01",
+      "fieldDates": "September 27 – October 1, 2026",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6197
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-10-01",
+      "fieldDates": "September 29 – October 1, 2026",
+      "sampleSize": 1091,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5117
+    },
+    {
+      "pollster": "CBS News/YouGov",
+      "endDate": "2026-10-01",
+      "fieldDates": "September 23 – October 1, 2026",
+      "sampleSize": 1136,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0444
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-30",
+      "fieldDates": "September 28–30, 2026",
+      "sampleSize": 1240,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5331
+    },
+    {
+      "pollster": "Maine People's Resource Center",
+      "endDate": "2026-09-29",
+      "fieldDates": "September 25–29, 2026",
+      "sampleSize": 684,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3869
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-23",
+      "fieldDates": "September 22–23, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4461
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-09-22",
+      "fieldDates": "September 15–22, 2026",
+      "sampleSize": 619,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6262
+    },
+    {
+      "pollster": "Siena College Research Institute",
+      "endDate": "2026-09-22",
+      "fieldDates": "2026-09-22",
+      "sampleSize": 619,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6262
+    },
+    {
+      "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
+      "endDate": "2026-09-22",
+      "fieldDates": "September 20–22, 2026",
+      "sampleSize": 982,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3943
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-09-21",
+      "fieldDates": "September 17–21, 2026",
+      "sampleSize": 1312,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8908
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-15",
+      "fieldDates": "September 14–15, 2026",
+      "sampleSize": 621,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2668
+    },
+    {
+      "pollster": "University of Massachusetts/YouGov",
+      "endDate": "2026-09-14",
+      "fieldDates": "August 28 – September 14, 2026",
+      "sampleSize": 650,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5334
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-10",
+      "fieldDates": "September 8–10, 2026",
+      "sampleSize": 1033,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3065
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-08",
+      "fieldDates": "September 2–8, 2026",
+      "sampleSize": 1335,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6654
+    },
+    {
+      "pollster": "SSRS",
+      "endDate": "2026-09-06",
+      "fieldDates": "August 31 – September 6, 2026",
+      "sampleSize": 880,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5159
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-29",
+      "fieldDates": "2026-08-29",
+      "sampleSize": 327,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ME",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2614
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-28",
+      "fieldDates": "August 26–28, 2026",
+      "sampleSize": 327,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2171
+    },
+    {
+      "pollster": "Beacon Research/ Shaw & Co. Research",
+      "endDate": "2026-08-10",
+      "fieldDates": "August 6–10, 2026",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1326
+    },
+    {
+      "pollster": "Fox",
+      "endDate": "2026-08-10",
+      "fieldDates": "2026-08-10",
+      "sampleSize": null,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1875
+    },
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-08-01",
       "endDateUS": "8/1/2026",
-      "weight": 0.4501,
+      "weight": 0.2144,
       "sampleSize": 802,
       "population": "LV",
       "results": [
-        { "candidate": "Troy Jackson (D)", "percentage": 49.0 },
-        { "candidate": "Susan M. Collins (R)", "percentage": 45.0 }
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Susan M. Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
       ],
       "sourceUrl": "https://drive.google.com/file/d/1c_Oz7n375ncOkmMWPs8DJTKcBD3Gke4-/view",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Hart Research",
+      "endDate": "2026-08-01",
+      "fieldDates": "July 27 – August 1, 2026",
+      "sampleSize": 802,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1072
+    },
+    {
+      "pollster": "Election Time",
+      "endDate": "2026-07-25",
+      "fieldDates": "2026-07-25",
+      "sampleSize": null,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1224
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-07-20",
       "endDateUS": "7/20/2026",
-      "weight": 0.8268,
+      "weight": 0.1969,
       "sampleSize": 1178,
       "population": "LV",
       "results": [
-        { "candidate": "Troy Jackson (D)", "percentage": 49.0 },
-        { "candidate": "Susan M. Collins (R)", "percentage": 46.0 }
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Susan M. Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
       ],
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/981/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "fieldDates": "July 15–20, 2026"
+    },
+    {
+      "pollster": "Z to A Research",
+      "endDate": "2026-07-08",
+      "fieldDates": "July 7–8, 2026",
+      "sampleSize": 988,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0581
+    },
+    {
+      "pollster": "Z to A Research",
+      "endDate": "2026-07-08",
+      "fieldDates": "2026-07-08",
+      "sampleSize": 988,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Shenna Bellows (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0683,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-07-07",
       "endDateUS": "7/7/2026",
-      "weight": 0.2249,
+      "weight": 0.0536,
       "sampleSize": 785,
       "population": "RV",
       "results": [
-        { "candidate": "Troy Jackson (D)", "percentage": 49.0 },
-        { "candidate": "Susan M. Collins (R)", "percentage": 44.0 }
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Susan M. Collins (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
       ],
       "sourceUrl": "https://www.politico.com/news/2026/07/08/graham-platner-polls-replacements-senate-00990664",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "D",
+      "fieldDates": "July 7, 2026"
+    },
+    {
+      "pollster": "PPP",
+      "endDate": "2026-07-07",
+      "fieldDates": "2026-07-07",
+      "sampleSize": 785,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0506
     },
     {
       "pollster": "Wedgewood Polls",
       "endDate": "2026-07-06",
       "endDateUS": "7/6/2026",
-      "weight": 0.3508,
+      "weight": 0.0835,
       "sampleSize": 405,
       "population": "LV",
       "results": [
-        { "candidate": "Troy Jackson (D)", "percentage": 48.0 },
-        { "candidate": "Susan M. Collins (R)", "percentage": 43.0 }
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Susan M. Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
       ],
       "sourceUrl": "https://drive.google.com/file/d/1D7onbq7aV59X8lq2-YatdLNakqqCYTnB/view",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "fieldDates": "July 4–6, 2026"
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-07-06",
+      "fieldDates": "July 3–6, 2026",
+      "sampleSize": 1074,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/ME"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.068,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Beacon Research/Shaw & Co. Research",
+      "endDate": "2026-06-27",
+      "fieldDates": "June 23–27, 2026",
+      "sampleSize": 1003,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0454,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "''The New York Times''/Portland Press Herald/Siena University",
+      "endDate": "2026-06-26",
+      "fieldDates": "June 19–26, 2026",
+      "sampleSize": 608,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0691,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Wick/2WAY",
+      "endDate": "2026-06-14",
+      "fieldDates": "June 11–14, 2026",
+      "sampleSize": 1008,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0337,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-06-11",
+      "fieldDates": "June 9–11, 2026",
+      "sampleSize": 870,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0292,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "The Public Sentiment Institute",
+      "endDate": "2026-06-08",
+      "fieldDates": "June 8, 2026",
+      "sampleSize": 497,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0412,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-06-08",
+      "fieldDates": "June 5–8, 2026",
+      "sampleSize": 1642,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0374,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-06-03",
+      "fieldDates": "June 2–3, 2026",
+      "sampleSize": 670,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0213,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Fabrizio, Lee & Associates",
+      "endDate": "2026-06-03",
+      "fieldDates": "June 1–3, 2026",
+      "sampleSize": 800,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0233,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "UMass Lowell/YouGov",
+      "endDate": "2026-05-26",
+      "fieldDates": "May 13–26, 2026",
+      "sampleSize": 650,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0349,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-05-25",
+      "fieldDates": "May 21–25, 2026",
+      "sampleSize": 1280,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0478,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Pan Atlantic Research",
+      "endDate": "2026-05-18",
+      "fieldDates": "May 8–18, 2026",
+      "sampleSize": 827,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0327,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Echelon Insights",
+      "endDate": "2026-04-09",
+      "fieldDates": "April 3–9, 2026",
+      "sampleSize": 378,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0045,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Maine People's Resource Center",
+      "endDate": "2026-03-31",
+      "fieldDates": "March 20–31, 2026",
+      "sampleSize": 1167,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0064,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-03-23",
+      "fieldDates": "March 21–23, 2026",
+      "sampleSize": 1075,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0102,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "OnMessage Public Strategies",
+      "endDate": "2026-03-08",
+      "fieldDates": "March 3–8, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0027,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-03-05",
+      "fieldDates": "March 5, 2026",
+      "sampleSize": 800,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0029,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Pan Atlantic Research",
+      "endDate": "2026-03-02",
+      "fieldDates": "February 13 – March 2, 2026",
+      "sampleSize": 810,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0055,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-02-16",
+      "fieldDates": "February 12–16, 2026",
+      "sampleSize": 1105,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0046,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Fabrizio, Lee & Associates",
+      "endDate": "2026-01-24",
+      "fieldDates": "January 20–24, 2026",
+      "sampleSize": 800,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0012,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Workbench Strategy",
+      "endDate": "2025-12-16",
+      "fieldDates": "December 11–16, 2025",
+      "sampleSize": 900,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0005,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Pan Atlantic Research",
+      "endDate": "2025-12-07",
+      "fieldDates": "November 29 – December 7, 2025",
+      "sampleSize": 820,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0008,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Maine People's Resource Center",
+      "endDate": "2025-10-29",
+      "fieldDates": "October 26–29, 2025",
+      "sampleSize": 783,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0003,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Zenith Research",
+      "endDate": "2025-10-10",
+      "fieldDates": "October 7–10, 2025",
+      "sampleSize": 501,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Graham Platner (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-09-09",
+      "fieldDates": "September 8–9, 2025",
+      "sampleSize": 642,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Dan Kleban (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

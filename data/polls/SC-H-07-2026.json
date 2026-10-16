@@ -1,23 +1,37 @@
 {
   "raceId": "SC-H-07-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 0,
-  "supersededByNomineeChange": 0,
-  "unsettled": null,
+  "updated_at": "2026-10-16T21:07:58.464Z",
   "polls": [
     {
       "pollster": "Blueprint Polling (D)",
       "endDate": "2026-07-28",
       "endDateUS": "7/28/2026",
-      "weight": 0.342,
+      "weight": 0.0814,
       "sampleSize": 557,
       "population": "LV",
       "results": [
-        { "candidate": "John Vincent (D)", "percentage": 36.7 },
-        { "candidate": "Russell Fry (R)", "percentage": 41.1 }
+        {
+          "candidate": "John Vincent (D)",
+          "party": "D",
+          "pct": 36.7,
+          "percentage": 36.7
+        },
+        {
+          "candidate": "Russell Fry (R)",
+          "party": "R",
+          "pct": 41.1,
+          "percentage": 41.1
+        }
       ],
       "sourceUrl": "https://holycitysinner.com/politics/new-poll-vincent-and-fry-in-statistical-dead-heat-in-south-c/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/SC-07"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-28"
     }
   ]
 }

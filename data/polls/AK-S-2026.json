@@ -1,273 +1,815 @@
 {
   "raceId": "AK-S-2026",
-  "count": 14,
-  "alternativeMatchupsDropped": 0,
+  "count": 29,
+  "updated_at": "2026-10-16T21:07:58.438Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-15",
+      "fieldDates": "October 14–15, 2026",
+      "sampleSize": 578,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4375
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-10-10",
+      "fieldDates": "2026-10-10",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peltola (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Sullivan (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.3215
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-10-10",
+      "fieldDates": "2026-10-10",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6607
+    },
+    {
+      "pollster": "Alaska Survey Research",
+      "endDate": "2026-10-03",
+      "fieldDates": "2026-10-03",
+      "sampleSize": 1512,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6309
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 504,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6956
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-30",
+      "sampleSize": 758,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 45.5,
+          "percentage": 45.5
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 46.1,
+          "percentage": 46.1
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4168
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-24",
+      "sampleSize": 1079,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4329
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-17",
+      "fieldDates": "2026-09-17",
+      "sampleSize": 799,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3169
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-14",
+      "fieldDates": "2026-09-14",
+      "sampleSize": 1188,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3605
+    },
+    {
+      "pollster": "Alaska Survey Research",
+      "endDate": "2026-09-12",
+      "fieldDates": "2026-09-12",
+      "sampleSize": 1352,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3673
+    },
+    {
+      "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
+      "endDate": "2026-09-11",
+      "fieldDates": "2026-09-11",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2761
+    },
+    {
+      "pollster": "Alaska Survey Research",
+      "endDate": "2026-08-23",
+      "fieldDates": "August 20–23, 2026",
+      "sampleSize": 1495,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4136
+    },
+    {
+      "pollster": "Alaska Survey Research",
+      "endDate": "2026-08-05",
+      "fieldDates": "August 2–5, 2026",
+      "sampleSize": 1371,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+        "https://pollingsource.com/senate/AK"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1537
+    },
+    {
+      "pollster": "Data for Progress",
+      "endDate": "2026-08-04",
+      "fieldDates": "July 28 – August 4, 2026",
+      "sampleSize": 605,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0848
+    },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-29",
-      "weight": 0.3782,
+      "weight": 0.086,
       "sampleSize": 593,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 45.06,
           "percentage": 45.06
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 47.47,
           "percentage": 47.47
         }
       ],
       "sourceUrl": "https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-alaska-poll-crosstabs.html",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-06-29",
+      "fieldDates": "2026-06-29",
+      "sampleSize": 593,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Dan S. Sullivan (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AK",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.086
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2026-06-07",
-      "weight": 0.3487,
+      "weight": 0.0793,
       "sampleSize": 1393,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 49.4,
           "percentage": 49.4
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 44.2,
           "percentage": 44.2
         }
       ],
       "sourceUrl": "https://bsky.app/profile/alaskasurvey.bsky.social/post/3mo4ifkz3tc25",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/AK",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "fieldDates": "2026-06-07"
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2026-05-17",
-      "weight": 0.2152,
+      "weight": 0.0489,
       "sampleSize": 1401,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 48.4,
           "percentage": 48.4
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 43.8,
           "percentage": 43.8
         }
       ],
       "sourceUrl": "https://bsky.app/profile/alaskasurvey.bsky.social/post/3mmeqzp7nuc2l",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/AK",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "fieldDates": "2026-05-17"
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2026-04-19",
-      "weight": 0.1328,
+      "weight": 0.0302,
       "sampleSize": 1946,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 50.2,
           "percentage": 50.2
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 43.6,
           "percentage": 43.6
         }
       ],
       "sourceUrl": "https://alaskasurveyresearch.com/peltola-vs-sullivan-april-2026/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2026-04-19",
-      "weight": 0.1328,
+      "weight": 0.0302,
       "sampleSize": 1946,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 49.1,
           "percentage": 49.1
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 42.5,
           "percentage": 42.5
         }
       ],
       "sourceUrl": "https://alaskasurveyresearch.com/peltola-vs-sullivan-april-2026/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "fieldDates": "April 16–19, 2026"
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2026-03-22",
-      "weight": 0.052,
+      "weight": 0.0118,
       "sampleSize": 1340,
       "population": "RV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 52.4,
           "percentage": 52.4
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 47.6,
           "percentage": 47.6
         }
       ],
       "sourceUrl": "https://bsky.app/profile/alaskasurvey.bsky.social/post/3mi5sviz72222",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2026-03-22",
-      "weight": 0.052,
+      "weight": 0.0118,
       "sampleSize": 1340,
       "population": "RV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 48.8,
           "percentage": 48.8
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 43.5,
           "percentage": 43.5
         }
       ],
       "sourceUrl": "https://bsky.app/profile/alaskasurvey.bsky.social/post/3mi5sviz72222",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "fieldDates": "March 19–22, 2026"
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-01-17",
-      "weight": 0.004,
+      "weight": 0.0009,
       "sampleSize": 611,
       "population": "RV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
-          "percentage": 49.0
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
         },
         {
           "candidate": "Dan Sullivan (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/01/21/what-davos-really-thinks-of-trump-00738555?nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=4d735b47-a8a7-41f4-9c35-277919f359ed",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "partisan": "D",
+      "fieldDates": "January 16–17, 2026"
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2026-01-11",
-      "weight": 0.0128,
+      "weight": 0.0029,
       "sampleSize": 1681,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 46.4,
           "percentage": 46.4
         }
       ],
       "sourceUrl": "https://x.com/The_Real_ASR/status/2011266752693616932",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "fieldDates": "January 8–11, 2026"
     },
     {
       "pollster": "Data for Progress",
       "endDate": "2025-10-23",
-      "weight": 0.0013,
+      "weight": 0.0001,
       "sampleSize": 823,
       "population": "RV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Dan Sullivan (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.dataforprogress.org/blog/2025/10/31/in-the-midst-of-a-health-care-and-affordability-crisis-in-alaska-peltola-and-begich-lead-their-races",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "partisan": "D",
+      "fieldDates": "October 17–23, 2025"
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2025-10-15",
-      "weight": 0.0017,
+      "weight": 0.0004,
       "sampleSize": 1708,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 47.7,
           "percentage": 47.7
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 45.9,
           "percentage": 45.9
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2025/10/21/a-nazi-streak-00616221",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "fieldDates": "October 10–15, 2025"
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2025-08-01",
-      "weight": 0.0003,
+      "weight": 0.0001,
       "sampleSize": 1613,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
+          "party": "D",
+          "pct": 42.5,
           "percentage": 42.5
         },
         {
           "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "pct": 46.7,
           "percentage": 46.7
         }
       ],
       "sourceUrl": "https://www.documentcloud.org/documents/26071481-ak-sen-alaska-survey-research-d/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "fieldDates": "July 29 – August 1, 2025"
     },
     {
       "pollster": "Data for Progress",
       "endDate": "2025-07-27",
-      "weight": 0.0002,
+      "weight": 0,
       "sampleSize": 678,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Dan Sullivan (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://www.dataforprogress.org/blog/2025/8/8/mary-peltola-would-be-front-runner-for-alaska-governor",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+      ],
+      "partisan": "D",
+      "fieldDates": "July 21–27, 2025"
     },
     {
       "pollster": "Alaska Survey Research",
       "endDate": "2023-04-25",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 1261,
       "population": "LV",
       "results": [
         {
           "candidate": "Mary S. Peltola (D)",
-          "percentage": 44.0
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Dan Sullivan (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://twitter.com/IvanMoore1/status/1653488015183069184?s=20",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

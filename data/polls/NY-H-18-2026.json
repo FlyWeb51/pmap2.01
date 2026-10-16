@@ -1,6 +1,35 @@
 {
   "raceId": "NY-H-18-2026",
-  "count": 0,
-  "polls": [],
-  "note": "Only generic-ballot style questions exist for this district (Generic Democrat vs Generic Republican). That is not a candidate matchup, so no poll is shown."
+  "count": 1,
+  "updated_at": "2026-10-16T21:07:58.471Z",
+  "polls": [
+    {
+      "pollster": "Global Strategy Group D-sponsored",
+      "endDate": "2026-07-26",
+      "fieldDates": "2026-07-26",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Pat Ryan (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Jacqueline Auringer (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NY-18"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0737
+    }
+  ]
 }

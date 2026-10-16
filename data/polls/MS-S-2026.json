@@ -1,26 +1,120 @@
 {
   "raceId": "MS-S-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 4,
+  "updated_at": "2026-10-16T21:07:58.455Z",
   "polls": [
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-14",
+      "sampleSize": 511,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Scott Colom (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Cindy Hyde-Smith (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9458
+    },
+    {
+      "pollster": "Data for Progress D-sponsored",
+      "endDate": "2026-08-15",
+      "fieldDates": "2026-08-15",
+      "sampleSize": 1018,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Scott Colom (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Cindy Hyde-Smith (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1669
+    },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-04-12",
-      "weight": 0.0286,
+      "weight": 0.0065,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Scott Colom (D)",
-          "percentage": 39.0
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
         },
         {
           "candidate": "Cindy Hyde-Smith (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://www.splcactionfund.org/wp-content/uploads/sites/2/2026/04/2026-04-IMPACT-Baseline-MS-Statewide-Senate-GE-Bench-Apr-2026.pdf",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/MS"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-04-12"
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2025-06-22",
+      "fieldDates": "2025-06-22",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Scott Colom (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Cindy Hyde-Smith (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0
     }
   ]
 }

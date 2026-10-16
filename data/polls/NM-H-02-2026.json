@@ -1,26 +1,60 @@
 {
   "raceId": "NM-H-02-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.459Z",
   "polls": [
+    {
+      "pollster": "Survey USA",
+      "endDate": "2026-09-04",
+      "fieldDates": "2026-09-04",
+      "sampleSize": 554,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Gabe Vasquez (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Greg Cunningham (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/NM-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3908
+    },
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-28",
-      "weight": 0.055,
+      "weight": 0.025,
       "sampleSize": 879,
       "population": "LV",
       "results": [
         {
           "candidate": "Gabe Vasquez (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Greg Cunningham (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

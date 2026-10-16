@@ -1,26 +1,32 @@
 {
   "raceId": "NC-H-10-2026",
   "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "updated_at": "2026-10-16T21:07:58.456Z",
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-12",
-      "weight": 0.0125,
+      "weight": 0.0057,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Ashley Bell (D)",
-          "percentage": 37.0
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
         },
         {
           "candidate": "Pat Harrigan (R)",
-          "percentage": 52.0
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
         }
       ],
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

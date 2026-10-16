@@ -1,45 +1,141 @@
 {
   "raceId": "PA-H-01-2026",
-  "count": 2,
-  "alternativeMatchupsDropped": 0,
+  "count": 5,
+  "updated_at": "2026-10-16T21:07:58.462Z",
   "polls": [
+    {
+      "pollster": "Public Opinion Strategies R-sponsored",
+      "endDate": "2026-09-14",
+      "fieldDates": "2026-09-14",
+      "sampleSize": 400,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Bob Harvie (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Brian Fitzpatrick (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/PA-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1883
+    },
+    {
+      "pollster": "GQR D-sponsored",
+      "endDate": "2026-08-23",
+      "fieldDates": "2026-08-23",
+      "sampleSize": 400,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Bob Harvie (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Brian Fitzpatrick (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/PA-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.107
+    },
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-08-09",
+      "fieldDates": "2026-08-09",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Bob Harvie (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Brian Fitzpatrick (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/PA-01"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1018
+    },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-03-22",
-      "weight": 0.0158,
+      "weight": 0.0072,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Bob Harvie (D)",
-          "percentage": 42.0
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
         },
         {
           "candidate": "Brian Fitzpatrick (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://www.politicspa.com/can-bob-harvie-end-brian-fitzpatricks-tenure-in-congress/146005/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-10-11",
-      "weight": 0.0005,
+      "weight": 0.0002,
       "sampleSize": 585,
       "population": "LV",
       "results": [
         {
           "candidate": "Bob Harvie (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Brian Fitzpatrick (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://www.notus.org/campaigns/brian-fitzpatrick-democratic-challenger-bob-harvie-poll-race",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

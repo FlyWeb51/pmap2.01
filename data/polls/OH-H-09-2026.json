@@ -1,26 +1,60 @@
 {
   "raceId": "OH-H-09-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.461Z",
   "polls": [
+    {
+      "pollster": "DCCC Analytics Department",
+      "endDate": "2026-09-23",
+      "fieldDates": "2026-09-23",
+      "sampleSize": 481,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Marcy Kaptur (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Derek Merrin (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/OH-09"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5649
+    },
     {
       "pollster": "McLaughlin & Associates (R)",
       "endDate": "2026-04-20",
-      "weight": 0.0308,
+      "weight": 0.014,
       "sampleSize": 400,
       "population": "LV",
       "results": [
         {
           "candidate": "Marcy Kaptur (D)",
-          "percentage": 43.0
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         },
         {
           "candidate": "Derek Merrin (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://www.nationaljournal.com/s/731831/exclusive-gop-poll-finds-slight-edge-in-must-win-house-race/?unlock=D93XBJAGANOVA1YA",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

@@ -1,64 +1,145 @@
 {
   "raceId": "TX-H-15-2026",
-  "count": 3,
-  "alternativeMatchupsDropped": 0,
+  "count": 5,
+  "updated_at": "2026-10-16T21:07:58.465Z",
   "polls": [
+    {
+      "pollster": "Public Policy Research/Texas Southern University",
+      "endDate": "2026-08-22",
+      "fieldDates": "2026-08-22",
+      "sampleSize": 700,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Bobby Pulido (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Monica De La Cruz (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/TX-15"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3253
+    },
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center at Texas Southern University",
+      "endDate": "2026-08-22",
+      "fieldDates": "2026-08-22",
+      "sampleSize": 700,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Bobby Pulido (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Monica De La Cruz (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/TX-15"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3253
+    },
     {
       "pollster": "Normington, Petts & Associates (D)",
       "endDate": "2026-07-27",
-      "weight": 0.3316,
-      "sampleSize": null,
+      "weight": 0.0793,
+      "sampleSize": 553,
       "population": "LV",
       "results": [
         {
           "candidate": "Bobby Pulido (D)",
-          "percentage": 51.0
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
         },
         {
           "candidate": "Monica De La Cruz (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://mailchi.mp/thehousemajoritypac.com/hmp-poll-bobby-pulido-leads-monica-de-la-cruz-in-tx-15",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/TX-15"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-27"
     },
     {
       "pollster": "Applecart (D)",
       "endDate": "2026-05-25",
-      "weight": 0.098,
+      "weight": 0.0445,
       "sampleSize": 802,
       "population": "LV",
       "results": [
         {
           "candidate": "Bobby Pulido (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Monica De La Cruz (R)",
-          "percentage": 46.0
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": "https://welcome.team/press-releases/Blog%20Post%20Title%20One-3zaa9-zlxng-67tfc-2sf8d",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/TX-15"
+      ],
+      "fieldDates": "2026-05-25"
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-09-11",
-      "weight": 0.0002,
+      "weight": 0.0001,
       "sampleSize": 533,
       "population": "RV",
       "results": [
         {
           "candidate": "Bobby Pulido (D)",
-          "percentage": 38.0
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
         },
         {
           "candidate": "Monica De La Cruz (R)",
-          "percentage": 41.0
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
       "sourceUrl": "https://x.com/birenbomb/status/1968311364751077867",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

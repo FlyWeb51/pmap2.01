@@ -1,64 +1,227 @@
 {
   "raceId": "ME-H-02-2026",
-  "count": 3,
-  "alternativeMatchupsDropped": 10,
+  "count": 8,
+  "updated_at": "2026-10-16T21:07:58.449Z",
   "polls": [
+    {
+      "pollster": "Tulchin Research D-sponsored",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-30",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Matt Dunlap (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ME-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3385
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-21",
+      "sampleSize": 627,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Matt Dunlap (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ME-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6158
+    },
+    {
+      "pollster": "Impact Research D-sponsored",
+      "endDate": "2026-09-12",
+      "fieldDates": "2026-09-12",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Matt Dunlap (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ME-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2233
+    },
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-08-13",
+      "fieldDates": "2026-08-13",
+      "sampleSize": 621,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Matt Dunlap (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ME-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1245
+    },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-07-16",
-      "weight": 0.2817,
+      "weight": 0.0641,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Matt Dunlap (D)",
-          "percentage": 49.0
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
         },
         {
           "candidate": "Paul R. LePage (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://x.com/PatrickSvitek/status/2079151831998230855",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/house/ME-02"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-16"
+    },
+    {
+      "pollster": "Pan Atlantic Research",
+      "endDate": "2026-05-18",
+      "fieldDates": "2026-05-18",
+      "sampleSize": 418,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Joe Baldacci (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/ME-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0137,
+      "otherMatchup": true
     },
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-28",
-      "weight": 0.0562,
+      "weight": 0.0255,
       "sampleSize": 918,
       "population": "LV",
       "results": [
         {
           "candidate": "Matt Dunlap (D)",
-          "percentage": 40.0
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
         },
         {
           "candidate": "Paul R. LePage (R)",
-          "percentage": 50.0
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-02-16",
-      "weight": 0.0164,
+      "weight": 0.0037,
       "sampleSize": 520,
       "population": "LV",
       "results": [
         {
           "candidate": "Matt Dunlap (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Paul R. LePage (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/930/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

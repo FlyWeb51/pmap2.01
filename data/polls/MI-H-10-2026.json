@@ -1,26 +1,61 @@
 {
   "raceId": "MI-H-10-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 2,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.450Z",
   "polls": [
+    {
+      "pollster": "Global Strategy Group D-sponsored",
+      "endDate": "2026-08-13",
+      "fieldDates": "2026-08-13",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Christina Hines (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Michael Bouchard (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/MI-10"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.104
+    },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-01-17",
-      "weight": 0.0039,
+      "weight": 0.0018,
       "sampleSize": 592,
       "population": "RV",
       "results": [
         {
           "candidate": "Eric Chung (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Mike Bouchard (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://www.the-downballot.com/p/morning-digest-why-a-top-two-lockout",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "otherMatchup": true
     }
   ]
 }

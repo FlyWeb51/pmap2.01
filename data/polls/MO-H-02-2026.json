@@ -1,26 +1,60 @@
 {
   "raceId": "MO-H-02-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 0,
+  "count": 2,
+  "updated_at": "2026-10-16T21:07:58.454Z",
   "polls": [
+    {
+      "pollster": "Remington Research Group",
+      "endDate": "2026-09-15",
+      "fieldDates": "2026-09-15",
+      "sampleSize": 565,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Fred Wellman (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ann Wagner (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/MO-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2545
+    },
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-05-31",
-      "weight": 0.0973,
+      "weight": 0.0443,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Fred Wellman (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Ann Wagner (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://themissouritimes.com/wp-content/uploads/2026/06/220-7670-Wellman-MO-02-Summary-Memo.pdf",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

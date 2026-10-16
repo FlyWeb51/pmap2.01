@@ -1,273 +1,1009 @@
 {
   "raceId": "OH-S-2026",
-  "count": 14,
-  "alternativeMatchupsDropped": 2,
+  "count": 37,
+  "updated_at": "2026-10-16T21:07:58.462Z",
   "polls": [
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-10-06",
+      "fieldDates": "2026-10-06",
+      "sampleSize": 925,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Brown (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Husted (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5289
+    },
+    {
+      "pollster": "CNN",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-10-05",
+      "sampleSize": 760,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Brown (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9369
+    },
+    {
+      "pollster": "SSRS",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-10-05",
+      "sampleSize": 760,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9369
+    },
+    {
+      "pollster": "NY Times/Siena",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 616,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Brown (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Husted (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7691
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 616,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7691
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-30",
+      "sampleSize": 3777,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.3541
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-29",
+      "fieldDates": "2026-09-29",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5125
+    },
+    {
+      "pollster": "Marist University",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-27",
+      "sampleSize": 1298,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.916
+    },
+    {
+      "pollster": "Big Data Poll",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-27",
+      "sampleSize": 678,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Brown (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Husted (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7356
+    },
+    {
+      "pollster": "USA Today/Suffolk",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-27",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Brown (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Husted (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6317
+    },
+    {
+      "pollster": "Big Data Poll R-sponsored",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-27",
+      "sampleSize": 680,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3683
+    },
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-27",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6317
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-23",
+      "fieldDates": "2026-09-23",
+      "sampleSize": 695,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Brown (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Husted (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.679
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-23",
+      "fieldDates": "2026-09-23",
+      "sampleSize": 1115,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.43
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-16",
+      "fieldDates": "2026-09-16",
+      "sampleSize": 1085,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3609
+    },
+    {
+      "pollster": "Bowling Green State University/YouGov",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-10",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6032
+    },
+    {
+      "pollster": "Insider Advantage",
+      "endDate": "2026-09-09",
+      "fieldDates": "2026-09-09",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3228
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-29",
+      "fieldDates": "2026-08-29",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3232
+    },
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-08-13",
+      "fieldDates": "2026-08-13",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2825
+    },
+    {
+      "pollster": "Beacon Research/Shaw & Company Research",
+      "endDate": "2026-08-10",
+      "fieldDates": "2026-08-10",
+      "sampleSize": 1008,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1331
+    },
+    {
+      "pollster": "FOX News",
+      "endDate": "2026-08-10",
+      "fieldDates": "2026-08-10",
+      "sampleSize": 1008,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Brown (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Husted (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2663
+    },
+    {
+      "pollster": "Tulchin Research",
+      "endDate": "2026-08-04",
+      "fieldDates": "2026-08-04",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0994
+    },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-28",
-      "weight": 0.3721,
+      "weight": 0.0846,
       "sampleSize": 601,
       "population": "LV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 49.8,
           "percentage": 49.8
         }
       ],
       "sourceUrl": "https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-ohio-poll-crosstabs.html",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "New York Times/Siena University",
+      "endDate": "2026-06-28",
+      "fieldDates": "2026-06-28",
+      "sampleSize": 601,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0846
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
       "endDate": "2026-06-16",
-      "weight": 0.3253,
+      "weight": 0.037,
       "sampleSize": 800,
       "population": "LV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 48.0
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.aarp.org/pri/topics/voter-research/politics/2026-midterm-election-poll-ohio/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-06-16"
     },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-06-04",
-      "weight": 0.1068,
+      "weight": 0.0243,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 42.0
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": "https://x.com/PollTracker2024/status/2067244200886665423",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-06-04"
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-01",
-      "weight": 0.2332,
+      "weight": 0.053,
       "sampleSize": 1015,
       "population": "RV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 53.0
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-democratic-unity-republican-crossovers-shape-ohio-senate-race",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
       "endDate": "2026-04-14",
-      "weight": 0.0764,
+      "weight": 0.0174,
       "sampleSize": 1000,
       "population": "RV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 50.0
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
       "sourceUrl": "https://scholarworks.bgsu.edu/depo/21/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0486,
+      "weight": 0.011,
       "sampleSize": 413,
       "population": "LV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 51.0
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
         }
       ],
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-03-14",
-      "weight": 0.0367,
+      "weight": 0.0083,
       "sampleSize": 784,
       "population": "LV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 44.4,
           "percentage": 44.4
         },
         {
           "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 45.5,
           "percentage": 45.5
         }
       ],
       "sourceUrl": "https://quantusinsights.org/f/quantus-insights-ohio-voters-signal-competitive-2026-environment",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "OnMessage Inc.",
       "endDate": "2026-03-08",
-      "weight": 0.028,
+      "weight": 0.0064,
       "sampleSize": 600,
       "population": "LV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 47.0
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 45.0
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/03/11/the-white-house-pain-threshold-00822448",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "EMC Research (D)",
       "endDate": "2026-02-22",
-      "weight": 0.0151,
+      "weight": 0.0069,
       "sampleSize": 1343,
       "population": "LV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 51.0
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://theoec.org/wp-content/uploads/2026/03/OEC-Ohio-Survey-Results-2026.pdf",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Emerson College",
       "endDate": "2025-12-08",
-      "weight": 0.0037,
+      "weight": 0.0009,
       "sampleSize": 850,
       "population": "RV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 46.3,
           "percentage": 46.3
         },
         {
           "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 48.8,
           "percentage": 48.8
         }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/ohio-2026-poll-democrats-make-gains-in-races-for-governor-and-us-senate/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
       "endDate": "2025-10-14",
-      "weight": 0.001,
+      "weight": 0.0002,
       "sampleSize": 800,
       "population": "RV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 49.0
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 48.0
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
       "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1013&context=depo",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Emerson College",
       "endDate": "2025-08-19",
-      "weight": 0.0003,
+      "weight": 0.0001,
       "sampleSize": 1000,
       "population": "RV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 43.7,
           "percentage": 43.7
         },
         {
           "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 49.5,
           "percentage": 49.5
         }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/ohio-2026/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
       "endDate": "2025-04-24",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 800,
       "population": "RV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 46.0
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 49.0
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
       "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1009&context=depo",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
       "endDate": "2025-02-21",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 800,
       "population": "RV",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
-          "percentage": 41.0
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Jon Husted (R)",
-          "percentage": 47.0
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1007&context=depo",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": []
     }
   ]
 }

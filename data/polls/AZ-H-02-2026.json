@@ -1,6 +1,64 @@
 {
-  "race_id": "AZ-H-02-2026",
+  "raceId": "AZ-H-02-2026",
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.439Z",
   "polls": [
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-08-24",
+      "fieldDates": "2026-08-24",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Jonathan Nez (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Eli Crane (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/AZ-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.144
+    },
+    {
+      "pollster": "Peak Insights",
+      "endDate": "2026-08-20",
+      "fieldDates": "2026-08-20",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Jonathan Nez (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Eli Crane (R)",
+          "party": "R",
+          "pct": 53,
+          "percentage": 53
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/AZ-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2348
+    },
     {
       "raceId": "AZ-H-02-2026",
       "pollster": "GBAO",
@@ -12,24 +70,35 @@
       "moe": 4.4,
       "sponsor": "D",
       "methodology": "Likely voters, 500 respondents, margin of error +/- 4.4",
-      "weight": 0.5,
+      "weight": 0.0286,
       "reviewStatus": "approved",
       "results": [
         {
           "candidate": "Jonathan Nez (D)",
-          "pct": 41
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         },
         {
           "candidate": "Eli Crane (R)",
-          "pct": 44
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Undecided",
-          "pct": 15
+          "party": null,
+          "pct": 15,
+          "percentage": 15
         }
       ],
       "sourceUrl": "https://pollingsource.com/house/AZ-02",
-      "notes": "R +3.0, inside the +/- 4.4 margin of error - a statistical tie. Cross-confirmed by Pollsmax and PollingSource, both showing 41.0 D / 44.0 R from this single poll."
+      "notes": "R +3.0, inside the +/- 4.4 margin of error - a statistical tie. Cross-confirmed by Pollsmax and PollingSource, both showing 41.0 D / 44.0 R from this single poll.",
+      "endDate": "2026-06-15",
+      "foundOn": [
+        "https://pollingsource.com/house/AZ-02"
+      ],
+      "partisan": "D"
     }
   ]
 }

@@ -1,216 +1,810 @@
 {
   "raceId": "GA-S-2026",
-  "count": 11,
-  "alternativeMatchupsDropped": 29,
+  "count": 29,
+  "updated_at": "2026-10-16T21:07:58.445Z",
   "polls": [
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-10-09",
+      "fieldDates": "2026-10-09",
+      "sampleSize": 1101,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/GA",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6184
+    },
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-10-03",
+      "fieldDates": "October 2–3, 2026",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 55,
+          "percentage": 55
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7949
+    },
+    {
+      "pollster": "Big Data Poll",
+      "endDate": "2026-09-23",
+      "fieldDates": "2026-09-23",
+      "sampleSize": 678,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ossoff (D)",
+          "party": "D",
+          "pct": 55,
+          "percentage": 55
+        },
+        {
+          "candidate": "Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6707
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-09-23",
+      "fieldDates": "September 22–23, 2026",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4461
+    },
+    {
+      "pollster": "Big Data Poll",
+      "endDate": "2026-09-23",
+      "fieldDates": "September 21–23, 2026",
+      "sampleSize": 721,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3112
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-18",
+      "fieldDates": "September 15–18, 2026",
+      "sampleSize": 3416,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9236
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-18",
+      "fieldDates": "2026-09-18",
+      "sampleSize": 3303,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ossoff (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0262
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-16",
+      "fieldDates": "September 14–16, 2026",
+      "sampleSize": 645,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2365
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-09-16",
+      "fieldDates": "2026-09-16",
+      "sampleSize": 645,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ossoff (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5565
+    },
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-09-14",
+      "fieldDates": "September 14, 2026",
+      "sampleSize": 1019,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6678
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-12",
+      "fieldDates": "September 10–12, 2026",
+      "sampleSize": 1091,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3299
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-08-17",
+      "fieldDates": "August 16–17, 2026",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1549
+    },
     {
       "pollster": "Fabrizio Ward/Impact Research",
       "endDate": "2026-07-16",
-      "weight": 0.7489,
+      "weight": 0.0851,
       "sampleSize": 1060,
       "population": "LV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
-          "percentage": 52.0
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
         },
         {
           "candidate": "Mike Collins (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://www.aarp.org/pri/topics/voter-research/politics/2026-midterm-election-poll-georgia/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/GA"
+      ],
+      "partisan": "D",
+      "fieldDates": "July 13–16, 2026"
     },
     {
       "pollster": "Wick",
       "endDate": "2026-06-30",
-      "weight": 0.5448,
+      "weight": 0.1239,
       "sampleSize": 1175,
       "population": "LV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 46.7,
           "percentage": 46.7
         },
         {
           "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 42.9,
           "percentage": 42.9
         }
       ],
       "sourceUrl": "https://wick.io/research-georgia-election-survey-june-2026",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://pollingsource.com/senate/GA"
+      ],
+      "fieldDates": "June 27–30, 2026"
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-27",
-      "weight": 0.4225,
+      "weight": 0.048,
       "sampleSize": 1002,
       "population": "RV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
-          "percentage": 56.0
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
         },
         {
           "candidate": "Mike Collins (R)",
-          "percentage": 43.0
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-early-look-georgia-senate-race",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
+      ],
+      "partisan": "R",
+      "fieldDates": "June 23–27, 2026"
+    },
+    {
+      "pollster": "FOX News",
+      "endDate": "2026-06-27",
+      "fieldDates": "2026-06-27",
+      "sampleSize": 1002,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ossoff (D)",
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "Collins (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/GA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0961
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0482,
+      "weight": 0.0055,
       "sampleSize": 407,
       "population": "LV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
-          "percentage": 51.0
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
         },
         {
           "candidate": "Mike Collins (R)",
-          "percentage": 44.0
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "R",
+      "fieldDates": "April 3–9, 2026"
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-02",
-      "weight": 0.0314,
+      "weight": 0.0071,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 47.7,
           "percentage": 47.7
         },
         {
           "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 43.3,
           "percentage": 43.3
         }
       ],
       "sourceUrl": "https://emersoncollegepolling.com/georgia-2026-poll-senator-ossoff-starts-re-election-near-50-and-outpaces-gop-field/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "fieldDates": "February 28 – March 2, 2026"
     },
     {
       "pollster": "Quantus Insights",
       "endDate": "2025-09-12",
-      "weight": 0.0004,
+      "weight": 0,
       "sampleSize": 624,
       "population": "RV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 37.8,
           "percentage": 37.8
         },
         {
           "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 37.7,
           "percentage": 37.7
         }
       ],
       "sourceUrl": "https://drive.google.com/file/d/1s_XyIo0Rre1TGtVisHKu9hW3S4yEvxRl/view",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "R",
+      "fieldDates": "September 9–12, 2025"
     },
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2025-08-01",
-      "weight": 0.0002,
+      "weight": 0.0001,
       "sampleSize": 2395,
       "population": "LV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 44.94,
           "percentage": 44.94
         },
         {
           "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 44.1,
           "percentage": 44.1
         }
       ],
       "sourceUrl": "https://dailycaller.com/2025/08/07/mike-collins-georgia-senate-poll/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
     },
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2025-08-01",
-      "weight": 0.0002,
+      "weight": 0.0001,
       "sampleSize": 2956,
       "population": "RV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 43.5,
           "percentage": 43.5
         },
         {
           "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 40.61,
           "percentage": 40.61
         }
       ],
       "sourceUrl": "https://dailycaller.com/2025/08/07/mike-collins-georgia-senate-poll/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "TIPP Insights",
+      "endDate": "2025-08-01",
+      "fieldDates": "July 28 – August 1, 2025",
+      "sampleSize": 2956,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0.0001
+    },
+    {
+      "pollster": "Cygnal",
+      "endDate": "2025-06-18",
+      "fieldDates": "June 16–18, 2025",
+      "sampleSize": 610,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Derek Dooley (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     },
     {
       "pollster": "Cygnal Political",
       "endDate": "2025-05-17",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 800,
       "population": "RV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 45.7,
           "percentage": 45.7
         },
         {
           "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 43.3,
           "percentage": 43.3
         }
       ],
       "sourceUrl": "https://www.ajc.com/politics/2025/05/brad-raffensperger-for-senate-poll-shows-dead-heat-with-jon-ossoff/",
-      "note": null
+      "note": null,
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "R",
+      "fieldDates": "May 15–17, 2025"
     },
     {
       "pollster": "Trafalgar Group (R)",
       "endDate": "2025-04-27",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 1426,
       "population": "LV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 47.5,
           "percentage": 47.5
         },
         {
           "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 42.8,
           "percentage": 42.8
         }
       ],
       "sourceUrl": "https://www.thetrafalgargroup.org/news/ga-sen-2026-0429/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "R",
+      "fieldDates": "April 24–27, 2025"
+    },
+    {
+      "pollster": "''Atlanta Journal-Constitution''",
+      "endDate": "2025-04-24",
+      "fieldDates": "April 15–24, 2025",
+      "sampleSize": 1000,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Brad Raffensperger (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2025-02-13",
+      "fieldDates": "February 11–13, 2025",
+      "sampleSize": 800,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Brian Kemp (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Tyson Group",
+      "endDate": "2025-01-31",
+      "fieldDates": "January 30–31, 2025",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Buddy Carter (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     },
     {
       "pollster": "WPA Intelligence (R)",
       "endDate": "2025-01-15",
-      "weight": 0.0,
+      "weight": 0,
       "sampleSize": 500,
       "population": "LV",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
-          "percentage": 44.0
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         },
         {
           "candidate": "Mike Collins (R)",
-          "percentage": 34.0
+          "party": "R",
+          "pct": 34,
+          "percentage": 34
         }
       ],
       "sourceUrl": "https://www.politico.com/news/2025/01/16/kemp-ossoff-poll-georgia-senate-00198719",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": [],
+      "partisan": "R",
+      "fieldDates": "January 14–15, 2025"
     }
   ]
 }

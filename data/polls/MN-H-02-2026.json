@@ -1,26 +1,89 @@
 {
   "raceId": "MN-H-02-2026",
-  "count": 1,
-  "alternativeMatchupsDropped": 2,
+  "count": 3,
+  "updated_at": "2026-10-16T21:07:58.453Z",
   "polls": [
+    {
+      "pollster": "Impact Research D-sponsored",
+      "endDate": "2026-09-13",
+      "fieldDates": "2026-09-13",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Matt Little (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Eric Pratt (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/MN-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2286
+    },
     {
       "pollster": "Harper Polling (R)",
       "endDate": "2026-06-21",
-      "weight": 0.1315,
+      "weight": 0.0598,
       "sampleSize": 415,
       "population": "LV",
       "results": [
         {
           "candidate": "Matt Little (D)",
-          "percentage": 45.0
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
         },
         {
           "candidate": "Eric Pratt (R)",
-          "percentage": 40.0
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
         }
       ],
       "sourceUrl": "https://alphanews.org/exclusive-new-poll-shows-republican-eric-pratt-in-close-race-with-dfl-congressional-candidates/",
-      "note": "Partisan-sponsored, weighted at half strength."
+      "note": "Partisan-sponsored, weighted at half strength.",
+      "reviewStatus": "approved",
+      "foundOn": []
+    },
+    {
+      "pollster": "Harper Polling",
+      "endDate": "2026-06-21",
+      "fieldDates": "2026-06-21",
+      "sampleSize": 415,
+      "population": "LV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Kaela Berg (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Eric Pratt (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/house/MN-02"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0299,
+      "otherMatchup": true
     }
   ]
 }
