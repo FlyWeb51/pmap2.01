@@ -1,9 +1,20 @@
 {
-  "updated_at": "2026-10-16T19:40:41.731Z",
-  "senate_ok": 32,
-  "senate_skipped": 3,
+  "updated_at": "2026-10-16T20:49:31.513Z",
+  "runtime_seconds": 13,
+  "senate_ok": 34,
+  "senate_skipped": 1,
   "senate_errors": 0,
-  "house_ok": 64,
-  "house_skipped": 371,
-  "house_errors": 0
+  "house_ok": 75,
+  "house_skipped": 360,
+  "house_errors": 0,
+  "governor_ok": 33,
+  "national": [
+    "house",
+    "senate",
+    "housePopVoteMarginD",
+    "houseSeatsD",
+    "senateSeatsWonD",
+    "blueWave",
+    "redWave"
+  ]
 }
