@@ -150,6 +150,7 @@
       <button data-tab="board">Ratings</button>
       <button data-tab="counties">Counties</button>
       <a href="polling/" title="2026 polling margins, averages and charts" style="flex:1;display:flex;align-items:center;justify-content:center;color:var(--ink-dim);font-size:12px;letter-spacing:.05em;text-decoration:none;border-bottom:2px solid transparent">Polling</a>
+      <a href="overview.html" title="National picture: wave meter, chamber control, flip watch" style="flex:1;display:flex;align-items:center;justify-content:center;color:var(--ink-dim);font-size:12px;letter-spacing:.05em;text-decoration:none;border-bottom:2px solid transparent">National</a>
     </div>
     <div class="filters">
       <label for="f-rating">Rating</label>
@@ -337,8 +338,10 @@ async function loadKalshiAll(){
 }
 function kalshiColor(entry){
   if(!entry) return css("--vac");
-  const d=entry.democrat?entry.democrat.pct:null, r=entry.republican?entry.republican.pct:null;
+  const sh=e=>e?(e.share!=null?e.share:e.pct):null;
+  let d=sh(entry.democrat), r=sh(entry.republican);
   if(d==null&&r==null) return css("--vac");
+  if(d==null) d=100-r; if(r==null) r=100-d;
   const margin=(d??0)-(r??0);
   if(margin>=30)return RCOLOR[0]; if(margin>=10)return RCOLOR[1]; if(margin>=2)return RCOLOR[2];
   if(margin>-2)return margin>=0?RCOLOR[3]:RCOLOR[4];
@@ -719,24 +722,31 @@ function renderPolls(out, raceId, pollData, averageData) {
     return;
   }
   const average = averageData?.average || [];
+  const pctOf = r => Number(r.pct ?? r.percentage);
   const averageHtml = average.map(result => `
     <div class="kv">
       <span class="k">${escapeHtml(result.candidate)} · weighted avg</span>
-      <span class="v num">${Number(result.pct).toFixed(1)}%</span>
+      <span class="v num">${pctOf(result).toFixed(1)}%</span>
     </div>
-  `).join("");
-  const pollHtml = pollData.polls.map(poll => {
+  `).join("") + (averageData?.poll_count ? `<p class="note">Average of ${averageData.poll_count} poll(s) from the last ${averageData.window_days || 90} days, weighted by recency, sample size, voter screen and partisanship.</p>` : "");
+  const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+  const shown = pollData.polls.slice(0, 12);
+  const pollHtml = shown.map(poll => {
     const results = (poll.results || []).map(result =>
-      `${escapeHtml(result.candidate)} ${Number(result.pct).toFixed(1)}%`
+      `${escapeHtml(result.candidate)} ${pctOf(result).toFixed(1)}%`
     ).join(" · ");
+    const link = poll.sourceUrl
+      ? ` · <a href="${escapeHtml(poll.sourceUrl)}" target="_blank" rel="noopener">source</a>`
+      : (poll.foundOn && poll.foundOn.length ? ` · via ${poll.foundOn.map(u => `<a href="${escapeHtml(u)}" target="_blank" rel="noopener">${escapeHtml(host(u))}</a>`).join(", ")}` : "");
     return `<p class="note">
-      <b>${escapeHtml(poll.pollster)}</b> ·
-      ${escapeHtml(poll.fieldDates || poll.completedDate || "")} ·
-      n=${poll.sampleSize || "?"} ${escapeHtml(poll.population || "")}<br>
+      <b>${escapeHtml(poll.pollster)}</b>${poll.partisan ? ` (${escapeHtml(poll.partisan)})` : ""} ·
+      ${escapeHtml(poll.endDate || poll.fieldDates || poll.completedDate || "")} ·
+      n=${poll.sampleSize || "?"} ${escapeHtml(poll.population || "")}${link}${poll.otherMatchup ? " · <i>different matchup, not averaged</i>" : ""}<br>
       ${results}
     </p>`;
   }).join("");
-  out.innerHTML = averageHtml + pollHtml;
+  const more = pollData.polls.length > shown.length ? `<p class="note">${pollData.polls.length - shown.length} older poll(s) not shown.</p>` : "";
+  out.innerHTML = averageHtml + pollHtml + more;
 }
 async function loadPolls(x) {
   const out = document.getElementById("poll-out");
@@ -751,12 +761,18 @@ async function loadPolls(x) {
 async function loadSenatePolls(st) {
   const out = document.getElementById("spoll-out");
   if (!out) return;
-  const raceId = `${st}-senate`;
+  const raceId = `${st}-S-2026`;
   const [pollData, averageData] = await Promise.all([
     backendGet(`/api/polls?race_id=${encodeURIComponent(raceId)}`),
     backendGet(`/api/poll-average?race_id=${encodeURIComponent(raceId)}`)
   ]);
   renderPolls(out, raceId, pollData, averageData);
+}
+function kalshiAge(ts){
+  if(!ts) return "";
+  const mins=Math.round((Date.now()-new Date(ts))/60000);
+  const ago=mins<60?`${mins} min ago`:mins<2880?`${Math.round(mins/60)} hr ago`:`${Math.round(mins/1440)} days ago`;
+  return `Updated ${ago} (${new Date(ts).toLocaleString()}).`+(mins>720?" <b>Odds may be stale.</b>":"");
 }
 async function loadKalshiHouse(x) {
   const out = document.getElementById("hkalshi-out");
@@ -768,18 +784,18 @@ async function loadKalshiHouse(x) {
     if (!r.ok) throw new Error("not found");
     data = await r.json();
   } catch {
-    out.innerHTML = `<p class="note">No Kalshi market listed for this district (checked every 30 min, competitive districts only).</p>`;
+    out.innerHTML = `<p class="note">Kalshi has no market listed for this district. Kalshi only lists contested seats.</p>`;
     return;
   }
   const row = (label, entry, color) => entry ? `
     <div class="kv">
       <span class="k">${label} <span style="color:${color}">●</span></span>
-      <span class="v num">${entry.pct}%</span>
+      <span class="v num">${entry.share!=null?entry.share:entry.pct}%${entry.share!=null&&Math.abs(entry.share-entry.pct)>=0.5?` <span class="note" style="font-size:10px">(price ${entry.pct}¢)</span>`:""}</span>
     </div>` : "";
   out.innerHTML =
     row("Democrat", data.democrat, "var(--nd)") +
     row("Republican", data.republican, "var(--lr)") +
-    `<p class="note">Live prediction-market odds from Kalshi, refreshed every 30 minutes. This is a market price, not a poll. Fetched: ${new Date(data.fetchedAt).toLocaleString()}</p>`;
+    `<p class="note">Kalshi prediction-market odds, normalized so both sides add to 100. A market price, not a poll. ${kalshiAge(data.fetchedAt)}</p>`;
 }
 async function loadKalshi(st) {
   const out = document.getElementById("skalshi-out");
@@ -790,18 +806,18 @@ async function loadKalshi(st) {
     if (!r.ok) throw new Error("not found");
     data = await r.json();
   } catch {
-    out.innerHTML = `<p class="note">No Kalshi market listed for this race (refreshed every 30 min).</p>`;
+    out.innerHTML = `<p class="note">Kalshi has no market listed for this race.</p>`;
     return;
   }
   const row = (label, entry, color) => entry ? `
     <div class="kv">
       <span class="k">${label} <span style="color:${color}">●</span></span>
-      <span class="v num">${entry.pct}%</span>
+      <span class="v num">${entry.share!=null?entry.share:entry.pct}%${entry.share!=null&&Math.abs(entry.share-entry.pct)>=0.5?` <span class="note" style="font-size:10px">(price ${entry.pct}¢)</span>`:""}</span>
     </div>` : "";
   out.innerHTML =
     row("Democrat", data.democrat, "var(--nd)") +
     row("Republican", data.republican, "var(--lr)") +
-    `<p class="note">Live prediction-market odds from Kalshi (external-api.kalshi.com), refreshed every 30 minutes. This is a market price, not a poll — it reflects what traders are willing to bet, not a survey of voters. Fetched: ${new Date(data.fetchedAt).toLocaleString()}</p>`;
+    `<p class="note">Kalshi prediction-market odds, normalized so both sides add to 100. A market price, not a poll: it reflects what traders will bet, not a survey of voters. ${kalshiAge(data.fetchedAt)}</p>`;
 }
 /* ---------- Counties tab ---------- */
 async function renderCounties(){
@@ -1170,7 +1186,7 @@ body.predicting .legend{max-width:190px}
     META.forEach(function(m,i){
       var k=KAL[m.id]||KAL[m.id.replace(/-(\d)$/,"-0$1")];
       if(!k||!k.democrat||!k.republican) return;
-      var dp=Number(k.democrat.pct), rp=Number(k.republican.pct);
+      var dp=Number(k.democrat.share!=null?k.democrat.share:k.democrat.pct), rp=Number(k.republican.share!=null?k.republican.share:k.republican.pct);
       if(!isFinite(dp)||!isFinite(rp)) return;
       var band=bandFor(Math.max(dp,rp));
       picks[i]= dp>=rp ? band : (band===4?4:8-band);   /* 1,2,3 -> 7,6,5 */
