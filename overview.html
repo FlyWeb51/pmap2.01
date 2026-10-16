@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<title>National Picture | Election Center 2026</title>
+<style>
+  :root{
+    --bg:#0e1420; --panel:#0a0f18; --panel-2:#111a29; --line:#1e2a3d;
+    --ink:#e8edf5; --ink-dim:#8b98ac;
+    --sd:#1f5fc4; --ld:#3f7fdd; --nd:#6fa3ec; --td:#a9c8f4;
+    --tr:#f0b3b3; --nr:#e88a8a; --lr:#d95c5c; --sr:#b93838;
+    --ind:#b48ce0; --vac:#3a4557; --money:#d9b45c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Archivo","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh}
+  .num{font-family:"IBM Plex Mono","SF Mono",Consolas,monospace}
+  a{color:var(--nd)}
+  header{border-bottom:1px solid var(--line);background:var(--panel);padding:14px 22px}
+  .hrow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1180px;margin:0 auto}
+  h1{font-size:18px;letter-spacing:.06em;text-transform:uppercase}
+  .sub{font-size:11px;color:var(--ink-dim);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+  .nav{display:flex;gap:8px;flex-wrap:wrap}
+  .nav a{font-size:12px;letter-spacing:.05em;color:var(--ink-dim);text-decoration:none;border:1px solid var(--line);padding:6px 10px;border-radius:6px}
+  .nav a:hover{color:var(--ink);border-color:var(--ink-dim)}
+  .nav a.on{color:var(--ink);border-color:var(--nd)}
+  .card{min-width:0} .scroll{overflow-x:auto}
+  main{max-width:1180px;margin:0 auto;padding:22px;display:grid;gap:18px}
+  .card{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:12px;font-weight:600}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:820px){.grid2{grid-template-columns:1fr} main{padding:14px 16px} .card{padding:14px} .big{font-size:28px} .oddsbar{width:60px} td,th{padding:6px 5px} .stats{gap:16px}}
+  .note{font-size:11px;color:var(--ink-dim);line-height:1.5;margin-top:10px}
+  .d{color:var(--nd)} .r{color:var(--lr)}
+  .big{font-size:34px;font-weight:700;line-height:1}
+  .label-pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-left:10px;vertical-align:middle}
+
+  /* wave meter */
+  .wave{position:relative;height:56px;margin:26px 6px 34px}
+  .wave .track{position:absolute;top:22px;left:0;right:0;height:12px;border-radius:6px;
+    background:linear-gradient(90deg,var(--sd) 0%,var(--nd) 25%,var(--td) 42%,#5b6577 50%,var(--tr) 58%,var(--nr) 75%,var(--sr) 100%)}
+  .wave .hist{position:absolute;top:14px;width:2px;height:28px;background:rgba(232,237,245,.45)}
+  .wave .hist span{position:absolute;top:32px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--ink-dim);white-space:nowrap}
+  .wave .now{position:absolute;top:4px;width:4px;height:48px;background:var(--ink);border-radius:2px;box-shadow:0 0 0 3px rgba(14,20,32,.9)}
+  .wave .now span{position:absolute;bottom:52px;left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;white-space:nowrap}
+  .wave-ends{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim)}
+
+  /* seat bars */
+  .bar{position:relative;display:flex;height:22px;border-radius:5px;overflow:hidden;background:var(--vac);margin:14px 0 6px}
+  .bar div{height:100%}
+  .bar-wrap{position:relative}
+  .bar-wrap .tick{position:absolute;top:8px;bottom:-4px;width:2px;background:var(--ink)}
+  .bar-wrap .tick span{position:absolute;top:-14px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--ink-dim);white-space:nowrap;letter-spacing:.06em}
+  .kv{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+  .kv:last-child{border-bottom:0}
+  .kv .k{color:var(--ink-dim)}
+
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{text-align:left;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+  td{padding:7px 8px;border-bottom:1px solid var(--line)}
+  tr:last-child td{border-bottom:0}
+  .oddsbar{position:relative;height:8px;width:110px;border-radius:4px;background:var(--lr);overflow:hidden;display:inline-block;vertical-align:middle;margin-right:8px}
+  .oddsbar i{position:absolute;left:0;top:0;bottom:0;background:var(--nd)}
+  .scroll{max-height:440px;overflow:auto}
+  .stats{display:flex;gap:26px;flex-wrap:wrap}
+  .stat .v{font-size:22px;font-weight:700}
+  .stat .k{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);margin-top:2px}
+  .empty{color:var(--ink-dim);font-size:13px}
+  footer{max-width:1180px;margin:0 auto;padding:6px 22px 30px;font-size:11px;color:var(--ink-dim);line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+  <div class="hrow">
+    <div>
+      <h1>The National Picture</h1>
+      <div class="sub">2026 Midterms · <span id="countdown">Election Day Nov 3</span></div>
+    </div>
+    <nav class="nav">
+      <a href="./">House map</a>
+      <a href="./overview.html" class="on">National picture</a>
+      <a href="polling/">Polling</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Wave meter: generic congressional ballot</h2>
+    <div id="wave-head" class="empty">Loading…</div>
+    <div class="wave" id="wave"></div>
+    <div class="wave-ends"><span>Blue wave · D+12</span><span>Neutral</span><span>R+12 · Red wave</span></div>
+    <p class="note" id="wave-note"></p>
+  </section>
+
+  <div class="grid2">
+    <section class="card" id="house-card"><h2>House · 218 for control</h2><div class="empty">Loading…</div></section>
+    <section class="card" id="senate-card"><h2>Senate · 51 for Democratic control</h2><div class="empty">Loading…</div></section>
+  </div>
+
+  <section class="card" id="control-card" hidden>
+    <h2>What the prediction markets say</h2>
+    <div class="stats" id="mkt-stats"></div>
+    <p class="note">Kalshi market prices, not polls. Seat counts and the popular-vote margin are the point where Kalshi's "at least" ladders cross 50%.</p>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Flip watch · seats markets favor to change parties</h2>
+      <div class="stats" id="flip-stats"></div>
+      <div class="scroll" style="margin-top:12px"><table id="flips"></table></div>
+    </section>
+    <section class="card">
+      <h2>Closest House races by market odds</h2>
+      <div class="scroll"><table id="tossups"></table></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Senate races · most competitive first</h2>
+    <div class="scroll"><table id="senate-races"></table></div>
+  </section>
+
+  <section class="card" id="gov-card" hidden>
+    <h2>Governor races · most competitive first</h2>
+    <div class="scroll"><table id="gov-races"></table></div>
+  </section>
+</main>
+
+<footer id="footer"></footer>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const fmtM = (m) => m == null ? "n/a" : (m > 0 ? "D+" : m < 0 ? "R+" : "EVEN ") + Math.abs(m).toFixed(1);
+const partyCls = (p) => p === "D" || p === "I" ? "d" : p === "R" ? "r" : "";
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function ago(ts) {
+  if (!ts) return "unknown";
+  const m = Math.round((Date.now() - new Date(ts)) / 60000);
+  return m < 60 ? m + " min ago" : m < 2880 ? Math.round(m / 60) + " hr ago" : Math.round(m / 1440) + " days ago";
+}
+function countdown() {
+  const ms = new Date("2026-11-03T00:00:00") - new Date();
+  const d = Math.ceil(ms / 864e5);
+  $("countdown").textContent = d > 0 ? `${d} days to Election Day` : "Election Day";
+}
+countdown();
+
+// map a D-minus-R margin to a position on a D+12 .. R+12 track
+const pos = (m) => Math.max(0, Math.min(100, 50 - (m / 12) * 50));
+
+function renderWave(o) {
+  const g = o.generic;
+  if (!g) { $("wave-head").textContent = "No generic ballot data yet."; return; }
+  const color = g.margin > 1.5 ? "var(--nd)" : g.margin < -1.5 ? "var(--lr)" : "var(--ink-dim)";
+  $("wave-head").className = "";
+  $("wave-head").innerHTML =
+    `<span class="big num" style="color:${color}">${fmtM(g.margin)}</span>` +
+    `<span class="label-pill" style="background:${color};color:#0a0f18">${esc(g.label)}</span>` +
+    `<div class="note" style="margin-top:8px">Democrats ${g.dem}% · Republicans ${g.rep}%${g.polls ? ` · ${g.polls} polls` : ""}</div>`;
+  let html = `<div class="track"></div>`;
+  for (const h of o.history) {
+    html += `<div class="hist" style="left:${pos(h.margin)}%" title="${h.year}: ${fmtM(h.margin)}, ${esc(h.note)}"><span>${h.year}</span></div>`;
+  }
+  const mk = o.markets && o.markets.popVoteMarginD;
+  if (mk != null) html += `<div class="hist" style="left:${pos(mk)}%;background:var(--money);width:3px" title="Kalshi popular-vote market: ${fmtM(mk)}"><span style="color:var(--money);top:-18px">Markets</span></div>`;
+  html += `<div class="now" style="left:calc(${pos(g.margin)}% - 2px)"><span>Polls</span></div>`;
+  $("wave").innerHTML = html;
+  const closest = [...o.history].sort((a, b) => Math.abs(a.margin - g.margin) - Math.abs(b.margin - g.margin))[0];
+  $("wave-note").innerHTML =
+    `Closest recent midterm environment: <b>${closest.year}</b> (${fmtM(closest.margin)} national House vote, ${esc(closest.note)}). ` +
+    `Gray marks are past midterm results${mk != null ? `; the gold mark is the Kalshi popular-vote market (${fmtM(mk)})` : ""}. Source: ${esc(g.source || "polling average")}${g.asOf ? `, as of ${esc(String(g.asOf).slice(0, 10))}` : ""}.` +
+    (g.asOf && (Date.now() - new Date(g.asOf)) / 864e5 > 21 ? ` <b>This average is more than three weeks old.</b>` : "");
+}
+
+function seatBar(d, r, total, line, lineLabel) {
+  const other = total - d - r;
+  return `<div class="bar-wrap"><div class="bar">
+      <div style="width:${(d / total) * 100}%;background:var(--nd)"></div>
+      <div style="width:${(other / total) * 100}%;background:var(--vac)"></div>
+      <div style="width:${(r / total) * 100}%;background:var(--lr)"></div>
+    </div><div class="tick" style="left:${(line / total) * 100}%"><span>${lineLabel}</span></div></div>`;
+}
+
+function renderHouse(o) {
+  const h = o.house, cur = h.current;
+  const curD = cur.D + (cur.I || 0);
+  $("house-card").innerHTML = `<h2>House · 218 for control</h2>
+    <div class="stats">
+      <div class="stat"><div class="v num"><span class="d">${h.expectedD}</span> · <span class="r">${h.expectedR}</span></div><div class="k">Projected seats</div></div>
+      <div class="stat"><div class="v num ${h.netD >= 0 ? "d" : "r"}">${h.netD >= 0 ? "D +" + h.netD : "R +" + -h.netD}</div><div class="k">Net change</div></div>
+    </div>
+    ${seatBar(h.expectedD, h.expectedR, 435, 218, "218")}
+    <div class="kv"><span class="k">Current House</span><span class="num"><span class="d">${cur.D}D</span> · <span class="r">${cur.R}R</span>${cur.I ? ` · ${cur.I}I` : ""}${cur.vacant ? ` · ${cur.vacant} vacant` : ""}</span></div>
+    <div class="kv"><span class="k">By ratings (Solid + Likely + Lean)</span><span class="num"><span class="d">${h.byRating.D}D</span> · <span class="r">${h.byRating.R}R</span></span></div>
+    <div class="kv"><span class="k">Tilt races</span><span class="num"><span class="d">${h.byRating.tiltD} tilt D</span> · <span class="r">${h.byRating.tiltR} tilt R</span></span></div>
+    <div class="kv"><span class="k">Kalshi district markets</span><span class="num">${h.kalshiMarkets}</span></div>
+    <p class="note">Projection adds up each seat's chance: Kalshi odds where a market exists, the race rating everywhere else. It is an expected seat count, not a forecast model.</p>`;
+}
+
+function renderSenate(o) {
+  const s = o.senate, cur = s.current;
+  const curD = cur.D + cur.I;
+  $("senate-card").innerHTML = `<h2>Senate · 51 for Democratic control</h2>
+    <div class="stats">
+      <div class="stat"><div class="v num"><span class="d">${s.expectedD}</span> · <span class="r">${s.expectedR}</span></div><div class="k">Projected seats</div></div>
+      <div class="stat"><div class="v num">${s.dNetNeeded > 0 ? "D +" + s.dNetNeeded : "Held"}</div><div class="k">Dems need</div></div>
+    </div>
+    ${seatBar(s.expectedD, s.expectedR, 100, 51, "51")}
+    <div class="kv"><span class="k">Current Senate</span><span class="num"><span class="d">${cur.D}D + ${cur.I}I</span> · <span class="r">${cur.R}R</span></span></div>
+    <div class="kv"><span class="k">Not up in 2026</span><span class="num"><span class="d">${s.holdover.D}</span> · <span class="r">${s.holdover.R}</span></span></div>
+    <div class="kv"><span class="k">Seats on the ballot</span><span class="num">${s.races.length} (${s.races.filter((x) => x.special).length} special)</span></div>
+    <p class="note">The vice president breaks ties for Republicans, so Democrats need 51 seats (independents counted with Democrats). Races without a Kalshi market are scored by the party that holds them.</p>`;
+}
+
+function renderControl(o) {
+  const m = o.markets || {};
+  const tiles = [];
+  const tile = (v, k, cls = "") => tiles.push(`<div class="stat"><div class="v num ${cls}">${v}</div><div class="k">${k}</div></div>`);
+  if (m.houseControlD != null) tile(`${m.houseControlD}%`, "Dems win House", m.houseControlD >= 50 ? "d" : "r");
+  if (m.senateControlD != null) tile(`${m.senateControlD}%`, "Dems win Senate", m.senateControlD >= 50 ? "d" : "r");
+  if (m.blueWave && m.blueWave.pct != null) tile(`${m.blueWave.pct}%`, "Blue wave combo", "d");
+  if (m.popVoteMarginD != null) tile(fmtM(m.popVoteMarginD), "House popular vote", m.popVoteMarginD >= 0 ? "d" : "r");
+  if (m.houseSeatsD != null) tile(Math.round(m.houseSeatsD), "Median D House seats", m.houseSeatsD >= 218 ? "d" : "r");
+  if (m.senateSeatsWonD != null) tile(Math.round(m.senateSeatsWonD), "D Senate seats won (of 35)", "");
+  if (!tiles.length) return;
+  $("control-card").hidden = false;
+  $("mkt-stats").innerHTML = tiles.join("");
+  if (m.blueWave && m.blueWave.question) $("mkt-stats").insertAdjacentHTML("afterend", `<p class="note">Blue wave combo asks: ${esc(m.blueWave.question)}</p>`);
+}
+
+function renderGovernors(o) {
+  const g = o.governors || [];
+  if (!g.length) return;
+  $("gov-card").hidden = false;
+  $("gov-races").innerHTML = `<tr><th>State</th><th>Democrat</th><th>Republican</th><th>Kalshi D chance</th></tr>` + g.map((r) =>
+    `<tr><td>${esc(r.name)}</td><td class="d">${esc(r.dem || "")}</td><td class="r">${esc(r.rep || "")}</td>
+     <td><span class="oddsbar"><i style="width:${Math.round(r.kalshiD * 100)}%"></i></span><span class="num">${Math.round(r.kalshiD * 100)}%</span></td></tr>`).join("");
+}
+
+function renderFlips(o) {
+  const c = o.flipCounts;
+  $("flip-stats").innerHTML = `
+    <div class="stat"><div class="v num d">${c.houseRtoD}</div><div class="k">House R → D</div></div>
+    <div class="stat"><div class="v num r">${c.houseDtoR}</div><div class="k">House D → R</div></div>
+    <div class="stat"><div class="v num d">${c.senateRtoD}</div><div class="k">Senate R → D</div></div>
+    <div class="stat"><div class="v num r">${c.senateDtoR}</div><div class="k">Senate D → R</div></div>`;
+  if (!o.flips.length) { $("flips").innerHTML = `<tr><td class="empty">No seats currently favored to flip.</td></tr>`; return; }
+  $("flips").innerHTML = `<tr><th>Seat</th><th>Held by</th><th>Favored</th><th>Odds</th></tr>` + o.flips.map((f) =>
+    `<tr><td class="num">${esc(f.id)} <span class="note">${f.chamber === "Senate" ? "Sen" : ""}</span></td>
+     <td><span class="${partyCls(f.holder)}">${esc(f.incumbent || f.holder)}</span></td>
+     <td class="${partyCls(f.favored)}">${f.favored === "D" ? "Democrat" : "Republican"}</td>
+     <td class="num">${f.prob}%</td></tr>`).join("");
+}
+
+function renderTossups(o) {
+  if (!o.tossups.length) { $("tossups").innerHTML = `<tr><td class="empty">No Kalshi district markets yet.</td></tr>`; return; }
+  $("tossups").innerHTML = `<tr><th>Seat</th><th>Held by</th><th>D chance</th></tr>` + o.tossups.map((t) =>
+    `<tr><td class="num">${esc(t.id)}</td><td class="${partyCls(t.holder)}">${esc(t.incumbent || "Open")}</td>
+     <td><span class="oddsbar"><i style="width:${t.dPct}%"></i></span><span class="num">${t.dPct}%</span></td></tr>`).join("");
+}
+
+function renderSenateRaces(o) {
+  $("senate-races").innerHTML = `<tr><th>State</th><th>Seat held by</th><th>Kalshi D chance</th><th>Poll average</th></tr>` +
+    o.senate.races.map((r) => {
+      const k = r.kalshiD == null ? `<span class="note">no market</span>` :
+        `<span class="oddsbar"><i style="width:${Math.round(r.kalshiD * 100)}%"></i></span><span class="num">${Math.round(r.kalshiD * 100)}%</span>`;
+      const p = r.nyt && r.nyt.averageMargin != null ? `<span class="num ${r.nyt.averageMargin >= 0 ? "d" : "r"}">${fmtM(r.nyt.averageMargin)}</span> <span class="note">${r.nyt.averagePolls} polls</span>` : `<span class="note">n/a</span>`;
+      return `<tr><td>${esc(r.name)}${r.special ? ` <span class="note">special</span>` : ""}</td>
+        <td class="${partyCls(r.holder)}">${esc(r.incumbent)}</td><td>${k}</td><td>${p}</td></tr>`;
+    }).join("");
+}
+
+function renderFooter(o) {
+  const s = o.sources || {};
+  const nyt = s.nytAttribution
+    ? `<a href="${esc(s.nytAttribution.source)}">${esc(s.nytAttribution.text)}</a> (<a href="${esc(s.nytAttribution.license)}">license</a>), updated ${ago(s.nytUpdated)}. `
+    : "";
+  const polls = o.generic && o.generic.source ? `Polls: ${esc(o.generic.source)}. ` : "";
+  $("footer").innerHTML = `${nyt}${polls}Prediction markets: Kalshi, updated ${ago(s.kalshiUpdated)}. Ratings and seat data from this site's ratings table and the congressional members dataset. Past midterm results are national House popular vote margins. Page built ${ago(o.generatedAt)}.`;
+}
+
+fetch("data/overview.json", { cache: "no-store" })
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then((o) => {
+    renderWave(o); renderHouse(o); renderSenate(o); renderControl(o);
+    renderFlips(o); renderTossups(o); renderSenateRaces(o); renderGovernors(o); renderFooter(o);
+  })
+  .catch((e) => {
+    document.querySelector("main").insertAdjacentHTML("afterbegin",
+      `<section class="card"><p class="empty">Couldn't load data/overview.json (${esc(e.message)}). It is built by the Kalshi and NYT polls workflows.</p></section>`);
+  });
+</script>
+</body>
+</html>
