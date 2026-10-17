@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T06:14:06.640Z",
+  "generatedAt": "2026-10-17T11:11:21.558Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -151,7 +151,7 @@
         "incumbent": "Dan Sullivan",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.745,
+        "kalshiD": 0.738,
         "nyt": {
           "averageMargin": 2.3,
           "averagePolls": 14,
@@ -236,7 +236,7 @@
         "incumbent": "Ashley Moody",
         "holder": "R",
         "special": true,
-        "kalshiD": 0.079,
+        "kalshiD": 0.08199999999999999,
         "nyt": {
           "averageMargin": -6.3,
           "averagePolls": 12,
@@ -270,7 +270,7 @@
         "incumbent": "Jon Ossoff",
         "holder": "D",
         "special": false,
-        "kalshiD": 0.95,
+        "kalshiD": 0.9490000000000001,
         "nyt": {
           "averageMargin": 8.7,
           "averagePolls": 12,
@@ -304,7 +304,7 @@
         "incumbent": "Thom Tillis",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.955,
+        "kalshiD": 0.9540000000000001,
         "nyt": {
           "averageMargin": 9.9,
           "averagePolls": 41,
@@ -393,15 +393,6 @@
         }
       },
       {
-        "state": "WV",
-        "name": "West Virginia",
-        "incumbent": "Shelley Moore Capito",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.021,
-        "nyt": null
-      },
-      {
         "state": "DE",
         "name": "Delaware",
         "incumbent": "Christopher A. Coons",
@@ -480,12 +471,21 @@
         }
       },
       {
+        "state": "WV",
+        "name": "West Virginia",
+        "incumbent": "Shelley Moore Capito",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.011000000000000001,
+        "nyt": null
+      },
+      {
         "state": "MT",
         "name": "Montana",
         "incumbent": "Steve Daines",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.009000000000000001,
+        "kalshiD": 0.01,
         "nyt": {
           "averageMargin": -20.8,
           "averagePolls": 11,
@@ -636,7 +636,7 @@
       "ladder": [
         {
           "atLeast": 2,
-          "pct": 96.5
+          "pct": 96
         },
         {
           "atLeast": 4,
@@ -656,7 +656,7 @@
         },
         {
           "atLeast": 11,
-          "pct": 22
+          "pct": 21.5
         },
         {
           "atLeast": 12,
@@ -683,7 +683,7 @@
         },
         {
           "atLeast": 214,
-          "pct": 97
+          "pct": 96.5
         },
         {
           "atLeast": 218,
@@ -695,7 +695,7 @@
         },
         {
           "atLeast": 226,
-          "pct": 81
+          "pct": 80.5
         },
         {
           "atLeast": 230,
@@ -711,15 +711,15 @@
         },
         {
           "atLeast": 242,
-          "pct": 33.5
+          "pct": 36
         },
         {
           "atLeast": 246,
-          "pct": 26.5
+          "pct": 25.5
         },
         {
           "atLeast": 250,
-          "pct": 14
+          "pct": 13.5
         }
       ]
     },
@@ -734,7 +734,7 @@
         },
         {
           "atLeast": 11,
-          "pct": 98
+          "pct": 97.5
         },
         {
           "atLeast": 12,
@@ -742,15 +742,15 @@
         },
         {
           "atLeast": 13,
-          "pct": 94.5
+          "pct": 94
         },
         {
           "atLeast": 14,
-          "pct": 92.5
+          "pct": 92
         },
         {
           "atLeast": 15,
-          "pct": 85
+          "pct": 84.5
         },
         {
           "atLeast": 16,
@@ -770,7 +770,7 @@
         },
         {
           "atLeast": 20,
-          "pct": 19.5
+          "pct": 20
         },
         {
           "atLeast": 21,
@@ -778,7 +778,7 @@
         },
         {
           "atLeast": 22,
-          "pct": 4.5
+          "pct": 5
         }
       ]
     },
@@ -790,9 +790,9 @@
     "redWave": {
       "event": "KXREDWAVECOMBO-27FEBB",
       "question": "Yes",
-      "pct": 7.5
+      "pct": 6.5
     },
-    "fetchedAt": "2026-10-17T06:14:06.577Z"
+    "fetchedAt": "2026-10-17T11:11:21.497Z"
   },
   "markets": {
     "houseControlD": 90.2,
@@ -826,7 +826,7 @@
     {
       "state": "OH",
       "name": "Ohio",
-      "kalshiD": 0.698,
+      "kalshiD": 0.705,
       "dem": "Amy Acton",
       "rep": "Vivek Ramaswamy",
       "poll": null
@@ -840,14 +840,6 @@
       "poll": null
     },
     {
-      "state": "OR",
-      "name": "Oregon",
-      "kalshiD": 0.755,
-      "dem": "Tina Kotek",
-      "rep": "Christine Drazan",
-      "poll": null
-    },
-    {
       "state": "VT",
       "name": "Vermont",
       "kalshiD": 0.243,
@@ -856,9 +848,17 @@
       "poll": null
     },
     {
+      "state": "OR",
+      "name": "Oregon",
+      "kalshiD": 0.763,
+      "dem": "Tina Kotek",
+      "rep": "Christine Drazan",
+      "poll": null
+    },
+    {
       "state": "FL",
       "name": "Florida",
-      "kalshiD": 0.205,
+      "kalshiD": 0.203,
       "dem": "David Jolly",
       "rep": "Byron Donalds",
       "poll": null
@@ -866,7 +866,7 @@
     {
       "state": "WI",
       "name": "Wisconsin",
-      "kalshiD": 0.805,
+      "kalshiD": 0.8029999999999999,
       "dem": "David Crowley",
       "rep": "Tom Tiffany",
       "poll": null
@@ -874,7 +874,7 @@
     {
       "state": "IA",
       "name": "Iowa",
-      "kalshiD": 0.889,
+      "kalshiD": 0.875,
       "dem": "Rob Sand",
       "rep": "Zach Lahn",
       "poll": null
@@ -882,7 +882,7 @@
     {
       "state": "NE",
       "name": "Nebraska",
-      "kalshiD": 0.11,
+      "kalshiD": 0.114,
       "dem": "Lynne Walz",
       "rep": "Jim Pillen",
       "poll": null
@@ -890,7 +890,7 @@
     {
       "state": "AZ",
       "name": "Arizona",
-      "kalshiD": 0.894,
+      "kalshiD": 0.8959999999999999,
       "dem": "Katie Hobbs",
       "rep": "Andy Biggs",
       "poll": null
@@ -904,17 +904,9 @@
       "poll": null
     },
     {
-      "state": "AL",
-      "name": "Alabama",
-      "kalshiD": 0.081,
-      "dem": "Doug Jones",
-      "rep": "Tommy Tuberville",
-      "poll": null
-    },
-    {
       "state": "TN",
       "name": "Tennessee",
-      "kalshiD": 0.07400000000000001,
+      "kalshiD": 0.075,
       "dem": "Jerri Green",
       "rep": "Marsha Blackburn",
       "poll": null
@@ -928,25 +920,33 @@
       "poll": null
     },
     {
-      "state": "NM",
-      "name": "New Mexico",
-      "kalshiD": 0.9390000000000001,
-      "dem": "Deb Haaland",
-      "rep": "Greggory D. Hull",
+      "state": "AL",
+      "name": "Alabama",
+      "kalshiD": 0.064,
+      "dem": "Doug Jones",
+      "rep": "Tommy Tuberville",
       "poll": null
     },
     {
       "state": "MI",
       "name": "Michigan",
-      "kalshiD": 0.941,
+      "kalshiD": 0.9390000000000001,
       "dem": "Jocelyn Benson",
       "rep": "John James",
       "poll": null
     },
     {
+      "state": "NM",
+      "name": "New Mexico",
+      "kalshiD": 0.941,
+      "dem": "Deb Haaland",
+      "rep": "Greggory D. Hull",
+      "poll": null
+    },
+    {
       "state": "ME",
       "name": "Maine",
-      "kalshiD": 0.945,
+      "kalshiD": 0.9440000000000001,
       "dem": "Hannah Pingree",
       "rep": "Robert Charles",
       "poll": null
@@ -970,7 +970,7 @@
     {
       "state": "MN",
       "name": "Minnesota",
-      "kalshiD": 0.951,
+      "kalshiD": 0.95,
       "dem": "Amy Klobuchar",
       "rep": "Lisa Demuth",
       "poll": null
@@ -1002,7 +1002,7 @@
     {
       "state": "IL",
       "name": "Illinois",
-      "kalshiD": 0.968,
+      "kalshiD": 0.9670000000000001,
       "dem": "JB Pritzker",
       "rep": "Darren Bailey",
       "poll": null
@@ -1034,7 +1034,7 @@
     {
       "state": "HI",
       "name": "Hawaii",
-      "kalshiD": 0.983,
+      "kalshiD": 0.9840000000000001,
       "dem": "Josh Green",
       "rep": "Gary Cordery",
       "poll": null
@@ -1095,7 +1095,7 @@
       "holder": "R",
       "incumbent": "Thom Tillis",
       "favored": "D",
-      "prob": 96
+      "prob": 95
     },
     {
       "chamber": "House",
@@ -1147,14 +1147,6 @@
     },
     {
       "chamber": "House",
-      "id": "CO-08",
-      "holder": "R",
-      "incumbent": "Gabe Evans",
-      "favored": "D",
-      "prob": 85
-    },
-    {
-      "chamber": "House",
       "id": "TX-32",
       "holder": "D",
       "incumbent": "Julie Johnson",
@@ -1171,10 +1163,10 @@
     },
     {
       "chamber": "House",
-      "id": "TX-09",
-      "holder": "D",
-      "incumbent": "Al Green",
-      "favored": "R",
+      "id": "CO-08",
+      "holder": "R",
+      "incumbent": "Gabe Evans",
+      "favored": "D",
       "prob": 84
     },
     {
@@ -1184,6 +1176,14 @@
       "incumbent": "Monica De La Cruz",
       "favored": "D",
       "prob": 84
+    },
+    {
+      "chamber": "House",
+      "id": "TX-09",
+      "holder": "D",
+      "incumbent": "Al Green",
+      "favored": "R",
+      "prob": 83
     },
     {
       "chamber": "House",
@@ -1210,14 +1210,6 @@
       "prob": 80
     },
     {
-      "chamber": "Senate",
-      "id": "AK",
-      "holder": "R",
-      "incumbent": "Dan Sullivan",
-      "favored": "D",
-      "prob": 75
-    },
-    {
       "chamber": "House",
       "id": "PA-08",
       "holder": "R",
@@ -1230,6 +1222,14 @@
       "id": "WI-03",
       "holder": "R",
       "incumbent": "Derrick Van Orden",
+      "favored": "D",
+      "prob": 74
+    },
+    {
+      "chamber": "Senate",
+      "id": "AK",
+      "holder": "R",
+      "incumbent": "Dan Sullivan",
       "favored": "D",
       "prob": 74
     },
@@ -1363,13 +1363,13 @@
       "id": "NC-01",
       "holder": "D",
       "incumbent": "Donald G. Davis",
-      "dPct": 66
+      "dPct": 67
     },
     {
       "id": "MT-01",
       "holder": "R",
       "incumbent": "Ryan K. Zinke",
-      "dPct": 31
+      "dPct": 33
     },
     {
       "id": "CO-03",
@@ -1390,14 +1390,14 @@
       "dPct": 74
     },
     {
-      "id": "FL-13",
+      "id": "WI-03",
       "holder": "R",
-      "incumbent": "Anna Paulina Luna",
-      "dPct": 26
+      "incumbent": "Derrick Van Orden",
+      "dPct": 74
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-10-17T06:14:06.578Z",
+    "kalshiUpdated": "2026-10-17T11:11:21.497Z",
     "nytUpdated": null,
     "nytAttribution": null
   }
