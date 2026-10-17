@@ -1,8 +1,36 @@
 {
   "raceId": "AR-S-2026",
-  "count": 5,
-  "updated_at": "2026-10-17T02:09:07.969Z",
+  "count": 6,
+  "updated_at": "2026-10-17T14:50:06.578Z",
   "polls": [
+    {
+      "pollster": "Hendrix College",
+      "endDate": "2026-10-13",
+      "fieldDates": "2026-10-13",
+      "sampleSize": 709,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Hallie Shoffner (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Tom Cotton (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AR"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0703
+    },
     {
       "pollster": "GrayHouse",
       "endDate": "2026-10-04",
@@ -29,7 +57,7 @@
         "https://pollingsource.com/senate/AR"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3875
+      "weight": 0.3828
     },
     {
       "pollster": "J.L. Partners",
@@ -57,7 +85,7 @@
         "https://pollingsource.com/senate/AR"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3162
+      "weight": 0.3123
     },
     {
       "pollster": "Hendrix College",
@@ -85,13 +113,13 @@
         "https://pollingsource.com/senate/AR"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3388
+      "weight": 0.3347
     },
     {
       "pollster": "2040 Strategy Group (D)",
       "endDate": "2026-07-25",
       "endDateUS": "7/25/2026",
-      "weight": 0.0776,
+      "weight": 0.0766,
       "sampleSize": 586,
       "population": "LV",
       "results": [
