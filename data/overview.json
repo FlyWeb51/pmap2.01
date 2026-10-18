@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T21:47:03.466Z",
+  "generatedAt": "2026-10-18T00:03:14.965Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -168,7 +168,7 @@
         "incumbent": "Darline Graham",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.172,
+        "kalshiD": 0.17300000000000001,
         "nyt": {
           "averageMargin": -3.1,
           "averagePolls": 8,
@@ -253,7 +253,7 @@
         "incumbent": "Tom Cotton",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.059000000000000004,
+        "kalshiD": 0.06,
         "nyt": {
           "averageMargin": -8.3,
           "averagePolls": 5,
@@ -287,7 +287,7 @@
         "incumbent": "Bill Hagerty",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.047,
+        "kalshiD": 0.048,
         "nyt": {
           "averageMargin": -20,
           "averagePolls": 1,
@@ -316,12 +316,21 @@
         }
       },
       {
+        "state": "NJ",
+        "name": "New Jersey",
+        "incumbent": "Cory A. Booker",
+        "holder": "D",
+        "special": false,
+        "kalshiD": 0.966,
+        "nyt": null
+      },
+      {
         "state": "LA",
         "name": "Louisiana",
         "incumbent": "Bill Cassidy",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.034,
+        "kalshiD": 0.033,
         "nyt": {
           "averageMargin": -4,
           "averagePolls": 2,
@@ -331,15 +340,6 @@
           },
           "source": "site"
         }
-      },
-      {
-        "state": "NJ",
-        "name": "New Jersey",
-        "incumbent": "Cory A. Booker",
-        "holder": "D",
-        "special": false,
-        "kalshiD": 0.9670000000000001,
-        "nyt": null
       },
       {
         "state": "AL",
@@ -480,12 +480,21 @@
         }
       },
       {
+        "state": "CO",
+        "name": "Colorado",
+        "incumbent": "John W. Hickenlooper",
+        "holder": "D",
+        "special": false,
+        "kalshiD": 0.991,
+        "nyt": null
+      },
+      {
         "state": "MT",
         "name": "Montana",
         "incumbent": "Steve Daines",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.011000000000000001,
+        "kalshiD": 0.008,
         "nyt": {
           "averageMargin": -22.6,
           "averagePolls": 12,
@@ -497,21 +506,12 @@
         }
       },
       {
-        "state": "CO",
-        "name": "Colorado",
-        "incumbent": "John W. Hickenlooper",
-        "holder": "D",
-        "special": false,
-        "kalshiD": 0.991,
-        "nyt": null
-      },
-      {
         "state": "WY",
         "name": "Wyoming",
         "incumbent": "Cynthia M. Lummis",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.006999999999999999,
+        "kalshiD": 0.006,
         "nyt": null
       },
       {
@@ -520,7 +520,7 @@
         "incumbent": "James E. Risch",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.005,
+        "kalshiD": 0.003,
         "nyt": null
       },
       {
@@ -529,7 +529,7 @@
         "incumbent": "Mike Rounds",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.001,
+        "kalshiD": 0.003,
         "nyt": null
       },
       {
@@ -625,7 +625,7 @@
         {
           "ticker": "CONTROLS-2026-R",
           "label": "Republican Party",
-          "pct": 38
+          "pct": 38.5
         }
       ]
     },
@@ -640,15 +640,15 @@
         },
         {
           "atLeast": 4,
-          "pct": 91.5
+          "pct": 91
         },
         {
           "atLeast": 6,
-          "pct": 85
+          "pct": 84.5
         },
         {
           "atLeast": 8,
-          "pct": 65
+          "pct": 64.5
         },
         {
           "atLeast": 10,
@@ -668,7 +668,7 @@
         },
         {
           "atLeast": 16,
-          "pct": 2
+          "pct": 2.5
         }
       ]
     },
@@ -730,7 +730,7 @@
       "ladder": [
         {
           "atLeast": 10,
-          "pct": 98.5
+          "pct": 98
         },
         {
           "atLeast": 11,
@@ -770,7 +770,7 @@
         },
         {
           "atLeast": 20,
-          "pct": 19.5
+          "pct": 20
         },
         {
           "atLeast": 21,
@@ -790,9 +790,9 @@
     "redWave": {
       "event": "KXREDWAVECOMBO-27FEBB",
       "question": "Yes",
-      "pct": 7.5
+      "pct": 7
     },
-    "fetchedAt": "2026-10-17T21:47:03.406Z"
+    "fetchedAt": "2026-10-18T00:03:14.905Z"
   },
   "markets": {
     "houseControlD": 90.2,
@@ -874,7 +874,7 @@
     {
       "state": "IA",
       "name": "Iowa",
-      "kalshiD": 0.875,
+      "kalshiD": 0.8759999999999999,
       "dem": "Rob Sand",
       "rep": "Zach Lahn",
       "poll": null
@@ -904,6 +904,14 @@
       "poll": null
     },
     {
+      "state": "MI",
+      "name": "Michigan",
+      "kalshiD": 0.924,
+      "dem": "Jocelyn Benson",
+      "rep": "John James",
+      "poll": null
+    },
+    {
       "state": "TN",
       "name": "Tennessee",
       "kalshiD": 0.07400000000000001,
@@ -912,17 +920,9 @@
       "poll": null
     },
     {
-      "state": "MI",
-      "name": "Michigan",
-      "kalshiD": 0.9279999999999999,
-      "dem": "Jocelyn Benson",
-      "rep": "John James",
-      "poll": null
-    },
-    {
       "state": "AL",
       "name": "Alabama",
-      "kalshiD": 0.066,
+      "kalshiD": 0.067,
       "dem": "Doug Jones",
       "rep": "Tommy Tuberville",
       "poll": null
@@ -944,6 +944,14 @@
       "poll": null
     },
     {
+      "state": "ME",
+      "name": "Maine",
+      "kalshiD": 0.9420000000000001,
+      "dem": "Hannah Pingree",
+      "rep": "Robert Charles",
+      "poll": null
+    },
+    {
       "state": "SC",
       "name": "South Carolina",
       "kalshiD": 0.057,
@@ -952,17 +960,9 @@
       "poll": null
     },
     {
-      "state": "ME",
-      "name": "Maine",
-      "kalshiD": 0.946,
-      "dem": "Hannah Pingree",
-      "rep": "Robert Charles",
-      "poll": null
-    },
-    {
       "state": "MA",
       "name": "Massachusetts",
-      "kalshiD": 0.9470000000000001,
+      "kalshiD": 0.946,
       "dem": "Maura Healey",
       "rep": "Mike Minogue",
       "poll": null
@@ -978,9 +978,17 @@
     {
       "state": "CA",
       "name": "California",
-      "kalshiD": 0.955,
+      "kalshiD": 0.96,
       "dem": "Xavier Becerra",
       "rep": "Steve Hilton",
+      "poll": null
+    },
+    {
+      "state": "IL",
+      "name": "Illinois",
+      "kalshiD": 0.961,
+      "dem": "JB Pritzker",
+      "rep": "Darren Bailey",
       "poll": null
     },
     {
@@ -997,14 +1005,6 @@
       "kalshiD": 0.966,
       "dem": "Phil Weiser",
       "rep": "Victor Marx",
-      "poll": null
-    },
-    {
-      "state": "IL",
-      "name": "Illinois",
-      "kalshiD": 0.9670000000000001,
-      "dem": "JB Pritzker",
-      "rep": "Darren Bailey",
       "poll": null
     },
     {
@@ -1034,25 +1034,25 @@
     {
       "state": "AR",
       "name": "Arkansas",
-      "kalshiD": 0.021,
+      "kalshiD": 0.02,
       "dem": "Fred Love",
       "rep": "Sarah Huckabee Sanders",
       "poll": null
     },
     {
-      "state": "HI",
-      "name": "Hawaii",
-      "kalshiD": 0.985,
-      "dem": "Josh Green",
-      "rep": "Gary Cordery",
+      "state": "WY",
+      "name": "Wyoming",
+      "kalshiD": 0.015,
+      "dem": "Kenneth Casner",
+      "rep": "Eric Barlow",
       "poll": null
     },
     {
-      "state": "WY",
-      "name": "Wyoming",
-      "kalshiD": 0.013999999999999999,
-      "dem": "Kenneth Casner",
-      "rep": "Eric Barlow",
+      "state": "HI",
+      "name": "Hawaii",
+      "kalshiD": 0.986,
+      "dem": "Josh Green",
+      "rep": "Gary Cordery",
       "poll": null
     },
     {
@@ -1103,7 +1103,7 @@
       "holder": "R",
       "incumbent": "Don Bacon",
       "favored": "D",
-      "prob": 94
+      "prob": 95
     },
     {
       "chamber": "House",
@@ -1118,6 +1118,14 @@
       "id": "IA-01",
       "holder": "R",
       "incumbent": "Mariannette Miller-Meeks",
+      "favored": "D",
+      "prob": 91
+    },
+    {
+      "chamber": "House",
+      "id": "VA-02",
+      "holder": "R",
+      "incumbent": "Jennifer A. Kiggans",
       "favored": "D",
       "prob": 90
     },
@@ -1134,14 +1142,6 @@
       "id": "PA-07",
       "holder": "R",
       "incumbent": "Ryan Mackenzie",
-      "favored": "D",
-      "prob": 87
-    },
-    {
-      "chamber": "House",
-      "id": "VA-02",
-      "holder": "R",
-      "incumbent": "Jennifer A. Kiggans",
       "favored": "D",
       "prob": 87
     },
@@ -1295,7 +1295,7 @@
       "holder": "R",
       "incumbent": "Robert J. Wittman",
       "favored": "D",
-      "prob": 55
+      "prob": 56
     }
   ],
   "flipCounts": {
@@ -1315,7 +1315,7 @@
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
-      "dPct": 55
+      "dPct": 56
     },
     {
       "id": "TX-35",
@@ -1397,7 +1397,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-10-17T21:47:03.406Z",
+    "kalshiUpdated": "2026-10-18T00:03:14.906Z",
     "nytUpdated": null,
     "nytAttribution": null
   }
