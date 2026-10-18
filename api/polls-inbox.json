@@ -38436,5 +38436,51 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/MT",
     "scrapedAt": "2026-10-17T14:49:14.291Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "rowspan=2 style=\"text-align:left;|National Public Affairs",
+    "partisanLean": "R",
+    "fieldDates": "rowspan=2 |October 8–12, 2026",
+    "sampleSize": 600,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chris Pappas (D)",
+        "pct": 50
+      },
+      {
+        "candidate": "John E. Sununu (R)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-10-18T02:07:23.723Z"
+  },
+  {
+    "raceId": "MT",
+    "pollster": "Concord Public Opinion Partners  Internal",
+    "partisanLean": "D",
+    "fieldDates": "2026-10-08",
+    "sampleSize": 405,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Alani Bankhead",
+        "pct": 13
+      },
+      {
+        "candidate": "Kurt Alme",
+        "pct": 35
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/MT",
+    "scrapedAt": "2026-10-18T02:08:24.648Z"
   }
 ]

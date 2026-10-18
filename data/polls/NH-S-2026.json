@@ -1,8 +1,36 @@
 {
   "raceId": "NH-S-2026",
-  "count": 43,
-  "updated_at": "2026-10-17T14:50:06.604Z",
+  "count": 44,
+  "updated_at": "2026-10-18T02:09:20.231Z",
   "polls": [
+    {
+      "pollster": "National Public Affairs",
+      "endDate": "2026-10-12",
+      "fieldDates": "October 8–12, 2026",
+      "sampleSize": 600,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "John E. Sununu (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4045
+    },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-05",
@@ -30,7 +58,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3026
+      "weight": 1.2885
     },
     {
       "pollster": "Saint Anselm College",
@@ -59,7 +87,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9389
+      "weight": 0.9287
     },
     {
       "pollster": "Trafalgar Group",
@@ -88,7 +116,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4568
+      "weight": 0.4518
     },
     {
       "pollster": "Trafalgar Group",
@@ -117,7 +145,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4378
+      "weight": 0.433
     },
     {
       "pollster": "New York Times/Siena University",
@@ -146,7 +174,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6061
+      "weight": 0.5995
     },
     {
       "pollster": "University of New Hampshire",
@@ -175,7 +203,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9105
+      "weight": 0.9006
     },
     {
       "pollster": "InsiderAdvantage",
@@ -204,7 +232,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3818
+      "weight": 0.3777
     },
     {
       "pollster": "co/efficient",
@@ -233,7 +261,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.297
+      "weight": 0.2938
     },
     {
       "pollster": "Rasmussen Reports",
@@ -262,7 +290,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2965
+      "weight": 0.2933
     },
     {
       "pollster": "Fabrizio, Lee, & Associates",
@@ -291,7 +319,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1781
+      "weight": 0.1762
     },
     {
       "pollster": "University of New Hampshire",
@@ -319,7 +347,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4664,
+      "weight": 0.4613,
       "otherMatchup": true
     },
     {
@@ -348,7 +376,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3519,
+      "weight": 0.3481,
       "otherMatchup": true
     },
     {
@@ -377,12 +405,12 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.414
+      "weight": 0.4095
     },
     {
       "pollster": "Peak Insights (R)",
       "endDate": "2026-06-27",
-      "weight": 0.0741,
+      "weight": 0.0733,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -430,12 +458,12 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0371
+      "weight": 0.0367
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2026-06-25",
-      "weight": 0.1144,
+      "weight": 0.1132,
       "sampleSize": 1614,
       "population": "RV",
       "results": [
@@ -483,13 +511,13 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1144,
+      "weight": 0.1132,
       "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.1352,
+      "weight": 0.1337,
       "sampleSize": 2157,
       "population": "LV",
       "results": [
@@ -537,13 +565,13 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1352,
+      "weight": 0.1337,
       "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-04-21",
-      "weight": 0.0237,
+      "weight": 0.0234,
       "sampleSize": 1130,
       "population": "LV",
       "results": [
@@ -589,13 +617,13 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0216,
+      "weight": 0.0213,
       "otherMatchup": true
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-23",
-      "weight": 0.012,
+      "weight": 0.0118,
       "sampleSize": 1100,
       "population": "LV",
       "results": [
@@ -641,7 +669,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0097,
+      "weight": 0.0096,
       "otherMatchup": true
     },
     {
@@ -668,7 +696,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0105,
+      "weight": 0.0104,
       "otherMatchup": true
     },
     {
@@ -700,7 +728,7 @@
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-01-19",
-      "weight": 0.0038,
+      "weight": 0.0037,
       "sampleSize": 2038,
       "population": "LV",
       "results": [
@@ -798,7 +826,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0011,
+      "weight": 0.001,
       "otherMatchup": true
     },
     {
