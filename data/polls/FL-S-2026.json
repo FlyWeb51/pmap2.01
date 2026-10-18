@@ -1,8 +1,36 @@
 {
   "raceId": "FL-S-2026",
-  "count": 28,
-  "updated_at": "2026-10-18T02:09:20.214Z",
+  "count": 29,
+  "updated_at": "2026-10-18T15:17:21.210Z",
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "endDate": "2026-10-15",
+      "fieldDates": "2026-10-15",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 53,
+          "percentage": 53
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8223
+    },
     {
       "pollster": "MDW Communications",
       "endDate": "2026-10-10",
@@ -29,7 +57,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8295
+      "weight": 0.8191
     },
     {
       "pollster": "Stetson University",
@@ -57,7 +85,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.97
+      "weight": 0.9578
     },
     {
       "pollster": "St. Pete Polls",
@@ -85,7 +113,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0008
+      "weight": 0.9882
     },
     {
       "pollster": "YouGov",
@@ -113,7 +141,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 1.478
+      "weight": 1.4595
     },
     {
       "pollster": "James Madison Institute",
@@ -141,7 +169,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1051
+      "weight": 1.0912
     },
     {
       "pollster": "Mason-Dixon",
@@ -169,7 +197,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7533
+      "weight": 0.7438
     },
     {
       "pollster": "Change Research",
@@ -197,7 +225,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4478
+      "weight": 0.4422
     },
     {
       "pollster": "InsiderAdvantage",
@@ -225,7 +253,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2929
+      "weight": 0.2892
     },
     {
       "pollster": "Stetson University",
@@ -253,7 +281,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.689
+      "weight": 0.6804
     },
     {
       "pollster": "St. Pete Polls",
@@ -281,7 +309,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6588
+      "weight": 0.6506
     },
     {
       "pollster": "Quantus Insights",
@@ -309,7 +337,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2511
+      "weight": 0.2479
     },
     {
       "pollster": "Change Research D-sponsored",
@@ -337,12 +365,12 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3015
+      "weight": 0.2977
     },
     {
       "pollster": "University of North Florida",
       "endDate": "2026-07-17",
-      "weight": 0.1516,
+      "weight": 0.1497,
       "sampleSize": 848,
       "population": "LV",
       "results": [
@@ -391,7 +419,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1516
+      "weight": 0.1497
     },
     {
       "pollster": "Change Research",
@@ -419,13 +447,13 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0749,
+      "weight": 0.0739,
       "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.0774,
+      "weight": 0.0764,
       "sampleSize": 1015,
       "population": "LV",
       "results": [
@@ -451,7 +479,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.078,
+      "weight": 0.077,
       "sampleSize": 1273,
       "population": "RV",
       "results": [
@@ -500,12 +528,12 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0584
+      "weight": 0.0577
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-05-21",
-      "weight": 0.0221,
+      "weight": 0.0218,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
@@ -535,7 +563,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.05,
+      "weight": 0.0494,
       "sampleSize": 2070,
       "population": "RV",
       "results": [
@@ -561,7 +589,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.0496,
+      "weight": 0.049,
       "sampleSize": 1593,
       "population": "LV",
       "results": [
@@ -587,7 +615,7 @@
     {
       "pollster": "Cherry Communications (R)",
       "endDate": "2026-05-09",
-      "weight": 0.026,
+      "weight": 0.0256,
       "sampleSize": 604,
       "population": "LV",
       "results": [
@@ -613,7 +641,7 @@
     {
       "pollster": "Stetson University Center for Public Opinion Research",
       "endDate": "2026-04-13",
-      "weight": 0.0121,
+      "weight": 0.0119,
       "sampleSize": 434,
       "population": "LV",
       "results": [
@@ -639,7 +667,7 @@
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0106,
+      "weight": 0.0105,
       "sampleSize": 406,
       "population": "LV",
       "results": [
@@ -665,7 +693,7 @@
     {
       "pollster": "MDW Communications",
       "endDate": "2026-04-03",
-      "weight": 0.0197,
+      "weight": 0.0195,
       "sampleSize": 1834,
       "population": "LV",
       "results": [
@@ -691,7 +719,7 @@
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-03",
-      "weight": 0.0099,
+      "weight": 0.0098,
       "sampleSize": 574,
       "population": "RV",
       "results": [
@@ -717,7 +745,7 @@
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-31",
-      "weight": 0.0144,
+      "weight": 0.0142,
       "sampleSize": 1125,
       "population": "LV",
       "results": [
@@ -743,7 +771,7 @@
     {
       "pollster": "University of North Florida",
       "endDate": "2026-03-02",
-      "weight": 0.0061,
+      "weight": 0.006,
       "sampleSize": 772,
       "population": "LV",
       "results": [
