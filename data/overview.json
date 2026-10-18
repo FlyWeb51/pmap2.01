@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T04:34:43.189Z",
+  "generatedAt": "2026-10-18T09:07:27.787Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -253,7 +253,7 @@
         "incumbent": "Tom Cotton",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.059000000000000004,
+        "kalshiD": 0.062,
         "nyt": {
           "averageMargin": -8.3,
           "averagePolls": 5,
@@ -304,13 +304,30 @@
         "incumbent": "Thom Tillis",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.956,
+        "kalshiD": 0.9540000000000001,
         "nyt": {
           "averageMargin": 9.9,
           "averagePolls": 41,
           "latest": {
             "pollster": "SurveyUSA",
             "endDate": "2026-10-11"
+          },
+          "source": "site"
+        }
+      },
+      {
+        "state": "LA",
+        "name": "Louisiana",
+        "incumbent": "Bill Cassidy",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.034,
+        "nyt": {
+          "averageMargin": -4,
+          "averagePolls": 2,
+          "latest": {
+            "pollster": "Hart Research Associates",
+            "endDate": "2026-09-19"
           },
           "source": "site"
         }
@@ -323,23 +340,6 @@
         "special": false,
         "kalshiD": 0.966,
         "nyt": null
-      },
-      {
-        "state": "LA",
-        "name": "Louisiana",
-        "incumbent": "Bill Cassidy",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.033,
-        "nyt": {
-          "averageMargin": -4,
-          "averagePolls": 2,
-          "latest": {
-            "pollster": "Hart Research Associates",
-            "endDate": "2026-09-19"
-          },
-          "source": "site"
-        }
       },
       {
         "state": "OK",
@@ -359,29 +359,12 @@
         }
       },
       {
-        "state": "AL",
-        "name": "Alabama",
-        "incumbent": "Tommy Tuberville",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.023,
-        "nyt": {
-          "averageMargin": -21,
-          "averagePolls": 1,
-          "latest": {
-            "pollster": "RMG Research",
-            "endDate": "2026-09-25"
-          },
-          "source": "site"
-        }
-      },
-      {
         "state": "DE",
         "name": "Delaware",
         "incumbent": "Christopher A. Coons",
         "holder": "D",
         "special": false,
-        "kalshiD": 0.978,
+        "kalshiD": 0.975,
         "nyt": null
       },
       {
@@ -402,13 +385,21 @@
         }
       },
       {
-        "state": "VA",
-        "name": "Virginia",
-        "incumbent": "Mark R. Warner",
-        "holder": "D",
+        "state": "AL",
+        "name": "Alabama",
+        "incumbent": "Tommy Tuberville",
+        "holder": "R",
         "special": false,
-        "kalshiD": 0.9790000000000001,
-        "nyt": null
+        "kalshiD": 0.022000000000000002,
+        "nyt": {
+          "averageMargin": -21,
+          "averagePolls": 1,
+          "latest": {
+            "pollster": "RMG Research",
+            "endDate": "2026-09-25"
+          },
+          "source": "site"
+        }
       },
       {
         "state": "WV",
@@ -416,7 +407,16 @@
         "incumbent": "Shelley Moore Capito",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.02,
+        "kalshiD": 0.021,
+        "nyt": null
+      },
+      {
+        "state": "VA",
+        "name": "Virginia",
+        "incumbent": "Mark R. Warner",
+        "holder": "D",
+        "special": false,
+        "kalshiD": 0.9790000000000001,
         "nyt": null
       },
       {
@@ -515,21 +515,21 @@
         "nyt": null
       },
       {
-        "state": "ID",
-        "name": "Idaho",
-        "incumbent": "James E. Risch",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.003,
-        "nyt": null
-      },
-      {
         "state": "SD",
         "name": "South Dakota",
         "incumbent": "Mike Rounds",
         "holder": "R",
         "special": false,
         "kalshiD": 0.003,
+        "nyt": null
+      },
+      {
+        "state": "ID",
+        "name": "Idaho",
+        "incumbent": "James E. Risch",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.002,
         "nyt": null
       },
       {
@@ -648,7 +648,7 @@
         },
         {
           "atLeast": 8,
-          "pct": 64.5
+          "pct": 65.5
         },
         {
           "atLeast": 10,
@@ -675,7 +675,7 @@
     "houseSeatsD": {
       "event": "KXDHOUSEWON-26NOV03",
       "title": "How many House seats will Democrats win in the Midterms?",
-      "median": 237.1,
+      "median": 237,
       "ladder": [
         {
           "atLeast": 210,
@@ -707,7 +707,7 @@
         },
         {
           "atLeast": 238,
-          "pct": 47
+          "pct": 46.5
         },
         {
           "atLeast": 242,
@@ -730,7 +730,7 @@
       "ladder": [
         {
           "atLeast": 10,
-          "pct": 98.5
+          "pct": 97.5
         },
         {
           "atLeast": 11,
@@ -785,14 +785,14 @@
     "blueWave": {
       "event": "KXBLUEWAVECOMBO-27FEB",
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
-      "pct": 80.5
+      "pct": 79.5
     },
     "redWave": {
       "event": "KXREDWAVECOMBO-27FEBB",
       "question": "Yes",
       "pct": 7.5
     },
-    "fetchedAt": "2026-10-18T04:34:43.131Z"
+    "fetchedAt": "2026-10-18T09:07:27.726Z"
   },
   "markets": {
     "houseControlD": 90.2,
@@ -800,17 +800,17 @@
     "blueWave": {
       "event": "KXBLUEWAVECOMBO-27FEB",
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
-      "pct": 80.5
+      "pct": 79.5
     },
     "popVoteMarginD": 9.8,
-    "houseSeatsD": 237.1,
+    "houseSeatsD": 237,
     "senateSeatsWonD": 17.8
   },
   "governors": [
     {
       "state": "GA",
       "name": "Georgia",
-      "kalshiD": 0.48,
+      "kalshiD": 0.485,
       "dem": "Keisha Lance Bottoms",
       "rep": "Rick Jackson",
       "poll": null
@@ -818,7 +818,7 @@
     {
       "state": "NV",
       "name": "Nevada",
-      "kalshiD": 0.545,
+      "kalshiD": 0.551,
       "dem": "Aaron Ford",
       "rep": "Joe Lombardo",
       "poll": null
@@ -922,7 +922,7 @@
     {
       "state": "AL",
       "name": "Alabama",
-      "kalshiD": 0.069,
+      "kalshiD": 0.07,
       "dem": "Doug Jones",
       "rep": "Tommy Tuberville",
       "poll": null
@@ -946,7 +946,7 @@
     {
       "state": "ME",
       "name": "Maine",
-      "kalshiD": 0.941,
+      "kalshiD": 0.943,
       "dem": "Hannah Pingree",
       "rep": "Robert Charles",
       "poll": null
@@ -970,7 +970,7 @@
     {
       "state": "MN",
       "name": "Minnesota",
-      "kalshiD": 0.948,
+      "kalshiD": 0.946,
       "dem": "Amy Klobuchar",
       "rep": "Lisa Demuth",
       "poll": null
@@ -978,7 +978,7 @@
     {
       "state": "CA",
       "name": "California",
-      "kalshiD": 0.9620000000000001,
+      "kalshiD": 0.9570000000000001,
       "dem": "Xavier Becerra",
       "rep": "Steve Hilton",
       "poll": null
@@ -1026,7 +1026,7 @@
     {
       "state": "PA",
       "name": "Pennsylvania",
-      "kalshiD": 0.9790000000000001,
+      "kalshiD": 0.978,
       "dem": "Josh Shapiro",
       "rep": "Stacy Garrity",
       "poll": null
@@ -1095,7 +1095,7 @@
       "holder": "R",
       "incumbent": "Thom Tillis",
       "favored": "D",
-      "prob": 96
+      "prob": 95
     },
     {
       "chamber": "House",
@@ -1103,7 +1103,7 @@
       "holder": "R",
       "incumbent": "Don Bacon",
       "favored": "D",
-      "prob": 95
+      "prob": 94
     },
     {
       "chamber": "House",
@@ -1115,19 +1115,19 @@
     },
     {
       "chamber": "House",
-      "id": "IA-01",
-      "holder": "R",
-      "incumbent": "Mariannette Miller-Meeks",
-      "favored": "D",
-      "prob": 91
-    },
-    {
-      "chamber": "House",
       "id": "VA-02",
       "holder": "R",
       "incumbent": "Jennifer A. Kiggans",
       "favored": "D",
       "prob": 91
+    },
+    {
+      "chamber": "House",
+      "id": "IA-01",
+      "holder": "R",
+      "incumbent": "Mariannette Miller-Meeks",
+      "favored": "D",
+      "prob": 90
     },
     {
       "chamber": "House",
@@ -1144,14 +1144,6 @@
       "incumbent": "Ryan Mackenzie",
       "favored": "D",
       "prob": 87
-    },
-    {
-      "chamber": "House",
-      "id": "TX-15",
-      "holder": "R",
-      "incumbent": "Monica De La Cruz",
-      "favored": "D",
-      "prob": 85
     },
     {
       "chamber": "House",
@@ -1175,6 +1167,14 @@
       "holder": "D",
       "incumbent": "Al Green",
       "favored": "R",
+      "prob": 84
+    },
+    {
+      "chamber": "House",
+      "id": "TX-15",
+      "holder": "R",
+      "incumbent": "Monica De La Cruz",
+      "favored": "D",
       "prob": 84
     },
     {
@@ -1231,7 +1231,7 @@
       "holder": "R",
       "incumbent": "Robert P. Bresnahan, Jr.",
       "favored": "D",
-      "prob": 73
+      "prob": 72
     },
     {
       "chamber": "House",
@@ -1375,7 +1375,7 @@
       "id": "CO-03",
       "holder": "R",
       "incumbent": "Jeff Hurd",
-      "dPct": 30
+      "dPct": 31
     },
     {
       "id": "OH-09",
@@ -1387,7 +1387,7 @@
       "id": "PA-08",
       "holder": "R",
       "incumbent": "Robert P. Bresnahan, Jr.",
-      "dPct": 73
+      "dPct": 72
     },
     {
       "id": "WI-03",
@@ -1397,7 +1397,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-10-18T04:34:43.132Z",
+    "kalshiUpdated": "2026-10-18T09:07:27.726Z",
     "nytUpdated": null,
     "nytAttribution": null
   }
