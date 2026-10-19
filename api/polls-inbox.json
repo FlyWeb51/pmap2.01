@@ -38597,5 +38597,235 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/NH",
     "scrapedAt": "2026-10-18T15:16:31.115Z"
+  },
+  {
+    "raceId": "TX-senate",
+    "pollster": "CBS News/YouGov",
+    "partisanLean": null,
+    "fieldDates": "October 8–16, 2026",
+    "sampleSize": 1492,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ken Paxton (R)",
+        "pct": 49
+      },
+      {
+        "candidate": "James Talarico (D)",
+        "pct": 51
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+    "scrapedAt": "2026-10-19T02:24:50.675Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "Trafalgar Group",
+    "partisanLean": "R",
+    "fieldDates": "October 16–18, 2026",
+    "sampleSize": 1095,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Darline Graham (R)",
+        "pct": 49
+      },
+      {
+        "candidate": "Annie Andrews (D)",
+        "pct": 46
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-10-19T02:25:04.330Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "ABC/Wash Post/Ipsos",
+    "partisanLean": null,
+    "fieldDates": "2026-10-13",
+    "sampleSize": 2032,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 52
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-19T02:25:07.200Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Change Research",
+    "partisanLean": "D",
+    "fieldDates": "2026-09-24",
+    "sampleSize": 2021,
+    "population": "RV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 46
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-19T02:25:07.201Z"
+  },
+  {
+    "raceId": "AK",
+    "pollster": "Pollsmax average (latest input: Public Policy Polling (D))",
+    "partisanLean": null,
+    "fieldDates": "October 15, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.1
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45.9
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/alaska/",
+    "scrapedAt": "2026-10-19T02:26:48.990Z"
+  },
+  {
+    "raceId": "IA",
+    "pollster": "Pollsmax average (latest input: Trafalgar Group (R))",
+    "partisanLean": null,
+    "fieldDates": "October 15, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 46
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45.7
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/iowa/",
+    "scrapedAt": "2026-10-19T02:26:50.630Z"
+  },
+  {
+    "raceId": "MI",
+    "pollster": "Pollsmax average (latest input: Rasmussen Reports (R))",
+    "partisanLean": null,
+    "fieldDates": "October 14, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.4
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 44.5
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/michigan/",
+    "scrapedAt": "2026-10-19T02:26:52.269Z"
+  },
+  {
+    "raceId": "NH",
+    "pollster": "Pollsmax average (latest input: National Public Affairs (R))",
+    "partisanLean": null,
+    "fieldDates": "October 12, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 48
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 42.4
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/new-hampshire/",
+    "scrapedAt": "2026-10-19T02:26:54.073Z"
+  },
+  {
+    "raceId": "OH",
+    "pollster": "Pollsmax average (latest input: ActiVote)",
+    "partisanLean": null,
+    "fieldDates": "October 18, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 47.6
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 44.3
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/ohio/",
+    "scrapedAt": "2026-10-19T02:26:55.821Z"
+  },
+  {
+    "raceId": "TX",
+    "pollster": "Pollsmax average (latest input: CBS News / YouGov)",
+    "partisanLean": null,
+    "fieldDates": "October 16, 2026",
+    "sampleSize": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "isAggregateOnly": true,
+    "results": [
+      {
+        "candidate": "Democrat (Pollsmax average)",
+        "pct": 48.2
+      },
+      {
+        "candidate": "Republican (Pollsmax average)",
+        "pct": 45.7
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://www.pollsmax.com/senate/texas/",
+    "scrapedAt": "2026-10-19T02:26:56.638Z"
   }
 ]
