@@ -1,8 +1,36 @@
 {
   "raceId": "generic-ballot",
-  "count": 128,
-  "updated_at": "2026-10-19T02:26:57.627Z",
+  "count": 130,
+  "updated_at": "2026-10-19T18:11:29.225Z",
   "polls": [
+    {
+      "pollster": "Rasmussen Reports",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-14",
+      "sampleSize": 1789,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Democrats",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Republicans",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/polls/generic-ballot"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.6559
+    },
     {
       "pollster": "RMG Research",
       "endDate": "2026-10-13",
@@ -29,7 +57,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4343
+      "weight": 0.4277
     },
     {
       "pollster": "ABC/Wash Post/Ipsos",
@@ -57,7 +85,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.737
+      "weight": 1.7109
     },
     {
       "pollster": "FOX News",
@@ -85,7 +113,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1843
+      "weight": 1.1664
     },
     {
       "pollster": "Economist/YouGov",
@@ -113,7 +141,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3015
+      "weight": 1.282
     },
     {
       "pollster": "AP/NORC",
@@ -141,7 +169,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0389
+      "weight": 1.0233
     },
     {
       "pollster": "Morning Consult",
@@ -169,7 +197,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8293
+      "weight": 0.8168
     },
     {
       "pollster": "NewsNation",
@@ -197,7 +225,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1052
+      "weight": 1.0885
     },
     {
       "pollster": "Rasmussen Reports",
@@ -225,7 +253,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.427
+      "weight": 1.4055
     },
     {
       "pollster": "Center Square/NPI",
@@ -253,7 +281,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3609
+      "weight": 1.3405
     },
     {
       "pollster": "Quantus",
@@ -281,7 +309,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.628
+      "weight": 0.6185
     },
     {
       "pollster": "Financial Times",
@@ -309,7 +337,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4776
+      "weight": 1.4554
     },
     {
       "pollster": "THP/MM",
@@ -337,7 +365,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9228
+      "weight": 0.9089
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -365,7 +393,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2995
+      "weight": 1.2799
     },
     {
       "pollster": "Economist/YouGov",
@@ -393,7 +421,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1058
+      "weight": 1.0891
     },
     {
       "pollster": "Morning Consult",
@@ -421,7 +449,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7054
+      "weight": 0.6948
     },
     {
       "pollster": "Pew Research",
@@ -449,7 +477,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2698
+      "weight": 1.2507
     },
     {
       "pollster": "Pew Research Center",
@@ -477,7 +505,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2698
+      "weight": 1.2507
     },
     {
       "pollster": "CBS News",
@@ -505,7 +533,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1944
+      "weight": 1.1764
     },
     {
       "pollster": "YouGov - CBS News",
@@ -533,7 +561,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1944
+      "weight": 1.1764
     },
     {
       "pollster": "Cygnal",
@@ -561,7 +589,35 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5833
+      "weight": 0.5746
+    },
+    {
+      "pollster": "I&I/TIPP",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 1328,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Democrats",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Republicans",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/polls/generic-ballot"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4754
     },
     {
       "pollster": "Economist/YouGov",
@@ -589,7 +645,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8715
+      "weight": 0.8584
     },
     {
       "pollster": "Harvard-Harris",
@@ -617,7 +673,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6141
+      "weight": 0.6049
     },
     {
       "pollster": "Quantus",
@@ -645,7 +701,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.522
+      "weight": 0.5142
     },
     {
       "pollster": "NBC News/Telemundo",
@@ -673,7 +729,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6991
+      "weight": 0.6886
     },
     {
       "pollster": "Morning Consult",
@@ -701,7 +757,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6001
+      "weight": 0.5911
     },
     {
       "pollster": "Quinnipiac",
@@ -729,7 +785,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7759
+      "weight": 0.7643
     },
     {
       "pollster": "Rasmussen Reports",
@@ -757,7 +813,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1367
+      "weight": 1.1196
     },
     {
       "pollster": "Change Research",
@@ -785,7 +841,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5039
+      "weight": 0.4963
     },
     {
       "pollster": "Rasmussen Reports",
@@ -813,7 +869,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0436
+      "weight": 1.0279
     },
     {
       "pollster": "PBS News/NPR/Marist",
@@ -841,7 +897,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4924
+      "weight": 0.485
     },
     {
       "pollster": "Emerson College",
@@ -869,7 +925,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7561
+      "weight": 0.7447
     },
     {
       "pollster": "The Argument/Verasight",
@@ -897,7 +953,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5346
+      "weight": 0.5266
     },
     {
       "pollster": "Emerson College",
@@ -925,7 +981,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7561
+      "weight": 0.7447
     },
     {
       "pollster": "Economist/YouGov",
@@ -953,7 +1009,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7295
+      "weight": 0.7185
     },
     {
       "pollster": "Echelon Insights",
@@ -981,7 +1037,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3698
+      "weight": 0.3642
     },
     {
       "pollster": "Wall Street Journal",
@@ -1009,7 +1065,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8144
+      "weight": 0.8021
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -1037,7 +1093,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6429
+      "weight": 0.6332
     },
     {
       "pollster": "Morning Consult",
@@ -1065,7 +1121,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5105
+      "weight": 0.5028
     },
     {
       "pollster": "Quantus Insights",
@@ -1093,7 +1149,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8124
+      "weight": 0.8002
     },
     {
       "pollster": "Zogby",
@@ -1121,7 +1177,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4763
+      "weight": 0.4691
     },
     {
       "pollster": "CNN",
@@ -1149,7 +1205,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5645
+      "weight": 0.556
     },
     {
       "pollster": "Rasmussen Reports",
@@ -1177,7 +1233,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8697
+      "weight": 0.8566
     },
     {
       "pollster": "Big Data Poll",
@@ -1205,7 +1261,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9096
+      "weight": 0.8959
     },
     {
       "pollster": "RMG Research",
@@ -1233,7 +1289,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9096
+      "weight": 0.8959
     },
     {
       "pollster": "NBC News",
@@ -1261,7 +1317,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5789
+      "weight": 0.5701
     },
     {
       "pollster": "NPR/PBS/Marist",
@@ -1289,7 +1345,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6549
+      "weight": 0.645
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -1317,7 +1373,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5354
+      "weight": 0.5274
     },
     {
       "pollster": "Economist/YouGov",
@@ -1345,7 +1401,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6443
+      "weight": 0.6346
     },
     {
       "pollster": "FOX News",
@@ -1373,7 +1429,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6224
+      "weight": 0.6131
     },
     {
       "pollster": "The Rainey Center",
@@ -1401,7 +1457,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4
+      "weight": 0.3939
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -1429,7 +1485,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6224
+      "weight": 0.6131
     },
     {
       "pollster": "Morning Consult",
@@ -1457,7 +1513,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4343
+      "weight": 0.4277
     },
     {
       "pollster": "NY Times/Siena",
@@ -1485,7 +1541,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7529
+      "weight": 0.7416
     },
     {
       "pollster": "The Honest Poll",
@@ -1513,7 +1569,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6521
+      "weight": 0.6423
     },
     {
       "pollster": "CBS News",
@@ -1541,7 +1597,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7757
+      "weight": 0.7641
     },
     {
       "pollster": "ActiVote",
@@ -1569,7 +1625,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4052
+      "weight": 0.3991
     },
     {
       "pollster": "Rasmussen Reports",
@@ -1597,7 +1653,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7728
+      "weight": 0.7612
     },
     {
       "pollster": "Marquette",
@@ -1625,7 +1681,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4268
+      "weight": 0.4204
     },
     {
       "pollster": "Economist/YouGov",
@@ -1653,7 +1709,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5512
+      "weight": 0.5429
     },
     {
       "pollster": "Morning Consult",
@@ -1681,7 +1737,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7388
+      "weight": 0.7277
     },
     {
       "pollster": "Quinnipiac",
@@ -1709,7 +1765,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4631
+      "weight": 0.4561
     },
     {
       "pollster": "Financial Times",
@@ -1737,7 +1793,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6456
+      "weight": 0.6358
     },
     {
       "pollster": "Cygnal",
@@ -1765,7 +1821,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2917
+      "weight": 0.2873
     },
     {
       "pollster": "The Honest Poll",
@@ -1793,7 +1849,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4194
+      "weight": 0.4131
     },
     {
       "pollster": "YouGov",
@@ -1821,7 +1877,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3291
+      "weight": 0.3242
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -1849,7 +1905,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3934
+      "weight": 0.3875
     },
     {
       "pollster": "Ipsos",
@@ -1877,7 +1933,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2894
+      "weight": 0.2851
     },
     {
       "pollster": "Economist/YouGov",
@@ -1905,7 +1961,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4907
+      "weight": 0.4833
     },
     {
       "pollster": "Morning Consult",
@@ -1933,7 +1989,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5656
+      "weight": 0.5571
     },
     {
       "pollster": "Harvard-Harris",
@@ -1961,7 +2017,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3142
+      "weight": 0.3095
     },
     {
       "pollster": "Rasmussen Reports",
@@ -1989,7 +2045,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3142
+      "weight": 0.3095
     },
     {
       "pollster": "Quantus Insights",
@@ -2017,7 +2073,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4648
+      "weight": 0.4578
     },
     {
       "pollster": "Rasmussen Reports",
@@ -2045,7 +2101,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5864
+      "weight": 0.5776
     },
     {
       "pollster": "Ipsos",
@@ -2073,7 +2129,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2462
+      "weight": 0.2425
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -2101,7 +2157,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3395
+      "weight": 0.3344
     },
     {
       "pollster": "Economist/YouGov",
@@ -2129,7 +2185,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4089
+      "weight": 0.4027
     },
     {
       "pollster": "McLaughlin",
@@ -2157,7 +2213,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1368
+      "weight": 0.1347
     },
     {
       "pollster": "Cygnal",
@@ -2185,7 +2241,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1247
+      "weight": 0.1228
     },
     {
       "pollster": "Verasight",
@@ -2213,7 +2269,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2437
+      "weight": 0.24
     },
     {
       "pollster": "Political Polls",
@@ -2241,7 +2297,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2094
+      "weight": 0.2063
     },
     {
       "pollster": "Echelon Insights",
@@ -2269,7 +2325,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3294
+      "weight": 0.3245
     },
     {
       "pollster": "Economist/YouGov",
@@ -2297,7 +2353,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3567
+      "weight": 0.3513
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -2325,7 +2381,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2772
+      "weight": 0.273
     },
     {
       "pollster": "YouGov",
@@ -2353,7 +2409,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2094
+      "weight": 0.2063
     },
     {
       "pollster": "Emerson",
@@ -2381,7 +2437,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3291
+      "weight": 0.3242
     },
     {
       "pollster": "Morning Consult",
@@ -2409,7 +2465,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4093
+      "weight": 0.4032
     },
     {
       "pollster": "Noble Predictive Insights",
@@ -2437,7 +2493,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4093
+      "weight": 0.4032
     },
     {
       "pollster": "High Point University",
@@ -2465,7 +2521,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2073
+      "weight": 0.2042
     },
     {
       "pollster": "Financial Times",
@@ -2493,7 +2549,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3904
+      "weight": 0.3845
     },
     {
       "pollster": "Fabrizio",
@@ -2521,7 +2577,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2026
+      "weight": 0.1995
     },
     {
       "pollster": "GrayHouse",
@@ -2549,7 +2605,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0861
+      "weight": 0.0848
     },
     {
       "pollster": "Angus Reid",
@@ -2577,7 +2633,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1722
+      "weight": 0.1696
     },
     {
       "pollster": "Economist/YouGov",
@@ -2605,7 +2661,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3002
+      "weight": 0.2957
     },
     {
       "pollster": "Political Polls",
@@ -2633,7 +2689,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1782
+      "weight": 0.1755
     },
     {
       "pollster": "Cygnal",
@@ -2661,7 +2717,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.16
+      "weight": 0.1576
     },
     {
       "pollster": "Quantus Insights",
@@ -2689,7 +2745,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2495
+      "weight": 0.2457
     },
     {
       "pollster": "RMG Research",
@@ -2717,7 +2773,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3102
+      "weight": 0.3055
     },
     {
       "pollster": "Napolitan",
@@ -2745,7 +2801,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1465
+      "weight": 0.1443
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -2773,7 +2829,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3031
+      "weight": 0.2986
     },
     {
       "pollster": "Economist/YouGov",
@@ -2801,7 +2857,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2601
+      "weight": 0.2562
     },
     {
       "pollster": "Morning Consult",
@@ -2829,7 +2885,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3291
+      "weight": 0.3242
     },
     {
       "pollster": "Big Data Poll",
@@ -2857,7 +2913,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3
+      "weight": 0.2955
     },
     {
       "pollster": "Marquette",
@@ -2885,7 +2941,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1605
+      "weight": 0.158
     },
     {
       "pollster": "CNN",
@@ -2913,7 +2969,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1289
+      "weight": 0.127
     },
     {
       "pollster": "Quinnipiac",
@@ -2941,7 +2997,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1789
+      "weight": 0.1762
     },
     {
       "pollster": "Economist/YouGov",
@@ -2969,7 +3025,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2163
+      "weight": 0.213
     },
     {
       "pollster": "Reuters/Ipsos",
@@ -2997,7 +3053,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1784
+      "weight": 0.1757
     },
     {
       "pollster": "Morning Consult",
@@ -3025,7 +3081,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.252
+      "weight": 0.2482
     },
     {
       "pollster": "McLaughlin & Associates",
@@ -3053,7 +3109,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1764
+      "weight": 0.1737
     },
     {
       "pollster": "Emerson",
@@ -3081,7 +3137,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1807
+      "weight": 0.178
     },
     {
       "pollster": "Daily Mail",
@@ -3109,7 +3165,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1363
+      "weight": 0.1343
     },
     {
       "pollster": "FOX News",
@@ -3137,7 +3193,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1553
+      "weight": 0.153
     },
     {
       "pollster": "Economist/YouGov",
@@ -3165,7 +3221,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1856
+      "weight": 0.1828
     },
     {
       "pollster": "Political Polls",
@@ -3193,7 +3249,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1097
+      "weight": 0.108
     },
     {
       "pollster": "Morning Consult",
@@ -3221,7 +3277,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2143
+      "weight": 0.2111
     },
     {
       "pollster": "RMG Research",
@@ -3249,7 +3305,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.135
+      "weight": 0.133
     },
     {
       "pollster": "Morning Consult",
@@ -3277,7 +3333,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1866
+      "weight": 0.1838
     },
     {
       "pollster": "Wash Post/Ipsos",
@@ -3305,7 +3361,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1866
+      "weight": 0.1838
     },
     {
       "pollster": "Echelon Insights",
@@ -3333,7 +3389,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1469
+      "weight": 0.1447
     },
     {
       "pollster": "Economist/YouGov",
@@ -3361,7 +3417,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1589
+      "weight": 0.1565
     },
     {
       "pollster": "Harvard-Harris",
@@ -3389,7 +3445,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1013
+      "weight": 0.0998
     },
     {
       "pollster": "Pew Research",
@@ -3417,7 +3473,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1823
+      "weight": 0.1796
     },
     {
       "pollster": "CNBC",
@@ -3445,7 +3501,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1289
+      "weight": 0.127
     },
     {
       "pollster": "2Way/HarrisX",
@@ -3473,7 +3529,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1213
+      "weight": 0.1195
     },
     {
       "pollster": "Quantus Insights",
@@ -3501,7 +3557,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1363
+      "weight": 0.1342
     },
     {
       "pollster": "Economist/YouGov",
@@ -3529,7 +3585,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1348
+      "weight": 0.1328
     },
     {
       "pollster": "Manhattan Institute",
@@ -3557,7 +3613,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.132
+      "weight": 0.13
     },
     {
       "pollster": "Morning Consult",
@@ -3585,7 +3641,7 @@
         "https://pollingsource.com/polls/generic-ballot"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1551
+      "weight": 0.1528
     }
   ]
 }
