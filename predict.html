@@ -735,7 +735,21 @@ async function registrationBlock(l, x) {
 
 async function tabPeople(l, x) {
   const regHtml = await registrationBlock(l, x);
-  return regHtml + await tabCensus(l, x);
+  return regHtml + await tabCensus(l, x) + await ageSexHtml(l, x);
+}
+async function ageSexHtml(l, x) {
+  const A = await cget("data/census/agesex.json");
+  if (!A) return "";
+  const a = l === "H" ? A.districts[`${x.st}-${G.app[x.st] === 1 ? "00" : pad2(x.d)}`] : A.states[x.st];
+  if (!a) return "";
+  const n = (v) => Number(v).toLocaleString("en-US"), pc = (v, t) => (t ? ((v / t) * 100).toFixed(1) + "%" : "–");
+  const us = A.us, row = (k, v, t, u) => `<span>${esc(k)}</span><span class="n">${n(v)} · ${pc(v, t)}</span><span class="n muted">${u || ""}</span>`;
+  return `<h4>Eligible voters by age (citizens 18+)</h4><div class="demo" style="grid-template-columns:1fr 120px 54px"><span class="h"></span><span class="h n">Here</span><span class="h n">US</span>
+    ${["18-29", "30-44", "45-64", "65+"].map((b) => row(b, a.age[b], a.cvap, us ? pc(us.age[b], us.cvap) : "")).join("")}
+    <span><b>Total eligible</b></span><span class="n"><b>${n(a.cvap)}</b></span><span></span></div>
+    <h4>Women and men (eligible voters)</h4><div class="demo" style="grid-template-columns:1fr 120px 54px"><span class="h"></span><span class="h n">Here</span><span class="h n">US</span>
+    ${row("Women", a.cvapWomen, a.cvapWomen + a.cvapMen, us ? pc(us.cvapWomen, us.cvapWomen + us.cvapMen) : "")}${row("Men", a.cvapMen, a.cvapWomen + a.cvapMen, us ? pc(us.cvapMen, us.cvapWomen + us.cvapMen) : "")}</div>
+    ${a.medianAge ? `<p class="credit">Median age ${a.medianAge} (men ${a.medianAgeMen}, women ${a.medianAgeWomen}). ${esc(A.source)}.</p>` : ""}`;
 }
 async function tabCensus(l, x) {
   const file = l === "H" ? `data/census/${x.st}-${G.app[x.st] === 1 ? "00" : pad2(x.d)}.json` : `data/census/state/${x.st}.json`;

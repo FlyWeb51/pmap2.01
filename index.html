@@ -602,9 +602,12 @@ function select(x){
         <div id="race-card"><p class="note">Loading race…</p></div>
         <div class="d-sec">Campaign finance</div>
         <div id="srace-out"><button class="cta" id="srace-go">Load all candidates &amp; FEC totals</button>
-          <p class="note">Every candidate FEC has on file for this seat, with money raised.</p></div>`;
+          <p class="note">Every candidate FEC has on file for this seat, with money raised.</p></div>
+        <div class="d-sec">State profile</div>
+        <div id="census-out"><p class="note">Loading…</p></div>`;
       const sg=document.getElementById("srace-go"); if(sg)sg.onclick=()=>loadSenateRace(st);
       loadRaceCard("S", st);
+      loadProfile(st, null);
     }else{
       body.innerHTML=pair.map(m=>`
         <div class="d-sec">${m.n} <span style="color:${PCOLOR(m.p)}">(${m.p})</span></div>
@@ -631,13 +634,12 @@ function select(x){
       <div id="race-out"><button class="cta" id="race-go">Load all candidates &amp; FEC totals</button>
         <p class="note">Looks up every candidate FEC has on file for this seat this cycle — the primary field, not just the incumbent.</p></div>
       <div class="d-sec">District profile</div>
-      <div id="census-out"><button class="cta" id="census-go">Load Census profile</button></div>
+      <div id="census-out"><p class="note">Loading…</p></div>
 `;
     const rg=document.getElementById("race-go");
     if(rg)rg.onclick=()=>loadRace(x);
-    const cg=document.getElementById("census-go");
-    if(cg)cg.onclick=()=>loadCensus(x);
     loadRaceCard("H", x.st, x);
+    loadProfile(x.st, APPORTION[x.st]===1?0:x.d);
   }
   renderList();
   document.getElementById("detail").classList.add("open");
@@ -762,6 +764,48 @@ async function loadSenateRace(st){
   const d = await backendGet(`/api/fec-race?state=${st}&district=senate&office=S&cycle=2026`);
   if(!d||!d.candidates||!d.candidates.length){ out.innerHTML=`<p class="note">No 2026 Senate candidates on file for ${st} — this seat may not be on the 2026 ballot.</p>`; return; }
   renderRace(out, d.candidates, `${st}-senate`);
+}
+/* Profile for a state (d = null) or district: Census ACS profile, registered
+   voters by party (where the state registers by party), and eligible voters
+   by age group and sex. Loads by itself; no button. */
+async function loadProfile(st, d){
+  const out=document.getElementById("census-out"); if(!out)return;
+  const key = d==null ? null : `${st}-${String(d).padStart(2,"0")}`;
+  const [prof, reg, ages] = await Promise.all([
+    getJSON(d==null ? `data/census/state/${st}.json` : `data/census/${key}.json`),
+    getJSON("data/registration.json"), getJSON("data/census/agesex.json")]);
+  if(document.getElementById("census-out")!==out) return;
+  const n=(v)=>Number(v).toLocaleString("en-US"), pc=(v,t)=>t?((v/t)*100).toFixed(1)+"%":"–";
+  let h="";
+  const p=prof&&prof.profile;
+  if(p) h+=Object.entries(p).map(([k,v])=>`<div class="kv"><span class="k">${escapeHtml(k)}</span><span class="v num">${escapeHtml(String(v))}</span></div>`).join("")
+    +`<p class="note">Census ACS 5-year estimates${d==null?"; statewide figures are rolled up from congressional districts (median income and age approximate)":""}.</p>`;
+  else h+=`<p class="note">No Census profile on file.</p>`;
+  // registration
+  const rs=reg&&reg.states&&reg.states[st];
+  if(rs){
+    const r = d==null || APPORTION[st]===1 ? rs.statewide : (rs.districts&&rs.districts[String(d).padStart(2,"0")]) || null;
+    const rr = r || rs.statewide;
+    h+=`<div class="d-sec">Registered voters${r||d==null?"":" (statewide; no district data)"}</div>`
+      +[["Democrats",rr.D],["Republicans",rr.R],[rs.npaLabel,rr.npa],["Other parties",rr.other]].map(([k,v])=>`<div class="kv"><span class="k">${escapeHtml(k)}</span><span class="v num">${n(v)} · ${pc(v,rr.total)}</span></div>`).join("")
+      +`<div class="kv"><span class="k"><b>Total${rs.activeOnly?" active":""}</b></span><span class="v num"><b>${n(rr.total)}</b></span></div>`
+      +`<p class="note"><a href="${escapeHtml(rs.source)}" target="_blank" rel="noopener" style="color:inherit">${escapeHtml(rs.report)}</a>, as of ${escapeHtml(rs.asOf)}.</p>`;
+  } else if(reg){
+    h+=`<div class="d-sec">Registered voters</div><p class="note">${reg.noPartyRegistration.includes(st)?`${escapeHtml(STATE_NAMES[st])} doesn't register voters by party.`:escapeHtml((reg.notAvailable&&reg.notAvailable[st])||"No registration data.")}</p>`;
+  }
+  // age and sex of eligible voters
+  const a = ages && (d==null ? ages.states[st] : ages.districts[`${st}-${APPORTION[st]===1?"00":String(d).padStart(2,"0")}`]);
+  if(a){
+    h+=`<div class="d-sec">Eligible voters by age (citizens 18+)</div>`
+      +["18-29","30-44","45-64","65+"].map(b=>`<div class="kv"><span class="k">${b}</span><span class="v num">${n(a.age[b])} · ${pc(a.age[b],a.cvap)}</span></div>`).join("")
+      +`<div class="kv"><span class="k"><b>Total eligible</b></span><span class="v num"><b>${n(a.cvap)}</b></span></div>`
+      +`<div class="d-sec">Women and men</div>`
+      +`<div class="kv"><span class="k">Women (eligible voters)</span><span class="v num">${n(a.cvapWomen)} · ${pc(a.cvapWomen,a.cvapWomen+a.cvapMen)}</span></div>`
+      +`<div class="kv"><span class="k">Men (eligible voters)</span><span class="v num">${n(a.cvapMen)} · ${pc(a.cvapMen,a.cvapWomen+a.cvapMen)}</span></div>`
+      +`<div class="kv"><span class="k">Women / men, all ages</span><span class="v num">${n(a.women)} / ${n(a.men)}</span></div>`
+      +(a.medianAge?`<p class="note">Median age ${a.medianAge} (men ${a.medianAgeMen}, women ${a.medianAgeWomen}). ${escapeHtml(ages.source)}.</p>`:"");
+  }
+  out.innerHTML=h;
 }
 async function loadCensus(x){
   const out=document.getElementById("census-out"); if(!out)return;
