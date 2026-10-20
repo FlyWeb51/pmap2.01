@@ -219,6 +219,7 @@
     <div class="vbar" id="vbar" hidden><b id="vtitle"></b><span class="mu" id="vnote"></span><button id="vwide" style="margin-left:auto" title="Hide the side panels on this screen">⇔ WIDE</button><button id="vback" style="margin-left:0">ESC · BACK TO RACE</button></div>
     <section class="center" id="detail"><p class="mu">Loading…</p></section>
     <section class="center" id="vMarkets" hidden></section>
+    <section class="center" id="vGeneric" hidden></section>
     <section class="frame" id="vFrame" hidden><iframe id="frame" title="Election Center page"></iframe></section>
   </div>
   <aside class="dock" id="dockR" aria-label="Right panels"></aside>
@@ -233,6 +234,7 @@
   <button data-k="F6"><b>F6</b>POLLING</button>
   <button data-k="F7"><b>F7</b>MONEY</button>
   <button data-k="F8"><b>F8</b>VOTERS</button>
+  <button data-k="F9"><b>F9</b>GENERIC</button>
   <button class="help" id="helpBtn"><b>?</b>HELP</button>
 </nav>
 <div class="modal" id="help" hidden><div>
@@ -242,7 +244,7 @@
   <span class="am">/</span> search: <span class="am">TX SEN</span>, <span class="am">PA-07</span>, <span class="am">GA GOV</span>, a state, or a name, then Enter<br>
   <span class="am">↑ ↓</span> step through the watchlist · <span class="am">S</span> star the open race<br>
   <span class="am">P</span> poll chart · <span class="am">K</span> price chart · <span class="am">D R T C</span> call the open race (Dem, Rep, toss-up, clear)<br>
-  <span class="am">F1</span> race · <span class="am">F2</span> map · <span class="am">F3</span> national · <span class="am">F4</span> predict · <span class="am">F5</span> all Kalshi markets · <span class="am">F6</span> polling · <span class="am">F7</span> money · <span class="am">F8</span> voters · <span class="am">Esc</span> back to the race<br>
+  <span class="am">F1</span> race · <span class="am">F2</span> map · <span class="am">F3</span> national · <span class="am">F4</span> predict · <span class="am">F5</span> all Kalshi markets · <span class="am">F6</span> polling · <span class="am">F7</span> money · <span class="am">F8</span> voters · <span class="am">F9</span> generic ballot by state · <span class="am">Esc</span> back to the race<br>
   Every screen opens inside the terminal; only outside links (Kalshi, poll sources) open a new tab.<br><br>
   <b class="am">COLUMNS</b><br>
   MKT = Kalshi chance for the favorite · 24H = change in the Democratic (or independent) chance; blue is toward D, red toward R · POLLS = polling average · REG = registered Democrats minus Republicans as a share of all registered voters · SPLIT = polls and market favor different candidates<br><br>
@@ -1001,6 +1003,7 @@ const VIEWS = {
   predict: { title: "PREDICTION MAP", key: "F4", src: "predict.html?embed=1", note: "Calls you make here also show on the race screen." },
   markets: { title: "ALL KALSHI MARKETS", key: "F5" },
   polling: { title: "POLLING", key: "F6", src: "polling/?embed=1" },
+  generic: { title: "GENERIC BALLOT BY STATE", key: "F9", note: "Two models: anchor (uniform swing) and elastic." },
 };
 let view = "race", wide = false;
 function applyWide() { const w = wide && view !== "race"; $("main").classList.toggle("noleft", w || !LAYOUT.showL); $("main").classList.toggle("noright", w || !LAYOUT.showR); $("vwide").classList.toggle("on", wide); }
@@ -1010,6 +1013,7 @@ function setView(v, src) {
   const V = VIEWS[v] || { title: "PAGE" };
   $("detail").hidden = v !== "race";
   $("vMarkets").hidden = v !== "markets";
+  $("vGeneric").hidden = v !== "generic";
   $("vFrame").hidden = !(V.src || src);
   $("vbar").hidden = v === "race";
   $("vtitle").textContent = V.title;
@@ -1017,6 +1021,7 @@ function setView(v, src) {
   if (V.src || src) { const want = new URL(src || V.src, location.href).href; if ($("frame").src !== want) $("frame").src = want; }
   applyWide();
   if (v === "markets") renderMarkets();
+  if (v === "generic") renderGeneric();
   if (v === "race") { renderW("calls"); if (cur) { const cb = document.querySelector("#detail .callbar"); if (cb) { cb.outerHTML = callBar(cur); wireCalls(); } } }
   document.querySelectorAll("#fk button[data-k]").forEach((b) => b.classList.toggle("on", b.dataset.k === (V.key || "") || (v === "race" && ((b.dataset.k === "F7" && detTab === "money") || (b.dataset.k === "F8" && detTab === "voters")))));
 }
@@ -1065,6 +1070,97 @@ function renderMarkets() {
   el.querySelector("tbody").onclick = (e) => { const tr = e.target.closest("tr[data-id]"); if (tr && BY[tr.dataset.id]) { open(BY[tr.dataset.id]); setView("race"); } };
 }
 
+/* ---------- generic ballot by state: two models ----------
+   Lean   = 2/3 x (2024 state pres margin - 2024 national) + 1/3 x (2020 state - 2020 national)
+   Model 1 (anchor / uniform swing) = lean + national generic ballot
+   Model 2 (elastic, Silver Bulletin's benchmark) = lean + national generic ballot x state elasticity
+   Districts use their 2024 result on the 2026 lines (no 2020 on redrawn maps) and their state's elasticity. */
+const GB = { inp: null, polls: null, gen: null, sort: "close", q: "", st: null, loading: false };
+const sm = (m) => (m == null ? "–" : lead(m));
+function gbPollAvg(list) {
+  // last 180 days; firms that mainly work for one party count half
+  const cut = new Date(Date.now() - 180 * 864e5).toISOString().slice(0, 10);
+  const use = (list || []).filter((p) => p.end >= cut);
+  if (!use.length) return null;
+  let w = 0, t = 0;
+  for (const p of use) { const k = p.lean ? 0.5 : 1; w += k; t += k * p.margin; }
+  return { avg: t / w, n: use.length, aligned: use.filter((p) => p.lean).length };
+}
+function gbStates(g) {
+  const I = GB.inp, out = [];
+  for (const st of Object.keys(BASE.statePresMarginD).sort()) {
+    const m24 = BASE.statePresMarginD[st], m20 = I.pres2020.stateMarginD[st], el = I.elasticity.values[st];
+    if (m20 == null || el == null) continue;
+    const lean = (2 / 3) * (m24 - BASE.nationalPresMarginD) + (1 / 3) * (m20 - I.pres2020.nationalMarginD);
+    const arg = I.argument.marginD[st];
+    out.push({ st, lean, el, m1: lean + g, m2: lean + g * el, arg: arg == null ? null : arg + (g - I.argument.national) * el, argRaw: arg, polls: (GB.polls && GB.polls.states[st]) || [], pa: gbPollAvg(GB.polls && GB.polls.states[st]) });
+  }
+  return out;
+}
+async function renderGeneric() {
+  const el = $("vGeneric");
+  if (!GB.inp && !GB.loading) {
+    GB.loading = true; el.innerHTML = `<p class="note">Loading…</p>`;
+    const [inp, polls] = await Promise.all([getJSON("data/generic-state-inputs.json"), getJSON("data/generic-polls.json")]);
+    GB.inp = inp; GB.polls = polls || { states: {}, districts: {} }; GB.loading = false;
+  }
+  if (!GB.inp || !BASE || !GEN) { el.innerHTML = `<p class="note">${GB.loading ? "Loading…" : "Model inputs aren't available right now."}</p>`; return; }
+  const avg = GEN.margin, g = GB.gen == null ? avg : GB.gen;
+  let rows = gbStates(g);
+  if (GB.q) rows = rows.filter((r) => (r.st + " " + (NAMES[r.st] || "")).toUpperCase().includes(GB.q.toUpperCase()));
+  const sorts = { close: (a, b) => Math.abs(a.m2) - Math.abs(b.m2), gap: (a, b) => Math.abs(b.m2 - b.m1) - Math.abs(a.m2 - a.m1), el: (a, b) => b.el - a.el, polls: (a, b) => (b.pa ? 1 : 0) - (a.pa ? 1 : 0) || Math.abs(a.m2) - Math.abs(b.m2), d: (a, b) => b.m2 - a.m2, az: (a, b) => a.st.localeCompare(b.st) };
+  rows.sort(sorts[GB.sort]);
+  const all = gbStates(g).filter((r) => r.st !== "DC"), flips = (k) => all.filter((r) => r[k] > 0).length;
+  const swing = g - BASE.nationalPresMarginD;
+  const cell = (m, extra = "") => `<td class="n ${leadCls(m)}"${extra}>${sm(m)}</td>`;
+  let h = `<div class="mk-top">
+      <div><small>${GB.gen == null ? "NATIONAL GENERIC (POLL AVG)" : `WHAT-IF GENERIC · AVG IS ${sm(avg)}`}</small><b class="${leadCls(g)}">${sm(g)}</b></div>
+      <div><small>2024 NATIONAL PRES</small><b class="${leadCls(BASE.nationalPresMarginD)}">${sm(BASE.nationalPresMarginD)}</b></div>
+      <div><small>SWING SINCE 2024</small><b class="${leadCls(swing)}">${sm(swing)}</b></div>
+      <div><small>STATES LEANING D · M1 / M2</small><b>${flips("m1")} / ${flips("m2")} <span class="mu" style="font-size:11px">of 50</span></b></div>
+      <div><small>STATES WITH GENERIC POLLS</small><b>${all.filter((r) => r.pa).length}</b></div></div>
+    <div class="mk-ctl"><label class="mu" for="gbg">WHAT IF GENERIC =</label>
+      <input id="gbg" type="number" step="0.5" value="${g.toFixed(1)}" style="max-width:76px;min-width:0" aria-label="National generic ballot, Democratic minus Republican"><span class="mu">D minus R</span>
+      <button id="gbreset"${GB.gen == null ? " disabled" : ""}>RESET TO AVG</button>
+      <div class="seg" style="margin:0">${[["close", "CLOSEST"], ["polls", "HAS POLLS"], ["gap", "MODEL GAP"], ["el", "MOST ELASTIC"], ["d", "MOST D"], ["az", "A–Z"]].map(([v, l]) => `<button data-gs="${v}" class="${GB.sort === v ? "on" : ""}">${l}</button>`).join("")}</div>
+      <input id="gbq" placeholder="Filter states" value="${esc(GB.q)}" aria-label="Filter states"></div>
+    <div style="overflow-x:auto"><table style="min-width:720px"><colgroup><col style="width:44px"><col><col style="width:62px"><col style="width:52px"><col style="width:70px"><col style="width:70px"><col style="width:50px"><col style="width:76px"><col style="width:96px"></colgroup>
+    <thead><tr><th>ST</th><th>STATE</th><th class="n">LEAN</th><th class="n">ELAST.</th><th class="n">M1 ANCHOR</th><th class="n">M2 ELASTIC</th><th class="n">GAP</th><th class="n">THE ARGUMENT</th><th class="n">STATE POLLS</th></tr></thead><tbody>`;
+  for (const r of rows) {
+    const gap = r.m2 - r.m1, pt = r.polls.map((p) => `${p.end} ${p.pollster}${p.lean ? ` (${p.lean}-aligned)` : ""}, generic ${p.race} ballot: ${sm(p.margin)}`).join("\n");
+    h += `<tr class="click${GB.st === r.st ? " on" : ""}" data-gst="${r.st}"><td class="am">${r.st}</td><td>${esc(NAMES[r.st] || r.st)}</td>${cell(r.lean)}<td class="n">${r.el.toFixed(2)}</td>${cell(r.m1)}${cell(r.m2)}<td class="n mu">${Math.abs(gap) < 0.05 ? "0.0" : (gap > 0 ? "D " : "R ") + Math.abs(gap).toFixed(1)}</td>${cell(r.arg, ` title="The Argument's own estimate, at their D+${GB.inp.argument.national} national number: ${sm(r.argRaw)}"`)}
+      <td class="n ${r.pa ? leadCls(r.pa.avg) : "mu"}" title="${esc(pt || "No generic-ballot polls in this state")}">${r.pa ? `${sm(r.pa.avg)} <span class="mu">(${r.pa.n}${r.pa.aligned ? "*" : ""})</span>` : r.polls.length ? `<span class="mu">old only</span>` : "–"}</td></tr>`;
+    if (GB.st === r.st) h += `<tr><td colspan="9" style="padding:0">${gbDistricts(r, g)}</td></tr>`;
+  }
+  h += `</tbody></table></div>
+    <p class="credit"><b class="am">HOW THIS WORKS.</b> Each state starts from its lean: how far it voted from the country, two-thirds 2024 and one-third 2020. <b>Model 1 (anchor)</b> adds the national generic ballot straight on, so every state moves the same amount. <b>Model 2 (elastic)</b> multiplies the generic ballot by the state's elasticity first, so swingy states (score above 1) move more and locked-in states (below 1) move less. That is Silver Bulletin's benchmark formula, using their 2026 scores. <b>The Argument</b> column is their MRP estimate built from demographic swings, shifted from their D+${GB.inp.argument.national} likely-voter number to the generic number above so the columns compare fairly (hover for their own figure). <b>State polls</b> are real Generic Democrat vs Generic Republican questions from the last 180 days (hover for each one); some asked about the Senate or governor race rather than Congress. * means a firm that mainly works for one party is in the mix; those polls count half. Click a state to see its House districts. Type any number in WHAT IF to test a different national environment.</p>
+    <p class="credit">Sources: ${esc(GB.inp.elasticity.source)}; ${esc(GB.inp.argument.source)}; 2024 results by district from The Downballot; polls from The New York Times (CC BY 4.0).</p>`;
+  el.innerHTML = h;
+  el.querySelectorAll("[data-gs]").forEach((b) => (b.onclick = () => { GB.sort = b.dataset.gs; renderGeneric(); }));
+  const gi = $("gbg"); gi.onchange = () => { const v = parseFloat(gi.value); GB.gen = isFinite(v) ? Math.max(-30, Math.min(30, v)) : null; renderGeneric(); };
+  $("gbreset").onclick = () => { GB.gen = null; renderGeneric(); };
+  const q = $("gbq"); q.oninput = () => { GB.q = q.value.trim(); const pos = q.selectionStart; renderGeneric(); const n = $("gbq"); n.focus(); n.setSelectionRange(pos, pos); };
+  el.querySelector("tbody").onclick = (e) => {
+    const d = e.target.closest("tr[data-id]"); if (d && BY[d.dataset.id]) { open(BY[d.dataset.id]); setView("race"); return; }
+    const tr = e.target.closest("tr[data-gst]"); if (tr) { GB.st = GB.st === tr.dataset.gst ? null : tr.dataset.gst; renderGeneric(); }
+  };
+}
+function gbDistricts(r, g) {
+  const ds = RACES.filter((x) => x.t === "H" && x.st === r.st).sort((a, b) => a.d - b.d);
+  if (!ds.length || !BASECD) return `<p class="note" style="margin:6px 10px">No district results loaded.</p>`;
+  const rows = ds.map((x) => {
+    const b = BASECD.districts[`${x.st}-${pad2(x.d)}`]; if (!b) return "";
+    const lean = b.marginD - BASE.nationalPresMarginD, m1 = lean + g, m2 = lean + g * r.el;
+    const pl = (GB.polls.districts || {})[`${x.st}-${pad2(x.d)}`], pa = gbPollAvg(pl);
+    const pt = (pl || []).map((p) => `${p.end} ${p.pollster}${p.lean ? ` (${p.lean}-aligned)` : ""}: ${sm(p.margin)}`).join("\n");
+    const mk = x.mkt == null ? "–" : fav(x.mkt, x.ind);
+    return `<tr class="click" data-id="${x.id}" title="Open ${esc(x.code)}"><td class="am">${x.code}</td><td>${esc(matchup(x) || x.holder || "")}</td><td class="n ${leadCls(b.marginD)}">${sm(b.marginD)}${b.newLines ? `<span class="mu">*</span>` : ""}</td><td class="n ${leadCls(m1)}">${sm(m1)}</td><td class="n ${leadCls(m2)}">${sm(m2)}</td><td class="n ${leadCls(x.poll, x.ind)}">${lead(x.poll, x.ind)}</td><td class="n ${pa ? leadCls(pa.avg) : "mu"}" title="${esc(pt || "No generic-ballot polls here")}">${pa ? `${sm(pa.avg)} <span class="mu">(${pa.n})</span>` : "–"}</td><td class="n ${favCls(x.mkt, x.ind)}">${mk}</td></tr>`;
+  }).join("");
+  return `<div style="margin:4px 0 8px 18px;border-left:2px solid var(--am)"><table><colgroup><col style="width:58px"><col><col style="width:70px"><col style="width:70px"><col style="width:70px"><col style="width:62px"><col style="width:76px"><col style="width:56px"></colgroup>
+    <thead><tr><th>SEAT</th><th>MATCHUP</th><th class="n">2024 PRES</th><th class="n">M1 ANCHOR</th><th class="n">M2 ELASTIC</th><th class="n">POLL AVG</th><th class="n">GEN. POLLS</th><th class="n">KALSHI</th></tr></thead><tbody>${rows}</tbody></table>
+    <p class="credit" style="margin:4px 8px">District lean is its 2024 result minus the national result; both models use ${esc(NAMES[r.st] || r.st)}'s elasticity (${r.el.toFixed(2)}). * = 2024 votes counted on the new 2026 lines. These are party baselines, so they ignore incumbents and candidate quality; POLL AVG is the real named-candidate polling and KALSHI the market. Click a seat to open it.</p></div>`;
+}
+
 /* ---------- command bar ---------- */
 let acList = [];
 function matches(q) {
@@ -1078,7 +1174,7 @@ function matches(q) {
   return RACES.filter((x) => { const hay = `${x.code} ${x.name} ${x.dName} ${x.rName} ${x.holder}`.toUpperCase(); return words.every((w) => hay.includes(w)); })
     .sort((a, b) => (a.t === "H") - (b.t === "H") || (a.mkt == null) - (b.mkt == null)).slice(0, 12);
 }
-const CMDS = { MAP: "map", HOME: "map", NATIONAL: "national", PREDICT: "predict", MARKETS: "markets", KALSHI: "markets", POLLS: "polling", POLLING: "polling", RACE: "race" };
+const CMDS = { GENERIC: "generic", GB: "generic", MODELS: "generic", MAP: "map", HOME: "map", NATIONAL: "national", PREDICT: "predict", MARKETS: "markets", KALSHI: "markets", POLLS: "polling", POLLING: "polling", RACE: "race" };
 function showAC() {
   const q = $("q").value, cmd = CMDS[q.trim().toUpperCase()];
   acList = matches(q);
@@ -1109,7 +1205,7 @@ $("goBtn").onclick = go;
 /* ---------- keys ---------- */
 $("helpBtn").onclick = (e) => { e.stopPropagation(); $("help").hidden = false; };
 $("help").onclick = () => ($("help").hidden = true);
-const FKEY = { F1: "race", F2: "map", F3: "national", F4: "predict", F5: "markets", F6: "polling" };
+const FKEY = { F1: "race", F2: "map", F3: "national", F4: "predict", F5: "markets", F6: "polling", F9: "generic" };
 function fkey(k) { if (FKEY[k]) setView(FKEY[k]); else if (k === "F7" || k === "F8") { setView("race"); setTab(k === "F7" ? "money" : "voters"); } }
 $("fk").onclick = (e) => { const b = e.target.closest("button[data-k]"); if (b) fkey(b.dataset.k); };
 document.addEventListener("keydown", (e) => {
@@ -1117,7 +1213,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "/") { e.preventDefault(); $("q").focus(); return; }
   if (e.key === "Escape") { const open_ = !$("help").hidden || !$("layoutMenu").hidden || !$("addMenu").hidden; $("help").hidden = true; $("layoutMenu").hidden = true; $("addMenu").hidden = true; if (!open_ && view !== "race") setView("race"); return; }
   if (e.key === "?") { $("help").hidden = !$("help").hidden; return; }
-  if (/^F[1-8]$/.test(e.key)) { e.preventDefault(); fkey(e.key); return; }
+  if (/^F[1-9]$/.test(e.key)) { e.preventDefault(); fkey(e.key); return; }
   if (e.metaKey || e.ctrlKey || e.altKey || view !== "race") return;
   const k = e.key.toLowerCase();
   if (k === "p") setChart("polls");
