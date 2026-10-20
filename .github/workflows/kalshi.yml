@@ -31,6 +31,9 @@ jobs:
       - name: Fetch Kalshi market prices
         run: node scripts/scrape-kalshi.js
 
+      - name: Save hourly price history
+        run: node scripts/kalshi-history.js
+
       - name: Rebuild national overview data
         run: node scripts/build-overview.js
 
