@@ -30,7 +30,7 @@
   /* scoreboard: all three contests at once */
   .score{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1400px;margin:14px auto 0;padding:0 22px}
   .sc{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer;text-align:left;color:inherit}
-  .sc.on{border-color:var(--focus);box-shadow:0 0 0 1px var(--focus) inset}
+  .sc.on{border-color:var(--focus)}
   .sc-top{display:flex;justify-content:space-between;align-items:baseline}
   .sc-name{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);font-weight:600}
   .sc-need{font-size:10.5px;color:var(--ink-dim)}
@@ -43,7 +43,7 @@
   .sc-msg{font-size:11px;margin-top:6px;color:var(--ink-dim);min-height:15px}
   .d{color:var(--nd)} .r{color:var(--lr)}
 
-  main{max-width:1400px;margin:0 auto;padding:12px 22px 28px;display:grid;grid-template-columns:1fr 280px;gap:16px}
+  main{max-width:1400px;margin:0 auto;padding:12px 22px 28px;display:grid;grid-template-columns:1fr 360px;gap:16px;align-items:start}
   .mapcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px;position:relative;min-width:0}
   svg{width:100%;height:auto;display:block}
   .st{stroke:#0a0f18;stroke-width:.7;cursor:pointer;transition:fill .12s}
@@ -51,6 +51,7 @@
   .ds{stroke:#0a0f18;stroke-width:.25;cursor:pointer}
   .outline{fill:none;stroke:#0a0f18;stroke-width:.8;pointer-events:none}
   .st:not(.off):hover,.ds:hover{stroke:var(--ink);stroke-width:1.2}
+  .st.sel,.ds.sel{stroke:#fff;stroke-width:2;paint-order:stroke}
   .kf{opacity:.62}
   .lbl{font-size:9px;fill:#0b0f16;font-weight:700;pointer-events:none;text-anchor:middle}
   .lbl.dim{fill:#5d6a80}
@@ -75,14 +76,72 @@
   .note{font-size:11px;color:var(--ink-dim);line-height:1.5;margin-top:8px}
   .err{padding:30px;color:var(--ink-dim)}
 
-  @media (max-width:980px){ main{grid-template-columns:1fr} .score{grid-template-columns:1fr;padding:0 16px} main{padding:12px 16px 24px} header{padding:12px 16px} }
+
+  /* race panel */
+  .rp{padding:0;overflow:hidden}
+  .rp[hidden]{display:none}
+  .rp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:12px 14px 10px;border-bottom:1px solid var(--line)}
+  .rp-kick{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);font-weight:600}
+  .rp-head h2{font-size:19px;margin:2px 0 3px;font-weight:700}
+  .rp-sub{font-size:12px;color:var(--ink-dim)}
+  .x{background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:6px;width:28px;height:28px;font-size:16px;line-height:1;flex:none}
+  .x:hover{color:var(--ink);border-color:var(--ink-dim)}
+  .rp-call{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:10px 14px;border-bottom:1px solid var(--line)}
+  .rp-call button{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:7px 4px;font-size:12px;font-weight:600}
+  .rp-call button:hover{border-color:var(--ink-dim)}
+  .rp-call button.on.D{background:var(--ld);border-color:var(--ld)} .rp-call button.on.R{background:var(--lr);border-color:var(--lr)}
+  .rp-call button.on.T{background:var(--toss);border-color:var(--toss);color:#0b0f16} .rp-call button.on.I{background:var(--ind);border-color:var(--ind);color:#0b0f16}
+  .rp-call .src{grid-column:1/-1;font-size:11px;color:var(--ink-dim)}
+  .rp-tabs{display:flex;border-bottom:1px solid var(--line);padding:0 8px}
+  .rp-tabs button{flex:1;background:none;border:0;border-bottom:2px solid transparent;color:var(--ink-dim);padding:9px 2px 8px;font-size:12px;font-weight:600}
+  .rp-tabs button.on{color:var(--ink);border-bottom-color:var(--focus)}
+  .rp-body{padding:12px 14px 14px;max-height:62vh;overflow:auto;font-size:12.5px;line-height:1.45}
+  .rp-body h4{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);margin:14px 0 6px;font-weight:600}
+  .rp-body h4:first-child{margin-top:0}
+  .muted{color:var(--ink-dim)}
+  .big{font-size:22px;font-weight:700}
+  .tb{display:flex;height:12px;border-radius:3px;overflow:hidden;background:var(--vac);margin:6px 0 4px}
+  .tb i{display:block;height:100%} .tb .bd{background:var(--ld)} .tb .br{background:var(--lr)}
+  .tbl{display:flex;justify-content:space-between;font-size:12px}
+  table.pl{width:100%;border-collapse:collapse;font-size:12px}
+  table.pl th{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-dim);text-align:left;font-weight:600;padding:4px 4px;border-bottom:1px solid var(--line)}
+  table.pl td{padding:5px 4px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.pl td.n,table.pl th.n{text-align:right;font-family:"IBM Plex Mono",Consolas,monospace;white-space:nowrap}
+  table.pl tr.dim td{opacity:.45}
+  table.pl a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+  table.pl a:hover{border-bottom-color:var(--ink)}
+  .tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.04em;border:1px solid var(--line);color:var(--ink-dim);border-radius:3px;padding:0 4px;margin-left:4px;vertical-align:1px}
+  .rows div{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
+  .rows div span{color:var(--ink-dim)} .rows div b{font-family:"IBM Plex Mono",Consolas,monospace;white-space:nowrap}
+  .rows div.total{border-bottom:0;padding-top:9px} .rows div.total span{color:var(--ink);font-weight:600}
+  .btn{display:inline-flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:8px 12px;font-size:12.5px;font-weight:600;text-decoration:none;margin-top:10px}
+  .btn:hover{border-color:var(--ink-dim)}
+  .cand{padding:8px 0;border-bottom:1px solid var(--line)}
+  .cand .nm{display:flex;justify-content:space-between;gap:8px;font-weight:600}
+  .cand .nm em{font-style:normal;font-size:10px;font-weight:700;color:var(--ink-dim);border:1px solid var(--line);border-radius:3px;padding:0 4px}
+  .cand .fig{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:4px}
+  .cand .fig div{font-size:10.5px;color:var(--ink-dim)} .cand .fig b{display:block;font-size:13px;color:var(--ink);font-family:"IBM Plex Mono",Consolas,monospace;font-weight:600}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+  .demo{display:grid;grid-template-columns:1fr 54px 54px;gap:0 8px;font-size:12px;align-items:center}
+  .demo>*{padding:5px 0;border-bottom:1px solid var(--line)}
+  .demo .h{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-dim);font-weight:600}
+  .demo .n{text-align:right;font-family:"IBM Plex Mono",Consolas,monospace}
+  .demo .hb{grid-column:1/-1;height:4px;padding:0;border:0;margin:-1px 0 2px;background:var(--vac);position:relative}
+  .demo .hb i{position:absolute;left:0;top:0;bottom:0;background:var(--ink-dim)}
+  .linkbtn{background:none;border:0;color:var(--focus);font-size:12px;padding:6px 0;cursor:pointer}
+  .credit{font-size:10.5px;color:var(--ink-dim);margin-top:10px}
+  .credit a{color:var(--ink-dim)}
+  .rp-empty{padding:16px 14px;font-size:12.5px;color:var(--ink-dim);line-height:1.5}
+  kbd{font-family:"IBM Plex Mono",Consolas,monospace;font-size:10.5px;border:1px solid var(--line);border-radius:3px;padding:0 4px}
+
+  @media (max-width:980px){ main{grid-template-columns:1fr} .score{grid-template-columns:1fr;padding:0 16px} main{padding:12px 16px 24px} header{padding:12px 16px} .rp-body{max-height:none} }
 </style>
 </head>
 <body>
 <header>
   <div class="hrow">
     <div><h1>Prediction Map</h1><div class="sub">Call every 2026 race · Senate, House and governors</div></div>
-    <nav class="nav"><a href="./">House map</a><a href="./overview.html">National picture</a><a href="./predict.html" class="on">Prediction map</a><a href="polling/">Polling</a></nav>
+    <nav class="nav"><a href="./">House map</a><a href="./overview.html">National picture</a><a href="./predict.html" class="on">Prediction map</a><a href="polling/">Polling</a><a href="./markets.html">Markets</a></nav>
   </div>
 </header>
 
@@ -104,6 +163,7 @@
 <main>
   <div class="mapcard"><svg id="map" viewBox="0 0 975 610" role="img" aria-label="Prediction map"></svg><div id="tt"></div></div>
   <aside class="side">
+    <div class="box rp" id="rp"><div class="rp-empty" id="rpEmpty"><b style="color:var(--ink)">Click any race</b> to see its polls, Kalshi odds, how it compares with 2024, money and demographics, and to make your call.</div><div id="rpIn" hidden></div></div>
     <div class="box"><h3>Map</h3>
       <div class="seg" id="layerSeg"><button data-l="S" class="on">Senate</button><button data-l="H">House</button><button data-l="G">Governors</button></div>
     </div>
@@ -118,7 +178,8 @@
       <p class="note">Overlays only color the map. They don't count toward the totals unless you fill them in or click the race.</p>
     </div>
     <div class="box"><h3>Your calls</h3>
-      <p class="note" style="margin:0 0 8px">Click a race to cycle <b class="d">Democrat</b> → <b class="r">Republican</b> → <b style="color:var(--toss)">Toss-up</b> → clear.</p>
+      <div class="seg" id="modeSeg" style="margin-bottom:8px"><button data-m="open" class="on">Click opens race</button><button data-m="call">Click calls race</button></div>
+      <p class="note" style="margin:0 0 8px" id="modeNote"></p>
       <div class="act"><button id="clearLayer">Clear this map</button><button id="clearAll">Clear everything</button><button id="share">Copy link</button><button id="lockFills">Keep fills as my calls</button></div>
       <div class="legend" style="margin-top:10px">
         <span><i style="background:var(--ld)"></i>Your call: D</span><span><i style="background:var(--lr)"></i>Your call: R</span>
@@ -154,15 +215,18 @@ let K = { S: {}, H: {}, G: {} }, PI = {}, KMETA = null;
 let layer = "S", overlay = "kalshi";
 let fills = { kalshi: false, polls: false, ratings: false };
 let picks = { S: {}, H: {}, G: {} };
+let clickMode = "open";   // "open" = click shows the race panel, "call" = click cycles your call
+let sel = null;           // { l, x } race open in the panel
+let rpTab = "polls";
 
 /* ---------- saving ---------- */
-function save() { try { localStorage.setItem("pmap-predict", JSON.stringify({ picks, fills, layer, overlay })); } catch {} }
+function save() { try { localStorage.setItem("pmap-predict", JSON.stringify({ picks, fills, layer, overlay, clickMode, rpTab })); } catch {} }
 function load() {
   let s = null;
   const h = location.hash.match(/p=([A-Za-z0-9_\-]+)/);
   if (h) { try { s = JSON.parse(decodeURIComponent(escape(atob(h[1].replace(/-/g, "+").replace(/_/g, "/"))))); } catch {} }
   if (!s) { try { s = JSON.parse(localStorage.getItem("pmap-predict") || "null"); } catch {} }
-  if (s) { picks = Object.assign({ S: {}, H: {}, G: {} }, s.picks || {}); fills = Object.assign(fills, s.fills || {}); layer = s.layer || layer; overlay = s.overlay || overlay; }
+  if (s) { picks = Object.assign({ S: {}, H: {}, G: {} }, s.picks || {}); fills = Object.assign(fills, s.fills || {}); layer = s.layer || layer; overlay = s.overlay || overlay; clickMode = s.clickMode || clickMode; rpTab = s.rpTab || rpTab; }
 }
 
 /* ---------- race model ---------- */
@@ -259,16 +323,24 @@ function paint() {
     const f = fillOf(layer, x);
     n.setAttribute("fill", f.color);
     n.classList.toggle("kf", f.kf);
+    n.classList.toggle("sel", !!sel && sel.x === x);
+    if (sel && sel.x === x) { const a = svg.querySelector(".outline,.lbl"); a ? svg.insertBefore(n, a) : svg.appendChild(n); } // selected outline on top, under labels
   }
   tally(); save();
 }
 function hook(p, x) {
-  p.addEventListener("click", () => {
-    const order = [undefined, "D", "R", "T"];
-    const cur = picks[layer][x.id];
-    const next = order[(order.indexOf(cur) + 1) % order.length];
-    if (next) picks[layer][x.id] = next; else delete picks[layer][x.id];
-    paint(); tip(null, x);
+  p.addEventListener("click", (e) => {
+    if (clickMode === "call" || e.shiftKey) {
+      const order = [undefined, "D", "R", "T"];
+      const cur = picks[layer][x.id];
+      const next = order[(order.indexOf(cur) + 1) % order.length];
+      if (next) picks[layer][x.id] = next; else delete picks[layer][x.id];
+      paint(); tip(null, x);
+      if (sel && sel.x === x) renderCall();
+    } else {
+      $("tt").style.display = "none";
+      openRace(x);
+    }
   });
   p.addEventListener("mousemove", (e) => tip(e, x));
   p.addEventListener("mouseleave", () => ($("tt").style.display = "none"));
@@ -285,7 +357,8 @@ function tip(e, x) {
   if (k && k.thirdParty && k.republican) h += `Kalshi: ${esc(cand("republican"))} ${Math.round(k.republican.pct)}% vs field<br>`;
   else if (kd != null) h += `Kalshi: <span class="d">D ${kd}%</span> · <span class="r">R ${100 - kd}%</span><br>`;
   if (po && po.average && po.average.margin != null) { const m = po.average.margin; h += `Polls: ${m >= 0 ? "D" : "R"}+${Math.abs(m).toFixed(1)} (${po.average.polls})<br>`; }
-  h += c ? `<b>Called: ${c.c === "D" ? "Democrat" : c.c === "R" ? "Republican" : c.c === "I" ? "Independent" : "Toss-up"}</b> <span style="color:var(--ink-dim)">(${c.src === "you" ? "your call" : c.src === "kalshi" ? "Kalshi fill" : c.src === "polls" ? "poll fill" : "rating fill"})</span>` : `<span style="color:var(--ink-dim)">Not called · click to call</span>`;
+  h += clickMode === "open" ? `<span style="color:var(--ink-dim)">Click for polls, odds and money</span><br>` : "";
+  h += c ? `<b>Called: ${c.c === "D" ? "Democrat" : c.c === "R" ? "Republican" : c.c === "I" ? "Independent" : "Toss-up"}</b> <span style="color:var(--ink-dim)">(${c.src === "you" ? "your call" : c.src === "kalshi" ? "Kalshi fill" : c.src === "polls" ? "poll fill" : "rating fill"})</span>` : `<span style="color:var(--ink-dim)">Not called${clickMode === "call" ? " · click to call" : ""}</span>`;
   tt.innerHTML = h; tt.style.display = "block";
   if (e) { const r = svg.parentElement.getBoundingClientRect(); tt.style.left = Math.min(e.clientX - r.left + 14, r.width - 260) + "px"; tt.style.top = e.clientY - r.top + 14 + "px"; }
 }
@@ -324,6 +397,7 @@ function tally() {
 
 /* ---------- controls ---------- */
 function setLayer(l) {
+  if (l !== layer) closeRace();
   layer = l;
   document.querySelectorAll("#layerSeg button").forEach((b) => b.classList.toggle("on", b.dataset.l === l));
   // overlays that don't exist for this layer
@@ -362,6 +436,255 @@ $("share").onclick = () => {
   $("share").textContent = "Copied"; setTimeout(() => ($("share").textContent = "Copy link"), 1400);
 };
 
+/* ---------- race panel ---------- */
+const NYT_PAGE = "https://www.nytimes.com/interactive/polls/latest-polls.html";
+const _cache = new Map();
+const cget = (u) => { if (!_cache.has(u)) _cache.set(u, getJSON(u)); return _cache.get(u); };
+const pad2 = (n) => String(n).padStart(2, "0");
+const raceIdOf = (l, x) => l === "S" ? `${x.st}-S-2026` : l === "G" ? `${x.st}-G-2026` : `${x.st}-H-${pad2(x.d)}-2026`;
+const fecKeyOf = (l, x) => l === "S" ? `${x.st}-senate` : l === "H" ? `${x.st}-${G.app[x.st] === 1 ? "00" : pad2(x.d)}` : null;
+const cleanName = (n) => String(n || "").replace(/\s*\((D|R|I|DFL|L|G|O)\)\s*/g, "").trim();
+const lastOf = (n) => { const p = cleanName(n).replace(/,?\s+(Jr\.?|Sr\.?|II|III|IV)$/i, "").split(/\s+/); return p[p.length - 1] || n; };
+const lead = (m, d, r) => m == null ? "n/a" : Math.abs(m) < 0.05 ? "Tied" : m > 0 ? `${d} +${m.toFixed(1)}` : `${r} +${(-m).toFixed(1)}`;
+const money = (v) => { const n = Number(v); if (!isFinite(n)) return "–"; const a = Math.abs(n); return (n < 0 ? "-" : "") + (a >= 1e6 ? "$" + (a / 1e6).toFixed(a >= 1e7 ? 1 : 2) + "M" : a >= 1e3 ? "$" + Math.round(a / 1e3) + "K" : "$" + Math.round(a)); };
+const fdate = (d) => { if (!d) return ""; const t = new Date(d + (d.length === 10 ? "T12:00:00" : "")); return isNaN(t) ? d : t.toLocaleDateString("en-US", { month: "short", day: "numeric" }); };
+const ago = (ts) => { if (!ts) return ""; const m = Math.round((Date.now() - new Date(ts)) / 6e4); return m < 60 ? `${m} min ago` : m < 2880 ? `${Math.round(m / 60)} hr ago` : `${Math.round(m / 1440)} days ago`; };
+// FEC stores "SHAH, AMISH DR." -> "Amish Shah"
+const fecName = (n) => {
+  const [last, rest = ""] = String(n || "").split(",");
+  const first = rest.replace(/\b(MR|MRS|MS|DR|HON|JR|SR|II|III|IV)\b\.?/gi, "").trim();
+  const t = (s) => s.toLowerCase().replace(/(^|[\s'-])([a-z])/g, (a, b, c) => b + c.toUpperCase()).replace(/\bMc([a-z])/g, (a, c) => "Mc" + c.toUpperCase());
+  return (t(first) + " " + t(last.trim())).trim();
+};
+
+function raceTitle(l, x) {
+  if (l === "H") return { kick: "House", name: `${G.names[x.st]} ${x.label.endsWith("AL") ? "at-large" : x.d}`, sub: x.m ? `Held by ${x.m.n} (${x.m.p})${x.rating ? " · " + x.rating : ""}` : `Vacant${x.rating ? " · " + x.rating : ""}` };
+  if (l === "S") return { kick: "Senate" + (x.special ? " · special" : ""), name: x.name, sub: `Held by ${x.incumbent} (${x.holder})` };
+  return { kick: "Governor", name: x.name, sub: "" };
+}
+
+function openRace(x) {
+  sel = { l: layer, x };
+  $("rpEmpty").hidden = true;
+  const box = $("rpIn"); box.hidden = false;
+  const t = raceTitle(layer, x);
+  const tabs = [["polls", "Polls"], ["market", "Kalshi"], ["vs24", "vs 2024"], ["money", "Money"], ["people", "People"]];
+  box.innerHTML = `<div class="rp-head"><div><div class="rp-kick">${esc(t.kick)}</div><h2>${esc(t.name)}</h2><div class="rp-sub">${esc(t.sub)}</div></div><button class="x" id="rpClose" aria-label="Close" title="Close (Esc)">×</button></div>
+    <div class="rp-call" id="rpCall"></div>
+    <div class="rp-tabs" id="rpTabs">${tabs.map(([k, v]) => `<button data-t="${k}" class="${k === rpTab ? "on" : ""}">${v}</button>`).join("")}</div>
+    <div class="rp-body" id="rpBody"><span class="muted">Loading…</span></div>`;
+  $("rpClose").onclick = closeRace;
+  $("rpTabs").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; rpTab = b.dataset.t; document.querySelectorAll("#rpTabs button").forEach((y) => y.classList.toggle("on", y === b)); renderTab(); save(); };
+  renderCall(); paint(); renderTab();
+  if (window.innerWidth <= 980) $("rp").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+function closeRace() {
+  if (!sel) return;
+  sel = null; $("rpIn").hidden = true; $("rpIn").innerHTML = ""; $("rpEmpty").hidden = false;
+  if (G) paint();
+}
+function renderCall() {
+  if (!sel) return;
+  const { l, x } = sel;
+  const mine = picks[l][x.id], c = callOf(l, x);
+  const k = raceKalshi(l, x);
+  const indRace = k && k.thirdParty && k.republican;
+  const opts = [["D", indRace ? "Ind." : "Dem"], ["T", "Toss-up"], ["R", "Rep"], ["", "Clear"]];
+  if (indRace) opts[0][0] = "I";
+  $("rpCall").innerHTML = opts.map(([v, lab]) => `<button data-c="${v}" class="${v} ${v && mine === v ? "on" : ""}">${lab}</button>`).join("") +
+    `<div class="src">${mine ? "Your call." : c ? `Filled from ${c.src === "kalshi" ? "Kalshi" : c.src === "polls" ? "polls" : "ratings"}: ${c.c === "D" ? "Democrat" : c.c === "R" ? "Republican" : c.c === "I" ? "Independent" : "Toss-up"}. Pick one to make it yours.` : "Not called yet."} Keys: <kbd>D</kbd> <kbd>R</kbd> <kbd>T</kbd> <kbd>C</kbd></div>`;
+  $("rpCall").onclick = (e) => { const b = e.target.closest("button"); if (b) setCall(b.dataset.c); };
+}
+function setCall(v) {
+  if (!sel) return;
+  const { l, x } = sel;
+  if (v) picks[l][x.id] = v; else delete picks[l][x.id];
+  paint(); renderCall();
+}
+
+async function renderTab() {
+  if (!sel) return;
+  const mine = sel, body = $("rpBody");
+  body.innerHTML = `<span class="muted">Loading…</span>`;
+  let html = "";
+  try {
+    html = await ({ polls: tabPolls, market: tabMarket, vs24: tabVs24, money: tabMoney, people: tabPeople }[rpTab] || tabPolls)(mine.l, mine.x);
+  } catch (e) { html = `<p class="muted">Couldn't load this (${esc(e.message)}).</p>`; }
+  if (sel === mine && $("rpBody")) $("rpBody").innerHTML = html;
+  const more = $("rpMore"); if (more) more.onclick = () => { document.querySelectorAll("#rpBody .hide").forEach((r) => { r.classList.remove("hide"); r.style.display = ""; }); more.remove(); };
+}
+
+function twoBar(d, r, dl, rl) {
+  const tot = (d || 0) + (r || 0) || 1, w = Math.max(0, Math.min(100, (d / tot) * 100));
+  return `<div class="tb"><i class="bd" style="width:${w}%"></i><i class="br" style="width:${100 - w}%"></i></div>
+    <div class="tbl"><span class="d">${esc(dl)} <b class="num">${d.toFixed(1)}%</b></span><span class="r"><b class="num">${r.toFixed(1)}%</b> ${esc(rl)}</span></div>`;
+}
+
+/* Polls */
+async function tabPolls(l, x) {
+  const id = raceIdOf(l, x);
+  const [pf, avg] = await Promise.all([cget(`data/polls/${id}.json`), cget(`data/poll-average/${id}.json`)]);
+  const polls = (pf && pf.polls) || [];
+  let h = "";
+  if (avg && avg.margin != null && avg.dem != null) {
+    const dS = lastOf(avg.demCandidate), rS = lastOf(avg.repCandidate);
+    h += `<h4>Polling average</h4><div class="big ${avg.margin >= 0 ? "d" : "r"}">${esc(lead(avg.margin, dS, rS))}</div>${twoBar(avg.dem, avg.rep, dS, rS)}
+      <p class="muted" style="margin-top:4px">${avg.poll_count} poll${avg.poll_count === 1 ? "" : "s"} from the last ${avg.window_days || 90} days. Newer, bigger and likely-voter polls count more; partisan polls count half.</p>`;
+  } else if (polls.length) h += `<h4>Polling average</h4><p class="muted">Not enough recent head-to-head polls for an average.</p>`;
+  if (!polls.length) return h + `<p class="muted">${esc((pf && pf.note) || "No public polls of this race yet.")}</p>`;
+  const nyt = polls.some((p) => (p.foundOn || []).includes(NYT_PAGE));
+  h += `<h4>All polls (${polls.length})</h4><table class="pl"><thead><tr><th>Date</th><th>Pollster</th><th class="n">D</th><th class="n">R</th><th class="n">Lead</th></tr></thead><tbody>`;
+  polls.forEach((p, i) => {
+    const D = (p.results || []).find((r) => r.party === "D"), R = (p.results || []).find((r) => r.party === "R");
+    const dp = D ? Number(D.pct ?? D.percentage) : null, rp = R ? Number(R.pct ?? R.percentage) : null;
+    const m = dp != null && rp != null ? dp - rp : null;
+    const url = p.sourceUrl || (p.foundOn || [])[0];
+    const tags = [p.population, p.sampleSize ? "n=" + p.sampleSize : null].filter(Boolean).join(" · ");
+    const flags = (p.partisan ? `<span class="tag" title="Partisan or internal poll; counts half">${p.partisan === "internal" ? "INT" : esc(p.partisan)}</span>` : "") + ((p.foundOn || []).includes(NYT_PAGE) ? `<span class="tag" title="From The New York Times polling database">NYT</span>` : "");
+    h += `<tr class="${p.otherMatchup ? "dim " : ""}${i >= 15 ? "hide" : ""}" ${i >= 15 ? 'style="display:none"' : ""}><td class="n" style="text-align:left">${esc(fdate(p.endDate))}</td>
+      <td>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(p.pollster)}</a>` : esc(p.pollster)}${flags}<div class="muted" style="font-size:10.5px">${esc(tags)}${p.otherMatchup && D && R ? ` · ${esc(lastOf(D.candidate))} v ${esc(lastOf(R.candidate))}` : ""}</div></td>
+      <td class="n d">${dp ?? "–"}</td><td class="n r">${rp ?? "–"}</td><td class="n ${m == null ? "" : m >= 0 ? "d" : "r"}">${m == null ? "" : (Math.round(m) === 0 ? "Tie" : (m >= 0 ? "D+" : "R+") + Math.abs(m).toFixed(0))}</td></tr>`;
+  });
+  h += `</tbody></table>`;
+  if (polls.length > 15) h += `<button class="linkbtn" id="rpMore">Show all ${polls.length} polls</button>`;
+  if (polls.some((p) => p.otherMatchup)) h += `<p class="muted" style="margin-top:6px">Faded rows test a different matchup and are left out of the average.</p>`;
+  if (nyt) h += `<p class="credit">Includes polls from <a href="${NYT_PAGE}" target="_blank" rel="noopener">The New York Times</a> (CC BY 4.0).</p>`;
+  return h;
+}
+
+/* Kalshi */
+function kalshiUrl(e) { return e && e.series ? `https://kalshi.com/markets/${String(e.series).toLowerCase()}` : "https://kalshi.com/category/elections"; }
+async function tabMarket(l, x) {
+  const k = raceKalshi(l, x);
+  if (!k || !(k.democrat || k.republican)) return `<p class="muted">Kalshi doesn't list a market for this race. It covers about 75 House races, the competitive Senate races and most governor races.</p><a class="btn" href="https://kalshi.com/category/elections" target="_blank" rel="noopener">Browse Kalshi election markets ↗</a>`;
+  const ind = k.thirdParty && k.republican;
+  const dN = k.democrat && k.democrat.candidate && !/party/i.test(k.democrat.candidate) ? k.democrat.candidate : "Democrat";
+  const rN = k.republican && k.republican.candidate && !/party/i.test(k.republican.candidate) ? k.republican.candidate : "Republican";
+  const d = ind ? 100 - k.republican.pct : k.democrat ? (k.democrat.share ?? k.democrat.pct) : 100 - (k.republican.share ?? k.republican.pct);
+  const r = ind ? k.republican.pct : 100 - d;
+  const fav = d >= r ? (ind ? "Field" : lastOf(dN)) : lastOf(rN);
+  let h = `<h4>Chance to win</h4><div class="big ${d >= r ? "d" : "r"}">${esc(fav)} ${Math.round(Math.max(d, r))}%</div>${twoBar(d, r, ind ? "Everyone else" : lastOf(dN), lastOf(rN))}`;
+  h += `<div class="rows" style="margin-top:8px">`;
+  for (const [side, e] of [["Democrat", k.democrat], ["Republican", k.republican]]) if (e) h += `<div><span>${side} contract <span class="tag">${esc(e.ticker)}</span></span><b>${Math.round(e.pct)}¢${e.spread != null ? ` · spread ${e.spread}¢` : ""}</b></div>`;
+  h += `</div>`;
+  // Compare with polls: is the market ahead of or behind the poll leader?
+  const avg = await cget(`data/poll-average/${raceIdOf(l, x)}.json`);
+  if (!ind && avg && avg.margin != null) {
+    const pollFav = avg.margin >= 0 ? "D" : "R", mktFav = d >= 50 ? "D" : "R";
+    h += `<h4>Market vs. polls</h4><p>${pollFav === mktFav ? "Polls and the market agree on the favorite." : "<b>Polls and the market disagree</b> on who's ahead."} Polls: <b class="${avg.margin >= 0 ? "d" : "r"}">${esc(lead(avg.margin, lastOf(avg.demCandidate), lastOf(avg.repCandidate)))}</b>.</p>`;
+  }
+  if (ind) h += `<p class="muted" style="margin-top:8px">Kalshi lists Democrat and Republican sides here, so this shows ${esc(lastOf(rN))} against everyone else.</p>`;
+  h += `<a class="btn" href="${kalshiUrl(k)}" target="_blank" rel="noopener">View on Kalshi ↗</a>`;
+  h += `<p class="muted" style="margin-top:10px">Prices are what traders pay for a contract that pays $1 if it happens, so 62¢ ≈ 62% chance. Updated ${esc(ago(k.fetchedAt))}.</p>`;
+  return h;
+}
+
+/* vs 2024 */
+async function tabVs24(l, x) {
+  const id = raceIdOf(l, x);
+  const [base, gen, avg] = await Promise.all([cget("data/baseline-2024.json"), cget("data/poll-average/generic-ballot.json"), cget(`data/poll-average/${id}.json`)]);
+  if (l === "H") return `<p class="muted">District-by-district 2024 presidential results aren't loaded yet, so House seats can't be compared with 2024. Senate and governor races use each state's 2024 result.</p>`;
+  if (!base || base.statePresMarginD[x.st] == null) return `<p class="muted">No 2024 baseline for this state.</p>`;
+  const b = base.statePresMarginD[x.st];
+  const hasAvg = avg && avg.margin != null;
+  const k = raceKalshi(l, x);
+  if (k && k.thirdParty && k.republican) return `<p class="muted">This is an independent-vs-Republican race, so a Democratic-vs-Republican baseline doesn't apply.</p><div class="rows"><div><span>2024 presidential here</span><b>${esc(lead(b, "Harris", "Trump"))}</b></div></div>`;
+  const dS = hasAvg ? lastOf(avg.demCandidate) : "Dem", rS = hasAvg ? lastOf(avg.repCandidate) : "Rep";
+  let h = `<h4>2024 here</h4><div class="rows"><div><span>Presidential result</span><b class="${b >= 0 ? "d" : "r"}">${esc(lead(b, "Harris", "Trump"))}</b></div>`;
+  if (hasAvg) {
+    const vs = avg.margin - b;
+    h += `<div><span>Polling average now</span><b class="${avg.margin >= 0 ? "d" : "r"}">${esc(lead(avg.margin, dS, rS))}</b></div>
+      <div class="total"><span>Change since 2024</span><b class="${vs >= 0 ? "d" : "r"}">${vs >= 0 ? "D" : "R"} +${Math.abs(vs).toFixed(1)}</b></div></div>
+      <p class="muted">${esc(vs >= 0 ? dS : rS)} is running ${Math.abs(vs).toFixed(1)} points ${vs >= 0 ? "better for Democrats" : "better for Republicans"} than the 2024 presidential result here.</p>`;
+  } else h += `</div>`;
+  if (gen && gen.margin != null) {
+    const shift = gen.margin - base.nationalPresMarginD, exp = b + shift;
+    h += `<h4>Against the national environment</h4><div class="rows">
+      <div><span>National shift since 2024 <span class="muted">(generic ballot ${gen.margin >= 0 ? "D" : "R"}+${Math.abs(gen.margin).toFixed(1)} vs. 2024 vote R+${Math.abs(base.nationalPresMarginD).toFixed(1)})</span></span><b class="${shift >= 0 ? "d" : "r"}">${shift >= 0 ? "D" : "R"} +${Math.abs(shift).toFixed(1)}</b></div>
+      <div><span>Expected margin (2024 + shift)</span><b class="${exp >= 0 ? "d" : "r"}">${esc(lead(exp, "D", "R"))}</b></div>`;
+    if (hasAvg) {
+      const diff = avg.margin - exp, who = diff >= 0 ? dS : rS;
+      h += `<div class="total"><span>${esc(who)} vs. expected</span><b class="${diff >= 0 ? "d" : "r"}">+${Math.abs(diff).toFixed(1)}</b></div></div>
+        <p class="muted">${Math.abs(diff) < 1 ? "Polling right in line with the national environment." : `${esc(who)} is running ${Math.abs(diff).toFixed(1)} points ahead of what the national environment alone predicts here.`}</p>`;
+    } else h += `</div><p class="muted">No polling average yet, so there's nothing to compare against the expectation.</p>`;
+  }
+  return h;
+}
+
+/* Money */
+async function tabMoney(l, x) {
+  if (l === "G") return `<p class="muted">Governor candidates file with their state, not the FEC, so there's no national fundraising data for governor races.</p>`;
+  const key = fecKeyOf(l, x);
+  const [f, nom] = await Promise.all([cget(`data/fec/${key}.json`), cget("data/nominees.json")]);
+  const list = ((f && f.candidates) || []).filter((c) => c.totals);
+  if (!list.length) return `<p class="muted">No FEC filings found for this seat.</p>`;
+  const frags = ((nom && nom[key]) || []).map((s) => String(s).toUpperCase());
+  const isNom = (c) => frags.some((fr) => String(c.name).toUpperCase().includes(fr));
+  // FEC lists duplicate committees for some candidates; keep the one with the most money
+  const by = new Map();
+  for (const c of list) { const k = c.name; if (!by.has(k) || (c.totals.receipts || 0) > (by.get(k).totals.receipts || 0)) by.set(k, c); }
+  const all = [...by.values()].sort((a, b) => (isNom(b) - isNom(a)) || (b.totals.receipts || 0) - (a.totals.receipts || 0));
+  const noms = all.filter(isNom), rest = all.filter((c) => !isNom(c) && (c.totals.receipts || 0) > 0);
+  const pcol = (p) => (p === "DEM" || p === "DFL" ? "var(--ld)" : p === "REP" ? "var(--lr)" : "var(--ind)");
+  const row = (c, hide) => `<div class="cand${hide ? " hide" : ""}"${hide ? ' style="display:none"' : ""}><div class="nm"><span><span class="dot" style="background:${pcol(c.party)}"></span>${esc(fecName(c.name))}</span>${isNom(c) ? "<em>NOMINEE</em>" : `<span class="muted" style="font-weight:400;font-size:11px">${esc(c.party || "")}</span>`}</div>
+    <div class="fig"><div>Raised<b>${money(c.totals.receipts)}</b></div><div>Spent<b>${money(c.totals.disbursements)}</b></div><div>Cash on hand<b>${money(c.totals.cash_on_hand)}</b></div></div>
+    <div class="muted" style="font-size:10.5px;margin-top:3px">${Number(c.totals.last_debts_owed_by_committee) > 0 ? `Debt ${money(c.totals.last_debts_owed_by_committee)} · ` : ""}${c.totals.coverage_end_date ? "Through " + esc(fdate(c.totals.coverage_end_date)) : "No report yet"} · <a href="https://www.fec.gov/data/candidate/${esc(c.candidate_id)}/" target="_blank" rel="noopener" style="color:var(--ink-dim)">FEC</a></div></div>`;
+  let h = "";
+  const dN = noms.find((c) => c.party === "DEM" || c.party === "DFL"), rN = noms.find((c) => c.party === "REP");
+  if (dN && rN) {
+    const dc = Number(dN.totals.cash_on_hand) || 0, rc = Number(rN.totals.cash_on_hand) || 0;
+    const w = dc + rc > 0 ? (dc / (dc + rc)) * 100 : 50;
+    h += `<h4>Cash on hand</h4><div class="tb"><i class="bd" style="width:${w}%"></i><i class="br" style="width:${100 - w}%"></i></div>
+      <div class="tbl"><span class="d">${esc(lastOf(fecName(dN.name)))} <b class="num">${money(dc)}</b></span><span class="r"><b class="num">${money(rc)}</b> ${esc(lastOf(fecName(rN.name)))}</span></div>
+      <p class="muted" style="margin-top:4px">${dc === rc ? "Even." : `${esc(lastOf(fecName((dc > rc ? dN : rN).name)))} has ${money(Math.abs(dc - rc))} more in the bank.`}</p>`;
+  }
+  h += `<h4>${noms.length ? "Nominees" : "Candidates"}</h4>` + (noms.length ? noms : rest.slice(0, 4)).map((c) => row(c)).join("");
+  const others = noms.length ? rest : rest.slice(4);
+  if (others.length) h += others.map((c) => row(c, true)).join("") + `<button class="linkbtn" id="rpMore">Show ${others.length} other filer${others.length === 1 ? "" : "s"}</button>`;
+  h += `<p class="credit">Federal Election Commission, updated ${esc(ago(f.updated_at))}. Candidate committees only; outside spending isn't included.</p>`;
+  return h;
+}
+
+/* People (Census) */
+async function tabPeople(l, x) {
+  const file = l === "H" ? `data/census/${x.st}-${G.app[x.st] === 1 ? "00" : pad2(x.d)}.json` : `data/census/state/${x.st}.json`;
+  const [c, us] = await Promise.all([cget(file), cget("data/census/state/US.json")]);
+  const p = c && c.profile;
+  if (!p) return `<p class="muted">No Census profile for this ${l === "H" ? "district" : "state"} yet.</p>`;
+  const u = (us && us.profile) || {};
+  const pct = (v) => { const n = parseFloat(String(v).replace(/[%,$]/g, "")); return isFinite(n) ? n : null; };
+  const line = (k, label, bar) => {
+    if (p[k] == null) return "";
+    const v = pct(p[k]);
+    return `<span>${esc(label || k)}</span><span class="n">${esc(String(p[k]))}</span><span class="n muted">${u[k] != null ? esc(String(u[k])) : ""}</span>${bar && v != null ? `<span class="hb"><i style="width:${Math.min(100, v)}%"></i></span>` : ""}`;
+  };
+  let h = `<h4>${l === "H" ? "The district" : "The state"} · ${esc(p.Population)} people</h4><div class="demo"><span class="h"></span><span class="h n">Here</span><span class="h n">US</span>`;
+  h += line("White (non-Hispanic)", "White", true) + line("Hispanic / Latino", "Hispanic / Latino", true) + line("Black", "Black", true) + line("Asian", "Asian", true) + line("Native American", "Native American", true) + line("Other / multiracial", "Other / multiracial", true);
+  h += `</div><h4>Economy and education</h4><div class="demo"><span class="h"></span><span class="h n">Here</span><span class="h n">US</span>`;
+  h += line("Median household income") + line("Bachelor's or higher", "College degree", true) + line("Poverty rate", null, true) + line("Homeownership", null, true) + line("Median age");
+  h += `</div><p class="credit">Census Bureau, American Community Survey 5-year estimates${l === "H" ? "" : ". Statewide figures are rolled up from congressional districts; median income and age are approximate"}.</p>`;
+  return h;
+}
+
+/* panel controls */
+function setMode(m) {
+  clickMode = m;
+  document.querySelectorAll("#modeSeg button").forEach((b) => b.classList.toggle("on", b.dataset.m === m));
+  $("modeNote").innerHTML = m === "open"
+    ? `Click a race to open it and call it from the panel. Hold <kbd>Shift</kbd> and click to call quickly: <b class="d">D</b> → <b class="r">R</b> → <b style="color:var(--toss)">Toss-up</b> → clear.`
+    : `Click a race to cycle <b class="d">Democrat</b> → <b class="r">Republican</b> → <b style="color:var(--toss)">Toss-up</b> → clear.`;
+  save();
+}
+$("modeSeg").onclick = (e) => { const b = e.target.closest("button"); if (b) setMode(b.dataset.m); };
+document.addEventListener("keydown", (e) => {
+  if (e.target.closest && e.target.closest("input,textarea")) return;
+  if (e.key === "Escape") return closeRace();
+  if (!sel || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  if (k === "d") setCall(raceKalshi(sel.l, sel.x) && raceKalshi(sel.l, sel.x).thirdParty ? "I" : "D");
+  else if (k === "r") setCall("R"); else if (k === "t") setCall("T"); else if (k === "c") setCall("");
+});
+
 /* ---------- boot ---------- */
 (async function boot() {
   try {
@@ -385,10 +708,11 @@ $("share").onclick = () => {
     const up = sen.filter((m) => /^202[67]/.test(m.e));
     const senateRaces = up.map((m) => ({ id: m.s, st: m.s, name: names[m.s], incumbent: m.n, holder: m.p, special: m.e.startsWith("2026") }));
     let holdD = 0, holdR = 0; for (const m of sen) if (!up.includes(m)) (m.p === "R" ? holdR++ : holdD++);
-    G = { states, dpaths, names, districts, senateRaces, holdD, holdR };
+    G = { states, dpaths, names, districts, senateRaces, holdD, holdR, app: APP };
     load();
     setOverlay(overlay, true);
     $("fillKalshi").classList.toggle("on", fills.kalshi); $("fillPolls").classList.toggle("on", fills.polls); $("fillRatings").classList.toggle("on", !!fills.ratings);
+    setMode(clickMode);
     setLayer(layer);
   } catch (e) {
     document.querySelector(".mapcard").innerHTML = `<p class="err">Couldn't load the map data (${esc(e.message)}).</p>`;
