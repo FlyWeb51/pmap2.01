@@ -68,7 +68,33 @@
   .main.noleft.noright{grid-template-columns:minmax(0,1fr)}
   .main.noleft #dockL,.main.noright #dockR{display:none}
   .dock{background:var(--bg);display:flex;flex-direction:column;gap:1px;overflow-y:auto;overflow-x:hidden;min-width:0}
-  .center{background:var(--p);padding:8px 12px;overflow:auto;min-width:0}
+  .mid{display:flex;flex-direction:column;min-width:0;min-height:0;background:var(--p)}
+  .vbar{flex:none;display:flex;align-items:center;gap:10px;padding:4px 12px;border-bottom:1px solid var(--l);background:var(--p2);font-size:11px}
+  .vbar[hidden]{display:none}
+  .vbar b{color:var(--am);letter-spacing:.08em}
+  .vbar button{border:1px solid var(--l);padding:1px 8px;color:var(--mu)}
+  .vbar button.on{color:var(--am);border-color:var(--am)}
+  .vbar button:hover{color:var(--am);border-color:var(--am)}
+  .center{flex:1;background:var(--p);padding:8px 12px;overflow:auto;min-width:0;min-height:0}
+  .center[hidden],.frame[hidden]{display:none}
+  .frame{flex:1;min-height:0;background:#0e1420}
+  .frame iframe{display:block;width:100%;height:100%;border:0}
+  .callbar{display:flex;gap:4px;align-items:center;flex-wrap:wrap;margin-top:6px;justify-content:flex-end}
+  .callbar span{color:var(--mu);font-size:10.5px;margin-right:2px}
+  .callbar button{border:1px solid var(--l);padding:1px 8px;color:var(--ink)}
+  .callbar button:hover{border-color:var(--am)}
+  .callbar button.on.cD{background:var(--d);border-color:var(--d);color:#000} .callbar button.on.cR{background:var(--r);border-color:var(--r);color:#000}
+  .callbar button.on.cT{background:#b48ce0;border-color:#b48ce0;color:#000} .callbar button.on.cI{background:var(--ind);border-color:var(--ind);color:#000}
+  .mathp{border:1px solid var(--l);border-top:0;padding:8px 10px;color:var(--ink);font-size:12px;line-height:1.65;margin-bottom:8px}
+  .mathp b{font-weight:600}
+  .mathp .mu{font-size:11px}
+  .mk-top{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));border-top:1px solid var(--l);border-left:1px solid var(--l);margin-bottom:10px}
+  .mk-top div{border-right:1px solid var(--l);border-bottom:1px solid var(--l);padding:6px 8px;min-width:0}
+  .mk-top small{display:block;color:var(--mu);font-size:10px;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mk-top b{font-size:15px}
+  .mk-ctl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+  .mk-ctl input{background:#000;border:1px solid var(--l);color:var(--am);font:inherit;padding:2px 8px;flex:1;min-width:160px;max-width:320px;text-transform:uppercase;outline:0}
+  .mk-ctl input:focus{border-color:var(--am)}
 
   /* ---------- widgets ---------- */
   .w{background:var(--p);flex:none;min-width:0}
@@ -127,10 +153,7 @@
   .acts .pinned{color:var(--am);border-color:var(--am)}
   .kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));margin:8px 0 0;border-top:1px solid var(--l);border-left:1px solid var(--l)}
   .kv div{background:var(--p);padding:6px 8px;min-width:0;border-right:1px solid var(--l);border-bottom:1px solid var(--l)}
-  .math{border:1px solid var(--l);border-top:0;padding:6px 8px;color:var(--mu);font-size:11px;line-height:1.6;margin-bottom:8px}
-  .math div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:8px}
-  .math span:first-child{color:var(--am);font-size:10px;letter-spacing:.06em}
-  .math b{font-weight:600}
+
   .kv small{display:block;color:var(--mu);font-size:10px;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .kv b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
@@ -167,7 +190,9 @@
     body{height:auto;overflow:auto;display:block}
     .main,.main.noleft,.main.noright,.main.noleft.noright{display:flex;flex-direction:column}
     .dock{overflow:visible}
-    .center{overflow:visible;order:-1}
+    .mid{order:-1}
+    .center{overflow:visible}
+    .frame{height:85vh;flex:none}
     .clock{margin-left:0}
     .feeds{flex-wrap:wrap}
   }
@@ -190,17 +215,22 @@
 
 <div class="main" id="main">
   <aside class="dock" id="dockL" aria-label="Left panels"></aside>
-  <section class="center" id="detail"><p class="mu">Loading…</p></section>
+  <div class="mid" id="mid">
+    <div class="vbar" id="vbar" hidden><b id="vtitle"></b><span class="mu" id="vnote"></span><button id="vwide" style="margin-left:auto" title="Hide the side panels on this screen">⇔ WIDE</button><button id="vback" style="margin-left:0">ESC · BACK TO RACE</button></div>
+    <section class="center" id="detail"><p class="mu">Loading…</p></section>
+    <section class="center" id="vMarkets" hidden></section>
+    <section class="frame" id="vFrame" hidden><iframe id="frame" title="Election Center page"></iframe></section>
+  </div>
   <aside class="dock" id="dockR" aria-label="Right panels"></aside>
 </div>
 
 <nav class="fk" id="fk">
-  <button class="on" data-k="F1"><b>F1</b>POLLS</button>
-  <a href="./"><b>F2</b>MAP</a>
-  <a href="./overview.html"><b>F3</b>NATIONAL</a>
-  <a href="./predict.html"><b>F4</b>PREDICT</a>
-  <a href="./markets.html"><b>F5</b>MARKETS</a>
-  <a href="polling/"><b>F6</b>POLLING</a>
+  <button class="on" data-k="F1"><b>F1</b>RACE</button>
+  <button data-k="F2"><b>F2</b>MAP</button>
+  <button data-k="F3"><b>F3</b>NATIONAL</button>
+  <button data-k="F4"><b>F4</b>PREDICT</button>
+  <button data-k="F5"><b>F5</b>MARKETS</button>
+  <button data-k="F6"><b>F6</b>POLLING</button>
   <button data-k="F7"><b>F7</b>MONEY</button>
   <button data-k="F8"><b>F8</b>VOTERS</button>
   <button class="help" id="helpBtn"><b>?</b>HELP</button>
@@ -211,7 +241,9 @@
   <b class="am">KEYS</b><br>
   <span class="am">/</span> search: <span class="am">TX SEN</span>, <span class="am">PA-07</span>, <span class="am">GA GOV</span>, a state, or a name, then Enter<br>
   <span class="am">↑ ↓</span> step through the watchlist · <span class="am">S</span> star the open race<br>
-  <span class="am">P</span> poll chart · <span class="am">K</span> price chart · <span class="am">F1</span> polls · <span class="am">F7</span> money · <span class="am">F8</span> voters · <span class="am">Esc</span> close<br><br>
+  <span class="am">P</span> poll chart · <span class="am">K</span> price chart · <span class="am">D R T C</span> call the open race (Dem, Rep, toss-up, clear)<br>
+  <span class="am">F1</span> race · <span class="am">F2</span> map · <span class="am">F3</span> national · <span class="am">F4</span> predict · <span class="am">F5</span> all Kalshi markets · <span class="am">F6</span> polling · <span class="am">F7</span> money · <span class="am">F8</span> voters · <span class="am">Esc</span> back to the race<br>
+  Every screen opens inside the terminal; only outside links (Kalshi, poll sources) open a new tab.<br><br>
   <b class="am">COLUMNS</b><br>
   MKT = Kalshi chance for the favorite · 24H = change in the Democratic (or independent) chance; blue is toward D, red toward R · POLLS = polling average · REG = registered Democrats minus Republicans as a share of all registered voters · SPLIT = polls and market favor different candidates<br><br>
   <span class="mu">Prediction-market prices aren't polls or forecasts. Not financial advice. Click anywhere to close.</span>
@@ -331,12 +363,12 @@ function nominees(x) {
 }
 
 /* ---------- layout ---------- */
-const DEFAULT_LAYOUT = { left: ["watchlist", "pinned"], right: ["registration", "control", "signals", "newpolls", "calls"], col: {}, ticker: true, showL: true, showR: true, wl: { type: "all", sort: "close", rows: 30 }, regSort: "edge" };
+const DEFAULT_LAYOUT = { left: ["watchlist", "pinned"], right: ["registration", "control", "natmkts", "signals", "newpolls", "calls"], col: {}, ticker: true, showL: true, showR: true, wl: { type: "all", sort: "close", rows: 30 }, regSort: "edge" };
 const clone = (o) => JSON.parse(JSON.stringify(o));
-let LAYOUT = Object.assign(clone(DEFAULT_LAYOUT), store.get("pmap-term-layout2", {}));
+let LAYOUT = Object.assign(clone(DEFAULT_LAYOUT), store.get("pmap-term-layout3", {}));
 LAYOUT.wl = Object.assign(clone(DEFAULT_LAYOUT.wl), LAYOUT.wl || {});
 let PINS = store.get("pmap-term-pins", []);
-const saveLayout = () => store.set("pmap-term-layout2", LAYOUT);
+const saveLayout = () => store.set("pmap-term-layout3", LAYOUT);
 
 const W = {
   watchlist: { title: "WATCHLIST", desc: "Closest races, movers, splits, registration edge", render: wWatchlist },
@@ -350,13 +382,15 @@ const W = {
   generic: { title: "NATIONAL ENVIRONMENT", desc: "Generic ballot vs 2024, market House vote", render: wGeneric },
   seats: { title: "SEAT MATH", desc: "House ratings and Senate seat counts", render: wSeats },
   money: { title: "SENATE CASH", desc: "Cash on hand for every Senate nominee", render: wMoney },
-  calls: { title: "MY CALLS", desc: "Your Prediction map calls", render: wCalls },
+  calls: { title: "MY CALLS", desc: "Your race calls (same as the Prediction map)", render: wCalls },
+  natmkts: { title: "NATIONAL MARKETS", desc: "Kalshi seat counts, popular vote and wave markets", render: wNatMarkets },
 };
 
 function applyLayout() {
   $("tickWrap").hidden = !LAYOUT.ticker;
   $("main").classList.toggle("noleft", !LAYOUT.showL);
   $("main").classList.toggle("noright", !LAYOUT.showR);
+  applyWide();
   for (const side of ["left", "right"]) {
     LAYOUT[side] = LAYOUT[side].filter((id) => W[id]);
     $(side === "left" ? "dockL" : "dockR").innerHTML = LAYOUT[side].map((id, i, arr) => `
@@ -588,6 +622,24 @@ async function wMoney(el, sub) {
   el.innerHTML = `<table><colgroup><col style="width:58px"><col><col><col style="width:46px"></colgroup><thead><tr><th>RACE</th><th class="n">${"D/I CASH"}</th><th class="n">R CASH</th><th class="n">RATIO</th></tr></thead><tbody>
     ${moneyRows.slice(0, 20).map((m) => `<tr class="click" data-id="${m.x.id}" title="${esc(matchup(m.x))}"><td class="am">${m.x.code}</td><td class="n ${m.x.ind ? "i" : "d"}">${money(m.D)}</td><td class="n r">${money(m.R)}</td><td class="n ${m.D >= m.R ? (m.x.ind ? "i" : "d") : "r"}">${m.D && m.R ? (Math.max(m.D, m.R) / Math.min(m.D, m.R)).toFixed(1) + "×" : "–"}</td></tr>`).join("")}</tbody></table><p class="credit">Nominees' campaign committees, latest FEC report.</p>`;
 }
+function natMarketCells() {
+  const c = [];
+  const ctl = (o) => { const y = o && (o.outcomes || []).find((z) => /democ/i.test(z.label)); return y ? y.pct : null; };
+  const h = ctl(NAT.house), s = ctl(NAT.senate);
+  if (h != null) c.push(["HOUSE CONTROL", h >= 50 ? `<span class="d">D ${Math.round(h)}%</span>` : `<span class="r">R ${Math.round(100 - h)}%</span>`, "CONTROLH"]);
+  if (s != null) c.push(["SENATE CONTROL", s >= 50 ? `<span class="d">D ${Math.round(s)}%</span>` : `<span class="r">R ${Math.round(100 - s)}%</span>`, "CONTROLS"]);
+  if (NAT.houseSeatsD && NAT.houseSeatsD.median != null) c.push(["DEM HOUSE SEATS (MEDIAN)", `<span class="d">${NAT.houseSeatsD.median}</span>`, "KXDHOUSEWON"]);
+  if (NAT.senateSeatsWonD && NAT.senateSeatsWonD.median != null) c.push(["DEM SENATE SEATS WON (MEDIAN)", `<span class="d">${NAT.senateSeatsWonD.median}</span>`, "KXDSENATEWON"]);
+  if (NAT.housePopVoteMarginD && NAT.housePopVoteMarginD.median != null) c.push(["HOUSE POPULAR VOTE", `<span class="d">D+${NAT.housePopVoteMarginD.median}</span>`, "KXHOUSEPOPVOTEMARGIND"]);
+  if (NAT.blueWave && NAT.blueWave.pct != null) c.push(["BLUE WAVE", `<span class="d">${Math.round(NAT.blueWave.pct)}%</span>`, "KXBLUEWAVECOMBO", NAT.blueWave.question]);
+  if (NAT.redWave && NAT.redWave.pct != null) c.push(["RED WAVE", `<span class="r">${Math.round(NAT.redWave.pct)}%</span>`, "KXREDWAVECOMBO", NAT.redWave.question]);
+  return c;
+}
+function wNatMarkets(el, sub) {
+  sub.textContent = "KALSHI";
+  const c = natMarketCells();
+  el.innerHTML = c.length ? c.map(([k, v, ser, q]) => `<div class="kvrow" title="${esc(q || k)}"><span><a href="https://kalshi.com/markets/${ser.toLowerCase()}" target="_blank" rel="noopener" style="text-decoration:none">${k} ↗</a></span><span>${v}</span></div>`).join("") + `<p class="credit">Medians are where Kalshi's "at least N" ladders cross 50%.</p>` : `<p class="note">No national markets loaded.</p>`;
+}
 function wCalls(el, sub) {
   const s = store.get("pmap-predict", null), p = (s && s.picks) || {};
   const c = (l) => { const n = { D: 0, R: 0, T: 0, I: 0 }; for (const v of Object.values(p[l] || {})) n[v] = (n[v] || 0) + 1; return n; };
@@ -684,15 +736,17 @@ function header(x) {
   const price = x.mkt != null
     ? `<div class="mu">KALSHI · ${x.mkt >= 50 ? (x.ind ? "IND" : "DEM") : "REP"} YES</div><div class="big ${favCls(x.mkt, x.ind)}">${Math.round(x.mkt >= 50 ? x.mkt : 100 - x.mkt)}¢</div><div>${delta(x.d24)} <span class="mu">24H</span> · ${delta(x.d7)} <span class="mu">7D</span></div>`
     : `<div class="mu">NO KALSHI MARKET</div>`;
+  const oth = (e && e.others) || [];
+  const othTxt = oth.length ? `<div class="mu" style="font-size:10.5px">also: ${oth.map((o) => `${esc(o.candidate)} (I) ${Math.round(o.pct)}¢`).join(" · ")}</div>` : "";
   return `<div class="rh"><div class="lft"><div class="mu">${off} · ${esc((NAMES[x.st] || x.st).toUpperCase())}${x.t === "H" ? " " + (APP[x.st] === 1 ? "AT-LARGE" : x.d) : ""}</div>
       <div class="t"><span class="${x.ind ? "i" : "d"}">${nameD}</span> <small>(${x.ind ? "I" : "D"})</small> <span class="mu">v</span> <span class="r">${nameR}</span> <small>(R)</small></div>
       ${sc ? `<div class="chg">${esc(sc.note)}${sc.source ? ` · <a href="${esc(sc.source)}" target="_blank" rel="noopener" class="mu">source</a>` : ""}</div>` : ""}
       <div class="mu">${esc(sub)}</div></div>
-    <div class="px">${price}<div class="acts"><button id="pinBtn" class="${pinned ? "pinned" : ""}" title="Star this race (S)">${pinned ? "★ STARRED" : "☆ STAR"}</button>${kUrl ? `<a href="${kUrl}" target="_blank" rel="noopener">KALSHI ↗</a>` : ""}<a href="./predict.html">CALL IT ↗</a></div></div></div>`;
+    <div class="px">${price}${othTxt}<div class="acts"><button id="pinBtn" class="${pinned ? "pinned" : ""}" title="Star this race (S)">${pinned ? "★ STARRED" : "☆ STAR"}</button>${kUrl ? `<a href="${kUrl}" target="_blank" rel="noopener">KALSHI ↗</a>` : ""}</div>${callBar(x)}</div></div>`;
 }
 async function renderDetail() {
   const x = cur;
-  $("detail").innerHTML = header(x) + `<div class="kv" id="kv"></div><div class="math" id="math" hidden></div>
+  $("detail").innerHTML = header(x) + `<div class="kv" id="kv"></div><div class="mathp" id="math" hidden></div>
     <div class="tabs" id="ctabs"><button data-c="polls" class="${chartMode === "polls" ? "on" : ""}"><b>P</b>POLL CHART</button><button data-c="price" class="${chartMode === "price" ? "on" : ""}"><b>K</b>PRICE CHART</button></div>
     <div id="chart"></div>
     <div class="tabs" id="dtabs"><button data-t="polls" class="${detTab === "polls" ? "on" : ""}"><b>F1</b>POLLS</button><button data-t="money" class="${detTab === "money" ? "on" : ""}"><b>F7</b>MONEY</button><button data-t="voters" class="${detTab === "voters" ? "on" : ""}"><b>F8</b>VOTERS</button></div>
@@ -718,8 +772,26 @@ async function renderDetail() {
   if (changed) { $("detail").querySelector(".rh").outerHTML = header(x); wireDetail(true); for (const id of ["watchlist", "pinned", "movers"]) renderW(id); }
   stats(x); chart(x); body(x);
 }
+/* Calls are shared with the Prediction map (same saved picks) */
+const PRED_KEY = "pmap-predict";
+const predId = (x) => (x.t === "H" ? `${x.st}-${x.d}` : x.st);
+function getCall(x) { const s = store.get(PRED_KEY, null); return s && s.picks && s.picks[x.t] ? s.picks[x.t][predId(x)] : undefined; }
+function setCall(x, v) {
+  const s = store.get(PRED_KEY, null) || { picks: { S: {}, H: {}, G: {} }, fills: {}, layer: "S", overlay: "kalshi" };
+  s.picks = Object.assign({ S: {}, H: {}, G: {} }, s.picks || {});
+  if (v) s.picks[x.t][predId(x)] = v; else delete s.picks[x.t][predId(x)];
+  store.set(PRED_KEY, s);
+  const cb = document.querySelector("#detail .callbar"); if (cb) cb.outerHTML = callBar(x);
+  wireCalls(); renderW("calls");
+}
+function callBar(x) {
+  const c = getCall(x), dv = x.ind ? "I" : "D";
+  return `<div class="callbar"><span>MY CALL</span>${[[dv, x.ind ? "IND" : "DEM"], ["T", "TOSS"], ["R", "REP"], ["", "CLEAR"]].map(([v, l]) => `<button data-call="${v}" class="c${v || "X"}${v && c === v ? " on" : ""}" title="${v ? "Call it: " + l : "Remove your call"}">${l}</button>`).join("")}</div>`;
+}
+function wireCalls() { document.querySelectorAll("#detail .callbar button").forEach((b) => (b.onclick = () => setCall(cur, b.dataset.call))); }
 function wireDetail(headerOnly) {
   $("pinBtn").onclick = togglePin;
+  wireCalls();
   if (headerOnly) return;
   $("ctabs").onclick = (ev) => { const b = ev.target.closest("button"); if (b) setChart(b.dataset.c); };
   $("dtabs").onclick = (ev) => { const b = ev.target.closest("button"); if (b) setTab(b.dataset.t); };
@@ -737,13 +809,6 @@ function stats(x) {
   const coh = (c) => (c ? money(c.totals.cash_on_hand) : "–");
   const b24 = BASE && BASE.statePresMarginD[x.st] != null ? BASE.statePresMarginD[x.st] : null;
   const vs24 = x.t !== "H" && x.poll != null && !x.ind && b24 != null ? x.poll - b24 : null;
-  const L = (m, ind) => `<b class="${leadCls(m, ind)}">${lead(m, ind)}</b>`;
-  const shift = GEN && BASE ? GEN.margin - BASE.nationalPresMarginD : null;
-  const m24 = vs24 != null ? `Poll average ${L(x.poll)} now − 2024 presidential result here ${L(b24)} (${b24 >= 0 ? "Harris" : "Trump"} won) = ${L(vs24)}`
-    : x.t === "H" ? "Needs each district's 2024 presidential result, which isn't loaded yet." : x.ind ? "Independent vs Republican race, so a Democratic-vs-Republican 2024 baseline doesn't apply." : x.poll == null ? "Needs a polling average." : "";
-  const mSwing = x.vsExp != null ? `2024 result here ${L(b24)} + national swing ${L(shift)} = expected ${L(x.expected)}. Poll average ${L(x.poll)} − expected ${L(x.expected)} = ${L(x.vsExp)}`
-    : x.t === "S" && !x.ind && shift != null ? `Needs a polling average. National swing since 2024 is ${L(shift)}.` : x.t !== "S" ? "Senate races only: governor and House candidates run too far from their party's presidential numbers for this to mean much." : "";
-  const swingDef = shift != null ? `National swing = generic ballot ${L(GEN.margin)} today − 2024 national popular vote ${L(BASE.nationalPresMarginD)} = ${L(shift)}.` : "";
   const cells = [
     ["POLL AVG", `<span class="${leadCls(x.poll, x.ind)}">${lead(x.poll, x.ind)}</span>`],
     ["POLLS IN AVG", x.pollN ? String(x.pollN) : "–"],
@@ -757,9 +822,33 @@ function stats(x) {
     ["MEDIAN INCOME", p["Median household income"] ? esc(p["Median household income"]) : "–"],
   ];
   $("kv").innerHTML = cells.map(([k, v]) => `<div title="${esc(k)}"><small>${k}</small><b>${v}</b></div>`).join("");
-  const mathRows = [["VS 2024 PRES", m24], ["VS NATIONAL SWING", mSwing], ["NATIONAL SWING", x.t === "S" && !x.ind ? swingDef : ""]].filter(([, t]) => t);
-  $("math").hidden = !mathRows.length;
-  $("math").innerHTML = mathRows.map(([k, t]) => `<div><span>${k}</span><span>${t}</span></div>`).join("") + (mathRows.length ? `<div><span></span><span>Margins are Democrat minus Republican: D+ favors Democrats, R+ favors Republicans.</span></div>` : "");
+  const para = mathParagraph(x, b24, vs24);
+  $("math").hidden = !para;
+  $("math").innerHTML = para ? `<b class="am">HOW THE 2024 NUMBERS WORK</b><br>${para}` : "";
+}
+/* Plain-English version of the vs-2024 and vs-national-swing math */
+function mathParagraph(x, b24, vs24) {
+  const pts = (m) => Math.abs(m).toFixed(1);
+  const party = (m) => (m >= 0 ? "Democrats" : "Republicans");
+  const B = (m, t) => `<b class="${m >= 0 ? "d" : "r"}">${t}</b>`;
+  const where = x.t === "H" ? "this district" : NAMES[x.st];
+  const dL = x.dName ? lastOf(x.dName) : "the Democrat", rL = x.rName ? lastOf(x.rName) : "the Republican";
+  if (x.t === "H") return `This compares a race with how the same place voted for president in 2024. We don't have 2024 presidential results broken out by congressional district yet, so House races don't get this comparison. The Senate and governor races in ${esc(NAMES[x.st])} do.`;
+  if (x.ind) return `In 2024, ${b24 >= 0 ? "Harris" : "Trump"} won ${esc(where)} by ${pts(b24)} points. This race is an independent against a Republican, so comparing it with a Democrat-versus-Republican 2024 result would be misleading, and the terminal leaves those two numbers blank.`;
+  if (b24 == null) return "";
+  const won = `In 2024, ${b24 >= 0 ? "Harris" : "Trump"} won ${esc(where)} by ${B(b24, pts(b24) + " points")}.`;
+  if (x.poll == null) return `${won} There's no polling average for this race yet, so there's nothing to compare against that result.`;
+  const leader = x.poll >= 0 ? dL : rL;
+  let t = `${won} Today ${esc(leader)} leads the polling average by ${B(x.poll, pts(x.poll) + " points")}, which is ${B(vs24, pts(vs24) + " points better for " + party(vs24))} than the 2024 presidential result here (the "vs 2024" box).`;
+  if (x.t === "S" && x.vsExp != null && GEN && BASE) {
+    const shift = GEN.margin - BASE.nationalPresMarginD, nat = BASE.nationalPresMarginD;
+    t += ` Part of that is just the national mood: Trump won the national popular vote by ${pts(nat)} in 2024, and ${party(GEN.margin)} now lead the generic congressional ballot by ${pts(GEN.margin)}, a shift of ${B(shift, pts(shift) + " points toward " + party(shift))}.`
+      + ` If ${esc(where)} simply moved with the country, you'd expect ${party(x.expected)} to lead here by about ${B(x.expected, pts(x.expected))}.`
+      + ` The actual polls put ${esc(leader)} ahead by ${pts(x.poll)}, so ${esc(x.vsExp >= 0 ? dL : rL)} is running ${B(x.vsExp, pts(x.vsExp) + " points ahead")} of what the national shift alone would predict (the "vs national swing" box).`;
+  } else if (x.t === "G") {
+    t += ` The national-swing check is only done for Senate races, because governors often run far ahead of or behind their party's presidential numbers.`;
+  }
+  return t;
 }
 function chart(x) {
   const Wd = 760, H = 200, L = 38, R = 34, T = 8, B = 16;
@@ -814,7 +903,7 @@ function setChart(m) { chartMode = m; document.querySelectorAll("#ctabs button")
 function setTab(t) {
   detTab = t;
   document.querySelectorAll("#dtabs button").forEach((b) => b.classList.toggle("on", b.dataset.t === t));
-  document.querySelectorAll("#fk button[data-k]").forEach((b) => b.classList.toggle("on", { F1: "polls", F7: "money", F8: "voters" }[b.dataset.k] === t));
+  document.querySelectorAll("#fk button[data-k]").forEach((b) => b.classList.toggle("on", view === "race" && ((b.dataset.k === "F1" && t === "polls") || (b.dataset.k === "F7" && t === "money") || (b.dataset.k === "F8" && t === "voters"))));
   if (cur && cur._polls) body(cur);
 }
 function body(x) {
@@ -851,6 +940,78 @@ function body(x) {
   }
 }
 
+/* ---------- views (everything opens inside the terminal) ---------- */
+const VIEWS = {
+  race: { title: "RACE", key: "F1" },
+  map: { title: "HOUSE MAP", key: "F2", src: "index.html?embed=1" },
+  national: { title: "NATIONAL PICTURE", key: "F3", src: "overview.html?embed=1" },
+  predict: { title: "PREDICTION MAP", key: "F4", src: "predict.html?embed=1", note: "Calls you make here also show on the race screen." },
+  markets: { title: "ALL KALSHI MARKETS", key: "F5" },
+  polling: { title: "POLLING", key: "F6", src: "polling/?embed=1" },
+};
+let view = "race", wide = false;
+function applyWide() { const w = wide && view !== "race"; $("main").classList.toggle("noleft", w || !LAYOUT.showL); $("main").classList.toggle("noright", w || !LAYOUT.showR); $("vwide").classList.toggle("on", wide); }
+function setView(v, src) {
+  if (!VIEWS[v] && !src) v = "race";
+  view = v;
+  const V = VIEWS[v] || { title: "PAGE" };
+  $("detail").hidden = v !== "race";
+  $("vMarkets").hidden = v !== "markets";
+  $("vFrame").hidden = !(V.src || src);
+  $("vbar").hidden = v === "race";
+  $("vtitle").textContent = V.title;
+  $("vnote").textContent = V.note || "";
+  if (V.src || src) { const want = new URL(src || V.src, location.href).href; if ($("frame").src !== want) $("frame").src = want; }
+  applyWide();
+  if (v === "markets") renderMarkets();
+  if (v === "race") { renderW("calls"); if (cur) { const cb = document.querySelector("#detail .callbar"); if (cb) { cb.outerHTML = callBar(cur); wireCalls(); } } }
+  document.querySelectorAll("#fk button[data-k]").forEach((b) => b.classList.toggle("on", b.dataset.k === (V.key || "") || (v === "race" && ((b.dataset.k === "F7" && detTab === "money") || (b.dataset.k === "F8" && detTab === "voters")))));
+}
+$("vback").onclick = () => setView("race");
+$("vwide").onclick = () => { wide = !wide; applyWide(); };
+// links clicked inside an embedded page come back here instead of leaving
+addEventListener("message", (e) => {
+  if (e.origin !== location.origin || !e.data || !e.data.term) return;
+  const u = new URL(e.data.term, location.href), path = u.pathname.replace(/^.*\//, "/");
+  if (/terminal\.html$/.test(u.pathname)) { const x = BY[decodeURIComponent(u.hash.slice(1))]; setView("race"); if (x) open(x); return; }
+  const map = { "/predict.html": "predict", "/overview.html": "national", "/markets.html": "markets", "/index.html": "map", "/": u.pathname.endsWith("/polling/") ? "polling" : "map" };
+  const v = /\/polling\/$/.test(u.pathname) ? "polling" : map[path];
+  if (v) setView(v); else setView("page", u.pathname + (u.search ? u.search + "&embed=1" : "?embed=1") + u.hash);
+});
+
+/* ---------- all Kalshi markets ---------- */
+const MK = { type: "all", sort: "close", q: "" };
+function renderMarkets() {
+  const el = $("vMarkets");
+  if (!RACES.length) { el.innerHTML = `<p class="note">Loading…</p>`; return; }
+  const top = natMarketCells();
+  let list = RACES.filter((x) => x.mkt != null);
+  const counts = { S: list.filter((x) => x.t === "S").length, H: list.filter((x) => x.t === "H").length, G: list.filter((x) => x.t === "G").length };
+  if (MK.type !== "all") list = list.filter((x) => x.t === MK.type);
+  if (MK.q) { const w = MK.q.toUpperCase().split(/\s+/); list = list.filter((x) => w.every((q) => `${x.code} ${x.name} ${x.dName} ${x.rName}`.toUpperCase().includes(q))); }
+  const sorts = { close: (a, b) => Math.abs(a.mkt - 50) - Math.abs(b.mkt - 50), move: (a, b) => Math.abs(b.d24 ?? 0) - Math.abs(a.d24 ?? 0), d: (a, b) => b.mkt - a.mkt, r: (a, b) => a.mkt - b.mkt, split: (a, b) => b.split - a.split || Math.abs(a.mkt - 50) - Math.abs(b.mkt - 50), az: (a, b) => a.code.localeCompare(b.code, undefined, { numeric: true }) };
+  list.sort(sorts[MK.sort]);
+  const side = (e, k) => (e && e[k] ? Math.round(e[k].pct) + "¢" : "–");
+  el.innerHTML = `<div class="mk-top">${top.map(([k, v, ser]) => `<div><small>${k}</small><b>${v}</b></div>`).join("")}<div><small>RACE MARKETS</small><b>${counts.S + counts.H + counts.G}</b></div></div>
+    <div class="mk-ctl"><div class="seg" style="margin:0">${[["all", `ALL`], ["S", `SENATE ${counts.S}`], ["H", `HOUSE ${counts.H}`], ["G", `GOV ${counts.G}`]].map(([v, l]) => `<button data-mt="${v}" class="${MK.type === v ? "on" : ""}">${l}</button>`).join("")}</div>
+      <div class="seg" style="margin:0">${[["close", "CLOSEST"], ["move", "MOVERS"], ["split", "SPLITS"], ["d", "MOST D"], ["r", "MOST R"], ["az", "A–Z"]].map(([v, l]) => `<button data-ms="${v}" class="${MK.sort === v ? "on" : ""}">${l}</button>`).join("")}</div>
+      <input id="mkq" placeholder="Filter: state, district or name" value="${esc(MK.q)}" aria-label="Filter markets"><span class="mu">${list.length} shown</span></div>
+    <table><colgroup><col style="width:64px"><col><col style="width:46px"><col style="width:46px"><col style="width:46px"><col style="width:50px"><col style="width:50px"><col style="width:54px"><col style="width:44px"><col style="width:26px"></colgroup>
+    <thead><tr><th>RACE</th><th>MATCHUP</th><th class="n">FAV</th><th class="n">D/I ¢</th><th class="n">R ¢</th><th class="n">24H</th><th class="n">7D</th><th class="n">POLLS</th><th></th><th></th></tr></thead><tbody>
+    ${list.map((x) => { const e = x.k, oth = (e && e.others) || [], kurl = e && e.series ? `https://kalshi.com/markets/${String(e.series).toLowerCase()}` : "https://kalshi.com/category/elections";
+      const dSide = x.ind ? Math.round(x.mkt) + "¢" : side(e, "democrat");
+      return `<tr class="click${cur && cur.id === x.id ? " on" : ""}" data-id="${x.id}" title="${esc(x.name)}${oth.length ? " · also on the board: " + esc(oth.map((o) => `${o.candidate} ${Math.round(o.pct)}¢`).join(", ")) : ""}"><td class="am">${x.code}</td>
+        <td>${esc(x.dName ? lastOf(x.dName) : "?")} <span class="mu">v</span> ${esc(x.rName ? lastOf(x.rName) : "?")}${oth.length ? ` <span class="mu">+${oth.length} ind.</span>` : ""}</td>
+        <td class="n ${favCls(x.mkt, x.ind)}">${fav(x.mkt, x.ind)}</td><td class="n ${x.ind ? "i" : "d"}">${dSide}</td><td class="n r">${side(e, "republican")}</td>
+        <td class="n">${delta(x.d24)}</td><td class="n">${delta(x.d7)}</td><td class="n ${leadCls(x.poll, x.ind)}">${lead(x.poll, x.ind)}</td>
+        <td class="n">${x.split ? `<span class="fl">SPLIT</span>` : ""}</td><td class="n"><a href="${kurl}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Open on Kalshi" aria-label="Open ${esc(x.code)} on Kalshi">↗</a></td></tr>`; }).join("")}
+    </tbody></table><p class="credit">D/I and R columns are the price of each side's "yes" contract (62¢ ≈ 62% chance). Prices refresh every 30 minutes. Click a row to open the race.</p>`;
+  el.querySelectorAll("[data-mt]").forEach((b) => (b.onclick = () => { MK.type = b.dataset.mt; renderMarkets(); }));
+  el.querySelectorAll("[data-ms]").forEach((b) => (b.onclick = () => { MK.sort = b.dataset.ms; renderMarkets(); }));
+  const q = $("mkq"); q.oninput = () => { MK.q = q.value.trim(); const pos = q.selectionStart; renderMarkets(); const n = $("mkq"); n.focus(); n.setSelectionRange(pos, pos); };
+  el.querySelector("tbody").onclick = (e) => { const tr = e.target.closest("tr[data-id]"); if (tr && BY[tr.dataset.id]) { open(BY[tr.dataset.id]); setView("race"); } };
+}
+
 /* ---------- command bar ---------- */
 let acList = [];
 function matches(q) {
@@ -864,20 +1025,20 @@ function matches(q) {
   return RACES.filter((x) => { const hay = `${x.code} ${x.name} ${x.dName} ${x.rName} ${x.holder}`.toUpperCase(); return words.every((w) => hay.includes(w)); })
     .sort((a, b) => (a.t === "H") - (b.t === "H") || (a.mkt == null) - (b.mkt == null)).slice(0, 12);
 }
-const CMDS = { MAP: "./", HOME: "./", NATIONAL: "overview.html", PREDICT: "predict.html", MARKETS: "markets.html", POLLS: "polling/", POLLING: "polling/" };
+const CMDS = { MAP: "map", HOME: "map", NATIONAL: "national", PREDICT: "predict", MARKETS: "markets", KALSHI: "markets", POLLS: "polling", POLLING: "polling", RACE: "race" };
 function showAC() {
   const q = $("q").value, cmd = CMDS[q.trim().toUpperCase()];
   acList = matches(q);
   if (!q.trim() || (!acList.length && !cmd)) { $("ac").hidden = true; return; }
-  $("ac").innerHTML = (cmd ? `<div data-cmd="${cmd}" class="on"><span class="am">GO</span><span>${esc(q.trim().toUpperCase())} page</span><span></span></div>` : "")
+  $("ac").innerHTML = (cmd ? `<div data-cmd="${cmd}" class="on"><span class="am">GO</span><span>${esc(VIEWS[cmd].title)} screen</span><span></span></div>` : "")
     + acList.map((x, i) => `<div data-id="${x.id}" class="${!cmd && i === 0 ? "on" : ""}"><span class="am">${x.code}</span><span>${esc(x.name)}${matchup(x) ? " · " + esc(matchup(x)) : ""}</span><span class="${favCls(x.mkt, x.ind)}">${fav(x.mkt, x.ind)}</span></div>`).join("");
   $("ac").hidden = false;
 }
 function go() {
   const on = $("ac").querySelector("div.on");
-  if (on && on.dataset.cmd) { location.href = on.dataset.cmd; return; }
+  if (on && on.dataset.cmd) { setView(on.dataset.cmd); $("q").value = ""; $("ac").hidden = true; $("q").blur(); return; }
   const x = on ? BY[on.dataset.id] : acList[0];
-  if (x) { open(x); $("q").value = ""; $("ac").hidden = true; $("q").blur(); }
+  if (x) { open(x); setView("race"); $("q").value = ""; $("ac").hidden = true; $("q").blur(); }
 }
 $("q").addEventListener("input", showAC);
 $("q").addEventListener("keydown", (e) => {
@@ -895,20 +1056,21 @@ $("goBtn").onclick = go;
 /* ---------- keys ---------- */
 $("helpBtn").onclick = (e) => { e.stopPropagation(); $("help").hidden = false; };
 $("help").onclick = () => ($("help").hidden = true);
-$("fk").onclick = (e) => { const b = e.target.closest("button[data-k]"); if (b) setTab({ F1: "polls", F7: "money", F8: "voters" }[b.dataset.k]); };
+const FKEY = { F1: "race", F2: "map", F3: "national", F4: "predict", F5: "markets", F6: "polling" };
+function fkey(k) { if (FKEY[k]) setView(FKEY[k]); else if (k === "F7" || k === "F8") { setView("race"); setTab(k === "F7" ? "money" : "voters"); } }
+$("fk").onclick = (e) => { const b = e.target.closest("button[data-k]"); if (b) fkey(b.dataset.k); };
 document.addEventListener("keydown", (e) => {
   if (e.target === $("q") || ["SELECT", "INPUT"].includes(e.target.tagName)) return;
-  const fk = { F2: "./", F3: "overview.html", F4: "predict.html", F5: "markets.html", F6: "polling/" };
   if (e.key === "/") { e.preventDefault(); $("q").focus(); return; }
-  if (e.key === "Escape") { $("help").hidden = true; $("layoutMenu").hidden = true; $("addMenu").hidden = true; return; }
+  if (e.key === "Escape") { const open_ = !$("help").hidden || !$("layoutMenu").hidden || !$("addMenu").hidden; $("help").hidden = true; $("layoutMenu").hidden = true; $("addMenu").hidden = true; if (!open_ && view !== "race") setView("race"); return; }
   if (e.key === "?") { $("help").hidden = !$("help").hidden; return; }
-  if (fk[e.key]) { e.preventDefault(); location.href = fk[e.key]; return; }
-  if (["F1", "F7", "F8"].includes(e.key)) { e.preventDefault(); setTab({ F1: "polls", F7: "money", F8: "voters" }[e.key]); return; }
-  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (/^F[1-8]$/.test(e.key)) { e.preventDefault(); fkey(e.key); return; }
+  if (e.metaKey || e.ctrlKey || e.altKey || view !== "race") return;
   const k = e.key.toLowerCase();
   if (k === "p") setChart("polls");
   if (k === "k") setChart("price");
   if (k === "s") togglePin();
+  if (cur && ["d", "r", "t", "c"].includes(k)) setCall(cur, k === "c" ? "" : k === "d" ? (cur.ind ? "I" : "D") : k.toUpperCase());
   if (e.key === "ArrowDown" || e.key === "ArrowUp") {
     const list = wlList(); if (!list.length) return; e.preventDefault();
     let i = list.findIndex((x) => cur && x.id === cur.id); i = i < 0 ? 0 : (i + (e.key === "ArrowDown" ? 1 : -1) + list.length) % list.length;

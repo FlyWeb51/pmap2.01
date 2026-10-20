@@ -67,6 +67,23 @@
   .foot a{color:var(--ink-dim)}
   @media (max-width:820px){ .top{grid-template-columns:1fr} .mb,.hide-s{display:none} main{padding:14px 16px 30px} header{padding:12px 16px} }
 </style>
+<script>
+/* Embedded in the Election Terminal (?embed=1): hide this page's own menu and
+   keep its links inside the terminal instead of leaving it. */
+(function () {
+  if (!/[?&]embed=1/.test(location.search)) return;
+  document.documentElement.classList.add("embed");
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a || a.target === "_blank") return;
+    var u = new URL(a.href, location.href);
+    if (u.origin !== location.origin || u.pathname === location.pathname && u.hash) return;
+    e.preventDefault();
+    parent.postMessage({ term: u.pathname + u.search + u.hash }, location.origin);
+  }, true);
+})();
+</script>
+<style>html.embed header .nav,html.embed nav.nav,html.embed .tabs>a,html.embed a.back{display:none!important}</style>
 </head>
 <body>
 <header>
