@@ -1,0 +1,40 @@
+name: 2024 presidential results by district (weekly)
+
+# The Downballot's 2024 presidential results on the 2026 district lines.
+on:
+  schedule:
+    - cron: "23 8 * * 1"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/fetch-pres-by-cd.js"
+
+concurrency:
+  group: pres-by-cd
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Download district results
+        run: node scripts/fetch-pres-by-cd.js
+      - name: Commit if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/baseline-2024-cd.json
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "2024 presidential results by district"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
