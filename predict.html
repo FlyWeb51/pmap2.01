@@ -252,7 +252,7 @@ function pollCall(p) { if (!p || !p.average || p.average.margin == null) return 
 function races(l) {
   if (l === "S") return G.senateRaces;
   if (l === "H") return G.districts;
-  return GOV_STATES.map((st) => ({ id: st, st, name: G.names[st] }));
+  return GOV_STATES.map((st) => ({ id: st, st, name: G.names[st], holder: (G.gov[st] || {}).party || null, incumbent: (G.gov[st] || {}).name || null }));
 }
 function raceKalshi(l, x) { return l === "S" ? K.S[x.st] : l === "G" ? K.G[x.st] : K.H[x.kid]; }
 function racePoll(l, x) { return PI[l === "S" ? `${x.st}-S-2026` : l === "G" ? `${x.st}-G-2026` : `${x.st}-H-${String(x.d).padStart(2, "0")}-2026`]; }
@@ -277,7 +277,7 @@ function overlayColor(l, x) {
   if (overlay === "none") return "#243044";
   if (overlay === "rating" && l === "H") return x.rating ? RCOL[RANK[x.rating]] : "#243044";
   if (overlay === "party") {
-    const p = l === "S" ? x.holder : l === "H" ? x.party : null;
+    const p = l === "H" ? x.party : x.holder;
     return p === "D" ? "#6fa3ec" : p === "R" ? "#e88a8a" : p === "I" ? "#b48ce0" : "#243044";
   }
   if (overlay === "kalshi") {
@@ -352,6 +352,7 @@ function tip(e, x) {
   const cand = (side) => k && k[side] && k[side].candidate && !/party/i.test(k[side].candidate) ? k[side].candidate : null;
   let h = `<b>${esc(layer === "H" ? x.label : x.name)}</b>${layer === "S" && x.special ? " · special" : ""}<br>`;
   if (layer === "S") h += `Held by ${esc(x.incumbent)} (${x.holder})<br>`;
+  if (layer === "G" && x.holder) h += `Governor now: ${esc(x.incumbent)} (${x.holder})<br>`;
   if (layer === "H") h += `${x.m ? esc(x.m.n) + " (" + x.m.p + ")" : "Open seat"}${x.rating ? " · " + x.rating : ""}<br>`;
   if (cand("democrat") || cand("republican")) h += `<span class="d">${esc(cand("democrat") || "")}</span> vs <span class="r">${esc(cand("republican") || "")}</span><br>`;
   if (k && k.thirdParty && k.republican) h += `Kalshi: ${esc(cand("republican"))} ${Math.round(k.republican.pct)}% vs field<br>`;
@@ -391,7 +392,9 @@ function tally() {
   $("gD").textContent = g.D; $("gR").textContent = g.R;
   $("gMid").textContent = `${g.T} toss-up · ${g.open} open`;
   setBar("g", g.D, g.T, g.R, GOV_STATES.length);
-  $("gMsg").innerHTML = g.open ? `${g.open} of ${GOV_STATES.length} races not called` : "All governor races called";
+  const gfl = races("G").filter((x) => { const c = callOf("G", x); return c && x.holder && (c.c === "D" || c.c === "R") && c.c !== x.holder; });
+  const flipTxt = gfl.length ? ` · <b style="color:var(--ind)">${gfl.length} flip${gfl.length === 1 ? "" : "s"}</b> (${gfl.map((x) => x.st).join(", ")})` : "";
+  $("gMsg").innerHTML = (g.open ? `${g.open} of ${GOV_STATES.length} not called` : "All governor races called") + flipTxt;
   document.querySelectorAll(".sc").forEach((b) => b.classList.toggle("on", b.dataset.layer === layer));
 }
 
@@ -401,7 +404,7 @@ function setLayer(l) {
   layer = l;
   document.querySelectorAll("#layerSeg button").forEach((b) => b.classList.toggle("on", b.dataset.l === l));
   // overlays that don't exist for this layer
-  const avail = { S: ["none", "party", "kalshi", "polls"], H: ["none", "rating", "party", "kalshi", "polls"], G: ["none", "kalshi", "polls"] }[l];
+  const avail = { S: ["none", "party", "kalshi", "polls"], H: ["none", "rating", "party", "kalshi", "polls"], G: ["none", "party", "kalshi", "polls"] }[l];
   document.querySelectorAll("#ovSeg button").forEach((b) => (b.disabled = !avail.includes(b.dataset.o)));
   if (!avail.includes(overlay)) setOverlay("kalshi", true);
   draw();
@@ -728,6 +731,7 @@ document.addEventListener("keydown", (e) => {
 /* ---------- boot ---------- */
 (async function boot() {
   try {
+    const govNow = getJSON("data/governors-current.json");
     const [html, ks, kh, kg, pi] = await Promise.all([
       fetch("index.html", { cache: "force-cache" }).then((r) => r.text()),
       getJSON("data/kalshi/all-senate.json"), getJSON("data/kalshi/all-house.json"), getJSON("data/kalshi/all-governor.json"), getJSON("data/polls/index.json"),
@@ -748,7 +752,7 @@ document.addEventListener("keydown", (e) => {
     const up = sen.filter((m) => /^202[67]/.test(m.e));
     const senateRaces = up.map((m) => ({ id: m.s, st: m.s, name: names[m.s], incumbent: m.n, holder: m.p, special: m.e.startsWith("2026") }));
     let holdD = 0, holdR = 0; for (const m of sen) if (!up.includes(m)) (m.p === "R" ? holdR++ : holdD++);
-    G = { states, dpaths, names, districts, senateRaces, holdD, holdR, app: APP };
+    G = { gov: ((await govNow) || {}).governors || {}, states, dpaths, names, districts, senateRaces, holdD, holdR, app: APP };
     load();
     setOverlay(overlay, true);
     $("fillKalshi").classList.toggle("on", fills.kalshi); $("fillPolls").classList.toggle("on", fills.polls); $("fillRatings").classList.toggle("on", !!fills.ratings);
