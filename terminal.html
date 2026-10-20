@@ -363,12 +363,12 @@ function nominees(x) {
 }
 
 /* ---------- layout ---------- */
-const DEFAULT_LAYOUT = { left: ["watchlist", "pinned"], right: ["registration", "control", "natmkts", "signals", "newpolls", "calls"], col: {}, ticker: true, showL: true, showR: true, wl: { type: "all", sort: "close", rows: 30 }, regSort: "edge" };
+const DEFAULT_LAYOUT = { left: ["watchlist", "pinned"], right: ["registration", "agesex", "control", "natmkts", "signals", "newpolls", "calls"], col: {}, ticker: true, showL: true, showR: true, wl: { type: "all", sort: "close", rows: 30 }, regSort: "edge" };
 const clone = (o) => JSON.parse(JSON.stringify(o));
-let LAYOUT = Object.assign(clone(DEFAULT_LAYOUT), store.get("pmap-term-layout3", {}));
+let LAYOUT = Object.assign(clone(DEFAULT_LAYOUT), store.get("pmap-term-layout4", {}));
 LAYOUT.wl = Object.assign(clone(DEFAULT_LAYOUT.wl), LAYOUT.wl || {});
 let PINS = store.get("pmap-term-pins", []);
-const saveLayout = () => store.set("pmap-term-layout3", LAYOUT);
+const saveLayout = () => store.set("pmap-term-layout4", LAYOUT);
 
 const W = {
   watchlist: { title: "WATCHLIST", desc: "Closest races, movers, splits, registration edge", render: wWatchlist },
@@ -384,6 +384,7 @@ const W = {
   money: { title: "SENATE CASH", desc: "Cash on hand for every Senate nominee", render: wMoney },
   calls: { title: "MY CALLS", desc: "Your race calls (same as the Prediction map)", render: wCalls },
   natmkts: { title: "NATIONAL MARKETS", desc: "Kalshi seat counts, popular vote and wave markets", render: wNatMarkets },
+  agesex: { title: "AGE & SEX", desc: "Eligible voters by age group, men vs women, median age", render: wAgeSex },
 };
 
 function applyLayout() {
@@ -640,6 +641,45 @@ function wNatMarkets(el, sub) {
   const c = natMarketCells();
   el.innerHTML = c.length ? c.map(([k, v, ser, q]) => `<div class="kvrow" title="${esc(q || k)}"><span><a href="https://kalshi.com/markets/${ser.toLowerCase()}" target="_blank" rel="noopener" style="text-decoration:none">${k} ↗</a></span><span>${v}</span></div>`).join("") + `<p class="credit">Medians are where Kalshi's "at least N" ladders cross 50%.</p>` : `<p class="note">No national markets loaded.</p>`;
 }
+/* ---------- age & sex (Census) ---------- */
+let AGESEX = null, agesexLoading = null;
+const loadAgeSex = () => agesexLoading || (agesexLoading = getJSON("data/census/agesex.json").then((j) => (AGESEX = j)));
+function ageSexFor(x) {
+  if (!AGESEX) return null;
+  if (x.t === "H") { const k = `${x.st}-${APP[x.st] === 1 ? "00" : pad2(x.d)}`; const d = AGESEX.districts[k]; if (d) return { d, scope: x.code }; }
+  const s = AGESEX.states[x.st];
+  return s ? { d: s, scope: NAMES[x.st] || x.st } : null;
+}
+function ageSexBlock(x) {
+  const a = ageSexFor(x), us = AGESEX && AGESEX.us;
+  if (!a) return `<p class="note">${AGESEX ? "No age and sex figures for this area." : "Age and sex figures are being built; check back after the next data refresh."}</p>`;
+  const d = a.d, bands = ["18-29", "30-44", "45-64", "65+"], cols = ["#7fb3ff", "#4c9bff", "#2f6fd1", "#1d4c94"];
+  const pc = (v, t) => (t ? (v / t) * 100 : 0);
+  const young = (d.age["18-29"] || 0) + (d.age["30-44"] || 0), old = (d.age["45-64"] || 0) + (d.age["65+"] || 0);
+  const usPc = (b) => (us && us.cvap ? pc(us.age[b], us.cvap).toFixed(1) + "%" : "");
+  let h = `<div class="kvrow" style="border:0"><b class="am">ELIGIBLE VOTERS BY AGE · ${esc(String(a.scope).toUpperCase())}</b><span>${num(d.cvap)}</span></div>
+    <div class="bar" style="height:12px">${bands.map((b, i) => `<i title="${b}: ${num(d.age[b])}" style="width:${pc(d.age[b], d.cvap)}%;background:${cols[i]}"></i>`).join("")}</div>
+    <div class="grid3"><span class="mu">AGE</span><span class="mu">VOTERS · SHARE</span><span class="mu">US</span>
+    ${bands.map((b, i) => `<span><span class="sw" style="background:${cols[i]}"></span>${b}</span><span>${num(d.age[b])} · ${pc(d.age[b], d.cvap).toFixed(1)}%</span><span class="mu">${usPc(b)}</span>`).join("")}
+    <span>Under 45</span><span>${num(young)} · ${pc(young, d.cvap).toFixed(1)}%</span><span></span>
+    <span>45 and over</span><span>${num(old)} · ${pc(old, d.cvap).toFixed(1)}%</span><span></span></div>`;
+  if (d.medianAge) h += `<p class="note">Median age is <b style="color:var(--ink)">${d.medianAge}</b>${us && us.medianAge ? ` (US ${us.medianAge})` : ""}${d.medianAgeMen && d.medianAgeWomen ? `: men ${d.medianAgeMen}, women ${d.medianAgeWomen}` : ""}. By definition half of all residents are younger than that and half are older, so the age groups above show where the eligible voters actually sit.</p>`;
+  const cv = d.cvapMen + d.cvapWomen;
+  h += `<div class="kvrow" style="border:0;margin-top:8px"><b class="am">MEN AND WOMEN</b><span class="mu">eligible voters · everyone</span></div>
+    <div class="bar" style="height:10px"><i style="width:${pc(d.cvapWomen, cv)}%;background:#c084fc"></i><i style="flex:1;background:#2dd4bf"></i></div>
+    <div class="grid3"><span></span><span class="mu">VOTERS 18+</span><span class="mu">ALL AGES</span>
+      <span><span class="sw" style="background:#c084fc"></span>Women</span><span>${num(d.cvapWomen)} · ${pc(d.cvapWomen, cv).toFixed(1)}%</span><span>${num(d.women)}</span>
+      <span><span class="sw" style="background:#2dd4bf"></span>Men</span><span>${num(d.cvapMen)} · ${pc(d.cvapMen, cv).toFixed(1)}%</span><span>${num(d.men)}</span>
+      <span>Gap</span><span>${d.cvapWomen >= d.cvapMen ? "Women" : "Men"} +${num(Math.abs(d.cvapWomen - d.cvapMen))}</span><span></span></div>
+    <p class="credit">Eligible voters = U.S. citizens 18 and over. ${esc(AGESEX.source)}.${x.t === "H" ? " District lines are the ones in place when the survey was taken; states that redrew maps for 2026 may differ." : ""}</p>`;
+  return h;
+}
+async function wAgeSex(el, sub) {
+  if (!cur) return;
+  if (!AGESEX) { el.innerHTML = `<p class="note">Loading…</p>`; await loadAgeSex(); }
+  const a = ageSexFor(cur); sub.textContent = a ? String(a.scope).toUpperCase() : "";
+  if ($("wb-agesex")) $("wb-agesex").innerHTML = ageSexBlock(cur);
+}
 function wCalls(el, sub) {
   const s = store.get("pmap-predict", null), p = (s && s.picks) || {};
   const c = (l) => { const n = { D: 0, R: 0, T: 0, I: 0 }; for (const v of Object.values(p[l] || {})) n[v] = (n[v] || 0) + 1; return n; };
@@ -723,7 +763,7 @@ function open(x) {
   store.set("pmap-term-race", x.id);
   history.replaceState(null, "", "#" + x.id);
   renderDetail();
-  for (const id of ["watchlist", "pinned", "registration", "movers", "regtable"]) renderW(id);
+  for (const id of ["watchlist", "pinned", "registration", "movers", "regtable", "agesex"]) renderW(id);
 }
 function header(x) {
   const off = x.t === "S" ? "SENATE" : x.t === "G" ? "GOVERNOR" : "HOUSE";
@@ -934,6 +974,8 @@ function body(x) {
   } else {
     const rg = regFor(x), p = (x._cen && x._cen.profile) || {};
     let h = rg ? `<div class="kvrow" style="border:0"><b class="am">REGISTERED VOTERS · ${esc((x.t === "H" && !rg.stateOnly ? x.code : NAMES[x.st]).toUpperCase())}</b><span class="mu">${esc(rg.scope)}</span></div>` + regBlock(rg) : `<p class="note">${esc(noRegText(x.st))}</p>`;
+    h += `<div style="margin-top:12px" id="agesexTab">${ageSexBlock(x)}</div>`;
+    if (!AGESEX) loadAgeSex().then(() => { const t = $("agesexTab"); if (t && cur === x) t.innerHTML = ageSexBlock(x); });
     const keys = [["White (non-Hispanic)", "White"], ["Hispanic / Latino", "Hispanic / Latino"], ["Black", "Black"], ["Asian", "Asian"], ["Bachelor's or higher", "College degree"], ["Median household income", "Median income"], ["Median age", "Median age"], ["Poverty rate", "Poverty"], ["Homeownership", "Homeownership"]];
     if (Object.keys(p).length) h += `<div class="kvrow" style="border:0;margin-top:12px"><b class="am">PEOPLE · ${esc(String(p.Population || ""))}</b><span class="mu">Census ACS 5-yr</span></div><div class="grid3">${keys.filter(([k]) => p[k] != null).map(([k, lab]) => `<span>${lab}</span><span>${esc(String(p[k]))}</span><span></span>`).join("")}</div>`;
     el.innerHTML = h;
