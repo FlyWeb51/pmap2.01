@@ -248,7 +248,7 @@ function main() {
           fieldDates: p.startDate && p.startDate !== p.endDate ? `${p.startDate} to ${p.endDate}` : p.endDate,
           sampleSize: p.sampleSize || null,
           population: p.population || null,
-          partisan: p.partisan ? (/^D/i.test(p.partisan) ? "D" : /^R/i.test(p.partisan) ? "R" : p.partisan) : p.internal ? "internal" : null,
+          partisan: p.partisan ? (/^D/i.test(p.partisan) ? "D" : /^R/i.test(p.partisan) ? "R" : p.partisan) : pn.partisan || (p.internal ? "internal" : null),
           sponsors: p.sponsors || null,
           results,
           sourceUrl: p.sourceUrl || null,
@@ -267,14 +267,27 @@ function main() {
 function addPoll(byRace, raceId, poll) {
     const ed = poll.endDate, results = poll.results;
     const list = (byRace[raceId] ||= []);
+    const POP = { LV: 3, V: 2, RV: 2, A: 1 };
     const dup = list.find((q) => {
       if (Math.abs(new Date(q.endDate) - new Date(ed)) > 2 * 864e5) return false;
+      const a = pollsterKey(cleanPollster(q.pollster).name), b = pollsterKey(poll.pollster);
+      if (!(a === b || a.slice(0, 4) === b.slice(0, 4))) return false;
       const qd = q.results.find((x) => x.party === "D"), qr = q.results.find((x) => x.party === "R");
       const pd = results.find((x) => x.party === "D"), pr = results.find((x) => x.party === "R");
-      const same = qd && qr && Math.abs(qd.pct - pd.pct) < 0.6 && Math.abs(qr.pct - pr.pct) < 0.6;
-      const a = pollsterKey(cleanPollster(q.pollster).name), b = pollsterKey(poll.pollster);
-      return same && (a === b || a.slice(0, 4) === b.slice(0, 4));
+      if (!qd || !qr) return false;
+      // Same numbers (NYT keeps decimals, Wikipedia rounds: 52.7 vs 52)
+      if (Math.abs(qd.pct - pd.pct) < 1.05 && Math.abs(qr.pct - pr.pct) < 1.05) return true;
+      // Same poll, same matchup, other population (LV and RV versions): one entry
+      const sameMatchup = lastName(qd.candidate) === lastName(pd.candidate) && lastName(qr.candidate) === lastName(pr.candidate);
+      const sameSample = q.sampleSize && poll.sampleSize && q.sampleSize === poll.sampleSize;
+      const otherPop = q.population && poll.population && q.population !== poll.population;
+      return sameMatchup && (sameSample || otherPop);
     });
+    if (dup && (POP[poll.population] || 0) > (POP[dup.population] || 0) && dup.reviewStatus === "auto") {
+      // keep the likely-voter version's numbers
+      dup.population = poll.population; dup.sampleSize = poll.sampleSize || dup.sampleSize;
+      dup.results = results.map((r) => ({ ...r }));
+    }
     if (dup) {
       // merge: fill gaps, remember every site it appeared on
       for (const k of ["sampleSize", "population", "partisan", "sourceUrl", "fieldDates", "sponsors"]) if (!dup[k] && poll[k]) dup[k] = poll[k];
