@@ -321,6 +321,44 @@ function keepPrevious(target, key, file) {
   } catch {}
 }
 
+
+const STATE_NAMES = {AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming"};
+
+// Kalshi tickers are not always what they look like: SENATELA-26 is the
+// Kentucky race (its own title says so). Trust the market title over the
+// ticker and file each race under the state its title names.
+function stateFromTitle(r) {
+  const t = [r.democrat && r.democrat.title, r.republican && r.republican.title].filter(Boolean).join(" ");
+  const hits = Object.entries(STATE_NAMES).filter(([, n]) => new RegExp(`\\b${n}\\b`).test(t));
+  // "Virginia" also matches inside "West Virginia"; prefer the longest name
+  hits.sort((a, b) => b[1].length - a[1].length);
+  return hits.length ? hits[0][0] : null;
+}
+function rekeyByTitle(results, label) {
+  const out = {};
+  for (const [key, r] of Object.entries(results)) {
+    const st = stateFromTitle(r) || key;
+    if (st !== key) console.log(`[${label}] ${r.series || key} is really ${STATE_NAMES[st]} per its title; filing under ${st}`);
+    if (out[st] && out[st].series && !r.series) continue;
+    out[st] = { ...r, state: st, tickerState: key };
+  }
+  return out;
+}
+
+// Independent races (e.g. Nebraska: Osborn vs Ricketts) have no real D/R
+// pair. When the two sides don't add up to ~100, don't rescale them;
+// mark the race so pages show the Republican's odds against "the field".
+function markThirdParty(r) {
+  if (!r || !r.democrat || !r.republican) return r;
+  if (r.democrat.pct + r.republican.pct < 85) {
+    r.thirdParty = true;
+    r.democrat.share = r.democrat.pct;
+    r.republican.share = r.republican.pct;
+    r.fieldVsRepublican = Math.round((100 - r.republican.pct) * 10) / 10;
+  }
+  return r;
+}
+
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const t0 = Date.now();
@@ -373,6 +411,15 @@ async function main() {
     if (h && !allHouse[h[1]]) fs.unlinkSync(path.join(OUT_DIR, f));
   }
 
+  // file each race under the state its market title names, fix third-party races
+  const fixedSenate = rekeyByTitle(allSenate, "senate");
+  for (const k of Object.keys(allSenate)) if (!fixedSenate[k]) { try { fs.unlinkSync(path.join(OUT_DIR, `${k}-senate.json`)); } catch {} }
+  for (const [k, r] of Object.entries(fixedSenate)) { markThirdParty(r); fs.writeFileSync(path.join(OUT_DIR, `${k}-senate.json`), JSON.stringify(r, null, 2)); }
+  Object.keys(allSenate).forEach((k) => delete allSenate[k]); Object.assign(allSenate, fixedSenate);
+  const fixedGov = rekeyByTitle(allGov, "governor");
+  for (const k of Object.keys(allGov)) if (!fixedGov[k]) { try { fs.unlinkSync(path.join(OUT_DIR, `${k}-governor.json`)); } catch {} }
+  for (const [k, r] of Object.entries(fixedGov)) { markThirdParty(r); fs.writeFileSync(path.join(OUT_DIR, `${k}-governor.json`), JSON.stringify(r, null, 2)); }
+  Object.keys(allGov).forEach((k) => delete allGov[k]); Object.assign(allGov, fixedGov);
   fs.writeFileSync(path.join(OUT_DIR, "all-senate.json"), JSON.stringify(allSenate));
   fs.writeFileSync(path.join(OUT_DIR, "all-house.json"), JSON.stringify(allHouse));
   fs.writeFileSync(path.join(OUT_DIR, "all-governor.json"), JSON.stringify(allGov));
