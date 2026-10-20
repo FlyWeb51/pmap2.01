@@ -39015,5 +39015,97 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/TX",
     "scrapedAt": "2026-10-19T18:11:10.143Z"
+  },
+  {
+    "raceId": "GA-senate",
+    "pollster": "rowspan=3 |Quantus Insights",
+    "partisanLean": "R",
+    "fieldDates": "rowspan=\"3\"|October 15–17, 2026",
+    "sampleSize": 755,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jon Ossoff (D)",
+        "pct": 52
+      },
+      {
+        "candidate": "Mike Collins (R)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+    "scrapedAt": "2026-10-20T02:38:40.351Z"
+  },
+  {
+    "raceId": "IA-senate",
+    "pollster": "co/efficient",
+    "partisanLean": "R",
+    "fieldDates": "October 15–19, 2026",
+    "sampleSize": 863,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ashley Hinson (R)",
+        "pct": 48
+      },
+      {
+        "candidate": "Josh Turek (D)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+    "scrapedAt": "2026-10-20T02:38:48.034Z"
+  },
+  {
+    "raceId": "GA",
+    "pollster": "Quantus Insights",
+    "partisanLean": "R",
+    "fieldDates": "2026-10-17",
+    "sampleSize": 755,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Ossoff",
+        "pct": 52
+      },
+      {
+        "candidate": "Collins",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/GA",
+    "scrapedAt": "2026-10-20T02:39:13.931Z"
+  },
+  {
+    "raceId": "OH",
+    "pollster": "Rasmussen Reports 2024 err 2.1",
+    "partisanLean": null,
+    "fieldDates": "2026-10-14",
+    "sampleSize": 901,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Brown",
+        "pct": 47
+      },
+      {
+        "candidate": "Husted",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/OH",
+    "scrapedAt": "2026-10-20T02:39:58.855Z"
   }
 ]
