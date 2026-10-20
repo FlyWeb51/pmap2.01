@@ -201,7 +201,51 @@ async function firstPair(prefixes) {
     const pair = await fetchPair(p);
     if (pair) return { series: p, ...pair };
   }
+  // Some series name their 2026 event differently (KXSENATELA-26NOV), so the
+  // -26-D / -26-R guess misses. Fall back to reading the open event itself.
+  for (const p of prefixes) {
+    if (!listed(p)) continue;
+    const pair = await pairFromEvent(p);
+    if (pair) return pair;
+  }
   return null;
+}
+
+// D / R sides (plus any independent candidates) from a series' open 2026 event.
+function pairFromMarkets(series, ev) {
+  const ms = (ev && ev.markets) || [];
+  const D = ms.find((m) => /-D$/.test(m.ticker)), R = ms.find((m) => /-R$/.test(m.ticker));
+  const democrat = D ? sideInfo(D, D.ticker) : null, republican = R ? sideInfo(R, R.ticker) : null;
+  if (!democrat && !republican) return null;
+  normalize(democrat, republican);
+  const others = ms.filter((m) => m !== D && m !== R).map((m) => sideInfo(m, m.ticker)).filter((x) => x && x.pct >= 1);
+  return { series, event: ev.event_ticker, democrat, republican, ...(others.length ? { others } : {}), fetchedAt: new Date().toISOString() };
+}
+async function pairFromEvent(series) {
+  const ev = await openEvent(series);
+  return ev ? pairFromMarkets(series, ev) : null;
+}
+
+// Most House districts now live in ONE series, KXHOUSERACE, with one event per
+// district (KXHOUSERACE-TX23-26, at-large seats as WYAL). One paged call gets
+// all of them, so this covers the ~350 districts the per-district series miss.
+async function fetchHouseRaceSeries() {
+  const out = {};
+  if (!listed("KXHOUSERACE")) return out;
+  let cursor = "", pages = 0;
+  do {
+    const data = await fetchJson(`${BASE}/events?series_ticker=KXHOUSERACE&status=open&with_nested_markets=true&limit=200${cursor ? `&cursor=${cursor}` : ""}`);
+    for (const ev of (data && data.events) || []) {
+      const m = String(ev.event_ticker).match(/^KXHOUSERACE-([A-Z]{2})(\d{2}|AL)-(26|2026)/);
+      if (!m) continue;
+      const district = `${m[1]}-${m[2] === "AL" ? "01" : m[2]}`;
+      const pair = pairFromMarkets("KXHOUSERACE", ev);
+      if (pair) out[district] = { district, ...pair };
+    }
+    cursor = data && data.cursor;
+    pages++;
+  } while (cursor && pages < 10);
+  return out;
 }
 
 async function fetchHouseDistrict(district) {
@@ -217,7 +261,12 @@ async function fetchHouseDistrict(district) {
 
 async function fetchStateRace(state) {
   // Ohio and Florida 2026 are special elections: SENATEOHS, SENATEFLS.
-  const pair = await firstPair([`SENATE${state}`, `SENATE${state}S`]);
+  // Kalshi files Kentucky under SENATELA and Louisiana under KXSENATELA, so try
+  // every candidate series and keep the one whose market title names this state.
+  const prefixes = [`SENATE${state}`, `SENATE${state}S`, `KXSENATE${state}`, `KXSENATE${state}S`, ...(SENATE_ALIASES[state] || [])];
+  const found = [];
+  for (const p of prefixes) { const pair = await firstPair([p]); if (pair) found.push(pair); }
+  const pair = found.find((r) => stateFromTitle(r) === state) || found.find((r) => !stateFromTitle(r)) || null;
   return pair ? { state, ...pair } : null;
 }
 
@@ -226,8 +275,9 @@ const GOVERNOR_STATES = [
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "FL", "GA", "HI", "ID", "IL", "IA", "KS", "ME", "MD", "MA", "MI",
   "MN", "NE", "NV", "NH", "NM", "NY", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "VT", "WI", "WY",
 ];
+const SENATE_ALIASES = { KY: ["SENATELA"] };
 async function fetchGovernor(state) {
-  const pair = await firstPair([`GOVPARTY${state}`]);
+  const pair = await firstPair([`GOVPARTY${state}`, `KXGOVPARTY${state}`]);
   return pair ? { state, ...pair } : null;
 }
 
@@ -463,6 +513,20 @@ async function main() {
     allHouse[d] = r.value; hOk++;
     fs.writeFileSync(path.join(OUT_DIR, `${d}.json`), JSON.stringify(r.value, null, 2));
   });
+
+  // Fill every district the per-district series don't cover from KXHOUSERACE.
+  let hRace = 0;
+  try {
+    const race = await fetchHouseRaceSeries();
+    for (const [d, r] of Object.entries(race)) {
+      const have = allHouse[d];
+      if (have && have.democrat && have.republican && !have.stale) continue;
+      allHouse[d] = r; hRace++;
+      fs.writeFileSync(path.join(OUT_DIR, `${d}.json`), JSON.stringify(r, null, 2));
+    }
+    console.log(`[house] KXHOUSERACE: ${Object.keys(race).length} districts listed, ${hRace} added`);
+  } catch (e) { console.log(`[house] KXHOUSERACE failed: ${e.message}`); }
+  hOk += hRace;
 
   const gov = await pool(GOVERNOR_STATES, fetchGovernor);
   const allGov = {};
