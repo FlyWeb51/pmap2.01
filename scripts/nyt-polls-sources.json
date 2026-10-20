@@ -1,9 +1,17 @@
 {
-  "_readme": "Paste the NYT polling CSV download links into the url fields below (right-click each download link on https://www.nytimes.com/interactive/polls/latest-polls.html and choose Copy link address). Leave unused entries blank. Data is CC BY 4.0 and must credit The New York Times.",
+  "_readme": "NYT polling CSV download links from https://www.nytimes.com/interactive/polls/latest-polls.html. Data is CC BY 4.0 and must credit The New York Times. NYT has no generic-ballot CSV on that page; the generic ballot stays on the existing source.",
   "files": [
-    { "name": "senate", "url": "" },
-    { "name": "house", "url": "" },
-    { "name": "governor", "url": "" },
-    { "name": "generic-ballot", "url": "" }
+    {
+      "name": "senate",
+      "url": "https://www.nytimes.com/newsgraphics/polls/senate.csv"
+    },
+    {
+      "name": "house",
+      "url": "https://www.nytimes.com/newsgraphics/polls/house.csv"
+    },
+    {
+      "name": "governor",
+      "url": "https://www.nytimes.com/newsgraphics/polls/governor.csv"
+    }
   ]
 }

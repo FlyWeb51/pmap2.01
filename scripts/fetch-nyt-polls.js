@@ -33,7 +33,7 @@ const SOURCES = path.join(__dirname, "nyt-polls-sources.json");
 const DROP_DIR = path.join(ROOT, "data", "nyt-drop");
 const OUT_DIR = path.join(ROOT, "data", "polls-nyt");
 const CYCLE = "2026";
-const UA = "pmap2.01-poll-fetcher/1.0 (election tracker; attribution to The New York Times)";
+const UA = "Mozilla/5.0 (compatible; pmap2.01-poll-fetcher/1.1; election tracker crediting The New York Times)";
 
 const ATTRIBUTION = {
   text: "Polling data: The New York Times, licensed CC BY 4.0",
@@ -219,7 +219,7 @@ async function loadInputs() {
     for (const f of cfg.files || []) {
       if (!f.url) continue;
       try {
-        const res = await fetch(f.url, { headers: { "User-Agent": UA } });
+        const res = await fetch(f.url, { headers: { "User-Agent": UA, Accept: "text/csv,*/*", Referer: ATTRIBUTION.source } });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         files.push({ name: f.name || f.url, text: await res.text(), from: f.url });
         console.log(`[nyt] fetched ${f.name || f.url}`);

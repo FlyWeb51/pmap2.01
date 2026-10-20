@@ -31,6 +31,8 @@ const POLLS_DIR = path.join(ROOT, "data", "polls");
 const AVG_DIR = path.join(ROOT, "data", "poll-average");
 const FEC_DIR = path.join(ROOT, "data", "fec");
 const KALSHI_DIR = path.join(ROOT, "data", "kalshi");
+const NYT_DIR = path.join(ROOT, "data", "polls-nyt");
+const NYT_PAGE = "https://www.nytimes.com/interactive/polls/latest-polls.html";
 const TODAY = new Date();
 
 const read = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch { return d; } };
@@ -224,6 +226,46 @@ function main() {
       foundOn: raw.aggregatorUrl ? [raw.aggregatorUrl] : [],
       reviewStatus: "auto",
     };
+    addPoll(byRace, raceId, poll);
+  }
+
+  // NYT polls (data/polls-nyt/, written by fetch-nyt-polls.js). These carry the
+  // pollster's own release link, so they also fill in missing sourceUrls.
+  let nytAdded = 0;
+  if (fs.existsSync(NYT_DIR)) {
+    for (const f of fs.readdirSync(NYT_DIR)) {
+      if (!/^[A-Z]{2}-[HSG]-.*\.json$/.test(f)) continue;
+      const raceId = f.replace(/\.json$/, "");
+      const j = read(path.join(NYT_DIR, f));
+      for (const p of (j && j.polls) || []) {
+        if (!p.endDate || new Date(p.endDate) > new Date(TODAY.getTime() + 864e5)) continue;
+        const results = twoParty(raceId, (p.results || []).filter((r) => !/^(don'?t know|undecided|someone else|other|refused|would not vote)/i.test(String(r.candidate))));
+        if (!results) continue;
+        const pn = cleanPollster(p.pollster);
+        addPoll(byRace, raceId, {
+          pollster: pn.name,
+          endDate: p.endDate,
+          fieldDates: p.startDate && p.startDate !== p.endDate ? `${p.startDate} to ${p.endDate}` : p.endDate,
+          sampleSize: p.sampleSize || null,
+          population: p.population || null,
+          partisan: p.partisan ? (/^D/i.test(p.partisan) ? "D" : /^R/i.test(p.partisan) ? "R" : p.partisan) : p.internal ? "internal" : null,
+          sponsors: p.sponsors || null,
+          results,
+          sourceUrl: p.sourceUrl || null,
+          foundOn: [NYT_PAGE],
+          reviewStatus: "auto",
+        });
+        nytAdded++;
+      }
+    }
+  }
+  console.log(`polls: ${nytAdded} NYT polls considered`);
+
+  finish(byRace, skipped);
+}
+
+function addPoll(byRace, raceId, poll) {
+    const ed = poll.endDate, results = poll.results;
     const list = (byRace[raceId] ||= []);
     const dup = list.find((q) => {
       if (Math.abs(new Date(q.endDate) - new Date(ed)) > 2 * 864e5) return false;
@@ -235,16 +277,18 @@ function main() {
     });
     if (dup) {
       // merge: fill gaps, remember every site it appeared on
-      for (const k of ["sampleSize", "population", "partisan", "sourceUrl", "fieldDates"]) if (!dup[k] && poll[k]) dup[k] = poll[k];
+      for (const k of ["sampleSize", "population", "partisan", "sourceUrl", "fieldDates", "sponsors"]) if (!dup[k] && poll[k]) dup[k] = poll[k];
       if (poll.pollster.length > dup.pollster.length && dup.reviewStatus === "auto") dup.pollster = poll.pollster;
       for (const r of dup.results) {
         const alt = poll.results.find((x) => x.party === r.party && x.party !== "O");
         if (alt && alt.candidate.length > r.candidate.length && dup.reviewStatus === "auto") r.candidate = alt.candidate;
       }
+      dup.foundOn = dup.foundOn || [];
       for (const u of poll.foundOn) if (!dup.foundOn.includes(u)) dup.foundOn.push(u);
     } else list.push(poll);
-  }
+}
 
+function finish(byRace, skipped) {
   fs.mkdirSync(POLLS_DIR, { recursive: true });
   fs.mkdirSync(AVG_DIR, { recursive: true });
   const index = {};
