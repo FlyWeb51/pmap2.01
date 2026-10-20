@@ -1,10 +1,10 @@
 {
   "raceId": "MT-H-01-2026",
-  "count": 7,
-  "updated_at": "2026-10-20T02:40:38.397Z",
+  "count": 11,
+  "updated_at": "2026-10-20T14:20:53.490Z",
   "polls": [
     {
-      "pollster": "American Pulse",
+      "pollster": "American Pulse Research & Polling",
       "endDate": "2026-09-24",
       "fieldDates": "2026-09-24",
       "sampleSize": 314,
@@ -24,12 +24,50 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.montanarightnow.com/elections/montana-senate-race-kurt-alme-tops-bodnar-and-bankhead-in-new-poll-findings/article_cd8401fb-0470-492c-a53a-c7dfe39552ff.html",
       "foundOn": [
-        "https://pollingsource.com/house/MT-01"
+        "https://pollingsource.com/house/MT-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4335
+      "sponsors": "NonStop Local",
+      "weight": 0.4286
+    },
+    {
+      "pollster": "American Pulse Research & Polling",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-19 to 2026-09-24",
+      "sampleSize": 314,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "NonStop Local",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 45.8,
+          "percentage": 45.8
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 36.5,
+          "percentage": 36.5
+        },
+        {
+          "candidate": "Generic Candidate (OTH)",
+          "party": null,
+          "pct": 9.5,
+          "percentage": 9.5
+        }
+      ],
+      "sourceUrl": "https://www.montanarightnow.com/elections/montana-senate-race-kurt-alme-tops-bodnar-and-bankhead-in-new-poll-findings/article_cd8401fb-0470-492c-a53a-c7dfe39552ff.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4286,
+      "otherMatchup": true
     },
     {
       "pollster": "Impact Research",
@@ -52,12 +90,13 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://mcusercontent.com/c8d0fc607b9ebc333152f806f/files/c5866ca1-08c1-fb4a-effd-deb8bff0ea04/IMPACT_MT_01_PRESS_MEMO_SEPT_2026.01.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/MT-01"
+        "https://pollingsource.com/house/MT-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2673
+      "weight": 0.2643
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -80,12 +119,44 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/zachblackburn23/status/2100002534383358350",
       "foundOn": [
-        "https://pollingsource.com/house/MT-01"
+        "https://pollingsource.com/house/MT-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1844
+      "sponsors": "The Bench",
+      "weight": 0.1824
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-09 to 2026-09-10",
+      "sampleSize": 536,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "The Bench",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://x.com/zachblackburn23/status/2100002534383358350",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1824,
+      "otherMatchup": true
     },
     {
       "pollster": "Rutgers University Eagleton Institute of Politics",
@@ -108,17 +179,19 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://montanafreepress.org/2026/09/11/alme-holds-an-8-point-lead-over-bodnar-in-senate-race/",
       "foundOn": [
-        "https://pollingsource.com/house/MT-01"
+        "https://pollingsource.com/house/MT-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2879
+      "sponsors": "Montana Free Press",
+      "weight": 0.2846
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-06-25",
-      "weight": 0.0334,
+      "weight": 0.033,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -147,7 +220,7 @@
     {
       "pollster": "Upswing Research (D)",
       "endDate": "2026-05-05",
-      "weight": 0.0184,
+      "weight": 0.0091,
       "sampleSize": 401,
       "population": "LV",
       "results": [
@@ -167,35 +240,102 @@
       "sourceUrl": "https://x.com/PatrickSvitek/status/2054609849439199263?s=20",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://pollingsource.com/house/MT-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-05",
+      "sponsors": "314 Action"
     },
     {
-      "pollster": "Upswing Research",
-      "endDate": "2026-05-05",
-      "fieldDates": "2026-05-05",
-      "sampleSize": 401,
+      "pollster": "Peak Insights",
+      "endDate": "2026-01-15",
+      "fieldDates": "2026-01-12 to 2026-01-15",
+      "sampleSize": 400,
       "population": "LV",
-      "partisan": "D",
+      "partisan": "R",
+      "sponsors": "Leadership in Action",
       "results": [
         {
-          "candidate": "Matt Rains (D)",
-          "party": "D",
-          "pct": 43,
-          "percentage": 43
+          "candidate": "Ryan Zinke (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         },
         {
-          "candidate": "Aaron Flint (R)",
+          "candidate": "Sam Forstag (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.the-downballot.com/p/morning-digest-arizona-democrats",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0007,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Peak Insights",
+      "endDate": "2026-01-15",
+      "fieldDates": "2026-01-12 to 2026-01-15",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Leadership in Action",
+      "results": [
+        {
+          "candidate": "Ryan Zinke (R)",
           "party": "R",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ryan Busse (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.the-downballot.com/p/morning-digest-arizona-democrats",
       "foundOn": [
-        "https://pollingsource.com/house/MT-01"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0092,
+      "weight": 0.0007,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Tulchin Research",
+      "endDate": "2025-11-25",
+      "fieldDates": "2025-11-22 to 2025-11-25",
+      "sampleSize": 424,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "No Surrender Fund",
+      "results": [
+        {
+          "candidate": "Ryan Busse (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ryan Zinke (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.documentcloud.org/documents/26462582-mt-01-tulchin-research-dec-2025/?utm_source=substack&utm_medium=email",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
       "otherMatchup": true
     }
   ]

@@ -1,12 +1,70 @@
 {
   "raceId": "MN-H-01-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.395Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.489Z",
   "polls": [
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-10-12",
+      "fieldDates": "2026-10-04 to 2026-10-12",
+      "sampleSize": 565,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "ABC6",
+      "results": [
+        {
+          "candidate": "Jake Johnson (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Brad Finstad (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://results.surveyusa.com/client/PollReport.aspx?g=3605b38b-d541-4db4-9d70-f6d4875faeb8",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8715
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-18 to 2026-09-21",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Jake Johnson (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Brad Finstad (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2102878578849484963",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2523
+    },
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-14",
-      "weight": 0.0055,
+      "weight": 0.0027,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -26,12 +84,47 @@
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-03-12 to 2026-03-14",
+      "sponsors": "Conservatives for America"
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2026-03-14",
+      "fieldDates": "2026-03-12 to 2026-03-14",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Conservatives for America",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0027,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-02-03",
-      "weight": 0.0027,
+      "weight": 0.0013,
       "sampleSize": 708,
       "population": "RV",
       "results": [
@@ -51,7 +144,11 @@
       "sourceUrl": "https://www.politico.com/newsletters/weekly-score/2026/02/09/the-big-ads-from-the-big-game-00770981",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-02-02 to 2026-02-03"
     }
   ]
 }

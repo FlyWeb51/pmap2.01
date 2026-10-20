@@ -1,0 +1,65 @@
+{
+  "raceId": "RI-H-02-2026",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.509Z",
+  "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-11",
+      "fieldDates": "2026-10-08 to 2026-10-11",
+      "sampleSize": 406,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "WPRI-TV",
+      "results": [
+        {
+          "candidate": "Seth M. Magaziner (D)",
+          "party": "D",
+          "pct": 55.18,
+          "percentage": 55.18
+        },
+        {
+          "candidate": "Victor Mellor (R)",
+          "party": "R",
+          "pct": 39.12,
+          "percentage": 39.12
+        }
+      ],
+      "sourceUrl": "https://www.wpri.com/news/elections/5p-wpri-emerson-poll-story/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7219
+    },
+    {
+      "pollster": "Embold Research",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-10-05 to 2026-10-08",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Salve Regina University Pell Center for International Relations and Public Policy",
+      "results": [
+        {
+          "candidate": "Seth M. Magaziner (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Victor Mellor (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://salve.edu/news/news-listing/pell-center-survey-foulkes-leads-governors-race-11-points-lieutenant-governor-contest-deadlocked",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7475
+    }
+  ]
+}

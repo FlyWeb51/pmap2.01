@@ -1,8 +1,49 @@
 {
   "raceId": "MT-S-2026",
-  "count": 18,
-  "updated_at": "2026-10-20T02:40:38.397Z",
+  "count": 25,
+  "updated_at": "2026-10-20T14:20:53.490Z",
   "polls": [
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-15 to 2026-10-18",
+      "sampleSize": 667,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 45.6,
+          "percentage": 45.6
+        },
+        {
+          "candidate": "Seth Bodnar (I)",
+          "party": "O",
+          "pct": 29.4,
+          "percentage": 29.4
+        },
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 21.2,
+          "percentage": 21.2
+        },
+        {
+          "candidate": "Kyle Austin (LIB)",
+          "party": "O",
+          "pct": 1.8,
+          "percentage": 1.8
+        }
+      ],
+      "sourceUrl": "https://quantusinsights.org/f/montana-senate-alme-leads-by-16-as-bodnar-consolidates",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0877
+    },
     {
       "pollster": "Peak Insights",
       "endDate": "2026-10-12",
@@ -24,12 +65,13 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/burgessev/status/2111155739154882819",
       "foundOn": [
-        "https://pollingsource.com/senate/MT"
+        "https://pollingsource.com/senate/MT",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4145
+      "weight": 0.4099
     },
     {
       "pollster": "Concord Public Opinion Partners Internal",
@@ -57,10 +99,10 @@
         "https://pollingsource.com/senate/MT"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3402
+      "weight": 0.3364
     },
     {
-      "pollster": "American Pulse Research",
+      "pollster": "American Pulse Research & Polling",
       "endDate": "2026-09-24",
       "fieldDates": "2026-09-24",
       "sampleSize": 604,
@@ -68,7 +110,7 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Alani Ines Bankhead (D)",
+          "candidate": "Alani Bankhead (D)",
           "party": "D",
           "pct": 19,
           "percentage": 19
@@ -80,12 +122,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.montanarightnow.com/elections/montana-senate-race-kurt-alme-tops-bodnar-and-bankhead-in-new-poll-findings/article_cd8401fb-0470-492c-a53a-c7dfe39552ff.html",
       "foundOn": [
-        "https://pollingsource.com/senate/MT"
+        "https://pollingsource.com/senate/MT",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3006
+      "sponsors": "NonStop Local",
+      "weight": 0.2972
     },
     {
       "pollster": "Quantus Insights",
@@ -108,12 +152,54 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/f/latest-survey-alme-leads-as-montana%E2%80%99s-senate-opposition-splits",
       "foundOn": [
-        "https://pollingsource.com/senate/MT"
+        "https://pollingsource.com/senate/MT",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2484
+      "weight": 0.2456
+    },
+    {
+      "pollster": "Aspect Strategic",
+      "endDate": "2026-09-15",
+      "fieldDates": "2026-09-07 to 2026-09-15",
+      "sampleSize": 715,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Montana Freedom PAC",
+      "results": [
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Seth Bodnar (I)",
+          "party": "O",
+          "pct": 32,
+          "percentage": 32
+        },
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 14,
+          "percentage": 14
+        },
+        {
+          "candidate": "Kyle Austin (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://x.com/burgessev/status/2102451722702442813",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2627
     },
     {
       "pollster": "Rutgers University Eagleton Institute of Politics",
@@ -136,12 +222,14 @@
           "percentage": 38
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://montanafreepress.org/2026/09/11/alme-holds-an-8-point-lead-over-bodnar-in-senate-race/",
       "foundOn": [
-        "https://pollingsource.com/senate/MT"
+        "https://pollingsource.com/senate/MT",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4321
+      "sponsors": "Montana Free Press",
+      "weight": 0.4273
     },
     {
       "pollster": "Peak Insights",
@@ -164,12 +252,13 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.semafor.com/article/09/08/2026/republican-exploits-divided-field-in-montana-senate-race",
       "foundOn": [
-        "https://pollingsource.com/senate/MT"
+        "https://pollingsource.com/senate/MT",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1498
+      "weight": 0.1481
     },
     {
       "pollster": "Hart Research D-sponsored",
@@ -192,12 +281,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://forwardmontana.org/results-of-new-polling-on-the-montana-u-s-senate-election/",
       "foundOn": [
-        "https://pollingsource.com/senate/MT"
+        "https://pollingsource.com/senate/MT",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1065
+      "sponsors": "Forward Montana",
+      "weight": 0.1053
     },
     {
       "pollster": "Tavern Research",
@@ -225,12 +316,12 @@
         "https://pollingsource.com/senate/MT"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0712
+      "weight": 0.0704
     },
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.1368,
+      "weight": 0.1352,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -255,7 +346,7 @@
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.1368,
+      "weight": 0.1352,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -280,7 +371,7 @@
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.1368,
+      "weight": 0.1352,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -323,17 +414,19 @@
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.gelliottmorris.com/p/2026-07-28-exclusive-independent-leads-democrat-against-republican-montana",
       "foundOn": [
-        "https://pollingsource.com/senate/MT"
+        "https://pollingsource.com/senate/MT",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0684
+      "sponsors": "Contours Inc.",
+      "weight": 0.0676
     },
     {
       "pollster": "The Bullfinch Group",
       "endDate": "2026-07-16",
-      "weight": 0.1367,
+      "weight": 0.0676,
       "sampleSize": 793,
       "population": "LV",
       "results": [
@@ -353,7 +446,12 @@
       "sourceUrl": "https://independentcentervoice.com/insights/july-2026-statewide-survey-montana-s-u-s-senate-race",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "IND",
+      "fieldDates": "2026-07-13 to 2026-07-16",
+      "sponsors": "Independent Center | Independent Leadership Council"
     },
     {
       "pollster": "Bullfinch Group",
@@ -381,12 +479,12 @@
         "https://pollingsource.com/senate/MT"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0683
+      "weight": 0.0676
     },
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-06-24",
-      "weight": 0.0826,
+      "weight": 0.0408,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -406,12 +504,17 @@
       "sourceUrl": "https://www.mtfreedompac.org/press-releases",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-06-18 to 2026-06-24",
+      "sponsors": "The Majority Institute"
     },
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-06-24",
-      "weight": 0.0826,
+      "weight": 0.0817,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -436,7 +539,7 @@
     {
       "pollster": "GrayHouse",
       "endDate": "2026-06-24",
-      "weight": 0.0653,
+      "weight": 0.0646,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -456,12 +559,15 @@
       "sourceUrl": "https://www.insideelections.com/news/article/montana-senate-new-poll-confirms-gop-edge",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-23 to 2026-06-24"
     },
     {
       "pollster": "Public Opinion Strategies (R)",
       "endDate": "2026-06-11",
-      "weight": 0.0483,
+      "weight": 0.0239,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -481,7 +587,174 @@
       "sourceUrl": "https://www.semafor.com/article/06/18/2026/divided-montana-senate-field-helps-republicans",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-06-08 to 2026-06-11",
+      "sponsors": "The Political Company"
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-05-18",
+      "fieldDates": "2026-05-13 to 2026-05-18",
+      "sampleSize": 607,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Contours Inc.",
+      "results": [
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.tavernresearch.com/research-and-writings/montana-senate-bodnar-ballot-split",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0151,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-05-18",
+      "fieldDates": "2026-05-13 to 2026-05-18",
+      "sampleSize": 607,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Contours Inc.",
+      "results": [
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 58,
+          "percentage": 58
+        },
+        {
+          "candidate": "Reilly Neill (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://www.tavernresearch.com/research-and-writings/montana-senate-bodnar-ballot-split",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0151,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "American Pulse Research & Polling",
+      "endDate": "2026-02-18",
+      "fieldDates": "2026-02-14 to 2026-02-18",
+      "sampleSize": 607,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Steve Daines (R)",
+          "party": "R",
+          "pct": 53.9,
+          "percentage": 53.9
+        },
+        {
+          "candidate": "Seth Bodnar (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://www.kulr8.com/elections/first-daines-in-command-for-us-senate-in-first-poll-featuring-an-independent/article_f61f7e4d-ef2f-52ae-bffc-ab6319495ff7.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0039,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "American Pulse Research & Polling",
+      "endDate": "2026-02-18",
+      "fieldDates": "2026-02-14 to 2026-02-18",
+      "sampleSize": 607,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Steve Daines (R)",
+          "party": "R",
+          "pct": 51.7,
+          "percentage": 51.7
+        },
+        {
+          "candidate": "Reilly Neill (D)",
+          "party": "D",
+          "pct": 25.1,
+          "percentage": 25.1
+        },
+        {
+          "candidate": "Seth Bodnar (I)",
+          "party": "O",
+          "pct": 15.9,
+          "percentage": 15.9
+        }
+      ],
+      "sourceUrl": "https://www.kulr8.com/elections/first-daines-in-command-for-us-senate-in-first-poll-featuring-an-independent/article_f61f7e4d-ef2f-52ae-bffc-ab6319495ff7.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0039,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "yes. every kid. foundation.",
+      "endDate": "2026-01-26",
+      "fieldDates": "2026-01-23 to 2026-01-26",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Steve Daines (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Reilly Neill (D)",
+          "party": "D",
+          "pct": 19,
+          "percentage": 19
+        },
+        {
+          "candidate": "Seth Bodnar (I)",
+          "party": "O",
+          "pct": 15,
+          "percentage": 15
+        }
+      ],
+      "sourceUrl": "https://yeseverykidfoundation.org/montana-voters-want-more-education-freedom/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0019,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "VA-H-05-2026",
-  "count": 4,
-  "updated_at": "2026-10-20T02:40:38.422Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.501Z",
   "polls": [
     {
       "pollster": "Washington Post",
@@ -29,10 +29,10 @@
         "https://pollingsource.com/house/VA-05"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6726
+      "weight": 0.6651
     },
     {
-      "pollster": "The Washington Post/SSPG",
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
       "endDate": "2026-09-28",
       "fieldDates": "2026-09-28",
       "sampleSize": 600,
@@ -52,12 +52,13 @@
           "percentage": 51
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/10/01/shannon-taylor-has-edge-over-rob-wittman-virginia-house-district-post-poll-finds/",
       "foundOn": [
-        "https://pollingsource.com/house/VA-05"
+        "https://pollingsource.com/house/VA-05",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6572
+      "weight": 0.6499
     },
     {
       "pollster": "Expedition Strategies",
@@ -80,12 +81,43 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://punchbowl.news/va05_polling_memo_vfin/",
       "foundOn": [
-        "https://pollingsource.com/house/VA-05"
+        "https://pollingsource.com/house/VA-05",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2446
+      "weight": 0.2419
+    },
+    {
+      "pollster": "Expedition Strategies",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-21 to 2026-09-24",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/va05_polling_memo_vfin/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2419,
+      "otherMatchup": true
     },
     {
       "pollster": "Expedition Strategies",
@@ -108,12 +140,13 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.tomperriello.com/news/new-poll-perriello-moves-virginias-5th-district-into-a-toss-up-race?source=d715b73c-1e5d-4e06-99fb-ef4a95e22fd4",
       "foundOn": [
-        "https://pollingsource.com/house/VA-05"
+        "https://pollingsource.com/house/VA-05",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0862
+      "weight": 0.0852
     }
   ]
 }

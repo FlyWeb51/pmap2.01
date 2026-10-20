@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T14:16:56.233Z",
+  "generatedAt": "2026-10-20T14:20:53.562Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -385,7 +385,7 @@
         "kalshiD": 0.028999999999999998,
         "nyt": {
           "averageMargin": -24,
-          "averagePolls": 2,
+          "averagePolls": 3,
           "latest": {
             "pollster": "Cole Hargrave",
             "endDate": "2026-08-09"
@@ -571,7 +571,15 @@
         "holder": "R",
         "special": false,
         "kalshiD": 0.002,
-        "nyt": null
+        "nyt": {
+          "averageMargin": -30,
+          "averagePolls": 1,
+          "latest": {
+            "pollster": "Change Research",
+            "endDate": "2026-07-30"
+          },
+          "source": "site"
+        }
       },
       {
         "state": "LA",
@@ -594,11 +602,11 @@
     ]
   },
   "generic": {
-    "dem": 49.7,
-    "rep": 42,
-    "margin": 7.7,
-    "polls": 110,
-    "source": "110 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
+    "dem": 49.3,
+    "rep": 41.7,
+    "margin": 7.6,
+    "polls": 109,
+    "source": "109 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
     "asOf": "2026-10-14",
     "label": "Blue wave"
   },
@@ -1084,7 +1092,15 @@
       "kalshiD": 0.069,
       "dem": "Jermaine Johnson",
       "rep": "Alan Wilson",
-      "poll": null
+      "poll": {
+        "averageMargin": -7,
+        "averagePolls": 1,
+        "latest": {
+          "pollster": "Hart Research Associates",
+          "endDate": "2026-08-15"
+        },
+        "source": "site"
+      }
     },
     {
       "state": "NM",
@@ -1321,7 +1337,15 @@
       "kalshiD": 0.021,
       "dem": "Terri Pickens",
       "rep": "Brad Little",
-      "poll": null
+      "poll": {
+        "averageMargin": -21,
+        "averagePolls": 1,
+        "latest": {
+          "pollster": "Change Research",
+          "endDate": "2026-07-30"
+        },
+        "source": "site"
+      }
     },
     {
       "state": "HI",
@@ -1358,9 +1382,9 @@
     }
   ],
   "candidatePerformance": {
-    "genericMargin": 7.7,
+    "genericMargin": 7.6,
     "nationalPres2024": -1.48,
-    "shift": 9.2,
+    "shift": 9.1,
     "rows": [
       {
         "state": "ME",
@@ -1368,38 +1392,25 @@
         "special": false,
         "dem": "Troy Jackson",
         "rep": "Susan M. Collins",
-        "polls": 27,
+        "polls": 29,
         "pres2024": 6.9,
-        "expected": 16.1,
-        "pollMargin": 2.1,
-        "overUnder": -14,
+        "expected": 16,
+        "pollMargin": 1.8,
+        "overUnder": -14.2,
         "kalshiD": 0.625
       },
       {
         "state": "MT",
         "name": "Montana",
         "special": false,
-        "dem": "Alani Ines Bankhead",
+        "dem": "Alani Bankhead",
         "rep": "Kurt Alme",
-        "polls": 12,
+        "polls": 14,
         "pres2024": -19.9,
-        "expected": -10.7,
-        "pollMargin": -22.6,
-        "overUnder": -11.9,
+        "expected": -10.8,
+        "pollMargin": -23.6,
+        "overUnder": -12.8,
         "kalshiD": 0.004
-      },
-      {
-        "state": "MA",
-        "name": "Massachusetts",
-        "special": false,
-        "dem": "Ed Markey",
-        "rep": "John Deaton",
-        "polls": 4,
-        "pres2024": 25.2,
-        "expected": 34.4,
-        "pollMargin": 23.1,
-        "overUnder": -11.3,
-        "kalshiD": 0.981
       },
       {
         "state": "MN",
@@ -1407,12 +1418,25 @@
         "special": false,
         "dem": "Peggy Flanagan",
         "rep": "Michele Tafoya",
-        "polls": 17,
+        "polls": 18,
         "pres2024": 4.2,
-        "expected": 13.4,
+        "expected": 13.3,
         "pollMargin": 3.1,
-        "overUnder": -10.3,
+        "overUnder": -10.2,
         "kalshiD": 0.865
+      },
+      {
+        "state": "MA",
+        "name": "Massachusetts",
+        "special": false,
+        "dem": "Ed Markey",
+        "rep": "John Deaton",
+        "polls": 7,
+        "pres2024": 25.2,
+        "expected": 34.3,
+        "pollMargin": 25.1,
+        "overUnder": -9.2,
+        "kalshiD": 0.981
       },
       {
         "state": "NH",
@@ -1420,11 +1444,11 @@
         "special": false,
         "dem": "Chris Pappas",
         "rep": "John E. Sununu",
-        "polls": 12,
+        "polls": 15,
         "pres2024": 2.8,
-        "expected": 12,
-        "pollMargin": 6.5,
-        "overUnder": -5.5,
+        "expected": 11.9,
+        "pollMargin": 6.2,
+        "overUnder": -5.7,
         "kalshiD": 0.895
       },
       {
@@ -1435,9 +1459,9 @@
         "rep": "Mike Rogers",
         "polls": 53,
         "pres2024": -1.4,
-        "expected": 7.8,
+        "expected": 7.7,
         "pollMargin": 2.6,
-        "overUnder": -5.2,
+        "overUnder": -5.1,
         "kalshiD": 0.685
       },
       {
@@ -1446,12 +1470,25 @@
         "special": true,
         "dem": "Angie Nixon",
         "rep": "Ashley Moody",
-        "polls": 13,
+        "polls": 14,
         "pres2024": -13.1,
-        "expected": -3.9,
-        "pollMargin": -6.3,
-        "overUnder": -2.4,
+        "expected": -4,
+        "pollMargin": -6.6,
+        "overUnder": -2.6,
         "kalshiD": 0.091
+      },
+      {
+        "state": "OK",
+        "name": "Oklahoma",
+        "special": false,
+        "dem": "N'Kiyla Jasmine Thomas",
+        "rep": "Kevin Hern",
+        "polls": 3,
+        "pres2024": -34.3,
+        "expected": -25.2,
+        "pollMargin": -24,
+        "overUnder": 1.2,
+        "kalshiD": 0.028999999999999998
       },
       {
         "state": "NM",
@@ -1461,9 +1498,9 @@
         "rep": "Larry Marker",
         "polls": 3,
         "pres2024": 6,
-        "expected": 15.2,
+        "expected": 15.1,
         "pollMargin": 16.5,
-        "overUnder": 1.3,
+        "overUnder": 1.4,
         "kalshiD": 0.978
       },
       {
@@ -1472,12 +1509,25 @@
         "special": false,
         "dem": "Jon Ossoff",
         "rep": "Mike Collins",
-        "polls": 13,
+        "polls": 11,
         "pres2024": -2.2,
-        "expected": 7,
-        "pollMargin": 8.5,
-        "overUnder": 1.5,
+        "expected": 6.9,
+        "pollMargin": 8.7,
+        "overUnder": 1.8,
         "kalshiD": 0.951
+      },
+      {
+        "state": "RI",
+        "name": "Rhode Island",
+        "special": false,
+        "dem": "Jack Reed",
+        "rep": "Raymond McKay",
+        "polls": 4,
+        "pres2024": 13.8,
+        "expected": 22.9,
+        "pollMargin": 26,
+        "overUnder": 3.1,
+        "kalshiD": 0.9890000000000001
       },
       {
         "state": "NC",
@@ -1485,11 +1535,11 @@
         "special": false,
         "dem": "Roy A. Cooper",
         "rep": "Michael Whatley",
-        "polls": 41,
+        "polls": 38,
         "pres2024": -3.2,
-        "expected": 6,
+        "expected": 5.9,
         "pollMargin": 9.9,
-        "overUnder": 3.9,
+        "overUnder": 4,
         "kalshiD": 0.956
       },
       {
@@ -1498,38 +1548,12 @@
         "special": false,
         "dem": "Josh Turek",
         "rep": "Ashley Hinson",
-        "polls": 28,
+        "polls": 33,
         "pres2024": -13.2,
-        "expected": -4,
-        "pollMargin": 0.3,
-        "overUnder": 4.3,
-        "kalshiD": 0.431
-      },
-      {
-        "state": "RI",
-        "name": "Rhode Island",
-        "special": false,
-        "dem": "Jack Reed",
-        "rep": "Raymond McKay",
-        "polls": 3,
-        "pres2024": 13.8,
-        "expected": 23,
-        "pollMargin": 27.5,
+        "expected": -4.1,
+        "pollMargin": 0.4,
         "overUnder": 4.5,
-        "kalshiD": 0.9890000000000001
-      },
-      {
-        "state": "OH",
-        "name": "Ohio",
-        "special": true,
-        "dem": "Sherrod Brown",
-        "rep": "Jon Husted",
-        "polls": 24,
-        "pres2024": -11.2,
-        "expected": -2,
-        "pollMargin": 3.2,
-        "overUnder": 5.2,
-        "kalshiD": 0.645
+        "kalshiD": 0.431
       },
       {
         "state": "SC",
@@ -1537,12 +1561,25 @@
         "special": false,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
-        "polls": 9,
+        "polls": 10,
         "pres2024": -17.9,
-        "expected": -8.7,
-        "pollMargin": -3.1,
-        "overUnder": 5.6,
+        "expected": -8.8,
+        "pollMargin": -3.7,
+        "overUnder": 5.1,
         "kalshiD": 0.165
+      },
+      {
+        "state": "OH",
+        "name": "Ohio",
+        "special": true,
+        "dem": "Sherrod Brown",
+        "rep": "Jon Husted",
+        "polls": 29,
+        "pres2024": -11.2,
+        "expected": -2.1,
+        "pollMargin": 3.7,
+        "overUnder": 5.8,
+        "kalshiD": 0.645
       },
       {
         "state": "AK",
@@ -1552,9 +1589,9 @@
         "rep": "Dan S. Sullivan",
         "polls": 14,
         "pres2024": -13.1,
-        "expected": -4,
-        "pollMargin": 2.3,
-        "overUnder": 6.3,
+        "expected": -4.1,
+        "pollMargin": 2.6,
+        "overUnder": 6.7,
         "kalshiD": 0.745
       },
       {
@@ -1563,11 +1600,11 @@
         "special": false,
         "dem": "James Talarico",
         "rep": "Ken Paxton",
-        "polls": 43,
+        "polls": 53,
         "pres2024": -13.7,
-        "expected": -4.5,
+        "expected": -4.6,
         "pollMargin": 2.7,
-        "overUnder": 7.2,
+        "overUnder": 7.3,
         "kalshiD": 0.615
       },
       {
@@ -1576,11 +1613,11 @@
         "special": false,
         "dem": "Adam Hamilton",
         "rep": "Roger Marshall",
-        "polls": 12,
+        "polls": 14,
         "pres2024": -16.1,
-        "expected": -6.9,
-        "pollMargin": 1.2,
-        "overUnder": 8.1,
+        "expected": -7,
+        "pollMargin": 1,
+        "overUnder": 8,
         "kalshiD": 0.385
       },
       {
@@ -1591,9 +1628,9 @@
         "rep": "Tom Cotton",
         "polls": 5,
         "pres2024": -30.6,
-        "expected": -21.5,
+        "expected": -21.6,
         "pollMargin": -8.3,
-        "overUnder": 13.2,
+        "overUnder": 13.3,
         "kalshiD": 0.052000000000000005
       }
     ]
@@ -1924,7 +1961,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-20T11:37:15.137Z",
-    "nytUpdated": "2026-10-20T14:16:56.161Z",
+    "nytUpdated": "2026-10-20T14:20:53.315Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

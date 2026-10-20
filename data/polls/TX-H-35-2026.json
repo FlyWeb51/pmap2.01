@@ -1,35 +1,37 @@
 {
   "raceId": "TX-H-35-2026",
   "count": 1,
-  "updated_at": "2026-10-20T02:40:38.423Z",
+  "updated_at": "2026-10-20T14:20:53.502Z",
   "polls": [
     {
       "pollster": "Normington, Petts & Associates D-sponsored",
       "endDate": "2026-08-31",
       "fieldDates": "2026-08-31",
       "sampleSize": 500,
-      "population": null,
+      "population": "LV",
       "partisan": "D",
       "results": [
+        {
+          "candidate": "Carlos De La Cruz (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
         {
           "candidate": "Johnny Garcia (D)",
           "party": "D",
           "pct": 44,
           "percentage": 44
-        },
-        {
-          "candidate": "Carlos De La Cruz Jr (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://hub.nationaljournal.com/can-democrats-school-ramaswamy-in-ohio",
       "foundOn": [
-        "https://pollingsource.com/house/TX-35"
+        "https://pollingsource.com/house/TX-35",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1335
+      "sponsors": "House Majority PAC",
+      "weight": 0.1553
     }
   ]
 }

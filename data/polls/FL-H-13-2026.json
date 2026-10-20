@@ -1,15 +1,15 @@
 {
   "raceId": "FL-H-13-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.384Z",
+  "count": 6,
+  "updated_at": "2026-10-20T14:20:53.483Z",
   "polls": [
     {
       "pollster": "Hart Research Associates D-sponsored",
       "endDate": "2026-08-27",
       "fieldDates": "2026-08-27",
       "sampleSize": 500,
-      "population": null,
-      "partisan": null,
+      "population": "LV",
+      "partisan": "D",
       "results": [
         {
           "candidate": "Leela Gray (D)",
@@ -24,12 +24,79 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-leela-gray-leads-anna-paulina-luna-in-fl-13",
       "foundOn": [
-        "https://pollingsource.com/house/FL-13"
+        "https://pollingsource.com/house/FL-13",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2435
+      "sponsors": "House Majority PAC",
+      "weight": 0.1416
+    },
+    {
+      "pollster": "Hart Research Associates",
+      "endDate": "2026-08-27",
+      "fieldDates": "2026-08-25 to 2026-08-27",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-leela-gray-leads-anna-paulina-luna-in-fl-13",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1416,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Hart Research Associates",
+      "endDate": "2026-08-27",
+      "fieldDates": "2026-08-25 to 2026-08-27",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Leela Gray (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Anna Paulina Luna (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Tony D’Arrigo (I)",
+          "party": "O",
+          "pct": 7,
+          "percentage": 7
+        }
+      ],
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-leela-gray-leads-anna-paulina-luna-in-fl-13",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1416
     },
     {
       "pollster": "Fabrizio, Lee & Associates R-sponsored",
@@ -52,17 +119,53 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://floridapolitics.com/archives/814114-anna-paulina-luna-leads-leela-gray-in-likely-general-election-matchup-clouding-dems-hope-for-a-flip/",
       "foundOn": [
-        "https://pollingsource.com/house/FL-13"
+        "https://pollingsource.com/house/FL-13",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0789
+      "weight": 0.078
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-08-06",
+      "fieldDates": "2026-08-04 to 2026-08-06",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Anna Paulina Luna (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Leela Gray (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Tony D’Arrigo (I)",
+          "party": "O",
+          "pct": 4,
+          "percentage": 4
+        }
+      ],
+      "sourceUrl": "https://www.semafor.com/article/08/14/2026/democrats-eye-republican-held-florida-district",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0872
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-05-20",
-      "weight": 0.0291,
+      "weight": 0.0144,
       "sampleSize": 616,
       "population": "RV",
       "results": [
@@ -82,7 +185,11 @@
       "sourceUrl": "https://drive.google.com/file/d/1QmLb0R6yalmHpjHvxOF-R-7AKy3eG1ij/view",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-05-19 to 2026-05-20"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "MS-S-2026",
   "count": 4,
-  "updated_at": "2026-10-20T02:40:38.397Z",
+  "updated_at": "2026-10-20T14:20:53.490Z",
   "polls": [
     {
       "pollster": "Wedgewood Polls",
@@ -24,12 +24,13 @@
           "percentage": 52
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/WedgewoodPolls/status/2110541168874488272",
       "foundOn": [
-        "https://pollingsource.com/senate/MS"
+        "https://pollingsource.com/senate/MS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8778
+      "weight": 0.868
     },
     {
       "pollster": "Data for Progress D-sponsored",
@@ -52,12 +53,14 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://chartingthewayforward.substack.com/p/research-release-fresh-polling-from",
       "foundOn": [
-        "https://pollingsource.com/senate/MS"
+        "https://pollingsource.com/senate/MS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1549
+      "sponsors": "Way to Lead PAC",
+      "weight": 0.1531
     },
     {
       "pollster": "Impact Research (D)",
@@ -83,10 +86,12 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/MS"
+        "https://pollingsource.com/senate/MS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-04-12"
+      "fieldDates": "2026-04-12",
+      "sponsors": "SPLC Action Fund"
     },
     {
       "pollster": "Impact Research",

@@ -1,7 +1,7 @@
 {
   "raceId": "NE-H-01-2026",
   "count": 3,
-  "updated_at": "2026-10-20T02:40:38.400Z",
+  "updated_at": "2026-10-20T14:20:53.491Z",
   "polls": [
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -24,12 +24,14 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://s3.documentcloud.org/documents/28652094/ne-01-global-strategy-group-for-retire-career-politicians-sept-2026.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/NE-01"
+        "https://pollingsource.com/house/NE-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1844
+      "sponsors": "Fight for Nebraska PAC",
+      "weight": 0.1824
     },
     {
       "pollster": "Tavern Research",
@@ -57,12 +59,12 @@
         "https://pollingsource.com/house/NE-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0209
+      "weight": 0.0206
     },
     {
       "pollster": "Zenith Research (I)",
       "endDate": "2026-05-11",
-      "weight": 0.0095,
+      "weight": 0.0094,
       "sampleSize": 401,
       "population": "RV",
       "results": [
@@ -83,7 +85,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/NE-01"
+        "https://pollingsource.com/house/NE-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-05-11"

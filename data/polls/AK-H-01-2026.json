@@ -1,12 +1,252 @@
 {
   "raceId": "AK-H-01-2026",
-  "count": 6,
-  "updated_at": "2026-10-20T02:40:38.377Z",
+  "count": 14,
+  "updated_at": "2026-10-20T14:20:53.481Z",
   "polls": [
+    {
+      "pollster": "Alaska Survey Research",
+      "endDate": "2026-10-03",
+      "fieldDates": "2026-10-01 to 2026-10-03",
+      "sampleSize": 1512,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "pct": 49.8,
+          "percentage": 49.8
+        },
+        {
+          "candidate": "Bill Hill (I)",
+          "party": "O",
+          "pct": 39.9,
+          "percentage": 39.9
+        },
+        {
+          "candidate": "Eric Hafner (D)",
+          "party": "D",
+          "pct": 6.9,
+          "percentage": 6.9
+        },
+        {
+          "candidate": "Jim C. McDermott (LIB)",
+          "party": "O",
+          "pct": 3.4,
+          "percentage": 3.4
+        }
+      ],
+      "sourceUrl": "https://x.com/The_Real_ASR/status/2107851752464884167",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.158
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-09-24 to 2026-10-01",
+      "sampleSize": 487,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "pct": 48.87,
+          "percentage": 48.87
+        },
+        {
+          "candidate": "Bill Hill (I)",
+          "party": "O",
+          "pct": 36.78,
+          "percentage": 36.78
+        },
+        {
+          "candidate": "Eric Hafner (D)",
+          "party": "D",
+          "pct": 8.59,
+          "percentage": 8.59
+        },
+        {
+          "candidate": "Jim C. McDermott (LIB)",
+          "party": "O",
+          "pct": 5.76,
+          "percentage": 5.76
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/03/polls/times-siena-alaska-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6275
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-09-24 to 2026-10-01",
+      "sampleSize": 504,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "pct": 46.59,
+          "percentage": 46.59
+        },
+        {
+          "candidate": "Bill Hill (I)",
+          "party": "O",
+          "pct": 35.06,
+          "percentage": 35.06
+        },
+        {
+          "candidate": "Eric Hafner (D)",
+          "party": "D",
+          "pct": 8.19,
+          "percentage": 8.19
+        },
+        {
+          "candidate": "Jim C. McDermott (LIB)",
+          "party": "O",
+          "pct": 5.49,
+          "percentage": 5.49
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/03/polls/times-siena-alaska-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6384
+    },
+    {
+      "pollster": "Fabrizio Ward/Impact Research",
+      "endDate": "2026-09-11",
+      "fieldDates": "2026-09-08 to 2026-09-11",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "AARP",
+      "results": [
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Bill Hill (I)",
+          "party": "O",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Eric Hafner (D)",
+          "party": "D",
+          "pct": 11,
+          "percentage": 11
+        },
+        {
+          "candidate": "Jim C. McDermott (LIB)",
+          "party": "O",
+          "pct": 4,
+          "percentage": 4
+        }
+      ],
+      "sourceUrl": "https://www.aarp.org/pri/topics/voter-research/politics/2026-midterm-election-poll-alaska/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5067
+    },
+    {
+      "pollster": "The Bullfinch Group",
+      "endDate": "2026-09-06",
+      "fieldDates": "2026-09-01 to 2026-09-06",
+      "sampleSize": 820,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Independent Leadership Council",
+      "results": [
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "pct": 44.2,
+          "percentage": 44.2
+        },
+        {
+          "candidate": "Bill Hill (I)",
+          "party": "O",
+          "pct": 36.6,
+          "percentage": 36.6
+        },
+        {
+          "candidate": "Eric Hafner (D)",
+          "party": "D",
+          "pct": 7.4,
+          "percentage": 7.4
+        },
+        {
+          "candidate": "Jim C. McDermott (LIB)",
+          "party": "O",
+          "pct": 1.9,
+          "percentage": 1.9
+        }
+      ],
+      "sourceUrl": "https://independentleadershipcouncil.com/press-alaska-at-large/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2285
+    },
+    {
+      "pollster": "Alaska Survey Research",
+      "endDate": "2026-08-05",
+      "fieldDates": "2026-08-02 to 2026-08-05",
+      "sampleSize": 1371,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "pct": 50.4,
+          "percentage": 50.4
+        },
+        {
+          "candidate": "Bill Hill (I)",
+          "party": "O",
+          "pct": 34.4,
+          "percentage": 34.4
+        },
+        {
+          "candidate": "Eric Hafner (D)",
+          "party": "D",
+          "pct": 15.2,
+          "percentage": 15.2
+        }
+      ],
+      "sourceUrl": "https://bsky.app/profile/alaskasurvey.bsky.social/post/3mstcarsnc32q",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2821
+    },
     {
       "pollster": "The Bullfinch Group",
       "endDate": "2026-07-16",
-      "weight": 0.1134,
+      "weight": 0.0561,
       "sampleSize": 546,
       "population": "LV",
       "results": [
@@ -26,12 +266,18 @@
       "sourceUrl": "https://independentcentervoice.com/insights/july-2026-statewide-survey-alaska-s-at-large-congressional-district",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "IND",
+      "fieldDates": "2026-07-13 to 2026-07-16",
+      "sponsors": "Independent Center | Independent Leadership Council",
+      "otherMatchup": true
     },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-29",
-      "weight": 0.0798,
+      "weight": 0.0789,
       "sampleSize": 593,
       "population": "LV",
       "results": [
@@ -51,12 +297,16 @@
       "sourceUrl": "https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-alaska-poll-crosstabs.html",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-15 to 2026-06-29",
+      "otherMatchup": true
     },
     {
       "pollster": "Tavern Research (I)",
       "endDate": "2026-05-27",
-      "weight": 0.0325,
+      "weight": 0.0161,
       "sampleSize": 452,
       "population": "LV",
       "results": [
@@ -76,12 +326,18 @@
       "sourceUrl": "https://www.tavernresearch.com/research-and-writings/ak-al-begich-leads-independent-runs-closest",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "IND",
+      "fieldDates": "2026-05-18 to 2026-05-27",
+      "sponsors": "Contours Inc.",
+      "otherMatchup": true
     },
     {
       "pollster": "Change Research (I)",
       "endDate": "2026-03-20",
-      "weight": 0.0079,
+      "weight": 0.0078,
       "sampleSize": 624,
       "population": "LV",
       "results": [
@@ -101,12 +357,13 @@
       "sourceUrl": "https://www.independentaction.org/news/revhhcbrfzodrm3lh38l9axg2de96b",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [],
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (I)",
       "endDate": "2026-02-12",
-      "weight": 0.0034,
+      "weight": 0.0017,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -126,7 +383,12 @@
       "sourceUrl": "https://hub.nationaljournal.com/new-maps-for-new-york-1?ecid=ACsprvtXCGX_y5aGgL4GVYyMV9Pj7_5mYOX-Ecv59TfcWhUAkRfvxk8ydNp1f2W6B11HWiXOKD8M&utm_campaign=36387909-%5BNJ%5D%202026%20Wake%20Up%20Call&utm_medium=email&_hsenc=p2ANqtz--ypdqFzjt6YlQeSvcQ2L6ur-f3dfrpC3LBhtrLZ4qbOePmR8uo6p_Cyj44MVGYrw4Q0nK8jceKiqibg_VZpQlb2qLJhFLgjXeX0K4fwp0NAbfnvxU&_hsmi=404722735&utm_content=404722735&utm_source=hs_email",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "IND",
+      "fieldDates": "2026-02-11 to 2026-02-12",
+      "otherMatchup": true
     },
     {
       "pollster": "Data for Progress",
@@ -151,7 +413,77 @@
       "sourceUrl": "https://www.dataforprogress.org/blog/2025/10/31/in-the-midst-of-a-health-care-and-affordability-crisis-in-alaska-peltola-and-begich-lead-their-races",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-10-17 to 2025-10-23",
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Data for Progress",
+      "endDate": "2025-07-27",
+      "fieldDates": "2025-07-21 to 2025-07-27",
+      "sampleSize": 678,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.dataforprogress.org/blog/2025/8/8/mary-peltola-would-be-front-runner-for-alaska-governor",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Data for Progress",
+      "endDate": "2025-03-07",
+      "fieldDates": "2025-02-28 to 2025-03-07",
+      "sampleSize": 1008,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": null,
+          "pct": 5,
+          "percentage": 5
+        }
+      ],
+      "sourceUrl": "https://www.dataforprogress.org/memos/2025/3/13/oil-taxes-rural-subsistence-public-school-funding-these-are-a-few-of-alaska-voters-favorite-things",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

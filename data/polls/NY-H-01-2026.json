@@ -1,12 +1,12 @@
 {
   "raceId": "NY-H-01-2026",
   "count": 1,
-  "updated_at": "2026-10-20T02:40:38.402Z",
+  "updated_at": "2026-10-20T14:20:53.492Z",
   "polls": [
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-12-11",
-      "weight": 0.0007,
+      "weight": 0.0003,
       "sampleSize": 579,
       "population": "RV",
       "results": [
@@ -26,7 +26,12 @@
       "sourceUrl": "https://www.politico.com/newsletters/new-york-playbook/2026/01/08/lefty-showdown-to-fill-la-luchadoras-seat-00715779",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-12-10 to 2025-12-11",
+      "sponsors": "House Majority PAC"
     }
   ]
 }

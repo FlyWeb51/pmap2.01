@@ -1,7 +1,7 @@
 {
   "raceId": "NC-H-07-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.417Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.500Z",
   "polls": [
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -24,12 +24,43 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://drive.google.com/file/d/1o6PQC-Ya_2KaUtR3MF31t-OCNRQ5t_AB/view",
       "foundOn": [
-        "https://pollingsource.com/house/NC-07"
+        "https://pollingsource.com/house/NC-07",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1239
+      "weight": 0.1225
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-08-20",
+      "fieldDates": "2026-08-19 to 2026-08-20",
+      "sampleSize": 517,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1o6PQC-Ya_2KaUtR3MF31t-OCNRQ5t_AB/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1103,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,12 +1,41 @@
 {
   "raceId": "MI-H-04-2026",
-  "count": 4,
-  "updated_at": "2026-10-20T02:40:38.393Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.488Z",
   "polls": [
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-09-16",
+      "fieldDates": "2026-09-13 to 2026-09-16",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Sean McCann (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Bill Huizenga (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1iMSoZyUcOLrVLBbs1Fnq9IzgI7vRSQRJ/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2248
+    },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-06-01",
-      "weight": 0.0384,
+      "weight": 0.019,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -26,40 +55,17 @@
       "sourceUrl": "https://www.semafor.com/article/06/08/2026/democrat-mccann-pulls-ahead-in-key-house-race",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "GBAO",
-      "endDate": "2026-06-01",
-      "fieldDates": "2026-06-01",
-      "sampleSize": 500,
-      "population": "LV",
-      "partisan": "D",
-      "results": [
-        {
-          "candidate": "Sean McCann (D)",
-          "party": "D",
-          "pct": 48,
-          "percentage": 48
-        },
-        {
-          "candidate": "Bill Huizenga (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        }
-      ],
-      "sourceUrl": null,
       "foundOn": [
-        "https://pollingsource.com/house/MI-04"
+        "https://pollingsource.com/house/MI-04",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "reviewStatus": "auto",
-      "weight": 0.0192
+      "partisan": "D",
+      "fieldDates": "2026-06-01"
     },
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-14",
-      "weight": 0.0055,
+      "weight": 0.0027,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -79,7 +85,42 @@
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-03-12 to 2026-03-14",
+      "sponsors": "Conservatives for America"
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2026-03-14",
+      "fieldDates": "2026-03-12 to 2026-03-14",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Conservatives for America",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0027,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling",
@@ -104,7 +145,10 @@
       "sourceUrl": "https://x.com/jamesd0wns/status/1996180114200043757",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-11-20 to 2025-11-21"
     }
   ]
 }

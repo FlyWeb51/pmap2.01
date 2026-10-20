@@ -1,12 +1,41 @@
 {
   "raceId": "VA-H-02-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.411Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.498Z",
   "polls": [
+    {
+      "pollster": "Christopher Newport University",
+      "endDate": "2026-10-10",
+      "fieldDates": "2026-10-01 to 2026-10-10",
+      "sampleSize": 702,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Elaine G. Luria (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Jen Kiggans (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://cnu.edu/wason/surveys/archive/2026-10-14.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9276
+    },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-07-13",
-      "weight": 0.0599,
+      "weight": 0.0592,
       "sampleSize": 700,
       "population": "LV",
       "results": [
@@ -27,10 +56,12 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/VA-02"
+        "https://pollingsource.com/house/VA-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-07-13"
+      "fieldDates": "2026-07-13",
+      "sponsors": "House Majority PAC"
     }
   ]
 }

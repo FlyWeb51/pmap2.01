@@ -1,7 +1,7 @@
 {
   "raceId": "TX-H-28-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.409Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.496Z",
   "polls": [
     {
       "pollster": "Public Policy Research/Texas Southern University",
@@ -29,12 +29,47 @@
         "https://pollingsource.com/house/TX-28"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2795
+      "weight": 0.2764
+    },
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "endDate": "2026-08-22",
+      "fieldDates": "2026-08-18 to 2026-08-22",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Henry Cuellar (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Tano Tijerina (R)",
+          "party": "R",
+          "pct": 34,
+          "percentage": 34
+        },
+        {
+          "candidate": "Marlon Duran (GRE)",
+          "party": "O",
+          "pct": 6,
+          "percentage": 6
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6a8debe648e3721adb0534b6/1787685864204/SouthTexasCDs2026.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2764
     },
     {
       "pollster": "Pulse Decision Science (R)",
       "endDate": "2026-06-23",
-      "weight": 0.0571,
+      "weight": 0.0282,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -54,12 +89,17 @@
       "sourceUrl": "https://x.com/birenbomb/status/2072354489642942795",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://pollingsource.com/house/TX-28",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-06-23"
     },
     {
       "pollster": "Pulse Decision Science (R)",
       "endDate": "2026-06-23",
-      "weight": 0.0285,
+      "weight": 0.0282,
       "sampleSize": 400,
       "population": "LV",
       "results": [

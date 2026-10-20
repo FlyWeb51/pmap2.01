@@ -1,7 +1,7 @@
 {
   "raceId": "VA-H-01-2026",
-  "count": 5,
-  "updated_at": "2026-10-20T02:40:38.411Z",
+  "count": 7,
+  "updated_at": "2026-10-20T14:20:53.498Z",
   "polls": [
     {
       "pollster": "Washington Post",
@@ -29,10 +29,10 @@
         "https://pollingsource.com/house/VA-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6726
+      "weight": 0.6651
     },
     {
-      "pollster": "The Washington Post/SSPG",
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
       "endDate": "2026-09-28",
       "fieldDates": "2026-09-28",
       "sampleSize": 609,
@@ -46,18 +46,19 @@
           "percentage": 50
         },
         {
-          "candidate": "Rob Wittman (R)",
+          "candidate": "Robert Wittman (R)",
           "party": "R",
           "pct": 46,
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.washingtonpost.com/politics/2026/10/01/shannon-taylor-has-edge-over-rob-wittman-virginia-house-district-post-poll-finds/",
       "foundOn": [
-        "https://pollingsource.com/house/VA-01"
+        "https://pollingsource.com/house/VA-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6621
+      "weight": 0.6547
     },
     {
       "pollster": "DCCC Targeting Team",
@@ -74,23 +75,24 @@
           "percentage": 46
         },
         {
-          "candidate": "Rob Wittman (R)",
+          "candidate": "Robert Wittman (R)",
           "party": "R",
           "pct": 47,
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.virginiascope.com/internal-poll-shows-a-tight-race-between-wittman-and-taylor/",
       "foundOn": [
-        "https://pollingsource.com/house/VA-01"
+        "https://pollingsource.com/house/VA-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.237
+      "weight": 0.2344
     },
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-12",
-      "weight": 0.0053,
+      "weight": 0.0026,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -110,7 +112,42 @@
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-03-10 to 2026-03-12",
+      "sponsors": "Conservatives for America"
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2026-03-12",
+      "fieldDates": "2026-03-10 to 2026-03-12",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Conservatives for America",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0026,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
@@ -135,7 +172,42 @@
       "sourceUrl": "https://x.com/PollTracker2024/status/1965014578812842210",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-08-08 to 2025-08-09",
+      "sponsors": "House Majority PAC"
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-08-09",
+      "fieldDates": "2025-08-08 to 2025-08-09",
+      "sampleSize": 541,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://x.com/PollTracker2024/status/1965014578812842210",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

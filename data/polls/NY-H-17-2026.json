@@ -1,7 +1,7 @@
 {
   "raceId": "NY-H-17-2026",
   "count": 5,
-  "updated_at": "2026-10-20T02:40:38.403Z",
+  "updated_at": "2026-10-20T14:20:53.492Z",
   "polls": [
     {
       "pollster": "McLaughlin & Associates R-sponsored",
@@ -24,12 +24,13 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://nypost.com/2026/10/02/us-news/gop-rep-mike-lawler-leads-dem-cait-conley-in-battleground-ny-house-district-new-internal-poll/",
       "foundOn": [
-        "https://pollingsource.com/house/NY-17"
+        "https://pollingsource.com/house/NY-17",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.281
+      "weight": 0.2779
     },
     {
       "pollster": "Emerson College",
@@ -52,17 +53,19 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://emersoncollegepolling.com/ny-17-2026-poll/",
       "foundOn": [
-        "https://pollingsource.com/house/NY-17"
+        "https://pollingsource.com/house/NY-17",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5492
+      "sponsors": "PIX 11",
+      "weight": 0.543
     },
     {
       "pollster": "co/efficient",
       "endDate": "2026-07-22",
-      "weight": 0.1002,
+      "weight": 0.0991,
       "sampleSize": 1292,
       "population": "LV",
       "results": [
@@ -83,7 +86,8 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/NY-17"
+        "https://pollingsource.com/house/NY-17",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "R",
       "fieldDates": "2026-07-22"
@@ -91,7 +95,7 @@
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-07-01",
-      "weight": 0.0774,
+      "weight": 0.0383,
       "sampleSize": 509,
       "population": "LV",
       "results": [
@@ -111,35 +115,49 @@
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/07/08/inside-the-battle-for-maine-00989731",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://pollingsource.com/house/NY-17",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-01",
+      "sponsors": "House Majority PAC"
     },
     {
-      "pollster": "FM3 Research",
-      "endDate": "2026-07-01",
-      "fieldDates": "2026-07-01",
-      "sampleSize": 509,
+      "pollster": "Impact Research",
+      "endDate": "2026-02-17",
+      "fieldDates": "2026-02-09 to 2026-02-17",
+      "sampleSize": 500,
       "population": "LV",
-      "partisan": "D",
+      "partisan": null,
+      "sponsors": "Protecting American Consumers Together",
       "results": [
         {
-          "candidate": "Cait Conley (D)",
+          "candidate": "Generic Democrat (D)",
           "party": "D",
-          "pct": 51,
-          "percentage": 51
+          "pct": 44,
+          "percentage": 44
         },
         {
-          "candidate": "Mike Lawler (R)",
+          "candidate": "Generic Republican (R)",
           "party": "R",
-          "pct": 45,
-          "percentage": 45
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": null,
+          "pct": 1,
+          "percentage": 1
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://protectingamericanconsumers.org/wp-content/uploads/2026/02/IMPACT-NY-2026-Poll.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/NY-17"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0387
+      "weight": 0.0034,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "raceId": "IA-H-01-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.387Z",
+  "count": 3,
+  "updated_at": "2026-10-20T14:20:53.485Z",
   "polls": [
     {
       "pollster": "The Bullfinch Group",
       "endDate": "2026-07-16",
-      "weight": 0.1289,
+      "weight": 0.0637,
       "sampleSize": 705,
       "population": "LV",
       "results": [
@@ -27,9 +27,12 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/IA-01"
+        "https://pollingsource.com/house/IA-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "fieldDates": "2026-07-16"
+      "fieldDates": "2026-07-16",
+      "partisan": "IND",
+      "sponsors": "Independent Center | Independent Leadership Council"
     },
     {
       "pollster": "Public Policy Polling (D)",
@@ -54,7 +57,42 @@
       "sourceUrl": "https://www.documentcloud.org/documents/25981451-ia-01-public-policy-polling-d-for-house-majority-pac/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-06-18 to 2025-06-19",
+      "sponsors": "House Majority PAC"
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-06-19",
+      "fieldDates": "2025-06-18 to 2025-06-19",
+      "sampleSize": 555,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://www.documentcloud.org/documents/25981451-ia-01-public-policy-polling-d-for-house-majority-pac/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

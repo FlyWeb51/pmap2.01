@@ -1,13 +1,13 @@
 {
   "raceId": "IA-H-02-2026",
   "count": 2,
-  "updated_at": "2026-10-20T02:40:38.387Z",
+  "updated_at": "2026-10-20T14:20:53.485Z",
   "polls": [
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-07-19",
       "endDateUS": "7/19/2026",
-      "weight": 0.0582,
+      "weight": 0.0575,
       "sampleSize": null,
       "population": "LV",
       "results": [
@@ -28,16 +28,18 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/IA-02"
+        "https://pollingsource.com/house/IA-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-07-19"
+      "fieldDates": "2026-07-19",
+      "sponsors": "House Majority PAC"
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-14",
       "endDateUS": "4/14/2026",
-      "weight": 0.0132,
+      "weight": 0.0065,
       "sampleSize": 673,
       "population": "RV",
       "results": [
@@ -57,7 +59,11 @@
       "sourceUrl": "https://x.com/jamesd0wns/status/2049820806016860519",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-04-13 to 2026-04-14"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "AR-S-2026",
   "count": 6,
-  "updated_at": "2026-10-20T02:40:38.380Z",
+  "updated_at": "2026-10-20T14:20:53.482Z",
   "polls": [
     {
       "pollster": "Hendrix College",
@@ -24,12 +24,14 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://talkbusiness.net/2026/10/poll-cotton-takes-lead-over-shoffner/",
       "foundOn": [
-        "https://pollingsource.com/senate/AR"
+        "https://pollingsource.com/senate/AR",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0104
+      "sponsors": "Talk Business & Politics",
+      "weight": 0.9991
     },
     {
       "pollster": "GrayHouse",
@@ -52,12 +54,14 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/LandonWall_/status/2108601370580332749",
       "foundOn": [
-        "https://pollingsource.com/senate/AR"
+        "https://pollingsource.com/senate/AR",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3614
+      "sponsors": "America One Policies",
+      "weight": 0.3574
     },
     {
       "pollster": "J.L. Partners",
@@ -80,12 +84,13 @@
           "percentage": 51
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://jlpartners.com/arkansas-senate-likely-voter-polling",
       "foundOn": [
-        "https://pollingsource.com/senate/AR"
+        "https://pollingsource.com/senate/AR",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2948
+      "weight": 0.2915
     },
     {
       "pollster": "Hendrix College",
@@ -108,18 +113,20 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://talkbusiness.net/2026/08/poll-gov-sanders-holds-lead-over-two-opponents/",
       "foundOn": [
-        "https://pollingsource.com/senate/AR"
+        "https://pollingsource.com/senate/AR",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.316
+      "sponsors": "Talk Business & Politics",
+      "weight": 0.3125
     },
     {
       "pollster": "2040 Strategy Group (D)",
       "endDate": "2026-07-25",
       "endDateUS": "7/25/2026",
-      "weight": 0.0723,
+      "weight": 0.0715,
       "sampleSize": 586,
       "population": "LV",
       "results": [
@@ -140,7 +147,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/AR"
+        "https://pollingsource.com/senate/AR",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-07-25"
@@ -149,7 +157,7 @@
       "pollster": "GrayHouse (R)",
       "endDate": "2026-02-09",
       "endDateUS": "2/9/2026",
-      "weight": 0.003,
+      "weight": 0.0015,
       "sampleSize": 550,
       "population": "LV",
       "results": [
@@ -169,7 +177,12 @@
       "sourceUrl": "https://www.grayhouse.com/post/ar-senate",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-02-07 to 2026-02-09",
+      "sponsors": "America One Policies"
     }
   ]
 }

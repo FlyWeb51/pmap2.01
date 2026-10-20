@@ -1,7 +1,7 @@
 {
   "raceId": "KS-S-2026",
-  "count": 14,
-  "updated_at": "2026-10-20T02:40:38.390Z",
+  "count": 18,
+  "updated_at": "2026-10-20T14:20:53.486Z",
   "polls": [
     {
       "pollster": "InsiderAdvantage",
@@ -24,12 +24,13 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-senate-surveys-texas-paxton-49-talarico-48-kansas-marshall-48-hamilton-47-maine-jackson-49-collins-47/",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6726
+      "weight": 0.6651
     },
     {
       "pollster": "InsiderAdvantage",
@@ -52,12 +53,13 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-u-s-senate-surveys-alaska-ranks-choice-peltola-50-sullivan-48-kansas-hamilton-48-marshall-47-michigan-el-sayed-48-rogers-46/",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6132
+      "weight": 0.6064
     },
     {
       "pollster": "YouGov",
@@ -80,12 +82,13 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ks_20260921_lv.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3784
+      "weight": 1.363
     },
     {
       "pollster": "GBAO",
@@ -108,12 +111,13 @@
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/sambbenson/status/2107792740259914148",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3775
+      "weight": 0.3733
     },
     {
       "pollster": "Trafalgar Group",
@@ -136,12 +140,13 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/ks-senate-general-1001/",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4758
+      "weight": 0.4705
     },
     {
       "pollster": "New York Times/Siena University",
@@ -169,7 +174,36 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6912
+      "weight": 0.6835
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-22 to 2026-09-30",
+      "sampleSize": 605,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 46.67,
+          "percentage": 46.67
+        },
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 46.39,
+          "percentage": 46.39
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/03/polls/times-siena-kansas-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6835
     },
     {
       "pollster": "Wedgewood Polls",
@@ -192,12 +226,13 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://drive.google.com/file/d/1MxCohCdxLl3Gy2iIUBnctm4oPipKwjSg/view",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.547
+      "weight": 0.5409
     },
     {
       "pollster": "Emerson College",
@@ -220,12 +255,14 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://emersoncollegepolling.com/kansas-2026/",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5569
+      "sponsors": "Nexstar",
+      "weight": 0.5507
     },
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -248,12 +285,14 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.washingtonsun.com/newsletters/they-love-stonks",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2876
+      "sponsors": "Democratic Attorneys General Association",
+      "weight": 0.2844
     },
     {
       "pollster": "co/efficient",
@@ -276,12 +315,78 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://battlegrounds.coefficient.org/ks/",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2677
+      "weight": 0.2647
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-08 to 2026-09-10",
+      "sampleSize": 915,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://battlegrounds.coefficient.org/ks/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5295,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-08-16",
+      "fieldDates": "2026-08-12 to 2026-08-16",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "People Over Politics Action Fund",
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "David Graham (LIB)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
+        }
+      ],
+      "sourceUrl": "https://www.the-downballot.com/p/morning-digest-massachusetts-could",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1389
     },
     {
       "pollster": "OSZ",
@@ -309,7 +414,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.157
+      "weight": 0.1552
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -332,18 +437,20 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://static01.nyt.com/newsgraphics/documenttools/b727068b48546990/3bda8f92-full.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/KS"
+        "https://pollingsource.com/senate/KS",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0985
+      "sponsors": "Senate Majority PAC",
+      "weight": 0.0974
     },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-13",
       "endDateUS": "7/13/2026",
-      "weight": 0.1109,
+      "weight": 0.0548,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -363,7 +470,41 @@
       "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/08/07/the-gops-new-economic-anchor-01029005",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-08 to 2026-07-13"
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-04-27",
+      "fieldDates": "2026-04-23 to 2026-04-27",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Patrick Schmidt (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://x.com/JacobRubashkin/status/2052495746461471175?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0085,
+      "otherMatchup": true
     },
     {
       "pollster": "Tavern Research",
@@ -389,7 +530,10 @@
       "sourceUrl": "https://mailchi.mp/noahforkansas/041726icymi?e=eabd966005",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-01-26 to 2026-01-28"
     }
   ]
 }

@@ -1,8 +1,67 @@
 {
   "raceId": "NY-H-18-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.415Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.500Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-29 to 2026-09-30",
+      "sampleSize": 561,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Pat Ryan (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Jackie Auringer (R)",
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
+        }
+      ],
+      "sourceUrl": "https://x.com/TimmyFacciola_/status/2107831346185846874?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2962,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-29 to 2026-09-30",
+      "sampleSize": 561,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://x.com/TimmyFacciola_/status/2107831346185846874?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2962
+    },
     {
       "pollster": "Global Strategy Group D-sponsored",
       "endDate": "2026-07-26",
@@ -24,12 +83,78 @@
           "percentage": 39
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.politico.com/newsletters/new-york-playbook/2026/08/14/republicans-revisit-the-22-crime-playbook-01037591",
       "foundOn": [
-        "https://pollingsource.com/house/NY-18"
+        "https://pollingsource.com/house/NY-18",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0684
+      "weight": 0.0676,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-07-26",
+      "fieldDates": "2026-07-23 to 2026-07-26",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/new-york-playbook/2026/08/14/republicans-revisit-the-22-crime-playbook-01037591",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0676
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-02-17",
+      "fieldDates": "2026-02-09 to 2026-02-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Protecting American Consumers Together",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": null,
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://protectingamericanconsumers.org/wp-content/uploads/2026/02/IMPACT-NY-2026-Poll.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0034
     }
   ]
 }

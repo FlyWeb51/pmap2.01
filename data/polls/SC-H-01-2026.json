@@ -1,7 +1,7 @@
 {
   "raceId": "SC-H-01-2026",
-  "count": 5,
-  "updated_at": "2026-10-20T02:40:38.407Z",
+  "count": 7,
+  "updated_at": "2026-10-20T14:20:53.495Z",
   "polls": [
     {
       "pollster": "co/efficient",
@@ -18,18 +18,55 @@
           "percentage": 40
         },
         {
-          "candidate": "Honeycutt (R)",
+          "candidate": "Jenny Costa Honeycutt (R)",
           "party": "R",
           "pct": 46,
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://coefficient.org/our-work/south-carolina-1st-congressional-district-oct-2026/",
       "foundOn": [
-        "https://pollingsource.com/house/SC-01"
+        "https://pollingsource.com/house/SC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.416
+      "weight": 0.4113
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-09-30 to 2026-10-01",
+      "sampleSize": 837,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Generic Candidate (OTH)",
+          "party": null,
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://coefficient.org/our-work/south-carolina-1st-congressional-district-oct-2026/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8227,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -46,24 +83,56 @@
           "percentage": 40
         },
         {
-          "candidate": "Honeycutt (R)",
+          "candidate": "Jenny Costa Honeycutt (R)",
           "party": "R",
           "pct": 41,
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/zachblackburn23/status/2100002534383358350",
       "foundOn": [
-        "https://pollingsource.com/house/SC-01"
+        "https://pollingsource.com/house/SC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1844
+      "sponsors": "The Bench",
+      "weight": 0.1824
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-09 to 2026-09-10",
+      "sampleSize": 536,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "The Bench",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://x.com/zachblackburn23/status/2100002534383358350",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1824,
+      "otherMatchup": true
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-07-22",
-      "weight": 0.1247,
-      "sampleSize": null,
+      "weight": 0.0551,
+      "sampleSize": 400,
       "population": "LV",
       "results": [
         {
@@ -82,12 +151,18 @@
       "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-nancy-lacore-has-a-clear-path-to-victory-in-sc-01",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://pollingsource.com/house/SC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-22",
+      "sponsors": "House Majority PAC"
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-07-22",
-      "weight": 0.1247,
+      "weight": 0.0616,
       "sampleSize": null,
       "population": "LV",
       "results": [
@@ -107,35 +182,42 @@
       "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-nancy-lacore-has-a-clear-path-to-victory-in-sc-01",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-15 to 2026-07-22",
+      "sponsors": "House Majority PAC"
     },
     {
-      "pollster": "GQR",
-      "endDate": "2026-07-22",
-      "fieldDates": "2026-07-22",
-      "sampleSize": 400,
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-12-06",
+      "fieldDates": "2025-12-05 to 2025-12-06",
+      "sampleSize": 645,
       "population": "LV",
       "partisan": "D",
+      "sponsors": null,
       "results": [
         {
-          "candidate": "Nancy Lacore (D)",
-          "party": "D",
-          "pct": 48,
-          "percentage": 48
+          "candidate": "Mark Smith (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
         },
         {
-          "candidate": "Honeycutt (R)",
-          "party": "R",
-          "pct": 50,
-          "percentage": 50
+          "candidate": "Mac Deford (D)",
+          "party": "D",
+          "pct": 36,
+          "percentage": 36
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://s3.documentcloud.org/documents/26379733/sc-01-ppp-for-mac-deford-dec-2025.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/SC-01"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0558
+      "weight": 0.0004,
+      "otherMatchup": true
     }
   ]
 }

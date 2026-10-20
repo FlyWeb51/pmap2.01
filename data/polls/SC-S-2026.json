@@ -1,7 +1,7 @@
 {
   "raceId": "SC-S-2026",
-  "count": 14,
-  "updated_at": "2026-10-20T02:40:38.408Z",
+  "count": 19,
+  "updated_at": "2026-10-20T14:20:53.495Z",
   "polls": [
     {
       "pollster": "Trafalgar Group",
@@ -12,25 +12,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Darline Graham (R)",
-          "party": "R",
-          "pct": 49,
-          "percentage": 49
-        },
-        {
           "candidate": "Annie Andrews (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/sc-senate-gen-1018/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
-        "https://pollingsource.com/senate/SC"
+        "https://pollingsource.com/senate/SC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7047
+      "weight": 0.6968
     },
     {
       "pollster": "Rasmussen Reports",
@@ -59,7 +60,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.489
+      "weight": 0.4835
     },
     {
       "pollster": "InsiderAdvantage",
@@ -70,25 +71,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Darline Graham (R)",
-          "party": "R",
-          "pct": 46,
-          "percentage": 46
-        },
-        {
           "candidate": "Annie Andrews (D)",
           "party": "D",
           "pct": 45,
           "percentage": 45
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-south-carolina-senate-graham-leads-by-one-point/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
-        "https://pollingsource.com/senate/SC"
+        "https://pollingsource.com/senate/SC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4756
+      "weight": 0.4703
     },
     {
       "pollster": "Trafalgar Group",
@@ -111,13 +113,14 @@
           "percentage": 43.4
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/sc-sen-gen-0926/",
       "foundOn": [
         "https://pollingsource.com/senate/SC",
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4127
+      "weight": 0.4081
     },
     {
       "pollster": "Rasmussen Reports",
@@ -146,7 +149,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3079
+      "weight": 0.3045
     },
     {
       "pollster": "InsiderAdvantage",
@@ -169,13 +172,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/top-line-tabs-sc/",
       "foundOn": [
         "https://pollingsource.com/senate/SC",
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2996
+      "weight": 0.2963
     },
     {
       "pollster": "Abacus Data",
@@ -203,7 +207,36 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.255
+      "weight": 0.2521
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-28",
+      "fieldDates": "2026-08-26 to 2026-08-28",
+      "sampleSize": 306,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://abacusdata.ca/the-trade-war-next-door-what-american-voters-think-about-tariffs-canada-and-the-battle-for-the-u-s-senate/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2268
     },
     {
       "pollster": "Impact Research",
@@ -214,31 +247,26 @@
       "partisan": "D",
       "results": [
         {
-          "candidate": "Darline Graham (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        },
-        {
           "candidate": "Annie Andrews (D)",
           "party": "D",
           "pct": 41,
           "percentage": 41
         },
         {
-          "candidate": "Kasie Whitener (L)",
-          "party": "O",
-          "pct": 5,
-          "percentage": 5
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://drannieandrews.com/wp-content/uploads/2026/08/IMPACT-SC-SEN-POLL-MEMO-AUG-2026.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
-        "https://pollingsource.com/senate/SC"
+        "https://pollingsource.com/senate/SC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1581
+      "weight": 0.1563
     },
     {
       "pollster": "Impact Research",
@@ -272,13 +300,13 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1455
+      "weight": 0.1439
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-07-17",
       "endDateUS": "7/17/2026",
-      "weight": 0.1074,
+      "weight": 0.0531,
       "sampleSize": 577,
       "population": "RV",
       "results": [
@@ -298,15 +326,19 @@
       "sourceUrl": "https://www.instagram.com/p/DbGVaEmyFLs/?hl=en",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "D",
+      "fieldDates": "2026-07-16 to 2026-07-17"
     },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-07-17",
       "fieldDates": "2026-07-17",
       "sampleSize": 577,
-      "population": null,
+      "population": "RV",
       "partisan": "D",
       "results": [
         {
@@ -316,19 +348,110 @@
           "percentage": 42
         },
         {
-          "candidate": "Russell Fry (R)",
+          "candidate": "Mark Sanford (R)",
           "party": "R",
           "pct": 39,
           "percentage": 39
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.instagram.com/p/DbGVaEmyFLs/?hl=en",
       "foundOn": [
         "https://pollingsource.com/senate/SC",
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0507,
+      "weight": 0.0531,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-07-17",
+      "fieldDates": "2026-07-16 to 2026-07-17",
+      "sampleSize": 577,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ralph Norman (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.instagram.com/p/DbGVaEmyFLs/?hl=en",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0531,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-07-17",
+      "fieldDates": "2026-07-16 to 2026-07-17",
+      "sampleSize": 577,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Pamela Evette (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.instagram.com/p/DbGVaEmyFLs/?hl=en",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0531,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-07-17",
+      "fieldDates": "2026-07-16 to 2026-07-17",
+      "sampleSize": 577,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://www.instagram.com/p/DbGVaEmyFLs/?hl=en",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0531,
       "otherMatchup": true
     },
     {
@@ -352,20 +475,21 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://314action.org/2026/06/29/icymi-new-poll-puts-dr-annie-andrews-within-margin-of-error-of-lindsey-graham/",
       "foundOn": [
         "https://pollingsource.com/senate/SC",
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0369
+      "weight": 0.0365
     },
     {
       "pollster": "Impact Research",
       "endDate": "2026-03-01",
       "fieldDates": "February 25 – March 1, 2026",
       "sampleSize": 700,
-      "population": null,
+      "population": "LV",
       "partisan": "D",
       "results": [
         {
@@ -381,19 +505,20 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.documentcloud.org/documents/27882119-sc-sen-impact-research-for-annie-andrews-march-2026/",
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0023
+      "weight": 0.0027
     },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2025-11-22",
       "fieldDates": "November 21–22, 2025",
       "sampleSize": 704,
-      "population": null,
+      "population": "RV",
       "partisan": "D",
       "results": [
         {
@@ -409,12 +534,44 @@
           "percentage": 36
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2025/12/11/how-trump-changes-the-world-00686274",
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
+      "sponsors": "314 Action",
       "weight": 0.0002
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-11-22",
+      "fieldDates": "2025-11-21 to 2025-11-22",
+      "sampleSize": 704,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "314 Action",
+      "results": [
+        {
+          "candidate": "Lindsey Graham (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2025/12/11/how-trump-changes-the-world-00686274",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
     }
   ]
 }

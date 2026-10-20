@@ -1,7 +1,7 @@
 {
   "raceId": "AR-H-02-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.416Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.500Z",
   "polls": [
     {
       "pollster": "Hendrix College",
@@ -24,12 +24,43 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://talkbusiness.net/2026/08/poll-gov-sanders-holds-lead-over-two-opponents/",
       "foundOn": [
-        "https://pollingsource.com/house/AR-02"
+        "https://pollingsource.com/house/AR-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3091
+      "sponsors": "Talk Business & Politics",
+      "weight": 0.3057
+    },
+    {
+      "pollster": "2040 Strategy Group",
+      "endDate": "2026-05-08",
+      "fieldDates": "2026-04-28 to 2026-05-08",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Jones (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "French Hill (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://arktimes.com/arkansas-blog/2026/08/05/dems-say-2nd-district-is-in-play",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0109
     }
   ]
 }

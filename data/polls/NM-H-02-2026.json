@@ -1,8 +1,37 @@
 {
   "raceId": "NM-H-02-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.402Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.492Z",
   "polls": [
+    {
+      "pollster": "Research & Polling Inc.",
+      "endDate": "2026-10-09",
+      "fieldDates": "2026-10-01 to 2026-10-09",
+      "sampleSize": 383,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Albuquerque Journal",
+      "results": [
+        {
+          "candidate": "Gabriel Vasquez (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Greg Cunningham (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.abqjournal.com/news/journal-poll-haaland-maintains-lead-over-hull-as-new-mexicos-race-for-governor-nears-homestretch/3139307",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6695
+    },
     {
       "pollster": "Survey USA",
       "endDate": "2026-09-04",
@@ -12,7 +41,7 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Gabe Vasquez (D)",
+          "candidate": "Gabriel Vasquez (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
@@ -24,17 +53,19 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "kob.com/new-mexico/kob-poll-shows-tight-race-for-new-mexicos-2nd-congressional-district/",
       "foundOn": [
-        "https://pollingsource.com/house/NM-02"
+        "https://pollingsource.com/house/NM-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3627
+      "sponsors": "KOB-TV (Albuquerque)",
+      "weight": 0.3587
     },
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-28",
-      "weight": 0.0232,
+      "weight": 0.0115,
       "sampleSize": 879,
       "population": "LV",
       "results": [
@@ -54,7 +85,42 @@
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-04-26 to 2026-04-28",
+      "sponsors": "NRCC"
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-04-28",
+      "fieldDates": "2026-04-26 to 2026-04-28",
+      "sampleSize": 879,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "NRCC",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0115,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,6 +1,126 @@
 {
   "raceId": "AZ-H-01-2026",
-  "count": 0,
-  "polls": [],
-  "note": "Only generic-ballot style questions exist for this district (Generic Democrat vs Generic Republican). That is not a candidate matchup, so no poll is shown."
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.503Z",
+  "polls": [
+    {
+      "pollster": "FirstStrategic Communications and Public Affairs",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 400,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Amish Shah (D)",
+          "party": "D",
+          "pct": 44.4,
+          "percentage": 44.4
+        },
+        {
+          "candidate": "Jay Feely (R)",
+          "party": "R",
+          "pct": 41.6,
+          "percentage": 41.6
+        }
+      ],
+      "sourceUrl": "https://s3.documentcloud.org/documents/28722214/shahfeeley-poll-release.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5118
+    },
+    {
+      "pollster": "GrayHouse",
+      "endDate": "2025-11-17",
+      "fieldDates": "2025-11-15 to 2025-11-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Gina Swoboda (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://www.grayhouse.com/post/new-polling-shows-nfl-pro-bowler-jay-feely-running-in-az-district-1-is-republicans-best-hope-to-win",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0004,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "GrayHouse",
+      "endDate": "2025-11-17",
+      "fieldDates": "2025-11-15 to 2025-11-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Jay Feely (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://www.grayhouse.com/post/new-polling-shows-nfl-pro-bowler-jay-feely-running-in-az-district-1-is-republicans-best-hope-to-win",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0004,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Clarity Campaign Labs",
+      "endDate": "2025-11-05",
+      "fieldDates": "2025-11-01 to 2025-11-05",
+      "sampleSize": 676,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "CHC Bold PAC | Elect Democratic Women",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1mv8EHWdA9ZWXKeyrmlpxudIM7z23cCJH/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "FL-S-2026",
-  "count": 29,
-  "updated_at": "2026-10-20T02:40:38.386Z",
+  "count": 35,
+  "updated_at": "2026-10-20T14:20:53.484Z",
   "polls": [
     {
       "pollster": "ActiVote",
@@ -24,12 +24,43 @@
           "percentage": 53
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.activote.net/polls/2026/fl-u-s-senate/",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7948
+      "weight": 0.7859
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-15",
+      "fieldDates": "2026-10-02 to 2026-10-15",
+      "sampleSize": 825,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Univision",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://www.univision.com/noticias/politica/republicans-lead-florida-as-most-latino-voters-say-immigration-enforcement-has-gone-too-far",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0158,
+      "otherMatchup": true
     },
     {
       "pollster": "MDW Communications",
@@ -52,15 +83,17 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.mdwcomm.com/media/florida-statewide-poll-october-2026.html",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7917
+      "sponsors": "EDGE Communications",
+      "weight": 0.7828
     },
     {
-      "pollster": "Stetson University",
+      "pollster": "Stetson University Center for Public Opinion Research",
       "endDate": "2026-10-09",
       "fieldDates": "2026-10-09",
       "sampleSize": 716,
@@ -80,12 +113,13 @@
           "percentage": 52
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.stetson.edu/artsci/cpor/media/cpor-october-2026-pr.docx",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9257
+      "weight": 0.9154
     },
     {
       "pollster": "St. Pete Polls",
@@ -108,12 +142,14 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.stpetepolls.org/files/StPetePolls_2026_State_Gov_October7_K7ZU3GA.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9551
+      "sponsors": "Florida Politics",
+      "weight": 0.9444
     },
     {
       "pollster": "YouGov",
@@ -136,12 +172,13 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_fl_20260921_lv.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4106
+      "weight": 1.3948
     },
     {
       "pollster": "James Madison Institute",
@@ -169,10 +206,39 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0547
+      "weight": 1.0429
     },
     {
-      "pollster": "Mason-Dixon",
+      "pollster": "Targoz Market Research",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-09-28 to 2026-10-04",
+      "sampleSize": 847,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "James Madison Institute",
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://jamesmadison.org/new-jmi-poll-republicans-hold-double-digit-leads-in-key-statewide-races-florida-voters-focused-on-affordability/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.887
+    },
+    {
+      "pollster": "Mason-Dixon Polling & Research, Inc.",
       "endDate": "2026-10-01",
       "fieldDates": "2026-10-01",
       "sampleSize": 625,
@@ -192,12 +258,14 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://floridapolitics.com/archives/823612-mason-dixon-poll-byron-donalds-leads-david-jolly-48-41-with-1-in-4-independents-still-undecided/",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7189
+      "sponsors": "NBC 6 Miami | Telemundo",
+      "weight": 0.7109
     },
     {
       "pollster": "Change Research",
@@ -220,12 +288,14 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://changeresearch.com/research/2026/2026-09-28-florida-aapor-methodology-statement",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4274
+      "sponsors": "Freedom Project USA",
+      "weight": 0.4226
     },
     {
       "pollster": "InsiderAdvantage",
@@ -248,15 +318,16 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-florida-u-s-senate-survey-moody-leads-nixon-by-7/",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2795
+      "weight": 0.2764
     },
     {
-      "pollster": "Stetson University",
+      "pollster": "Stetson University Center for Public Opinion Research",
       "endDate": "2026-09-21",
       "fieldDates": "2026-09-21",
       "sampleSize": 830,
@@ -276,12 +347,13 @@
           "percentage": 51
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.stetson.edu/artsci/cpor/media/cpor-sept.-2026-poll-final.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6576
+      "weight": 0.6502
     },
     {
       "pollster": "St. Pete Polls",
@@ -304,12 +376,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://floridapolitics.com/archives/820638-poll-byron-donalds-44-david-jolly-43-in-dead-heat-race-for-florida-governor/",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6288
+      "sponsors": "Florida Politics",
+      "weight": 0.6218
     },
     {
       "pollster": "Quantus Insights",
@@ -332,12 +406,13 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/polling/f/new-quantus-polls-moody-leads-in-florida-flanagan-in-minnesota",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2396
+      "weight": 0.237
     },
     {
       "pollster": "Change Research D-sponsored",
@@ -360,17 +435,19 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://changeresearch.com/research/2026/2026-09-10-an-emerging-florida-blue-wave",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2878
+      "sponsors": "Freedom Project USA",
+      "weight": 0.2845
     },
     {
       "pollster": "University of North Florida",
       "endDate": "2026-07-17",
-      "weight": 0.1447,
+      "weight": 0.143,
       "sampleSize": 848,
       "population": "LV",
       "results": [
@@ -390,8 +467,11 @@
       "sourceUrl": "https://floridapolitics.com/archives/808426-unf-poll-jolly-donalds/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "fieldDates": "2026-07-08 to 2026-07-17"
     },
     {
       "pollster": "University of North Florida",
@@ -414,12 +494,13 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://floridapolitics.com/archives/808426-unf-poll-jolly-donalds/",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1447
+      "weight": 0.143
     },
     {
       "pollster": "Change Research",
@@ -447,13 +528,13 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0714,
+      "weight": 0.0706,
       "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.0738,
+      "weight": 0.0365,
       "sampleSize": 1015,
       "population": "LV",
       "results": [
@@ -473,13 +554,18 @@
       "sourceUrl": "https://changeresearch.com/wp-content/uploads/2026/06/Florida-June-Poll-Memo.pdf",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "OTH",
+      "fieldDates": "2026-06-11 to 2026-06-14",
+      "sponsors": "Freedom Project USA"
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.0744,
+      "weight": 0.0736,
       "sampleSize": 1273,
       "population": "RV",
       "results": [
@@ -528,12 +614,12 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0558
+      "weight": 0.0551
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-05-21",
-      "weight": 0.021,
+      "weight": 0.0208,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
@@ -554,7 +640,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/FL"
+        "https://pollingsource.com/senate/FL",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-05-21",
@@ -563,7 +650,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.0477,
+      "weight": 0.0236,
       "sampleSize": 2070,
       "population": "RV",
       "results": [
@@ -583,13 +670,18 @@
       "sourceUrl": "https://changeresearch.com/florida-governors-race-may-2026/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "OTH",
+      "fieldDates": "2026-05-13 to 2026-05-16",
+      "sponsors": "Freedom Project USA"
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.0473,
+      "weight": 0.0468,
       "sampleSize": 1593,
       "population": "LV",
       "results": [
@@ -615,7 +707,7 @@
     {
       "pollster": "Cherry Communications (R)",
       "endDate": "2026-05-09",
-      "weight": 0.0248,
+      "weight": 0.0123,
       "sampleSize": 604,
       "population": "LV",
       "results": [
@@ -635,13 +727,18 @@
       "sourceUrl": "https://floridapolitics.com/archives/796600-florida-chamber-poll-floridas-republican-tilt-holds-steady/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "R",
+      "fieldDates": "2026-05-01 to 2026-05-09",
+      "sponsors": "Florida Chamber of Commerce"
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
       "endDate": "2026-04-13",
-      "weight": 0.0115,
+      "weight": 0.0114,
       "sampleSize": 434,
       "population": "LV",
       "results": [
@@ -661,13 +758,45 @@
       "sourceUrl": "https://www2.stetson.edu/today/2026/04/stetson-poll-republicans-lead-in-florida-2026-races-but-many-voters-still-undecided/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "fieldDates": "2026-03-25 to 2026-04-13"
+    },
+    {
+      "pollster": "Stetson University Center for Public Opinion Research",
+      "endDate": "2026-04-13",
+      "fieldDates": "2026-03-25 to 2026-04-13",
+      "sampleSize": 414,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www2.stetson.edu/today/2026/04/stetson-poll-republicans-lead-in-florida-2026-races-but-many-voters-still-undecided/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0111
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0102,
+      "weight": 0.01,
       "sampleSize": 406,
       "population": "LV",
       "results": [
@@ -687,13 +816,17 @@
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "fieldDates": "2026-04-03 to 2026-04-09",
+      "sponsors": "NetChoice"
     },
     {
       "pollster": "MDW Communications",
       "endDate": "2026-04-03",
-      "weight": 0.0188,
+      "weight": 0.0186,
       "sampleSize": 1834,
       "population": "LV",
       "results": [
@@ -713,13 +846,17 @@
       "sourceUrl": "https://files.constantcontact.com/633ccf07901/581e6534-4e18-43a0-bffb-7cc7221a349a.pdf?rdr=true",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "fieldDates": "2026-03-27 to 2026-04-03",
+      "sponsors": "EDGE Communications"
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-03",
-      "weight": 0.0095,
+      "weight": 0.0047,
       "sampleSize": 574,
       "population": "RV",
       "results": [
@@ -739,13 +876,17 @@
       "sourceUrl": "https://floridapolitics.com/archives/789481-alex-vindman-internal-poll-shows-him-within-striking-distance-of-ashley-moody/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "D",
+      "fieldDates": "2026-04-02 to 2026-04-03"
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-31",
-      "weight": 0.0137,
+      "weight": 0.0136,
       "sampleSize": 1125,
       "population": "LV",
       "results": [
@@ -765,8 +906,40 @@
       "sourceUrl": "https://emersoncollegepolling.com/florida-2026-poll-donalds-leads-gop-primary-for-governor-republicans-outpace-democrats-in-florida-elections/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "fieldDates": "2026-03-29 to 2026-03-31"
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-03-31",
+      "fieldDates": "2026-03-29 to 2026-03-31",
+      "sampleSize": 1125,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 47.3,
+          "percentage": 47.3
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 36.3,
+          "percentage": 36.3
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/florida-2026-poll-donalds-leads-gop-primary-for-governor-republicans-outpace-democrats-in-florida-elections/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0136
     },
     {
       "pollster": "University of North Florida",
@@ -791,7 +964,70 @@
       "sourceUrl": "https://floridapolitics.com/archives/783199-desantis-more-popular-trump-poll/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "fieldDates": "2026-02-21 to 2026-03-02"
+    },
+    {
+      "pollster": "University of North Florida",
+      "endDate": "2025-10-25",
+      "fieldDates": "2025-10-15 to 2025-10-25",
+      "sampleSize": 728,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Florida Watch",
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jennifer Jenkins (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.unfporl.org/uploads/1/4/4/5/144559024/unf_porl_fall_statewide_2025_lv_-_press_release.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "The Tyson Group",
+      "endDate": "2025-10-03",
+      "fieldDates": "2025-10-01 to 2025-10-03",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Plymouth Union Public Advocacy",
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Jennifer Jenkins (D)",
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://pup-advocacy.com/news/polling-memo/moodys-position-on-the-enhanced-premium-tax-credits-will-have-key-impact-on-senate-race/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
       "otherMatchup": true
     }
   ]

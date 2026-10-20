@@ -1,7 +1,7 @@
 {
   "raceId": "FL-H-16-2026",
   "count": 2,
-  "updated_at": "2026-10-20T02:40:38.419Z",
+  "updated_at": "2026-10-20T14:20:53.501Z",
   "polls": [
     {
       "pollster": "Public Policy Polling",
@@ -24,12 +24,14 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://georgekruse.substack.com/p/informed-voters-trend-toward-kirschner",
       "foundOn": [
-        "https://pollingsource.com/house/FL-16"
+        "https://pollingsource.com/house/FL-16",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3049
+      "sponsors": "American Democracy Project",
+      "weight": 0.3015
     },
     {
       "pollster": "Sea Polling",
@@ -37,7 +39,7 @@
       "fieldDates": "2026-08-29",
       "sampleSize": 400,
       "population": "LV",
-      "partisan": null,
+      "partisan": "D",
       "results": [
         {
           "candidate": "Kelly Kirschner (D)",
@@ -52,12 +54,13 @@
           "percentage": 39
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://kellykirschner.com/wp-content/uploads/2026/09/0926-FL-16-Polling-Memo-1.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/FL-16"
+        "https://pollingsource.com/house/FL-16",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2683
+      "weight": 0.1327
     }
   ]
 }

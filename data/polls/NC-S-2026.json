@@ -1,7 +1,7 @@
 {
   "raceId": "NC-S-2026",
-  "count": 72,
-  "updated_at": "2026-10-20T02:40:38.399Z",
+  "count": 68,
+  "updated_at": "2026-10-20T14:20:53.491Z",
   "polls": [
     {
       "pollster": "SurveyUSA",
@@ -12,25 +12,27 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 40,
-          "percentage": 40
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 54,
           "percentage": 54
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.wral.com/news/nccapitol/wral-nc-us-senate-poll-cooper-whatley-tillis-trump-stein-approval-midterm-october-2026/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9187
+      "sponsors": "WRAL News | WSOC-TV",
+      "weight": 0.9085
     },
     {
       "pollster": "WRAL-TV/SurveyUSA",
@@ -58,7 +60,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9187
+      "weight": 0.9085
     },
     {
       "pollster": "Trafalgar Group",
@@ -69,25 +71,67 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/nc-senate-gen-1011/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5847
+      "weight": 0.5782
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-09-29 to 2026-10-08",
+      "sampleSize": 560,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Elon University",
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Shannon Bray (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        },
+        {
+          "candidate": "Michael Dublin (GRE)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/10/Elon-Poll-news-release-10-20-26.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.791
     },
     {
       "pollster": "Change Research",
@@ -98,25 +142,27 @@
       "partisan": "D",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 40,
-          "percentage": 40
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://docs.google.com/document/d/1nVWsUhnA6dAlqOgHS2j2K6kFoJLJFjQbkN8KAXhyK0s/edit?tab=t.0",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4756
+      "sponsors": "Carolina Forward",
+      "weight": 0.4702
     },
     {
       "pollster": "Carolina Forward/Change Res.",
@@ -144,10 +190,10 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4756
+      "weight": 0.4702
     },
     {
-      "pollster": "East Carolina University",
+      "pollster": "East Carolina University Center for Survey Research",
       "endDate": "2026-10-03",
       "fieldDates": "September 30 – October 3, 2026",
       "sampleSize": 810,
@@ -155,25 +201,26 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-cooper-s-lead-holds-at-7-points",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8571
+      "weight": 0.8476
     },
     {
       "pollster": "Big Data Poll",
@@ -184,81 +231,57 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Cooper (D)",
+          "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 51,
           "percentage": 51
         },
         {
-          "candidate": "Whatley (R)",
+          "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 39,
           "percentage": 39
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/tar-heel-state-poll-roy-cooper-holds-solid-lead-over-michael-whatley-for-us-senate-in-north-carolina/",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6957
-    },
-    {
-      "pollster": "Big Data Poll",
-      "endDate": "2026-09-29",
-      "fieldDates": "September 27–29, 2026",
-      "sampleSize": 642,
-      "population": null,
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 35,
-          "percentage": 35
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 47,
-          "percentage": 47
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.5914
+      "sponsors": "Public Polling Project",
+      "weight": 0.688
     },
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-09-22",
       "fieldDates": "September 21–22, 2026",
-      "sampleSize": 686,
+      "sampleSize": 688,
       "population": "LV",
       "partisan": "R",
       "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
         {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/f/roy-cooper-leads-michael-whatley-by-five-in-north-carolina",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3059
+      "weight": 0.3029
     },
     {
       "pollster": "Rasmussen Reports",
@@ -286,7 +309,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7558
+      "weight": 0.7474
     },
     {
       "pollster": "Opinion Diagnostics",
@@ -297,111 +320,88 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 51,
           "percentage": 51
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.commoncause.org/north-carolina/press/2026_poll_1/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3265
+      "sponsors": "Common Cause North Carolina",
+      "weight": 0.3228
     },
     {
       "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
       "endDate": "2026-09-20",
       "fieldDates": "September 17-20, 2026",
-      "sampleSize": 1806,
+      "sampleSize": 1115,
       "population": "LV",
       "partisan": "D",
       "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
         {
           "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 42,
           "percentage": 42
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 53,
-          "percentage": 53
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.aarp.org/pri/topics/voter-research/politics/2026-midterm-election-poll-north-carolina/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4739
+      "sponsors": "AARP",
+      "weight": 0.3682
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-09-18",
       "fieldDates": "September 15–18, 2026",
-      "sampleSize": 3864,
-      "population": "RV",
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 52,
-          "percentage": 52
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.8571
-    },
-    {
-      "pollster": "YouGov",
-      "endDate": "2026-09-18",
-      "fieldDates": "2026-09-18",
       "sampleSize": 3745,
       "population": "LV",
       "partisan": null,
       "results": [
         {
-          "candidate": "Cooper (D)",
+          "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 53,
           "percentage": 53
         },
         {
-          "candidate": "Whatley (R)",
+          "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 41,
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_nc_20260915.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9524
+      "weight": 0.9417
     },
     {
       "pollster": "InsiderAdvantage",
@@ -412,25 +412,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/nc-top-line-tabs/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3604
+      "weight": 0.3564
     },
     {
       "pollster": "Quantus Insights",
@@ -458,7 +459,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5164
+      "weight": 0.5107
     },
     {
       "pollster": "High Point University",
@@ -469,31 +470,32 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Cooper (D)",
+          "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
         },
         {
-          "candidate": "Whatley (R)",
+          "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 42,
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.highpoint.edu/blog/2026/09/hpu-poll-127-north-carolina-likely-voters-weigh-in-on-u-s-senate-race-and-more/",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5403
+      "weight": 0.5343
     },
     {
       "pollster": "High Point University",
       "endDate": "2026-09-16",
       "fieldDates": "September 9–16, 2026",
       "sampleSize": 813,
-      "population": "RV",
+      "population": null,
       "partisan": null,
       "results": [
         {
@@ -511,11 +513,10 @@
       ],
       "sourceUrl": null,
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5218
+      "weight": 0.4873
     },
     {
       "pollster": "Harper Polling",
@@ -526,25 +527,27 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 34,
-          "percentage": 34
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 34,
+          "percentage": 34
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.carolinajournal.com/polls/september-2026-roy-coopers-lead-grows-to-15-points-in-nc-senate-race/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.245
+      "sponsors": "Carolina Journal",
+      "weight": 0.2422
     },
     {
       "pollster": "Carolina Journal/Harper",
@@ -572,7 +575,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4899
+      "weight": 0.4845
     },
     {
       "pollster": "Catawba College/YouGov",
@@ -583,13 +586,13 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Cooper (D)",
+          "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
         },
         {
-          "candidate": "Whatley (R)",
+          "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 37,
           "percentage": 37
@@ -597,38 +600,40 @@
       ],
       "sourceUrl": null,
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.5911
-    },
-    {
-      "pollster": "Catawba College/YouGov",
-      "endDate": "2026-09-15",
-      "fieldDates": "September 4–15, 2026",
-      "sampleSize": 885,
-      "population": null,
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 35,
-          "percentage": 35
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 47,
-          "percentage": 47
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
+        "https://pollingsource.com/senate/NC",
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5024
+      "weight": 0.5845
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-15",
+      "fieldDates": "2026-09-04 to 2026-09-15",
+      "sampleSize": 885,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Catawba College Center for N.C. Politics & Public Service",
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://www.catawba.edu/news/all-news/2026/yougov-39/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5845
     },
     {
       "pollster": "The Trafalgar Group",
@@ -639,16 +644,16 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 42,
-          "percentage": 42
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": null,
@@ -657,7 +662,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2914
+      "weight": 0.2882
     },
     {
       "pollster": "Trafalgar Group",
@@ -665,30 +670,31 @@
       "fieldDates": "2026-09-10",
       "sampleSize": 1084,
       "population": "LV",
-      "partisan": null,
+      "partisan": "R",
       "results": [
         {
-          "candidate": "Cooper (D)",
+          "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
         },
         {
-          "candidate": "Whatley (R)",
+          "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 42,
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/wp-content/uploads/2026/09/NC-Gen-Sen-Poll-Full-Report-0911.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5828
+      "weight": 0.2882
     },
     {
-      "pollster": "East Carolina U.",
+      "pollster": "East Carolina University Center for Survey Research",
       "endDate": "2026-09-03",
       "fieldDates": "2026-09-03",
       "sampleSize": 675,
@@ -696,73 +702,46 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Cooper (D)",
+          "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 52,
           "percentage": 52
         },
         {
-          "candidate": "Whatley (R)",
+          "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 44,
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-cooper-leads-whatley-by-7-points",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.3912
-    },
-    {
-      "pollster": "East Carolina University",
-      "endDate": "2026-09-03",
-      "fieldDates": "August 31–September 3, 2026",
-      "sampleSize": 675,
-      "population": "LV",
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 39,
-          "percentage": 39
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 46,
-          "percentage": 46
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
+        "https://pollingsource.com/senate/NC",
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3912
+      "weight": 0.3869
     },
     {
       "pollster": "Elon University/YouGov",
       "endDate": "2026-08-31",
       "fieldDates": "August 21–31, 2026",
-      "sampleSize": 565,
+      "sampleSize": 800,
       "population": "LV",
       "partisan": null,
       "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 38,
-          "percentage": 38
-        },
         {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
         }
       ],
       "sourceUrl": null,
@@ -771,70 +750,54 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.334
+      "weight": 0.393
     },
     {
-      "pollster": "Elon University",
+      "pollster": "YouGov",
       "endDate": "2026-08-31",
-      "fieldDates": "2026-08-31",
-      "sampleSize": 800,
+      "fieldDates": "2026-08-21 to 2026-08-31",
+      "sampleSize": 565,
       "population": "LV",
       "partisan": null,
+      "sponsors": "Elon University",
       "results": [
         {
-          "candidate": "Cooper (D)",
+          "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
         },
         {
-          "candidate": "Whatley (R)",
+          "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 38,
           "percentage": 38
+        },
+        {
+          "candidate": "Michael Dublin (GRE)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        },
+        {
+          "candidate": "Shannon Bray (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/09/Elon-University-Poll-NR-9-10-26.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3974
+      "weight": 0.3302
     },
     {
       "pollster": "High Point University/YouGov",
       "endDate": "2026-08-12",
       "fieldDates": "August 3-12, 2026",
       "sampleSize": 800,
-      "population": "RV",
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 48,
-          "percentage": 48
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.2306
-    },
-    {
-      "pollster": "High Point University",
-      "endDate": "2026-08-12",
-      "fieldDates": "2026-08-12",
-      "sampleSize": 660,
       "population": "LV",
       "partisan": null,
       "results": [
@@ -851,12 +814,42 @@
           "percentage": 45
         }
       ],
+      "sourceUrl": "https://www.highpoint.edu/blog/2026/08/hpu-poll-126-majority-of-north-carolina-voters-say-country-headed-in-wrong-direction/",
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2533
+    },
+    {
+      "pollster": "High Point University",
+      "endDate": "2026-08-12",
+      "fieldDates": "2026-08-12",
+      "sampleSize": 660,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Cooper (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Whatley (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
       "sourceUrl": null,
       "foundOn": [
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2327
+      "weight": 0.2301
     },
     {
       "pollster": "Harper Polling",
@@ -867,25 +860,27 @@
       "partisan": "R",
       "results": [
         {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
           "candidate": "Michael Whatley (R)",
           "party": "R",
           "pct": 39,
           "percentage": 39
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 51.5,
-          "percentage": 51.5
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.carolinajournal.com/polls/august-2026-coopers-lead-over-whatley-grows-to-12-5-points/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1059
+      "sponsors": "Carolina Journal",
+      "weight": 0.1047
     },
     {
       "pollster": "Carolina Journal/Harper",
@@ -913,7 +908,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2119
+      "weight": 0.2095
     },
     {
       "pollster": "Change Research",
@@ -924,25 +919,27 @@
       "partisan": "D",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://carolinaforward.org/news/the-august-2026-carolina-forward-poll/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1193
+      "sponsors": "Carolina Forward",
+      "weight": 0.1179
     },
     {
       "pollster": "Carolina Forward/Change Res.",
@@ -970,7 +967,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2385
+      "weight": 0.2359
     },
     {
       "pollster": "Change Research",
@@ -981,25 +978,27 @@
       "partisan": "D",
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://garypearcenc.substack.com/p/cooper-up-by-9-trump-still-slumps",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina",
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1092
+      "sponsors": "Gary Pearce | Sam Hunt",
+      "weight": 0.108
     },
     {
       "pollster": "Elon University/YouGov",
@@ -1010,16 +1009,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 42,
-          "percentage": 42
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 53,
           "percentage": 53
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": null,
@@ -1028,35 +1027,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1482
-    },
-    {
-      "pollster": "Elon University",
-      "endDate": "2026-07-31",
-      "fieldDates": "2026-07-31",
-      "sampleSize": 466,
-      "population": "LV",
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 53,
-          "percentage": 53
-        },
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 42,
-          "percentage": 42
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
-        "https://pollingsource.com/senate/NC"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.1482
+      "weight": 0.1465
     },
     {
       "pollster": "Political Polls",
@@ -1084,13 +1055,13 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1535
+      "weight": 0.1518
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-07-31",
       "fieldDates": "2026-07-31",
-      "sampleSize": null,
+      "sampleSize": 466,
       "population": "LV",
       "partisan": null,
       "results": [
@@ -1107,17 +1078,19 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://eloncdn.blob.core.windows.net/eu3/sites/819/2026/08/Elon-Poll-1-fall-2026-NR-V3-8-12-26.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1535
+      "sponsors": "Elon University",
+      "weight": 0.1465
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-07-27",
-      "weight": 0.0893,
+      "weight": 0.0883,
       "sampleSize": 1005,
       "population": "RV",
       "results": [
@@ -1138,10 +1111,12 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "R",
-      "fieldDates": "July 23–27, 2026"
+      "fieldDates": "July 23–27, 2026",
+      "sponsors": "Fox News"
     },
     {
       "pollster": "FOX News",
@@ -1169,12 +1144,12 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1786
+      "weight": 0.1766
     },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-07-11",
-      "weight": 0.0536,
+      "weight": 0.053,
       "sampleSize": 759,
       "population": "RV",
       "results": [
@@ -1195,7 +1170,8 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/NC"
+        "https://pollingsource.com/senate/NC",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "July 10–11, 2026"
@@ -1226,12 +1202,12 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1072
+      "weight": 0.106
     },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
-      "weight": 0.0767,
+      "weight": 0.0759,
       "sampleSize": 601,
       "population": "LV",
       "results": [
@@ -1251,7 +1227,10 @@
       "sourceUrl": "https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-north-carolina-poll-crosstabs.html",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-15 to 2026-06-27"
     },
     {
       "pollster": "New York Times/Siena University",
@@ -1262,16 +1241,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": null,
@@ -1279,12 +1258,12 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0767
+      "weight": 0.0759
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-06-10",
-      "weight": 0.0636,
+      "weight": 0.0629,
       "sampleSize": 905,
       "population": "LV",
       "results": [
@@ -1304,7 +1283,11 @@
       "sourceUrl": "https://www.catawba.edu/news/all-news/2026/yougovsurvey27/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-01 to 2026-06-10",
+      "sponsors": "Catawba College Center for N.C. Politics & Public Service"
     },
     {
       "pollster": "Catawba College/YouGov",
@@ -1330,12 +1313,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.054
+      "weight": 0.0534
     },
     {
       "pollster": "Harper Polling",
       "endDate": "2026-05-11",
-      "weight": 0.0129,
+      "weight": 0.0128,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -1355,14 +1338,17 @@
       "sourceUrl": "https://www.carolinajournal.com/polls/may-2026-coopers-lead-over-whatley-in-senate-race-widens/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "May 10–11, 2026"
+      "fieldDates": "May 10–11, 2026",
+      "sponsors": "Carolina Journal"
     },
     {
       "pollster": "Change Research (D)",
       "endDate": "2026-05-08",
-      "weight": 0.0152,
+      "weight": 0.0151,
       "sampleSize": 957,
       "population": "LV",
       "results": [
@@ -1382,14 +1368,17 @@
       "sourceUrl": "https://carolinaforward.org/blog/the-may-2026-carolina-forward-poll/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
-      "fieldDates": "May 4–8, 2026"
+      "fieldDates": "May 4–8, 2026",
+      "sponsors": "Carolina Forward"
     },
     {
       "pollster": "Opinion Diagnostics",
       "endDate": "2026-04-24",
-      "weight": 0.0092,
+      "weight": 0.0091,
       "sampleSize": 830,
       "population": "RV",
       "results": [
@@ -1409,14 +1398,16 @@
       "sourceUrl": "https://www.wral.com/news/nccapitol/cooper-leads-whatley-in-us-senate-race-new-nc-polls-april-2026/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
       "fieldDates": "April 21–24, 2026"
     },
     {
       "pollster": "Opinion Diagnostics",
       "endDate": "2026-04-24",
-      "weight": 0.0185,
+      "weight": 0.0183,
       "sampleSize": 830,
       "population": "RV",
       "results": [
@@ -1441,7 +1432,7 @@
     {
       "pollster": "High Point University",
       "endDate": "2026-04-06",
-      "weight": 0.012,
+      "weight": 0.0118,
       "sampleSize": 800,
       "population": "RV",
       "results": [
@@ -1461,12 +1452,15 @@
       "sourceUrl": "https://www.highpoint.edu/blog/2026/04/hpu-poll-120-north-carolina-likely-voters-weigh-in-on-u-s-senate-north-carolina-supreme-court-races/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-03-26 to 2026-04-06"
     },
     {
       "pollster": "High Point University",
       "endDate": "2026-04-06",
-      "weight": 0.0125,
+      "weight": 0.0123,
       "sampleSize": 703,
       "population": "LV",
       "results": [
@@ -1492,7 +1486,7 @@
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-04-01",
-      "weight": 0.0066,
+      "weight": 0.0065,
       "sampleSize": 987,
       "population": "LV",
       "results": [
@@ -1512,14 +1506,16 @@
       "sourceUrl": "https://quantusinsights.org/f/north-carolina-2026-democrats-hold-early-edge",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
       "fieldDates": "March 31 – April 1, 2026"
     },
     {
       "pollster": "Harper Polling",
       "endDate": "2026-03-23",
-      "weight": 0.0042,
+      "weight": 0.0041,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -1539,14 +1535,17 @@
       "sourceUrl": "https://www.carolinajournal.com/polls/march-2026-roy-cooper-leads-michael-whatley-in-senate-race-by-nearly-8-points/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "March 22–23, 2026"
+      "fieldDates": "March 22–23, 2026",
+      "sponsors": "Carolina Journal"
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-03-18",
-      "weight": 0.009,
+      "weight": 0.0089,
       "sampleSize": 872,
       "population": "LV",
       "results": [
@@ -1566,7 +1565,11 @@
       "sourceUrl": "https://www.catawba.edu/news/all-news/2026/yougov-24/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-03-09 to 2026-03-18",
+      "sponsors": "Catawba College Center for N.C. Politics & Public Service"
     },
     {
       "pollster": "Catawba College/YouGov",
@@ -1592,7 +1595,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0082
+      "weight": 0.0081
     },
     {
       "pollster": "Public Policy Polling",
@@ -1617,7 +1620,9 @@
       "sourceUrl": "https://www.publicpolicypolling.com/polls/north-carolina-is-always-close/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
       "fieldDates": "March 13–14, 2026"
     },
@@ -1670,14 +1675,17 @@
       "sourceUrl": "https://changeresearch.com/north-carolina-voters-february-2026/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
-      "fieldDates": "January 31–February 4, 2026"
+      "fieldDates": "January 31–February 4, 2026",
+      "sponsors": "Gary Pearce | Sam Hunt"
     },
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2026-01-15",
-      "weight": 0.0025,
+      "weight": 0.0013,
       "sampleSize": 1512,
       "population": "RV",
       "results": [
@@ -1697,33 +1705,12 @@
       "sourceUrl": "https://www.dailysignal.com/2026/01/19/exclusive-economy-remains-gops-biggest-vulnerability-in-north-carolina-new-poll-shows/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "TIPP Insights",
-      "endDate": "2026-01-15",
-      "fieldDates": "January 12–15, 2026",
-      "sampleSize": 1512,
-      "population": null,
-      "partisan": "R",
-      "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 24,
-          "percentage": 24
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 48,
-          "percentage": 48
-        }
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "sourceUrl": null,
-      "foundOn": [],
-      "reviewStatus": "auto",
-      "weight": 0.0012
+      "partisan": "R",
+      "fieldDates": "January 12–15, 2026",
+      "sponsors": "League of American Workers"
     },
     {
       "pollster": "Change Research (D)",
@@ -1748,9 +1735,12 @@
       "sourceUrl": "https://carolinaforward.org/blog/the-january-carolina-forward-poll/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
-      "fieldDates": "January 5–7, 2026"
+      "fieldDates": "January 5–7, 2026",
+      "sponsors": "Carolina Forward"
     },
     {
       "pollster": "Harper Polling",
@@ -1775,9 +1765,12 @@
       "sourceUrl": "https://www.carolinajournal.com/polls/november-2025-cooper-maintains-lead-in-senate-race/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "November 9–10, 2025"
+      "fieldDates": "November 9–10, 2025",
+      "sponsors": "Carolina Journal"
     },
     {
       "pollster": "Harper Polling",
@@ -1802,9 +1795,12 @@
       "sourceUrl": "https://www.carolinajournal.com/wp-content/uploads/2025/09/H23315-CJ-NC-Sept25-Toplines.pdf",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "September 14–15, 2025"
+      "fieldDates": "September 14–15, 2025",
+      "sponsors": "Carolina Journal"
     },
     {
       "pollster": "Change Research (D)",
@@ -1829,9 +1825,12 @@
       "sourceUrl": "https://carolinaforward.org/blog/the-september-carolina-forward-poll/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
-      "fieldDates": "September 2–8, 2025"
+      "fieldDates": "September 2–8, 2025",
+      "sponsors": "Carolina Forward"
     },
     {
       "pollster": "Harper Polling",
@@ -1856,9 +1855,12 @@
       "sourceUrl": "https://www.carolinajournal.com/polls/august-2025-cooper-shows-early-lead-on-whatley-in-us-senate-race/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "August 11–12, 2025"
+      "fieldDates": "August 11–12, 2025",
+      "sponsors": "Carolina Journal"
     },
     {
       "pollster": "Victory Insights",
@@ -1883,7 +1885,11 @@
       "sourceUrl": "https://irp.cdn-website.com/07e08705/files/uploaded/PollSummary_NC-US-Senate_07-31-2025.pdf",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "July 28–30, 2025"
     },
     {
       "pollster": "Emerson College",
@@ -1908,59 +1914,38 @@
       "sourceUrl": "https://emersoncollegepolling.com/north-carolina-2026-poll-cooper-starts-us-senate-race-with-six-point-lead-and-clear-name-recognition-advantage-over-whatley/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "fieldDates": "July 28–30, 2025"
-    },
-    {
-      "pollster": "Victory Insights",
-      "endDate": "2025-07-30",
-      "fieldDates": "July 28–30, 2025",
-      "sampleSize": 600,
-      "population": null,
-      "partisan": "R",
-      "results": [
-        {
-          "candidate": "Michael Whatley (R)",
-          "party": "R",
-          "pct": 40,
-          "percentage": 40
-        },
-        {
-          "candidate": "Roy Cooper (D)",
-          "party": "D",
-          "pct": 43,
-          "percentage": 43
-        }
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "sourceUrl": null,
-      "foundOn": [],
-      "reviewStatus": "auto",
-      "weight": 0
+      "fieldDates": "July 28–30, 2025"
     },
     {
       "pollster": "Change Research",
       "endDate": "2025-04-04",
       "fieldDates": "March 31–April 4, 2025",
       "sampleSize": 867,
-      "population": null,
+      "population": "LV",
       "partisan": "D",
       "results": [
         {
-          "candidate": "Thom Tillis (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "Roy Cooper (D)",
           "party": "D",
-          "pct": 46,
-          "percentage": 46
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Thom Tillis (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://carolinaforward.org/blog/april-2025-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
+      "sponsors": "Carolina Forward",
       "weight": 0,
       "otherMatchup": true
     },
@@ -1969,24 +1954,56 @@
       "endDate": "2025-03-05",
       "fieldDates": "March 4–5, 2025",
       "sampleSize": 662,
-      "population": null,
+      "population": "RV",
       "partisan": "D",
       "results": [
-        {
-          "candidate": "Thom Tillis (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
         {
           "candidate": "Roy Cooper (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Thom Tillis (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://www.publicpolicypolling.com/polls/thom-tillis-has-a-25-approval-rating/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Victory Insights",
+      "endDate": "2024-11-29",
+      "fieldDates": "2024-11-26 to 2024-11-29",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "pct": 45.1,
+          "percentage": 45.1
+        },
+        {
+          "candidate": "Thom Tillis (R)",
+          "party": "R",
+          "pct": 44.1,
+          "percentage": 44.1
+        }
+      ],
+      "sourceUrl": "https://irp.cdn-website.com/07e08705/files/uploaded/PollReport_NC-2026_12-2-24.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0,
       "otherMatchup": true

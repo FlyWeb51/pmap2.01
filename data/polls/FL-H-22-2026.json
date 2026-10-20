@@ -1,7 +1,7 @@
 {
   "raceId": "FL-H-22-2026",
-  "count": 4,
-  "updated_at": "2026-10-20T02:40:38.385Z",
+  "count": 6,
+  "updated_at": "2026-10-20T14:20:53.484Z",
   "polls": [
     {
       "pollster": "Tulchin Research",
@@ -29,7 +29,66 @@
         "https://pollingsource.com/house/FL-22"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1335
+      "weight": 0.132
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-08-31",
+      "fieldDates": "2026-08-24 to 2026-08-31",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-pia-dandiya-leads-casey-askar-in-fl-22",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1553,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-08-31",
+      "fieldDates": "2026-08-24 to 2026-08-31",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Pia Dandiya (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Casey Askar (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-pia-dandiya-leads-casey-askar-in-fl-22",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1553
     },
     {
       "pollster": "Tavern Research",
@@ -52,17 +111,18 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://242750075.fs1.hubspotusercontent-na2.net/hubfs/242750075/FL-22%20General%20Toplines%20%E2%80%94%20Aug%2019_NEW.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/FL-22"
+        "https://pollingsource.com/house/FL-22",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1063
+      "weight": 0.1051
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-06-25",
-      "weight": 0.0598,
+      "weight": 0.0295,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -82,36 +142,42 @@
       "sourceUrl": "https://www.nationaljournal.com/s/732493/dccc-faces-pressure-to-reevaluate-role-after-primary-mishaps/?unlock=73COOYQ67JOR43BA",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://pollingsource.com/house/FL-22",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "D",
+      "fieldDates": "2026-06-25"
     },
     {
       "pollster": "GQR",
       "endDate": "2026-06-25",
-      "fieldDates": "2026-06-25",
+      "fieldDates": "2026-06-18 to 2026-06-25",
       "sampleSize": 400,
       "population": "LV",
       "partisan": "D",
+      "sponsors": null,
       "results": [
         {
-          "candidate": "Pia Dandiya (D)",
-          "party": "D",
+          "candidate": "Generic Republican (R)",
+          "party": "R",
           "pct": 45,
           "percentage": 45
         },
         {
-          "candidate": "Belinda Keiser (R)",
-          "party": "R",
-          "pct": 46,
-          "percentage": 46
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.nationaljournal.com/s/732493/dccc-faces-pressure-to-reevaluate-role-after-primary-mishaps/?unlock=73COOYQ67JOR43BA",
       "foundOn": [
-        "https://pollingsource.com/house/FL-22"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0299,
+      "weight": 0.0295,
       "otherMatchup": true
     }
   ]

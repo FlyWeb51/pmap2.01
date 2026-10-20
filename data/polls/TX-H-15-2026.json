@@ -1,8 +1,67 @@
 {
   "raceId": "TX-H-15-2026",
-  "count": 5,
-  "updated_at": "2026-10-20T02:40:38.409Z",
+  "count": 9,
+  "updated_at": "2026-10-20T14:20:53.496Z",
   "polls": [
+    {
+      "pollster": "Normington, Petts & Associates",
+      "endDate": "2026-09-28",
+      "fieldDates": "2026-09-24 to 2026-09-28",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2105646969775403226?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2653,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Normington, Petts & Associates",
+      "endDate": "2026-09-28",
+      "fieldDates": "2026-09-24 to 2026-09-28",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Bobby Pulido (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Monica De La Cruz (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2105646969775403226?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2653
+    },
     {
       "pollster": "Public Policy Research/Texas Southern University",
       "endDate": "2026-08-22",
@@ -29,7 +88,7 @@
         "https://pollingsource.com/house/TX-15"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3019
+      "weight": 0.2986
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center at Texas Southern University",
@@ -52,17 +111,18 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6a8debe648e3721adb0534b6/1787685864204/SouthTexasCDs2026.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/TX-15"
+        "https://pollingsource.com/house/TX-15",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3019
+      "weight": 0.2986
     },
     {
       "pollster": "Normington, Petts & Associates (D)",
       "endDate": "2026-07-27",
-      "weight": 0.0736,
+      "weight": 0.0728,
       "sampleSize": 553,
       "population": "LV",
       "results": [
@@ -83,15 +143,47 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/TX-15"
+        "https://pollingsource.com/house/TX-15",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-07-27"
+      "fieldDates": "2026-07-27",
+      "sponsors": "House Majority PAC"
+    },
+    {
+      "pollster": "Normington, Petts & Associates",
+      "endDate": "2026-07-27",
+      "fieldDates": "2026-07-23 to 2026-07-27",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://mailchi.mp/thehousemajoritypac.com/hmp-poll-bobby-pulido-leads-monica-de-la-cruz-in-tx-15",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0692,
+      "otherMatchup": true
     },
     {
       "pollster": "Applecart (D)",
       "endDate": "2026-05-25",
-      "weight": 0.0413,
+      "weight": 0.0204,
       "sampleSize": 802,
       "population": "LV",
       "results": [
@@ -112,14 +204,47 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/TX-15"
+        "https://pollingsource.com/house/TX-15",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "fieldDates": "2026-05-25"
+      "fieldDates": "2026-05-25",
+      "partisan": "D",
+      "sponsors": "WelcomePAC"
+    },
+    {
+      "pollster": "Applecart",
+      "endDate": "2026-05-25",
+      "fieldDates": "2026-05-18 to 2026-05-25",
+      "sampleSize": 802,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "WelcomePAC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://welcome.team/press-releases/Blog%20Post%20Title%20One-3zaa9-zlxng-67tfc-2sf8d",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0204,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-09-11",
-      "weight": 0.0001,
+      "weight": 0,
       "sampleSize": 533,
       "population": "RV",
       "results": [
@@ -139,7 +264,12 @@
       "sourceUrl": "https://x.com/birenbomb/status/1968311364751077867",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-09-10 to 2025-09-11",
+      "sponsors": "House Majority PAC"
     }
   ]
 }

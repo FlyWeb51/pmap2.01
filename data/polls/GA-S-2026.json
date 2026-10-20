@@ -1,7 +1,7 @@
 {
   "raceId": "GA-S-2026",
-  "count": 30,
-  "updated_at": "2026-10-20T02:40:38.386Z",
+  "count": 46,
+  "updated_at": "2026-10-20T14:20:53.485Z",
   "polls": [
     {
       "pollster": "Quantus Insights",
@@ -24,13 +24,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/polling/f/georgia-two-weeks-out-ossoff-ahead-down-ballot-near-even",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5718
+      "weight": 0.5654
     },
     {
       "pollster": "Trafalgar Group",
@@ -53,13 +54,14 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/ga-senate-gen-1010/",
       "foundOn": [
         "https://pollingsource.com/senate/GA",
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.574
+      "weight": 0.5675
     },
     {
       "pollster": "Wedgewood Polls",
@@ -82,13 +84,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://drive.google.com/file/d/1-Qoij2YeWwq-EFaTY_W0iTf1fotSrKHI/view",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7377
+      "weight": 0.7295
     },
     {
       "pollster": "Big Data Poll",
@@ -99,24 +102,26 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ossoff (D)",
+          "candidate": "Jon Ossoff (D)",
           "party": "D",
           "pct": 55,
           "percentage": 55
         },
         {
-          "candidate": "Collins (R)",
+          "candidate": "Mike Collins (R)",
           "party": "R",
           "pct": 45,
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/peach-state-poll-jon-ossoff-opens-up-lead-over-mike-collins-in-georgia/",
       "foundOn": [
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6224
+      "sponsors": "Public Polling Project",
+      "weight": 0.6155
     },
     {
       "pollster": "InsiderAdvantage",
@@ -139,20 +144,21 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-georgia-survey-jackson-leads-by-two-in-race-for-governor-ossoff-leads-by-eight-in-senate-contest/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.414
+      "weight": 0.4094
     },
     {
       "pollster": "Big Data Poll",
       "endDate": "2026-09-23",
       "fieldDates": "September 21–23, 2026",
       "sampleSize": 721,
-      "population": "RV",
+      "population": null,
       "partisan": "R",
       "results": [
         {
@@ -170,124 +176,70 @@
       ],
       "sourceUrl": null,
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-        "https://pollingsource.com/senate/GA"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2888
+      "weight": 0.2697
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-09-18",
       "fieldDates": "September 15–18, 2026",
-      "sampleSize": 3416,
-      "population": "RV",
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Jon Ossoff (D)",
-          "party": "D",
-          "pct": 51,
-          "percentage": 51
-        },
-        {
-          "candidate": "Mike Collins (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-        "https://pollingsource.com/senate/GA"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.8571
-    },
-    {
-      "pollster": "YouGov",
-      "endDate": "2026-09-18",
-      "fieldDates": "2026-09-18",
       "sampleSize": 3303,
       "population": "LV",
       "partisan": null,
       "results": [
         {
-          "candidate": "Ossoff (D)",
+          "candidate": "Jon Ossoff (D)",
           "party": "D",
           "pct": 52,
           "percentage": 52
         },
         {
-          "candidate": "Collins (R)",
+          "candidate": "Mike Collins (R)",
           "party": "R",
           "pct": 42,
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ga_20260915.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/GA"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9524
+      "weight": 0.9417
     },
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-09-16",
       "fieldDates": "September 14–16, 2026",
       "sampleSize": 645,
-      "population": null,
+      "population": "LV",
       "partisan": "R",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
           "party": "D",
-          "pct": 48,
-          "percentage": 48
-        },
-        {
-          "candidate": "Mike Collins (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.2195
-    },
-    {
-      "pollster": "Quantus Insights",
-      "endDate": "2026-09-16",
-      "fieldDates": "2026-09-16",
-      "sampleSize": 645,
-      "population": "LV",
-      "partisan": null,
-      "results": [
-        {
-          "candidate": "Ossoff (D)",
-          "party": "D",
           "pct": 49,
           "percentage": 49
         },
         {
-          "candidate": "Collins (R)",
+          "candidate": "Mike Collins (R)",
           "party": "R",
           "pct": 45,
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/f/ossoff-leads-collins-by-four-points-in-georgia-senate-race",
       "foundOn": [
-        "https://pollingsource.com/senate/GA"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5164
+      "weight": 0.2553
     },
     {
       "pollster": "Rasmussen Reports",
@@ -298,13 +250,13 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Jon Ossoff (D)",
+          "candidate": "Ossoff (D)",
           "party": "D",
           "pct": 51,
           "percentage": 51
         },
         {
-          "candidate": "Mike Collins (R)",
+          "candidate": "Collins (R)",
           "party": "R",
           "pct": 42,
           "percentage": 42
@@ -316,7 +268,7 @@
         "https://pollingsource.com/senate/GA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6198
+      "weight": 0.6129
     },
     {
       "pollster": "Trafalgar Group",
@@ -339,13 +291,14 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/wp-content/uploads/2026/09/GA-General-Full-Report-0912.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3062
+      "weight": 0.3028
     },
     {
       "pollster": "InsiderAdvantage",
@@ -368,18 +321,20 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://jamesmagazinega.com/2026/08/18/exclusive-jmo-insideradvantage-georgia-survey-ossoff-leads-jackson-lance-bottoms-tied/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1438
+      "sponsors": "James Magazine Online",
+      "weight": 0.1422
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
       "endDate": "2026-07-16",
-      "weight": 0.079,
+      "weight": 0.0781,
       "sampleSize": 1060,
       "population": "LV",
       "results": [
@@ -400,15 +355,17 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "July 13–16, 2026"
+      "fieldDates": "July 13–16, 2026",
+      "sponsors": "AARP"
     },
     {
       "pollster": "Wick",
       "endDate": "2026-06-30",
-      "weight": 0.115,
+      "weight": 0.1137,
       "sampleSize": 1175,
       "population": "LV",
       "results": [
@@ -429,14 +386,15 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/GA"
+        "https://pollingsource.com/senate/GA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "fieldDates": "June 27–30, 2026"
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-27",
-      "weight": 0.0446,
+      "weight": 0.0441,
       "sampleSize": 1002,
       "population": "RV",
       "results": [
@@ -457,10 +415,12 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "R",
-      "fieldDates": "June 23–27, 2026"
+      "fieldDates": "June 23–27, 2026",
+      "sponsors": "Fox News"
     },
     {
       "pollster": "FOX News",
@@ -488,12 +448,12 @@
         "https://pollingsource.com/senate/GA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0892
+      "weight": 0.0882
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0051,
+      "weight": 0.005,
       "sampleSize": 407,
       "population": "LV",
       "results": [
@@ -513,9 +473,12 @@
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "April 3–9, 2026"
+      "fieldDates": "April 3–9, 2026",
+      "sponsors": "NetChoice"
     },
     {
       "pollster": "Emerson College",
@@ -540,8 +503,41 @@
       "sourceUrl": "https://emersoncollegepolling.com/georgia-2026-poll-senator-ossoff-starts-re-election-near-50-and-outpaces-gop-field/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "fieldDates": "February 28 – March 2, 2026"
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "February 28 – March 2, 2026",
+      "sponsors": "Nexstar"
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-03-02",
+      "fieldDates": "2026-02-28 to 2026-03-02",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Nexstar",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 48.9,
+          "percentage": 48.9
+        },
+        {
+          "candidate": "Derek Dooley (R)",
+          "party": "R",
+          "pct": 41.4,
+          "percentage": 41.4
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/georgia-2026-poll-senator-ossoff-starts-re-election-near-50-and-outpaces-gop-field/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0066,
+      "otherMatchup": true
     },
     {
       "pollster": "Quantus Insights",
@@ -566,14 +562,76 @@
       "sourceUrl": "https://drive.google.com/file/d/1s_XyIo0Rre1TGtVisHKu9hW3S4yEvxRl/view",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
       "fieldDates": "September 9–12, 2025"
     },
     {
+      "pollster": "Quantus Insights",
+      "endDate": "2025-09-12",
+      "fieldDates": "2025-09-09 to 2025-09-12",
+      "sampleSize": 624,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 42.1,
+          "percentage": 42.1
+        },
+        {
+          "candidate": "Derek Dooley (R)",
+          "party": "R",
+          "pct": 35.4,
+          "percentage": 35.4
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1s_XyIo0Rre1TGtVisHKu9hW3S4yEvxRl/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2025-09-12",
+      "fieldDates": "2025-09-09 to 2025-09-12",
+      "sampleSize": 624,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 40.2,
+          "percentage": 40.2
+        },
+        {
+          "candidate": "Buddy Carter (R)",
+          "party": "R",
+          "pct": 37.1,
+          "percentage": 37.1
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1s_XyIo0Rre1TGtVisHKu9hW3S4yEvxRl/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
       "pollster": "TIPP Insights (R)",
       "endDate": "2025-08-01",
-      "weight": 0.0001,
+      "weight": 0,
       "sampleSize": 2395,
       "population": "LV",
       "results": [
@@ -593,12 +651,17 @@
       "sourceUrl": "https://dailycaller.com/2025/08/07/mike-collins-georgia-senate-poll/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "July 28 – August 1, 2025",
+      "partisan": "R",
+      "sponsors": "League of American Workers"
     },
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2025-08-01",
-      "weight": 0.0001,
+      "weight": 0,
       "sampleSize": 2956,
       "population": "RV",
       "results": [
@@ -618,57 +681,68 @@
       "sourceUrl": "https://dailycaller.com/2025/08/07/mike-collins-georgia-senate-poll/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2025-07-28 to 2025-08-01",
+      "sponsors": "League of American Workers"
     },
     {
       "pollster": "TIPP Insights",
       "endDate": "2025-08-01",
-      "fieldDates": "July 28 – August 1, 2025",
-      "sampleSize": 2956,
-      "population": null,
-      "partisan": null,
+      "fieldDates": "2025-07-28 to 2025-08-01",
+      "sampleSize": 2395,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "League of American Workers",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
           "party": "D",
-          "pct": 45,
-          "percentage": 45
+          "pct": 45.16,
+          "percentage": 45.16
         },
         {
-          "candidate": "Mike Collins (R)",
+          "candidate": "Derek Dooley (R)",
           "party": "R",
-          "pct": 44,
-          "percentage": 44
+          "pct": 42,
+          "percentage": 42
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://dailycaller.com/2025/08/07/mike-collins-georgia-senate-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
-      "weight": 0.0001
+      "weight": 0,
+      "otherMatchup": true
     },
     {
-      "pollster": "Cygnal",
+      "pollster": "Cygnal Political",
       "endDate": "2025-06-18",
       "fieldDates": "June 16–18, 2025",
       "sampleSize": 610,
-      "population": null,
+      "population": "LV",
       "partisan": "R",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
           "party": "D",
-          "pct": 50,
-          "percentage": 50
+          "pct": 49.8,
+          "percentage": 49.8
         },
         {
-          "candidate": "Derek Dooley (R)",
+          "candidate": "John King (R)",
           "party": "R",
-          "pct": 41,
-          "percentage": 41
+          "pct": 40,
+          "percentage": 40
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://x.com/bluestein/status/1939633570688938308",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0,
       "otherMatchup": true
@@ -696,9 +770,102 @@
       "sourceUrl": "https://www.ajc.com/politics/2025/05/brad-raffensperger-for-senate-poll-shows-dead-heat-with-jon-ossoff/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "May 15–17, 2025"
+      "fieldDates": "May 15–17, 2025",
+      "sponsors": "Democracy Defense Project"
+    },
+    {
+      "pollster": "Cygnal Political",
+      "endDate": "2025-05-17",
+      "fieldDates": "2025-05-15 to 2025-05-17",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Democracy Defense Project",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 44.7,
+          "percentage": 44.7
+        },
+        {
+          "candidate": "John King (R)",
+          "party": "R",
+          "pct": 42.1,
+          "percentage": 42.1
+        }
+      ],
+      "sourceUrl": "https://www.ajc.com/politics/2025/05/brad-raffensperger-for-senate-poll-shows-dead-heat-with-jon-ossoff/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Cygnal Political",
+      "endDate": "2025-05-17",
+      "fieldDates": "2025-05-15 to 2025-05-17",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Democracy Defense Project",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Buddy Carter (R)",
+          "party": "R",
+          "pct": 42.1,
+          "percentage": 42.1
+        }
+      ],
+      "sourceUrl": "https://www.ajc.com/politics/2025/05/brad-raffensperger-for-senate-poll-shows-dead-heat-with-jon-ossoff/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Cygnal Political",
+      "endDate": "2025-05-17",
+      "fieldDates": "2025-05-15 to 2025-05-17",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Democracy Defense Project",
+      "results": [
+        {
+          "candidate": "Brad Raffensperger (R)",
+          "party": "R",
+          "pct": 44.3,
+          "percentage": 44.3
+        },
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 44.1,
+          "percentage": 44.1
+        }
+      ],
+      "sourceUrl": "https://www.ajc.com/politics/2025/05/brad-raffensperger-for-senate-poll-shows-dead-heat-with-jon-ossoff/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     },
     {
       "pollster": "Trafalgar Group (R)",
@@ -723,9 +890,71 @@
       "sourceUrl": "https://www.thetrafalgargroup.org/news/ga-sen-2026-0429/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
       "fieldDates": "April 24–27, 2025"
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2025-04-27",
+      "fieldDates": "2025-04-24 to 2025-04-27",
+      "sampleSize": 1426,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 46.4,
+          "percentage": 46.4
+        },
+        {
+          "candidate": "Brad Raffensperger (R)",
+          "party": "R",
+          "pct": 37.5,
+          "percentage": 37.5
+        }
+      ],
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/ga-sen-2026-0429/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2025-04-27",
+      "fieldDates": "2025-04-24 to 2025-04-27",
+      "sampleSize": 1426,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 48.3,
+          "percentage": 48.3
+        },
+        {
+          "candidate": "Marjorie Taylor Greene (R)",
+          "party": "R",
+          "pct": 36.5,
+          "percentage": 36.5
+        }
+      ],
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/ga-sen-2026-0429/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     },
     {
       "pollster": "''Atlanta Journal-Constitution''",
@@ -755,29 +984,182 @@
       "otherMatchup": true
     },
     {
-      "pollster": "Quantus Insights",
-      "endDate": "2025-02-13",
-      "fieldDates": "February 11–13, 2025",
-      "sampleSize": 800,
-      "population": null,
-      "partisan": "R",
+      "pollster": "University of Georgia",
+      "endDate": "2025-04-24",
+      "fieldDates": "2025-04-15 to 2025-04-24",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Atlanta Journal-Constitution",
       "results": [
         {
           "candidate": "Jon Ossoff (D)",
           "party": "D",
-          "pct": 45,
-          "percentage": 45
+          "pct": 48.4,
+          "percentage": 48.4
         },
+        {
+          "candidate": "Brad Raffensperger (R)",
+          "party": "R",
+          "pct": 38.8,
+          "percentage": 38.8
+        }
+      ],
+      "sourceUrl": "https://www.ajc.com/politics/trumps-support-sinks-in-georgia-as-economic-fears-rise/UVF4TQWIVNGBXCBNBPCWYX7YLI/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of Georgia",
+      "endDate": "2025-04-24",
+      "fieldDates": "2025-04-15 to 2025-04-24",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Atlanta Journal-Constitution",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 50.9,
+          "percentage": 50.9
+        },
+        {
+          "candidate": "John King (R)",
+          "party": "R",
+          "pct": 38.2,
+          "percentage": 38.2
+        }
+      ],
+      "sourceUrl": "https://www.ajc.com/politics/trumps-support-sinks-in-georgia-as-economic-fears-rise/UVF4TQWIVNGBXCBNBPCWYX7YLI/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of Georgia",
+      "endDate": "2025-04-24",
+      "fieldDates": "2025-04-15 to 2025-04-24",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Atlanta Journal-Constitution",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 54.2,
+          "percentage": 54.2
+        },
+        {
+          "candidate": "Marjorie Taylor Greene (R)",
+          "party": "R",
+          "pct": 37.3,
+          "percentage": 37.3
+        }
+      ],
+      "sourceUrl": "https://www.ajc.com/politics/trumps-support-sinks-in-georgia-as-economic-fears-rise/UVF4TQWIVNGBXCBNBPCWYX7YLI/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of Georgia",
+      "endDate": "2025-04-24",
+      "fieldDates": "2025-04-15 to 2025-04-24",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Atlanta Journal-Constitution",
+      "results": [
         {
           "candidate": "Brian Kemp (R)",
           "party": "R",
-          "pct": 48,
-          "percentage": 48
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 45.7,
+          "percentage": 45.7
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://www.ajc.com/politics/trumps-support-sinks-in-georgia-as-economic-fears-rise/UVF4TQWIVNGBXCBNBPCWYX7YLI/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Cygnal Political",
+      "endDate": "2025-03-10",
+      "fieldDates": "2025-03-09 to 2025-03-10",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 43.9,
+          "percentage": 43.9
+        },
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 43.7,
+          "percentage": 43.7
+        }
+      ],
+      "sourceUrl": "https://www.ajc.com/politics/politically-georgia/vote-to-block-transgender-bill-could-hurt-jon-ossoff-new-poll-finds/C4BYVU4YPNH7BDKLH3UUQUIVOM/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2025-02-13",
+      "fieldDates": "February 11–13, 2025",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Brian Kemp (R)",
+          "party": "R",
+          "pct": 48.3,
+          "percentage": 48.3
+        },
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 44.5,
+          "percentage": 44.5
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1y1OMfSEOT4Y1_ABcW5Ap5cHAjyPr9kie/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "sponsors": "TrendingPolitics",
       "weight": 0,
       "otherMatchup": true
     },
@@ -809,6 +1191,96 @@
       "otherMatchup": true
     },
     {
+      "pollster": "The Tyson Group",
+      "endDate": "2025-01-31",
+      "fieldDates": "2025-01-30 to 2025-01-31",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Marjorie Taylor Greene (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://dailycaller.com/2025/02/11/exclusive-early-polling-senate-race-democrats-kemp-offoff/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "The Tyson Group",
+      "endDate": "2025-01-31",
+      "fieldDates": "2025-01-30 to 2025-01-31",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Buddy Carter (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://dailycaller.com/2025/02/11/exclusive-early-polling-senate-race-democrats-kemp-offoff/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "The Tyson Group",
+      "endDate": "2025-01-31",
+      "fieldDates": "2025-01-30 to 2025-01-31",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Brian Kemp (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://dailycaller.com/2025/02/11/exclusive-early-polling-senate-race-democrats-kemp-offoff/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
       "pollster": "WPA Intelligence (R)",
       "endDate": "2025-01-15",
       "weight": 0,
@@ -831,9 +1303,72 @@
       "sourceUrl": "https://www.politico.com/news/2025/01/16/kemp-ossoff-poll-georgia-senate-00198719",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "January 14–15, 2025"
+      "fieldDates": "January 14–15, 2025",
+      "sponsors": "Club for Growth"
+    },
+    {
+      "pollster": "WPA Intelligence",
+      "endDate": "2025-01-15",
+      "fieldDates": "2025-01-14 to 2025-01-15",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Club for Growth",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Brad Raffensperger (R)",
+          "party": "R",
+          "pct": 32,
+          "percentage": 32
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/news/2025/01/16/kemp-ossoff-poll-georgia-senate-00198719",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "WPA Intelligence",
+      "endDate": "2025-01-15",
+      "fieldDates": "2025-01-14 to 2025-01-15",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Club for Growth",
+      "results": [
+        {
+          "candidate": "Brian Kemp (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/news/2025/01/16/kemp-ossoff-poll-georgia-senate-00198719",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

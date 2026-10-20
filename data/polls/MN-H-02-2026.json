@@ -1,7 +1,7 @@
 {
   "raceId": "MN-H-02-2026",
   "count": 3,
-  "updated_at": "2026-10-20T02:40:38.395Z",
+  "updated_at": "2026-10-20T14:20:53.489Z",
   "polls": [
     {
       "pollster": "Impact Research D-sponsored",
@@ -24,17 +24,18 @@
           "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/LittleCongress/status/2103102085076066771",
       "foundOn": [
-        "https://pollingsource.com/house/MN-02"
+        "https://pollingsource.com/house/MN-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2121
+      "weight": 0.2097
     },
     {
       "pollster": "Harper Polling (R)",
       "endDate": "2026-06-21",
-      "weight": 0.0555,
+      "weight": 0.0274,
       "sampleSize": 415,
       "population": "LV",
       "results": [
@@ -54,7 +55,11 @@
       "sourceUrl": "https://alphanews.org/exclusive-new-poll-shows-republican-eric-pratt-in-close-race-with-dfl-congressional-candidates/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-06-18 to 2026-06-21"
     },
     {
       "pollster": "Harper Polling",
@@ -77,12 +82,13 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://alphanews.org/exclusive-new-poll-shows-republican-eric-pratt-in-close-race-with-dfl-congressional-candidates/",
       "foundOn": [
-        "https://pollingsource.com/house/MN-02"
+        "https://pollingsource.com/house/MN-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0277,
+      "weight": 0.0274,
       "otherMatchup": true
     }
   ]

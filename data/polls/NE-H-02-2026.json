@@ -1,8 +1,43 @@
 {
   "raceId": "NE-H-02-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.420Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.501Z",
   "polls": [
+    {
+      "pollster": "National Public Affairs",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-10-02 to 2026-10-05",
+      "sampleSize": 377,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "God, Family, & Country PAC",
+      "results": [
+        {
+          "candidate": "Denise Powell (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Brinker Harding (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Eric Michael Foreman (LIB)",
+          "party": "O",
+          "pct": 6,
+          "percentage": 6
+        }
+      ],
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/Nebraska_General_Election_Memo_100926.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3028
+    },
     {
       "pollster": "SurveyUSA",
       "endDate": "2026-09-13",
@@ -24,12 +59,104 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://results.surveyusa.com/client/PollReport.aspx?g=d94236a7-5861-4b7f-9d81-d5a81ab786cc",
       "foundOn": [
-        "https://pollingsource.com/house/NE-02"
+        "https://pollingsource.com/house/NE-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.256
+      "sponsors": "Grant Forbes, LLC",
+      "weight": 0.2531
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-10-23",
+      "fieldDates": "2025-10-22 to 2025-10-23",
+      "sampleSize": 594,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://x.com/AlexThomas/status/1985443621689282924",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-10-23",
+      "fieldDates": "2025-10-22 to 2025-10-23",
+      "sampleSize": 594,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "John Cavanaugh (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://x.com/AlexThomas/status/1985443621689282924",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-10-23",
+      "fieldDates": "2025-10-22 to 2025-10-23",
+      "sampleSize": 594,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Denise Powell (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://x.com/AlexThomas/status/1985443621689282924",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
     }
   ]
 }

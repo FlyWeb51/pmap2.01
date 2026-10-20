@@ -1,7 +1,7 @@
 {
   "raceId": "OK-S-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.417Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.500Z",
   "polls": [
     {
       "pollster": "Cole Hargrave",
@@ -29,7 +29,7 @@
         "https://pollingsource.com/senate/OK"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1606
+      "weight": 0.1588
     },
     {
       "pollster": "CHS & Associates",
@@ -57,7 +57,102 @@
         "https://pollingsource.com/senate/OK"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1587
+      "weight": 0.1569
+    },
+    {
+      "pollster": "Cole Hargrave",
+      "endDate": "2026-08-06",
+      "fieldDates": "2026-08-03 to 2026-08-06",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Kevin Hern (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jim Priest (D)",
+          "party": "D",
+          "pct": 27,
+          "percentage": 27
+        },
+        {
+          "candidate": "Ron Meinhardt (I)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
+        },
+        {
+          "candidate": "Curtis Stinnett (I)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        },
+        {
+          "candidate": "Sevier White (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://chs-inc.com/general-election-rep/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1569,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Cole Hargrave",
+      "endDate": "2026-08-06",
+      "fieldDates": "2026-08-03 to 2026-08-06",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Kevin Hern (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "N'Kiyla Jasmine Thomas (D)",
+          "party": "D",
+          "pct": 25,
+          "percentage": 25
+        },
+        {
+          "candidate": "Curtis Stinnett (I)",
+          "party": "O",
+          "pct": 4,
+          "percentage": 4
+        },
+        {
+          "candidate": "Sevier White (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        },
+        {
+          "candidate": "Ron Meinhardt (I)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://chs-inc.com/general-election-rep/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1569
     }
   ]
 }

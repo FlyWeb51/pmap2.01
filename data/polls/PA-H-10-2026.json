@@ -1,8 +1,37 @@
 {
   "raceId": "PA-H-10-2026",
-  "count": 4,
-  "updated_at": "2026-10-20T02:40:38.406Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.494Z",
   "polls": [
+    {
+      "pollster": "Susquehanna Polling & Research, Inc.",
+      "endDate": "2026-10-11",
+      "fieldDates": "2026-10-05 to 2026-10-11",
+      "sampleSize": 300,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Janelle Stelson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Scott Perry (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://x.com/SusquehannaPR/status/2111471509856309679",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6205
+    },
     {
       "pollster": "Franklin & Marshall College",
       "endDate": "2026-09-20",
@@ -24,17 +53,18 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.wgal.com/article/pa-election-stelson-perry-shapiro-trump-poll/73836465",
       "foundOn": [
-        "https://pollingsource.com/house/PA-10"
+        "https://pollingsource.com/house/PA-10",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3964
+      "weight": 0.392
     },
     {
       "pollster": "Normington, Petts & Associates (D)",
       "endDate": "2026-04-23",
-      "weight": 0.0125,
+      "weight": 0.0062,
       "sampleSize": 400,
       "population": "RV",
       "results": [
@@ -54,12 +84,16 @@
       "sourceUrl": "https://www.inquirer.com/politics/election/live/pennsylvania-primary-election-2026-results-house-20260520.html/card-0290e37e-b5bd-4535-aa10-560706ae71ec",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-04-20 to 2026-04-23"
     },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2025-11-19",
-      "weight": 0.0004,
+      "weight": 0.0002,
       "sampleSize": 549,
       "population": "RV",
       "results": [
@@ -79,7 +113,12 @@
       "sourceUrl": "https://www.pennlive.com/politics/2025/12/rep-perry-underwater-with-voters-on-job-approval-trails-democrat-who-wants-to-unseat-him-poll.html",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "OTH",
+      "fieldDates": "2025-11-18 to 2025-11-19",
+      "sponsors": "Republicans Against Perry"
     },
     {
       "pollster": "Public Policy Polling (D)",
@@ -104,7 +143,12 @@
       "sourceUrl": "https://www.politico.com/f/?id=00000198-0716-dedb-a3ba-1f3fcb550000",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-07-10 to 2025-07-11",
+      "sponsors": "House Majority PAC"
     }
   ]
 }

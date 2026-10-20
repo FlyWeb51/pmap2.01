@@ -1,7 +1,7 @@
 {
   "raceId": "KY-S-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.391Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.486Z",
   "polls": [
     {
       "pollster": "Global Strategy Group",
@@ -24,12 +24,13 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://fox56news.com/news/kentucky/new-poll-shows-charles-booker-trailing-just-behind-andy-barr-in-race-for-senate/",
       "foundOn": [
-        "https://pollingsource.com/senate/KY"
+        "https://pollingsource.com/senate/KY",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1569
+      "weight": 0.1551
     },
     {
       "pollster": "Public Policy Polling (D)",
@@ -55,11 +56,101 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/KY"
+        "https://pollingsource.com/senate/KY",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2025-12-19",
       "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-12-19",
+      "fieldDates": "2025-12-18 to 2025-12-19",
+      "sampleSize": 648,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Charles Booker (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        }
+      ],
+      "sourceUrl": "https://www.kentucky.com/news/politics-government/article314061118.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0004,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-12-19",
+      "fieldDates": "2025-12-18 to 2025-12-19",
+      "sampleSize": 650,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Daniel Cameron (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Charles Booker (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://www.kentucky.com/news/politics-government/article314061118.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0004,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-12-19",
+      "fieldDates": "2025-12-18 to 2025-12-19",
+      "sampleSize": 650,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Andy Barr (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Charles Booker (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.kentucky.com/news/politics-government/article314061118.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0004
     }
   ]
 }

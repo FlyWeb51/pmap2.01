@@ -1,12 +1,12 @@
 {
   "raceId": "NC-H-14-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.399Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.491Z",
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-12",
-      "weight": 0.0053,
+      "weight": 0.0026,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -26,7 +26,42 @@
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-03-10 to 2026-03-12",
+      "sponsors": "Conservatives for America"
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2026-03-12",
+      "fieldDates": "2026-03-10 to 2026-03-12",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Conservatives for America",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0026,
+      "otherMatchup": true
     }
   ]
 }

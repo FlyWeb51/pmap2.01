@@ -1,7 +1,7 @@
 {
   "raceId": "GA-H-11-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.420Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.501Z",
   "polls": [
     {
       "pollster": "Miller Consulting Services",
@@ -9,7 +9,7 @@
       "fieldDates": "2026-09-11",
       "sampleSize": 402,
       "population": "LV",
-      "partisan": null,
+      "partisan": "D",
       "results": [
         {
           "candidate": "Chris Harden (D)",
@@ -24,12 +24,43 @@
           "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://s3.documentcloud.org/documents/28652259/ga-11-miller-consulting-services-for-chris-harden-sept-2026.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/GA-11"
+        "https://pollingsource.com/house/GA-11",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3632
+      "weight": 0.1796
+    },
+    {
+      "pollster": "Miller Consulting Services",
+      "endDate": "2026-09-11",
+      "fieldDates": "2026-08-31 to 2026-09-11",
+      "sampleSize": 402,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://s3.documentcloud.org/documents/28652259/ga-11-miller-consulting-services-for-chris-harden-sept-2026.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1796,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "TN-H-05-2026",
   "count": 3,
-  "updated_at": "2026-10-20T02:40:38.408Z",
+  "updated_at": "2026-10-20T14:20:53.496Z",
   "polls": [
     {
       "pollster": "Impact Research",
@@ -24,12 +24,13 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.tennessean.com/story/news/politics/elections/2026/10/07/poll-molder-hatcher-congress-election/92135891007/",
       "foundOn": [
-        "https://pollingsource.com/house/TN-05"
+        "https://pollingsource.com/house/TN-05",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3378
+      "weight": 0.334
     },
     {
       "pollster": "Impact Research",
@@ -52,17 +53,18 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://drive.google.com/file/d/1uxQx1A1gQ3pEGYDShe130whSBQoEcImW/view?usp=sharing",
       "foundOn": [
-        "https://pollingsource.com/house/TN-05"
+        "https://pollingsource.com/house/TN-05",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1336
+      "weight": 0.1321
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-13",
-      "weight": 0.0261,
+      "weight": 0.0129,
       "sampleSize": 558,
       "population": "LV",
       "results": [
@@ -82,8 +84,12 @@
       "sourceUrl": "https://www.nationaljournal.com/s/732074/exclusive-internal-poll-gives-dems-hope-in-tn-05/?unlock=WPL7HCG2TH9QWY2X",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "D",
+      "fieldDates": "2026-05-11 to 2026-05-13"
     }
   ]
 }

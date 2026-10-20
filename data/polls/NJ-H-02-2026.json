@@ -1,6 +1,36 @@
 {
   "raceId": "NJ-H-02-2026",
-  "count": 0,
-  "polls": [],
-  "note": "Only generic-ballot style questions exist for this district (Generic Democrat vs Generic Republican). That is not a candidate matchup, so no poll is shown."
+  "count": 1,
+  "updated_at": "2026-10-20T14:20:53.507Z",
+  "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-05-22",
+      "fieldDates": "2025-05-21 to 2025-05-22",
+      "sampleSize": 505,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "Voter Protection Project",
+      "results": [
+        {
+          "candidate": "Jeff Van Drew (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": "https://newjerseyglobe.com/congress/dem-group-polling-in-nj-2-as-party-looks-to-expand-playing-field/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0
+    }
+  ]
 }

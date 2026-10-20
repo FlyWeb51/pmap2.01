@@ -1,7 +1,7 @@
 {
   "raceId": "TX-H-34-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.410Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.496Z",
   "polls": [
     {
       "pollster": "Public Policy Research/Texas Southern University",
@@ -29,12 +29,53 @@
         "https://pollingsource.com/house/TX-34"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3019
+      "weight": 0.2986
+    },
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "endDate": "2026-08-22",
+      "fieldDates": "2026-08-18 to 2026-08-22",
+      "sampleSize": 700,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Vicente Gonzalez (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Eric Flores (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Eddie Espinoza (GRE)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        },
+        {
+          "candidate": "Chris Royal (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6a8debe648e3721adb0534b6/1787685864204/SouthTexasCDs2026.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2986
     },
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-06-16",
-      "weight": 0.0243,
+      "weight": 0.024,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -55,7 +96,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/TX-34"
+        "https://pollingsource.com/house/TX-34",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "R",
       "fieldDates": "2026-06-16"
@@ -63,7 +105,7 @@
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-29",
-      "weight": 0.0223,
+      "weight": 0.011,
       "sampleSize": 777,
       "population": "LV",
       "results": [
@@ -83,7 +125,42 @@
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-04-25 to 2026-04-29",
+      "sponsors": "NRCC"
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-04-29",
+      "fieldDates": "2026-04-25 to 2026-04-29",
+      "sampleSize": 777,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "NRCC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.011,
+      "otherMatchup": true
     }
   ]
 }

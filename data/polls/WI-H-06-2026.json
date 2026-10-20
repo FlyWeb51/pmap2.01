@@ -1,12 +1,12 @@
 {
   "raceId": "WI-H-06-2026",
   "count": 1,
-  "updated_at": "2026-10-20T02:40:38.414Z",
+  "updated_at": "2026-10-20T14:20:53.499Z",
   "polls": [
     {
       "pollster": "Tavern Research (I)",
       "endDate": "2026-05-28",
-      "weight": 0.0327,
+      "weight": 0.0162,
       "sampleSize": 437,
       "population": "LV",
       "results": [
@@ -26,7 +26,12 @@
       "sourceUrl": "https://www.tavernresearch.com/research-and-writings/wi06-grothman-independent-halves-margin",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "IND",
+      "fieldDates": "2026-05-18 to 2026-05-28",
+      "sponsors": "Contours Inc."
     }
   ]
 }

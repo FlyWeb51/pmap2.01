@@ -1,7 +1,7 @@
 {
   "raceId": "OH-S-2026",
-  "count": 39,
-  "updated_at": "2026-10-20T02:40:38.404Z",
+  "count": 47,
+  "updated_at": "2026-10-20T14:20:53.493Z",
   "polls": [
     {
       "pollster": "ActiVote",
@@ -24,12 +24,42 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.activote.net/polls/2026/oh-u-s-senate/2026-10-18/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8518
+      "weight": 0.8423
+    },
+    {
+      "pollster": "Marist University",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-15 to 2026-10-18",
+      "sampleSize": 1176,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-october-2026/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.4443
     },
     {
       "pollster": "Rasmussen Reports",
@@ -57,7 +87,48 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1656
+      "weight": 1.1526
+    },
+    {
+      "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
+      "endDate": "2026-10-09",
+      "fieldDates": "2026-09-29 to 2026-10-09",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Gregory Levy (I)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
+        },
+        {
+          "candidate": "Bill Redpath (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1030&context=depo",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0818
     },
     {
       "pollster": "co/efficient",
@@ -68,24 +139,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Brown (D)",
+          "candidate": "Generic Democrat (D)",
           "party": "D",
           "pct": 45,
           "percentage": 45
         },
         {
-          "candidate": "Husted (R)",
+          "candidate": "Generic Republican (R)",
           "party": "R",
           "pct": 46,
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://battlegrounds.coefficient.org/oh/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4909
+      "weight": 0.4854,
+      "otherMatchup": true
     },
     {
       "pollster": "CNN",
@@ -113,7 +186,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8695
+      "weight": 0.8598
     },
     {
       "pollster": "SSRS",
@@ -141,7 +214,42 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8695
+      "weight": 0.8598
+    },
+    {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-09-29 to 2026-10-05",
+      "sampleSize": 760,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": null,
+          "pct": 5,
+          "percentage": 5
+        }
+      ],
+      "sourceUrl": "https://edition.cnn.com/2026/10/08/politics/cnn-polls-ohio-iowa-senate-governor-midterms",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8598
     },
     {
       "pollster": "NY Times/Siena",
@@ -169,7 +277,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7137
+      "weight": 0.7058
     },
     {
       "pollster": "New York Times/Siena University",
@@ -197,7 +305,36 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7137
+      "weight": 0.7058
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-09-22 to 2026-10-01",
+      "sampleSize": 616,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 48.76,
+          "percentage": 48.76
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 46.09,
+          "percentage": 46.09
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/03/polls/times-siena-ohio-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7058
     },
     {
       "pollster": "YouGov",
@@ -220,12 +357,13 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_oh_20260921_lv.pdf",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2567
+      "weight": 1.2426
     },
     {
       "pollster": "InsiderAdvantage",
@@ -248,12 +386,13 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-ohio-senate-race-narrows-to-brown-up-by-one/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4756
+      "weight": 0.4703
     },
     {
       "pollster": "Marist University",
@@ -276,12 +415,13 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://maristpoll.marist.edu/polls/midterm-elections-in-ohio-september-2026/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8501
+      "weight": 0.8406
     },
     {
       "pollster": "Big Data Poll",
@@ -292,24 +432,26 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Brown (D)",
+          "candidate": "Sherrod Brown (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
         },
         {
-          "candidate": "Husted (R)",
+          "candidate": "Jon Husted (R)",
           "party": "R",
           "pct": 41,
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/buckeye-state-poll-sherrod-brown-leads-jon-husted-for-us-senate-in-ohio/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6827
+      "sponsors": "Public Polling Project",
+      "weight": 0.6751
     },
     {
       "pollster": "USA Today/Suffolk",
@@ -337,7 +479,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5863
+      "weight": 0.5797
     },
     {
       "pollster": "Big Data Poll R-sponsored",
@@ -360,12 +502,14 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/buckeye-state-poll-sherrod-brown-leads-jon-husted-for-us-senate-in-ohio/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3418
+      "sponsors": "Public Polling Project",
+      "weight": 0.338
     },
     {
       "pollster": "Suffolk University",
@@ -388,12 +532,14 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/other-states#collapse-September-29-2026-Ohio-Governor-and-US-Senate-with-USA-TODAY-Network-Ohio",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5863
+      "sponsors": "USA Today",
+      "weight": 0.5797
     },
     {
       "pollster": "Quantus Insights",
@@ -404,24 +550,25 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Brown (D)",
+          "candidate": "Sherrod Brown (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
         },
         {
-          "candidate": "Husted (R)",
+          "candidate": "Jon Husted (R)",
           "party": "R",
           "pct": 47,
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/polling/f/brown-and-husted-deadlocked-in-ohio-senate-race",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6302
+      "weight": 0.6231
     },
     {
       "pollster": "Rasmussen Reports",
@@ -449,7 +596,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3991
+      "weight": 0.3946
     },
     {
       "pollster": "Trafalgar Group",
@@ -472,12 +619,13 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/oh-senate-0917/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3349
+      "weight": 0.3312
     },
     {
       "pollster": "Bowling Green State University/YouGov",
@@ -505,7 +653,48 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5598
+      "weight": 0.5535
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-01 to 2026-09-10",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Bowling Green State University",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Gregory Levy (I)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        },
+        {
+          "candidate": "Bill Redpath (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/16DCSUQaBOGTTk0u3flp6q0uwC6AO8euZ/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5535
     },
     {
       "pollster": "Insider Advantage",
@@ -528,18 +717,19 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/top-line-tabs-ohio/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2996
+      "weight": 0.2963
     },
     {
       "pollster": "Abacus Data",
       "endDate": "2026-08-29",
       "fieldDates": "2026-08-29",
-      "sampleSize": null,
+      "sampleSize": 500,
       "population": "LV",
       "partisan": null,
       "results": [
@@ -556,12 +746,42 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://abacusdata.ca/the-trade-war-next-door-what-american-voters-think-about-tariffs-canada-and-the-battle-for-the-u-s-senate/",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3
+      "weight": 0.2966
+    },
+    {
+      "pollster": "Abacus Data",
+      "endDate": "2026-08-28",
+      "fieldDates": "2026-08-26 to 2026-08-28",
+      "sampleSize": 306,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://abacusdata.ca/the-trade-war-next-door-what-american-voters-think-about-tariffs-canada-and-the-battle-for-the-u-s-senate/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2268
     },
     {
       "pollster": "Wedgewood Polls",
@@ -584,12 +804,13 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://drive.google.com/file/d/1rP-26-yqNx9jy_gRqoLDmgJgzm5X8a4O/view",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2622
+      "weight": 0.2593
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -612,12 +833,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-economic-anxiety-candidate-concerns-define-ohio-senate-race",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1236
+      "sponsors": "Fox News",
+      "weight": 0.1222
     },
     {
       "pollster": "FOX News",
@@ -645,7 +868,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2471
+      "weight": 0.2444
     },
     {
       "pollster": "Tulchin Research",
@@ -668,17 +891,18 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.the-downballot.com/p/morning-digest-sponsored-by-the-michigan-a7b",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0922
+      "weight": 0.0912
     },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-28",
-      "weight": 0.0785,
+      "weight": 0.0776,
       "sampleSize": 601,
       "population": "LV",
       "results": [
@@ -698,7 +922,10 @@
       "sourceUrl": "https://www.nytimes.com/interactive/2026/07/01/polls/times-siena-ohio-poll-crosstabs.html",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-15 to 2026-06-28"
     },
     {
       "pollster": "New York Times/Siena University",
@@ -726,12 +953,12 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0785
+      "weight": 0.0776
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
       "endDate": "2026-06-16",
-      "weight": 0.0343,
+      "weight": 0.0339,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -752,15 +979,17 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-06-16"
+      "fieldDates": "2026-06-16",
+      "sponsors": "AARP"
     },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-06-04",
-      "weight": 0.0225,
+      "weight": 0.0223,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -781,7 +1010,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/OH"
+        "https://pollingsource.com/senate/OH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-06-04"
@@ -789,7 +1019,7 @@
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-01",
-      "weight": 0.0492,
+      "weight": 0.0487,
       "sampleSize": 1015,
       "population": "RV",
       "results": [
@@ -809,12 +1039,16 @@
       "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-democratic-unity-republican-crossovers-shape-ohio-senate-race",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-05-28 to 2026-06-01",
+      "sponsors": "Fox News"
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
       "endDate": "2026-04-14",
-      "weight": 0.0161,
+      "weight": 0.0159,
       "sampleSize": 1000,
       "population": "RV",
       "results": [
@@ -834,12 +1068,15 @@
       "sourceUrl": "https://scholarworks.bgsu.edu/depo/21/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-04-07 to 2026-04-14"
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0102,
+      "weight": 0.0101,
       "sampleSize": 413,
       "population": "LV",
       "results": [
@@ -859,7 +1096,11 @@
       "sourceUrl": "https://netchoice.org/new-72-of-americans-want-regulators-to-focus-on-lowering-prices-ahead-of-midterms-not-punishing-success/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-04-03 to 2026-04-09",
+      "sponsors": "NetChoice"
     },
     {
       "pollster": "Quantus Insights",
@@ -884,12 +1125,15 @@
       "sourceUrl": "https://quantusinsights.org/f/quantus-insights-ohio-voters-signal-competitive-2026-environment",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-03-13 to 2026-03-14"
     },
     {
       "pollster": "OnMessage Inc.",
       "endDate": "2026-03-08",
-      "weight": 0.0059,
+      "weight": 0.0058,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -909,12 +1153,16 @@
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/03/11/the-white-house-pain-threshold-00822448",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-03-03 to 2026-03-08",
+      "sponsors": "Insurance Watchdog Coalition"
     },
     {
       "pollster": "EMC Research (D)",
       "endDate": "2026-02-22",
-      "weight": 0.0064,
+      "weight": 0.0032,
       "sampleSize": 1343,
       "population": "LV",
       "results": [
@@ -934,7 +1182,12 @@
       "sourceUrl": "https://theoec.org/wp-content/uploads/2026/03/OEC-Ohio-Survey-Results-2026.pdf",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-02-10 to 2026-02-22",
+      "sponsors": "Ohio Environmental Council"
     },
     {
       "pollster": "Emerson College",
@@ -959,7 +1212,10 @@
       "sourceUrl": "https://emersoncollegepolling.com/ohio-2026-poll-democrats-make-gains-in-races-for-governor-and-us-senate/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-12-06 to 2025-12-08"
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
@@ -984,7 +1240,10 @@
       "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1013&context=depo",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-10-02 to 2025-10-14"
     },
     {
       "pollster": "Emerson College",
@@ -1009,7 +1268,10 @@
       "sourceUrl": "https://emersoncollegepolling.com/ohio-2026/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-08-18 to 2025-08-19"
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
@@ -1034,7 +1296,40 @@
       "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1009&context=depo",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-04-18 to 2025-04-24"
+    },
+    {
+      "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
+      "endDate": "2025-04-24",
+      "fieldDates": "2025-04-18 to 2025-04-24",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Tim Ryan (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1009&context=depo",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
@@ -1059,7 +1354,40 @@
       "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1007&context=depo",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-02-14 to 2025-02-21"
+    },
+    {
+      "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
+      "endDate": "2025-02-21",
+      "fieldDates": "2025-02-14 to 2025-02-21",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Tim Ryan (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://scholarworks.bgsu.edu/cgi/viewcontent.cgi?article=1007&context=depo",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

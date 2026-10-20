@@ -1,7 +1,7 @@
 {
   "raceId": "NH-H-02-2026",
-  "count": 8,
-  "updated_at": "2026-10-20T02:40:38.400Z",
+  "count": 9,
+  "updated_at": "2026-10-20T14:20:53.491Z",
   "polls": [
     {
       "pollster": "University of New Hampshire",
@@ -24,12 +24,13 @@
           "percentage": 35
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1005/",
       "foundOn": [
-        "https://pollingsource.com/house/NH-02"
+        "https://pollingsource.com/house/NH-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6047
+      "weight": 0.598
     },
     {
       "pollster": "Saint Anselm College",
@@ -57,12 +58,41 @@
         "https://pollingsource.com/house/NH-02"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2755
+      "weight": 0.2724
+    },
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-08-18",
+      "fieldDates": "2026-08-17 to 2026-08-18",
+      "sampleSize": 701,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Maggie Goodlander (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Lily Tang Williams (R)",
+          "party": "R",
+          "pct": 35,
+          "percentage": 35
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-republicans-facing-midterm-headwinds-democratic-lead-widens",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2724
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2026-06-25",
-      "weight": 0.0762,
+      "weight": 0.0753,
       "sampleSize": 802,
       "population": "RV",
       "results": [
@@ -82,12 +112,15 @@
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/saint-anselm-college-survey-center-june-poll-finds-democrats-expand-generic-ballot-lead",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-24 to 2026-06-25"
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2026-03-18",
-      "weight": 0.0074,
+      "weight": 0.0073,
       "sampleSize": 739,
       "population": "RV",
       "results": [
@@ -107,7 +140,10 @@
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-democrats-gaining-ground-republicans-face-political-headwinds",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-03-16 to 2026-03-18"
     },
     {
       "pollster": "University of New Hampshire",
@@ -132,7 +168,10 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/922/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-01-15 to 2026-01-19"
     },
     {
       "pollster": "St. Anselm",
@@ -157,7 +196,10 @@
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-declining-optimism-democracy-dominant-issue-and-early-partisan-divides-ahead-2026",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-11-18 to 2025-11-19"
     },
     {
       "pollster": "University of New Hampshire",
@@ -182,7 +224,10 @@
       "sourceUrl": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1887&context=survey_center_polls",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-09-17 to 2025-09-23"
     },
     {
       "pollster": "St. Anselm",
@@ -207,7 +252,10 @@
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-survey-center-poll-reveals-shifting-political-landscape-ahead-2028-primary",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-08-26 to 2025-08-27"
     }
   ]
 }

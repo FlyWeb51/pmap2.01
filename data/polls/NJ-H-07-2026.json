@@ -1,7 +1,7 @@
 {
   "raceId": "NJ-H-07-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.401Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.492Z",
   "polls": [
     {
       "pollster": "StimSight Research",
@@ -18,23 +18,25 @@
           "percentage": 47
         },
         {
-          "candidate": "Tom Kean Jr. (R)",
+          "candidate": "Thomas H. Kean Jr. (R)",
           "party": "R",
           "pct": 42,
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.insidernj.com/insider-nj-stimsight-poll-finds-bennett-leads-kean-in-new-jerseys-7th-district-affordability-of-household-goods-is-a-crucial-factor-for-persuadable-voters/",
       "foundOn": [
-        "https://pollingsource.com/house/NJ-07"
+        "https://pollingsource.com/house/NJ-07",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4137
+      "sponsors": "InsiderNJ",
+      "weight": 0.4091
     },
     {
       "pollster": "Z to A Research (D)",
       "endDate": "2026-05-26",
-      "weight": 0.031,
+      "weight": 0.0153,
       "sampleSize": 430,
       "population": "LV",
       "results": [
@@ -54,35 +56,13 @@
       "sourceUrl": "https://newjerseyglobe.com/congress/shah-leads-kean-in-head-to-head-matchup-allied-groups-poll-says/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "Z to A Research",
-      "endDate": "2026-05-26",
-      "fieldDates": "2026-05-26",
-      "sampleSize": 430,
-      "population": "LV",
-      "partisan": "D",
-      "results": [
-        {
-          "candidate": "Rebecca Bennett (D)",
-          "party": "D",
-          "pct": 47,
-          "percentage": 47
-        },
-        {
-          "candidate": "Tom Kean Jr. (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        }
-      ],
-      "sourceUrl": null,
       "foundOn": [
-        "https://pollingsource.com/house/NJ-07"
+        "https://pollingsource.com/house/NJ-07",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "reviewStatus": "auto",
-      "weight": 0.0155
+      "partisan": "D",
+      "fieldDates": "2026-05-26",
+      "sponsors": "314 Action"
     }
   ]
 }

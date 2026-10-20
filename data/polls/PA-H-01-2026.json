@@ -1,8 +1,37 @@
 {
   "raceId": "PA-H-01-2026",
-  "count": 5,
-  "updated_at": "2026-10-20T02:40:38.405Z",
+  "count": 7,
+  "updated_at": "2026-10-20T14:20:53.494Z",
   "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-10-01 to 2026-10-08",
+      "sampleSize": 1032,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Brian Fitzpatrick (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Bob Harvie (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/10/11/oct-7-and-nov-3-01115941",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5369
+    },
     {
       "pollster": "Public Opinion Strategies R-sponsored",
       "endDate": "2026-09-14",
@@ -24,12 +53,14 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/lisakashinsky/status/2100574733318193390",
       "foundOn": [
-        "https://pollingsource.com/house/PA-01"
+        "https://pollingsource.com/house/PA-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1747
+      "sponsors": "NRCC",
+      "weight": 0.1728
     },
     {
       "pollster": "GQR D-sponsored",
@@ -57,7 +88,36 @@
         "https://pollingsource.com/house/PA-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0993
+      "weight": 0.0982
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-08-23",
+      "fieldDates": "2026-08-19 to 2026-08-23",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Brian Fitzpatrick (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Bob Harvie (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2094396860207088039?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1155
     },
     {
       "pollster": "Global Strategy Group",
@@ -80,17 +140,18 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://politicspa.com/internal-pa-01-poll-shows-harvie-within-margin-of-error-against-fitzpatrick/150216/",
       "foundOn": [
-        "https://pollingsource.com/house/PA-01"
+        "https://pollingsource.com/house/PA-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0945
+      "weight": 0.0934
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-03-22",
-      "weight": 0.0067,
+      "weight": 0.0033,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -110,12 +171,16 @@
       "sourceUrl": "https://www.politicspa.com/can-bob-harvie-end-brian-fitzpatricks-tenure-in-congress/146005/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-03-19 to 2026-03-22"
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-10-11",
-      "weight": 0.0002,
+      "weight": 0.0001,
       "sampleSize": 585,
       "population": "LV",
       "results": [
@@ -135,7 +200,11 @@
       "sourceUrl": "https://www.notus.org/campaigns/brian-fitzpatrick-democratic-challenger-bob-harvie-poll-race",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-10-10 to 2025-10-11"
     }
   ]
 }

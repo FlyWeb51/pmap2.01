@@ -1,12 +1,124 @@
 {
   "raceId": "VT-H-01-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.412Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.498Z",
   "polls": [
+    {
+      "pollster": "Braun Research",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-10 to 2026-09-21",
+      "sampleSize": 732,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Vermont Public Radio",
+      "results": [
+        {
+          "candidate": "Becca Balint (D)",
+          "party": "D",
+          "pct": 46.92,
+          "percentage": 46.92
+        },
+        {
+          "candidate": "Gerald Malloy (R)",
+          "party": "R",
+          "pct": 30.25,
+          "percentage": 30.25
+        },
+        {
+          "candidate": "Suzanne Seymour (I)",
+          "party": "O",
+          "pct": 1.9,
+          "percentage": 1.9
+        },
+        {
+          "candidate": "Adam Ortiz (I)",
+          "party": "O",
+          "pct": 1.33,
+          "percentage": 1.33
+        },
+        {
+          "candidate": "None/other (NON)",
+          "party": null,
+          "pct": 1.16,
+          "percentage": 1.16
+        },
+        {
+          "candidate": "Ryan Walton (I)",
+          "party": "O",
+          "pct": 0.51,
+          "percentage": 0.51
+        },
+        {
+          "candidate": "Phoenix Altair (I)",
+          "party": "O",
+          "pct": 0.16,
+          "percentage": 0.16
+        }
+      ],
+      "sourceUrl": "https://www.vermontpublic.org/local-news/2026-09-28/vermont-general-election-poll-results-2026",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6106
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-17 to 2026-09-21",
+      "sampleSize": 830,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Becca Balint (D)",
+          "party": "D",
+          "pct": 66,
+          "percentage": 66
+        },
+        {
+          "candidate": "Gerald Malloy (R)",
+          "party": "R",
+          "pct": 30,
+          "percentage": 30
+        },
+        {
+          "candidate": "Suzanne Seymour (I)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Ryan Walton (I)",
+          "party": "O",
+          "pct": 0,
+          "percentage": 0
+        },
+        {
+          "candidate": "Adam Ortiz (I)",
+          "party": "O",
+          "pct": 0,
+          "percentage": 0
+        },
+        {
+          "candidate": "Phoenix Altair (I)",
+          "party": "O",
+          "pct": 0,
+          "percentage": 0
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1006/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6502
+    },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-07-20",
-      "weight": 0.164,
+      "weight": 0.1622,
       "sampleSize": 949,
       "population": "LV",
       "results": [
@@ -26,12 +138,15 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/982/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-07-15 to 2026-07-20"
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.0842,
+      "weight": 0.0833,
       "sampleSize": 872,
       "population": "LV",
       "results": [
@@ -51,7 +166,10 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/970/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-18 to 2026-06-23"
     }
   ]
 }

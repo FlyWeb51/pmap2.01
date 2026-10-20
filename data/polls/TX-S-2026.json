@@ -1,7 +1,7 @@
 {
   "raceId": "TX-S-2026",
-  "count": 77,
-  "updated_at": "2026-10-20T02:40:38.410Z",
+  "count": 108,
+  "updated_at": "2026-10-20T14:20:53.497Z",
   "polls": [
     {
       "pollster": "CBS News/YouGov",
@@ -12,16 +12,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 49,
-          "percentage": 49
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 51,
           "percentage": 51
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
       "sourceUrl": null,
@@ -30,7 +30,36 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5709
+      "weight": 1.5533
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-16",
+      "fieldDates": "2026-10-08 to 2026-10-16",
+      "sampleSize": 1458,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "CBS News",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": "https://www.cbsnews.com/news/texas-senate-talarico-paxton-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.5355
     },
     {
       "pollster": "ActiVote",
@@ -41,25 +70,26 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 48,
-          "percentage": 48
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 52,
           "percentage": 52
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.activote.net/polls/2026/tx-u-s-senate/2026-10-14/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7766
+      "weight": 0.768
     },
     {
       "pollster": "InsiderAdvantage",
@@ -70,25 +100,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 49,
-          "percentage": 49
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-senate-surveys-texas-paxton-49-talarico-48-kansas-marshall-48-hamilton-47-maine-jackson-49-collins-47/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6726
+      "weight": 0.6651
     },
     {
       "pollster": "Marist Poll",
@@ -116,22 +147,16 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8683
+      "weight": 0.8586
     },
     {
-      "pollster": "University of Houston",
+      "pollster": "University of Houston Hobby School of Public Affairs",
       "endDate": "2026-10-14",
       "fieldDates": "October 10–14, 2026",
       "sampleSize": 2000,
-      "population": null,
+      "population": "LV",
       "partisan": null,
       "results": [
-        {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 46,
-          "percentage": 46
-        },
         {
           "candidate": "James Talarico (D)",
           "party": "D",
@@ -139,18 +164,25 @@
           "percentage": 48
         },
         {
-          "candidate": "Ted Brown (L)",
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
           "party": "O",
           "pct": 3,
           "percentage": 3
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.uh.edu/hobby/texas2026/index.php",
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4761
+      "weight": 1.7172
     },
     {
       "pollster": "Quantus Insights",
@@ -161,54 +193,56 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 47,
-          "percentage": 47
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
-          "pct": 47,
-          "percentage": 47
+          "pct": 46.7,
+          "percentage": 46.7
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 47.2,
+          "percentage": 47.2
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/f/texas-senate-paxton-and-talarico-in-a-near-tie",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5294
+      "weight": 0.5235
     },
     {
       "pollster": "Marist University",
       "endDate": "2026-10-11",
       "fieldDates": "October 8–11, 2026",
-      "sampleSize": null,
+      "sampleSize": 1196,
       "population": "LV",
       "partisan": null,
       "results": [
-        {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
         {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-october-2026/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8102
+      "weight": 1.239
     },
     {
       "pollster": "Trafalgar Group",
@@ -219,28 +253,29 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/tx-senate-gen-1009/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.557
+      "weight": 0.5508
     },
     {
-      "pollster": "ReconMR/Siena University",
+      "pollster": "ReconMR/Siena Research Institute",
       "endDate": "2026-10-08",
       "fieldDates": "October 5–8, 2026",
       "sampleSize": 617,
@@ -248,25 +283,26 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://reconmr.com/wp-content/uploads/2026/10/TXP004-October-Press-Release.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8397
+      "weight": 0.8303
     },
     {
       "pollster": "YouGov",
@@ -277,25 +313,26 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_tx_20260921_lv.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4106
+      "weight": 1.3948
     },
     {
       "pollster": "University of Texas/Texas Politics Project",
@@ -306,16 +343,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 47,
-          "percentage": 47
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
       "sourceUrl": null,
@@ -324,7 +361,42 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9255
+      "weight": 0.9152
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-09-25 to 2026-10-05",
+      "sampleSize": 861,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "University of Texas",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://texaspolitics.utexas.edu/blog/latest-ut-texas-politics-poll-finds-historic-levels-of-competition-in-texas-midterm-elections",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9152
     },
     {
       "pollster": "New York Times/Siena University",
@@ -335,16 +407,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 51,
           "percentage": 51
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": null,
@@ -353,7 +425,36 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6969
+      "weight": 0.6891
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-21 to 2026-09-30",
+      "sampleSize": 615,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 50.8,
+          "percentage": 50.8
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45.09,
+          "percentage": 45.09
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/03/polls/times-siena-texas-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6891
     },
     {
       "pollster": "Rasmussen Reports",
@@ -364,16 +465,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": null,
@@ -382,10 +483,10 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9222
+      "weight": 0.9119
     },
     {
-      "pollster": "Beacon Research/ Shaw & Co. Research",
+      "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-09-28",
       "fieldDates": "September 24–28, 2026",
       "sampleSize": 881,
@@ -393,25 +494,27 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 49,
-          "percentage": 49
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 51,
           "percentage": 51
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-its-lone-star-senate-showdown-between-talarico-paxton",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3982
+      "sponsors": "Fox News",
+      "weight": 0.3937
     },
     {
       "pollster": "Guidant Polling & Strategy R-sponsored",
@@ -422,25 +525,27 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://static01.nyt.com/newsgraphics/documenttools/b31cf2744465b8b7/1a8b655b-full.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3795
+      "sponsors": "Public First Action",
+      "weight": 0.3752
     },
     {
       "pollster": "UMass Lowell/YouGov",
@@ -451,14 +556,14 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
+          "candidate": "James Talarico (D)",
+          "party": "D",
           "pct": 45,
           "percentage": 45
         },
         {
-          "candidate": "James Talarico (D)",
-          "party": "D",
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
           "pct": 45,
           "percentage": 45
         }
@@ -469,7 +574,42 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7823
+      "weight": 0.7735
+    },
+    {
+      "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
+      "endDate": "2026-09-28",
+      "fieldDates": "2026-09-18 to 2026-09-28",
+      "sampleSize": 850,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://www.uml.edu/news/press-releases/2026/10092026-texas-poll.aspx",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7735
     },
     {
       "pollster": "Pulse Decision Science<!--this is the source used by NYT in its polls collection page -->",
@@ -480,25 +620,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 48,
-          "percentage": 48
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 45,
           "percentage": 45
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.elpasotimes.com/story/news/politics/elections/2026/10/01/talarico-trails-paxton-in-conservative-texas-us-senate-race-poll/92022294007/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3708
+      "weight": 0.3666
     },
     {
       "pollster": "Big Data Poll",
@@ -509,25 +650,27 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/lone-star-state-poll-talarico-paxton-in-close-race-us-senate-in-texas/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6769
+      "sponsors": "Public Polling Project",
+      "weight": 0.6693
     },
     {
       "pollster": "Stratus Intelligence R-sponsored",
@@ -538,25 +681,27 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 48,
-          "percentage": 48
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/09/28/trumps-joes-exit-the-front-row-01094720",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3579
+      "sponsors": "Texans for a Conservative Majority",
+      "weight": 0.3539
     },
     {
       "pollster": "Texas Public Opinion Research",
@@ -567,16 +712,16 @@
       "partisan": "D",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
       "sourceUrl": null,
@@ -585,7 +730,42 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3706
+      "weight": 0.3665
+    },
+    {
+      "pollster": "Slingshot Strategies",
+      "endDate": "2026-09-22",
+      "fieldDates": "2026-09-19 to 2026-09-22",
+      "sampleSize": 1007,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Texas Public Opinion Research",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://texaspublicopinionresearch.substack.com/p/new-poll-in-texas-general-election-662",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7329
     },
     {
       "pollster": "Marist University",
@@ -596,25 +776,26 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://maristpoll.marist.edu/polls/2026-midterm-elections-in-texas-september-2026/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6774
+      "weight": 0.6699
     },
     {
       "pollster": "Texas Southern University",
@@ -625,16 +806,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 46,
-          "percentage": 46
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
       "sourceUrl": null,
@@ -643,7 +824,42 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9246
+      "weight": 0.9143
+    },
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "endDate": "2026-09-19",
+      "fieldDates": "2026-09-15 to 2026-09-19",
+      "sampleSize": 1800,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6ab15cb39e4cc420b9ef07f5/1790008500236/TSUSept2026_TXStatewideRaces.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9143
     },
     {
       "pollster": "Trafalgar Group",
@@ -654,25 +870,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/tx-general-0918/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3418
+      "weight": 0.338
     },
     {
       "pollster": "Emerson College",
@@ -683,25 +900,27 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 46,
-          "percentage": 46
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll-talarico-and-paxton-in-dead-heat-abbott-maintains-edge/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.614
+      "sponsors": "Nexstar",
+      "weight": 0.6071
     },
     {
       "pollster": "SoCal Strategies",
@@ -712,28 +931,29 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://socalstrategies.substack.com/p/new-socal-strategies-poll-james-talarico",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2417
+      "weight": 0.239
     },
     {
-      "pollster": "ReconMR/Siena University",
+      "pollster": "ReconMR/Siena Research Institute",
       "endDate": "2026-09-11",
       "fieldDates": "September 8–11, 2026",
       "sampleSize": 614,
@@ -741,28 +961,29 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://sri.siena.edu/2026/09/17/hinojosa-now-leads-abbott-by-4-points-talarico-widens-lead-to-6-points/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4489
+      "weight": 0.4439
     },
     {
-      "pollster": "Mason-Dixon Polling & Strategy",
+      "pollster": "Mason-Dixon Polling & Research, Inc.",
       "endDate": "2026-09-10",
       "fieldDates": "September 8–10, 2026",
       "sampleSize": 625,
@@ -770,25 +991,27 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://s3.documentcloud.org/documents/28623723/tx926allvoterresults.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4425
+      "sponsors": "Telemundo",
+      "weight": 0.4376
     },
     {
       "pollster": "InsiderAdvantage",
@@ -799,25 +1022,26 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 46,
-          "percentage": 46
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-u-s-senate-surveys-texas-talarico-47-paxton-46-south-carolina-graham-45-andrews-43-ohio-brown-47-husted-42/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2996
+      "weight": 0.2963
     },
     {
       "pollster": "Univision/YouGov",
@@ -828,16 +1052,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": null,
@@ -846,7 +1070,36 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4386
+      "weight": 0.4337
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-09-04",
+      "fieldDates": "2026-08-27 to 2026-09-04",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Univision",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.univision.com/noticias/politica/poll-univision-texas-2026",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4337
     },
     {
       "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
@@ -857,25 +1110,27 @@
       "partisan": "D",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 44,
-          "percentage": 44
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.aarp.org/press/releases/2026-09-10-new-aarp-texas-poll-highly-motivated-older-voters-could-shape-close-senate-governor-races/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2151
+      "sponsors": "AARP",
+      "weight": 0.2127
     },
     {
       "pollster": "Overton Insights R-sponsored",
@@ -886,25 +1141,27 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 50,
-          "percentage": 50
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://overtoninsights.com/wp-content/uploads/2026/08/Overton_Insights_Texas_Public_Policy_Foundation_Toplines_and_Demographics-2.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2138
+      "sponsors": "Texas Public Policy Foundation",
+      "weight": 0.2114
     },
     {
       "pollster": "Overton Insights",
@@ -932,7 +1189,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1817,
+      "weight": 0.1797,
       "otherMatchup": true
     },
     {
@@ -944,16 +1201,16 @@
       "partisan": "D",
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 42,
-          "percentage": 42
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
         }
       ],
       "sourceUrl": null,
@@ -962,7 +1219,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.189
+      "weight": 0.1869
     },
     {
       "pollster": "TPOR",
@@ -990,7 +1247,60 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2673
+      "weight": 0.2643
+    },
+    {
+      "pollster": "Slingshot Strategies",
+      "endDate": "2026-08-24",
+      "fieldDates": "2026-08-21 to 2026-08-24",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Texas Public Opinion Research",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Hans Truelson (I)",
+          "party": "O",
+          "pct": 0,
+          "percentage": 0
+        },
+        {
+          "candidate": "Camencia Ford (I)",
+          "party": "O",
+          "pct": 0,
+          "percentage": 0
+        },
+        {
+          "candidate": "Joshua Cain (I)",
+          "party": "O",
+          "pct": 0,
+          "percentage": 0
+        }
+      ],
+      "sourceUrl": "https://texaspublicopinionresearch.substack.com/p/new-poll-in-texas-general-election",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3737
     },
     {
       "pollster": "TSU",
@@ -1018,7 +1328,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2552
+      "weight": 0.2523
     },
     {
       "pollster": "University of Texas/Texas Politics Project",
@@ -1029,16 +1339,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 39,
-          "percentage": 39
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 42,
           "percentage": 42
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
         }
       ],
       "sourceUrl": null,
@@ -1047,7 +1357,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.289
+      "weight": 0.2858
     },
     {
       "pollster": "UT",
@@ -1075,7 +1385,42 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1865
+      "weight": 0.1845
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-08-13",
+      "fieldDates": "2026-08-05 to 2026-08-13",
+      "sampleSize": 1200,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "University of Texas",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://texaspolitics.utexas.edu/blog/new-ut-texas-politics-project-poll-finds-talarico-leading-paxton-abbott-leading-hinojosa-continued-resistance-to-data-centers-2",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2858
     },
     {
       "pollster": "Emerson College",
@@ -1086,30 +1431,32 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 47,
-          "percentage": 47
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll-paxton-and-talarico/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2735
+      "sponsors": "Nexstar",
+      "weight": 0.2704
     },
     {
       "pollster": "Wedgewood Polls",
       "endDate": "2026-07-31",
-      "weight": 0.1942,
+      "weight": 0.192,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -1130,7 +1477,8 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "fieldDates": "July 30–31, 2026"
     },
@@ -1139,34 +1487,36 @@
       "endDate": "2026-07-31",
       "fieldDates": "July 15–31, 2026",
       "sampleSize": 1001,
-      "population": "RV",
+      "population": "LV",
       "partisan": "D",
       "results": [
-        {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
         {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 48,
           "percentage": 48
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://254labs.io/news/2026-07-txsen",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas",
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0977
+      "sponsors": "254 Labs",
+      "weight": 0.1074
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
       "endDate": "2026-07-30",
-      "weight": 0.2324,
+      "weight": 0.2298,
       "sampleSize": 1200,
       "population": "LV",
       "results": [
@@ -1186,7 +1536,10 @@
       "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6a713767d4ed824b91ea090d/1785804647961/Texas+Statewide+August2026.pdf",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-07-27 to 2026-07-30"
     },
     {
       "pollster": "Texas Southern University",
@@ -1197,16 +1550,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
       "sourceUrl": null,
@@ -1215,7 +1568,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2324
+      "weight": 0.2298
     },
     {
       "pollster": "Texas A&M University/ReconMR/Siena University",
@@ -1226,16 +1579,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": null,
@@ -1244,12 +1597,41 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1669
+      "weight": 0.165
+    },
+    {
+      "pollster": "ReconMR/Siena Research Institute",
+      "endDate": "2026-07-30",
+      "fieldDates": "2026-07-27 to 2026-07-30",
+      "sampleSize": 619,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Texas A&M Bush School",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://reconmr.com/wp-content/uploads/2026/08/Texas-Pulse-August-Release-August-7-2026-Final.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.165
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-07-27",
-      "weight": 0.0893,
+      "weight": 0.0883,
       "sampleSize": 1006,
       "population": "RV",
       "results": [
@@ -1270,15 +1652,17 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/TX"
+        "https://pollingsource.com/senate/TX",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "R",
-      "fieldDates": "July 23–27, 2026"
+      "fieldDates": "July 23–27, 2026",
+      "sponsors": "Fox News"
     },
     {
       "pollster": "Slingshot Strategies",
       "endDate": "2026-07-17",
-      "weight": 0.1608,
+      "weight": 0.159,
       "sampleSize": 1048,
       "population": "LV",
       "results": [
@@ -1298,7 +1682,11 @@
       "sourceUrl": "https://texaspublicopinionresearch.substack.com/p/new-poll-james-talaricos-lead-over",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-07-15 to 2026-07-17",
+      "sponsors": "Texas Public Opinion Research"
     },
     {
       "pollster": "Texas Public Opinion Research",
@@ -1309,16 +1697,16 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 40,
-          "percentage": 40
-        },
-        {
           "candidate": "James Talarico (D)",
           "party": "D",
           "pct": 45,
           "percentage": 45
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
         }
       ],
       "sourceUrl": null,
@@ -1326,12 +1714,12 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1608
+      "weight": 0.159
     },
     {
       "pollster": "A2 Insights",
       "endDate": "2026-06-28",
-      "weight": 0.0796,
+      "weight": 0.0787,
       "sampleSize": 618,
       "population": "LV",
       "results": [
@@ -1351,13 +1739,15 @@
       "sourceUrl": "https://drive.google.com/file/d/16hlQhGNlhHYtjMQsng-0sU06UourCYhQ/view",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "fieldDates": "June 23–28, 2026"
     },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
-      "weight": 0.0801,
+      "weight": 0.0793,
       "sampleSize": 656,
       "population": "LV",
       "results": [
@@ -1377,7 +1767,10 @@
       "sourceUrl": "https://www.nytimes.com/2026/06/30/us/politics/texas-senate-poll-talarico-paxton.html",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-19 to 2026-06-27"
     },
     {
       "pollster": "New York Times/Siena University",
@@ -1403,12 +1796,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0681
+      "weight": 0.0674
     },
     {
       "pollster": "SoCal Strategies (R)",
       "endDate": "2026-06-21",
-      "weight": 0.0385,
+      "weight": 0.0381,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -1428,14 +1821,17 @@
       "sourceUrl": "https://socalstrategies.substack.com/p/ken-paxton-leads-narrow-texas-senate",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
-      "fieldDates": "June 21, 2026"
+      "fieldDates": "June 21, 2026",
+      "sponsors": "Red Eagle Politics"
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-06-12",
-      "weight": 0.069,
+      "weight": 0.0682,
       "sampleSize": 1200,
       "population": "RV",
       "results": [
@@ -1455,7 +1851,11 @@
       "sourceUrl": "https://texaspolitics.utexas.edu/blog/june-poll-finds-a-competitive-u-s-senate-race-in-texas-amid-continuing-economic-concerns-data-center-backlash",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-05 to 2026-06-12",
+      "sponsors": "University of Texas"
     },
     {
       "pollster": "University of Texas/Texas Politics Project",
@@ -1481,12 +1881,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0652
+      "weight": 0.0644
     },
     {
       "pollster": "Siena University",
       "endDate": "2026-06-04",
-      "weight": 0.0523,
+      "weight": 0.0517,
       "sampleSize": 807,
       "population": "LV",
       "results": [
@@ -1511,7 +1911,7 @@
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-06-04",
-      "weight": 0.026,
+      "weight": 0.0257,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -1531,7 +1931,9 @@
       "sourceUrl": "https://quantusinsights.org/f/texas-republicans-lead-statewide-senate-race-starts-close",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
       "fieldDates": "June 3–4, 2026"
     },
@@ -1559,12 +1961,41 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0444
+      "weight": 0.0439
+    },
+    {
+      "pollster": "ReconMR/Siena Research Institute",
+      "endDate": "2026-06-04",
+      "fieldDates": "2026-06-01 to 2026-06-04",
+      "sampleSize": 807,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Texas A&M Bush School",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://reconmr.com/texas-pulse/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0517
     },
     {
       "pollster": "Slingshot Strategies",
       "endDate": "2026-05-28",
-      "weight": 0.0639,
+      "weight": 0.0632,
       "sampleSize": 1670,
       "population": "LV",
       "results": [
@@ -1584,7 +2015,11 @@
       "sourceUrl": "https://texaspublicopinionresearch.substack.com/p/new-poll-james-talarico-leads-ken",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-05-27 to 2026-05-28",
+      "sponsors": "Texas Public Opinion Research"
     },
     {
       "pollster": "Texas Public Opinion Research",
@@ -1610,12 +2045,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0543
+      "weight": 0.0537
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-05-23",
-      "weight": 0.0159,
+      "weight": 0.0157,
       "sampleSize": 643,
       "population": "RV",
       "results": [
@@ -1635,14 +2070,17 @@
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/05/27/paxton-wins-talarico-spins-00937608",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
-      "fieldDates": "May 22–23, 2026"
+      "fieldDates": "May 22–23, 2026",
+      "sponsors": "Lone Star Rising PAC"
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
       "endDate": "2026-05-06",
-      "weight": 0.0329,
+      "weight": 0.0325,
       "sampleSize": 1223,
       "population": "LV",
       "results": [
@@ -1662,7 +2100,10 @@
       "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6a0addffcba58d0751053542/1779097087749/TSUTexasNov2026.pdf",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-04-22 to 2026-05-06"
     },
     {
       "pollster": "Texas Southern University",
@@ -1688,12 +2129,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.028
+      "weight": 0.0277
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-04-20",
-      "weight": 0.0203,
+      "weight": 0.02,
       "sampleSize": 1200,
       "population": "RV",
       "results": [
@@ -1713,12 +2154,16 @@
       "sourceUrl": "https://texaspolitics.utexas.edu/blog/april-polling-war-and-surging-gas-prices-fuel-another-negative-turn-in-texans-views-of-the-economy-2",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-04-10 to 2026-04-20",
+      "sponsors": "University of Texas"
     },
     {
       "pollster": "Slingshot Strategies",
       "endDate": "2026-04-20",
-      "weight": 0.0207,
+      "weight": 0.0205,
       "sampleSize": 1018,
       "population": "LV",
       "results": [
@@ -1738,7 +2183,11 @@
       "sourceUrl": "https://www.texastribune.org/2026/04/28/texas-us-senate-poll-talarico-cornyn-paxton-2026-midterms/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-04-17 to 2026-04-20",
+      "sponsors": "Texas Public Opinion Research"
     },
     {
       "pollster": "Texas Public Opinion Research",
@@ -1764,7 +2213,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0176
+      "weight": 0.0174
     },
     {
       "pollster": "University of Texas/Texas Politics Project",
@@ -1790,7 +2239,67 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0191
+      "weight": 0.0189
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-04-20",
+      "fieldDates": "2026-04-10 to 2026-04-20",
+      "sampleSize": 1200,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "University of Texas",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 33,
+          "percentage": 33
+        }
+      ],
+      "sourceUrl": "https://texaspolitics.utexas.edu/blog/april-polling-war-and-surging-gas-prices-fuel-another-negative-turn-in-texans-views-of-the-economy-2",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.02,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Slingshot Strategies",
+      "endDate": "2026-04-20",
+      "fieldDates": "2026-04-17 to 2026-04-20",
+      "sampleSize": 1018,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Texas Public Opinion Research",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.texastribune.org/2026/04/28/texas-us-senate-poll-talarico-cornyn-paxton-2026-midterms/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0205,
+      "otherMatchup": true
     },
     {
       "pollster": "Impact Research (D)",
@@ -1815,9 +2324,47 @@
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/03/20/buttigieg-is-running-all-over-the-place-00837326?nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=4d735b47-a8a7-41f4-9c35-277919f359ed",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
       "fieldDates": "March 12–17, 2026"
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-03-17",
+      "fieldDates": "2026-03-12 to 2026-03-17",
+      "sampleSize": 900,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 7,
+          "percentage": 7
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/03/20/buttigieg-is-running-all-over-the-place-00837326?nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=4d735b47-a8a7-41f4-9c35-277919f359ed",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0044,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
@@ -1842,41 +2389,77 @@
       "sourceUrl": "https://senatemajority.com/news/polling-talarico-leads-cornyn-and-paxton-in-texas-u-s-senate-matchups/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "D",
-      "fieldDates": "March 4–5, 2026"
+      "fieldDates": "March 4–5, 2026",
+      "sponsors": "Senate Majority PAC"
     },
     {
-      "pollster": "Hart Research",
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-03-05",
+      "fieldDates": "2026-03-04 to 2026-03-05",
+      "sampleSize": 576,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "Senate Majority PAC",
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://senatemajority.com/news/polling-talarico-leads-cornyn-and-paxton-in-texas-u-s-senate-matchups/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0024,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Hart Research Associates",
       "endDate": "2026-02-12",
       "fieldDates": "February 6–12, 2026",
       "sampleSize": 803,
-      "population": null,
+      "population": "LV",
       "partisan": "D",
       "results": [
-        {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        },
         {
           "candidate": "Jasmine Crockett (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/02/17/jesse-jackson-dies-at-84-00783455",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
-      "weight": 0.0017,
+      "sponsors": "Forward Texas",
+      "weight": 0.0019,
       "otherMatchup": true
     },
     {
       "pollster": "University of Houston Hobby School of Public Affairs",
       "endDate": "2026-01-31",
-      "weight": 0.0041,
+      "weight": 0.004,
       "sampleSize": 1502,
       "population": "LV",
       "results": [
@@ -1896,8 +2479,82 @@
       "sourceUrl": "https://www.uh.edu/hobby/primary2026/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "fieldDates": "January 20–31, 2026"
+    },
+    {
+      "pollster": "University of Houston Hobby School of Public Affairs",
+      "endDate": "2026-01-31",
+      "fieldDates": "2026-01-20 to 2026-01-31",
+      "sampleSize": 1502,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Wesley Hunt (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://www.uh.edu/hobby/primary2026/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.004,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of Houston Hobby School of Public Affairs",
+      "endDate": "2026-01-31",
+      "fieldDates": "2026-01-20 to 2026-01-31",
+      "sampleSize": 1502,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
+        }
+      ],
+      "sourceUrl": "https://www.uh.edu/hobby/primary2026/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.004,
+      "otherMatchup": true
     },
     {
       "pollster": "Emerson College",
@@ -1922,33 +2579,99 @@
       "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
-      "fieldDates": "January 10–12, 2026"
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "January 10–12, 2026",
+      "sponsors": "Nexstar"
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-01-12",
+      "fieldDates": "2026-01-10 to 2026-01-12",
+      "sampleSize": 1165,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Nexstar",
+      "results": [
+        {
+          "candidate": "Wesley Hunt (R)",
+          "party": "R",
+          "pct": 47.1,
+          "percentage": 47.1
+        },
+        {
+          "candidate": "Jasmine Crockett (D)",
+          "party": "D",
+          "pct": 43.6,
+          "percentage": 43.6
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0021,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-01-12",
+      "fieldDates": "2026-01-10 to 2026-01-12",
+      "sampleSize": 1165,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Nexstar",
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 48.2,
+          "percentage": 48.2
+        },
+        {
+          "candidate": "Jasmine Crockett (D)",
+          "party": "D",
+          "pct": 42.5,
+          "percentage": 42.5
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0021,
+      "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2025-11-26",
       "fieldDates": "November 21–26, 2025",
       "sampleSize": 1189,
-      "population": null,
+      "population": "RV",
       "partisan": "D",
       "results": [
         {
           "candidate": "John Cornyn (R)",
           "party": "R",
-          "pct": 49,
-          "percentage": 49
+          "pct": 50,
+          "percentage": 50
         },
         {
           "candidate": "Jasmine Crockett (D)",
           "party": "D",
-          "pct": 41,
-          "percentage": 41
+          "pct": 42,
+          "percentage": 42
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://changeresearch.com/texas-senate-early-findings-2026/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
+      "sponsors": "Agave Social Welfare Fund",
       "weight": 0.0003,
       "otherMatchup": true
     },
@@ -1975,9 +2698,71 @@
       "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2025/11/19/parsing-trumps-ukraine-peace-plan-00659624",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "partisan": "R",
       "fieldDates": "November 12–17, 2025"
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2025-11-17",
+      "fieldDates": "2025-11-12 to 2025-11-17",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2025/11/19/parsing-trumps-ukraine-peace-plan-00659624",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0006,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Cygnal Political",
+      "endDate": "2025-10-06",
+      "fieldDates": "2025-10-05 to 2025-10-06",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Plymouth Union Public Advocacy",
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://pup-advocacy.com/news/polling-memo/extending-the-healthcare-premium-tax-credits-is-a-winning-opportunity-for-cornyn/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
     },
     {
       "pollster": "University of Houston Hobby School of Public Affairs/Texas Southern University School of Public Affairs",
@@ -2002,8 +2787,40 @@
       "sourceUrl": "https://www.uh.edu/hobby/txtrends/2025/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "fieldDates": "September 19 – October 1, 2025"
+    },
+    {
+      "pollster": "University of Houston Hobby School of Public Affairs/Texas Southern University School of Public Affairs",
+      "endDate": "2025-10-01",
+      "fieldDates": "2025-09-19 to 2025-10-01",
+      "sampleSize": 1183,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Wesley Hunt (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.uh.edu/hobby/txtrends/2025/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
     },
     {
       "pollster": "University of Texas at Tyler Center for Opinion Research",
@@ -2028,7 +2845,10 @@
       "sourceUrl": "https://www.uttyler.edu/academics/colleges-schools/arts-sciences/departments/political-science/files/topline-report-of-texas-voters-revised-september-2025.pdf",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-09-17 to 2025-09-24"
     },
     {
       "pollster": "UT Tyler",
@@ -2057,28 +2877,180 @@
       "weight": 0.0001
     },
     {
+      "pollster": "University of Texas at Tyler Center for Opinion Research",
+      "endDate": "2025-09-24",
+      "fieldDates": "2025-09-17 to 2025-09-24",
+      "sampleSize": 1032,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
+        },
+        {
+          "candidate": "Wesley Hunt (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": "https://www.uttyler.edu/academics/colleges-schools/arts-sciences/departments/political-science/files/topline-report-of-texas-voters-revised-september-2025.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of Texas at Tyler Center for Opinion Research",
+      "endDate": "2025-09-24",
+      "fieldDates": "2025-09-17 to 2025-09-24",
+      "sampleSize": 1031,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        }
+      ],
+      "sourceUrl": "https://www.uttyler.edu/academics/colleges-schools/arts-sciences/departments/political-science/files/topline-report-of-texas-voters-revised-september-2025.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of Texas at Tyler Center for Opinion Research",
+      "endDate": "2025-09-24",
+      "fieldDates": "2025-09-17 to 2025-09-24",
+      "sampleSize": 1031,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Colin Allred (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.uttyler.edu/academics/colleges-schools/arts-sciences/departments/political-science/files/topline-report-of-texas-voters-revised-september-2025.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of Texas at Tyler Center for Opinion Research",
+      "endDate": "2025-09-24",
+      "fieldDates": "2025-09-17 to 2025-09-24",
+      "sampleSize": 1032,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Colin Allred (D)",
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://www.uttyler.edu/academics/colleges-schools/arts-sciences/departments/political-science/files/topline-report-of-texas-voters-revised-september-2025.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Slingshot Strategies",
+      "endDate": "2025-08-29",
+      "fieldDates": "2025-08-27 to 2025-08-29",
+      "sampleSize": 843,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Texas Public Opinion Research",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/f/?id=00000199-3cc6-dddb-a7d9-3fcfeeca0000&nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=4f4d3aeb-621a-47b9-a66d-d9944fed5257",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
       "pollster": "GBAO",
       "endDate": "2025-08-18",
       "fieldDates": "August 13–18, 2025",
       "sampleSize": 800,
-      "population": null,
+      "population": "LV",
       "partisan": "D",
       "results": [
-        {
-          "candidate": "Ken Paxton (R)",
-          "party": "R",
-          "pct": 47,
-          "percentage": 47
-        },
         {
           "candidate": "Colin Allred (D)",
           "party": "D",
           "pct": 49,
           "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://colinallred.com/wp-content/uploads/2025/08/Allred-for-Texas-State-of-the-Race-Memo-_-August-2025.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0,
       "otherMatchup": true
@@ -2088,24 +3060,56 @@
       "endDate": "2025-08-12",
       "fieldDates": "August 11–12, 2025",
       "sampleSize": 1000,
-      "population": null,
+      "population": "RV",
       "partisan": null,
       "results": [
         {
           "candidate": "John Cornyn (R)",
           "party": "R",
-          "pct": 45,
-          "percentage": 45
+          "pct": 45.2,
+          "percentage": 45.2
         },
         {
           "candidate": "Colin Allred (D)",
           "party": "D",
-          "pct": 38,
-          "percentage": 38
+          "pct": 38.1,
+          "percentage": 38.1
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll-cornyn-and-paxton-in-dead-heat-for-gop-senate-nomination/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2025-08-12",
+      "fieldDates": "2025-08-11 to 2025-08-12",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 45.9,
+          "percentage": 45.9
+        },
+        {
+          "candidate": "Colin Allred (D)",
+          "party": "D",
+          "pct": 40.6,
+          "percentage": 40.6
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll-cornyn-and-paxton-in-dead-heat-for-gop-senate-nomination/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0.0001,
       "otherMatchup": true
@@ -2133,6 +3137,96 @@
       ],
       "sourceUrl": null,
       "foundOn": [],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "endDate": "2025-05-19",
+      "fieldDates": "2025-05-09 to 2025-05-19",
+      "sampleSize": 1200,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Beto O’Rourke (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6835d0b18a1b152870969a2b/1748357299241/2026+TEXAS+U.S.+SENATE+REPORT+.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "endDate": "2025-05-19",
+      "fieldDates": "2025-05-09 to 2025-05-19",
+      "sampleSize": 1200,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Joaquin Castro (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6835d0b18a1b152870969a2b/1748357299241/2026+TEXAS+U.S.+SENATE+REPORT+.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "endDate": "2025-05-19",
+      "fieldDates": "2025-05-09 to 2025-05-19",
+      "sampleSize": 1200,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "John Cornyn (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Joaquin Castro (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/67aa7aa3e284b002cd6a420e/t/6835d0b18a1b152870969a2b/1748357299241/2026+TEXAS+U.S.+SENATE+REPORT+.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0,
       "otherMatchup": true

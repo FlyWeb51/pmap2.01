@@ -1,12 +1,12 @@
 {
   "raceId": "NC-H-10-2026",
   "count": 1,
-  "updated_at": "2026-10-20T02:40:38.398Z",
+  "updated_at": "2026-10-20T14:20:53.491Z",
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-12",
-      "weight": 0.0053,
+      "weight": 0.0026,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -26,7 +26,12 @@
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-03-10 to 2026-03-12",
+      "sponsors": "Conservatives for America"
     }
   ]
 }

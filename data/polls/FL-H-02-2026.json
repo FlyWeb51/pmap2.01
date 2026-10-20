@@ -1,12 +1,12 @@
 {
   "raceId": "FL-H-02-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.383Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.483Z",
   "polls": [
     {
       "pollster": "Patriot Polling (R)",
       "endDate": "2026-07-26",
-      "weight": 0.1857,
+      "weight": 0.0918,
       "sampleSize": 922,
       "population": "LV",
       "results": [
@@ -26,35 +26,100 @@
       "sourceUrl": "https://washingtonreporter.news/exclusive-floridas-2nd-district-out-of-play-for-democrats-according-to-gop-candidate-keith-grosss-polling/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-07-22 to 2026-07-26"
     },
     {
       "pollster": "Patriot Polling",
       "endDate": "2026-07-26",
       "fieldDates": "2026-07-26",
       "sampleSize": 922,
-      "population": null,
+      "population": "LV",
       "partisan": "R",
       "results": [
         {
+          "candidate": "Keith Gross (R)",
+          "party": "R",
+          "pct": 62.2,
+          "percentage": 62.2
+        },
+        {
           "candidate": "Yen Bailey (D)",
           "party": "D",
-          "pct": 35,
-          "percentage": 35
-        },
+          "pct": 35.1,
+          "percentage": 35.1
+        }
+      ],
+      "sourceUrl": "https://washingtonreporter.news/exclusive-floridas-2nd-district-out-of-play-for-democrats-according-to-gop-candidate-keith-grosss-polling/",
+      "foundOn": [
+        "https://pollingsource.com/house/FL-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0918,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Patriot Polling",
+      "endDate": "2026-07-26",
+      "fieldDates": "2026-07-22 to 2026-07-26",
+      "sampleSize": 922,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
         {
           "candidate": "Keith Gross (R)",
           "party": "R",
-          "pct": 62,
-          "percentage": 62
+          "pct": 60.9,
+          "percentage": 60.9
+        },
+        {
+          "candidate": "Amanda Green (D)",
+          "party": "D",
+          "pct": 37.1,
+          "percentage": 37.1
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://washingtonreporter.news/exclusive-floridas-2nd-district-out-of-play-for-democrats-according-to-gop-candidate-keith-grosss-polling/",
       "foundOn": [
-        "https://pollingsource.com/house/FL-02"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0789,
+      "weight": 0.0918,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Patriot Polling",
+      "endDate": "2026-07-26",
+      "fieldDates": "2026-07-22 to 2026-07-26",
+      "sampleSize": 922,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Keith Gross (R)",
+          "party": "R",
+          "pct": 59.9,
+          "percentage": 59.9
+        },
+        {
+          "candidate": "Brice Barnes (D)",
+          "party": "D",
+          "pct": 39.1,
+          "percentage": 39.1
+        }
+      ],
+      "sourceUrl": "https://washingtonreporter.news/exclusive-floridas-2nd-district-out-of-play-for-democrats-according-to-gop-candidate-keith-grosss-polling/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0918,
       "otherMatchup": true
     }
   ]

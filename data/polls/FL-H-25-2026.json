@@ -1,7 +1,7 @@
 {
   "raceId": "FL-H-25-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.385Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.484Z",
   "polls": [
     {
       "pollster": "Beacon Insights",
@@ -29,12 +29,12 @@
         "https://pollingsource.com/house/FL-25"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0251
+      "weight": 0.0249
     },
     {
       "pollster": "Middle Seat (D)",
       "endDate": "2026-05-06",
-      "weight": 0.0226,
+      "weight": 0.0112,
       "sampleSize": 576,
       "population": "LV",
       "results": [
@@ -54,16 +54,20 @@
       "sourceUrl": "https://punchbowl.news/fl-25-polling-memo/?refcode=&emci=daace617-7279-f111-ac9c-000d3a14b6d6&emdi=951fd585-7479-f111-ac9c-000d3a14b6d6&ceid=29481628",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": [],
-      "otherMatchup": true
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "otherMatchup": true,
+      "partisan": "D",
+      "fieldDates": "2026-05-05 to 2026-05-06"
     },
     {
       "pollster": "Middle Seat",
       "endDate": "2026-05-06",
       "fieldDates": "2026-05-06",
       "sampleSize": 576,
-      "population": null,
-      "partisan": null,
+      "population": "LV",
+      "partisan": "D",
       "results": [
         {
           "candidate": "Oliver Larkin (D)",
@@ -78,12 +82,43 @@
           "percentage": 33
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://punchbowl.news/fl-25-polling-memo/",
       "foundOn": [
-        "https://pollingsource.com/house/FL-25"
+        "https://pollingsource.com/house/FL-25",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0192,
+      "weight": 0.0112,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Middle Seat",
+      "endDate": "2026-05-06",
+      "fieldDates": "2026-05-05 to 2026-05-06",
+      "sampleSize": 576,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/fl-25-polling-memo/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0112,
       "otherMatchup": true
     }
   ]

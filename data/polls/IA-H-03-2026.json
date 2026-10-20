@@ -1,12 +1,12 @@
 {
   "raceId": "IA-H-03-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.388Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.485Z",
   "polls": [
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-03-14",
-      "weight": 0.0055,
+      "weight": 0.0027,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -26,7 +26,101 @@
       "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-03-12 to 2026-03-14",
+      "sponsors": "Conservatives for America",
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2026-03-14",
+      "fieldDates": "2026-03-12 to 2026-03-14",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Conservatives for America",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0027
+    },
+    {
+      "pollster": "Change Research",
+      "endDate": "2025-10-27",
+      "fieldDates": "2025-10-23 to 2025-10-27",
+      "sampleSize": 638,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://sarahforiowa.com/sarah-trone-garriott-leads-zach-nunn-in-new-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-09-18",
+      "fieldDates": "2025-09-17 to 2025-09-18",
+      "sampleSize": 717,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jennifer Konfrst (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Zach Nunn (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2025/09/19/weighted-vest-women-are-2026s-swing-voters-00572646",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
   "raceId": "FL-H-11-2026",
   "count": 1,
-  "updated_at": "2026-10-20T02:40:38.384Z",
+  "updated_at": "2026-10-20T14:20:53.483Z",
   "polls": [
     {
       "pollster": "MDW Communications (D)",
       "endDate": "2026-07-30",
       "endDateUS": "7/30/2026",
-      "weight": 0.2167,
+      "weight": 0.1072,
       "sampleSize": 1044,
       "population": "LV",
       "results": [
@@ -27,7 +27,11 @@
       "sourceUrl": "https://floridapolitics.com/archives/811237-poll-shows-james-pericola-leading-cd-11-dem-field-in-potential-dead-heat-with-joe-strada/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-28 to 2026-07-30"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "PA-H-07-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.406Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.494Z",
   "polls": [
     {
       "pollster": "Franklin & Marshall College",
@@ -18,24 +18,25 @@
           "percentage": 45
         },
         {
-          "candidate": "Ryan Mackenzie (R)",
+          "candidate": "Ryan E. Mackenzie (R)",
           "party": "R",
           "pct": 40,
           "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.wgal.com/article/pa-election-stelson-perry-shapiro-trump-poll/73836465",
       "foundOn": [
-        "https://pollingsource.com/house/PA-07"
+        "https://pollingsource.com/house/PA-07",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3793
+      "weight": 0.375
     },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-02",
-      "weight": 0.0785,
-      "sampleSize": null,
+      "weight": 0.0407,
+      "sampleSize": 550,
       "population": "LV",
       "results": [
         {
@@ -54,35 +55,13 @@
       "sourceUrl": "https://www.notus.org/newsletters/the-maine-vacancy",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "GBAO",
-      "endDate": "2026-07-02",
-      "fieldDates": "2026-07-02",
-      "sampleSize": 550,
-      "population": "LV",
-      "partisan": "D",
-      "results": [
-        {
-          "candidate": "Bob Brooks (D)",
-          "party": "D",
-          "pct": 47,
-          "percentage": 47
-        },
-        {
-          "candidate": "Ryan Mackenzie (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        }
-      ],
-      "sourceUrl": null,
       "foundOn": [
-        "https://pollingsource.com/house/PA-07"
+        "https://pollingsource.com/house/PA-07",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "reviewStatus": "auto",
-      "weight": 0.0412
+      "partisan": "D",
+      "fieldDates": "2026-07-02",
+      "sponsors": "House Majority PAC"
     }
   ]
 }

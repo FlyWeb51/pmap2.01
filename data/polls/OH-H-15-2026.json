@@ -1,8 +1,67 @@
 {
   "raceId": "OH-H-15-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.416Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.500Z",
   "polls": [
+    {
+      "pollster": "Hart Research Associates",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-22 to 2026-09-24",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2104619061556457603",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2704,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Hart Research Associates",
+      "endDate": "2026-09-24",
+      "fieldDates": "2026-09-22 to 2026-09-24",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Don Leonard (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Mike Carey (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2104619061556457603",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2704
+    },
     {
       "pollster": "Hart Research D-sponsored",
       "endDate": "2026-08-09",
@@ -24,15 +83,16 @@
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.politico.com/newsletters/weekly-score/2026/08/17/is-it-dans-sullivan-or-dan-sullivans-01038900",
       "foundOn": [
-        "https://pollingsource.com/house/OH-15"
+        "https://pollingsource.com/house/OH-15",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0846
+      "weight": 0.0837
     },
     {
-      "pollster": "Hart Research",
+      "pollster": "Hart Research Associates",
       "endDate": "2026-06-25",
       "fieldDates": "2026-06-25",
       "sampleSize": 550,
@@ -52,12 +112,44 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-don-leonard-within-striking-distance-of-mike-carey-in-oh-15",
       "foundOn": [
-        "https://pollingsource.com/house/OH-15"
+        "https://pollingsource.com/house/OH-15",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.035
+      "sponsors": "House Majority PAC",
+      "weight": 0.0346
+    },
+    {
+      "pollster": "Hart Research Associates",
+      "endDate": "2026-06-25",
+      "fieldDates": "2026-06-23 to 2026-06-25",
+      "sampleSize": 550,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-don-leonard-within-striking-distance-of-mike-carey-in-oh-15",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0346,
+      "otherMatchup": true
     }
   ]
 }

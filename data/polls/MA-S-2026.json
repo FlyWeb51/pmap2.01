@@ -1,8 +1,90 @@
 {
   "raceId": "MA-S-2026",
-  "count": 13,
-  "updated_at": "2026-10-20T02:40:38.391Z",
+  "count": 25,
+  "updated_at": "2026-10-20T14:20:53.486Z",
   "polls": [
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-14 to 2026-10-18",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Boston Globe",
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "pct": 60,
+          "percentage": 60
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 31.8,
+          "percentage": 31.8
+        },
+        {
+          "candidate": "Joe Tache (PSL)",
+          "party": "O",
+          "pct": 1.4,
+          "percentage": 1.4
+        },
+        {
+          "candidate": "Shiva Ayyadurai (I)",
+          "party": "O",
+          "pct": 0.8,
+          "percentage": 0.8
+        }
+      ],
+      "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/massachusetts#collapse-October-20-2026-Massachusetts-Governor-and-US-Senate-Statewide-and-Bellwether-with-The-Boston-Globe",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9417
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-12",
+      "fieldDates": "2026-10-05 to 2026-10-12",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "UMass Amherst | WCVB-TV",
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 29,
+          "percentage": 29
+        },
+        {
+          "candidate": "Shiva Ayyadurai (I)",
+          "party": "O",
+          "pct": 6,
+          "percentage": 6
+        },
+        {
+          "candidate": "Joe Tache (PSL)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://www.umass.edu/poll/about/reports/2026-10-massachusetts-public-opinion-poll#toc-methodology",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9333
+    },
     {
       "pollster": "MassINC Polling Group",
       "endDate": "2026-09-22",
@@ -24,12 +106,14 @@
           "percentage": 26
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://commonwealthbeacon.org/politics/poll-healey-cruising-in-reelection-bid-with-trump-high-on-voters-mind/",
       "foundOn": [
-        "https://pollingsource.com/senate/MA"
+        "https://pollingsource.com/senate/MA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6607
+      "sponsors": "Commonwealth Beacon",
+      "weight": 0.6533
     },
     {
       "pollster": "University of New Hampshire",
@@ -52,12 +136,13 @@
           "percentage": 30
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1008/",
       "foundOn": [
-        "https://pollingsource.com/senate/MA"
+        "https://pollingsource.com/senate/MA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5421
+      "weight": 0.536
     },
     {
       "pollster": "University of New Hampshire",
@@ -80,12 +165,50 @@
           "percentage": 30
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/989/",
       "foundOn": [
-        "https://pollingsource.com/senate/MA"
+        "https://pollingsource.com/senate/MA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3548
+      "sponsors": "7News",
+      "weight": 0.3508
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-08-24",
+      "fieldDates": "2026-08-20 to 2026-08-24",
+      "sampleSize": 893,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "7News",
+      "results": [
+        {
+          "candidate": "Seth Moulton (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 25,
+          "percentage": 25
+        },
+        {
+          "candidate": "Joe Tache (PSL)",
+          "party": "O",
+          "pct": 16,
+          "percentage": 16
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/989/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3532,
+      "otherMatchup": true
     },
     {
       "pollster": "UMass Amherst/YouGov",
@@ -113,12 +236,71 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2306
+      "weight": 0.228
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-08-12",
+      "fieldDates": "2026-08-05 to 2026-08-12",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "UMass Amherst | WCVB-TV",
+      "results": [
+        {
+          "candidate": "Seth Moulton (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 25,
+          "percentage": 25
+        }
+      ],
+      "sourceUrl": "https://www.umass.edu/news/article/experience-trust-drive-bay-state-primary-voters-support-markey-over-moulton-new-umass",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.228,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-08-12",
+      "fieldDates": "2026-08-05 to 2026-08-12",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "UMass Amherst | WCVB-TV",
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 30,
+          "percentage": 30
+        }
+      ],
+      "sourceUrl": "https://www.umass.edu/news/article/experience-trust-drive-bay-state-primary-voters-support-markey-over-moulton-new-umass",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.228
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.0709,
+      "weight": 0.0701,
       "sampleSize": 618,
       "population": "LV",
       "results": [
@@ -139,7 +321,8 @@
       "note": null,
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/MA"
+        "https://pollingsource.com/senate/MA",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "fieldDates": "2026-06-23"
     },
@@ -169,13 +352,43 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0718,
+      "weight": 0.071,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-06-23",
+      "fieldDates": "2026-06-18 to 2026-06-23",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Seth Moulton (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 30,
+          "percentage": 30
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/973/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0691,
       "otherMatchup": true
     },
     {
       "pollster": "Suffolk University",
       "endDate": "2026-06-12",
-      "weight": 0.0445,
+      "weight": 0.044,
       "sampleSize": 500,
       "population": "RV",
       "results": [
@@ -195,7 +408,11 @@
       "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/massachusetts#collapse-June-16-2026-Massachusetts-Governor-and-US-Senate-with-The-Boston-Globe",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-08 to 2026-06-12",
+      "sponsors": "Boston Globe"
     },
     {
       "pollster": "University of New Hampshire",
@@ -223,12 +440,42 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0495
+      "weight": 0.0489
+    },
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2026-06-12",
+      "fieldDates": "2026-06-08 to 2026-06-12",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Boston Globe",
+      "results": [
+        {
+          "candidate": "Seth Moulton (D)",
+          "party": "D",
+          "pct": 53.8,
+          "percentage": 53.8
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 26.2,
+          "percentage": 26.2
+        }
+      ],
+      "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/massachusetts#collapse-June-16-2026-Massachusetts-Governor-and-US-Senate-with-The-Boston-Globe",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.044,
+      "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-04-20",
-      "weight": 0.016,
+      "weight": 0.0158,
       "sampleSize": 603,
       "population": "LV",
       "results": [
@@ -248,12 +495,45 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/945/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-04-16 to 2026-04-20"
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-04-20",
+      "fieldDates": "2026-04-16 to 2026-04-20",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Seth Moulton (D)",
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 25,
+          "percentage": 25
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/945/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0158,
+      "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-02-16",
-      "weight": 0.0038,
+      "weight": 0.0037,
       "sampleSize": 616,
       "population": "LV",
       "results": [
@@ -273,12 +553,45 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/931/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-02-12 to 2026-02-16"
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-02-16",
+      "fieldDates": "2026-02-12 to 2026-02-16",
+      "sampleSize": 611,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Seth Moulton (D)",
+          "party": "D",
+          "pct": 59,
+          "percentage": 59
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 23,
+          "percentage": 23
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/931/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0037,
+      "otherMatchup": true
     },
     {
       "pollster": "Cygnal Political (R)",
       "endDate": "2026-01-25",
-      "weight": 0.0026,
+      "weight": 0.0013,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -298,7 +611,11 @@
       "sourceUrl": "https://www.politico.com/newsletters/massachusetts-playbook/2026/02/19/senate-adds-healeys-higher-ed-bill-to-the-agenda-00787852",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-01-22 to 2026-01-25"
     },
     {
       "pollster": "Suffolk University",
@@ -323,7 +640,41 @@
       "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/massachusetts#collapse-November-25-2025-Massachusetts-Statewide-Issues-with-The-Boston-Globe",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-11-19 to 2025-11-23",
+      "sponsors": "Boston Globe"
+    },
+    {
+      "pollster": "Suffolk University",
+      "endDate": "2025-11-23",
+      "fieldDates": "2025-11-19 to 2025-11-23",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "Boston Globe",
+      "results": [
+        {
+          "candidate": "Seth Moulton (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 29,
+          "percentage": 29
+        }
+      ],
+      "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/massachusetts#collapse-November-25-2025-Massachusetts-Statewide-Issues-with-The-Boston-Globe",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0004,
+      "otherMatchup": true
     },
     {
       "pollster": "SurveyUSA",
@@ -348,7 +699,71 @@
       "sourceUrl": "https://www.surveyusa.com/client/PollReport.aspx?g=adc70fa6-00da-4a97-9b1a-7eb4844e0302",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-02-28 to 2025-03-04",
+      "sponsors": "MA Responsible Alliance"
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2025-02-20",
+      "fieldDates": "2025-02-14 to 2025-02-20",
+      "sampleSize": 700,
+      "population": "A",
+      "partisan": null,
+      "sponsors": "UMass Amherst | WCVB-TV",
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "pct": 35,
+          "percentage": 35
+        },
+        {
+          "candidate": "Charles D. Baker (R)",
+          "party": "R",
+          "pct": 33,
+          "percentage": 33
+        }
+      ],
+      "sourceUrl": "https://www.umass.edu/news/article/housing-tops-list-concerns-massachusetts-voters-new-umass-amherstwcvb-poll-finds",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "MassINC Polling Group",
+      "endDate": "2024-11-01",
+      "fieldDates": "2024-10-29 to 2024-11-01",
+      "sampleSize": 582,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Charles D. Baker (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "pct": 34,
+          "percentage": 34
+        }
+      ],
+      "sourceUrl": "https://www.massincpolling.com/our-work/final-mpg-poll-of-massachusetts-voters-find-harris-warren-maintaining-commanding-leads",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

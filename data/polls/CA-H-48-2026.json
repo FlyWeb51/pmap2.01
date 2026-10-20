@@ -1,8 +1,37 @@
 {
   "raceId": "CA-H-48-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.382Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.483Z",
   "polls": [
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-10-07",
+      "fieldDates": "2026-10-01 to 2026-10-07",
+      "sampleSize": 518,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "KGTV-TV (California) | San Diego Union-Tribune",
+      "results": [
+        {
+          "candidate": "Marni von Wilpert (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jim Desmond (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://results.surveyusa.com/client/PollReport.aspx?g=01471c0a-ab87-499e-8974-8526fea475d2",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7434
+    },
     {
       "pollster": "SurveyUSA",
       "endDate": "2026-09-01",
@@ -24,17 +53,19 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://results.surveyusa.com/client/PollReport.aspx?g=0877c725-6e44-47fe-9856-dcf799865671",
       "foundOn": [
-        "https://pollingsource.com/house/CA-48"
+        "https://pollingsource.com/house/CA-48",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3285
+      "sponsors": "KGTV-TV (California) | San Diego Union-Tribune",
+      "weight": 0.3248
     },
     {
       "pollster": "Lake Research Partners (D)",
       "endDate": "2026-07-14",
-      "weight": 0.0518,
+      "weight": 0.0512,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -55,38 +86,41 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/CA-48"
+        "https://pollingsource.com/house/CA-48",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-07-14"
     },
     {
-      "pollster": "Lake Research",
-      "endDate": "2026-07-14",
-      "fieldDates": "2026-07-14",
-      "sampleSize": 500,
+      "pollster": "Blueprint Polling",
+      "endDate": "2025-10-26",
+      "fieldDates": "2025-10-25 to 2025-10-26",
+      "sampleSize": 517,
       "population": "LV",
-      "partisan": null,
+      "partisan": "D",
+      "sponsors": null,
       "results": [
         {
-          "candidate": "Marni von Wilpert (D)",
+          "candidate": "Ammar Campa-Najjar (D)",
           "party": "D",
-          "pct": 48,
-          "percentage": 48
+          "pct": 43,
+          "percentage": 43
         },
         {
-          "candidate": "Jim Desmond (R)",
+          "candidate": "Darrell Issa (R)",
           "party": "R",
-          "pct": 46,
-          "percentage": 46
+          "pct": 40,
+          "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.politico.com/f/?id=0000019a-38d9-dc69-abda-fadb16eb0000",
       "foundOn": [
-        "https://pollingsource.com/house/CA-48"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1036
+      "weight": 0.0001,
+      "otherMatchup": true
     }
   ]
 }

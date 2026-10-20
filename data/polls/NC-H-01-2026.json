@@ -1,7 +1,7 @@
 {
   "raceId": "NC-H-01-2026",
-  "count": 8,
-  "updated_at": "2026-10-20T02:40:38.398Z",
+  "count": 11,
+  "updated_at": "2026-10-20T14:20:53.490Z",
   "polls": [
     {
       "pollster": "co/efficient R-sponsored",
@@ -24,12 +24,49 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/10/09/trumps-real-prize-01114521",
       "foundOn": [
-        "https://pollingsource.com/house/NC-01"
+        "https://pollingsource.com/house/NC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4219
+      "weight": 0.4172
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-10-06 to 2026-10-08",
+      "sampleSize": 623,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Generic Candidate (OTH)",
+          "party": null,
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/10/09/trumps-real-prize-01114521",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4172,
+      "otherMatchup": true
     },
     {
       "pollster": "Neighborhood Research R-sponsored",
@@ -52,12 +89,43 @@
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/Shaftan/status/2107772933322277266",
       "foundOn": [
-        "https://pollingsource.com/house/NC-01"
+        "https://pollingsource.com/house/NC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2809
+      "weight": 0.2778
+    },
+    {
+      "pollster": "Neighborhood Research Corporation",
+      "endDate": "2026-10-06",
+      "fieldDates": "2026-10-01 to 2026-10-06",
+      "sampleSize": 303,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://x.com/Shaftan/status/2107772933322277266",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5556,
+      "otherMatchup": true
     },
     {
       "pollster": "GQR",
@@ -80,12 +148,13 @@
           "percentage": 39
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://drive.google.com/file/d/1Yt-bOVqBFd9cPU3A2R1_MuOpnluJwmJM/view",
       "foundOn": [
-        "https://pollingsource.com/house/NC-01"
+        "https://pollingsource.com/house/NC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3446
+      "weight": 0.3407
     },
     {
       "pollster": "GBAO D-sponsored",
@@ -108,17 +177,19 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/cjwarnke/status/2099621466887041405",
       "foundOn": [
-        "https://pollingsource.com/house/NC-01"
+        "https://pollingsource.com/house/NC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2025
+      "sponsors": "House Majority PAC",
+      "weight": 0.2003
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-06-28",
-      "weight": 0.0716,
+      "weight": 0.0354,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -138,40 +209,17 @@
       "sourceUrl": "https://x.com/nicholaswu12/status/2072383841000440013?s=20",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "GQR",
-      "endDate": "2026-06-28",
-      "fieldDates": "2026-06-28",
-      "sampleSize": 500,
-      "population": "LV",
-      "partisan": "D",
-      "results": [
-        {
-          "candidate": "Don Davis (D)",
-          "party": "D",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
-          "candidate": "Laurie Buckhout (R)",
-          "party": "R",
-          "pct": 41,
-          "percentage": 41
-        }
-      ],
-      "sourceUrl": null,
       "foundOn": [
-        "https://pollingsource.com/house/NC-01"
+        "https://pollingsource.com/house/NC-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "reviewStatus": "auto",
-      "weight": 0.0358
+      "partisan": "D",
+      "fieldDates": "2026-06-28"
     },
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-29",
-      "weight": 0.0232,
+      "weight": 0.0115,
       "sampleSize": 842,
       "population": "LV",
       "results": [
@@ -191,12 +239,47 @@
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-04-25 to 2026-04-29",
+      "sponsors": "NRCC"
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-04-29",
+      "fieldDates": "2026-04-25 to 2026-04-29",
+      "sampleSize": 842,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "NRCC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0115,
+      "otherMatchup": true
     },
     {
       "pollster": "GQR (D)",
       "endDate": "2026-02-02",
-      "weight": 0.0025,
+      "weight": 0.0012,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -216,7 +299,41 @@
       "sourceUrl": "https://x.com/nicholaswu12/status/2029953742385131930?s=20",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-01-29 to 2026-02-02"
+    },
+    {
+      "pollster": "GQR",
+      "endDate": "2026-02-02",
+      "fieldDates": "2026-01-29 to 2026-02-02",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://x.com/nicholaswu12/status/2029953742385131930?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0012,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "MO-H-02-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T02:40:38.396Z",
+  "count": 3,
+  "updated_at": "2026-10-20T14:20:53.490Z",
   "polls": [
     {
       "pollster": "Remington Research Group",
@@ -24,17 +24,48 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/MarkMaxwellTV/status/2103501820840534440",
       "foundOn": [
-        "https://pollingsource.com/house/MO-02"
+        "https://pollingsource.com/house/MO-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2362
+      "weight": 0.2335
+    },
+    {
+      "pollster": "Remington",
+      "endDate": "2026-09-15",
+      "fieldDates": "2026-09-14 to 2026-09-15",
+      "sampleSize": 565,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://x.com/MarkMaxwellTV/status/2103501820840534440",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.467,
+      "otherMatchup": true
     },
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-05-31",
-      "weight": 0.0411,
+      "weight": 0.0406,
       "sampleSize": 600,
       "population": "LV",
       "results": [

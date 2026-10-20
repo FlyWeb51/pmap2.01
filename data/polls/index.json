@@ -1,25 +1,32 @@
 {
-  "updated_at": "2026-10-20T02:40:38.424Z",
+  "updated_at": "2026-10-20T14:20:53.511Z",
   "races": {
     "AK-H-01-2026": {
-      "count": 6,
+      "count": 14,
       "latest": {
-        "pollster": "The Bullfinch Group",
-        "endDate": "2026-07-16"
+        "pollster": "Alaska Survey Research",
+        "endDate": "2026-10-03"
       },
-      "average": null
+      "average": {
+        "polls": 6,
+        "dem": 8.8,
+        "rep": 48.9,
+        "margin": -40.1,
+        "demCandidate": "Eric Hafner",
+        "repCandidate": "Nick Begich"
+      }
     },
     "AK-S-2026": {
-      "count": 29,
+      "count": 31,
       "latest": {
         "pollster": "Public Policy Polling",
         "endDate": "2026-10-15"
       },
       "average": {
         "polls": 14,
-        "dem": 47.8,
-        "rep": 45.5,
-        "margin": 2.3,
+        "dem": 47.9,
+        "rep": 45.3,
+        "margin": 2.6,
         "demCandidate": "Mary Peltola",
         "repCandidate": "Dan S. Sullivan"
       }
@@ -40,15 +47,15 @@
       }
     },
     "AL-S-2026": {
-      "count": 2,
+      "count": 3,
       "latest": {
-        "pollster": "RMG Research",
-        "endDate": "2026-09-25"
+        "pollster": "The Alabama Poll",
+        "endDate": "2026-10-16"
       },
       "average": {
-        "polls": 1,
-        "dem": 33,
-        "rep": 54,
+        "polls": 2,
+        "dem": 34.5,
+        "rep": 55.5,
         "margin": -21,
         "demCandidate": "Everett Wess",
         "repCandidate": "Barry Moore"
@@ -85,7 +92,7 @@
       }
     },
     "AZ-H-06-2026": {
-      "count": 3,
+      "count": 4,
       "latest": {
         "pollster": "Normington, Petts & Associates (D)",
         "endDate": "2026-06-11"
@@ -117,34 +124,27 @@
       "average": null
     },
     "CA-H-48-2026": {
-      "count": 3,
+      "count": 4,
       "latest": {
         "pollster": "SurveyUSA",
-        "endDate": "2026-09-01"
+        "endDate": "2026-10-07"
       },
       "average": {
-        "polls": 1,
-        "dem": 45,
-        "rep": 42,
-        "margin": 3,
+        "polls": 2,
+        "dem": 46.4,
+        "rep": 39.2,
+        "margin": 7.2,
         "demCandidate": "Marni von Wilpert",
         "repCandidate": "Jim Desmond"
       }
     },
     "CO-H-03-2026": {
-      "count": 1,
+      "count": 4,
       "latest": {
         "pollster": "Keating Research, Inc. (D)",
         "endDate": "2026-07-23"
       },
-      "average": {
-        "polls": 1,
-        "dem": 45,
-        "rep": 46,
-        "margin": -1,
-        "demCandidate": "Dwayne Romero",
-        "repCandidate": "Jeff Hurd"
-      }
+      "average": null
     },
     "CO-H-05-2026": {
       "count": 2,
@@ -155,7 +155,7 @@
       "average": null
     },
     "FL-H-02-2026": {
-      "count": 2,
+      "count": 4,
       "latest": {
         "pollster": "Patriot Polling (R)",
         "endDate": "2026-07-26"
@@ -208,16 +208,16 @@
       }
     },
     "FL-H-13-2026": {
-      "count": 3,
+      "count": 6,
       "latest": {
         "pollster": "Hart Research Associates D-sponsored",
         "endDate": "2026-08-27"
       },
       "average": {
-        "polls": 2,
-        "dem": 48.6,
-        "rep": 46.7,
-        "margin": 1.8,
+        "polls": 4,
+        "dem": 45.7,
+        "rep": 45.8,
+        "margin": -0.1,
         "demCandidate": "Leela Gray",
         "repCandidate": "Anna Paulina Luna"
       }
@@ -231,22 +231,22 @@
       "average": null
     },
     "FL-H-22-2026": {
-      "count": 4,
+      "count": 6,
       "latest": {
         "pollster": "Tulchin Research",
         "endDate": "2026-08-31"
       },
       "average": {
-        "polls": 2,
-        "dem": 47.8,
-        "rep": 46.7,
-        "margin": 1.1,
+        "polls": 3,
+        "dem": 47.1,
+        "rep": 45.6,
+        "margin": 1.5,
         "demCandidate": "Pia Dandiya",
         "repCandidate": "Casey Askar"
       }
     },
     "FL-H-25-2026": {
-      "count": 3,
+      "count": 4,
       "latest": {
         "pollster": "Beacon Insights",
         "endDate": "2026-05-20"
@@ -277,37 +277,37 @@
       "average": null
     },
     "FL-S-2026": {
-      "count": 29,
+      "count": 35,
       "latest": {
         "pollster": "ActiVote",
         "endDate": "2026-10-15"
       },
       "average": {
-        "polls": 13,
-        "dem": 43.3,
-        "rep": 49.6,
-        "margin": -6.3,
+        "polls": 14,
+        "dem": 43.2,
+        "rep": 49.8,
+        "margin": -6.6,
         "demCandidate": "Angie Nixon",
         "repCandidate": "Ashley Moody"
       }
     },
     "GA-S-2026": {
-      "count": 30,
+      "count": 46,
       "latest": {
         "pollster": "Quantus Insights",
         "endDate": "2026-10-17"
       },
       "average": {
-        "polls": 13,
-        "dem": 51.6,
-        "rep": 43.1,
-        "margin": 8.5,
+        "polls": 11,
+        "dem": 52,
+        "rep": 43.3,
+        "margin": 8.7,
         "demCandidate": "Jon Ossoff",
         "repCandidate": "Mike Collins"
       }
     },
     "IA-H-01-2026": {
-      "count": 2,
+      "count": 3,
       "latest": {
         "pollster": "The Bullfinch Group",
         "endDate": "2026-07-16"
@@ -323,7 +323,7 @@
       "average": null
     },
     "IA-H-03-2026": {
-      "count": 1,
+      "count": 4,
       "latest": {
         "pollster": "Ragnar Research Partners (R)",
         "endDate": "2026-03-14"
@@ -331,16 +331,16 @@
       "average": null
     },
     "IA-S-2026": {
-      "count": 39,
+      "count": 47,
       "latest": {
         "pollster": "co/efficient",
         "endDate": "2026-10-19"
       },
       "average": {
-        "polls": 28,
+        "polls": 33,
         "dem": 46,
-        "rep": 45.7,
-        "margin": 0.3,
+        "rep": 45.6,
+        "margin": 0.4,
         "demCandidate": "Josh Turek",
         "repCandidate": "Ashley Hinson"
       }
@@ -363,10 +363,17 @@
     "ID-S-2026": {
       "count": 4,
       "latest": {
-        "pollster": "Peak Insights (R)",
-        "endDate": "2026-06-07"
+        "pollster": "Change Research",
+        "endDate": "2026-07-30"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 13,
+        "rep": 43,
+        "margin": -30,
+        "demCandidate": "David Roth",
+        "repCandidate": "James Risch"
+      }
     },
     "IL-H-04-2026": {
       "count": 2,
@@ -392,37 +399,37 @@
       "average": null
     },
     "KS-S-2026": {
-      "count": 14,
+      "count": 18,
       "latest": {
         "pollster": "InsiderAdvantage",
         "endDate": "2026-10-14"
       },
       "average": {
-        "polls": 12,
-        "dem": 46.8,
-        "rep": 45.6,
-        "margin": 1.2,
+        "polls": 14,
+        "dem": 46.7,
+        "rep": 45.7,
+        "margin": 1,
         "demCandidate": "Adam Hamilton",
         "repCandidate": "Roger Marshall"
       }
     },
     "KY-H-06-2026": {
-      "count": 8,
+      "count": 9,
       "latest": {
         "pollster": "Change Research",
         "endDate": "2026-10-05"
       },
       "average": {
-        "polls": 5,
-        "dem": 45.3,
-        "rep": 40.4,
-        "margin": 4.9,
+        "polls": 6,
+        "dem": 45.9,
+        "rep": 40.6,
+        "margin": 5.3,
         "demCandidate": "Zach Dembo",
         "repCandidate": "Ralph Alvarado"
       }
     },
     "KY-S-2026": {
-      "count": 2,
+      "count": 5,
       "latest": {
         "pollster": "Global Strategy Group",
         "endDate": "2026-08-27"
@@ -437,60 +444,67 @@
       }
     },
     "MA-S-2026": {
-      "count": 13,
+      "count": 25,
       "latest": {
-        "pollster": "MassINC Polling Group",
-        "endDate": "2026-09-22"
+        "pollster": "Suffolk University",
+        "endDate": "2026-10-18"
       },
       "average": {
-        "polls": 4,
-        "dem": 51.6,
-        "rep": 28.5,
-        "margin": 23.1,
+        "polls": 7,
+        "dem": 54.7,
+        "rep": 29.5,
+        "margin": 25.1,
         "demCandidate": "Ed Markey",
         "repCandidate": "John Deaton"
       }
     },
     "ME-H-02-2026": {
-      "count": 8,
+      "count": 18,
       "latest": {
-        "pollster": "Tulchin Research D-sponsored",
-        "endDate": "2026-09-30"
+        "pollster": "Tulchin Research",
+        "endDate": "2026-10-14"
       },
       "average": {
-        "polls": 4,
+        "polls": 5,
         "dem": 50.1,
-        "rep": 46.8,
-        "margin": 3.3,
+        "rep": 46.6,
+        "margin": 3.5,
         "demCandidate": "Matt Dunlap",
         "repCandidate": "Paul LePage"
       }
     },
     "ME-S-2026": {
-      "count": 58,
+      "count": 80,
       "latest": {
         "pollster": "InsiderAdvantage",
         "endDate": "2026-10-14"
       },
       "average": {
-        "polls": 27,
+        "polls": 29,
         "dem": 48.8,
-        "rep": 46.7,
-        "margin": 2.1,
+        "rep": 47,
+        "margin": 1.8,
         "demCandidate": "Troy Jackson",
         "repCandidate": "Susan M. Collins"
       }
     },
     "MI-H-04-2026": {
-      "count": 4,
+      "count": 5,
       "latest": {
-        "pollster": "GBAO (D)",
-        "endDate": "2026-06-01"
+        "pollster": "GBAO",
+        "endDate": "2026-09-16"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 47,
+        "rep": 46,
+        "margin": 1,
+        "demCandidate": "Sean McCann",
+        "repCandidate": "Bill Huizenga"
+      }
     },
     "MI-H-07-2026": {
-      "count": 5,
+      "count": 6,
       "latest": {
         "pollster": "Global Strategy Group D-sponsored",
         "endDate": "2026-08-13"
@@ -509,31 +523,38 @@
         "rep": 45,
         "margin": 0,
         "demCandidate": "Christina Hines",
-        "repCandidate": "Michael Bouchard"
+        "repCandidate": "Mike Bouchard"
       }
     },
     "MI-S-2026": {
-      "count": 76,
+      "count": 101,
       "latest": {
         "pollster": "Rasmussen Reports",
         "endDate": "2026-10-14"
       },
       "average": {
         "polls": 53,
-        "dem": 47.5,
-        "rep": 44.9,
+        "dem": 47.6,
+        "rep": 45,
         "margin": 2.6,
         "demCandidate": "Abdul El-Sayed",
         "repCandidate": "Mike Rogers"
       }
     },
     "MN-H-01-2026": {
-      "count": 2,
+      "count": 5,
       "latest": {
-        "pollster": "Ragnar Research Partners (R)",
-        "endDate": "2026-03-14"
+        "pollster": "SurveyUSA",
+        "endDate": "2026-10-12"
       },
-      "average": null
+      "average": {
+        "polls": 2,
+        "dem": 46.2,
+        "rep": 44.4,
+        "margin": 1.8,
+        "demCandidate": "Jake Johnson",
+        "repCandidate": "Brad Finstad"
+      }
     },
     "MN-H-02-2026": {
       "count": 3,
@@ -551,14 +572,14 @@
       }
     },
     "MN-S-2026": {
-      "count": 23,
+      "count": 25,
       "latest": {
         "pollster": "Trafalgar Group",
         "endDate": "2026-10-15"
       },
       "average": {
-        "polls": 17,
-        "dem": 45.6,
+        "polls": 18,
+        "dem": 45.7,
         "rep": 42.5,
         "margin": 3.1,
         "demCandidate": "Peggy Flanagan",
@@ -566,7 +587,7 @@
       }
     },
     "MO-H-02-2026": {
-      "count": 2,
+      "count": 3,
       "latest": {
         "pollster": "Remington Research Group",
         "endDate": "2026-09-15"
@@ -596,9 +617,9 @@
       }
     },
     "MT-H-01-2026": {
-      "count": 7,
+      "count": 11,
       "latest": {
-        "pollster": "American Pulse",
+        "pollster": "American Pulse Research & Polling",
         "endDate": "2026-09-24"
       },
       "average": {
@@ -611,22 +632,22 @@
       }
     },
     "MT-S-2026": {
-      "count": 18,
+      "count": 25,
       "latest": {
-        "pollster": "Peak Insights",
-        "endDate": "2026-10-12"
+        "pollster": "Quantus Insights",
+        "endDate": "2026-10-18"
       },
       "average": {
-        "polls": 12,
-        "dem": 19.6,
-        "rep": 42.3,
-        "margin": -22.6,
-        "demCandidate": "Alani Ines Bankhead",
+        "polls": 14,
+        "dem": 19.7,
+        "rep": 43.3,
+        "margin": -23.6,
+        "demCandidate": "Alani Bankhead",
         "repCandidate": "Kurt Alme"
       }
     },
     "NC-H-01-2026": {
-      "count": 8,
+      "count": 11,
       "latest": {
         "pollster": "co/efficient R-sponsored",
         "endDate": "2026-10-08"
@@ -649,7 +670,7 @@
       "average": null
     },
     "NC-H-14-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
         "pollster": "Ragnar Research Partners (R)",
         "endDate": "2026-03-12"
@@ -657,15 +678,15 @@
       "average": null
     },
     "NC-S-2026": {
-      "count": 72,
+      "count": 68,
       "latest": {
         "pollster": "SurveyUSA",
         "endDate": "2026-10-11"
       },
       "average": {
-        "polls": 41,
-        "dem": 50.2,
-        "rep": 40.3,
+        "polls": 38,
+        "dem": 50.6,
+        "rep": 40.7,
         "margin": 9.9,
         "demCandidate": "Roy A. Cooper",
         "repCandidate": "Michael Whatley"
@@ -687,45 +708,52 @@
       }
     },
     "NE-S-2026": {
-      "count": 3,
+      "count": 15,
       "latest": {
-        "pollster": "Tavern Research (I)",
-        "endDate": "2026-05-11"
+        "pollster": "National Public Affairs",
+        "endDate": "2026-10-05"
       },
-      "average": null
+      "average": {
+        "polls": 8,
+        "dem": 46.5,
+        "rep": 47.2,
+        "margin": -0.7,
+        "demCandidate": "Dan Osborn",
+        "repCandidate": "Pete Ricketts"
+      }
     },
     "NH-H-02-2026": {
-      "count": 8,
+      "count": 9,
       "latest": {
         "pollster": "University of New Hampshire",
         "endDate": "2026-09-21"
       },
       "average": {
-        "polls": 2,
-        "dem": 54.1,
+        "polls": 3,
+        "dem": 53.1,
         "rep": 35,
-        "margin": 19.1,
+        "margin": 18.1,
         "demCandidate": "Maggie Goodlander",
         "repCandidate": "Lily Tang Williams"
       }
     },
     "NH-S-2026": {
-      "count": 44,
+      "count": 59,
       "latest": {
         "pollster": "National Public Affairs",
         "endDate": "2026-10-12"
       },
       "average": {
-        "polls": 12,
+        "polls": 15,
         "dem": 48.9,
-        "rep": 42.4,
-        "margin": 6.5,
+        "rep": 42.7,
+        "margin": 6.2,
         "demCandidate": "Chris Pappas",
         "repCandidate": "John E. Sununu"
       }
     },
     "NJ-H-07-2026": {
-      "count": 3,
+      "count": 2,
       "latest": {
         "pollster": "StimSight Research",
         "endDate": "2026-09-12"
@@ -736,21 +764,21 @@
         "rep": 42,
         "margin": 5,
         "demCandidate": "Rebecca Bennett",
-        "repCandidate": "Tom Kean Jr."
+        "repCandidate": "Thomas H. Kean Jr."
       }
     },
     "NM-H-02-2026": {
-      "count": 2,
+      "count": 4,
       "latest": {
-        "pollster": "Survey USA",
-        "endDate": "2026-09-04"
+        "pollster": "Research & Polling Inc.",
+        "endDate": "2026-10-09"
       },
       "average": {
-        "polls": 1,
-        "dem": 46,
-        "rep": 43,
-        "margin": 3,
-        "demCandidate": "Gabe Vasquez",
+        "polls": 2,
+        "dem": 47.3,
+        "rep": 43.7,
+        "margin": 3.7,
+        "demCandidate": "Gabriel Vasquez",
         "repCandidate": "Greg Cunningham"
       }
     },
@@ -762,9 +790,9 @@
       },
       "average": {
         "polls": 2,
-        "dem": 40.4,
-        "rep": 41.8,
-        "margin": -1.4,
+        "dem": 39.7,
+        "rep": 40.4,
+        "margin": -0.7,
         "demCandidate": "Teresa Benitez-Thompson",
         "repCandidate": "David Flippo"
       }
@@ -793,7 +821,7 @@
       }
     },
     "NY-H-21-2026": {
-      "count": 8,
+      "count": 9,
       "latest": {
         "pollster": "Siena University",
         "endDate": "2026-10-06"
@@ -808,7 +836,7 @@
       }
     },
     "OH-H-07-2026": {
-      "count": 8,
+      "count": 10,
       "latest": {
         "pollster": "Bedrock Polling D-sponsored",
         "endDate": "2026-08-10"
@@ -838,52 +866,52 @@
       }
     },
     "OH-H-10-2026": {
-      "count": 3,
+      "count": 5,
       "latest": {
-        "pollster": "Global Strategy Group (D)",
-        "endDate": "2026-07-23"
+        "pollster": "DCCC Targeting Team",
+        "endDate": "2026-10-13"
       },
       "average": {
-        "polls": 2,
-        "dem": 41,
-        "rep": 47,
-        "margin": -6,
+        "polls": 3,
+        "dem": 44.8,
+        "rep": 44.8,
+        "margin": 0.1,
         "demCandidate": "Kristina Knickerbocker",
         "repCandidate": "Mike Turner"
       }
     },
     "OH-S-2026": {
-      "count": 39,
+      "count": 47,
       "latest": {
         "pollster": "ActiVote",
         "endDate": "2026-10-18"
       },
       "average": {
-        "polls": 24,
-        "dem": 48.1,
-        "rep": 44.9,
-        "margin": 3.2,
+        "polls": 29,
+        "dem": 48.2,
+        "rep": 44.5,
+        "margin": 3.7,
         "demCandidate": "Sherrod Brown",
         "repCandidate": "Jon Husted"
       }
     },
     "PA-H-01-2026": {
-      "count": 5,
+      "count": 7,
       "latest": {
-        "pollster": "Public Opinion Strategies R-sponsored",
-        "endDate": "2026-09-14"
+        "pollster": "Global Strategy Group",
+        "endDate": "2026-10-08"
       },
       "average": {
-        "polls": 3,
-        "dem": 42.9,
-        "rep": 48.5,
-        "margin": -5.6,
+        "polls": 5,
+        "dem": 45.1,
+        "rep": 47.2,
+        "margin": -2.1,
         "demCandidate": "Bob Harvie",
         "repCandidate": "Brian Fitzpatrick"
       }
     },
     "PA-H-07-2026": {
-      "count": 3,
+      "count": 2,
       "latest": {
         "pollster": "Franklin & Marshall College",
         "endDate": "2026-09-20"
@@ -894,7 +922,7 @@
         "rep": 40,
         "margin": 5,
         "demCandidate": "Bob Brooks",
-        "repCandidate": "Ryan Mackenzie"
+        "repCandidate": "Ryan E. Mackenzie"
       }
     },
     "PA-H-08-2026": {
@@ -906,37 +934,37 @@
       "average": null
     },
     "PA-H-10-2026": {
-      "count": 4,
+      "count": 5,
       "latest": {
-        "pollster": "Franklin & Marshall College",
-        "endDate": "2026-09-20"
+        "pollster": "Susquehanna Polling & Research, Inc.",
+        "endDate": "2026-10-11"
       },
       "average": {
-        "polls": 1,
-        "dem": 47,
-        "rep": 44,
+        "polls": 2,
+        "dem": 48.2,
+        "rep": 45.2,
         "margin": 3,
         "demCandidate": "Janelle Stelson",
         "repCandidate": "Scott Perry"
       }
     },
     "RI-S-2026": {
-      "count": 5,
+      "count": 6,
       "latest": {
         "pollster": "Emerson College/WPRI-TV",
         "endDate": "2026-10-11"
       },
       "average": {
-        "polls": 3,
-        "dem": 55.9,
-        "rep": 28.4,
-        "margin": 27.5,
+        "polls": 4,
+        "dem": 55.6,
+        "rep": 29.6,
+        "margin": 26,
         "demCandidate": "Jack Reed",
         "repCandidate": "Raymond McKay"
       }
     },
     "SC-H-01-2026": {
-      "count": 5,
+      "count": 7,
       "latest": {
         "pollster": "co/efficient",
         "endDate": "2026-10-01"
@@ -947,7 +975,7 @@
         "rep": 44.5,
         "margin": -4.5,
         "demCandidate": "Nancy Lacore",
-        "repCandidate": "Honeycutt"
+        "repCandidate": "Jenny Costa Honeycutt"
       }
     },
     "SC-H-07-2026": {
@@ -966,16 +994,16 @@
       }
     },
     "SC-S-2026": {
-      "count": 14,
+      "count": 19,
       "latest": {
         "pollster": "Trafalgar Group",
         "endDate": "2026-10-18"
       },
       "average": {
-        "polls": 9,
-        "dem": 43.9,
-        "rep": 47,
-        "margin": -3.1,
+        "polls": 10,
+        "dem": 43.5,
+        "rep": 47.3,
+        "margin": -3.7,
         "demCandidate": "Annie Andrews",
         "repCandidate": "Darline Graham"
       }
@@ -1004,22 +1032,22 @@
       }
     },
     "TX-H-15-2026": {
-      "count": 5,
+      "count": 9,
       "latest": {
-        "pollster": "Public Policy Research/Texas Southern University",
-        "endDate": "2026-08-22"
+        "pollster": "Normington, Petts & Associates",
+        "endDate": "2026-09-28"
       },
       "average": {
-        "polls": 3,
-        "dem": 50.1,
-        "rep": 45,
-        "margin": 5.1,
+        "polls": 4,
+        "dem": 51.2,
+        "rep": 43.9,
+        "margin": 7.3,
         "demCandidate": "Bobby Pulido",
         "repCandidate": "Monica De La Cruz"
       }
     },
     "TX-H-23-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
         "pollster": "Public Policy Polling (D)",
         "endDate": "2026-03-11"
@@ -1027,13 +1055,13 @@
       "average": null
     },
     "TX-H-28-2026": {
-      "count": 3,
+      "count": 4,
       "latest": {
         "pollster": "Public Policy Research/Texas Southern University",
         "endDate": "2026-08-22"
       },
       "average": {
-        "polls": 1,
+        "polls": 2,
         "dem": 45,
         "rep": 34,
         "margin": 11,
@@ -1042,13 +1070,13 @@
       }
     },
     "TX-H-34-2026": {
-      "count": 3,
+      "count": 5,
       "latest": {
         "pollster": "Public Policy Research/Texas Southern University",
         "endDate": "2026-08-22"
       },
       "average": {
-        "polls": 1,
+        "polls": 2,
         "dem": 45,
         "rep": 42,
         "margin": 3,
@@ -1057,13 +1085,13 @@
       }
     },
     "TX-S-2026": {
-      "count": 77,
+      "count": 108,
       "latest": {
         "pollster": "CBS News/YouGov",
         "endDate": "2026-10-16"
       },
       "average": {
-        "polls": 43,
+        "polls": 53,
         "dem": 48.3,
         "rep": 45.6,
         "margin": 2.7,
@@ -1072,7 +1100,7 @@
       }
     },
     "VA-H-01-2026": {
-      "count": 5,
+      "count": 7,
       "latest": {
         "pollster": "Washington Post",
         "endDate": "2026-09-29"
@@ -1083,16 +1111,23 @@
         "rep": 46.2,
         "margin": 3.2,
         "demCandidate": "Shannon Taylor",
-        "repCandidate": "Rob Wittman"
+        "repCandidate": "Robert Wittman"
       }
     },
     "VA-H-02-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
-        "pollster": "Tulchin Research (D)",
-        "endDate": "2026-07-13"
+        "pollster": "Christopher Newport University",
+        "endDate": "2026-10-10"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 46,
+        "rep": 43,
+        "margin": 3,
+        "demCandidate": "Elaine G. Luria",
+        "repCandidate": "Jen Kiggans"
+      }
     },
     "VA-S-2026": {
       "count": 4,
@@ -1103,26 +1138,33 @@
       "average": null
     },
     "VT-H-01-2026": {
-      "count": 2,
+      "count": 4,
       "latest": {
-        "pollster": "University of New Hampshire",
-        "endDate": "2026-07-20"
+        "pollster": "Braun Research",
+        "endDate": "2026-09-21"
       },
-      "average": null
+      "average": {
+        "polls": 2,
+        "dem": 56.8,
+        "rep": 30.1,
+        "margin": 26.6,
+        "demCandidate": "Becca Balint",
+        "repCandidate": "Gerald Malloy"
+      }
     },
     "WA-H-03-2026": {
-      "count": 3,
+      "count": 5,
       "latest": {
         "pollster": "OPB/DHM Research",
         "endDate": "2026-09-27"
       },
       "average": {
-        "polls": 1,
+        "polls": 2,
         "dem": 47,
         "rep": 48,
         "margin": -1,
-        "demCandidate": "Gluesenkamp Perez",
-        "repCandidate": "Braun"
+        "demCandidate": "Marie Gluesenkamp Perez",
+        "repCandidate": "John Braun"
       }
     },
     "WA-H-05-2026": {
@@ -1134,22 +1176,22 @@
       "average": null
     },
     "WI-H-01-2026": {
-      "count": 4,
+      "count": 6,
       "latest": {
         "pollster": "Impact Research D-sponsored",
         "endDate": "2026-10-01"
       },
       "average": {
-        "polls": 3,
-        "dem": 48,
-        "rep": 47.7,
-        "margin": 0.3,
-        "demCandidate": "Mitchell Berman",
-        "repCandidate": "Bryan Steil"
+        "polls": 2,
+        "dem": 47.2,
+        "rep": 46.4,
+        "margin": 0.8,
+        "demCandidate": "Generic Democrat",
+        "repCandidate": "Generic Republican"
       }
     },
     "WI-H-03-2026": {
-      "count": 6,
+      "count": 5,
       "latest": {
         "pollster": "FM3 Research (D)",
         "endDate": "2026-06-25"
@@ -1165,16 +1207,16 @@
       "average": null
     },
     "generic-ballot": {
-      "count": 130,
+      "count": 129,
       "latest": {
         "pollster": "Rasmussen Reports",
         "endDate": "2026-10-14"
       },
       "average": {
-        "polls": 110,
-        "dem": 49.7,
-        "rep": 42,
-        "margin": 7.7,
+        "polls": 109,
+        "dem": 49.3,
+        "rep": 41.7,
+        "margin": 7.6,
         "demCandidate": "Democratic",
         "repCandidate": "Republicans"
       }
@@ -1195,37 +1237,37 @@
       }
     },
     "NY-H-18-2026": {
-      "count": 1,
+      "count": 5,
       "latest": {
-        "pollster": "Global Strategy Group D-sponsored",
-        "endDate": "2026-07-26"
+        "pollster": "Public Policy Polling",
+        "endDate": "2026-09-30"
       },
       "average": {
-        "polls": 1,
-        "dem": 53,
-        "rep": 39,
-        "margin": 14,
-        "demCandidate": "Pat Ryan",
-        "repCandidate": "Jacqueline Auringer"
+        "polls": 2,
+        "dem": 50.1,
+        "rep": 41.8,
+        "margin": 8.3,
+        "demCandidate": "Generic Democrat",
+        "repCandidate": "Generic Republican"
       }
     },
     "OH-H-15-2026": {
-      "count": 2,
+      "count": 5,
       "latest": {
-        "pollster": "Hart Research D-sponsored",
-        "endDate": "2026-08-09"
+        "pollster": "Hart Research Associates",
+        "endDate": "2026-09-24"
       },
       "average": {
-        "polls": 1,
-        "dem": 37,
-        "rep": 41,
-        "margin": -4,
+        "polls": 2,
+        "dem": 43.9,
+        "rep": 44.1,
+        "margin": -0.2,
         "demCandidate": "Don Leonard",
         "repCandidate": "Mike Carey"
       }
     },
     "AR-H-02-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
         "pollster": "Hendrix College",
         "endDate": "2026-08-13"
@@ -1240,37 +1282,37 @@
       }
     },
     "OK-S-2026": {
-      "count": 2,
+      "count": 4,
       "latest": {
         "pollster": "Cole Hargrave",
         "endDate": "2026-08-09"
       },
       "average": {
-        "polls": 2,
+        "polls": 3,
         "dem": 25,
         "rep": 49,
         "margin": -24,
-        "demCandidate": "Jasmine Thomas",
+        "demCandidate": "N'Kiyla Jasmine Thomas",
         "repCandidate": "Kevin Hern"
       }
     },
     "OH-H-01-2026": {
-      "count": 1,
+      "count": 3,
       "latest": {
-        "pollster": "Quantus Insights",
-        "endDate": "2026-08-24"
+        "pollster": "Torchlight Strategies",
+        "endDate": "2026-10-02"
       },
       "average": {
-        "polls": 1,
-        "dem": 47,
-        "rep": 43,
-        "margin": 4,
+        "polls": 2,
+        "dem": 46.2,
+        "rep": 43.8,
+        "margin": 2.4,
         "demCandidate": "Greg Landsman",
         "repCandidate": "Eric Conroy"
       }
     },
     "NC-H-07-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
         "pollster": "Public Policy Polling D-sponsored",
         "endDate": "2026-08-20"
@@ -1322,9 +1364,9 @@
       },
       "average": {
         "polls": 1,
-        "dem": 31,
-        "rep": 51,
-        "margin": -20,
+        "dem": 33,
+        "rep": 58,
+        "margin": -25,
         "demCandidate": "Marquita Bradshaw",
         "repCandidate": "Bill Hagerty"
       }
@@ -1337,24 +1379,24 @@
       },
       "average": {
         "polls": 2,
-        "dem": 39.5,
-        "rep": 41.1,
-        "margin": -1.7,
+        "dem": 39.3,
+        "rep": 41.8,
+        "margin": -2.5,
         "demCandidate": "Kelly Kirschner",
         "repCandidate": "Sydney Gruters"
       }
     },
     "GA-H-07-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
-        "pollster": "20/20 Insight D-sponsored",
-        "endDate": "2026-08-26"
+        "pollster": "20/20 Insight",
+        "endDate": "2026-10-09"
       },
       "average": {
-        "polls": 1,
-        "dem": 43,
-        "rep": 46,
-        "margin": -3,
+        "polls": 2,
+        "dem": 45.9,
+        "rep": 45.3,
+        "margin": 0.7,
         "demCandidate": "Anthony Kozycki",
         "repCandidate": "Rich McCormick"
       }
@@ -1375,16 +1417,16 @@
       }
     },
     "NE-H-02-2026": {
-      "count": 1,
+      "count": 5,
       "latest": {
-        "pollster": "SurveyUSA",
-        "endDate": "2026-09-13"
+        "pollster": "National Public Affairs",
+        "endDate": "2026-10-05"
       },
       "average": {
-        "polls": 1,
-        "dem": 46,
-        "rep": 42,
-        "margin": 4,
+        "polls": 2,
+        "dem": 48.2,
+        "rep": 39.8,
+        "margin": 8.4,
         "demCandidate": "Denise Powell",
         "repCandidate": "Brinker Harding"
       }
@@ -1405,7 +1447,7 @@
       }
     },
     "GA-H-11-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
         "pollster": "Miller Consulting Services",
         "endDate": "2026-09-11"
@@ -1430,8 +1472,8 @@
         "dem": 46,
         "rep": 48,
         "margin": -2,
-        "demCandidate": "Manny Rutinel",
-        "repCandidate": "Gabe Evans"
+        "demCandidate": "Generic Democrat",
+        "repCandidate": "Generic Republican"
       }
     },
     "NH-H-01-2026": {
@@ -1495,7 +1537,7 @@
       }
     },
     "VA-H-05-2026": {
-      "count": 4,
+      "count": 5,
       "latest": {
         "pollster": "Washington Post",
         "endDate": "2026-09-29"
@@ -1510,15 +1552,15 @@
       }
     },
     "FL-H-09-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
-        "pollster": "SEA Polling D-sponsored",
-        "endDate": "2026-08-30"
+        "pollster": "SEA Polling",
+        "endDate": "2026-10-15"
       },
       "average": {
-        "polls": 1,
-        "dem": 41,
-        "rep": 41,
+        "polls": 2,
+        "dem": 43.3,
+        "rep": 43.3,
         "margin": 0,
         "demCandidate": "Darren Soto",
         "repCandidate": "Dan Green"
@@ -1536,7 +1578,7 @@
         "rep": 45,
         "margin": -1,
         "demCandidate": "Johnny Garcia",
-        "repCandidate": "Carlos De La Cruz Jr"
+        "repCandidate": "Carlos De La Cruz"
       }
     },
     "TX-H-10-2026": {
@@ -1612,6 +1654,750 @@
         "margin": -5,
         "demCandidate": "Eileen Laubacher",
         "repCandidate": "Lauren Boebert"
+      }
+    },
+    "AK-G-2026": {
+      "count": 10,
+      "latest": {
+        "pollster": "Alaska Survey Research",
+        "endDate": "2026-10-18"
+      },
+      "average": {
+        "polls": 4,
+        "dem": 54.2,
+        "rep": 45.8,
+        "margin": 8.4,
+        "demCandidate": "Jonathan Kreiss-Tomkins",
+        "repCandidate": "Bernadette Wilson"
+      }
+    },
+    "AL-G-2026": {
+      "count": 4,
+      "latest": {
+        "pollster": "The Alabama Poll",
+        "endDate": "2026-10-16"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 38.5,
+        "rep": 50.8,
+        "margin": -12.2,
+        "demCandidate": "Doug Jones",
+        "repCandidate": "Tommy Tuberville"
+      }
+    },
+    "AR-G-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Hendrix College",
+        "endDate": "2026-10-13"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 33.9,
+        "rep": 49.6,
+        "margin": -15.7,
+        "demCandidate": "Fred Love",
+        "repCandidate": "Sarah Huckabee Sanders"
+      }
+    },
+    "AZ-G-2026": {
+      "count": 37,
+      "latest": {
+        "pollster": "HighGround",
+        "endDate": "2026-10-08"
+      },
+      "average": {
+        "polls": 13,
+        "dem": 48,
+        "rep": 39.1,
+        "margin": 9,
+        "demCandidate": "Katie Hobbs",
+        "repCandidate": "Andy Biggs"
+      }
+    },
+    "AZ-H-01-2026": {
+      "count": 4,
+      "latest": {
+        "pollster": "FirstStrategic Communications and Public Affairs",
+        "endDate": "2026-10-01"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 44.4,
+        "rep": 41.6,
+        "margin": 2.8,
+        "demCandidate": "Amish Shah",
+        "repCandidate": "Jay Feely"
+      }
+    },
+    "CA-G-2026": {
+      "count": 13,
+      "latest": {
+        "pollster": "ActiVote",
+        "endDate": "2026-10-16"
+      },
+      "average": {
+        "polls": 8,
+        "dem": 55.8,
+        "rep": 36.4,
+        "margin": 19.3,
+        "demCandidate": "Xavier Becerra",
+        "repCandidate": "Steve Hilton"
+      }
+    },
+    "CO-G-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Magellan Strategies",
+        "endDate": "2025-08-12"
+      },
+      "average": null
+    },
+    "CT-G-2026": {
+      "count": 13,
+      "latest": {
+        "pollster": "GreatBlue Research",
+        "endDate": "2026-10-12"
+      },
+      "average": {
+        "polls": 10,
+        "dem": 55.4,
+        "rep": 36.8,
+        "margin": 18.6,
+        "demCandidate": "Ned Lamont",
+        "repCandidate": "Ryan Fazio"
+      }
+    },
+    "FL-G-2026": {
+      "count": 45,
+      "latest": {
+        "pollster": "ActiVote",
+        "endDate": "2026-10-19"
+      },
+      "average": {
+        "polls": 16,
+        "dem": 43.4,
+        "rep": 47.9,
+        "margin": -4.5,
+        "demCandidate": "David Jolly",
+        "repCandidate": "Byron Donalds"
+      }
+    },
+    "GA-G-2026": {
+      "count": 17,
+      "latest": {
+        "pollster": "Quantus Insights",
+        "endDate": "2026-10-17"
+      },
+      "average": {
+        "polls": 9,
+        "dem": 46.6,
+        "rep": 48.2,
+        "margin": -1.6,
+        "demCandidate": "Keisha Lance Bottoms",
+        "repCandidate": "Rick Jackson"
+      }
+    },
+    "GA-H-03-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "VoteNexus",
+        "endDate": "2026-10-07"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 45,
+        "rep": 50,
+        "margin": -5,
+        "demCandidate": "Maura Keller",
+        "repCandidate": "Brian Jack"
+      }
+    },
+    "IA-G-2026": {
+      "count": 23,
+      "latest": {
+        "pollster": "co/efficient",
+        "endDate": "2026-10-19"
+      },
+      "average": {
+        "polls": 17,
+        "dem": 50.7,
+        "rep": 43.6,
+        "margin": 7,
+        "demCandidate": "Rob Sand",
+        "repCandidate": "Zach Lahn"
+      }
+    },
+    "ID-G-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Change Research",
+        "endDate": "2026-07-30"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 32,
+        "rep": 53,
+        "margin": -21,
+        "demCandidate": "Generic Democrat",
+        "repCandidate": "Brad Little"
+      }
+    },
+    "IL-G-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Public Policy Polling",
+        "endDate": "2026-10-01"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 54,
+        "rep": 34,
+        "margin": 20,
+        "demCandidate": "JB Pritzker",
+        "repCandidate": "Darren Bailey"
+      }
+    },
+    "KS-G-2026": {
+      "count": 7,
+      "latest": {
+        "pollster": "YouGov",
+        "endDate": "2026-10-04"
+      },
+      "average": {
+        "polls": 7,
+        "dem": 44.8,
+        "rep": 48.9,
+        "margin": -4,
+        "demCandidate": "Cindy Holscher",
+        "repCandidate": "Ty Masterson"
+      }
+    },
+    "MA-G-2026": {
+      "count": 24,
+      "latest": {
+        "pollster": "Suffolk University",
+        "endDate": "2026-10-18"
+      },
+      "average": {
+        "polls": 6,
+        "dem": 55.9,
+        "rep": 33.8,
+        "margin": 22.1,
+        "demCandidate": "Maura Healey",
+        "repCandidate": "Mike Minogue"
+      }
+    },
+    "MD-G-2026": {
+      "count": 5,
+      "latest": {
+        "pollster": "UMBC Institute of Politics",
+        "endDate": "2026-09-27"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 51.9,
+        "rep": 24.9,
+        "margin": 27,
+        "demCandidate": "Wes Moore",
+        "repCandidate": "Dan Cox"
+      }
+    },
+    "ME-G-2026": {
+      "count": 15,
+      "latest": {
+        "pollster": "Suffolk University",
+        "endDate": "2026-10-11"
+      },
+      "average": {
+        "polls": 12,
+        "dem": 50.4,
+        "rep": 39,
+        "margin": 11.4,
+        "demCandidate": "Hannah Pingree",
+        "repCandidate": "Bobby Charles"
+      }
+    },
+    "MI-G-2026": {
+      "count": 59,
+      "latest": {
+        "pollster": "Wedgewood Polls",
+        "endDate": "2026-10-09"
+      },
+      "average": {
+        "polls": 23,
+        "dem": 49.7,
+        "rep": 42.2,
+        "margin": 7.5,
+        "demCandidate": "Jocelyn Benson",
+        "repCandidate": "John James"
+      }
+    },
+    "MN-G-2026": {
+      "count": 20,
+      "latest": {
+        "pollster": "SurveyUSA",
+        "endDate": "2026-10-12"
+      },
+      "average": {
+        "polls": 7,
+        "dem": 48.5,
+        "rep": 40.6,
+        "margin": 7.9,
+        "demCandidate": "Amy Klobuchar",
+        "repCandidate": "Lisa Demuth"
+      }
+    },
+    "NC-H-11-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Public Policy Polling",
+        "endDate": "2026-09-11"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 46,
+        "rep": 50,
+        "margin": -4,
+        "demCandidate": "Generic Democrat",
+        "repCandidate": "Generic Republican"
+      }
+    },
+    "NE-G-2026": {
+      "count": 9,
+      "latest": {
+        "pollster": "Public Policy Polling",
+        "endDate": "2026-10-14"
+      },
+      "average": {
+        "polls": 8,
+        "dem": 39.9,
+        "rep": 44.1,
+        "margin": -4.3,
+        "demCandidate": "Lynne Walz",
+        "repCandidate": "Jim Pillen"
+      }
+    },
+    "NH-G-2026": {
+      "count": 17,
+      "latest": {
+        "pollster": "National Public Affairs",
+        "endDate": "2026-10-12"
+      },
+      "average": {
+        "polls": 8,
+        "dem": 40.3,
+        "rep": 50.6,
+        "margin": -10.2,
+        "demCandidate": "Cinde Warmington",
+        "repCandidate": "Kelly Ayotte"
+      }
+    },
+    "NJ-H-02-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Public Policy Polling",
+        "endDate": "2025-05-22"
+      },
+      "average": null
+    },
+    "NM-G-2026": {
+      "count": 5,
+      "latest": {
+        "pollster": "Research & Polling Inc.",
+        "endDate": "2026-10-09"
+      },
+      "average": {
+        "polls": 4,
+        "dem": 47.7,
+        "rep": 40.3,
+        "margin": 7.5,
+        "demCandidate": "Deb Haaland",
+        "repCandidate": "Gregg Hull"
+      }
+    },
+    "NM-H-01-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Research & Polling Inc.",
+        "endDate": "2026-10-09"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 53,
+        "rep": 35,
+        "margin": 18,
+        "demCandidate": "Melanie Ann Stansbury",
+        "repCandidate": "Ndidiamaka Okpareke"
+      }
+    },
+    "NM-H-03-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Research & Polling Inc.",
+        "endDate": "2026-10-09"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 53,
+        "rep": 39,
+        "margin": 14,
+        "demCandidate": "Teresa Leger Fernandez",
+        "repCandidate": "Martin Ruben Zamora"
+      }
+    },
+    "NV-G-2026": {
+      "count": 12,
+      "latest": {
+        "pollster": "Tarrance Group",
+        "endDate": "2026-07-29"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 43,
+        "rep": 50,
+        "margin": -7,
+        "demCandidate": "Aaron Ford",
+        "repCandidate": "Joe Lombardo"
+      }
+    },
+    "NY-G-2026": {
+      "count": 42,
+      "latest": {
+        "pollster": "Beacon Research",
+        "endDate": "2026-10-06"
+      },
+      "average": {
+        "polls": 10,
+        "dem": 51.9,
+        "rep": 39.7,
+        "margin": 12.2,
+        "demCandidate": "Kathy Hochul",
+        "repCandidate": "Bruce Blakeman"
+      }
+    },
+    "NY-H-04-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Impact Research",
+        "endDate": "2026-02-17"
+      },
+      "average": null
+    },
+    "NY-H-23-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Public Policy Polling",
+        "endDate": "2026-09-23"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 35,
+        "rep": 52,
+        "margin": -17,
+        "demCandidate": "Aaron Gies",
+        "repCandidate": "Nick Langworthy"
+      }
+    },
+    "OH-G-2026": {
+      "count": 33,
+      "latest": {
+        "pollster": "ActiVote",
+        "endDate": "2026-10-19"
+      },
+      "average": {
+        "polls": 14,
+        "dem": 48.5,
+        "rep": 44.8,
+        "margin": 3.7,
+        "demCandidate": "Amy Acton",
+        "repCandidate": "Vivek Ramaswamy"
+      }
+    },
+    "OK-G-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Workbench Strategy",
+        "endDate": "2026-10-13"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 45,
+        "rep": 49,
+        "margin": -4,
+        "demCandidate": "Cyndi Munson",
+        "repCandidate": "Mike Mazzei"
+      }
+    },
+    "OK-H-05-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "GBAO",
+        "endDate": "2026-09-20"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 43,
+        "rep": 48,
+        "margin": -5,
+        "demCandidate": "Jena Nelson",
+        "repCandidate": "Stephanie Bice"
+      }
+    },
+    "OR-G-2026": {
+      "count": 10,
+      "latest": {
+        "pollster": "GBAO",
+        "endDate": "2026-10-04"
+      },
+      "average": {
+        "polls": 4,
+        "dem": 45.5,
+        "rep": 44.8,
+        "margin": 0.6,
+        "demCandidate": "Tina Kotek",
+        "repCandidate": "Christine Drazan"
+      }
+    },
+    "PA-G-2026": {
+      "count": 20,
+      "latest": {
+        "pollster": "Bravo Group",
+        "endDate": "2026-10-11"
+      },
+      "average": {
+        "polls": 10,
+        "dem": 55.9,
+        "rep": 31.5,
+        "margin": 24.4,
+        "demCandidate": "Josh Shapiro",
+        "repCandidate": "Stacy Garrity"
+      }
+    },
+    "RI-G-2026": {
+      "count": 16,
+      "latest": {
+        "pollster": "Emerson College",
+        "endDate": "2026-10-11"
+      },
+      "average": {
+        "polls": 5,
+        "dem": 42.9,
+        "rep": 15.4,
+        "margin": 27.5,
+        "demCandidate": "Helena Foulkes",
+        "repCandidate": "Aaron Guckian"
+      }
+    },
+    "RI-H-01-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Emerson College",
+        "endDate": "2026-10-11"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 52.9,
+        "rep": 29.5,
+        "margin": 23.4,
+        "demCandidate": "Gabe Amo",
+        "repCandidate": "Kellie Keenan"
+      }
+    },
+    "RI-H-02-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Emerson College",
+        "endDate": "2026-10-11"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 53.6,
+        "rep": 39.1,
+        "margin": 14.5,
+        "demCandidate": "Seth M. Magaziner",
+        "repCandidate": "Victor Mellor"
+      }
+    },
+    "SC-G-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Hart Research Associates",
+        "endDate": "2026-08-15"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 41,
+        "rep": 48,
+        "margin": -7,
+        "demCandidate": "Jermaine Johnson",
+        "repCandidate": "Alan Wilson"
+      }
+    },
+    "SD-G-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "Mason-Dixon Polling & Research, Inc.",
+        "endDate": "2026-10-14"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 37.3,
+        "rep": 55.2,
+        "margin": -17.9,
+        "demCandidate": "Daniel P. Ahlers",
+        "repCandidate": "Larry Rhoden"
+      }
+    },
+    "SD-H-01-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Lake Research Partners",
+        "endDate": "2026-08-30"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 43,
+        "rep": 47,
+        "margin": -4,
+        "demCandidate": "Nikki Gronli",
+        "repCandidate": "Marty Jackley"
+      }
+    },
+    "TN-G-2026": {
+      "count": 7,
+      "latest": {
+        "pollster": "TargetSmart",
+        "endDate": "2026-09-12"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 34.9,
+        "rep": 50.7,
+        "margin": -15.9,
+        "demCandidate": "Jerri Green",
+        "repCandidate": "Marsha Blackburn"
+      }
+    },
+    "TX-G-2026": {
+      "count": 48,
+      "latest": {
+        "pollster": "YouGov",
+        "endDate": "2026-10-16"
+      },
+      "average": {
+        "polls": 31,
+        "dem": 46.2,
+        "rep": 48.8,
+        "margin": -2.6,
+        "demCandidate": "Gina Hinojosa",
+        "repCandidate": "Greg Abbott"
+      }
+    },
+    "TX-H-02-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Impact Research",
+        "endDate": "2026-10-04"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 37,
+        "rep": 46,
+        "margin": -9,
+        "demCandidate": "Shaun Finnie",
+        "repCandidate": "Steve Toth"
+      }
+    },
+    "TX-H-09-2026": {
+      "count": 2,
+      "latest": {
+        "pollster": "University of Houston Hobby School of Public Affairs",
+        "endDate": "2026-10-07"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 41.4,
+        "rep": 47.4,
+        "margin": -6,
+        "demCandidate": "Leticia Gutierrez",
+        "repCandidate": "Alex Mealer"
+      }
+    },
+    "UT-H-02-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Lighthouse Research",
+        "endDate": "2026-09-24"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 34,
+        "rep": 39,
+        "margin": -5,
+        "demCandidate": "Peter Crosby",
+        "repCandidate": "Blake Moore"
+      }
+    },
+    "UT-H-03-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "Lighthouse Research",
+        "endDate": "2026-09-15"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 26.4,
+        "rep": 44.5,
+        "margin": -18.1,
+        "demCandidate": "Kent Udell",
+        "repCandidate": "Celeste Maloy"
+      }
+    },
+    "VA-H-06-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "co/efficient",
+        "endDate": "2026-09-30"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 29,
+        "rep": 59,
+        "margin": -30,
+        "demCandidate": "Beth Macy",
+        "repCandidate": "Ben Cline"
+      }
+    },
+    "VT-G-2026": {
+      "count": 7,
+      "latest": {
+        "pollster": "State Navigate",
+        "endDate": "2026-10-04"
+      },
+      "average": {
+        "polls": 3,
+        "dem": 42.4,
+        "rep": 44.5,
+        "margin": -2.1,
+        "demCandidate": "Amanda Janoo",
+        "repCandidate": "Phil Scott"
+      }
+    },
+    "WI-G-2026": {
+      "count": 25,
+      "latest": {
+        "pollster": "YouGov",
+        "endDate": "2026-10-09"
+      },
+      "average": {
+        "polls": 7,
+        "dem": 47.9,
+        "rep": 43.9,
+        "margin": 3.9,
+        "demCandidate": "David Crowley",
+        "repCandidate": "Tom Tiffany"
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "raceId": "NH-S-2026",
-  "count": 44,
-  "updated_at": "2026-10-20T02:40:38.401Z",
+  "count": 59,
+  "updated_at": "2026-10-20T14:20:53.492Z",
   "polls": [
     {
       "pollster": "National Public Affairs",
@@ -24,13 +24,15 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/NH_General_Election_Memo_101526.2.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4541
+      "sponsors": "God, Family, & Country PAC",
+      "weight": 0.449
     },
     {
       "pollster": "YouGov",
@@ -53,13 +55,14 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_nh_20260921_lv.pdf",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2297
+      "weight": 1.216
     },
     {
       "pollster": "Saint Anselm College",
@@ -88,36 +91,71 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8864
+      "weight": 0.8765
     },
     {
-      "pollster": "Trafalgar Group",
-      "endDate": "2026-09-27",
-      "fieldDates": "September 26–27, 2026",
-      "sampleSize": 1082,
+      "pollster": "St. Anselm",
+      "endDate": "2026-09-29",
+      "fieldDates": "2026-09-28 to 2026-09-29",
+      "sampleSize": 1042,
       "population": "LV",
-      "partisan": "R",
+      "partisan": null,
+      "sponsors": "AARP",
       "results": [
         {
           "candidate": "Chris Pappas (D)",
           "party": "D",
-          "pct": 47,
-          "percentage": 47
+          "pct": 51,
+          "percentage": 51
         },
         {
-          "candidate": "John E. Sununu (R)",
+          "candidate": "John Sununu (R)",
           "party": "R",
-          "pct": 41,
-          "percentage": 41
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.aarp.org/pri/topics/voter-research/politics/2026-midterm-election-poll-new-hampshire/",
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
-        "https://pollingsource.com/senate/NH"
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4312
+      "weight": 0.8765
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "endDate": "2026-09-27",
+      "fieldDates": "2026-09-26 to 2026-09-27",
+      "sampleSize": 1082,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 47.4,
+          "percentage": 47.4
+        },
+        {
+          "candidate": "John Sununu (R)",
+          "party": "R",
+          "pct": 40.5,
+          "percentage": 40.5
+        },
+        {
+          "candidate": "Edmond Laplante (CON)",
+          "party": "O",
+          "pct": 1.1,
+          "percentage": 1.1
+        }
+      ],
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/nh-gen-senate-0926/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4264
     },
     {
       "pollster": "Trafalgar Group",
@@ -146,7 +184,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4133
+      "weight": 0.4086
     },
     {
       "pollster": "New York Times/Siena University",
@@ -175,7 +213,36 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5722
+      "weight": 0.5658
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-09-22",
+      "fieldDates": "2026-09-15 to 2026-09-22",
+      "sampleSize": 613,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 49.82,
+          "percentage": 49.82
+        },
+        {
+          "candidate": "John Sununu (R)",
+          "party": "R",
+          "pct": 44.82,
+          "percentage": 44.82
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/09/24/polls/times-siena-poll-nh-toplines.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5719
     },
     {
       "pollster": "University of New Hampshire",
@@ -198,13 +265,14 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1005/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8595
+      "weight": 0.8499
     },
     {
       "pollster": "InsiderAdvantage",
@@ -227,13 +295,14 @@
           "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/nh-top-line-tabs/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3604
+      "weight": 0.3564
     },
     {
       "pollster": "co/efficient",
@@ -244,25 +313,27 @@
       "partisan": "R",
       "results": [
         {
-          "candidate": "Chris Pappas (D)",
+          "candidate": "Generic Democrat (D)",
           "party": "D",
           "pct": 46,
           "percentage": 46
         },
         {
-          "candidate": "John E. Sununu (R)",
+          "candidate": "Generic Republican (R)",
           "party": "R",
           "pct": 46,
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://battlegrounds.coefficient.org/nh/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2804
+      "weight": 0.2772,
+      "otherMatchup": true
     },
     {
       "pollster": "Rasmussen Reports",
@@ -291,7 +362,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2799
+      "weight": 0.2768
     },
     {
       "pollster": "Fabrizio, Lee, & Associates",
@@ -314,20 +385,22 @@
           "percentage": 37
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.unionleader.com/news/politics/voters/national-senate-gop-poll-sununu-vs-pappas-is-a-dead-heat/article_4c03176f-b04f-4a9a-b85f-ce15695fc83c.html",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1681
+      "sponsors": "National Republican Senatorial Committee",
+      "weight": 0.1663
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-08-24",
       "fieldDates": "August 20–24, 2026",
-      "sampleSize": 1878,
-      "population": null,
+      "sampleSize": 1846,
+      "population": "LV",
       "partisan": null,
       "results": [
         {
@@ -343,13 +416,44 @@
           "percentage": 40
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/988/",
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4403,
+      "sponsors": "7News",
+      "weight": 0.5078,
       "otherMatchup": true
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-08-24",
+      "fieldDates": "2026-08-20 to 2026-08-24",
+      "sampleSize": 1846,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "7News",
+      "results": [
+        {
+          "candidate": "John Sununu (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/988/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5078
     },
     {
       "pollster": "Saint Anselm College",
@@ -377,7 +481,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3322,
+      "weight": 0.3285,
       "otherMatchup": true
     },
     {
@@ -406,12 +510,71 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3908
+      "weight": 0.3865
+    },
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-08-18",
+      "fieldDates": "2026-08-17 to 2026-08-18",
+      "sampleSize": 1411,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "John Sununu (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-republicans-facing-midterm-headwinds-democratic-lead-widens",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3865
+    },
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-08-18",
+      "fieldDates": "2026-08-17 to 2026-08-18",
+      "sampleSize": 1411,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Scott Brown (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-republicans-facing-midterm-headwinds-democratic-lead-widens",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3865,
+      "otherMatchup": true
     },
     {
       "pollster": "Peak Insights (R)",
       "endDate": "2026-06-27",
-      "weight": 0.07,
+      "weight": 0.0346,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -431,40 +594,18 @@
       "sourceUrl": "https://www.nrsc.org/wp-content/uploads/2026/07/new-hampshire-poll.pdf",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "Peak Insights",
-      "endDate": "2026-06-27",
-      "fieldDates": "June 24–27, 2026",
-      "sampleSize": 500,
-      "population": "LV",
-      "partisan": "R",
-      "results": [
-        {
-          "candidate": "Chris Pappas (D)",
-          "party": "D",
-          "pct": 43,
-          "percentage": 43
-        },
-        {
-          "candidate": "John E. Sununu (R)",
-          "party": "R",
-          "pct": 42,
-          "percentage": 42
-        }
-      ],
-      "sourceUrl": null,
       "foundOn": [
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "reviewStatus": "auto",
-      "weight": 0.035
+      "partisan": "R",
+      "fieldDates": "June 24–27, 2026",
+      "sponsors": "NRSC"
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2026-06-25",
-      "weight": 0.108,
+      "weight": 0.1068,
       "sampleSize": 1614,
       "population": "RV",
       "results": [
@@ -484,7 +625,10 @@
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/saint-anselm-college-survey-center-june-poll-finds-democrats-expand-generic-ballot-lead",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-24 to 2026-06-25"
     },
     {
       "pollster": "Saint Anselm College",
@@ -512,13 +656,43 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.108,
+      "weight": 0.1068,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-06-25",
+      "fieldDates": "2026-06-24 to 2026-06-25",
+      "sampleSize": 1614,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Scott Brown (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/saint-anselm-college-survey-center-june-poll-finds-democrats-expand-generic-ballot-lead",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1068,
       "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.1276,
+      "weight": 0.1262,
       "sampleSize": 2157,
       "population": "LV",
       "results": [
@@ -538,7 +712,10 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/974/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-18 to 2026-06-23"
     },
     {
       "pollster": "University of New Hampshire",
@@ -561,18 +738,19 @@
           "percentage": 38
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/974/",
       "foundOn": [
-        "https://pollingsource.com/senate/NH"
+        "https://pollingsource.com/senate/NH",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1276,
+      "weight": 0.1262,
       "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-04-21",
-      "weight": 0.0224,
+      "weight": 0.0221,
       "sampleSize": 1130,
       "population": "LV",
       "results": [
@@ -592,14 +770,17 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/944/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-04-17 to 2026-04-21"
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-04-21",
       "fieldDates": "April 17–21, 2026",
-      "sampleSize": 1295,
-      "population": null,
+      "sampleSize": 1115,
+      "population": "LV",
       "partisan": null,
       "results": [
         {
@@ -615,16 +796,18 @@
           "percentage": 38
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/944/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
-      "weight": 0.0204,
+      "weight": 0.022,
       "otherMatchup": true
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-23",
-      "weight": 0.0113,
+      "weight": 0.0112,
       "sampleSize": 1100,
       "population": "LV",
       "results": [
@@ -644,33 +827,38 @@
       "sourceUrl": "https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-03-21 to 2026-03-23"
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-23",
       "fieldDates": "March 21–23, 2026",
-      "sampleSize": 1000,
-      "population": null,
+      "sampleSize": 1100,
+      "population": "LV",
       "partisan": null,
       "results": [
         {
           "candidate": "Chris Pappas (D)",
           "party": "D",
-          "pct": 48,
-          "percentage": 48
+          "pct": 47.8,
+          "percentage": 47.8
         },
         {
           "candidate": "Scott Brown (R)",
           "party": "R",
-          "pct": 39,
-          "percentage": 39
+          "pct": 39.3,
+          "percentage": 39.3
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://emersoncollegepolling.com/new-hampshire-2026-sununu-leads-gop-nomination-ties-pappas-for-senate/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
-      "weight": 0.0092,
+      "weight": 0.0112,
       "otherMatchup": true
     },
     {
@@ -697,13 +885,72 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.01,
+      "weight": 0.0098,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-03-18",
+      "fieldDates": "2026-03-16 to 2026-03-18",
+      "sampleSize": 1491,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Chris Sununu (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-democrats-gaining-ground-republicans-face-political-headwinds",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0104
+    },
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-03-18",
+      "fieldDates": "2026-03-16 to 2026-03-18",
+      "sampleSize": 1491,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Scott Brown (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-democrats-gaining-ground-republicans-face-political-headwinds",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0104,
       "otherMatchup": true
     },
     {
       "pollster": "yes. every kid. foundation.",
       "endDate": "2026-01-29",
-      "weight": 0.0024,
+      "weight": 0.0023,
       "sampleSize": 563,
       "population": "LV",
       "results": [
@@ -723,13 +970,15 @@
       "sourceUrl": "https://yeseverykid.com/new-hampshire-voters-support-expanded-public-school-access/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": [],
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "fieldDates": "January 28–29, 2026"
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-01-19",
-      "weight": 0.0036,
+      "weight": 0.0035,
       "sampleSize": 2038,
       "population": "LV",
       "results": [
@@ -749,14 +998,17 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/922/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-01-15 to 2026-01-19"
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-01-19",
       "fieldDates": "January 15–19, 2026",
-      "sampleSize": 2053,
-      "population": null,
+      "sampleSize": 2017,
+      "population": "LV",
       "partisan": null,
       "results": [
         {
@@ -772,16 +1024,18 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/922/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
-      "weight": 0.003,
+      "weight": 0.0035,
       "otherMatchup": true
     },
     {
       "pollster": "Praecones Analytica",
       "endDate": "2025-12-28",
-      "weight": 0.0011,
+      "weight": 0.001,
       "sampleSize": 603,
       "population": "RV",
       "results": [
@@ -801,7 +1055,11 @@
       "sourceUrl": "https://nhjournal.com/exclusive-trump-underwater-ayotte-still-afloat-in-new-nhjournal-poll/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-12-26 to 2025-12-28",
+      "sponsors": "New Hampshire Journal"
     },
     {
       "pollster": "NHJournal/Praecones Analytica",
@@ -831,9 +1089,39 @@
       "otherMatchup": true
     },
     {
+      "pollster": "Praecones Analytica",
+      "endDate": "2025-12-28",
+      "fieldDates": "2025-12-26 to 2025-12-28",
+      "sampleSize": 603,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "New Hampshire Journal",
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 45.8,
+          "percentage": 45.8
+        },
+        {
+          "candidate": "Scott Brown (R)",
+          "party": "R",
+          "pct": 28,
+          "percentage": 28
+        }
+      ],
+      "sourceUrl": "https://nhjournal.com/exclusive-trump-underwater-ayotte-still-afloat-in-new-nhjournal-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.001,
+      "otherMatchup": true
+    },
+    {
       "pollster": "Guidant Polling and Strategy (R)",
       "endDate": "2025-12-11",
-      "weight": 0.0008,
+      "weight": 0.0004,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -853,14 +1141,19 @@
       "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/01/06/5-years-ago-today-00712185",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2025-12-09 to 2025-12-11",
+      "sponsors": "One Nation"
     },
     {
       "pollster": "Guidant Polling and Strategy",
       "endDate": "2025-12-11",
       "fieldDates": "December 9–11, 2025",
       "sampleSize": 600,
-      "population": null,
+      "population": "LV",
       "partisan": "R",
       "results": [
         {
@@ -876,10 +1169,13 @@
           "percentage": 38
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/01/06/5-years-ago-today-00712185",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
-      "weight": 0.0003,
+      "sponsors": "One Nation",
+      "weight": 0.0004,
       "otherMatchup": true
     },
     {
@@ -905,7 +1201,10 @@
       "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-declining-optimism-democracy-dominant-issue-and-early-partisan-divides-ahead-2026",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-11-18 to 2025-11-19"
     },
     {
       "pollster": "Saint Anselm College",
@@ -935,6 +1234,36 @@
       "otherMatchup": true
     },
     {
+      "pollster": "St. Anselm",
+      "endDate": "2025-11-19",
+      "fieldDates": "2025-11-18 to 2025-11-19",
+      "sampleSize": 2212,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Scott Brown (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-declining-optimism-democracy-dominant-issue-and-early-partisan-divides-ahead-2026",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0008,
+      "otherMatchup": true
+    },
+    {
       "pollster": "co/efficient",
       "endDate": "2025-10-13",
       "weight": 0.0003,
@@ -957,14 +1286,17 @@
       "sourceUrl": "https://coefficient.org/new-hampshire-us-senate-2026-general-election/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-10-09 to 2025-10-13"
     },
     {
       "pollster": "co/efficient",
       "endDate": "2025-10-13",
       "fieldDates": "October 9–13, 2025",
       "sampleSize": 1034,
-      "population": null,
+      "population": "LV",
       "partisan": "R",
       "results": [
         {
@@ -980,8 +1312,10 @@
           "percentage": 39
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://coefficient.org/new-hampshire-us-senate-2026-general-election/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0.0001,
       "otherMatchup": true
@@ -990,8 +1324,8 @@
       "pollster": "University of New Hampshire",
       "endDate": "2025-09-23",
       "fieldDates": "September 17–23, 2025",
-      "sampleSize": 1235,
-      "population": null,
+      "sampleSize": 1213,
+      "population": "LV",
       "partisan": null,
       "results": [
         {
@@ -1007,11 +1341,42 @@
           "percentage": 37
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/888/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0.0002,
       "otherMatchup": true
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2025-09-23",
+      "fieldDates": "2025-09-17 to 2025-09-23",
+      "sampleSize": 1225,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Chris Sununu (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/888/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002
     },
     {
       "pollster": "co/efficient",
@@ -1036,14 +1401,17 @@
       "sourceUrl": "https://coefficient.org/wp-content/uploads/2025/09/NH-U.S.-Senate-General-Election-2026.pdf",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-09-10 to 2025-09-12"
     },
     {
       "pollster": "co/efficient",
       "endDate": "2025-09-12",
       "fieldDates": "September 10–12, 2025",
       "sampleSize": 904,
-      "population": null,
+      "population": "LV",
       "partisan": "R",
       "results": [
         {
@@ -1059,8 +1427,70 @@
           "percentage": 40
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://coefficient.org/wp-content/uploads/2025/09/NH-U.S.-Senate-General-Election-2026.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2025-09-12",
+      "fieldDates": "2025-09-10 to 2025-09-12",
+      "sampleSize": 904,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://coefficient.org/wp-content/uploads/2025/09/NH-U.S.-Senate-General-Election-2026.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2025-09-12",
+      "fieldDates": "2025-09-10 to 2025-09-12",
+      "sampleSize": 904,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Dan Innis (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://coefficient.org/wp-content/uploads/2025/09/NH-U.S.-Senate-General-Election-2026.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0.0001,
       "otherMatchup": true
@@ -1068,7 +1498,7 @@
     {
       "pollster": "1892 Polling (R)",
       "endDate": "2025-09-04",
-      "weight": 0.0001,
+      "weight": 0,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -1088,33 +1518,12 @@
       "sourceUrl": "https://punchbowl.news/nhsen_poll2memo_d2b_090625/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "1892 Polling",
-      "endDate": "2025-09-04",
-      "fieldDates": "September 2–4, 2025",
-      "sampleSize": 500,
-      "population": null,
-      "partisan": "R",
-      "results": [
-        {
-          "candidate": "Chris Pappas (D)",
-          "party": "D",
-          "pct": 45,
-          "percentage": 45
-        },
-        {
-          "candidate": "John E. Sununu (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        }
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "sourceUrl": null,
-      "foundOn": [],
-      "reviewStatus": "auto",
-      "weight": 0
+      "partisan": "R",
+      "fieldDates": "September 2–4, 2025",
+      "sponsors": "One Nation"
     },
     {
       "pollster": "Saint Anselm College",
@@ -1144,29 +1553,92 @@
       "otherMatchup": true
     },
     {
-      "pollster": "Quantus Insights",
-      "endDate": "2025-03-19",
-      "fieldDates": "March 17–19, 2025",
-      "sampleSize": 650,
-      "population": null,
-      "partisan": "R",
+      "pollster": "St. Anselm",
+      "endDate": "2025-08-27",
+      "fieldDates": "2025-08-26 to 2025-08-27",
+      "sampleSize": 1776,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
       "results": [
         {
           "candidate": "Chris Pappas (D)",
           "party": "D",
-          "pct": 44,
-          "percentage": 44
+          "pct": 48,
+          "percentage": 48
         },
+        {
+          "candidate": "Dan Innis (R)",
+          "party": "R",
+          "pct": 30,
+          "percentage": 30
+        }
+      ],
+      "sourceUrl": "https://www.wmur.com/article/poll-pappas-republicans-senate-race-9325/65974049",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2025-08-27",
+      "fieldDates": "2025-08-26 to 2025-08-27",
+      "sampleSize": 1776,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Scott Brown (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://www.wmur.com/article/poll-pappas-republicans-senate-race-9325/65974049",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0001,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2025-03-19",
+      "fieldDates": "March 17–19, 2025",
+      "sampleSize": 650,
+      "population": "RV",
+      "partisan": "R",
+      "results": [
         {
           "candidate": "Chris Sununu (R)",
           "party": "R",
           "pct": 53,
           "percentage": 53
+        },
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://quantusinsights.org/f/sununu-leads-pappas-in-hypothetical-new-hampshire-senate-matchup",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
+      "sponsors": "TrendingPolitics",
       "weight": 0
     },
     {
@@ -1174,24 +1646,87 @@
       "endDate": "2025-03-01",
       "fieldDates": "February 26 – March 1, 2025",
       "sampleSize": 626,
-      "population": null,
+      "population": "RV",
       "partisan": null,
+      "results": [
+        {
+          "candidate": "Chris Sununu (R)",
+          "party": "R",
+          "pct": 54.4,
+          "percentage": 54.4
+        },
+        {
+          "candidate": "Jeanne Shaheen (D)",
+          "party": "D",
+          "pct": 45.6,
+          "percentage": 45.6
+        }
+      ],
+      "sourceUrl": "https://nhjournal.com/exclusive-poll-age-issue-dogs-shaheen-trails-sununu-by-9-points/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "sponsors": "New Hampshire Journal",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Praecones Analytica",
+      "endDate": "2025-03-01",
+      "fieldDates": "2025-02-26 to 2025-03-01",
+      "sampleSize": 626,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "New Hampshire Journal",
       "results": [
         {
           "candidate": "Jeanne Shaheen (D)",
           "party": "D",
-          "pct": 46,
-          "percentage": 46
+          "pct": 58.9,
+          "percentage": 58.9
         },
         {
-          "candidate": "Chris Sununu (R)",
+          "candidate": "Frank Edelblut (R)",
           "party": "R",
-          "pct": 54,
-          "percentage": 54
+          "pct": 41.1,
+          "percentage": 41.1
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://nhjournal.com/exclusive-poll-age-issue-dogs-shaheen-trails-sununu-by-9-points/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Praecones Analytica",
+      "endDate": "2025-03-01",
+      "fieldDates": "2025-02-26 to 2025-03-01",
+      "sampleSize": 626,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": "New Hampshire Journal",
+      "results": [
+        {
+          "candidate": "Jeanne Shaheen (D)",
+          "party": "D",
+          "pct": 55.1,
+          "percentage": 55.1
+        },
+        {
+          "candidate": "Scott Brown (R)",
+          "party": "R",
+          "pct": 44.9,
+          "percentage": 44.9
+        }
+      ],
+      "sourceUrl": "https://nhjournal.com/exclusive-poll-age-issue-dogs-shaheen-trails-sununu-by-9-points/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
       "weight": 0,
       "otherMatchup": true

@@ -1,7 +1,7 @@
 {
   "raceId": "MI-H-07-2026",
-  "count": 5,
-  "updated_at": "2026-10-20T02:40:38.394Z",
+  "count": 6,
+  "updated_at": "2026-10-20T14:20:53.488Z",
   "polls": [
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -24,18 +24,20 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-william-lawrence-leads-tom-barrett-in-mi-07",
       "foundOn": [
-        "https://pollingsource.com/house/MI-07"
+        "https://pollingsource.com/house/MI-07",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1036,
+      "sponsors": "House Majority PAC",
+      "weight": 0.1025,
       "otherMatchup": true
     },
     {
       "pollster": "Data for Progress (D)",
       "endDate": "2026-06-30",
-      "weight": 0.0932,
+      "weight": 0.0461,
       "sampleSize": 772,
       "population": "LV",
       "results": [
@@ -55,7 +57,11 @@
       "sourceUrl": "https://www.semafor.com/article/07/06/2026/progressives-see-polling-candidate-momentum-in-michigan",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-06-24 to 2026-06-30"
     },
     {
       "pollster": "Data for Progress",
@@ -78,18 +84,19 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.semafor.com/article/07/06/2026/progressives-see-polling-candidate-momentum-in-michigan",
       "foundOn": [
-        "https://pollingsource.com/house/MI-07"
+        "https://pollingsource.com/house/MI-07",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0466,
+      "weight": 0.0461,
       "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-04-25",
-      "weight": 0.015,
+      "weight": 0.0074,
       "sampleSize": 519,
       "population": "RV",
       "results": [
@@ -109,7 +116,11 @@
       "sourceUrl": "https://x.com/new_poli/status/2054277257191964939",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-04-24 to 2026-04-25"
     },
     {
       "pollster": "Public Policy Polling",
@@ -134,7 +145,40 @@
       "sourceUrl": "https://x.com/PollTracker2024/status/1985825601861619788",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2025-10-27 to 2025-10-28"
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-10-28",
+      "fieldDates": "2025-10-27 to 2025-10-28",
+      "sampleSize": 557,
+      "population": "RV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Bridget Brink (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Tom Barrett (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://x.com/PollTracker2024/status/1985825601861619788",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
     }
   ]
 }

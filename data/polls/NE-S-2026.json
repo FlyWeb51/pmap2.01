@@ -1,12 +1,244 @@
 {
   "raceId": "NE-S-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.400Z",
+  "count": 15,
+  "updated_at": "2026-10-20T14:20:53.491Z",
   "polls": [
+    {
+      "pollster": "National Public Affairs",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-10-02 to 2026-10-05",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "God, Family, & Country PAC",
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/Nebraska_General_Election_Memo_100926.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4411
+    },
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-03",
+      "fieldDates": "2026-09-24 to 2026-10-03",
+      "sampleSize": 1808,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ne_20260921_lv.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.2663
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-28 to 2026-09-30",
+      "sampleSize": 1113,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://battlegrounds.coefficient.org/ne/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.927
+    },
+    {
+      "pollster": "Wedgewood Polls",
+      "endDate": "2026-09-16",
+      "fieldDates": "2026-09-14 to 2026-09-16",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1KBEbm4P_yziCxsZdgMhTzJ3p5UwtN7X5/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4496
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-09-13",
+      "fieldDates": "2026-09-08 to 2026-09-13",
+      "sampleSize": 503,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Grant Forbes, LLC",
+      "results": [
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://results.surveyusa.com/client/PollReport.aspx?g=d94236a7-5861-4b7f-9d81-d5a81ab786cc",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4208
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-09-08",
+      "fieldDates": "2026-09-03 to 2026-09-08",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Working Class Majority PAC",
+      "results": [
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://www.washingtonsun.com/newsletters/panic-week",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2364
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-08-13",
+      "fieldDates": "2026-08-09 to 2026-08-13",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://omaha.com/news/state-regional/government-politics/article_666083f7-4e07-45ae-a534-adbb42b64734.html#tncms-source=login",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1123
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-07-26",
+      "fieldDates": "2026-07-22 to 2026-07-26",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Working Class Majority PAC",
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://www.washingtonsun.com/newsletters/panic-week",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0855
+    },
     {
       "pollster": "Tavern Research (I)",
       "endDate": "2026-05-11",
-      "weight": 0.018,
+      "weight": 0.0178,
       "sampleSize": 1165,
       "population": "LV",
       "results": [
@@ -27,15 +259,136 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/NE"
+        "https://pollingsource.com/senate/NE",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-05-11"
+      "fieldDates": "2026-05-11",
+      "sponsors": "Contours Inc."
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-05-11",
+      "fieldDates": "2026-05-08 to 2026-05-11",
+      "sampleSize": 1165,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Contours Inc.",
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "William J. Forbes (D)",
+          "party": "D",
+          "pct": 34,
+          "percentage": 34
+        }
+      ],
+      "sourceUrl": "https://www.tavernresearch.com/research-and-writings/nebraska-senate-poll",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0178,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-05-11",
+      "fieldDates": "2026-05-08 to 2026-05-11",
+      "sampleSize": 1165,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Contours Inc.",
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://www.tavernresearch.com/research-and-writings/nebraska-senate-poll",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0178,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Tavern Research",
+      "endDate": "2026-05-11",
+      "fieldDates": "2026-05-08 to 2026-05-11",
+      "sampleSize": 1165,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Contours Inc.",
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Cindy Burbank (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://www.tavernresearch.com/research-and-writings/nebraska-senate-poll",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0178,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "GBAO",
+      "endDate": "2026-04-20",
+      "fieldDates": "2026-04-16 to 2026-04-20",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Working Class Majority PAC",
+      "results": [
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://www.washingtonsun.com/newsletters/panic-week",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0091
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-02-05",
-      "weight": 0.0029,
+      "weight": 0.0014,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -55,7 +408,11 @@
       "sourceUrl": "https://omaha.com/news/state-regional/government-politics/article_d133be6b-85f6-4773-a16c-0edeb903c3e4.html",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-02-02 to 2026-02-05"
     },
     {
       "pollster": "Change Research (D)",
@@ -80,7 +437,11 @@
       "sourceUrl": "https://nebraskapublicmedia.org/es/news/news-articles/senate-candidate-dan-osborn-hits-campaign-trail-with-populist-blue-collar-message/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-03-28 to 2025-04-01"
     }
   ]
 }

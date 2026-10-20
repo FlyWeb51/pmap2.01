@@ -1,8 +1,37 @@
 {
   "raceId": "ME-H-02-2026",
-  "count": 8,
-  "updated_at": "2026-10-20T02:40:38.392Z",
+  "count": 18,
+  "updated_at": "2026-10-20T14:20:53.487Z",
   "polls": [
+    {
+      "pollster": "Tulchin Research",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-12 to 2026-10-14",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Matt Dunlap (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://static01.nyt.com/newsgraphics/documenttools/0cdb44a57dfd2687/fddf7303-full.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4293
+    },
     {
       "pollster": "Tulchin Research D-sponsored",
       "endDate": "2026-09-30",
@@ -24,12 +53,13 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://static01.nyt.com/newsgraphics/documenttools/becbcf38fb98ac79/b81aab79-full.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/ME-02"
+        "https://pollingsource.com/house/ME-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3142
+      "weight": 0.3107
     },
     {
       "pollster": "University of New Hampshire",
@@ -52,12 +82,13 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1007/",
       "foundOn": [
-        "https://pollingsource.com/house/ME-02"
+        "https://pollingsource.com/house/ME-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5715
+      "weight": 0.5651
     },
     {
       "pollster": "Impact Research D-sponsored",
@@ -80,12 +111,44 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/cjwarnke/status/2099903179022340565",
       "foundOn": [
-        "https://pollingsource.com/house/ME-02"
+        "https://pollingsource.com/house/ME-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2073
+      "sponsors": "House Majority PAC",
+      "weight": 0.205
+    },
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-09-12",
+      "fieldDates": "2026-09-08 to 2026-09-12",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2099903179022340565",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.205,
+      "otherMatchup": true
     },
     {
       "pollster": "DCCC Targeting Team",
@@ -108,17 +171,18 @@
           "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://dccc.org/%F0%9F%9A%A8-new-polls-dead-heat-in-me-02-as-matt-dunlap-gains-momentum/",
       "foundOn": [
-        "https://pollingsource.com/house/ME-02"
+        "https://pollingsource.com/house/ME-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1155
+      "weight": 0.1142
     },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-07-16",
-      "weight": 0.0594,
+      "weight": 0.0588,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -139,13 +203,14 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/ME-02"
+        "https://pollingsource.com/house/ME-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-07-16"
     },
     {
-      "pollster": "Pan Atlantic Research",
+      "pollster": "Pan Atlantic SMS Group",
       "endDate": "2026-05-18",
       "fieldDates": "2026-05-18",
       "sampleSize": 418,
@@ -165,18 +230,19 @@
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://panatlanticresearch.com/omnibus?_hsenc=p2ANqtz--mveNzLZvrz2o4YuEa_SKLf2ii0MZZVGozgzHfLpMabnQ90q1oovMYUV0sTsyHjLApBbjAh9JT-pWPxeqioipHBuJpTA&_hsmi=419719216&utm_content=419719216",
       "foundOn": [
-        "https://pollingsource.com/house/ME-02"
+        "https://pollingsource.com/house/ME-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0127,
+      "weight": 0.0126,
       "otherMatchup": true
     },
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-28",
-      "weight": 0.0237,
+      "weight": 0.0117,
       "sampleSize": 918,
       "population": "LV",
       "results": [
@@ -196,12 +262,77 @@
       "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "R",
+      "fieldDates": "2026-04-26 to 2026-04-28",
+      "sponsors": "NRCC"
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-04-28",
+      "fieldDates": "2026-04-26 to 2026-04-28",
+      "sampleSize": 918,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "NRCC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/news/2026/05/08/gop-polls-show-they-have-a-shot-at-flipping-house-dem-districts-trump-won-00910791",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0117,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Upswing Research",
+      "endDate": "2026-02-27",
+      "fieldDates": "2026-02-24 to 2026-02-27",
+      "sampleSize": 403,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Jordan Wood (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://mcusercontent.com/affd624ecfc44efb4e393ea55/files/ba5403a9-cfe2-f1ce-d30a-69a6d0c916e9/Jordan_Wood_IP_Memo.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0019,
+      "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-02-16",
-      "weight": 0.0035,
+      "weight": 0.0034,
       "sampleSize": 520,
       "population": "LV",
       "results": [
@@ -221,7 +352,190 @@
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/930/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-02-12 to 2026-02-16"
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-02-16",
+      "fieldDates": "2026-02-12 to 2026-02-16",
+      "sampleSize": 520,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jordan Wood (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/930/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0034,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Pan Atlantic SMS Group",
+      "endDate": "2025-12-07",
+      "fieldDates": "2025-11-29 to 2025-12-07",
+      "sampleSize": 387,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Joe Baldacci (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/wp-content/uploads/baldacci-poll.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0003,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2025-10-21",
+      "fieldDates": "2025-10-16 to 2025-10-21",
+      "sampleSize": 521,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jared Golden (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/897/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0002,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2025-06-23",
+      "fieldDates": "2025-06-19 to 2025-06-23",
+      "sampleSize": 394,
+      "population": "A",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Jared Golden (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/879/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Mellman Group",
+      "endDate": "2025-06-10",
+      "fieldDates": "2025-06-04 to 2025-06-10",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jared Golden (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.notus.org/house/maine-jared-golden-maine-2nd-congressional-district-poll",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2025-04-15",
+      "fieldDates": "2025-04-13 to 2025-04-15",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Congressional Leadership Fund",
+      "results": [
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Jared Golden (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.notus.org/2026-election/jared-golden-paul-lepage-poll-maine-congressional-leadership-fund",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }

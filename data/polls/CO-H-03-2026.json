@@ -1,12 +1,12 @@
 {
   "raceId": "CO-H-03-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.382Z",
+  "count": 4,
+  "updated_at": "2026-10-20T14:20:53.483Z",
   "polls": [
     {
       "pollster": "Keating Research, Inc. (D)",
       "endDate": "2026-07-23",
-      "weight": 0.0638,
+      "weight": 0.0631,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -27,10 +27,100 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/CO-03"
+        "https://pollingsource.com/house/CO-03",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-07-23"
+      "fieldDates": "2026-07-23",
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2026-03-12",
+      "fieldDates": "2026-03-10 to 2026-03-12",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Conservatives for America",
+      "results": [
+        {
+          "candidate": "Jeff Hurd (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Alex Kelloff (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0026
+    },
+    {
+      "pollster": "Ragnar Research Partners",
+      "endDate": "2026-03-12",
+      "fieldDates": "2026-03-10 to 2026-03-12",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "Conservatives for America",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0026,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Expedition Strategies",
+      "endDate": "2026-01-12",
+      "fieldDates": "2026-01-08 to 2026-01-12",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jeff Hurd (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Alex Kelloff (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/01/21/what-davos-really-thinks-of-trump-00738555",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0007
     }
   ]
 }

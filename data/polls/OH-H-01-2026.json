@@ -1,8 +1,73 @@
 {
   "raceId": "OH-H-01-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.417Z",
+  "count": 3,
+  "updated_at": "2026-10-20T14:20:53.500Z",
   "polls": [
+    {
+      "pollster": "Torchlight Strategies",
+      "endDate": "2026-10-02",
+      "fieldDates": "2026-09-29 to 2026-10-02",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 45.3,
+          "percentage": 45.3
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45.3,
+          "percentage": 45.3
+        }
+      ],
+      "sourceUrl": "https://x.com/EricConroyOH/status/2110896060302565557",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.291,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Torchlight Strategies",
+      "endDate": "2026-10-02",
+      "fieldDates": "2026-09-29 to 2026-10-02",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Greg Landsman (D)",
+          "party": "D",
+          "pct": 45.8,
+          "percentage": 45.8
+        },
+        {
+          "candidate": "Eric Conroy (R)",
+          "party": "R",
+          "pct": 44.2,
+          "percentage": 44.2
+        },
+        {
+          "candidate": "Nathan Weise (LIB)",
+          "party": "O",
+          "pct": 5.4,
+          "percentage": 5.4
+        }
+      ],
+      "sourceUrl": "https://x.com/EricConroyOH/status/2110896060302565557",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.291
+    },
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-08-24",
@@ -24,12 +89,13 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/f/new-quantus-insights-survey-ohio%E2%80%99s-1st-district-is-up-for-grabs",
       "foundOn": [
-        "https://pollingsource.com/house/OH-01"
+        "https://pollingsource.com/house/OH-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1348
+      "weight": 0.1333
     }
   ]
 }

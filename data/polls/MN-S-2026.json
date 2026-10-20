@@ -1,7 +1,7 @@
 {
   "raceId": "MN-S-2026",
-  "count": 23,
-  "updated_at": "2026-10-20T02:40:38.396Z",
+  "count": 25,
+  "updated_at": "2026-10-20T14:20:53.490Z",
   "polls": [
     {
       "pollster": "Trafalgar Group",
@@ -24,13 +24,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/mn-senate-gen-1017/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6527
+      "weight": 0.6454
     },
     {
       "pollster": "KSTP/SurveyUSA",
@@ -59,7 +60,48 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9935
+      "weight": 0.9824
+    },
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-10-12",
+      "fieldDates": "2026-10-09 to 2026-10-12",
+      "sampleSize": 718,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "KSTP-TV Minneapolis",
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Rebecca Whiting (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        },
+        {
+          "candidate": "Marisa Simonetti (I)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-swing-in-senate-and-ag-races-klobuchar-up-slightly-on-demuth/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9824
     },
     {
       "pollster": "Rasmussen Reports",
@@ -88,7 +130,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4832
+      "weight": 0.4778
     },
     {
       "pollster": "Morning Consult",
@@ -111,16 +153,18 @@
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thedailyagenda.com/p/morning-take-the-daily-agenda-poll",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4701
+      "sponsors": "The Daily Agenda",
+      "weight": 0.4648
     },
     {
-      "pollster": "Mason-Dixon Polling & Strategy",
+      "pollster": "Mason-Dixon Polling & Research, Inc.",
       "endDate": "2026-10-07",
       "fieldDates": "October 5–7, 2026",
       "sampleSize": 800,
@@ -140,13 +184,15 @@
           "percentage": 43
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.startribune.com/minnesota-poll-flanagan-tafoya-senate/601887443",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9343
+      "sponsors": "KARE 11 | Minnesota Star Tribune",
+      "weight": 0.9239
     },
     {
       "pollster": "GQR",
@@ -169,13 +215,15 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/DrewSav/status/2108502733045334207",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4359
+      "sponsors": "Senate Majority PAC",
+      "weight": 0.431
     },
     {
       "pollster": "Big Data Poll",
@@ -198,13 +246,15 @@
           "percentage": 38
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/north-star-state-poll-peggy-flanagan-holds-slight-lead-over-michele-tafoya-for-us-senate-in-minnesota/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3504
+      "sponsors": "Public Polling Project",
+      "weight": 0.3465
     },
     {
       "pollster": "InsiderAdvantage",
@@ -227,13 +277,14 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-survey-u-s-senate-minnesota-contest-a-one-point-race-flanagan-46-tafoya-45/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4756
+      "weight": 0.4703
     },
     {
       "pollster": "SurveyUSA",
@@ -256,12 +307,14 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-governor-senate-races-tightening-days-before-early-voting-starts-in-minnesota/",
       "foundOn": [
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.52
+      "sponsors": "KSTP-TV Minneapolis",
+      "weight": 0.5142
     },
     {
       "pollster": "co/efficient",
@@ -284,13 +337,44 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://battlegrounds.coefficient.org/mn/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2867
+      "weight": 0.2835
+    },
+    {
+      "pollster": "co/efficient",
+      "endDate": "2026-09-15",
+      "fieldDates": "2026-09-14 to 2026-09-15",
+      "sampleSize": 833,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://battlegrounds.coefficient.org/mn/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5671,
+      "otherMatchup": true
     },
     {
       "pollster": "KSTP/SurveyUSA",
@@ -319,7 +403,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4965
+      "weight": 0.491
     },
     {
       "pollster": "Quantus Insights",
@@ -342,42 +426,57 @@
           "percentage": 44
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://quantusinsights.org/polling/f/new-quantus-polls-moody-leads-in-florida-flanagan-in-minnesota",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2375
+      "weight": 0.2348
     },
     {
       "pollster": "TIPP Insights",
       "endDate": "2026-09-02",
       "fieldDates": "August 31 – September 2, 2026",
-      "sampleSize": 1494,
-      "population": "RV",
+      "sampleSize": 1192,
+      "population": "LV",
       "partisan": "R",
       "results": [
         {
           "candidate": "Peggy Flanagan (D)",
           "party": "D",
-          "pct": 40,
-          "percentage": 40
+          "pct": 43.96,
+          "percentage": 43.96
         },
         {
           "candidate": "Michele Tafoya (R)",
           "party": "R",
-          "pct": 38,
-          "percentage": 38
+          "pct": 41.86,
+          "percentage": 41.86
+        },
+        {
+          "candidate": "Marisa Simonetti (I)",
+          "party": "O",
+          "pct": 2.99,
+          "percentage": 2.99
+        },
+        {
+          "candidate": "Rebecca Whiting (LIB)",
+          "party": "O",
+          "pct": 1.02,
+          "percentage": 1.02
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.dailysignal.com/2026/09/08/senator-tafoya-minnesota-polling-dead-heat/",
       "foundOn": [
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2559
+      "sponsors": "League of American Workers",
+      "weight": 0.2512
     },
     {
       "pollster": "SurveyUSA",
@@ -405,7 +504,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.337
+      "weight": 0.3333
     },
     {
       "pollster": "Deep Root Analytics",
@@ -434,7 +533,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1144
+      "weight": 0.1131
     },
     {
       "pollster": "KTSP/SurveyUSA",
@@ -463,13 +562,13 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2614
+      "weight": 0.2585
     },
     {
       "pollster": "SurveyUSA",
       "endDate": "2026-08-17",
       "fieldDates": "2026-08-17",
-      "sampleSize": null,
+      "sampleSize": 661,
       "population": "LV",
       "partisan": null,
       "results": [
@@ -486,17 +585,49 @@
           "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-poll-early-frontrunners-in-governor-and-senate-races-ag-a-toss-up/",
       "foundOn": [
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2273
+      "sponsors": "KSTP-TV Minneapolis",
+      "weight": 0.2585
+    },
+    {
+      "pollster": "Mason-Dixon Polling & Research, Inc.",
+      "endDate": "2026-06-10",
+      "fieldDates": "2026-06-08 to 2026-06-10",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "KARE-TV | Minnesota Star Tribune | U. of Minnesota Hubbard School of Journalism and Mass Communication",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://www.startribune.com/minnesota-poll-klobuchar-leads-all-gop-candidates-for-governor/601850018",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0591,
+      "otherMatchup": true
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-28",
-      "weight": 0.0222,
+      "weight": 0.022,
       "sampleSize": 808,
       "population": "LV",
       "results": [
@@ -517,7 +648,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/senate/MN"
+        "https://pollingsource.com/senate/MN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "May 26–28, 2026"
@@ -525,7 +657,7 @@
     {
       "pollster": "Emerson College",
       "endDate": "2026-02-08",
-      "weight": 0.004,
+      "weight": 0.0039,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
@@ -545,33 +677,39 @@
       "sourceUrl": "https://emersoncollegepolling.com/minnesota-2026-poll-democrats-lead-gop-as-voters-cite-threats-to-democracy/",
       "note": null,
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "February 6–8, 2026"
     },
     {
-      "pollster": "Emerson College",
-      "endDate": "2026-02-08",
-      "fieldDates": "February 6–8, 2026",
-      "sampleSize": 1000,
-      "population": null,
+      "pollster": "Public Policy Polling",
+      "endDate": "2025-09-16",
+      "fieldDates": "2025-09-15 to 2025-09-16",
+      "sampleSize": 1015,
+      "population": "LV",
       "partisan": null,
+      "sponsors": "GQR",
       "results": [
         {
-          "candidate": "Angie Craig (D)",
+          "candidate": "Peggy Flanagan (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
         },
         {
-          "candidate": "Michele Tafoya (R)",
+          "candidate": "Generic Republican (R)",
           "party": "R",
-          "pct": 40,
-          "percentage": 40
+          "pct": 43,
+          "percentage": 43
         }
       ],
-      "sourceUrl": null,
-      "foundOn": [],
+      "sourceUrl": "https://www.scribd.com/document/930902898/Flanagan-Senate-Poll-Memo-September-2025",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
       "reviewStatus": "auto",
-      "weight": 0.0034,
+      "weight": 0.0001,
       "otherMatchup": true
     },
     {
@@ -597,7 +735,11 @@
       "sourceUrl": "https://www.scribd.com/document/967381321/MEMO-Poll-Memo-MN-Senate-Dec-2025",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "July 8–11, 2025"
     },
     {
       "pollster": "Impact Research (D)",
@@ -623,33 +765,6 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": []
-    },
-    {
-      "pollster": "Impact Research",
-      "endDate": "2025-07-11",
-      "fieldDates": "July 8–11, 2025",
-      "sampleSize": 604,
-      "population": null,
-      "partisan": "D",
-      "results": [
-        {
-          "candidate": "Angie Craig (D)",
-          "party": "D",
-          "pct": 49,
-          "percentage": 49
-        },
-        {
-          "candidate": "Michele Tafoya (R)",
-          "party": "R",
-          "pct": 45,
-          "percentage": 45
-        }
-      ],
-      "sourceUrl": null,
-      "foundOn": [],
-      "reviewStatus": "auto",
-      "weight": 0,
-      "otherMatchup": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "raceId": "ID-H-01-2026",
   "count": 5,
-  "updated_at": "2026-10-20T02:40:38.389Z",
+  "updated_at": "2026-10-20T14:20:53.486Z",
   "polls": [
     {
       "pollster": "Change Research",
@@ -24,12 +24,13 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://static1.squarespace.com/static/69781c4082a86d0a267710a0/t/6a74dd64f53c5d50f999296c/1786043748443/Release_Polling+Results_Final_8.6.26.pdf",
       "foundOn": [
-        "https://pollingsource.com/house/ID-01"
+        "https://pollingsource.com/house/ID-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0826
+      "weight": 0.0816
     },
     {
       "pollster": "SurveyUSA",
@@ -57,12 +58,12 @@
         "https://pollingsource.com/house/ID-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.125
+      "weight": 0.1236
     },
     {
       "pollster": "SurveyUSA (I)",
       "endDate": "2026-07-14",
-      "weight": 0.1015,
+      "weight": 0.1004,
       "sampleSize": 480,
       "population": "LV",
       "results": [
@@ -113,7 +114,7 @@
         "https://pollingsource.com/house/ID-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1013
+      "weight": 0.1002
     },
     {
       "pollster": "SurveyUSA",
@@ -121,7 +122,7 @@
       "fieldDates": "2026-07-14",
       "sampleSize": 480,
       "population": "LV",
-      "partisan": null,
+      "partisan": "IND",
       "results": [
         {
           "candidate": "Kaylee Peterson (D)",
@@ -136,12 +137,13 @@
           "percentage": 45
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.surveyusa.com/client/PollReport.aspx?g=48a62c75-2dbc-4948-9e01-cbeccf52c3d6",
       "foundOn": [
-        "https://pollingsource.com/house/ID-01"
+        "https://pollingsource.com/house/ID-01",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1015
+      "weight": 0.0502
     }
   ]
 }

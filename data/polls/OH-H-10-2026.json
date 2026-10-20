@@ -1,12 +1,47 @@
 {
   "raceId": "OH-H-10-2026",
-  "count": 3,
-  "updated_at": "2026-10-20T02:40:38.404Z",
+  "count": 5,
+  "updated_at": "2026-10-20T14:20:53.493Z",
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-10-13",
+      "fieldDates": "2026-10-12 to 2026-10-13",
+      "sampleSize": 535,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Kristina Knickerbocker (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Turner (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Thomas McMasters (LIB)",
+          "party": "O",
+          "pct": 4,
+          "percentage": 4
+        }
+      ],
+      "sourceUrl": "https://dccc.org/dccc-polling-memo-knickerbocker-leads-turner-by-3-in-oh-10/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4339
+    },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-07-23",
-      "weight": 0.151,
+      "weight": 0.0746,
       "sampleSize": 700,
       "population": "LV",
       "results": [
@@ -26,12 +61,16 @@
       "sourceUrl": "https://punchbowl.news/oh-10-knickerbocker-memo-f07-24-26-3/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-20 to 2026-07-23"
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-07-23",
-      "weight": 0.151,
+      "weight": 0.1493,
       "sampleSize": 700,
       "population": "LV",
       "results": [
@@ -56,7 +95,7 @@
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-07-12",
-      "weight": 0.099,
+      "weight": 0.0489,
       "sampleSize": null,
       "population": "LV",
       "results": [
@@ -76,7 +115,42 @@
       "sourceUrl": "https://drive.google.com/file/d/1_pK0ssxHljLwr1ZUPFkyb9B70kte7IkI/view",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-07-06 to 2026-07-12",
+      "sponsors": "House Majority PAC"
+    },
+    {
+      "pollster": "FM3 Research",
+      "endDate": "2026-07-12",
+      "fieldDates": "2026-07-06 to 2026-07-12",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1_pK0ssxHljLwr1ZUPFkyb9B70kte7IkI/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0489,
+      "otherMatchup": true
     }
   ]
 }

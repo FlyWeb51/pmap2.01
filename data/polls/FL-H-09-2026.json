@@ -1,35 +1,65 @@
 {
   "raceId": "FL-H-09-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.422Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.502Z",
   "polls": [
+    {
+      "pollster": "SEA Polling",
+      "endDate": "2026-10-15",
+      "fieldDates": "2026-10-13 to 2026-10-15",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Dan Green (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Darren Soto (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://floridapolitics.com/archives/825682-darren-sotos-internal-polls-show-him-tied-with-dan-green-in-critical-cd-9-contest/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4393
+    },
     {
       "pollster": "SEA Polling D-sponsored",
       "endDate": "2026-08-30",
       "fieldDates": "2026-08-30",
       "sampleSize": 400,
-      "population": "RV",
+      "population": "LV",
       "partisan": "D",
       "results": [
-        {
-          "candidate": "Darren Soto (D)",
-          "party": "D",
-          "pct": 41,
-          "percentage": 41
-        },
         {
           "candidate": "Dan Green (R)",
           "party": "R",
           "pct": 41,
           "percentage": 41
+        },
+        {
+          "candidate": "Darren Soto (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://floridapolitics.com/archives/818398-internal-poll-shows-darren-soto-tied-with-dan-green-in-battleground-cd-9/",
       "foundOn": [
-        "https://pollingsource.com/house/FL-09"
+        "https://pollingsource.com/house/FL-09",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1236
+      "weight": 0.1358
     }
   ]
 }

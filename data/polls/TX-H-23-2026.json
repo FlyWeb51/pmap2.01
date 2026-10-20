@@ -1,12 +1,12 @@
 {
   "raceId": "TX-H-23-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T02:40:38.409Z",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.496Z",
   "polls": [
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-03-11",
-      "weight": 0.0053,
+      "weight": 0.0026,
       "sampleSize": 521,
       "population": "RV",
       "results": [
@@ -26,7 +26,42 @@
       "sourceUrl": "https://www.texastribune.org/2026/03/12/brandon-herrera-democrats-texas-23rd-congressional-district-tony-gonzales/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2026-03-10 to 2026-03-11",
+      "sponsors": "House Majority PAC"
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-03-11",
+      "fieldDates": "2026-03-10 to 2026-03-11",
+      "sampleSize": 521,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://www.texastribune.org/2026/03/12/brandon-herrera-democrats-texas-23rd-congressional-district-tony-gonzales/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0026,
+      "otherMatchup": true
     }
   ]
 }

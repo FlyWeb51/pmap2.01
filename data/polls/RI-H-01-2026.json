@@ -1,0 +1,77 @@
+{
+  "raceId": "RI-H-01-2026",
+  "count": 2,
+  "updated_at": "2026-10-20T14:20:53.509Z",
+  "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-11",
+      "fieldDates": "2026-10-08 to 2026-10-11",
+      "sampleSize": 394,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "WPRI-TV",
+      "results": [
+        {
+          "candidate": "Gabe Amo (D)",
+          "party": "D",
+          "pct": 53.93,
+          "percentage": 53.93
+        },
+        {
+          "candidate": "Kellie Keenan (R)",
+          "party": "R",
+          "pct": 25.87,
+          "percentage": 25.87
+        },
+        {
+          "candidate": "Pedro DeSouza (I)",
+          "party": "O",
+          "pct": 6.14,
+          "percentage": 6.14
+        }
+      ],
+      "sourceUrl": "https://www.wpri.com/news/elections/5p-wpri-emerson-poll-story/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7111
+    },
+    {
+      "pollster": "Embold Research",
+      "endDate": "2026-10-08",
+      "fieldDates": "2026-10-05 to 2026-10-08",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Salve Regina University Pell Center for International Relations and Public Policy",
+      "results": [
+        {
+          "candidate": "Gabe Amo (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Kellie Keenan (R)",
+          "party": "R",
+          "pct": 33,
+          "percentage": 33
+        },
+        {
+          "candidate": "Pedro DeSouza (I)",
+          "party": "O",
+          "pct": 4,
+          "percentage": 4
+        }
+      ],
+      "sourceUrl": "https://salve.edu/news/news-listing/pell-center-survey-foulkes-leads-governors-race-11-points-lieutenant-governor-contest-deadlocked",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7475
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "raceId": "CO-H-05-2026",
   "count": 2,
-  "updated_at": "2026-10-20T02:40:38.382Z",
+  "updated_at": "2026-10-20T14:20:53.483Z",
   "polls": [
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-07-21",
-      "weight": 0.0578,
+      "weight": 0.0571,
       "sampleSize": 450,
       "population": "LV",
       "results": [
@@ -27,7 +27,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/CO-05"
+        "https://pollingsource.com/house/CO-05",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-07-21"
@@ -35,7 +36,7 @@
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2025-11-03",
-      "weight": 0.0003,
+      "weight": 0.0001,
       "sampleSize": 450,
       "population": "LV",
       "results": [
@@ -55,7 +56,11 @@
       "sourceUrl": "https://globalstrategygroup.app.box.com/s/iwvsjiw4tgc1cifp0g2iqw711tdlm8tr",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-10-30 to 2025-11-03"
     }
   ]
 }

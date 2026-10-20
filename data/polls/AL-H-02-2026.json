@@ -1,38 +1,40 @@
 {
   "raceId": "AL-H-02-2026",
   "count": 3,
-  "updated_at": "2026-10-20T02:40:38.379Z",
+  "updated_at": "2026-10-20T14:20:53.482Z",
   "polls": [
     {
       "pollster": "Tulchin Research D-sponsored",
       "endDate": "2026-08-31",
       "fieldDates": "2026-08-31",
       "sampleSize": null,
-      "population": null,
+      "population": "LV",
       "partisan": "D",
       "results": [
-        {
-          "candidate": "Shomari Figures (D)",
-          "party": "D",
-          "pct": 47,
-          "percentage": 47
-        },
         {
           "candidate": "Rhett Marques (R)",
           "party": "R",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Shomari Figures (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-shomari-figures-tied-with-rhett-marques-in-al-02",
       "foundOn": [
-        "https://pollingsource.com/house/AL-02"
+        "https://pollingsource.com/house/AL-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1335
+      "sponsors": "House Majority PAC",
+      "weight": 0.1553
     },
     {
-      "pollster": "DCCC D-sponsored",
+      "pollster": "DCCC Targeting Team",
       "endDate": "2026-07-30",
       "fieldDates": "2026-07-30",
       "sampleSize": 421,
@@ -52,17 +54,18 @@
           "percentage": 46
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://dccc.org/%f0%9f%9a%a8-new-dccc-poll-shows-toss-up-race-in-al-02-as-momentum-builds-behind-shomari-figures/",
       "foundOn": [
-        "https://pollingsource.com/house/AL-02"
+        "https://pollingsource.com/house/AL-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0688
+      "weight": 0.068
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-06-25",
-      "weight": 0.0299,
+      "weight": 0.0295,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -83,10 +86,12 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/AL-02"
+        "https://pollingsource.com/house/AL-02",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-06-25"
+      "fieldDates": "2026-06-25",
+      "sponsors": "DCCC"
     }
   ]
 }

@@ -1,6 +1,42 @@
 {
   "raceId": "NY-H-04-2026",
-  "count": 0,
-  "polls": [],
-  "note": "Only generic-ballot style questions exist for this district (Generic Democrat vs Generic Republican). That is not a candidate matchup, so no poll is shown."
+  "count": 1,
+  "updated_at": "2026-10-20T14:20:53.508Z",
+  "polls": [
+    {
+      "pollster": "Impact Research",
+      "endDate": "2026-02-17",
+      "fieldDates": "2026-02-09 to 2026-02-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Protecting American Consumers Together",
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": null,
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://protectingamericanconsumers.org/wp-content/uploads/2026/02/IMPACT-NY-2026-Poll.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0034
+    }
+  ]
 }

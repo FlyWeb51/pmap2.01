@@ -1,12 +1,12 @@
 {
   "raceId": "PA-H-08-2026",
   "count": 3,
-  "updated_at": "2026-10-20T02:40:38.406Z",
+  "updated_at": "2026-10-20T14:20:53.494Z",
   "polls": [
     {
       "pollster": "Lake Research Partners (D)",
       "endDate": "2026-06-23",
-      "weight": 0.0285,
+      "weight": 0.0282,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -27,15 +27,17 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/PA-08"
+        "https://pollingsource.com/house/PA-08",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-06-23"
+      "fieldDates": "2026-06-23",
+      "sponsors": "House Majority PAC"
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-06-11",
-      "weight": 0.0242,
+      "weight": 0.0239,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -56,7 +58,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/PA-08"
+        "https://pollingsource.com/house/PA-08",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-06-11"
@@ -64,7 +67,7 @@
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2025-08-28",
-      "weight": 0.0001,
+      "weight": 0,
       "sampleSize": 615,
       "population": "RV",
       "results": [
@@ -84,7 +87,12 @@
       "sourceUrl": "https://www.politico.com/f/?id=00000199-0803-d5db-a5db-dd67425a0000&nname=playbook&nid=0000014f-1646-d88f-a1cf-5f46b7bd0000&nrid=4f4d3aeb-621a-47b9-a66d-d9944fed5257",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "partisan": "D",
+      "fieldDates": "2025-08-27 to 2025-08-28",
+      "sponsors": "House Majority PAC"
     }
   ]
 }

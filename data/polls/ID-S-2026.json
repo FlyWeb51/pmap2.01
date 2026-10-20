@@ -1,12 +1,59 @@
 {
   "raceId": "ID-S-2026",
   "count": 4,
-  "updated_at": "2026-10-20T02:40:38.389Z",
+  "updated_at": "2026-10-20T14:20:53.486Z",
   "polls": [
+    {
+      "pollster": "Change Research",
+      "endDate": "2026-07-30",
+      "fieldDates": "2026-07-28 to 2026-07-30",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "James Risch (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Todd Achilles (I)",
+          "party": "O",
+          "pct": 19,
+          "percentage": 19
+        },
+        {
+          "candidate": "David Roth (D)",
+          "party": "D",
+          "pct": 13,
+          "percentage": 13
+        },
+        {
+          "candidate": "Natalie Fleming (I)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        },
+        {
+          "candidate": "Matt Loesby (LIB)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://static1.squarespace.com/static/69781c4082a86d0a267710a0/t/6a74dd64f53c5d50f999296c/1786043748443/Release_Polling+Results_Final_8.6.26.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.0742
+    },
     {
       "pollster": "Peak Insights (R)",
       "endDate": "2026-06-07",
-      "weight": 0.0441,
+      "weight": 0.0218,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -26,40 +73,17 @@
       "sourceUrl": "https://senatorrisch.com/polling/",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
-    },
-    {
-      "pollster": "Peak Insights",
-      "endDate": "2026-06-07",
-      "fieldDates": "2026-06-07",
-      "sampleSize": 500,
-      "population": "LV",
-      "partisan": "R",
-      "results": [
-        {
-          "candidate": "David Roth (D)",
-          "party": "D",
-          "pct": 15,
-          "percentage": 15
-        },
-        {
-          "candidate": "Jim Risch (R)",
-          "party": "R",
-          "pct": 55,
-          "percentage": 55
-        }
-      ],
-      "sourceUrl": null,
       "foundOn": [
-        "https://pollingsource.com/senate/ID"
+        "https://pollingsource.com/senate/ID",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
-      "reviewStatus": "auto",
-      "weight": 0.022
+      "partisan": "R",
+      "fieldDates": "2026-06-07"
     },
     {
       "pollster": "The Bullfinch Group (I)",
       "endDate": "2026-06-01",
-      "weight": 0.043,
+      "weight": 0.0212,
       "sampleSize": 774,
       "population": "RV",
       "results": [
@@ -79,12 +103,17 @@
       "sourceUrl": "https://www.thebullfinchgroup.com/post/for-immediate-release-independent-todd-achilles-surges-on-informed-ballot",
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
-      "foundOn": []
+      "foundOn": [
+        "https://pollingsource.com/senate/ID",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "fieldDates": "2026-06-01",
+      "partisan": "IND"
     },
     {
       "pollster": "The Bullfinch Group (I)",
       "endDate": "2026-06-01",
-      "weight": 0.043,
+      "weight": 0.0425,
       "sampleSize": 774,
       "population": "RV",
       "results": [

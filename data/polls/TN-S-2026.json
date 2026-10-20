@@ -1,35 +1,43 @@
 {
   "raceId": "TN-S-2026",
   "count": 1,
-  "updated_at": "2026-10-20T02:40:38.418Z",
+  "updated_at": "2026-10-20T14:20:53.500Z",
   "polls": [
     {
       "pollster": "Targoz Market Research",
       "endDate": "2026-08-26",
       "fieldDates": "2026-08-26",
-      "sampleSize": 1157,
-      "population": "RV",
+      "sampleSize": 607,
+      "population": "LV",
       "partisan": null,
       "results": [
         {
-          "candidate": "Marquita Bradshaw (D)",
-          "party": "D",
-          "pct": 31,
-          "percentage": 31
-        },
-        {
           "candidate": "Bill Hagerty (R)",
           "party": "R",
-          "pct": 51,
-          "percentage": 51
+          "pct": 58,
+          "percentage": 58
+        },
+        {
+          "candidate": "Marquita Bradshaw (D)",
+          "party": "D",
+          "pct": 33,
+          "percentage": 33
+        },
+        {
+          "candidate": "Generic Candidate (I)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://tennsight.com/polls/august-2026/",
       "foundOn": [
-        "https://pollingsource.com/senate/TN"
+        "https://pollingsource.com/senate/TN",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3832
+      "sponsors": "Beacon Center",
+      "weight": 0.3049
     }
   ]
 }

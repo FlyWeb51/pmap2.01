@@ -1,7 +1,7 @@
 {
   "raceId": "NY-H-21-2026",
-  "count": 8,
-  "updated_at": "2026-10-20T02:40:38.403Z",
+  "count": 9,
+  "updated_at": "2026-10-20T14:20:53.493Z",
   "polls": [
     {
       "pollster": "Siena University",
@@ -24,12 +24,14 @@
           "percentage": 42
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.mynbc5.com/article/poll-new-york-21-constantino-gendebien/74082680",
       "foundOn": [
-        "https://pollingsource.com/house/NY-21"
+        "https://pollingsource.com/house/NY-21",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7189
+      "sponsors": "Times Union | WAMC | WPTZ-NBC5",
+      "weight": 0.7108
     },
     {
       "pollster": "Impact Research",
@@ -52,12 +54,13 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.nny360.com/news/stlawrencecounty/latest-polls-show-gendebien-dem-for-ny-21-close-to-or-leading-republican-opponent-constantino/article_a292a635-2230-53bb-94e0-d80edc984973.html",
       "foundOn": [
-        "https://pollingsource.com/house/NY-21"
+        "https://pollingsource.com/house/NY-21",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3446
+      "weight": 0.3407
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -80,12 +83,44 @@
           "percentage": 48
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://x.com/zachblackburn23/status/2100002534383358350",
       "foundOn": [
-        "https://pollingsource.com/house/NY-21"
+        "https://pollingsource.com/house/NY-21",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.188
+      "sponsors": "The Bench",
+      "weight": 0.1859
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-09-10",
+      "fieldDates": "2026-09-09 to 2026-09-10",
+      "sampleSize": 557,
+      "population": "RV",
+      "partisan": "D",
+      "sponsors": "The Bench",
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://x.com/zachblackburn23/status/2100002534383358350",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.1859,
+      "otherMatchup": true
     },
     {
       "pollster": "Impact Research",
@@ -108,12 +143,13 @@
           "percentage": 47
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://www.politico.com/newsletters/new-york-playbook/2026/09/08/lawlers-labor-day-parade-01067076",
       "foundOn": [
-        "https://pollingsource.com/house/NY-21"
+        "https://pollingsource.com/house/NY-21",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1645
+      "weight": 0.1627
     },
     {
       "pollster": "J.L. Partners",
@@ -136,12 +172,13 @@
           "percentage": 50
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://nypost.com/2026/08/19/us-news/anthony-constantino-leads-blake-gendebien-in-ny-race-to-succeed-elise-stefanik-poll/",
       "foundOn": [
-        "https://pollingsource.com/house/NY-21"
+        "https://pollingsource.com/house/NY-21",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1137
+      "weight": 0.1124
     },
     {
       "pollster": "SurveyUSA",
@@ -169,7 +206,7 @@
         "https://pollingsource.com/house/NY-21"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2293
+      "weight": 0.2268
     },
     {
       "pollster": "SurveyUSA",
@@ -192,17 +229,19 @@
           "percentage": 39
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://results.surveyusa.com/client/PollReport.aspx?g=7dad7202-08be-4fe4-a687-b52480791639",
       "foundOn": [
-        "https://pollingsource.com/house/NY-21"
+        "https://pollingsource.com/house/NY-21",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2043
+      "sponsors": "WNYT-TV Albany",
+      "weight": 0.202
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-31",
-      "weight": 0.0187,
+      "weight": 0.0185,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -223,7 +262,8 @@
       "note": "Partisan-sponsored, weighted at half strength.",
       "reviewStatus": "approved",
       "foundOn": [
-        "https://pollingsource.com/house/NY-21"
+        "https://pollingsource.com/house/NY-21",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
       "fieldDates": "2026-05-31"
