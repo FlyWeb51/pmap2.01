@@ -26,6 +26,9 @@ jobs:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
         run: node scripts/build-data.js
 
+      - name: Roll district Census profiles up to states
+        run: node scripts/build-census-rollups.js
+
       - name: Patch frontend (idempotent)
         run: node scripts/patch-frontend.js
 

@@ -36,6 +36,9 @@ jobs:
       - name: Fetch and convert NYT polls
         run: node scripts/fetch-nyt-polls.js
 
+      - name: Merge NYT polls into the site's poll files
+        run: node scripts/promote-polls.js
+
       - name: Rebuild national overview data
         run: node scripts/build-overview.js
 
@@ -43,7 +46,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A data/polls-nyt data/overview.json
+          git add -A data/polls-nyt data/polls data/poll-average data/overview.json
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
           git commit -m "NYT polls: refresh"
           for i in 1 2 3; do
