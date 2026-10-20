@@ -84,6 +84,9 @@
   .rp-kick{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);font-weight:600}
   .rp-head h2{font-size:19px;margin:2px 0 3px;font-weight:700}
   .rp-sub{font-size:12px;color:var(--ink-dim)}
+  .rp-vs{font-size:14px;font-weight:700;margin:2px 0 3px;line-height:1.3}
+  .rp-vs small{font-size:11px;font-weight:400;color:var(--ink-dim)}
+  .rp-chg{font-size:12px;color:var(--ind);margin-bottom:2px}
   .x{background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:6px;width:28px;height:28px;font-size:16px;line-height:1;flex:none}
   .x:hover{color:var(--ink);border-color:var(--ink-dim)}
   .rp-call{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:10px 14px;border-bottom:1px solid var(--line)}
@@ -472,13 +475,13 @@ function openRace(x) {
   const box = $("rpIn"); box.hidden = false;
   const t = raceTitle(layer, x);
   const tabs = [["polls", "Polls"], ["market", "Kalshi"], ["vs24", "vs 2024"], ["money", "Money"], ["people", "Voters"]];
-  box.innerHTML = `<div class="rp-head"><div><div class="rp-kick">${esc(t.kick)}</div><h2>${esc(t.name)}</h2><div class="rp-sub">${esc(t.sub)}</div></div><button class="x" id="rpClose" aria-label="Close" title="Close (Esc)">×</button></div>
+  box.innerHTML = `<div class="rp-head"><div><div class="rp-kick">${esc(t.kick)}</div><h2>${esc(t.name)}</h2><div class="rp-vs" id="rpVs"></div><div class="rp-sub" id="rpSub">${esc(t.sub)}</div></div><button class="x" id="rpClose" aria-label="Close" title="Close (Esc)">×</button></div>
     <div class="rp-call" id="rpCall"></div>
     <div class="rp-tabs" id="rpTabs">${tabs.map(([k, v]) => `<button data-t="${k}" class="${k === rpTab ? "on" : ""}">${v}</button>`).join("")}</div>
     <div class="rp-body" id="rpBody"><span class="muted">Loading…</span></div>`;
   $("rpClose").onclick = closeRace;
   $("rpTabs").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; rpTab = b.dataset.t; document.querySelectorAll("#rpTabs button").forEach((y) => y.classList.toggle("on", y === b)); renderTab(); save(); };
-  renderCall(); paint(); renderTab();
+  renderCall(); paint(); renderTab(); fillCandidates(layer, x);
   if (window.innerWidth <= 980) $("rp").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 function closeRace() {
@@ -521,6 +524,34 @@ function twoBar(d, r, dl, rl) {
   const tot = (d || 0) + (r || 0) || 1, w = Math.max(0, Math.min(100, (d / tot) * 100));
   return `<div class="tb"><i class="bd" style="width:${w}%"></i><i class="br" style="width:${100 - w}%"></i></div>
     <div class="tbl"><span class="d">${esc(dl)} <b class="num">${d.toFixed(1)}%</b></span><span class="r"><b class="num">${r.toFixed(1)}%</b> ${esc(rl)}</span></div>`;
+}
+
+/* Candidates for the panel header: Kalshi -> poll average -> FEC nominee -> newest poll.
+   Seats in data/seat-changes.json (resignations, retirements) never show the departed member. */
+async function fillCandidates(l, x) {
+  const real = (n) => !!n && !/party|^democrat|^republican|^generic|^field|^independent$/i.test(String(n).trim());
+  const k = raceKalshi(l, x), ind = !!(k && k.thirdParty && k.republican);
+  const id = raceIdOf(l, x), fk = fecKeyOf(l, x), seatKey = fk || `${x.st}-governor`;
+  const [avg, sc, nom, fec, pf] = await Promise.all([cget(`data/poll-average/${id}.json`), cget("data/seat-changes.json"), cget("data/nominees.json"), fk ? cget(`data/fec/${fk}.json`) : null, cget(`data/polls/${id}.json`)]);
+  if (!sel || sel.x !== x) return;
+  let d = ind ? null : k && k.democrat && real(k.democrat.candidate) ? k.democrat.candidate : null;
+  let r = k && k.republican && real(k.republican.candidate) ? k.republican.candidate : null;
+  if (!d && avg && real(avg.demCandidate)) d = avg.demCandidate;
+  if (!r && avg && real(avg.repCandidate)) r = avg.repCandidate;
+  const change = sc && sc[seatKey];
+  if ((!d || !r) && fec && nom) {
+    const frags = (nom[fk] || []).map((f) => f.toUpperCase());
+    const ok = (c) => c.totals && frags.some((f) => c.name.toUpperCase().includes(f)) && !(change && /incumbent/i.test(c.incumbent_challenge || ""));
+    const pick = (t) => { const m = (fec.candidates || []).filter((c) => t(c.party) && ok(c)); const ni = m.filter((c) => !/incumbent/i.test(c.incumbent_challenge || "")); return (m.length > 1 && ni.length ? ni : m).sort((a, b) => (b.totals.receipts || 0) - (a.totals.receipts || 0))[0]; };
+    const D = pick((p) => (ind ? !/REP/.test(p) : /DEM|DFL/.test(p))), R = pick((p) => p === "REP");
+    if (!d && D) d = fecName(D.name);
+    if (!r && R) r = fecName(R.name);
+  }
+  const p0 = pf && (pf.polls || []).find((p) => !p.otherMatchup);
+  if (p0) { const D = (p0.results || []).find((q) => q.party === "D"), R = (p0.results || []).find((q) => q.party === "R"); if (!d && D && real(cleanName(D.candidate))) d = D.candidate; if (!r && R && real(cleanName(R.candidate))) r = R.candidate; }
+  const el = $("rpVs"); if (!el) return;
+  el.innerHTML = d || r ? `<span class="${ind ? "" : "d"}" style="${ind ? "color:var(--ind)" : ""}">${esc(cleanName(d) || "TBD")}</span> <small>(${ind ? "I" : "D"})</small> <small>vs</small> <span class="r">${esc(cleanName(r) || "TBD")}</span> <small>(R)</small>` : "";
+  if (change) { const sub = $("rpSub"); if (sub) sub.innerHTML = `<div class="rp-chg">${esc(change.note)}</div>${esc(raceTitle(l, x).sub.replace(/^(Held by [^·]*|Vacant)\s*·?\s*/, ""))}`; }
 }
 
 /* Polls */
