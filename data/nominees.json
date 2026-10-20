@@ -1,7 +1,17 @@
 {
   "_help": "Mark nominees here after each primary. Key = seat code matching the data files (AZ-05, TX-senate, VT-00). Value = list of name fragments as they appear in FEC data, e.g. KEENAN matches KEENAN, DANIEL. The site badges them, sorts them first, and tucks the rest behind Show All.",
-  "_generated": "2026-07-31T06:03:19.134Z",
+  "_generated": "2026-10-20T06:21:04.515Z",
   "_source": "Bulk-promoted from api/nominees-inbox.json (PollingSource certified primary results). Unreviewed - see _review for the seats most likely to be wrong.",
+  "AL-senate": [
+    "WESS",
+    "MOORE"
+  ],
+  "AL-01": [
+    "CARL"
+  ],
+  "AL-02": [
+    "MARQUES"
+  ],
   "AL-03": [
     "ROGERS"
   ],
@@ -12,31 +22,29 @@
   "AL-05": [
     "SNEED"
   ],
+  "AL-06": [
+    "MERCER",
+    "PALMER"
+  ],
+  "AL-07": [
+    "AKIN"
+  ],
+  "AK-senate": [
+    "PELTOLA",
+    "SULLIVAN"
+  ],
   "AZ-01": [
     "SHAH",
     "FEELY"
   ],
-  "AZ-02": [
-    "NEZ",
-    "CRANE"
-  ],
-  "AZ-03": [
-    "ANSARI"
-  ],
   "AZ-04": [
-    "STANTON",
-    "JASSER"
+    "STANTON"
   ],
   "AZ-05": [
     "LEE",
     "LAMB"
   ],
-  "AZ-06": [
-    "MENDOZA",
-    "CISCOMANI"
-  ],
   "AZ-07": [
-    "GRIJALVA",
     "BUTIEREZ"
   ],
   "AZ-08": [
@@ -44,8 +52,11 @@
     "HAMADEH"
   ],
   "AZ-09": [
-    "STERBINSKY",
-    "GOSAR"
+    "STERBINSKY"
+  ],
+  "AR-senate": [
+    "SHOFFNER",
+    "COTTON"
   ],
   "AR-02": [
     "JONES",
@@ -262,6 +273,10 @@
     "VARGAS",
     "BELLE"
   ],
+  "CO-senate": [
+    "HICKENLOOPER",
+    "BAISLEY"
+  ],
   "CO-01": [
     "KIROS",
     "PETERSON"
@@ -275,7 +290,6 @@
     "HURD"
   ],
   "CO-04": [
-    "LAUBACHER",
     "BOEBERT"
   ],
   "CO-05": [
@@ -293,6 +307,109 @@
   "CO-08": [
     "RUTINEL",
     "EVANS"
+  ],
+  "CT-01": [
+    "BRONIN"
+  ],
+  "CT-04": [
+    "GOLDSTEIN"
+  ],
+  "CT-05": [
+    "SHEA",
+    "HAYES"
+  ],
+  "DE-senate": [
+    "COONS",
+    "KATZ"
+  ],
+  "FL-senate": [
+    "NIXON",
+    "MOODY"
+  ],
+  "FL-01": [
+    "PATRONIS",
+    "CHICO"
+  ],
+  "FL-02": [
+    "GREEN",
+    "ROGERS"
+  ],
+  "FL-03": [
+    "HARP"
+  ],
+  "FL-04": [
+    "HOLLOWAY"
+  ],
+  "FL-05": [
+    "GRAGE",
+    "RUTHERFORD"
+  ],
+  "FL-06": [
+    "FINE"
+  ],
+  "FL-07": [
+    "DALTON",
+    "ELIJAH"
+  ],
+  "FL-09": [
+    "GREEN"
+  ],
+  "FL-11": [
+    "PERICOLA"
+  ],
+  "FL-12": [
+    "OVERMAN"
+  ],
+  "FL-13": [
+    "GRAY",
+    "PAULINA LUNA"
+  ],
+  "FL-14": [
+    "BELTRAN"
+  ],
+  "FL-15": [
+    "PEOPLE"
+  ],
+  "FL-16": [
+    "KIRSCHNER",
+    "GRUTERS"
+  ],
+  "FL-17": [
+    "MONTAVON"
+  ],
+  "FL-19": [
+    "ARIAS",
+    "SCHWARTZEL"
+  ],
+  "FL-20": [
+    "SCHULTZ",
+    "ANDERSEN"
+  ],
+  "FL-21": [
+    "MARTIN"
+  ],
+  "FL-22": [
+    "DANDIYA",
+    "ASKAR"
+  ],
+  "FL-23": [
+    "FRANKEL",
+    "ADEIMY"
+  ],
+  "FL-24": [
+    "GILBERT"
+  ],
+  "FL-25": [
+    "MOSKOWITZ",
+    "SINGER"
+  ],
+  "FL-27": [
+    "RODRIGUEZ",
+    "SALAZAR"
+  ],
+  "GA-senate": [
+    "OSSOFF",
+    "COLLINS"
   ],
   "GA-01": [
     "HOLLOWELL",
@@ -343,12 +460,22 @@
     "ALLEN"
   ],
   "GA-13": [
-    "CLARK",
+    ".",
     "CHAVEZ"
   ],
   "GA-14": [
     "HARRIS",
     "FULLER"
+  ],
+  "HI-01": [
+    "CASE"
+  ],
+  "HI-02": [
+    "TOKUDA"
+  ],
+  "ID-senate": [
+    "RISCH",
+    "ROTH"
   ],
   "ID-01": [
     "PETERSON",
@@ -357,6 +484,10 @@
   "ID-02": [
     "GILBREATH",
     "SIMPSON"
+  ],
+  "IL-senate": [
+    "STRATTON",
+    "TRACY"
   ],
   "IL-01": [
     "JACKSON",
@@ -462,6 +593,10 @@
     "MEYER",
     "HOUCHIN"
   ],
+  "IA-senate": [
+    "TUREK",
+    "HINSON"
+  ],
   "IA-01": [
     "BOHANNAN",
     "MILLER-MEEKS"
@@ -477,6 +612,29 @@
   "IA-04": [
     "DAWSON",
     "MCGOWAN"
+  ],
+  "KS-senate": [
+    "HAMILTON",
+    "MARSHALL"
+  ],
+  "KS-01": [
+    "REINHOLD",
+    "MANN"
+  ],
+  "KS-02": [
+    "SCHMIDT"
+  ],
+  "KS-03": [
+    "DAVIDS",
+    "JENKINS"
+  ],
+  "KS-04": [
+    "TYNDELL",
+    "ESTES"
+  ],
+  "KY-senate": [
+    "BOOKER",
+    "BARR"
   ],
   "KY-01": [
     "COMER"
@@ -498,6 +656,14 @@
   "KY-06": [
     "DEMBO",
     "ALVARADO"
+  ],
+  "LA-senate": [
+    "DAVIS",
+    "LETLOW"
+  ],
+  "ME-senate": [
+    "JACKSON",
+    "COLLINS"
   ],
   "ME-01": [
     "PINGREE",
@@ -539,6 +705,117 @@
     "RASKIN",
     "RILEY"
   ],
+  "MA-senate": [
+    "MARKEY",
+    "DEATON"
+  ],
+  "MA-01": [
+    "NEAL"
+  ],
+  "MA-02": [
+    "MCGOVERN"
+  ],
+  "MA-03": [
+    "TRAHAN",
+    "GROSSI"
+  ],
+  "MA-04": [
+    "STALCUP"
+  ],
+  "MA-05": [
+    "CLARK"
+  ],
+  "MA-06": [
+    "JONES"
+  ],
+  "MA-07": [
+    "PRESSLEY"
+  ],
+  "MA-08": [
+    "LYNCH",
+    "BURKE"
+  ],
+  "MA-09": [
+    "KEATING",
+    "MACALLISTER"
+  ],
+  "MI-senate": [
+    "EL-SAYED",
+    "ROGERS"
+  ],
+  "MI-01": [
+    "BARR",
+    "BERGMAN"
+  ],
+  "MI-02": [
+    "AMBROSE"
+  ],
+  "MI-03": [
+    "DEBOER",
+    "SCHOLTEN"
+  ],
+  "MI-04": [
+    "MCCANN",
+    "HUIZENGA"
+  ],
+  "MI-07": [
+    "LAWRENCE",
+    "BARRETT"
+  ],
+  "MI-08": [
+    "SMITH",
+    "MCDONALD RIVET"
+  ],
+  "MI-10": [
+    "HINES",
+    "BOUCHARD"
+  ],
+  "MI-11": [
+    "MOSS"
+  ],
+  "MI-12": [
+    "TLAIB"
+  ],
+  "MI-13": [
+    "MCKINNEY"
+  ],
+  "MN-senate": [
+    "FLANAGAN",
+    "TAFOYA"
+  ],
+  "MN-01": [
+    "JOHNSON",
+    "FINSTAD"
+  ],
+  "MN-02": [
+    "LITTLE",
+    "PRATT"
+  ],
+  "MN-03": [
+    "BASS"
+  ],
+  "MN-04": [
+    "MCCOLLUM",
+    "WIKSTROM"
+  ],
+  "MN-05": [
+    "OMAR",
+    "NAGEL"
+  ],
+  "MN-06": [
+    "EMMER"
+  ],
+  "MN-07": [
+    "OSBERG"
+  ],
+  "MN-08": [
+    "SWANSON",
+    "STAUBER"
+  ],
+  "MS-senate": [
+    "COLOM",
+    "HYDE-SMITH"
+  ],
   "MS-01": [
     "JOHNSON",
     "KELLY"
@@ -555,6 +832,41 @@
     "HULUM",
     "EZELL"
   ],
+  "MO-01": [
+    "BELL",
+    "BERRY"
+  ],
+  "MO-02": [
+    "WELLMAN",
+    "WAGNER"
+  ],
+  "MO-03": [
+    "MANN",
+    "ONDER"
+  ],
+  "MO-04": [
+    "HERRERA",
+    "ALFORD"
+  ],
+  "MO-05": [
+    "BRATTIN",
+    "CLEAVER II"
+  ],
+  "MO-06": [
+    "SMEAD",
+    "STIGALL"
+  ],
+  "MO-07": [
+    "BURLISON"
+  ],
+  "MO-08": [
+    "REICHARD",
+    "SMITH"
+  ],
+  "MT-senate": [
+    "BANKHEAD",
+    "ALME"
+  ],
   "MT-01": [
     "FORSTAG",
     "FLINT",
@@ -564,6 +876,10 @@
     "MILLER",
     "DOWNING",
     "MCCRACKEN"
+  ],
+  "NE-senate": [
+    "RICKETTS",
+    "OSBORN"
   ],
   "NE-01": [
     "BACKEMEYER",
@@ -593,7 +909,24 @@
     "DONNELL"
   ],
   "NV-04": [
-    "WHIPPLE"
+    "WHIPPLE",
+    "HORSFORD"
+  ],
+  "NH-senate": [
+    "PAPPAS",
+    "SUNUNU"
+  ],
+  "NH-01": [
+    "SHAHEEN",
+    "DILORENZO"
+  ],
+  "NH-02": [
+    "GOODLANDER",
+    "WILLIAMS"
+  ],
+  "NJ-senate": [
+    "BOOKER",
+    "MURPHY"
   ],
   "NJ-02": [
     "MULLOCK"
@@ -608,13 +941,15 @@
     "PALLONE"
   ],
   "NJ-07": [
-    "BENNETT"
+    "BENNETT",
+    "KEAN"
   ],
   "NJ-08": [
     "MENENDEZ"
   ],
   "NJ-09": [
-    "PINO"
+    "PINO",
+    "POU"
   ],
   "NJ-10": [
     "MCIVER"
@@ -625,6 +960,10 @@
   "NJ-12": [
     "HAMAWY",
     "MELE"
+  ],
+  "NM-senate": [
+    "LUJAN",
+    "MARKER"
   ],
   "NM-01": [
     "STANSBURY",
@@ -646,7 +985,8 @@
     "LIPETRI"
   ],
   "NY-04": [
-    "DRISCOLL"
+    "DRISCOLL",
+    "GILLEN"
   ],
   "NY-06": [
     "MENG"
@@ -676,10 +1016,12 @@
     "TORRES"
   ],
   "NY-17": [
-    "CONLEY"
+    "CONLEY",
+    "LAWLER"
   ],
   "NY-19": [
-    "OBERACKER"
+    "OBERACKER",
+    "RILEY"
   ],
   "NY-21": [
     "GENDEBIEN",
@@ -694,8 +1036,13 @@
   "NY-25": [
     "MORELLE"
   ],
+  "NC-senate": [
+    "COOPER",
+    "WHATLEY"
+  ],
   "NC-01": [
-    "BUCKHOUT"
+    "BUCKHOUT",
+    "DAVIS"
   ],
   "NC-03": [
     "."
@@ -738,6 +1085,10 @@
   "NC-14": [
     "WOMACK",
     "MOORE"
+  ],
+  "OH-senate": [
+    "BROWN",
+    "HUSTED"
   ],
   "OH-01": [
     "LANDSMAN",
@@ -799,8 +1150,13 @@
     "LEONARD",
     "CAREY"
   ],
+  "OK-senate": [
+    "THOMAS",
+    "HERN"
+  ],
   "OK-01": [
-    "TEDFORD"
+    "TEDFORD",
+    "LAHMEYER"
   ],
   "OK-02": [
     "WADE",
@@ -816,6 +1172,10 @@
   ],
   "OK-05": [
     "NELSON"
+  ],
+  "OR-senate": [
+    "MERKLEY",
+    "SMITH"
   ],
   "OR-01": [
     "BONAMICI",
@@ -908,6 +1268,21 @@
     "DELUZIO",
     "GUY"
   ],
+  "RI-senate": [
+    "REED",
+    "MCKAY"
+  ],
+  "RI-01": [
+    "AMO",
+    "KEENAN"
+  ],
+  "RI-02": [
+    "MAGAZINER"
+  ],
+  "SC-senate": [
+    "ANDREWS",
+    "GRAHAM"
+  ],
   "SC-01": [
     "LACORE",
     "HONEYCUTT"
@@ -928,6 +1303,50 @@
   "SC-06": [
     "CLYBURN",
     "PETERSON"
+  ],
+  "SD-senate": [
+    "ROUNDS",
+    "BEAUDION"
+  ],
+  "TN-senate": [
+    "BRADSHAW",
+    "HAGERTY"
+  ],
+  "TN-01": [
+    "BURKE"
+  ],
+  "TN-02": [
+    "BARNETT",
+    "BURCHETT"
+  ],
+  "TN-03": [
+    "GOLLADAY"
+  ],
+  "TN-04": [
+    "BRODERICK",
+    "DESJARLAIS"
+  ],
+  "TN-05": [
+    "MOLDER",
+    "HATCHER"
+  ],
+  "TN-06": [
+    "CROLEY",
+    "GARRETT"
+  ],
+  "TN-07": [
+    "COPELAND"
+  ],
+  "TN-08": [
+    "KUHN"
+  ],
+  "TN-09": [
+    "PEARSON",
+    "TAYLOR"
+  ],
+  "TX-senate": [
+    "TALARICO",
+    "PAXTON"
   ],
   "TX-01": [
     "PRINCE",
@@ -990,7 +1409,8 @@
     "CRUZ"
   ],
   "TX-16": [
-    "ESCOBAR"
+    "ESCOBAR",
+    "BAUMAN"
   ],
   "TX-17": [
     "SHEPARD",
@@ -1018,7 +1438,8 @@
   ],
   "TX-23": [
     "STOUT",
-    "HERRERA"
+    "HERRERA",
+    "GONZALES"
   ],
   "TX-24": [
     "BURGE",
@@ -1054,7 +1475,8 @@
   ],
   "TX-32": [
     "BARRIOS",
-    "YARBROUGH"
+    "YARBROUGH",
+    "BINKLEY"
   ],
   "TX-33": [
     "ALLRED",
@@ -1073,20 +1495,86 @@
     "BABIN"
   ],
   "TX-37": [
-    "CASAR"
+    "CASAR",
+    "PENA"
   ],
   "TX-38": [
     "MCDONOUGH",
     "BONCK"
   ],
   "UT-01": [
-    "MCADAMS"
+    "MCADAMS",
+    "OWEN"
   ],
   "UT-02": [
-    "MOORE"
+    "MOORE",
+    "CROSBY"
   ],
   "UT-03": [
-    "MALOY"
+    "MALOY",
+    "UDELL"
+  ],
+  "VA-senate": [
+    "WARNER",
+    "MIZUSAWA"
+  ],
+  "VA-01": [
+    "TAYLOR",
+    "WITTMAN"
+  ],
+  "VA-02": [
+    "LURIA",
+    "KIGGANS"
+  ],
+  "VA-05": [
+    "PERRIELLO",
+    "MCGUIRE"
+  ],
+  "VA-07": [
+    "OLLIVANT",
+    "VINDMAN"
+  ],
+  "VA-08": [
+    "."
+  ],
+  "VA-09": [
+    "POWERS"
+  ],
+  "VA-10": [
+    "BECKWITH",
+    "SUBRAMANYAM"
+  ],
+  "WA-01": [
+    "DELBENE",
+    "SILVA"
+  ],
+  "WA-02": [
+    "LARSEN",
+    "FELLER"
+  ],
+  "WA-03": [
+    "PEREZ",
+    "BRAUN"
+  ],
+  "WA-04": [
+    "DURESKY",
+    "MCKINNEY"
+  ],
+  "WA-06": [
+    "RANDALL",
+    "FOX"
+  ],
+  "WA-07": [
+    "JAYAPAL",
+    "SHETH"
+  ],
+  "WA-10": [
+    "STRICKLAND",
+    "CHUNG"
+  ],
+  "WV-senate": [
+    "ANDERSON",
+    "CAPITO"
   ],
   "WV-01": [
     "GEORGE",
@@ -1096,107 +1584,100 @@
     "PARSI",
     "MOORE"
   ],
-  "AL-senate": [
-    "WESS",
-    "MOORE"
+  "WI-01": [
+    "BERMAN",
+    "STEIL"
   ],
-  "AR-senate": [
-    "SHOFFNER",
-    "COTTON"
+  "WI-02": [
+    "POCAN"
   ],
-  "CO-senate": [
-    "HICKENLOOPER",
-    "BAISLEY"
+  "WI-03": [
+    "COOKE",
+    "VAN ORDEN"
   ],
-  "GA-senate": [
-    "OSSOFF",
-    "COLLINS"
-  ],
-  "ID-senate": [
-    "ROTH"
-  ],
-  "IL-senate": [
-    "STRATTON",
-    "TRACY"
-  ],
-  "IA-senate": [
-    "TUREK",
-    "HINSON"
-  ],
-  "KY-senate": [
-    "BOOKER",
-    "BARR"
-  ],
-  "LA-senate": [
-    "DAVIS",
-    "LETLOW"
-  ],
-  "ME-senate": [
-    "COLLINS",
-    "JACKSON"
-  ],
-  "MI-senate": [
-    "EL-SAYED",
+  "WI-04": [
+    "MOORE",
     "ROGERS"
   ],
-  "MS-senate": [
-    "COLOM",
-    "HYDE-SMITH"
-  ],
-  "MT-senate": [
-    "BANKHEAD",
-    "ALME"
-  ],
-  "NE-senate": [
-    "RICKETTS"
-  ],
-  "NJ-senate": [
-    "BOOKER",
-    "MURPHY"
-  ],
-  "NM-senate": [
-    "LUJAN",
-    "MARKER"
-  ],
-  "NC-senate": [
-    "COOPER",
-    "WHATLEY"
-  ],
-  "OH-senate": [
-    "BROWN",
-    "HUSTED"
-  ],
-  "OK-senate": [
-    "HERN"
-  ],
-  "OR-senate": [
-    "MERKLEY",
+  "WI-06": [
     "SMITH"
   ],
-  "SC-senate": [
-    "ANDREWS",
-    "GRAHAM"
+  "WI-07": [
+    "CLARK",
+    "ALFONSO"
   ],
-  "SD-senate": [
-    "ROUNDS"
+  "WI-08": [
+    "CROSSON"
   ],
-  "TX-senate": [
-    "TALARICO",
-    "PAXTON"
+  "WY-senate": [
+    "BYRD",
+    "HAGEMAN"
   ],
-  "WV-senate": [
-    "ANDERSON",
-    "CAPITO"
+  "AZ-02": [
+    "NEZ",
+    "CRANE"
+  ],
+  "AZ-03": [
+    "ANSARI"
+  ],
+  "AZ-06": [
+    "MENDOZA",
+    "CISCOMANI"
   ],
   "_review": {
     "oneNominee": [
+      "AL-01:CARL",
+      "AL-02:MARQUES",
       "AL-03:ROGERS",
       "AL-05:SNEED",
-      "AZ-03:ANSARI",
+      "AL-07:AKIN",
+      "AZ-04:STANTON",
+      "AZ-07:BUTIEREZ",
+      "AZ-09:STERBINSKY",
       "AR-04:RUSSELL",
+      "CO-04:BOEBERT",
+      "CT-01:BRONIN",
+      "CT-04:GOLDSTEIN",
+      "CT-05:SHEA",
+      "FL-03:HARP",
+      "FL-04:HOLLOWAY",
+      "FL-06:FINE",
+      "FL-09:GREEN",
+      "FL-11:PERICOLA",
+      "FL-12:OVERMAN",
+      "FL-13:GRAY",
+      "FL-14:BELTRAN",
+      "FL-15:PEOPLE",
+      "FL-17:MONTAVON",
+      "FL-21:MARTIN",
+      "FL-24:GILBERT",
+      "HI-01:CASE",
+      "HI-02:TOKUDA",
+      "ID-senate:RISCH",
+      "KS-02:SCHMIDT",
       "KY-01:COMER",
       "KY-03:RODRIGUEZ",
       "KY-05:ROGERS",
+      "MA-01:NEAL",
+      "MA-02:MCGOVERN",
+      "MA-04:STALCUP",
+      "MA-05:CLARK",
+      "MA-06:JONES",
+      "MA-07:PRESSLEY",
+      "MI-02:AMBROSE",
+      "MI-03:DEBOER",
+      "MI-07:LAWRENCE",
+      "MI-08:SMITH",
+      "MI-11:MOSS",
+      "MI-12:TLAIB",
+      "MI-13:MCKINNEY",
+      "MN-02:LITTLE",
+      "MN-03:BASS",
+      "MN-06:EMMER",
+      "MN-07:OSBERG",
+      "MO-05:BRATTIN",
+      "MO-07:BURLISON",
+      "NE-senate:RICKETTS",
       "NV-04:WHIPPLE",
       "NJ-02:MULLOCK",
       "NJ-03:MCGUIRE",
@@ -1230,80 +1711,164 @@
       "NC-07:ROUZER",
       "NC-08:WATSON",
       "NC-09:OJEDA",
-      "OK-01:TEDFORD",
       "OK-05:NELSON",
       "PA-03:RABB",
+      "RI-02:MAGAZINER",
       "SC-03:LEHMACHER",
       "SC-04:TIMMONS",
       "SC-05:DITTMER",
-      "TX-16:ESCOBAR",
-      "TX-37:CASAR",
+      "SD-senate:ROUNDS",
+      "TN-01:BURKE",
+      "TN-03:GOLLADAY",
+      "TN-07:COPELAND",
+      "TN-08:KUHN",
       "UT-01:MCADAMS",
       "UT-02:MOORE",
-      "UT-03:MALOY"
+      "UT-03:MALOY",
+      "VA-01:TAYLOR",
+      "VA-02:LURIA",
+      "VA-07:OLLIVANT",
+      "VA-08:.",
+      "VA-09:POWERS",
+      "VA-10:BECKWITH",
+      "WI-01:BERMAN",
+      "WI-02:POCAN",
+      "WI-03:COOKE",
+      "WI-06:SMITH",
+      "WI-08:CROSSON"
     ],
     "threePlusNames": [
       "MT-01:FORSTAG/FLINT/SHEEDY",
       "MT-02:MILLER/DOWNING/MCCRACKEN",
       "NE-01:BACKEMEYER/FLOOD/SANDMAN",
       "NE-02:POWELL/HARDING/FOREMAN",
-      "NE-03:STILLE/SMITH/ELSE"
+      "NE-03:STILLE/SMITH/ELSE",
+      "TX-23:STOUT/HERRERA/GONZALES",
+      "TX-32:BARRIOS/YARBROUGH/BINKLEY"
     ],
     "commonSurname": [
+      "AL-senate:MOORE",
+      "AL-03:ROGERS",
       "AZ-05:LEE",
       "AR-02:JONES",
+      "CA-01:MCGUIRE",
       "CA-04:THOMPSON/JONES",
       "CA-12:JOYCE",
       "CA-24:SMITH",
       "CA-32:THOMPSON",
       "CA-42:GARCIA",
       "CO-01:PETERSON",
+      "CO-06:CLARK",
+      "FL-02:ROGERS",
+      "GA-04:JOHNSON",
+      "GA-05:WILLIAMS",
       "GA-12:SMITH",
+      "GA-13:.",
       "ID-01:PETERSON",
       "IL-01:JACKSON",
       "IL-02:MILLER",
       "IL-04:GARCIA",
       "IL-15:MILLER",
       "IN-03:THOMPSON",
+      "KY-05:ROGERS",
+      "ME-senate:JACKSON",
+      "MA-05:CLARK",
+      "MA-06:JONES",
+      "MI-senate:ROGERS",
+      "MI-08:SMITH",
+      "MN-01:JOHNSON",
+      "MS-01:JOHNSON",
       "MS-02:THOMPSON",
+      "MO-08:SMITH",
       "MT-02:MILLER",
       "NE-03:SMITH",
       "NV-03:LEE",
+      "NH-02:WILLIAMS",
+      "NJ-03:MCGUIRE",
+      "NC-03:.",
       "NC-14:MOORE",
+      "OH-02:TAYLOR",
       "OH-07:MILLER",
       "OH-14:JOYCE",
+      "OR-senate:SMITH",
       "PA-12:LEE",
       "PA-13:JOYCE",
       "PA-15:THOMPSON",
       "SC-06:PETERSON",
+      "TN-09:TAYLOR",
       "TX-08:JONES",
       "TX-13:JACKSON",
+      "TX-25:WILLIAMS",
       "TX-29:GARCIA",
       "TX-30:JACKSON",
       "TX-35:GARCIA",
       "UT-02:MOORE",
+      "VA-01:TAYLOR",
+      "VA-05:MCGUIRE",
+      "VA-08:.",
       "WV-01:MILLER",
-      "WV-02:MOORE"
+      "WV-02:MOORE",
+      "WI-04:MOORE/ROGERS",
+      "WI-06:SMITH",
+      "WI-07:CLARK"
     ],
-    "notHeldYet": [
-      "AK (Aug 18 2026)",
-      "CT (Aug 11 2026)",
-      "DE (Sep 15 2026)",
-      "FL (Aug 18 2026)",
-      "HI (Aug 8 2026)",
-      "KS (Aug 4 2026)",
-      "MA (Sep 1 2026)",
-      "MI (Aug 4 2026)",
-      "MN (Aug 11 2026)",
-      "MO (Aug 4 2026)",
-      "NH (Sep 8 2026)",
-      "RI (Sep 8 2026)",
-      "TN (Aug 6 2026)",
-      "VT (Aug 11 2026)",
-      "VA (Aug 4 2026)",
-      "WA (Aug 4 2026)",
-      "WI (Aug 11 2026)",
-      "WY (Aug 18 2026)"
-    ]
-  }
+    "notHeldYet": []
+  },
+  "AK-00": [
+    "BEGICH"
+  ],
+  "NJ-05": [
+    "GOTTHEIMER",
+    "KIRRANE"
+  ],
+  "NY-18": [
+    "RYAN",
+    "AURINGER"
+  ],
+  "NY-22": [
+    "MANNION",
+    "BULLER"
+  ],
+  "WA-08": [
+    "SCHRIER",
+    "MELINE"
+  ],
+  "_kalshiAdded": [
+    "AK-00:BEGICH (Nick Begich III)",
+    "CT-05:HAYES (Jahana Hayes)",
+    "FL-13:PAULINA LUNA (Anna Paulina Luna)",
+    "ID-senate:ROTH (David Roth)",
+    "MI-03:SCHOLTEN (Hillary Scholten)",
+    "MI-07:BARRETT (Tom Barrett)",
+    "MI-08:MCDONALD RIVET (Kristen McDonald Rivet)",
+    "MN-02:PRATT (Eric Pratt)",
+    "MO-05:CLEAVER II (Emanuel Cleaver)",
+    "NC-01:DAVIS (Don Davis)",
+    "NJ-05:GOTTHEIMER (Josh Gottheimer)",
+    "NJ-05:KIRRANE (Sean Kirrane)",
+    "NJ-07:KEAN (Thomas Kean Jr.)",
+    "NJ-09:POU (Nellie Pou)",
+    "NV-04:HORSFORD (Steven Horsford)",
+    "NY-04:GILLEN (Laura Gillen)",
+    "NY-17:LAWLER (Mike Lawler)",
+    "NY-18:RYAN (Pat Ryan)",
+    "NY-18:AURINGER (Jacqueline Auringer)",
+    "NY-19:RILEY (Josh Riley)",
+    "NY-22:MANNION (John Mannion)",
+    "NY-22:BULLER (Kailee Buller)",
+    "SD-senate:BEAUDION (Julian Beaudion)",
+    "UT-01:OWEN (Riley Owen)",
+    "UT-02:CROSBY (Peter Crosby)",
+    "UT-03:UDELL (Kent Udell)",
+    "VA-01:WITTMAN (Rob Wittman)",
+    "VA-02:KIGGANS (Jen Kiggans)",
+    "VA-07:VINDMAN (Eugene Vindman)",
+    "VA-10:SUBRAMANYAM (Suhas Subramanyam)",
+    "WA-08:SCHRIER (Kim Schrier)",
+    "WA-08:MELINE (Spencer Meline)",
+    "WI-01:STEIL (Bryan Steil)",
+    "WI-03:VAN ORDEN (Derrick Van Orden)",
+    "NE-senate:OSBORN (independent, FEC receipts)"
+  ],
+  "_kalshiSynced": "2026-10-20T06:21:04.596Z"
 }
