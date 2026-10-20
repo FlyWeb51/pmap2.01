@@ -1,8 +1,49 @@
 {
   "raceId": "SC-G-2026",
-  "count": 2,
-  "updated_at": "2026-10-20T17:20:41.144Z",
+  "count": 3,
+  "updated_at": "2026-10-20T21:44:03.940Z",
   "polls": [
+    {
+      "pollster": "National Public Affairs",
+      "endDate": "2026-10-16",
+      "fieldDates": "2026-10-13 to 2026-10-16",
+      "sampleSize": 604,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Alan Wilson (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Jermaine Johnson (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Michael Addison (UCP)",
+          "party": null,
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Walid Hakim (GRE)",
+          "party": null,
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://static01.nyt.com/newsgraphics/documenttools/291f5c62393ced9c/212eec4b-full.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4907
+    },
     {
       "pollster": "Hart Research Associates",
       "endDate": "2026-08-15",
@@ -30,7 +71,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1172
+      "weight": 0.1167
     },
     {
       "pollster": "Public Policy Polling",
@@ -59,7 +100,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0529
+      "weight": 0.0527
     }
   ]
 }

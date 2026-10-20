@@ -1,8 +1,37 @@
 {
   "raceId": "TX-H-28-2026",
-  "count": 4,
-  "updated_at": "2026-10-20T17:20:41.118Z",
+  "count": 5,
+  "updated_at": "2026-10-20T21:44:03.911Z",
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-10-13",
+      "fieldDates": "2026-10-07 to 2026-10-13",
+      "sampleSize": 536,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Henry Cuellar (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Tano Tijerina (R)",
+          "party": "R",
+          "pct": 34,
+          "percentage": 34
+        }
+      ],
+      "sourceUrl": "https://dccc.org/%f0%9f%9a%a8-breaking-new-dccc-poll-explains-why-republicans-abandoned-tano-tijerina/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4313
+    },
     {
       "pollster": "Public Policy Research/Texas Southern University",
       "endDate": "2026-08-22",
@@ -29,7 +58,7 @@
         "https://pollingsource.com/house/TX-28"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2756
+      "weight": 0.2745
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
@@ -64,12 +93,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2756
+      "weight": 0.2745
     },
     {
       "pollster": "Pulse Decision Science (R)",
       "endDate": "2026-06-23",
-      "weight": 0.0281,
+      "weight": 0.028,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -99,7 +128,7 @@
     {
       "pollster": "Pulse Decision Science (R)",
       "endDate": "2026-06-23",
-      "weight": 0.0281,
+      "weight": 0.028,
       "sampleSize": 400,
       "population": "LV",
       "results": [

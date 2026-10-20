@@ -1,12 +1,38 @@
 {
   "raceId": "NY-G-2026",
-  "count": 49,
+  "count": 50,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "OnMessage Inc.",
+      "sponsors": null,
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://nypost.com/2026/10/20/us-news/hochul-leads-blakeman-by-only-4-points-in-ny-governors-race-gop-internal-poll-claims/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kathy Hochul (D)",
+          "party": "D",
+          "percentage": 50.3
+        },
+        {
+          "candidate": "Bruce Blakeman (R)",
+          "party": "R",
+          "percentage": 45.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Beacon Research",
       "sponsors": "Secure AI Project",

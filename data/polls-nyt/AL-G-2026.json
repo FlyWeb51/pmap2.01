@@ -1,12 +1,43 @@
 {
   "raceId": "AL-G-2026",
-  "count": 4,
+  "count": 5,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Cygnal Political",
+      "sponsors": "Alabama Daily News | Gray Media Alabama",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.wbrc.com/2026/10/20/tuberville-leads-jones-51-40-percent-exclusive-gray-alabama-daily-news-poll/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Tommy Tuberville (R)",
+          "party": "R",
+          "percentage": 51.2
+        },
+        {
+          "candidate": "Doug Jones (D)",
+          "party": "D",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The Alabama Poll",
       "sponsors": null,

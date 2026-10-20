@@ -1,12 +1,71 @@
 {
   "raceId": "FL-H-07-2026",
-  "count": 1,
-  "updated_at": "2026-10-20T17:20:41.092Z",
+  "count": 3,
+  "updated_at": "2026-10-20T21:44:03.873Z",
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-10-19",
+      "fieldDates": "2026-10-17 to 2026-10-19",
+      "sampleSize": 414,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://floridapolitics.com/archives/825889-dccc-poll-shows-ryan-elijah-bale-dalton-tied-in-cd-7-with-donald-trump-deep-underwater/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4354
+    },
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-10-19",
+      "fieldDates": "2026-10-17 to 2026-10-19",
+      "sampleSize": 414,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ryan Elijah (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Bale Dalton (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://floridapolitics.com/archives/825889-dccc-poll-shows-ryan-elijah-bale-dalton-tied-in-cd-7-with-donald-trump-deep-underwater/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4354,
+      "otherMatchup": true
+    },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-05-21",
-      "weight": 0.0141,
+      "weight": 0.014,
       "sampleSize": 570,
       "population": "RV",
       "results": [
@@ -31,7 +90,8 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-05-21"
+      "fieldDates": "2026-05-21",
+      "otherMatchup": true
     }
   ]
 }

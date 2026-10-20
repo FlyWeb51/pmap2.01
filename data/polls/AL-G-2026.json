@@ -1,8 +1,37 @@
 {
   "raceId": "AL-G-2026",
-  "count": 4,
-  "updated_at": "2026-10-20T17:20:41.130Z",
+  "count": 5,
+  "updated_at": "2026-10-20T21:44:03.925Z",
   "polls": [
+    {
+      "pollster": "Cygnal Political",
+      "endDate": "2026-10-17",
+      "fieldDates": "2026-10-16 to 2026-10-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Alabama Daily News | Gray Media Alabama",
+      "results": [
+        {
+          "candidate": "Tommy Tuberville (R)",
+          "party": "R",
+          "pct": 51.2,
+          "percentage": 51.2
+        },
+        {
+          "candidate": "Doug Jones (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://www.wbrc.com/2026/10/20/tuberville-leads-jones-51-40-percent-exclusive-gray-alabama-daily-news-poll/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9137
+    },
     {
       "pollster": "The Alabama Poll",
       "endDate": "2026-10-16",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9822
+      "weight": 0.9781
     },
     {
       "pollster": "RMG Research",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3142
+      "weight": 0.3128
     },
     {
       "pollster": "yes. every kid. foundation.",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1045
+      "weight": 0.1041
     },
     {
       "pollster": "Cygnal Political",
