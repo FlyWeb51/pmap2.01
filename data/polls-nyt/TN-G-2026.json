@@ -1,12 +1,58 @@
 {
   "raceId": "TN-G-2026",
-  "count": 8,
+  "count": 9,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Spry Strategies",
+      "sponsors": null,
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-16",
+      "sampleSize": 635,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.spryresearch.com/post/tennessee-statewide-survey-october-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Marsha Blackburn (R)",
+          "party": "R",
+          "percentage": 43.5
+        },
+        {
+          "candidate": "Jerri Green (D)",
+          "party": "D",
+          "percentage": 32
+        },
+        {
+          "candidate": "David Hatley (I)",
+          "party": "I",
+          "percentage": 11.9
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 10.2
+        },
+        {
+          "candidate": "Lauren Pinkston (I)",
+          "party": "I",
+          "percentage": 1.4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "TargetSmart",
       "sponsors": "The Progress Fund PAC",
