@@ -27,6 +27,9 @@ jobs:
       - name: Promote inbox into live nominee files
         run: node scripts/promote-nominees.js
 
+      - name: Fill unopposed incumbents and independents (Kalshi names matched to FEC filers)
+        run: node scripts/sync-nominees-kalshi.js
+
       - name: Sanity check output
         run: |
           node -e "
