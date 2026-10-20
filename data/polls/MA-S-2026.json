@@ -1,8 +1,36 @@
 {
   "raceId": "MA-S-2026",
-  "count": 25,
-  "updated_at": "2026-10-20T14:20:53.486Z",
+  "count": 27,
+  "updated_at": "2026-10-20T16:17:34.594Z",
   "polls": [
+    {
+      "pollster": "Boston Globe/Suffolk",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-18",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Markey (D)",
+          "party": "D",
+          "pct": 60,
+          "percentage": 60
+        },
+        {
+          "candidate": "Deaton (R)",
+          "party": "R",
+          "pct": 32,
+          "percentage": 32
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.94
+    },
     {
       "pollster": "Suffolk University",
       "endDate": "2026-10-18",
@@ -42,7 +70,35 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9417
+      "weight": 0.94
+    },
+    {
+      "pollster": "UMass Amherst/YouGov",
+      "endDate": "2026-10-12",
+      "fieldDates": "2026-10-12",
+      "sampleSize": 800,
+      "population": "RV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 29,
+          "percentage": 29
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9316
     },
     {
       "pollster": "YouGov",
@@ -83,7 +139,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9333
+      "weight": 0.9316
     },
     {
       "pollster": "MassINC Polling Group",
@@ -113,7 +169,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Commonwealth Beacon",
-      "weight": 0.6533
+      "weight": 0.6521
     },
     {
       "pollster": "University of New Hampshire",
@@ -142,7 +198,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.536
+      "weight": 0.535
     },
     {
       "pollster": "University of New Hampshire",
@@ -172,7 +228,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "7News",
-      "weight": 0.3508
+      "weight": 0.3501
     },
     {
       "pollster": "University of New Hampshire",
@@ -207,7 +263,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3532,
+      "weight": 0.3525,
       "otherMatchup": true
     },
     {
@@ -236,7 +292,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.228
+      "weight": 0.2276
     },
     {
       "pollster": "YouGov",
@@ -265,7 +321,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.228,
+      "weight": 0.2276,
       "otherMatchup": true
     },
     {
@@ -295,12 +351,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.228
+      "weight": 0.2276
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.0701,
+      "weight": 0.07,
       "sampleSize": 618,
       "population": "LV",
       "results": [
@@ -352,7 +408,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.071,
+      "weight": 0.0708,
       "otherMatchup": true
     },
     {
@@ -382,7 +438,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0691,
+      "weight": 0.069,
       "otherMatchup": true
     },
     {
@@ -440,7 +496,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0489
+      "weight": 0.0488
     },
     {
       "pollster": "Suffolk University",
@@ -527,7 +583,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0158,
+      "weight": 0.0157,
       "otherMatchup": true
     },
     {

@@ -1,8 +1,36 @@
 {
   "raceId": "AR-S-2026",
-  "count": 6,
-  "updated_at": "2026-10-20T14:20:53.482Z",
+  "count": 7,
+  "updated_at": "2026-10-20T16:17:34.580Z",
   "polls": [
+    {
+      "pollster": "Talk Business/Hendrix College",
+      "endDate": "2026-10-15",
+      "fieldDates": "2026-10-15",
+      "sampleSize": 709,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Shoffner (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Cotton (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/AR"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0444
+    },
     {
       "pollster": "Hendrix College",
       "endDate": "2026-10-13",
@@ -31,7 +59,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Talk Business & Politics",
-      "weight": 0.9991
+      "weight": 0.9972
     },
     {
       "pollster": "GrayHouse",
@@ -61,7 +89,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "America One Policies",
-      "weight": 0.3574
+      "weight": 0.3567
     },
     {
       "pollster": "J.L. Partners",
@@ -90,7 +118,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2915
+      "weight": 0.291
     },
     {
       "pollster": "Hendrix College",
@@ -120,13 +148,13 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Talk Business & Politics",
-      "weight": 0.3125
+      "weight": 0.3119
     },
     {
       "pollster": "2040 Strategy Group (D)",
       "endDate": "2026-07-25",
       "endDateUS": "7/25/2026",
-      "weight": 0.0715,
+      "weight": 0.0714,
       "sampleSize": 586,
       "population": "LV",
       "results": [

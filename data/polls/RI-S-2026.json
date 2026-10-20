@@ -1,7 +1,7 @@
 {
   "raceId": "RI-S-2026",
-  "count": 6,
-  "updated_at": "2026-10-20T14:20:53.494Z",
+  "count": 7,
+  "updated_at": "2026-10-20T16:17:34.613Z",
   "polls": [
     {
       "pollster": "Emerson College/WPRI-TV",
@@ -31,7 +31,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "WPRI-TV",
-      "weight": 1.0133
+      "weight": 1.0114
     },
     {
       "pollster": "Embold Research",
@@ -66,7 +66,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9543
+      "weight": 0.9525
     },
     {
       "pollster": "University of New Hampshire",
@@ -95,7 +95,35 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5505
+      "weight": 0.5495
+    },
+    {
+      "pollster": "UNH",
+      "endDate": "2026-09-21",
+      "fieldDates": "2026-09-21",
+      "sampleSize": 598,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Reed (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "McKay (R)",
+          "party": "R",
+          "pct": 33,
+          "percentage": 33
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/RI"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5509
     },
     {
       "pollster": "University of New Hampshire",
@@ -124,12 +152,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3237
+      "weight": 0.3231
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.0706,
+      "weight": 0.0705,
       "sampleSize": 627,
       "population": "LV",
       "results": [
@@ -182,7 +210,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0152
+      "weight": 0.0151
     }
   ]
 }
