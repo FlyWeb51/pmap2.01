@@ -58,6 +58,10 @@
   .mb .bar{height:8px}
   .go{color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:5px;padding:4px 8px;font-size:12px;white-space:nowrap}
   .go:hover{border-color:var(--ink-dim)}
+  .mv{font-weight:700;font-size:12px;white-space:nowrap}
+  .sp{display:inline-block;vertical-align:middle;margin-left:6px}
+  .movers{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;font-size:12.5px}
+  .movers div{display:flex;justify-content:space-between;gap:8px;padding:3px 0;border-bottom:1px solid var(--line)}
   .flag{font-size:10px;font-weight:700;border:1px solid var(--ind);color:var(--ind);border-radius:3px;padding:0 4px;margin-left:4px}
   .foot{font-size:11.5px;color:var(--ink-dim);margin-top:14px;line-height:1.5}
   .foot a{color:var(--ink-dim)}
@@ -78,6 +82,7 @@
     <div class="seg" id="typeSeg"><button data-t="all" class="on">All</button><button data-t="S">Senate</button><button data-t="H">House</button><button data-t="G">Governors</button></div>
     <select id="sortSel" aria-label="Sort">
       <option value="close">Closest races first</option>
+      <option value="move">Biggest movers (7 days)</option>
       <option value="disagree">Polls and market disagree</option>
       <option value="d">Most Democratic</option>
       <option value="r">Most Republican</option>
@@ -89,8 +94,8 @@
   </div>
 
   <table>
-    <thead><tr><th data-k="name">Race</th><th data-k="d" class="n">Dem</th><th class="mb hide-s"></th><th data-k="r" class="n">Rep</th><th data-k="poll" class="n hide-s">Polls</th><th data-k="reg" class="n hide-s" title="Registered Democrats minus Republicans, share of all registered voters">Reg.</th><th></th></tr></thead>
-    <tbody id="rows"><tr><td colspan="7" class="muted">Loading…</td></tr></tbody>
+    <thead><tr><th data-k="name">Race</th><th data-k="d" class="n">Dem</th><th class="mb hide-s"></th><th data-k="r" class="n">Rep</th><th data-k="move" class="n" title="Change in the Democratic (or field) side's chance over the last 7 days">7 days</th><th data-k="poll" class="n hide-s">Polls</th><th data-k="reg" class="n hide-s" title="Registered Democrats minus Republicans, share of all registered voters">Reg.</th><th></th></tr></thead>
+    <tbody id="rows"><tr><td colspan="8" class="muted">Loading…</td></tr></tbody>
   </table>
   <p class="foot" id="foot"></p>
 </main>
@@ -106,6 +111,21 @@ const realName = (c) => c && !/party/i.test(c) ? c : null;
 const ago = (ts) => { if (!ts) return ""; const m = Math.round((Date.now() - new Date(ts)) / 6e4); return m < 60 ? `${m} min ago` : m < 2880 ? `${Math.round(m / 60)} hr ago` : `${Math.round(m / 1440)} days ago`; };
 
 let ROWS = [], type = "all", sort = "close", REG = null;
+let HIST = null;
+const nowMin = () => Math.round(Date.now() / 60000);
+function change(pts, mins) { if (!pts || !pts.length) return null; let v = null; for (const [t, x] of pts) { if (t <= nowMin() - mins) v = x; else break; } return v == null ? null : Math.round((pts[pts.length - 1][1] - v) * 10) / 10; }
+// tiny 7-day line, Democratic-side chance, 0..100 scale
+function spark(pts) {
+  if (!pts || pts.length < 2) return "";
+  const from = nowMin() - 7 * 1440, p = pts.filter((x) => x[0] >= from);
+  if (p.length < 2) return "";
+  const w = 54, h = 16, t0 = p[0][0], t1 = p[p.length - 1][0] || t0 + 1;
+  const lo = Math.min(...p.map((x) => x[1])), hi = Math.max(...p.map((x) => x[1])), pad = Math.max(2, (hi - lo) * 0.15);
+  const y = (v) => h - ((v - (lo - pad)) / ((hi + pad) - (lo - pad))) * h;
+  const d = p.map((x, i) => `${i ? "L" : "M"}${(((x[0] - t0) / (t1 - t0 || 1)) * w).toFixed(1)} ${y(x[1]).toFixed(1)}`).join("");
+  const up = p[p.length - 1][1] >= p[0][1];
+  return `<svg class="sp" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><path d="${d}" fill="none" stroke="${up ? "var(--nd)" : "var(--lr)"}" stroke-width="1.4"/></svg>`;
+}
 
 function row(t, key, st, e, poll) {
   const ind = !!(e.thirdParty && e.republican) || !!(e.democrat && e.republican && e.democrat.pct + e.republican.pct < 85);
@@ -120,7 +140,8 @@ function row(t, key, st, e, poll) {
   const atLarge = ["AK", "DE", "ND", "SD", "VT", "WY"].includes(st);
   const rr = rs ? (t === "H" && !atLarge ? rs.districts && rs.districts[key.split("-")[1]] : rs.statewide) : null;
   const reg = rr ? { m: ((rr.D - rr.R) / rr.total) * 100, asOf: rs.asOf, scope: t === "H" ? "district" : "state" } : null;
-  return { t, key, st, label, code: t === "H" ? key : `${st} ${TYPE[t]}`, d, r, dN, rN, ind, series: e.series, pm, reg,
+  const hk = `${t}-${t === "H" ? key : st}`, hist = HIST && HIST.points ? HIST.points[hk] : null;
+  return { hist, ch1: change(hist, 1440), ch7: change(hist, 7 * 1440), t, key, st, label, code: t === "H" ? key : `${st} ${TYPE[t]}`, d, r, dN, rN, ind, series: e.series, pm, reg,
     disagree: pm != null && Math.sign(pm) !== Math.sign(d - 50) && Math.abs(d - 50) > 2 && Math.abs(pm) > 0.5,
     text: `${label} ${key} ${st} ${TYPE[t]} ${dN} ${rN}`.toLowerCase() };
 }
@@ -129,6 +150,7 @@ function render() {
   const q = $("q").value.trim().toLowerCase();
   let list = ROWS.filter((x) => (type === "all" || x.t === type) && (!q || q.split(/\s+/).every((w) => x.text.includes(w))));
   const by = { close: (a, b) => Math.abs(a.d - 50) - Math.abs(b.d - 50), d: (a, b) => b.d - a.d, r: (a, b) => a.d - b.d, name: (a, b) => a.label.localeCompare(b.label) || a.key.localeCompare(b.key, undefined, { numeric: true }),
+    move: (a, b) => Math.abs(b.ch7 ?? 0) - Math.abs(a.ch7 ?? 0),
     disagree: (a, b) => (b.disagree - a.disagree) || Math.abs(a.d - 50) - Math.abs(b.d - 50),
     reg: (a, b) => (b.reg ? b.reg.m : -999) - (a.reg ? a.reg.m : -999) };
   list.sort(by[sort]);
@@ -138,10 +160,11 @@ function render() {
       <td class="n d">${Math.round(x.d)}%</td>
       <td class="mb hide-s"><div class="bar"><i class="bd" style="width:${x.d}%"></i><i class="br" style="width:${x.r}%"></i></div></td>
       <td class="n r">${100 - Math.round(x.d)}%</td>
+      <td class="n">${x.ch7 == null ? `<span class="muted">–</span>` : `<span class="mv ${x.ch7 > 0 ? "d" : x.ch7 < 0 ? "r" : "muted"}" title="${x.ch1 != null ? `24 hours: ${x.ch1 > 0 ? "+" : ""}${x.ch1.toFixed(1)}` : ""}">${x.ch7 > 0 ? "▲" : x.ch7 < 0 ? "▼" : ""}${Math.abs(x.ch7).toFixed(1)}</span>${spark(x.hist)}`}</td>
       <td class="n hide-s ${x.pm == null ? "muted" : x.pm >= 0 ? "d" : "r"}">${x.pm == null ? "–" : Math.abs(x.pm) < 0.05 ? "Tied" : (x.pm > 0 ? "D+" : "R+") + Math.abs(x.pm).toFixed(1)}</td>
       <td class="n hide-s ${!x.reg ? "muted" : x.reg.m >= 0 ? "d" : "r"}" title="${x.reg ? `Registration, ${x.reg.scope}, as of ${x.reg.asOf}` : "No party registration data"}">${!x.reg ? "–" : (x.reg.m >= 0 ? "D+" : "R+") + Math.abs(x.reg.m).toFixed(1)}</td>
       <td class="n"><a class="go" href="${kUrl(x.series)}" target="_blank" rel="noopener">Kalshi ↗</a></td></tr>`).join("")
-    : `<tr><td colspan="7" class="muted">No markets match.</td></tr>`;
+    : `<tr><td colspan="8" class="muted">No markets match.</td></tr>`;
   document.querySelectorAll("th[data-k]").forEach((th) => th.removeAttribute("aria-sort"));
   const map = { d: ["d", "descending"], r: ["r", "descending"], name: ["name", "ascending"] }[sort];
   if (map) document.querySelector(`th[data-k="${map[0]}"]`).setAttribute("aria-sort", map[1]);
@@ -156,6 +179,7 @@ function topCard(title, link, pD, label, note) {
 (async function boot() {
   const [S, H, Gv, nat, pi, reg] = await Promise.all(["senate", "house", "governor"].map((t) => getJSON(`data/kalshi/all-${t}.json`)).concat([getJSON("data/kalshi/national.json"), getJSON("data/polls/index.json"), getJSON("data/registration.json")]));
   REG = reg;
+  HIST = await getJSON("data/kalshi/history.json");
   const P = (pi && pi.races) || {};
   for (const [st, e] of Object.entries(S || {})) ROWS.push(row("S", st, st, e, P[`${st}-S-2026`]));
   for (const [k, e] of Object.entries(H || {})) { const [st, dd] = k.split("-"); ROWS.push(row("H", k, st, e, P[`${st}-H-${dd}-2026`])); }
@@ -170,7 +194,12 @@ function topCard(title, link, pD, label, note) {
   const close = ROWS.filter((x) => Math.abs(x.d - 50) <= 15).length;
   top += `<div class="card"><h3>Across all races</h3><div class="big num">${close}<span class="muted" style="font-size:14px;font-weight:400"> within 35–65%</span></div><div class="bar"><i class="bd" style="width:${(ROWS.filter((x) => x.d >= 50).length / ROWS.length) * 100}%"></i><i class="br" style="flex:1"></i></div>
     <p class="note">${ROWS.filter((x) => x.d >= 50).length} of ${ROWS.length} listed races favor the Democrat or field. <b style="color:var(--ink)">${ups}</b> where polls and the market disagree.</p></div>`;
+  const mv = ROWS.filter((x) => x.ch7 != null && Math.abs(x.ch7) >= 1).sort((a, b) => Math.abs(b.ch7) - Math.abs(a.ch7)).slice(0, 6);
+  if (mv.length) top += `<div class="card" style="grid-column:1/-1"><h3>Biggest movers · last 7 days<a href="#" id="mvAll">See all ↓</a></h3><div class="movers">${mv.map((x) =>
+    `<div><span><b>${esc(x.label)}</b> <span class="muted">${esc(TYPE[x.t])}</span></span><span class="mv ${x.ch7 > 0 ? "d" : "r"}">${x.ch7 > 0 ? "▲ D" : "▼ R"} ${Math.abs(x.ch7).toFixed(1)} pts${spark(x.hist)}</span></div>`).join("")}</div>
+    <p class="note">Change in the Democratic side's chance to win. ▲ means the race moved toward Democrats, ▼ toward Republicans.</p></div>`;
   $("top").innerHTML = top;
+  const ma = document.getElementById("mvAll"); if (ma) ma.onclick = (e) => { e.preventDefault(); sort = "move"; $("sortSel").value = "move"; render(); document.querySelector("table").scrollIntoView({ behavior: "smooth" }); };
 
   const fetched = Object.values(S || {}).map((e) => e.fetchedAt).filter(Boolean).sort().pop();
   $("foot").innerHTML = `Prices from <a href="https://kalshi.com/category/elections" target="_blank" rel="noopener">Kalshi</a>, refreshed every 30 minutes (last ${esc(ago(fetched))}). A price of 62¢ means traders put about a 62% chance on that outcome. Kalshi lists about 75 House races; the rest have no market. "Polls" is this site's polling average where one exists. "Reg." is registered Democrats minus Republicans as a share of all registered voters, from each state's election office (by district where the state publishes it; ${reg ? Object.keys(reg.states).length : 0} states register by party). Not financial advice.`;
