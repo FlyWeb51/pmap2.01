@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<title>Prediction Map | Election Center 2026</title>
+<style>
+  :root{
+    --bg:#0e1420; --panel:#0a0f18; --panel-2:#111a29; --line:#1e2a3d; --land:#16202f;
+    --ink:#e8edf5; --ink-dim:#8b98ac;
+    --sd:#1f5fc4; --ld:#3f7fdd; --nd:#6fa3ec; --td:#a9c8f4;
+    --tr:#f0b3b3; --nr:#e88a8a; --lr:#d95c5c; --sr:#b93838;
+    --toss:#b48ce0; --ind:#e0b45c; --vac:#2c3647; --focus:#6ea8ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Archivo","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh}
+  .num{font-family:"IBM Plex Mono","SF Mono",Consolas,monospace}
+  button{font-family:inherit;cursor:pointer}
+  header{border-bottom:1px solid var(--line);background:var(--panel);padding:12px 22px}
+  .hrow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1400px;margin:0 auto}
+  h1{font-size:18px;letter-spacing:.06em;text-transform:uppercase}
+  .sub{font-size:11px;color:var(--ink-dim);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+  .nav{display:flex;gap:8px;flex-wrap:wrap}
+  .nav a{font-size:12px;color:var(--ink-dim);text-decoration:none;border:1px solid var(--line);padding:6px 10px;border-radius:6px}
+  .nav a:hover{color:var(--ink);border-color:var(--ink-dim)} .nav a.on{color:var(--ink);border-color:var(--nd)}
+
+  /* scoreboard: all three contests at once */
+  .score{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:1400px;margin:14px auto 0;padding:0 22px}
+  .sc{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer;text-align:left;color:inherit}
+  .sc.on{border-color:var(--focus);box-shadow:0 0 0 1px var(--focus) inset}
+  .sc-top{display:flex;justify-content:space-between;align-items:baseline}
+  .sc-name{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);font-weight:600}
+  .sc-need{font-size:10.5px;color:var(--ink-dim)}
+  .sc-nums{display:flex;justify-content:space-between;align-items:baseline;margin:6px 0 6px}
+  .sc-nums b{font-size:24px;font-weight:700}
+  .sc-mid{font-size:11px;color:var(--ink-dim)}
+  .bar{position:relative;display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--vac)}
+  .bar i{display:block;height:100%}
+  .bar .tick{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink);left:50%}
+  .sc-msg{font-size:11px;margin-top:6px;color:var(--ink-dim);min-height:15px}
+  .d{color:var(--nd)} .r{color:var(--lr)}
+
+  main{max-width:1400px;margin:0 auto;padding:12px 22px 28px;display:grid;grid-template-columns:1fr 280px;gap:16px}
+  .mapcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px;position:relative;min-width:0}
+  svg{width:100%;height:auto;display:block}
+  .st{stroke:#0a0f18;stroke-width:.7;cursor:pointer;transition:fill .12s}
+  .st.off{fill:var(--land);cursor:default}
+  .ds{stroke:#0a0f18;stroke-width:.25;cursor:pointer}
+  .outline{fill:none;stroke:#0a0f18;stroke-width:.8;pointer-events:none}
+  .st:not(.off):hover,.ds:hover{stroke:var(--ink);stroke-width:1.2}
+  .kf{opacity:.62}
+  .lbl{font-size:9px;fill:#0b0f16;font-weight:700;pointer-events:none;text-anchor:middle}
+  .lbl.dim{fill:#5d6a80}
+  #tt{position:absolute;pointer-events:none;background:#0a0f18;border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:12px;line-height:1.45;display:none;max-width:250px;z-index:5}
+
+  .side{display:flex;flex-direction:column;gap:12px}
+  .box{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:12px}
+  .box h3{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:8px;font-weight:600}
+  .seg{display:flex;flex-wrap:wrap;gap:6px}
+  .seg button{flex:1 1 auto;background:var(--panel);border:1px solid var(--line);color:var(--ink-dim);border-radius:6px;padding:7px 8px;font-size:12px}
+  .seg button.on{color:var(--ink);border-color:var(--focus);background:#13203a}
+  .seg button:disabled{opacity:.35;cursor:not-allowed}
+  .fill{width:100%;display:flex;justify-content:space-between;align-items:center;background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:9px 11px;font-size:13px;margin-bottom:6px}
+  .fill .sw{width:34px;height:18px;border-radius:9px;background:var(--vac);position:relative;flex:none;transition:background .15s}
+  .fill .sw::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:var(--ink);transition:left .15s}
+  .fill.on .sw{background:var(--focus)} .fill.on .sw::after{left:18px}
+  .act{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .act button{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:7px;font-size:12px}
+  .act button:hover{border-color:var(--ink-dim)}
+  .legend{display:grid;grid-template-columns:1fr 1fr;gap:5px 10px;font-size:11.5px;color:var(--ink-dim)}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:6px}
+  .note{font-size:11px;color:var(--ink-dim);line-height:1.5;margin-top:8px}
+  .err{padding:30px;color:var(--ink-dim)}
+
+  @media (max-width:980px){ main{grid-template-columns:1fr} .score{grid-template-columns:1fr;padding:0 16px} main{padding:12px 16px 24px} header{padding:12px 16px} }
+</style>
+</head>
+<body>
+<header>
+  <div class="hrow">
+    <div><h1>Prediction Map</h1><div class="sub">Call every 2026 race · Senate, House and governors</div></div>
+    <nav class="nav"><a href="./">House map</a><a href="./overview.html">National picture</a><a href="./predict.html" class="on">Prediction map</a><a href="polling/">Polling</a></nav>
+  </div>
+</header>
+
+<section class="score" id="score">
+  <button class="sc" data-layer="S"><div class="sc-top"><span class="sc-name">Senate</span><span class="sc-need">51 for D control · VP breaks ties</span></div>
+    <div class="sc-nums"><b class="num d" id="sD">–</b><span class="sc-mid" id="sMid"></span><b class="num r" id="sR">–</b></div>
+    <div class="bar"><i id="sBD" style="background:var(--ld)"></i><i id="sBT" style="background:var(--toss)"></i><i style="flex:1"></i><i id="sBR" style="background:var(--lr)"></i><span class="tick" style="left:51%"></span></div>
+    <div class="sc-msg" id="sMsg"></div></button>
+  <button class="sc" data-layer="H"><div class="sc-top"><span class="sc-name">House</span><span class="sc-need">218 for control</span></div>
+    <div class="sc-nums"><b class="num d" id="hD">–</b><span class="sc-mid" id="hMid"></span><b class="num r" id="hR">–</b></div>
+    <div class="bar"><i id="hBD" style="background:var(--ld)"></i><i id="hBT" style="background:var(--toss)"></i><i style="flex:1"></i><i id="hBR" style="background:var(--lr)"></i><span class="tick" style="left:50.1%"></span></div>
+    <div class="sc-msg" id="hMsg"></div></button>
+  <button class="sc" data-layer="G"><div class="sc-top"><span class="sc-name">Governors</span><span class="sc-need" id="gNeed">36 races</span></div>
+    <div class="sc-nums"><b class="num d" id="gD">–</b><span class="sc-mid" id="gMid"></span><b class="num r" id="gR">–</b></div>
+    <div class="bar"><i id="gBD" style="background:var(--ld)"></i><i id="gBT" style="background:var(--toss)"></i><i style="flex:1"></i><i id="gBR" style="background:var(--lr)"></i></div>
+    <div class="sc-msg" id="gMsg"></div></button>
+</section>
+
+<main>
+  <div class="mapcard"><svg id="map" viewBox="0 0 975 610" role="img" aria-label="Prediction map"></svg><div id="tt"></div></div>
+  <aside class="side">
+    <div class="box"><h3>Map</h3>
+      <div class="seg" id="layerSeg"><button data-l="S" class="on">Senate</button><button data-l="H">House</button><button data-l="G">Governors</button></div>
+    </div>
+    <div class="box"><h3>Fill in</h3>
+      <button class="fill" id="fillKalshi"><span>Kalshi odds</span><span class="sw"></span></button>
+      <button class="fill" id="fillPolls"><span>Polling averages</span><span class="sw"></span></button>
+      <button class="fill" id="fillRatings"><span>Race ratings (House)</span><span class="sw"></span></button>
+      <p class="note" id="fillNote">Fills every race you haven't called yourself. Turn one off to remove its fills; your own calls stay. When several are on, Kalshi wins, then polls, then ratings. Kalshi only lists about 75 House races, so turn on ratings to fill the rest.</p>
+    </div>
+    <div class="box"><h3>Overlay (races not called yet)</h3>
+      <div class="seg" id="ovSeg"><button data-o="none">None</button><button data-o="rating">Ratings</button><button data-o="party">Current party</button><button data-o="kalshi" class="on">Kalshi</button><button data-o="polls">Polls</button></div>
+      <p class="note">Overlays only color the map. They don't count toward the totals unless you fill them in or click the race.</p>
+    </div>
+    <div class="box"><h3>Your calls</h3>
+      <p class="note" style="margin:0 0 8px">Click a race to cycle <b class="d">Democrat</b> → <b class="r">Republican</b> → <b style="color:var(--toss)">Toss-up</b> → clear.</p>
+      <div class="act"><button id="clearLayer">Clear this map</button><button id="clearAll">Clear everything</button><button id="share">Copy link</button><button id="lockFills">Keep fills as my calls</button></div>
+      <div class="legend" style="margin-top:10px">
+        <span><i style="background:var(--ld)"></i>Your call: D</span><span><i style="background:var(--lr)"></i>Your call: R</span>
+        <span><i style="background:var(--toss)"></i>Toss-up</span><span><i style="background:var(--ind)"></i>Independent</span>
+        <span><i style="background:var(--ld);opacity:.62"></i>Filled: D</span><span><i style="background:var(--lr);opacity:.62"></i>Filled: R</span>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<script>
+/* Geometry and seat data come straight from index.html, so this page never
+   drifts out of sync with the main map. */
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const getJSON = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+function constFrom(html, name) {
+  const start = html.indexOf(`\nconst ${name} = `);
+  if (start < 0) throw new Error("missing " + name);
+  const from = start + name.length + 10;
+  const line = html.slice(from, html.indexOf("\n", from));
+  const end = Math.max(line.lastIndexOf("};"), line.lastIndexOf("];"));
+  return Function(`"use strict";return (${line.slice(0, end + 1)});`)();
+}
+const GOV_STATES = ["AL","AK","AZ","AR","CA","CO","CT","FL","GA","HI","ID","IL","IA","KS","ME","MD","MA","MI","MN","NE","NV","NH","NM","NY","OH","OK","OR","PA","RI","SC","SD","TN","TX","VT","WI","WY"];
+const KEY2CAT = { SolidD: "Solid D", LikelyD: "Likely D", LeanD: "Lean D", TiltD: "Tilt D", TiltR: "Tilt R", LeanR: "Lean R", LikelyR: "Likely R", SolidR: "Solid R" };
+const RANK = { "Solid D": 0, "Likely D": 1, "Lean D": 2, "Tilt D": 3, "Tilt R": 4, "Lean R": 5, "Likely R": 6, "Solid R": 7 };
+const RCOL = ["#1f5fc4", "#3f7fdd", "#6fa3ec", "#a9c8f4", "#f0b3b3", "#e88a8a", "#d95c5c", "#b93838"];
+const PICKCOL = { D: "#3f7fdd", R: "#d95c5c", T: "#b48ce0", I: "#e0b45c" };
+
+let G = null;           // geometry + seat data
+let K = { S: {}, H: {}, G: {} }, PI = {}, KMETA = null;
+let layer = "S", overlay = "kalshi";
+let fills = { kalshi: false, polls: false, ratings: false };
+let picks = { S: {}, H: {}, G: {} };
+
+/* ---------- saving ---------- */
+function save() { try { localStorage.setItem("pmap-predict", JSON.stringify({ picks, fills, layer, overlay })); } catch {} }
+function load() {
+  let s = null;
+  const h = location.hash.match(/p=([A-Za-z0-9_\-]+)/);
+  if (h) { try { s = JSON.parse(decodeURIComponent(escape(atob(h[1].replace(/-/g, "+").replace(/_/g, "/"))))); } catch {} }
+  if (!s) { try { s = JSON.parse(localStorage.getItem("pmap-predict") || "null"); } catch {} }
+  if (s) { picks = Object.assign({ S: {}, H: {}, G: {} }, s.picks || {}); fills = Object.assign(fills, s.fills || {}); layer = s.layer || layer; overlay = s.overlay || overlay; }
+}
+
+/* ---------- race model ---------- */
+const kD = (e) => {
+  if (!e) return null;
+  if (e.thirdParty && e.republican) return null; // handled as independent race
+  const d = e.democrat, r = e.republican;
+  if (d && d.share != null) return d.share / 100;
+  if (d && r) return d.pct / (d.pct + r.pct);
+  if (d) return d.pct / 100;
+  if (r) return 1 - (r.share ?? r.pct) / 100;
+  return null;
+};
+const pctD = (v) => (v == null ? null : Math.round(v * 100));
+function kalshiCall(e) {
+  if (!e) return null;
+  if (e.thirdParty && e.republican) { const rp = e.republican.pct; return rp >= 60 ? "R" : rp <= 40 ? "I" : "T"; }
+  const d = kD(e); if (d == null) return null;
+  return d >= 0.6 ? "D" : d <= 0.4 ? "R" : "T";
+}
+function pollCall(p) { if (!p || !p.average || p.average.margin == null) return null; const m = p.average.margin; return m >= 3 ? "D" : m <= -3 ? "R" : "T"; }
+
+function races(l) {
+  if (l === "S") return G.senateRaces;
+  if (l === "H") return G.districts;
+  return GOV_STATES.map((st) => ({ id: st, st, name: G.names[st] }));
+}
+function raceKalshi(l, x) { return l === "S" ? K.S[x.st] : l === "G" ? K.G[x.st] : K.H[x.kid]; }
+function racePoll(l, x) { return PI[l === "S" ? `${x.st}-S-2026` : l === "G" ? `${x.st}-G-2026` : `${x.st}-H-${String(x.d).padStart(2, "0")}-2026`]; }
+// Final call for a race: your click > enabled fills > nothing
+function callOf(l, x) {
+  const mine = picks[l][x.id];
+  if (mine) return { c: mine, src: "you" };
+  if (fills.kalshi) { const c = kalshiCall(raceKalshi(l, x)); if (c) return { c, src: "kalshi" }; }
+  if (fills.polls) { const c = pollCall(racePoll(l, x)); if (c) return { c, src: "polls" }; }
+  if (fills.ratings && l === "H" && x.rating) return { c: /Tilt/.test(x.rating) ? "T" : x.rating.endsWith("D") ? "D" : "R", src: "ratings" };
+  return null;
+}
+
+/* ---------- overlay colours ---------- */
+function band(dShare) { // 0..1 D share -> 8-step palette
+  const m = (dShare - 0.5) * 200;
+  if (m >= 30) return RCOL[0]; if (m >= 15) return RCOL[1]; if (m >= 5) return RCOL[2]; if (m >= 0) return RCOL[3];
+  if (m > -5) return RCOL[4]; if (m > -15) return RCOL[5]; if (m > -30) return RCOL[6]; return RCOL[7];
+}
+function marginBand(m) { return band(0.5 + m / 200 * 2.5); } // poll margins are smaller than odds; stretch them
+function overlayColor(l, x) {
+  if (overlay === "none") return "#243044";
+  if (overlay === "rating" && l === "H") return x.rating ? RCOL[RANK[x.rating]] : "#243044";
+  if (overlay === "party") {
+    const p = l === "S" ? x.holder : l === "H" ? x.party : null;
+    return p === "D" ? "#6fa3ec" : p === "R" ? "#e88a8a" : p === "I" ? "#b48ce0" : "#243044";
+  }
+  if (overlay === "kalshi") {
+    const e = raceKalshi(l, x);
+    if (e && e.thirdParty && e.republican) return band(1 - e.republican.pct / 100);
+    const d = kD(e); return d == null ? "#243044" : band(d);
+  }
+  if (overlay === "polls") { const p = racePoll(l, x); return p && p.average && p.average.margin != null ? marginBand(p.average.margin) : "#243044"; }
+  return "#243044";
+}
+function fillOf(l, x) { const c = callOf(l, x); return c ? { color: PICKCOL[c.c], kf: c.src !== "you" } : { color: overlayColor(l, x), kf: false }; }
+
+/* ---------- drawing ---------- */
+const NS = "http://www.w3.org/2000/svg";
+const mk = (t, a) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
+const svg = $("map");
+const nodes = new Map();
+function draw() {
+  svg.innerHTML = ""; nodes.clear();
+  if (layer === "H") {
+    for (const x of G.districts) {
+      const d = G.dpaths[x.id]; if (!d) continue;
+      const p = mk("path", { d, class: "ds" }); hook(p, x); svg.appendChild(p); nodes.set(x.id, p);
+    }
+    for (const st of Object.keys(G.states)) svg.appendChild(mk("path", { d: G.states[st].p, class: "outline" }));
+  } else {
+    const set = new Set(races(layer).map((x) => x.st));
+    for (const st of Object.keys(G.states)) {
+      const p = mk("path", { d: G.states[st].p, class: "st" + (set.has(st) ? "" : " off") });
+      svg.appendChild(p);
+      if (set.has(st)) { const x = races(layer).find((r) => r.st === st); hook(p, x); nodes.set(x.id, p); }
+    }
+    for (const st of Object.keys(G.states)) {
+      const s = G.states[st]; if (s.cx == null) continue;
+      const t = mk("text", { x: s.cx, y: s.cy + 3, class: "lbl" + (set.has(st) ? "" : " dim") }); t.textContent = st; svg.appendChild(t);
+    }
+  }
+  paint();
+}
+function paint() {
+  for (const x of races(layer)) {
+    const n = nodes.get(x.id); if (!n) continue;
+    const f = fillOf(layer, x);
+    n.setAttribute("fill", f.color);
+    n.classList.toggle("kf", f.kf);
+  }
+  tally(); save();
+}
+function hook(p, x) {
+  p.addEventListener("click", () => {
+    const order = [undefined, "D", "R", "T"];
+    const cur = picks[layer][x.id];
+    const next = order[(order.indexOf(cur) + 1) % order.length];
+    if (next) picks[layer][x.id] = next; else delete picks[layer][x.id];
+    paint(); tip(null, x);
+  });
+  p.addEventListener("mousemove", (e) => tip(e, x));
+  p.addEventListener("mouseleave", () => ($("tt").style.display = "none"));
+}
+function tip(e, x) {
+  const tt = $("tt");
+  const k = raceKalshi(layer, x), po = racePoll(layer, x), c = callOf(layer, x);
+  const kd = k && k.thirdParty && k.republican ? null : pctD(kD(k));
+  const cand = (side) => k && k[side] && k[side].candidate && !/party/i.test(k[side].candidate) ? k[side].candidate : null;
+  let h = `<b>${esc(layer === "H" ? x.label : x.name)}</b>${layer === "S" && x.special ? " · special" : ""}<br>`;
+  if (layer === "S") h += `Held by ${esc(x.incumbent)} (${x.holder})<br>`;
+  if (layer === "H") h += `${x.m ? esc(x.m.n) + " (" + x.m.p + ")" : "Open seat"}${x.rating ? " · " + x.rating : ""}<br>`;
+  if (cand("democrat") || cand("republican")) h += `<span class="d">${esc(cand("democrat") || "")}</span> vs <span class="r">${esc(cand("republican") || "")}</span><br>`;
+  if (k && k.thirdParty && k.republican) h += `Kalshi: ${esc(cand("republican"))} ${Math.round(k.republican.pct)}% vs field<br>`;
+  else if (kd != null) h += `Kalshi: <span class="d">D ${kd}%</span> · <span class="r">R ${100 - kd}%</span><br>`;
+  if (po && po.average && po.average.margin != null) { const m = po.average.margin; h += `Polls: ${m >= 0 ? "D" : "R"}+${Math.abs(m).toFixed(1)} (${po.average.polls})<br>`; }
+  h += c ? `<b>Called: ${c.c === "D" ? "Democrat" : c.c === "R" ? "Republican" : c.c === "I" ? "Independent" : "Toss-up"}</b> <span style="color:var(--ink-dim)">(${c.src === "you" ? "your call" : c.src === "kalshi" ? "Kalshi fill" : c.src === "polls" ? "poll fill" : "rating fill"})</span>` : `<span style="color:var(--ink-dim)">Not called · click to call</span>`;
+  tt.innerHTML = h; tt.style.display = "block";
+  if (e) { const r = svg.parentElement.getBoundingClientRect(); tt.style.left = Math.min(e.clientX - r.left + 14, r.width - 260) + "px"; tt.style.top = e.clientY - r.top + 14 + "px"; }
+}
+
+/* ---------- totals ---------- */
+function count(l) {
+  const n = { D: 0, R: 0, T: 0, I: 0, open: 0 };
+  for (const x of races(l)) { const c = callOf(l, x); if (c) n[c.c]++; else n.open++; }
+  return n;
+}
+function setBar(prefix, d, t, r, total) {
+  $(prefix + "BD").style.width = (d / total) * 100 + "%";
+  $(prefix + "BT").style.width = (t / total) * 100 + "%";
+  $(prefix + "BR").style.width = (r / total) * 100 + "%";
+}
+function tally() {
+  // Senate: holdovers + called races. Independents who caucus with Democrats count as D.
+  const s = count("S"), hD = G.holdD, hR = G.holdR;
+  const sd = hD + s.D, sr = hR + s.R;
+  $("sD").textContent = sd; $("sR").textContent = sr;
+  $("sMid").textContent = `${s.T} toss-up${s.I ? ` · ${s.I} ind.` : ""} · ${s.open} open`;
+  setBar("s", sd, s.T + s.I, sr, 100);
+  $("sMsg").innerHTML = sd >= 51 ? `<b class="d">Democrats win the Senate</b>` : sr >= 50 ? `<b class="r">Republicans keep the Senate</b>` : `D need ${51 - sd} · R need ${50 - sr} (VP breaks ties)`;
+  const h = count("H");
+  $("hD").textContent = h.D; $("hR").textContent = h.R;
+  $("hMid").textContent = `${h.T} toss-up · ${h.open} open`;
+  setBar("h", h.D, h.T, h.R, 435);
+  $("hMsg").innerHTML = h.D >= 218 ? `<b class="d">Democrats win the House</b>` : h.R >= 218 ? `<b class="r">Republicans win the House</b>` : `D need ${218 - h.D} · R need ${218 - h.R}`;
+  const g = count("G");
+  $("gD").textContent = g.D; $("gR").textContent = g.R;
+  $("gMid").textContent = `${g.T} toss-up · ${g.open} open`;
+  setBar("g", g.D, g.T, g.R, GOV_STATES.length);
+  $("gMsg").innerHTML = g.open ? `${g.open} of ${GOV_STATES.length} races not called` : "All governor races called";
+  document.querySelectorAll(".sc").forEach((b) => b.classList.toggle("on", b.dataset.layer === layer));
+}
+
+/* ---------- controls ---------- */
+function setLayer(l) {
+  layer = l;
+  document.querySelectorAll("#layerSeg button").forEach((b) => b.classList.toggle("on", b.dataset.l === l));
+  // overlays that don't exist for this layer
+  const avail = { S: ["none", "party", "kalshi", "polls"], H: ["none", "rating", "party", "kalshi", "polls"], G: ["none", "kalshi", "polls"] }[l];
+  document.querySelectorAll("#ovSeg button").forEach((b) => (b.disabled = !avail.includes(b.dataset.o)));
+  if (!avail.includes(overlay)) setOverlay("kalshi", true);
+  draw();
+}
+function setOverlay(o, quiet) {
+  overlay = o;
+  document.querySelectorAll("#ovSeg button").forEach((b) => b.classList.toggle("on", b.dataset.o === o));
+  if (!quiet) paint();
+}
+function setFill(which, on) {
+  fills[which] = on;
+  $({ kalshi: "fillKalshi", polls: "fillPolls", ratings: "fillRatings" }[which]).classList.toggle("on", on);
+  paint();
+}
+$("layerSeg").onclick = (e) => { const b = e.target.closest("button"); if (b) setLayer(b.dataset.l); };
+document.querySelectorAll(".sc").forEach((b) => (b.onclick = () => setLayer(b.dataset.layer)));
+$("ovSeg").onclick = (e) => { const b = e.target.closest("button"); if (b && !b.disabled) setOverlay(b.dataset.o); };
+$("fillKalshi").onclick = () => setFill("kalshi", !fills.kalshi);
+$("fillPolls").onclick = () => setFill("polls", !fills.polls);
+$("fillRatings").onclick = () => setFill("ratings", !fills.ratings);
+$("clearLayer").onclick = () => { picks[layer] = {}; paint(); };
+$("clearAll").onclick = () => { picks = { S: {}, H: {}, G: {} }; setFill("kalshi", false); setFill("polls", false); setFill("ratings", false); };
+$("lockFills").onclick = () => {
+  for (const l of ["S", "H", "G"]) for (const x of races(l)) { const c = callOf(l, x); if (c && c.src !== "you") picks[l][x.id] = c.c; }
+  for (const k of Object.keys(fills)) setFill(k, false);
+};
+$("share").onclick = () => {
+  const code = btoa(unescape(encodeURIComponent(JSON.stringify({ picks, fills, layer, overlay })))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const u = location.origin + location.pathname + "#p=" + code;
+  try { navigator.clipboard.writeText(u); } catch {}
+  history.replaceState(null, "", "#p=" + code);
+  $("share").textContent = "Copied"; setTimeout(() => ($("share").textContent = "Copy link"), 1400);
+};
+
+/* ---------- boot ---------- */
+(async function boot() {
+  try {
+    const [html, ks, kh, kg, pi] = await Promise.all([
+      fetch("index.html", { cache: "force-cache" }).then((r) => r.text()),
+      getJSON("data/kalshi/all-senate.json"), getJSON("data/kalshi/all-house.json"), getJSON("data/kalshi/all-governor.json"), getJSON("data/polls/index.json"),
+    ]);
+    K = { S: ks || {}, H: kh || {}, G: kg || {} };
+    PI = (pi && pi.races) || {};
+    const MEMBERS = constFrom(html, "MEMBERS"), RO = constFrom(html, "RATINGS_OVERRIDES"), APP = constFrom(html, "APPORTION");
+    const states = constFrom(html, "STATES"), dpaths = constFrom(html, "DPATHS"), names = constFrom(html, "STATE_NAMES");
+    const over = {}; for (const [k, list] of Object.entries(RO)) list.forEach((id) => (over[id] = KEY2CAT[k]));
+    const districts = [];
+    for (const [st, n] of Object.entries(APP)) for (let d = 1; d <= n; d++) {
+      const dn = n === 1 ? 0 : d;
+      const m = MEMBERS.find((x) => x.c === "rep" && x.s === st && (x.d === dn || (n === 1 && (x.d === 0 || x.d === 1))));
+      const id = `${st}-${d}`;
+      districts.push({ id, st, d, label: n === 1 ? `${st}-AL` : id, kid: `${st}-${String(d).padStart(2, "0")}`, m: m || null, party: m ? m.p : "V", rating: over[id] || (m ? (m.p === "R" ? "Solid R" : "Solid D") : null) });
+    }
+    const sen = MEMBERS.filter((m) => m.c === "sen");
+    const up = sen.filter((m) => /^202[67]/.test(m.e));
+    const senateRaces = up.map((m) => ({ id: m.s, st: m.s, name: names[m.s], incumbent: m.n, holder: m.p, special: m.e.startsWith("2026") }));
+    let holdD = 0, holdR = 0; for (const m of sen) if (!up.includes(m)) (m.p === "R" ? holdR++ : holdD++);
+    G = { states, dpaths, names, districts, senateRaces, holdD, holdR };
+    load();
+    setOverlay(overlay, true);
+    $("fillKalshi").classList.toggle("on", fills.kalshi); $("fillPolls").classList.toggle("on", fills.polls); $("fillRatings").classList.toggle("on", !!fills.ratings);
+    setLayer(layer);
+  } catch (e) {
+    document.querySelector(".mapcard").innerHTML = `<p class="err">Couldn't load the map data (${esc(e.message)}).</p>`;
+  }
+})();
+</script>
+</body>
+</html>
