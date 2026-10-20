@@ -925,7 +925,7 @@ async function loadKalshi(st) {
 }
 /* ---------- Race card: who's running, polls, markets, expected vs actual ---------- */
 const getJSON = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-let BASE24 = null, GENERIC = null;
+let BASE24 = null, GENERIC = null, BASECD = null;
 let KHIST = null;
 /* Small time-series chart: pts [[epochMinutes, y]], drawn into a 300x70 box. */
 function rcChart(pts, o) {
@@ -958,7 +958,7 @@ async function loadRaceCard(kind, st, x) {
   const raceId = kind === "S" ? `${st}-S-2026` : `${st}-H-${nn}-2026`;
   const kFile = kind === "S" ? `data/kalshi/${st}-senate.json` : `data/kalshi/${st}-${nn}.json`;
   const [k, polls, avg] = await Promise.all([getJSON(kFile), getJSON(`data/polls/${raceId}.json`), getJSON(`data/poll-average/${raceId}.json`)]);
-  if (kind === "S" && !BASE24) [BASE24, GENERIC] = await Promise.all([getJSON("data/baseline-2024.json"), getJSON("data/poll-average/generic-ballot.json")]);
+  if (!BASE24) [BASE24, GENERIC, BASECD] = await Promise.all([getJSON("data/baseline-2024.json"), getJSON("data/poll-average/generic-ballot.json"), getJSON("data/baseline-2024-cd.json")]);
   if (!KHIST) KHIST = (await getJSON("data/kalshi/history.json")) || { points: {} };
   if (out !== document.getElementById("race-card")) return; // user clicked elsewhere meanwhile
 
@@ -1020,9 +1020,12 @@ async function loadRaceCard(kind, st, x) {
       <p class="note">Prediction-market price, not a poll. ${kalshiAge(k.fetchedAt)}</p></div>`;
   }
 
-  // 4. Expected vs actual (Senate: 2024 presidential result + national shift)
-  if (kind === "S" && hasAvg && !third && BASE24 && GENERIC && GENERIC.margin != null && BASE24.statePresMarginD[st] != null) {
-    const base = BASE24.statePresMarginD[st];
+  // 4. Expected vs actual (2024 presidential result here + national shift).
+  //    House seats use the 2024 result on the district's 2026 lines (The Downballot).
+  const cdBase = kind === "H" && BASECD && BASECD.districts[`${st}-${nn}`] ? BASECD.districts[`${st}-${nn}`] : null;
+  const base24 = kind === "S" ? (BASE24 && BASE24.statePresMarginD[st]) : cdBase ? cdBase.marginD : null;
+  if ((kind === "S" || kind === "H") && hasAvg && !third && BASE24 && GENERIC && GENERIC.margin != null && base24 != null) {
+    const base = base24;
     const shift = GENERIC.margin - BASE24.nationalPresMarginD;
     const expected = base + shift;
     const diff = avg.margin - expected;
@@ -1035,7 +1038,10 @@ async function loadRaceCard(kind, st, x) {
         <div><span>Polling average now</span><b class="num">${escapeHtml(fmtLead(avg.margin, dShort, rShort))}</b></div>
       </div>
       <div class="rc-verdict ${Math.abs(diff) < 1 ? "even-bg" : diff >= 0 ? "d-bg" : "r-bg"}">${Math.abs(diff) < 1 ? "Both candidates are running about even with what the national environment predicts" : `${escapeHtml(who)} is running <b>${Math.abs(diff).toFixed(1)} points</b> ahead of what the national environment predicts`}</div>
-      <p class="note">Assumes every state shifts by the same amount as the nation (uniform swing). Popular incumbents, weak nominees, and how swingy a state is all show up as the gap.</p></div>`;
+      <p class="note">Assumes every ${kind === "H" ? "district" : "state"} shifts by the same amount as the nation (uniform swing). Popular incumbents, weak nominees, and how swingy a place is all show up as the gap.${cdBase ? ` District 2024 result: <a href="https://www.the-downballot.com/p/the-downballots-calculations-of-presidential" target="_blank" rel="noopener" style="color:inherit">The Downballot</a>${cdBase.newLines ? ", recalculated on the new 2026 lines" : ""}.` : ""}</p></div>`;
+  } else if (kind === "H" && cdBase) {
+    html += `<div class="rc-sec"><div class="rc-title">2024 presidential result here</div><div class="rc-math"><div><span>${cdBase.newLines ? "On the new 2026 district lines" : "This district"}</span><b class="num">${escapeHtml(fmtLead(cdBase.marginD, "Harris", "Trump"))}</b></div></div>
+      <p class="note">Not enough polling here yet to compare with the national environment. Source: <a href="https://www.the-downballot.com/p/the-downballots-calculations-of-presidential" target="_blank" rel="noopener" style="color:inherit">The Downballot</a>.</p></div>`;
   }
 
   // 5. Poll table
