@@ -12,6 +12,7 @@ on:
     paths:
       - "scripts/nyt-polls-sources.json"
       - "data/nyt-drop/**.csv"
+      - "scripts/build-generic-polls.js"
 
 concurrency:
   group: nyt-polls
@@ -42,11 +43,14 @@ jobs:
       - name: Rebuild national overview data
         run: node scripts/build-overview.js
 
+      - name: Pull out generic-ballot polls by state and district
+        run: node scripts/build-generic-polls.js
+
       - name: Commit if changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A data/polls-nyt data/polls data/poll-average data/overview.json
+          git add -A data/polls-nyt data/polls data/poll-average data/overview.json data/generic-polls.json
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
           git commit -m "NYT polls: refresh"
           for i in 1 2 3; do
