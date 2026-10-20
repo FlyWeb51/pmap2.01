@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Terminal | Election Center 2026</title>
+<style>
+  :root{
+    --bg:#07090c; --p:#0d1014; --p2:#0a0c10; --l:#1d232b; --l2:#151a20;
+    --ink:#d9dee5; --mu:#6f7b8a; --am:#f5a524; --sel:#1a1406;
+    --d:#4c9bff; --r:#ff5a5a; --up:#3ddc84; --toss:#b48ce0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--bg);color:var(--ink);font:12px/1.4 "IBM Plex Mono","SF Mono",Consolas,"DejaVu Sans Mono",monospace;display:grid;grid-template-rows:auto 24px 1fr 26px;height:100vh;overflow:hidden}
+  a{color:inherit}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  .d{color:var(--d)} .r{color:var(--r)} .mu{color:var(--mu)} .am{color:var(--am)} .tz{color:var(--toss)}
+
+  /* top bar */
+  .top{display:flex;align-items:center;gap:14px;padding:5px 10px;border-bottom:1px solid var(--l);background:var(--p2);flex-wrap:wrap}
+  .brand{color:var(--am);font-weight:700;letter-spacing:.12em;text-decoration:none;white-space:nowrap}
+  .cmdwrap{position:relative;flex:1;min-width:220px;max-width:520px}
+  .cmd{display:flex;align-items:center;border:1px solid #2b333d;background:#000}
+  .cmd input{flex:1;min-width:0;background:none;border:0;outline:0;color:var(--am);font:inherit;padding:4px 8px;text-transform:uppercase}
+  .cmd input::placeholder{color:var(--mu);text-transform:none}
+  .cmd kbd{color:#000;background:var(--am);padding:0 5px;margin-right:4px;font-weight:700;font-family:inherit;font-size:11px}
+  .cmd:focus-within{border-color:var(--am)}
+  .ac{position:absolute;left:0;right:0;top:100%;background:#000;border:1px solid var(--am);border-top:0;z-index:20;max-height:300px;overflow:auto}
+  .ac[hidden]{display:none}
+  .ac div{padding:4px 8px;display:flex;justify-content:space-between;gap:10px;cursor:pointer;white-space:nowrap}
+  .ac div.on,.ac div:hover{background:var(--sel)}
+  .feeds{display:flex;gap:12px;color:var(--mu);white-space:nowrap;flex-wrap:wrap}
+  .feeds i{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:1px;background:var(--up)}
+  .feeds i.w{background:var(--am)} .feeds i.x{background:var(--r)}
+  .clock{margin-left:auto;white-space:nowrap}
+  .clock em{font-style:normal;color:var(--am);margin-left:10px}
+
+  /* ticker */
+  .tick{overflow:hidden;border-bottom:1px solid var(--l);white-space:nowrap;position:relative}
+  .tick .run{display:inline-block;padding:4px 0;animation:tk 90s linear infinite}
+  .tick:hover .run{animation-play-state:paused}
+  .tick span{margin:0 14px;color:var(--mu)} .tick b{color:var(--ink);font-weight:600}
+  @keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.tick .run{animation:none}}
+
+  /* panels */
+  .main{display:grid;grid-template-columns:minmax(330px,400px) minmax(0,1fr) minmax(280px,340px);gap:1px;background:var(--l);min-height:0}
+  .pn{background:var(--p);padding:8px 10px;min-height:0;overflow:auto}
+  h3{font-size:11px;color:var(--am);letter-spacing:.1em;font-weight:600;border-bottom:1px solid var(--l);padding-bottom:5px;margin:0 0 6px;display:flex;justify-content:space-between;gap:8px}
+  h3 span{color:var(--mu);font-weight:400;letter-spacing:0;text-align:right}
+  .seg{display:flex;gap:0;margin-bottom:6px;flex-wrap:wrap}
+  .seg button{border:1px solid var(--l);margin-right:-1px;padding:2px 7px;color:var(--mu)}
+  .seg button.on{color:#000;background:var(--am);border-color:var(--am)}
+  table{width:100%;border-collapse:collapse}
+  th{font-size:10px;color:var(--mu);text-align:left;font-weight:400;padding:2px 4px;border-bottom:1px solid var(--l);white-space:nowrap}
+  th.n,td.n{text-align:right}
+  td{padding:3px 4px;border-bottom:1px solid var(--l2);white-space:nowrap}
+  #wl tr{cursor:pointer} #wl tr:hover td{background:#11151a} #wl tr.on td{background:var(--sel)}
+  .fl{font-size:9.5px;border:1px solid var(--am);color:var(--am);padding:0 3px}
+  .up{color:var(--d)} .dn{color:var(--r)}
+
+  /* detail */
+  .rh{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;border-bottom:1px solid var(--l);padding-bottom:8px;margin-bottom:8px;flex-wrap:wrap}
+  .rh .t{font-size:20px;font-weight:700;letter-spacing:.02em;text-transform:uppercase}
+  .px{text-align:right}
+  .px .big{font-size:30px;font-weight:700;line-height:1.1}
+  .acts{display:flex;gap:6px;margin:6px 0 2px;justify-content:flex-end}
+  .acts a{border:1px solid var(--l);padding:2px 8px;text-decoration:none;color:var(--ink)}
+  .acts a:hover{border-color:var(--am);color:var(--am)}
+  .kv{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--l);margin:8px 0}
+  .kv div{background:var(--p);padding:6px 8px;min-width:0}
+  .kv small{display:block;color:var(--mu);font-size:10px;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .kv b{font-size:15px;white-space:nowrap}
+  .chart{width:100%;height:auto;display:block}
+  .chart text{fill:var(--mu);font-size:9px;font-family:inherit}
+  .chart .g{stroke:#1a2027} .chart .g0{stroke:#3a4450} .chart .ed{stroke:var(--am);stroke-dasharray:3 3}
+  .chart .av{fill:none;stroke:#fff;stroke-width:1.6} .chart .pl{fill:none;stroke-width:1.6}
+  .tabs{display:flex;gap:0;border-bottom:1px solid var(--l);margin:10px 0 6px}
+  .tabs button{padding:3px 10px;color:var(--mu);border-bottom:2px solid transparent}
+  .tabs button.on{color:var(--am);border-bottom-color:var(--am)}
+  .tabs button b{color:#000;background:var(--mu);padding:0 3px;margin-right:5px;font-size:10px}
+  .tabs button.on b{background:var(--am)}
+  .bar{display:flex;height:8px;background:#222;margin:4px 0 3px}
+  .bar i{display:block;height:100%}
+  .row{display:flex;justify-content:space-between;gap:8px}
+  .ctl{margin-bottom:12px}
+  .sig div{padding:4px 0;border-bottom:1px solid var(--l2);cursor:pointer}
+  .sig div:hover{background:#11151a}
+  .sig b{color:var(--am);font-weight:600;display:inline-block;width:68px}
+  .note{color:var(--mu);margin:6px 0}
+  .credit{color:var(--mu);font-size:10.5px;margin-top:6px}
+  .credit a{color:var(--mu)}
+  .cand{display:grid;grid-template-columns:1fr repeat(3,90px);gap:4px;padding:4px 0;border-bottom:1px solid var(--l2);align-items:baseline}
+  .cand span:not(:first-child){text-align:right}
+  .demo{display:grid;grid-template-columns:1fr 80px 80px;gap:0 8px}
+  .demo span{padding:3px 0;border-bottom:1px solid var(--l2)} .demo span:nth-child(3n+2),.demo span:nth-child(3n){text-align:right}
+
+  /* function keys */
+  .fk{display:flex;border-top:1px solid var(--l);background:var(--p2);overflow-x:auto}
+  .fk a,.fk button{padding:5px 11px;border-right:1px solid var(--l);color:var(--mu);text-decoration:none;white-space:nowrap}
+  .fk a:hover,.fk button:hover{color:var(--ink)}
+  .fk b{color:#000;background:var(--am);padding:0 4px;margin-right:6px;font-weight:700}
+  .fk .on{color:var(--ink);background:#14181e}
+  .fk .help{margin-left:auto;border-left:1px solid var(--l);border-right:0}
+  .help-box{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:30}
+  .help-box[hidden]{display:none}
+  .help-box div{background:#000;border:1px solid var(--am);padding:16px 20px;max-width:520px;line-height:1.7}
+  .err{color:var(--r);padding:20px}
+
+  @media (max-width:1100px){
+    body{height:auto;overflow:auto;display:block}
+    .main{grid-template-columns:1fr}
+    .pn{overflow:visible}
+    .kv{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .clock{margin-left:0}
+    .fk{position:sticky;bottom:0}
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./terminal.html">ELECTION TERMINAL</a>
+  <div class="cmdwrap">
+    <div class="cmd"><input id="q" autocomplete="off" spellcheck="false" placeholder="Type a race, state or candidate, then Enter  ( / to focus )"><kbd>GO</kbd></div>
+    <div class="ac" id="ac" hidden></div>
+  </div>
+  <div class="feeds" id="feeds"></div>
+  <div class="clock"><span id="clock"></span><em id="tminus"></em></div>
+</header>
+<div class="tick" aria-label="Ticker"><div class="run" id="tick"></div></div>
+
+<div class="main">
+  <section class="pn">
+    <h3>WATCHLIST <span id="wlCount"></span></h3>
+    <div class="seg" id="wlType"><button data-v="all" class="on">ALL</button><button data-v="S">SEN</button><button data-v="H">HOUSE</button><button data-v="G">GOV</button></div>
+    <div class="seg" id="wlSort"><button data-v="close" class="on">CLOSEST</button><button data-v="move">MOVERS 24H</button><button data-v="split">SPLITS</button><button data-v="reg">REG EDGE</button></div>
+    <table><thead><tr><th>RACE</th><th class="n">MKT</th><th class="n">24H</th><th class="n">POLLS</th><th class="n">REG</th><th></th></tr></thead><tbody id="wl"></tbody></table>
+  </section>
+
+  <section class="pn" id="detail"><p class="mu">Loading…</p></section>
+
+  <section class="pn">
+    <h3>CONTROL <span>KALSHI · 24H</span></h3>
+    <div id="control"></div>
+    <h3>SIGNALS <span>AUTO-FLAGGED · CLICK TO OPEN</span></h3>
+    <div class="sig" id="signals"></div>
+    <h3 style="margin-top:12px">MY CALLS <span><a href="./predict.html" class="mu">PREDICT ↗</a></span></h3>
+    <div id="calls" class="mu"></div>
+  </section>
+</div>
+
+<nav class="fk" id="fk">
+  <button class="on" data-k="F1"><b>F1</b>DASH</button>
+  <a href="./" data-k="F2"><b>F2</b>MAP</a>
+  <a href="./overview.html" data-k="F3"><b>F3</b>NATIONAL</a>
+  <a href="./predict.html" data-k="F4"><b>F4</b>PREDICT</a>
+  <a href="./markets.html" data-k="F5"><b>F5</b>MARKETS</a>
+  <a href="polling/" data-k="F6"><b>F6</b>POLLS</a>
+  <button data-k="F7"><b>F7</b>MONEY</button>
+  <button data-k="F8"><b>F8</b>VOTERS</button>
+  <button class="help" id="helpBtn"><b>?</b>HELP</button>
+</nav>
+<div class="help-box" id="help" hidden><div>
+  <b class="am">KEYS</b><br>
+  <span class="am">/</span> search · type <span class="am">TX SEN</span>, <span class="am">PA-07</span>, <span class="am">GA GOV</span> or a name, then Enter<br>
+  <span class="am">↑ ↓</span> move through the watchlist · <span class="am">Enter</span> open<br>
+  <span class="am">F1–F8</span> or click the bar at the bottom · <span class="am">F7</span> money · <span class="am">F8</span> voters<br>
+  <span class="am">P</span> polls chart · <span class="am">K</span> price chart · <span class="am">Esc</span> close<br><br>
+  <b class="am">COLUMNS</b><br>
+  MKT = Kalshi chance for the favorite · 24H = change in the Democratic chance (blue = toward D) · POLLS = polling average · REG = registered D minus R, share of all voters · SPLIT = polls and market favor different candidates<br><br>
+  <span class="mu">Prediction-market prices aren't polls or forecasts. Not financial advice.</span>
+</div></div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const getJSON = (u, cache = "no-store") => fetch(u, { cache }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+const pad2 = (n) => String(n).padStart(2, "0");
+const ELECTION = new Date("2026-11-03T06:00:00-05:00");
+const GOV_STATES = ["AL","AK","AZ","AR","CA","CO","CT","FL","GA","HI","ID","IL","IA","KS","ME","MD","MA","MI","MN","NE","NV","NH","NM","NY","OH","OK","OR","PA","RI","SC","SD","TN","TX","VT","WI","WY"];
+const KEY2CAT = { SolidD: "Solid D", LikelyD: "Likely D", LeanD: "Lean D", TiltD: "Tilt D", TiltR: "Tilt R", LeanR: "Lean R", LikelyR: "Likely R", SolidR: "Solid R" };
+const NYT_PAGE = "https://www.nytimes.com/interactive/polls/latest-polls.html";
+
+/* ---------- formatting ---------- */
+const lead = (m) => m == null ? "–" : Math.abs(m) < 0.05 ? "EVEN" : (m > 0 ? "D+" : "R+") + Math.abs(m).toFixed(1);
+const leadCls = (m) => m == null ? "mu" : m >= 0 ? "d" : "r";
+const fav = (d) => d == null ? "–" : d >= 50 ? `${Math.round(d)}D` : `${Math.round(100 - d)}R`;
+const delta = (v) => v == null ? `<span class="mu">–</span>` : Math.abs(v) < 0.05 ? `<span class="mu">0.0</span>` : v > 0 ? `<span class="up">▲${v.toFixed(1)}</span>` : `<span class="dn">▼${(-v).toFixed(1)}</span>`;
+const money = (v) => { const n = Number(v); if (!isFinite(n)) return "–"; const a = Math.abs(n); return a >= 1e6 ? "$" + (a / 1e6).toFixed(a >= 1e7 ? 1 : 2) + "M" : a >= 1e3 ? "$" + Math.round(a / 1e3) + "K" : "$" + Math.round(a); };
+const ago = (ts) => { if (!ts) return null; return (Date.now() - new Date(ts)) / 6e4; };
+const agoTxt = (m) => m == null ? "?" : m < 60 ? `${Math.round(m)}m` : m < 2880 ? `${Math.round(m / 60)}h` : `${Math.round(m / 1440)}d`;
+const lastOf = (n) => { const p = String(n || "").replace(/\s*\(.*?\)\s*/g, "").replace(/,?\s+(Jr\.?|Sr\.?|II|III|IV)$/i, "").trim().split(/\s+/); return p[p.length - 1] || ""; };
+const fecName = (n) => { const [l, f = ""] = String(n || "").split(","); const t = (s) => s.toLowerCase().replace(/(^|[\s'-])([a-z])/g, (a, b, c) => b + c.toUpperCase()); return (t(f.replace(/\b(MR|MRS|MS|DR|HON|JR|SR|II|III|IV|SEN|SENATOR|REP|CONGRESSMAN|CONGRESSWOMAN|GOV)\b\.?/gi, "").trim()) + " " + t(l.trim())).trim(); };
+function constFrom(html, name) {
+  const start = html.indexOf(`\nconst ${name} = `);
+  if (start < 0) throw new Error("missing " + name);
+  const from = start + name.length + 10;
+  const line = html.slice(from, html.indexOf("\n", from));
+  const end = Math.max(line.lastIndexOf("};"), line.lastIndexOf("];"));
+  return Function(`"use strict";return (${line.slice(0, end + 1)});`)();
+}
+const cache = new Map();
+const cget = (u) => { if (!cache.has(u)) cache.set(u, getJSON(u)); return cache.get(u); };
+
+/* ---------- state ---------- */
+let RACES = [], BY = {}, K = {}, PI = {}, REG = null, BASE = null, GEN = null, NAT = null, OV = null, HIST = null, NAMES = {}, APP = {};
+let wlType = "all", wlSort = "close", cur = null, chartMode = "polls", detTab = "polls";
+
+function dShare(e) {
+  if (!e) return null;
+  const d = e.democrat, r = e.republican;
+  const third = (e.thirdParty && r) || (d && r && d.pct + r.pct < 85);
+  if (third) return r ? 100 - r.pct : null;
+  if (d && d.share != null) return d.share;
+  if (d && r) return (d.pct / (d.pct + r.pct)) * 100;
+  if (d) return d.pct;
+  if (r) return 100 - (r.share ?? r.pct);
+  return null;
+}
+const isThird = (e) => !!e && ((e.thirdParty && e.republican) || (e.democrat && e.republican && e.democrat.pct + e.republican.pct < 85));
+const realName = (c) => (c && !/party/i.test(c) ? c : null);
+
+/* history: value of key at (now - hours), nearest snapshot at or before */
+function histAt(key, hoursAgo) {
+  if (!HIST) return null;
+  const target = Date.now() / 6e4 - hoursAgo * 60;
+  let best = null;
+  for (const [t, v] of HIST[key] || []) { if (t <= target + 30 && v != null) best = [t, v]; }
+  return best && target - best[0] < 18 * 60 ? best[1] : null;
+}
+function series(key) { return (HIST && HIST[key]) || []; }
+
+function raceRow(x) {
+  const e = x.k;
+  const d = dShare(e);
+  const avg = PI[x.pollId] && PI[x.pollId].average;
+  const pm = avg && avg.margin != null && !isThird(e) ? avg.margin : null;
+  const rs = REG && REG.states[x.st];
+  const atLarge = APP[x.st] === 1;
+  const rr = rs ? (x.t === "H" && !atLarge ? rs.districts && rs.districts[pad2(x.d)] : rs.statewide) : null;
+  x.mkt = d; x.poll = pm; x.pollN = avg ? avg.polls : 0;
+  x.reg = rr ? ((rr.D - rr.R) / rr.total) * 100 : null;
+  const prev = d != null ? histAt(x.id, 24) : null;
+  x.d24 = d != null && prev != null ? d - prev : null;
+  const p7 = d != null ? histAt(x.id, 24 * 7) : null;
+  x.d7 = d != null && p7 != null ? d - p7 : null;
+  x.split = d != null && pm != null && (pm >= 0) !== (d >= 50) && Math.abs(d - 50) > 2 && Math.abs(pm) > 0.5;
+  if ((x.t === "S" || x.t === "G") && pm != null && BASE && GEN && BASE.statePresMarginD[x.st] != null) {
+    x.expected = BASE.statePresMarginD[x.st] + (GEN.margin - BASE.nationalPresMarginD);
+    x.vsExp = pm - x.expected;
+  }
+  x.dName = isThird(e) ? "FIELD" : realName(e && e.democrat && e.democrat.candidate) || (avg && avg.demCandidate) || "";
+  x.rName = realName(e && e.republican && e.republican.candidate) || (avg && avg.repCandidate) || "";
+}
+
+/* ---------- boot ---------- */
+(async function boot() {
+  try {
+    const [html, ks, kh, kg, nat, meta, pi, reg, base, gen, ov, nytMeta] = await Promise.all([
+      fetch("index.html", { cache: "force-cache" }).then((r) => r.text()),
+      getJSON("data/kalshi/all-senate.json"), getJSON("data/kalshi/all-house.json"), getJSON("data/kalshi/all-governor.json"),
+      getJSON("data/kalshi/national.json"), getJSON("data/kalshi/meta.json"), getJSON("data/polls/index.json"),
+      getJSON("data/registration.json"), getJSON("data/baseline-2024.json"), getJSON("data/poll-average/generic-ballot.json"),
+      getJSON("data/overview.json"), getJSON("data/polls-nyt/meta.json"),
+    ]);
+    PI = (pi && pi.races) || {}; REG = reg; BASE = base; GEN = gen; NAT = nat || {}; OV = ov;
+    const MEMBERS = constFrom(html, "MEMBERS"), RO = constFrom(html, "RATINGS_OVERRIDES");
+    APP = constFrom(html, "APPORTION"); NAMES = constFrom(html, "STATE_NAMES");
+    const over = {}; for (const [k, list] of Object.entries(RO)) list.forEach((id) => (over[id] = KEY2CAT[k]));
+
+    // race universe
+    for (const m of MEMBERS.filter((m) => m.c === "sen" && /^202[67]/.test(m.e)))
+      RACES.push({ t: "S", st: m.s, id: `S:${m.s}`, code: `${m.s} SEN`, name: `${NAMES[m.s]} Senate${m.e.startsWith("2026") ? " (special)" : ""}`, holder: `${m.n} (${m.p})`, k: (ks || {})[m.s], pollId: `${m.s}-S-2026` });
+    for (const st of GOV_STATES)
+      RACES.push({ t: "G", st, id: `G:${st}`, code: `${st} GOV`, name: `${NAMES[st]} Governor`, holder: "", k: (kg || {})[st], pollId: `${st}-G-2026` });
+    for (const [st, n] of Object.entries(APP)) for (let d = 1; d <= n; d++) {
+      const dn = n === 1 ? 0 : d;
+      const m = MEMBERS.find((x) => x.c === "rep" && x.s === st && (x.d === dn || (n === 1 && (x.d === 0 || x.d === 1))));
+      const kid = `${st}-${pad2(d)}`;
+      RACES.push({ t: "H", st, d, id: `H:${kid}`, code: n === 1 ? `${st}-AL` : kid, name: `${NAMES[st]} ${n === 1 ? "at-large" : d}`, holder: m ? `${m.n} (${m.p})` : "Vacant",
+        rating: over[`${st}-${d}`] || (m ? (m.p === "R" ? "Solid R" : "Solid D") : null), k: (kh || {})[kid], pollId: `${st}-H-${pad2(d)}-2026` });
+    }
+    for (const x of RACES) BY[x.id] = x;
+
+    // last 14 days of price history (hourly)
+    const days = []; for (let i = 13; i >= 0; i--) days.push(new Date(Date.now() - i * 864e5).toISOString().slice(0, 10));
+    const files = await Promise.all(days.map((d) => getJSON(`data/kalshi/history/${d}.json`, "default")));
+    HIST = {};
+    for (const f of files) if (f) for (const [key, vals] of Object.entries(f.s)) { const arr = (HIST[key] ||= []); vals.forEach((v, i) => arr.push([f.t[i], v])); }
+    // the live price is always the newest point
+    const nowMin = Math.floor(new Date(meta && meta.updated_at ? meta.updated_at : Date.now()) / 6e4);
+    for (const x of RACES) { const v = dShare(x.k); if (v != null) (HIST[x.id] ||= []).push([nowMin, Math.round(v * 10) / 10]); }
+    const ctlD = (o) => { const y = o && (o.outcomes || []).find((z) => /democ/i.test(z.label)); return y ? y.pct : null; };
+    for (const [key, o] of [["N:house", NAT.house], ["N:senate", NAT.senate]]) { const v = ctlD(o); if (v != null) (HIST[key] ||= []).push([nowMin, v]); }
+
+    for (const x of RACES) raceRow(x);
+    feeds(meta, pi, nytMeta, reg);
+    control(); signals(); calls(); ticker(); renderWL();
+    const fromHash = decodeURIComponent(location.hash.slice(1));
+    let start = BY[fromHash] || null;
+    try { if (!start) start = BY[localStorage.getItem("pmap-term-race")]; } catch {}
+    open(start || RACES.filter((x) => x.mkt != null).sort((a, b) => Math.abs(a.mkt - 50) - Math.abs(b.mkt - 50))[0]);
+  } catch (e) {
+    $("detail").innerHTML = `<p class="err">Couldn't load the terminal data (${esc(e.message)}).</p>`;
+  }
+})();
+
+/* ---------- header ---------- */
+function feeds(meta, pi, nyt, reg) {
+  const f = [["KALSHI", meta && meta.updated_at, 90], ["POLLS", pi && pi.updated_at, 18 * 60], ["NYT", nyt && nyt.updated_at, 12 * 60], ["FEC", OV && OV.generatedAt && null, 0], ["REG", reg && reg.updated, 45 * 1440]];
+  $("feeds").innerHTML = f.filter((x) => x[0] !== "FEC").map(([n, ts, warn]) => { const m = ago(ts); const c = m == null ? "x" : m > warn * 2 ? "x" : m > warn ? "w" : ""; return `<span title="${esc(ts || "unknown")}"><i class="${c}"></i>${n} ${agoTxt(m)}</span>`; }).join("");
+}
+function clock() {
+  const now = new Date();
+  $("clock").textContent = now.toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit", hour12: false }).toUpperCase().replace(",", "") + " ET";
+  const dd = Math.ceil((ELECTION - now) / 864e5);
+  $("tminus").textContent = dd > 0 ? `ELECTION T-${dd}D` : dd === 0 ? "ELECTION DAY" : "POST-ELECTION";
+}
+clock(); setInterval(clock, 15000);
+
+function ticker() {
+  const items = [];
+  const ctl = (key, label) => { const s = series(key); const v = s.length ? s[s.length - 1][1] : null; const p = histAt(key, 24); if (v != null) items.push(`<span><b>${label}</b> D ${v.toFixed(0)}% ${delta(p != null ? v - p : null)}</span>`); };
+  ctl("N:house", "HOUSE CTRL"); ctl("N:senate", "SENATE CTRL");
+  if (GEN && GEN.margin != null) items.push(`<span><b>GENERIC BALLOT</b> <span class="${leadCls(GEN.margin)}">${lead(GEN.margin)}</span> (${GEN.poll_count} polls)</span>`);
+  const movers = RACES.filter((x) => x.d24 != null && Math.abs(x.d24) >= 1).sort((a, b) => Math.abs(b.d24) - Math.abs(a.d24)).slice(0, 10);
+  for (const x of movers) items.push(`<span><b>${x.code}</b> ${fav(x.mkt)} ${delta(x.d24)}</span>`);
+  const fresh = Object.entries(PI).filter(([, v]) => v.latest && v.latest.endDate).sort((a, b) => b[1].latest.endDate.localeCompare(a[1].latest.endDate)).slice(0, 8);
+  for (const [id, v] of fresh) { const x = RACES.find((r) => r.pollId === id); if (x) items.push(`<span><b>NEW POLL</b> ${x.code} ${esc(v.latest.pollster)} · avg <span class="${leadCls(v.average && v.average.margin)}">${lead(v.average && v.average.margin)}</span></span>`); }
+  const html = items.join("");
+  $("tick").innerHTML = html + html; // doubled for a seamless loop
+}
+
+/* ---------- watchlist ---------- */
+function wlList() {
+  let list = RACES.filter((x) => x.mkt != null || (x.poll != null && x.pollN >= 2));
+  if (wlType !== "all") list = list.filter((x) => x.t === wlType);
+  const close = (x) => (x.mkt != null ? Math.abs(x.mkt - 50) : Math.abs(x.poll) * 3 + 20);
+  const sorts = {
+    close: (a, b) => close(a) - close(b),
+    move: (a, b) => Math.abs(b.d24 ?? 0) - Math.abs(a.d24 ?? 0) || close(a) - close(b),
+    split: (a, b) => (b.split - a.split) || close(a) - close(b),
+    reg: (a, b) => (b.reg ?? -999) - (a.reg ?? -999),
+  };
+  list.sort(sorts[wlSort]);
+  if (wlSort === "split") list = list.filter((x) => x.split).concat(list.filter((x) => !x.split));
+  if (wlSort === "reg") list = list.filter((x) => x.reg != null);
+  return list.slice(0, 60);
+}
+function renderWL() {
+  const list = wlList();
+  $("wlCount").textContent = `${list.length} RACES`;
+  $("wl").innerHTML = list.map((x) => `<tr data-id="${x.id}" class="${cur && cur.id === x.id ? "on" : ""}">
+    <td class="am">${x.code}</td><td class="n ${x.mkt == null ? "mu" : x.mkt >= 50 ? "d" : "r"}">${fav(x.mkt)}</td><td class="n">${delta(x.d24)}</td>
+    <td class="n ${leadCls(x.poll)}">${lead(x.poll)}</td><td class="n ${leadCls(x.reg)}">${lead(x.reg)}</td><td>${x.split ? `<span class="fl" title="Polls and market favor different candidates">SPLIT</span>` : ""}</td></tr>`).join("");
+}
+$("wl").onclick = (e) => { const tr = e.target.closest("tr"); if (tr) open(BY[tr.dataset.id]); };
+for (const [id, set] of [["wlType", (v) => (wlType = v)], ["wlSort", (v) => (wlSort = v)]])
+  $(id).onclick = (e) => { const b = e.target.closest("button"); if (!b) return; set(b.dataset.v); $(id).querySelectorAll("button").forEach((y) => y.classList.toggle("on", y === b)); renderWL(); };
+
+/* ---------- right column ---------- */
+function control() {
+  const ctl = (key, title, need, foot) => {
+    const s = series(key); const v = s.length ? s[s.length - 1][1] : null; const p = histAt(key, 24);
+    if (v == null) return "";
+    return `<div class="ctl"><div class="row"><span>${title}</span><span>${v >= 50 ? `<span class="d">D ${v.toFixed(0)}%</span>` : `<span class="r">R ${(100 - v).toFixed(0)}%</span>`} ${delta(p != null ? v - p : null)}</span></div>
+      <div class="bar"><i style="width:${v}%;background:var(--d)"></i><i style="flex:1;background:var(--r)"></i></div><div class="row mu"><span>${foot}</span><span>${need}</span></div></div>`;
+  };
+  const h = OV && OV.house, s = OV && OV.senate;
+  $("control").innerHTML = ctl("N:house", "HOUSE", "218 TO WIN", h ? `Ratings D ${h.byRating.D} · tilt ${h.byRating.tiltD + h.byRating.tiltR} · R ${h.byRating.R}` : "")
+    + ctl("N:senate", "SENATE", "51 TO WIN", s ? `D need net +${s.dNetNeeded} · now D ${s.current.D + s.current.I} R ${s.current.R}` : "")
+    + (NAT.housePopVoteMarginD && NAT.housePopVoteMarginD.median != null ? `<div class="row mu" style="margin:-4px 0 10px"><span>Market's House popular vote</span><span class="d">D+${NAT.housePopVoteMarginD.median}</span></div>` : "");
+}
+function signals() {
+  const out = [];
+  for (const x of RACES.filter((r) => r.split).sort((a, b) => Math.abs(a.mkt - 50) - Math.abs(b.mkt - 50)).slice(0, 5))
+    out.push([x, `<b>SPLIT</b>${x.code} · polls ${lead(x.poll)}, market ${fav(x.mkt)}`]);
+  for (const x of RACES.filter((r) => r.d24 != null && Math.abs(r.d24) >= 3).sort((a, b) => Math.abs(b.d24) - Math.abs(a.d24)).slice(0, 4))
+    out.push([x, `<b>MOVER</b>${x.code} · ${x.d24 > 0 ? "toward D" : "toward R"} ${Math.abs(x.d24).toFixed(1)} pts in 24h`]);
+  for (const x of RACES.filter((r) => r.d24 == null && r.d7 != null && Math.abs(r.d7) >= 5).sort((a, b) => Math.abs(b.d7) - Math.abs(a.d7)).slice(0, 3))
+    out.push([x, `<b>MOVER</b>${x.code} · ${x.d7 > 0 ? "toward D" : "toward R"} ${Math.abs(x.d7).toFixed(1)} pts in 7d`]);
+  for (const x of RACES.filter((r) => r.t === "S" && r.vsExp != null && Math.abs(r.vsExp) >= 3 && r.pollN >= 3).sort((a, b) => Math.abs(b.vsExp) - Math.abs(a.vsExp)).slice(0, 5)) {
+    const who = x.vsExp >= 0 ? lastOf(x.dName) : lastOf(x.rName);
+    out.push([x, `<b>${x.vsExp >= 0 ? "OVER-D" : "OVER-R"}</b>${x.code} · ${esc(who || (x.vsExp >= 0 ? "Dem" : "Rep"))} ${Math.abs(x.vsExp).toFixed(1)} ahead of the national swing`]);
+  }
+  $("signals").innerHTML = out.length ? out.map(([x, h]) => `<div data-id="${x.id}">${h}</div>`).join("") : `<p class="mu">Nothing flagged right now.</p>`;
+}
+$("signals").onclick = (e) => { const d = e.target.closest("[data-id]"); if (d) open(BY[d.dataset.id]); };
+function calls() {
+  let s = null; try { s = JSON.parse(localStorage.getItem("pmap-predict") || "null"); } catch {}
+  const p = (s && s.picks) || {};
+  const c = (l) => { const n = { D: 0, R: 0, T: 0, I: 0 }; for (const v of Object.values(p[l] || {})) n[v] = (n[v] || 0) + 1; return n; };
+  const S = c("S"), H = c("H"), G = c("G");
+  const total = Object.values(S).concat(Object.values(H), Object.values(G)).reduce((a, b) => a + b, 0);
+  $("calls").innerHTML = total ? `SEN calls D ${S.D + S.I} · R ${S.R} · toss ${S.T}<br>HOUSE calls D ${H.D} · R ${H.R} · toss ${H.T}<br>GOV calls D ${G.D} · R ${G.R} · toss ${G.T}<br><span style="font-size:10.5px">Races you've called yourself on the Prediction map (this browser).</span>` : `No calls yet. Make them on the <a href="./predict.html" class="am">Prediction map</a> (F4).`;
+}
+
+/* ---------- race detail ---------- */
+function open(x) {
+  if (!x) return;
+  cur = x;
+  try { localStorage.setItem("pmap-term-race", x.id); } catch {}
+  history.replaceState(null, "", "#" + x.id);
+  renderWL(); renderDetail();
+}
+async function renderDetail() {
+  const x = cur, e = x.k;
+  const third = isThird(e);
+  const off = x.t === "S" ? "SENATE" : x.t === "G" ? "GOVERNOR" : "HOUSE";
+  const sub = [x.holder ? `Held by ${x.holder}` : "", x.rating ? `Rating ${x.rating}` : "", BASE && BASE.statePresMarginD[x.st] != null && x.t !== "H" ? `2024 pres. ${lead(BASE.statePresMarginD[x.st]).replace("D+", "Harris +").replace("R+", "Trump +")}` : ""].filter(Boolean).join(" · ");
+  const dN = x.dName ? lastOf(x.dName) || x.dName : "DEM", rN = x.rName ? lastOf(x.rName) : "REP";
+  const kUrl = e && e.series ? `https://kalshi.com/markets/${String(e.series).toLowerCase()}` : null;
+  const priceBlock = x.mkt != null
+    ? `<div class="mu">KALSHI · ${third ? "FIELD" : x.mkt >= 50 ? "DEM" : "REP"} YES</div><div class="big ${x.mkt >= 50 ? "d" : "r"}">${Math.round(x.mkt >= 50 ? x.mkt : 100 - x.mkt)}¢</div><div>${delta(x.d24)} <span class="mu">24H</span> · ${delta(x.d7)} <span class="mu">7D</span></div>`
+    : `<div class="mu">NO KALSHI MARKET</div>`;
+  $("detail").innerHTML = `
+    <div class="rh"><div><div class="mu">${off} · ${esc(NAMES[x.st] || x.st).toUpperCase()}${x.t === "H" ? " " + (APP[x.st] === 1 ? "AT-LARGE" : x.d) : ""}</div>
+      <div class="t">${x.dName || x.rName ? `<span class="${third ? "am" : "d"}">${esc(dN)}</span> <span class="mu">v</span> <span class="r">${esc(rN)}</span>` : esc(x.name)}</div><div class="mu">${esc(sub)}</div></div>
+      <div class="px">${priceBlock}<div class="acts">${kUrl ? `<a href="${kUrl}" target="_blank" rel="noopener">KALSHI ↗</a>` : ""}<a href="./predict.html">CALL IT ↗</a></div></div></div>
+    <div class="kv" id="kv"></div>
+    <div class="tabs" id="ctabs"><button data-c="polls" class="${chartMode === "polls" ? "on" : ""}"><b>P</b>POLL CHART</button><button data-c="price" class="${chartMode === "price" ? "on" : ""}"><b>K</b>PRICE CHART</button></div>
+    <div id="chart"></div>
+    <div class="tabs" id="dtabs"><button data-t="polls" class="${detTab === "polls" ? "on" : ""}">POLLS</button><button data-t="money" class="${detTab === "money" ? "on" : ""}"><b>F7</b>MONEY</button><button data-t="voters" class="${detTab === "voters" ? "on" : ""}"><b>F8</b>VOTERS</button></div>
+    <div id="dbody"><p class="mu">Loading…</p></div>`;
+  $("ctabs").onclick = (ev) => { const b = ev.target.closest("button"); if (b) setChart(b.dataset.c); };
+  $("dtabs").onclick = (ev) => { const b = ev.target.closest("button"); if (b) setTab(b.dataset.t); };
+  const [pf, fec, nom, cen] = await Promise.all([
+    cget(`data/polls/${x.pollId}.json`),
+    x.t === "G" ? null : cget(`data/fec/${x.t === "S" ? `${x.st}-senate` : `${x.st}-${APP[x.st] === 1 ? "00" : pad2(x.d)}`}.json`),
+    cget("data/nominees.json"),
+    cget(x.t === "H" ? `data/census/${x.st}-${APP[x.st] === 1 ? "00" : pad2(x.d)}.json` : `data/census/state/${x.st}.json`),
+  ]);
+  if (cur !== x) return;
+  x._polls = (pf && pf.polls) || []; x._fec = fec; x._nom = nom; x._cen = cen;
+  stats(x); chart(x); body(x);
+}
+function nominees(x) {
+  const key = x.t === "S" ? `${x.st}-senate` : `${x.st}-${APP[x.st] === 1 ? "00" : pad2(x.d)}`;
+  const frags = ((x._nom && x._nom[key]) || []).map((s) => String(s).toUpperCase());
+  const all = ((x._fec && x._fec.candidates) || []).filter((c) => c.totals);
+  const isN = (c) => frags.some((f) => String(c.name).toUpperCase().includes(f));
+  const best = (party) => all.filter((c) => (party === "D" ? /DEM|DFL/.test(c.party) : c.party === "REP") && isN(c)).sort((a, b) => (b.totals.receipts || 0) - (a.totals.receipts || 0))[0];
+  return { D: best("D"), R: best("R"), all, isN };
+}
+function stats(x) {
+  const n = x.t === "G" ? { D: null, R: null } : nominees(x);
+  const coh = (c) => (c ? money(c.totals.cash_on_hand) : "–");
+  const p = (x._cen && x._cen.profile) || {};
+  const cells = [
+    ["POLL AVG", `<span class="${leadCls(x.poll)}">${lead(x.poll)}</span>`, x.pollN ? `${x.pollN} polls` : ""],
+    ["VS 2024 PRES", x.t !== "H" && x.poll != null && BASE && BASE.statePresMarginD[x.st] != null ? (() => { const v = x.poll - BASE.statePresMarginD[x.st]; return `<span class="${leadCls(v)}">${lead(v)}</span>`; })() : `<span class="mu">${x.t === "H" ? "N/A (HOUSE)" : "–"}</span>`],
+    ["VS NATIONAL SWING", x.vsExp != null ? `<span class="${leadCls(x.vsExp)}">${lead(x.vsExp)}</span>` : `<span class="mu">–</span>`],
+    ["MARKET", x.mkt != null ? `<span class="${x.mkt >= 50 ? "d" : "r"}">${fav(x.mkt)}</span>` : `<span class="mu">NONE</span>`],
+    ["CASH ON HAND · D", x.t === "G" ? `<span class="mu">STATE FILING</span>` : coh(n.D)],
+    ["CASH ON HAND · R", x.t === "G" ? `<span class="mu">STATE FILING</span>` : coh(n.R)],
+    ["REGISTRATION", x.reg != null ? `<span class="${leadCls(x.reg)}">${lead(x.reg)}</span>` : `<span class="mu">${REG && REG.noPartyRegistration.includes(x.st) ? "NO PARTY REG" : "N/A"}</span>`],
+    ["COLLEGE DEGREE", p["Bachelor's or higher"] ? esc(p["Bachelor's or higher"]) : "–"],
+  ];
+  $("kv").innerHTML = cells.map(([k, v]) => `<div><small>${k}</small><b>${v}</b></div>`).join("");
+}
+
+/* charts */
+function chart(x) {
+  const W = 760, H = 200, L = 34, R = 10, T = 8, B = 16;
+  let svg = "";
+  if (chartMode === "polls") {
+    const pts = x._polls.map((p) => {
+      const D = (p.results || []).find((r) => r.party === "D"), Rr = (p.results || []).find((r) => r.party === "R");
+      return D && Rr && p.endDate ? { t: new Date(p.endDate + "T12:00:00"), m: Number(D.pct ?? D.percentage) - Number(Rr.pct ?? Rr.percentage), o: !!p.otherMatchup, w: p.weight || 0.5 } : null;
+    }).filter(Boolean);
+    if (!pts.length) { $("chart").innerHTML = `<p class="note">No head-to-head polls of this race yet.</p>`; return; }
+    const t1 = ELECTION, t0 = new Date(Math.max(Math.min(...pts.map((p) => p.t)), Date.now() - 200 * 864e5));
+    const ext = Math.max(10, Math.ceil(Math.max(...pts.filter((p) => p.t >= t0).map((p) => Math.abs(p.m))) / 5) * 5);
+    const X = (t) => L + ((t - t0) / (t1 - t0)) * (W - L - R), Y = (m) => T + ((ext - m) / (2 * ext)) * (H - T - B);
+    for (let v = -ext; v <= ext; v += ext >= 20 ? 10 : 5) svg += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" class="${v === 0 ? "g0" : "g"}"/><text x="2" y="${Y(v) + 3}">${v === 0 ? "EVEN" : (v > 0 ? "D+" : "R+") + Math.abs(v)}</text>`;
+    for (let m = new Date(t0.getFullYear(), t0.getMonth() + 1, 1); m < t1; m = new Date(m.getFullYear(), m.getMonth() + 1, 1)) svg += `<text x="${X(m)}" y="${H - 3}">${m.toLocaleString("en-US", { month: "short" }).toUpperCase()}</text>`;
+    svg += `<line x1="${X(t1)}" x2="${X(t1)}" y1="${T}" y2="${H - B}" class="ed"/>`;
+    for (const p of pts.filter((q) => q.t >= t0)) svg += `<circle cx="${X(p.t).toFixed(1)}" cy="${Y(p.m).toFixed(1)}" r="${2.2 + Math.min(1.8, p.w * 2)}" fill="${p.m >= 0 ? "var(--d)" : "var(--r)"}" opacity="${p.o ? 0.25 : 0.85}"/>`;
+    // 14-day half-life weighted average, current matchup only
+    const avg = [];
+    for (let t = +t0; t <= Date.now(); t += 2 * 864e5) {
+      let w = 0, s = 0;
+      for (const p of pts) { if (p.o || p.t > t) continue; const a = (t - p.t) / 864e5; if (a > 60) continue; const ww = Math.pow(0.5, a / 14) * p.w; w += ww; s += ww * p.m; }
+      if (w) avg.push([t, s / w]);
+    }
+    if (avg.length > 1) { svg += `<path class="av" d="M${avg.map(([t, m]) => `${X(t).toFixed(1)},${Y(m).toFixed(1)}`).join(" L")}"/>`; const [lt, lm] = avg[avg.length - 1]; svg += `<text x="${X(lt) + 4}" y="${Y(lm) - 5}" style="fill:#fff;font-size:11px">${lead(lm)}</text>`; }
+    $("chart").innerHTML = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Poll margins over time">${svg}</svg><p class="credit">Each dot is a poll (bigger = more weight; faded = a different matchup). White line: 14-day weighted trend. Dashed line: Election Day.</p>`;
+  } else {
+    const s = series(x.id).filter(([, v]) => v != null);
+    if (s.length < 2) { $("chart").innerHTML = `<p class="note">${x.mkt == null ? "Kalshi doesn't list this race." : "Price history starts building from the hourly Kalshi snapshots."}</p>`; return; }
+    const t0 = s[0][0], t1 = s[s.length - 1][0];
+    const lo = Math.max(0, Math.floor(Math.min(...s.map((p) => p[1])) / 10) * 10 - 0), hi = Math.min(100, Math.ceil(Math.max(...s.map((p) => p[1])) / 10) * 10);
+    const lo2 = hi - lo < 20 ? Math.max(0, lo - 10) : lo, hi2 = hi - lo < 20 ? Math.min(100, hi + 10) : hi;
+    const X = (t) => L + ((t - t0) / Math.max(1, t1 - t0)) * (W - L - R), Y = (v) => T + ((hi2 - v) / (hi2 - lo2)) * (H - T - B);
+    for (let v = lo2; v <= hi2; v += 10) svg += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" class="${v === 50 ? "g0" : "g"}"/><text x="2" y="${Y(v) + 3}">${v}%</text>`;
+    for (let d = Math.ceil(t0 / 1440) * 1440; d <= t1; d += 1440 * 2) svg += `<text x="${X(d)}" y="${H - 3}">${new Date(d * 6e4).toLocaleDateString("en-US", { month: "numeric", day: "numeric" })}</text>`;
+    svg += `<path class="pl" stroke="${s[s.length - 1][1] >= 50 ? "var(--d)" : "var(--r)"}" d="M${s.map(([t, v]) => `${X(t).toFixed(1)},${Y(v).toFixed(1)}`).join(" L")}"/>`;
+    $("chart").innerHTML = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Kalshi price history">${svg}</svg><p class="credit">Kalshi chance for the ${isThird(x.k) ? "field (everyone but the Republican)" : "Democrat"}, hourly snapshots, last 14 days.</p>`;
+  }
+}
+function setChart(m) { chartMode = m; document.querySelectorAll("#ctabs button").forEach((b) => b.classList.toggle("on", b.dataset.c === m)); if (cur && cur._polls) chart(cur); }
+function setTab(t) { detTab = t; document.querySelectorAll("#dtabs button").forEach((b) => b.classList.toggle("on", b.dataset.t === t)); document.querySelectorAll("#fk [data-k=F7],#fk [data-k=F8]").forEach((b) => b.classList.toggle("on", (t === "money" && b.dataset.k === "F7") || (t === "voters" && b.dataset.k === "F8"))); if (cur && cur._polls) body(cur); }
+
+function body(x) {
+  const el = $("dbody");
+  if (detTab === "polls") {
+    const ps = x._polls.slice(0, 14);
+    if (!ps.length) { el.innerHTML = `<p class="note">No public polls yet.</p>`; return; }
+    el.innerHTML = `<table><thead><tr><th>END</th><th>POLLSTER</th><th class="n">POP</th><th class="n">N</th><th class="n">D</th><th class="n">R</th><th class="n">LEAD</th></tr></thead><tbody>${ps.map((p) => {
+      const D = (p.results || []).find((r) => r.party === "D"), Rr = (p.results || []).find((r) => r.party === "R");
+      const d = D ? Number(D.pct ?? D.percentage) : null, r = Rr ? Number(Rr.pct ?? Rr.percentage) : null, m = d != null && r != null ? d - r : null;
+      const url = p.sourceUrl || (p.foundOn || [])[0];
+      const tag = (p.partisan ? ` <span class="fl" title="Partisan or internal; counts half">${p.partisan === "internal" ? "INT" : esc(p.partisan)}</span>` : "") + ((p.foundOn || []).includes(NYT_PAGE) ? ` <span class="mu">NYT</span>` : "");
+      return `<tr style="${p.otherMatchup ? "opacity:.45" : ""}"><td>${esc(String(p.endDate).slice(5))}</td><td>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(String(p.pollster).slice(0, 34))}</a>` : esc(String(p.pollster).slice(0, 34))}${tag}</td>
+        <td class="n mu">${esc(p.population || "")}</td><td class="n mu">${p.sampleSize || ""}</td><td class="n d">${d ?? "–"}</td><td class="n r">${r ?? "–"}</td><td class="n ${leadCls(m)}">${m == null ? "" : Math.round(m) === 0 ? "EVEN" : (m > 0 ? "D+" : "R+") + Math.abs(m).toFixed(0)}</td></tr>`;
+    }).join("")}</tbody></table><p class="credit">${x._polls.length} polls total. Faded rows test a different matchup. <a href="./predict.html">Full list on the Prediction map</a>.</p>`;
+  } else if (detTab === "money") {
+    if (x.t === "G") { el.innerHTML = `<p class="note">Governor candidates file with their state, not the FEC.</p>`; return; }
+    const n = nominees(x);
+    const by = new Map(); for (const c of n.all) if (!by.has(c.name) || (c.totals.receipts || 0) > (by.get(c.name).totals.receipts || 0)) by.set(c.name, c);
+    const list = [...by.values()].filter((c) => (c.totals.receipts || 0) > 0).sort((a, b) => (n.isN(b) - n.isN(a)) || b.totals.receipts - a.totals.receipts).slice(0, 10);
+    if (!list.length) { el.innerHTML = `<p class="note">No FEC filings found.</p>`; return; }
+    el.innerHTML = `<div class="cand mu" style="font-size:10px"><span>CANDIDATE</span><span>RAISED</span><span>SPENT</span><span>CASH</span></div>` + list.map((c) => `<div class="cand"><span><span class="${/DEM|DFL/.test(c.party) ? "d" : c.party === "REP" ? "r" : "am"}">●</span> ${esc(fecName(c.name))}${n.isN(c) ? ` <span class="fl">NOM</span>` : ""}</span><span>${money(c.totals.receipts)}</span><span>${money(c.totals.disbursements)}</span><span>${money(c.totals.cash_on_hand)}</span></div>`).join("")
+      + `<p class="credit">FEC candidate committees, through ${esc((list[0].totals.coverage_end_date || "").slice(0, 10) || "latest report")}. Outside spending not included.</p>`;
+  } else {
+    const rs = REG && REG.states[x.st];
+    let h = "";
+    if (rs) {
+      const atLarge = APP[x.st] === 1;
+      const r = x.t === "H" && !atLarge ? (rs.districts && rs.districts[pad2(x.d)]) || null : rs.statewide;
+      const scope = x.t === "H" && !atLarge ? (r ? "DISTRICT" : "STATEWIDE (NO DISTRICT DATA)") : "STATEWIDE";
+      const rr = r || rs.statewide;
+      const pc = (v) => (v / rr.total) * 100;
+      h += `<h3>REGISTERED VOTERS · ${scope} <span>${esc(rs.asOf)}</span></h3>
+        <div class="bar" style="height:10px"><i style="width:${pc(rr.D)}%;background:var(--d)"></i><i style="width:${pc(rr.npa)}%;background:#56627a"></i><i style="width:${pc(rr.other)}%;background:#3a4558"></i><i style="flex:1;background:var(--r)"></i></div>
+        <div class="demo"><span>DEMOCRATS</span><span class="d">${rr.D.toLocaleString()}</span><span class="d">${pc(rr.D).toFixed(1)}%</span><span>REPUBLICANS</span><span class="r">${rr.R.toLocaleString()}</span><span class="r">${pc(rr.R).toFixed(1)}%</span><span>${esc(rs.npaLabel.toUpperCase())}</span><span>${rr.npa.toLocaleString()}</span><span>${pc(rr.npa).toFixed(1)}%</span><span>OTHER</span><span>${rr.other.toLocaleString()}</span><span>${pc(rr.other).toFixed(1)}%</span><span>TOTAL${rs.activeOnly ? " ACTIVE" : ""}</span><span>${rr.total.toLocaleString()}</span><span></span></div>
+        <p class="credit"><a href="${esc(rs.source)}" target="_blank" rel="noopener">${esc(rs.report)}</a></p>`;
+    } else h += `<p class="note">${REG && REG.noPartyRegistration.includes(x.st) ? `${esc(NAMES[x.st])} doesn't register voters by party.` : esc((REG && REG.notAvailable && REG.notAvailable[x.st]) || "No registration data.")}</p>`;
+    const p = (x._cen && x._cen.profile) || {};
+    const keys = [["White (non-Hispanic)", "WHITE"], ["Hispanic / Latino", "HISPANIC"], ["Black", "BLACK"], ["Asian", "ASIAN"], ["Bachelor's or higher", "COLLEGE DEGREE"], ["Median household income", "MEDIAN INCOME"], ["Median age", "MEDIAN AGE"], ["Poverty rate", "POVERTY"]];
+    if (Object.keys(p).length) h += `<h3 style="margin-top:10px">PEOPLE · ${esc(String(p.Population || ""))} <span>CENSUS ACS 5-YR</span></h3><div class="demo">${keys.filter(([k]) => p[k] != null).map(([k, lab]) => `<span>${lab}</span><span>${esc(String(p[k]))}</span><span></span>`).join("")}</div>`;
+    el.innerHTML = h;
+  }
+}
+
+/* ---------- command bar ---------- */
+let acList = [], acIdx = 0;
+function matches(q) {
+  q = q.trim().toUpperCase().replace(/\s+/g, " ");
+  if (!q) return [];
+  const m1 = q.match(/^([A-Z]{2})[\s-]*(SEN|SENATE|S)$/), m2 = q.match(/^([A-Z]{2})[\s-]*(GOV|GOVERNOR|G)$/), m3 = q.match(/^([A-Z]{2})[\s-]*(\d{1,2}|AL)$/);
+  if (m1 && BY[`S:${m1[1]}`]) return [BY[`S:${m1[1]}`]];
+  if (m2 && BY[`G:${m2[1]}`]) return [BY[`G:${m2[1]}`]];
+  if (m3) { const d = m3[2] === "AL" ? 1 : +m3[2]; const x = BY[`H:${m3[1]}-${pad2(d)}`]; if (x) return [x]; }
+  const words = q.split(" ");
+  return RACES.filter((x) => { const hay = `${x.code} ${x.name} ${x.dName} ${x.rName} ${x.holder} ${x.st}`.toUpperCase(); return words.every((w) => hay.includes(w)); })
+    .sort((a, b) => (a.t === "H") - (b.t === "H") || (a.mkt == null) - (b.mkt == null)).slice(0, 12);
+}
+const CMDS = { MAP: "./", HOME: "./", NATIONAL: "overview.html", PREDICT: "predict.html", MARKETS: "markets.html", POLLS: "polling/", POLLING: "polling/" };
+function showAC() {
+  const q = $("q").value;
+  acList = matches(q); acIdx = 0;
+  const cmd = CMDS[q.trim().toUpperCase()];
+  if (!q.trim() || (!acList.length && !cmd)) { $("ac").hidden = true; return; }
+  $("ac").innerHTML = (cmd ? `<div data-cmd="${cmd}" class="on"><span class="am">GO ${esc(q.trim().toUpperCase())}</span><span class="mu">page</span></div>` : "") +
+    acList.map((x, i) => `<div data-id="${x.id}" class="${!cmd && i === 0 ? "on" : ""}"><span><span class="am">${x.code}</span> ${esc(x.name)}</span><span class="mu">${x.dName || x.rName ? esc(lastOf(x.dName) + " v " + lastOf(x.rName)) : ""} ${x.mkt != null ? fav(x.mkt) : ""}</span></div>`).join("");
+  $("ac").hidden = false;
+}
+function go() {
+  const on = $("ac").querySelector("div.on");
+  if (on && on.dataset.cmd) { location.href = on.dataset.cmd; return; }
+  const x = on ? BY[on.dataset.id] : acList[0];
+  if (x) { open(x); $("q").value = ""; $("ac").hidden = true; $("q").blur(); }
+}
+$("q").addEventListener("input", showAC);
+$("q").addEventListener("keydown", (e) => {
+  const items = [...$("ac").querySelectorAll("div")];
+  if (e.key === "Enter") { e.preventDefault(); go(); }
+  else if (e.key === "Escape") { $("q").value = ""; $("ac").hidden = true; $("q").blur(); }
+  else if ((e.key === "ArrowDown" || e.key === "ArrowUp") && items.length) {
+    e.preventDefault(); let i = items.findIndex((d) => d.classList.contains("on")); items[i]?.classList.remove("on");
+    i = (i + (e.key === "ArrowDown" ? 1 : -1) + items.length) % items.length; items[i].classList.add("on"); items[i].scrollIntoView({ block: "nearest" });
+  }
+});
+$("ac").onclick = (e) => { const d = e.target.closest("div"); if (!d) return; $("ac").querySelectorAll("div").forEach((y) => y.classList.toggle("on", y === d)); go(); };
+document.querySelector(".cmd kbd").onclick = go;
+document.addEventListener("click", (e) => { if (!e.target.closest(".cmdwrap")) $("ac").hidden = true; });
+
+/* ---------- keys ---------- */
+$("helpBtn").onclick = () => ($("help").hidden = false);
+$("help").onclick = () => ($("help").hidden = true);
+$("fk").onclick = (e) => { const b = e.target.closest("button[data-k]"); if (!b) return; if (b.dataset.k === "F7") setTab("money"); if (b.dataset.k === "F8") setTab("voters"); if (b.dataset.k === "F1") setTab("polls"); };
+document.addEventListener("keydown", (e) => {
+  if (e.target === $("q")) return;
+  const fk = { F2: "./", F3: "overview.html", F4: "predict.html", F5: "markets.html", F6: "polling/" };
+  if (e.key === "/") { e.preventDefault(); $("q").focus(); return; }
+  if (e.key === "Escape") { $("help").hidden = true; return; }
+  if (e.key === "?") { $("help").hidden = !$("help").hidden; return; }
+  if (fk[e.key]) { e.preventDefault(); location.href = fk[e.key]; return; }
+  if (e.key === "F1") { e.preventDefault(); setTab("polls"); return; }
+  if (e.key === "F7") { e.preventDefault(); setTab("money"); return; }
+  if (e.key === "F8") { e.preventDefault(); setTab("voters"); return; }
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === "p" || e.key === "P") setChart("polls");
+  if (e.key === "k" || e.key === "K") setChart("price");
+  if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    const list = wlList(); if (!list.length) return; e.preventDefault();
+    let i = list.findIndex((x) => cur && x.id === cur.id); i = i < 0 ? 0 : (i + (e.key === "ArrowDown" ? 1 : -1) + list.length) % list.length;
+    open(list[i]); document.querySelector("#wl tr.on")?.scrollIntoView({ block: "nearest" });
+  }
+});
+window.addEventListener("hashchange", () => { const x = BY[decodeURIComponent(location.hash.slice(1))]; if (x && x !== cur) open(x); });
+</script>
+</body>
+</html>
