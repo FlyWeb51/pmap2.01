@@ -468,7 +468,7 @@ function openRace(x) {
   $("rpEmpty").hidden = true;
   const box = $("rpIn"); box.hidden = false;
   const t = raceTitle(layer, x);
-  const tabs = [["polls", "Polls"], ["market", "Kalshi"], ["vs24", "vs 2024"], ["money", "Money"], ["people", "People"]];
+  const tabs = [["polls", "Polls"], ["market", "Kalshi"], ["vs24", "vs 2024"], ["money", "Money"], ["people", "Voters"]];
   box.innerHTML = `<div class="rp-head"><div><div class="rp-kick">${esc(t.kick)}</div><h2>${esc(t.name)}</h2><div class="rp-sub">${esc(t.sub)}</div></div><button class="x" id="rpClose" aria-label="Close" title="Close (Esc)">×</button></div>
     <div class="rp-call" id="rpCall"></div>
     <div class="rp-tabs" id="rpTabs">${tabs.map(([k, v]) => `<button data-t="${k}" class="${k === rpTab ? "on" : ""}">${v}</button>`).join("")}</div>
@@ -646,7 +646,47 @@ async function tabMoney(l, x) {
 }
 
 /* People (Census) */
+/* Party registration (from data/registration.json) */
+const fmtN = (n) => Number(n).toLocaleString("en-US");
+const fmtAsOf = (s) => { const [y, m, d] = String(s).split("-").map(Number); const M = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][m - 1]; return M ? (d ? `${M} ${d}, ${y}` : `${M} ${y}`) : s; };
+async function registrationBlock(l, x) {
+  const reg = await cget("data/registration.json");
+  if (!reg) return "";
+  const st = reg.states[x.st];
+  if (!st) {
+    if ((reg.noPartyRegistration || []).includes(x.st)) return `<h4>Registered voters</h4><p class="muted">${esc(G.names[x.st])} doesn't register voters by party, so there's no Democratic or Republican registration count.</p>`;
+    const why = reg.notAvailable && reg.notAvailable[x.st];
+    return why ? `<h4>Registered voters</h4><p class="muted">${esc(why)}</p>` : "";
+  }
+  const key = l === "H" ? (G.app[x.st] === 1 ? "01" : pad2(x.d)) : null;
+  const dist = key && st.districts && st.districts[key];
+  const r = dist || st.statewide;
+  const scope = l === "H" ? (dist ? (G.app[x.st] === 1 ? "Statewide (at-large seat)" : "This district") : "Statewide only") : "Statewide";
+  const pc = (v) => (v / r.total) * 100;
+  const edge = r.D - r.R, edgePts = pc(r.D) - pc(r.R);
+  const seg = (v, c) => `<i style="width:${pc(v)}%;background:${c}"></i>`;
+  let h = `<h4>Registered voters · ${esc(scope)}</h4>
+    <div class="big ${edge >= 0 ? "d" : "r"}">${edge >= 0 ? "D" : "R"} +${Math.abs(edgePts).toFixed(1)}<span class="muted" style="font-size:12px;font-weight:400"> · ${edge >= 0 ? "Democrats" : "Republicans"} lead by ${fmtN(Math.abs(edge))}</span></div>
+    <div class="tb">${seg(r.D, "var(--ld)")}${seg(r.npa, "#56627a")}${seg(r.other, "#3a4558")}${seg(r.R, "var(--lr)")}</div>
+    <div class="rows">
+      <div><span><span class="dot" style="background:var(--ld)"></span>Democrats</span><b>${fmtN(r.D)} · ${pc(r.D).toFixed(1)}%</b></div>
+      <div><span><span class="dot" style="background:var(--lr)"></span>Republicans</span><b>${fmtN(r.R)} · ${pc(r.R).toFixed(1)}%</b></div>
+      <div><span><span class="dot" style="background:#56627a"></span>${esc(st.npaLabel)}</span><b>${fmtN(r.npa)} · ${pc(r.npa).toFixed(1)}%</b></div>
+      ${r.other ? `<div><span><span class="dot" style="background:#3a4558"></span>Other parties</span><b>${fmtN(r.other)} · ${pc(r.other).toFixed(1)}%</b></div>` : ""}
+      <div class="total"><span>Total${st.activeOnly ? " active" : ""}</span><b>${fmtN(r.total)}</b></div>
+    </div>`;
+  if (l === "H" && !dist) h += `<p class="muted">${esc(G.names[x.st])} doesn't publish registration by congressional district, so this is the statewide count.</p>`;
+  if (["KY", "WV", "LA", "OK"].includes(x.st) && edge > 0) h += `<p class="muted">Many voters here are still registered Democrats but vote Republican, so registration overstates Democratic strength.</p>`;
+  if (st.note) h += `<p class="muted">${esc(st.note)}</p>`;
+  h += `<p class="credit"><a href="${esc(st.source)}" target="_blank" rel="noopener">${esc(st.report)}</a>, as of ${esc(fmtAsOf(st.asOf))}.</p>`;
+  return h;
+}
+
 async function tabPeople(l, x) {
+  const regHtml = await registrationBlock(l, x);
+  return regHtml + await tabCensus(l, x);
+}
+async function tabCensus(l, x) {
   const file = l === "H" ? `data/census/${x.st}-${G.app[x.st] === 1 ? "00" : pad2(x.d)}.json` : `data/census/state/${x.st}.json`;
   const [c, us] = await Promise.all([cget(file), cget("data/census/state/US.json")]);
   const p = c && c.profile;

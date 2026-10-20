@@ -81,6 +81,7 @@
       <option value="disagree">Polls and market disagree</option>
       <option value="d">Most Democratic</option>
       <option value="r">Most Republican</option>
+      <option value="reg">Biggest Democratic registration edge</option>
       <option value="name">A to Z</option>
     </select>
     <input type="search" id="q" placeholder="Search a state, district or candidate">
@@ -88,8 +89,8 @@
   </div>
 
   <table>
-    <thead><tr><th data-k="name">Race</th><th data-k="d" class="n">Dem</th><th class="mb hide-s"></th><th data-k="r" class="n">Rep</th><th data-k="poll" class="n hide-s">Polls</th><th></th></tr></thead>
-    <tbody id="rows"><tr><td colspan="6" class="muted">Loading…</td></tr></tbody>
+    <thead><tr><th data-k="name">Race</th><th data-k="d" class="n">Dem</th><th class="mb hide-s"></th><th data-k="r" class="n">Rep</th><th data-k="poll" class="n hide-s">Polls</th><th data-k="reg" class="n hide-s" title="Registered Democrats minus Republicans, share of all registered voters">Reg.</th><th></th></tr></thead>
+    <tbody id="rows"><tr><td colspan="7" class="muted">Loading…</td></tr></tbody>
   </table>
   <p class="foot" id="foot"></p>
 </main>
@@ -104,7 +105,7 @@ const kUrl = (series) => series ? `https://kalshi.com/markets/${String(series).t
 const realName = (c) => c && !/party/i.test(c) ? c : null;
 const ago = (ts) => { if (!ts) return ""; const m = Math.round((Date.now() - new Date(ts)) / 6e4); return m < 60 ? `${m} min ago` : m < 2880 ? `${Math.round(m / 60)} hr ago` : `${Math.round(m / 1440)} days ago`; };
 
-let ROWS = [], type = "all", sort = "close";
+let ROWS = [], type = "all", sort = "close", REG = null;
 
 function row(t, key, st, e, poll) {
   const ind = !!(e.thirdParty && e.republican) || !!(e.democrat && e.republican && e.democrat.pct + e.republican.pct < 85);
@@ -115,7 +116,11 @@ function row(t, key, st, e, poll) {
   const dist = t === "H" ? key.split("-")[1] : null;
   const label = t === "H" ? `${NAMES[st] || st} ${dist === "01" && /AL$/i.test(e.series || "") ? "at-large" : +dist}` : NAMES[st] || st;
   const pm = poll && poll.average && poll.average.margin != null && !ind ? poll.average.margin : null;
-  return { t, key, st, label, code: t === "H" ? key : `${st} ${TYPE[t]}`, d, r, dN, rN, ind, series: e.series, pm,
+  const rs = REG && REG.states[st];
+  const atLarge = ["AK", "DE", "ND", "SD", "VT", "WY"].includes(st);
+  const rr = rs ? (t === "H" && !atLarge ? rs.districts && rs.districts[key.split("-")[1]] : rs.statewide) : null;
+  const reg = rr ? { m: ((rr.D - rr.R) / rr.total) * 100, asOf: rs.asOf, scope: t === "H" ? "district" : "state" } : null;
+  return { t, key, st, label, code: t === "H" ? key : `${st} ${TYPE[t]}`, d, r, dN, rN, ind, series: e.series, pm, reg,
     disagree: pm != null && Math.sign(pm) !== Math.sign(d - 50) && Math.abs(d - 50) > 2 && Math.abs(pm) > 0.5,
     text: `${label} ${key} ${st} ${TYPE[t]} ${dN} ${rN}`.toLowerCase() };
 }
@@ -124,7 +129,8 @@ function render() {
   const q = $("q").value.trim().toLowerCase();
   let list = ROWS.filter((x) => (type === "all" || x.t === type) && (!q || q.split(/\s+/).every((w) => x.text.includes(w))));
   const by = { close: (a, b) => Math.abs(a.d - 50) - Math.abs(b.d - 50), d: (a, b) => b.d - a.d, r: (a, b) => a.d - b.d, name: (a, b) => a.label.localeCompare(b.label) || a.key.localeCompare(b.key, undefined, { numeric: true }),
-    disagree: (a, b) => (b.disagree - a.disagree) || Math.abs(a.d - 50) - Math.abs(b.d - 50) };
+    disagree: (a, b) => (b.disagree - a.disagree) || Math.abs(a.d - 50) - Math.abs(b.d - 50),
+    reg: (a, b) => (b.reg ? b.reg.m : -999) - (a.reg ? a.reg.m : -999) };
   list.sort(by[sort]);
   $("count").textContent = `${list.length} market${list.length === 1 ? "" : "s"}`;
   $("rows").innerHTML = list.length ? list.map((x) => `<tr>
@@ -133,8 +139,9 @@ function render() {
       <td class="mb hide-s"><div class="bar"><i class="bd" style="width:${x.d}%"></i><i class="br" style="width:${x.r}%"></i></div></td>
       <td class="n r">${100 - Math.round(x.d)}%</td>
       <td class="n hide-s ${x.pm == null ? "muted" : x.pm >= 0 ? "d" : "r"}">${x.pm == null ? "–" : Math.abs(x.pm) < 0.05 ? "Tied" : (x.pm > 0 ? "D+" : "R+") + Math.abs(x.pm).toFixed(1)}</td>
+      <td class="n hide-s ${!x.reg ? "muted" : x.reg.m >= 0 ? "d" : "r"}" title="${x.reg ? `Registration, ${x.reg.scope}, as of ${x.reg.asOf}` : "No party registration data"}">${!x.reg ? "–" : (x.reg.m >= 0 ? "D+" : "R+") + Math.abs(x.reg.m).toFixed(1)}</td>
       <td class="n"><a class="go" href="${kUrl(x.series)}" target="_blank" rel="noopener">Kalshi ↗</a></td></tr>`).join("")
-    : `<tr><td colspan="6" class="muted">No markets match.</td></tr>`;
+    : `<tr><td colspan="7" class="muted">No markets match.</td></tr>`;
   document.querySelectorAll("th[data-k]").forEach((th) => th.removeAttribute("aria-sort"));
   const map = { d: ["d", "descending"], r: ["r", "descending"], name: ["name", "ascending"] }[sort];
   if (map) document.querySelector(`th[data-k="${map[0]}"]`).setAttribute("aria-sort", map[1]);
@@ -147,7 +154,8 @@ function topCard(title, link, pD, label, note) {
 }
 
 (async function boot() {
-  const [S, H, Gv, nat, pi] = await Promise.all(["senate", "house", "governor"].map((t) => getJSON(`data/kalshi/all-${t}.json`)).concat([getJSON("data/kalshi/national.json"), getJSON("data/polls/index.json")]));
+  const [S, H, Gv, nat, pi, reg] = await Promise.all(["senate", "house", "governor"].map((t) => getJSON(`data/kalshi/all-${t}.json`)).concat([getJSON("data/kalshi/national.json"), getJSON("data/polls/index.json"), getJSON("data/registration.json")]));
+  REG = reg;
   const P = (pi && pi.races) || {};
   for (const [st, e] of Object.entries(S || {})) ROWS.push(row("S", st, st, e, P[`${st}-S-2026`]));
   for (const [k, e] of Object.entries(H || {})) { const [st, dd] = k.split("-"); ROWS.push(row("H", k, st, e, P[`${st}-H-${dd}-2026`])); }
@@ -165,7 +173,7 @@ function topCard(title, link, pD, label, note) {
   $("top").innerHTML = top;
 
   const fetched = Object.values(S || {}).map((e) => e.fetchedAt).filter(Boolean).sort().pop();
-  $("foot").innerHTML = `Prices from <a href="https://kalshi.com/category/elections" target="_blank" rel="noopener">Kalshi</a>, refreshed every 30 minutes (last ${esc(ago(fetched))}). A price of 62¢ means traders put about a 62% chance on that outcome. Kalshi lists about 75 House races; the rest have no market. "Polls" is this site's polling average where one exists. Not financial advice.`;
+  $("foot").innerHTML = `Prices from <a href="https://kalshi.com/category/elections" target="_blank" rel="noopener">Kalshi</a>, refreshed every 30 minutes (last ${esc(ago(fetched))}). A price of 62¢ means traders put about a 62% chance on that outcome. Kalshi lists about 75 House races; the rest have no market. "Polls" is this site's polling average where one exists. "Reg." is registered Democrats minus Republicans as a share of all registered voters, from each state's election office (by district where the state publishes it; ${reg ? Object.keys(reg.states).length : 0} states register by party). Not financial advice.`;
   render();
 })();
 
