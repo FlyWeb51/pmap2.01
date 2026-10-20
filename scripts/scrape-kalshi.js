@@ -359,6 +359,84 @@ function markThirdParty(r) {
   return r;
 }
 
+
+/* ---------- price history (for movers + charts) ----------
+   data/kalshi/history.json = { v, updated, points: { "S-TX": [[epochMinutes, dPct], ...] } }
+   dPct is the Democratic side's normalized chance (or 100 - Republican in
+   independent races). A live point is added at most every 2 hours; points
+   older than 7 days are thinned to one per day; nothing older than 60 days.
+   Keys without history are backfilled once from Kalshi's daily candlesticks. */
+const HISTORY = path.join(OUT_DIR, "history.json");
+const nowMin = () => Math.round(Date.now() / 60000);
+function dPctOf(r) {
+  if (!r) return null;
+  if (r.thirdParty && r.republican) return Math.round((100 - r.republican.pct) * 10) / 10;
+  if (r.democrat) return r.democrat.share ?? r.democrat.pct;
+  if (r.republican) return Math.round((100 - (r.republican.share ?? r.republican.pct)) * 10) / 10;
+  return null;
+}
+const candleMid = (c) => {
+  const b = Number(c.yes_bid && c.yes_bid.close_dollars), a = Number(c.yes_ask && c.yes_ask.close_dollars);
+  if (b > 0 && a > 0 && a - b <= 0.2) return ((a + b) / 2) * 100;
+  const p = Number(c.price && (c.price.close_dollars || c.price.mean_dollars || c.price.previous_dollars));
+  return p > 0 ? p * 100 : b > 0 && a > 0 ? ((a + b) / 2) * 100 : null;
+};
+async function candles(series, ticker, days) {
+  const end = Math.floor(Date.now() / 1000), start = end - days * 86400;
+  const j = await fetchJson(`${BASE}/series/${series}/markets/${ticker}/candlesticks?start_ts=${start}&end_ts=${end}&period_interval=1440`);
+  const out = {};
+  for (const c of (j && j.candlesticks) || []) { const v = candleMid(c); if (v != null) out[Math.round(c.end_period_ts / 60)] = v; }
+  return out;
+}
+async function backfill(series, dTicker, rTicker, thirdParty) {
+  const [d, r] = await Promise.all([dTicker ? candles(series, dTicker, 30).catch(() => ({})) : {}, rTicker ? candles(series, rTicker, 30).catch(() => ({})) : {}]);
+  const ts = [...new Set([...Object.keys(d), ...Object.keys(r)])].map(Number).sort((a, b) => a - b);
+  const pts = [];
+  for (const t of ts) {
+    const dv = d[t], rv = r[t];
+    let v = null;
+    if (thirdParty) v = rv != null ? 100 - rv : null;
+    else if (dv != null && rv != null && dv + rv > 0) v = (dv / (dv + rv)) * 100;
+    else if (dv != null) v = dv; else if (rv != null) v = 100 - rv;
+    if (v != null) pts.push([t, Math.round(v * 10) / 10]);
+  }
+  return pts;
+}
+function thin(points) {
+  const cutoff = nowMin() - 60 * 1440, dayAgo7 = nowMin() - 7 * 1440, out = [], seenDay = new Set();
+  for (const p of points.filter((x) => x[0] >= cutoff).sort((a, b) => a[0] - b[0])) {
+    if (p[0] < dayAgo7) { const day = Math.floor(p[0] / 1440); if (seenDay.has(day)) { out[out.length - 1] = p; continue; } seenDay.add(day); }
+    out.push(p);
+  }
+  return out;
+}
+async function updateHistory(entries) {
+  let h = null;
+  try { h = JSON.parse(fs.readFileSync(HISTORY, "utf8")); } catch {}
+  if (!h || !h.points) h = { v: 1, points: {} };
+  const t = nowMin();
+  let filled = 0;
+  const todo = entries.filter((e) => e.value != null && !(h.points[e.key] && h.points[e.key].length >= 5));
+  // one-time backfill, a few at a time
+  for (let i = 0; i < todo.length; i += CONCURRENCY) {
+    await Promise.all(todo.slice(i, i + CONCURRENCY).map(async (e) => {
+      if (!e.series) return;
+      try { const pts = await backfill(e.series, e.dTicker, e.rTicker, e.thirdParty); if (pts.length) { h.points[e.key] = [...pts, ...(h.points[e.key] || [])]; filled++; } } catch {}
+    }));
+  }
+  for (const e of entries) {
+    if (e.value == null) continue;
+    const arr = (h.points[e.key] = h.points[e.key] || []);
+    const last = arr[arr.length - 1];
+    if (last && t - last[0] < 120) arr[arr.length - 1] = [last[0], e.value]; // refresh the latest point within 2h
+    else arr.push([t, e.value]);
+    h.points[e.key] = thin(arr);
+  }
+  h.updated = new Date().toISOString();
+  fs.writeFileSync(HISTORY, JSON.stringify(h));
+  console.log(`history: ${Object.keys(h.points).length} markets tracked, ${filled} backfilled this run`);
+}
+
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const t0 = Date.now();
@@ -427,6 +505,23 @@ async function main() {
   let national = {};
   try { national = await fetchNational(); } catch (e) { console.log("national:", e.message); }
   fs.writeFileSync(path.join(OUT_DIR, "national.json"), JSON.stringify(national, null, 2));
+
+  // Price history for every race + chamber control
+  try {
+    const entries = [];
+    const add = (key, r) => r && entries.push({ key, value: dPctOf(r), series: r.series, thirdParty: !!r.thirdParty,
+      dTicker: r.democrat && r.democrat.ticker, rTicker: r.republican && r.republican.ticker });
+    for (const [st, r] of Object.entries(allSenate)) add(`S-${st}`, r);
+    for (const [d, r] of Object.entries(allHouse)) add(`H-${d}`, r);
+    for (const [st, r] of Object.entries(allGov)) add(`G-${st}`, r);
+    for (const ch of ["house", "senate"]) {
+      const n = national[ch];
+      const dOut = n && n.outcomes && n.outcomes.find((o) => /dem/i.test(o.label));
+      const rOut = n && n.outcomes && n.outcomes.find((o) => /rep/i.test(o.label));
+      if (dOut) entries.push({ key: `N-${ch}`, value: dOut.pct, series: ch === "house" ? "CONTROLH" : "CONTROLS", dTicker: dOut.ticker, rTicker: rOut && rOut.ticker });
+    }
+    await updateHistory(entries);
+  } catch (e) { console.log("history:", e.message); }
 
   fs.writeFileSync(
     path.join(OUT_DIR, "meta.json"),
