@@ -265,8 +265,10 @@ function renderGovernors(o) {
   const g = o.governors || [];
   if (!g.length) return;
   $("gov-card").hidden = false;
-  $("gov-races").innerHTML = `<tr><th>State</th><th>Democrat</th><th>Republican</th><th>Kalshi D chance</th></tr>` + g.map((r) =>
-    `<tr><td>${esc(r.name)}</td><td class="d">${esc(r.dem || "")}</td><td class="r">${esc(r.rep || "")}</td>
+  const gf = g.filter((r) => r.flip);
+  $("gov-races").innerHTML = (gf.length ? `<tr><td colspan="5" class="note" style="padding-bottom:10px">Markets favor <b>${gf.length}</b> governorship${gf.length === 1 ? "" : "s"} to change parties: ${gf.map((r) => `${esc(r.name)} (${r.holder} → ${r.holder === "R" ? "D" : "R"})`).join(", ")}.</td></tr>` : "") +
+    `<tr><th>State</th><th>Now</th><th>Democrat</th><th>Republican</th><th>Kalshi D chance</th></tr>` + g.map((r) =>
+    `<tr><td>${esc(r.name)}${r.flip ? ` <span class="note" style="color:var(--money)">flip</span>` : ""}</td><td class="${r.holder === "D" ? "d" : r.holder === "R" ? "r" : ""}" title="${esc(r.incumbent || "")}">${esc(r.holder || "–")}</td><td class="d">${esc(r.dem || "")}</td><td class="r">${esc(r.rep || "")}</td>
      <td><span class="oddsbar"><i style="width:${Math.round(r.kalshiD * 100)}%"></i></span><span class="num">${Math.round(r.kalshiD * 100)}%</span></td></tr>`).join("");
 }
 
