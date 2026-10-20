@@ -173,10 +173,13 @@ const tossups = house.seats
   .map((s) => ({ id: s.label, holder: s.holder, incumbent: s.incumbent, dPct: Math.round(s.kalshiD * 100) }));
 
 /* ---------- Governors ---------- */
+const govNow = (read("data/governors-current.json", {}) || {}).governors || {};
 const governors = Object.values(kGov).map((g) => {
   const d = kalshiD(g);
+  const cur = govNow[g.state] || {};
   return {
-    state: g.state, name: STATE_NAMES[g.state], kalshiD: d,
+    state: g.state, name: STATE_NAMES[g.state], kalshiD: d, holder: cur.party || null, incumbent: cur.name || null,
+    flip: !!(cur.party && d != null && ((cur.party === "R" && d >= 0.5) || (cur.party === "D" && d < 0.5))),
     dem: g.democrat && g.democrat.candidate, rep: g.republican && g.republican.candidate,
     poll: pollFor(`${g.state}-G-2026`),
   };
@@ -211,6 +214,32 @@ if (base24 && generic && generic.margin != null) {
   candidatePerformance = { genericMargin: generic.margin, nationalPres2024: base24.nationalPresMarginD, shift: Math.round(shift * 10) / 10, rows };
 }
 
+/* ---------- Market movers (from data/kalshi/history.json) ---------- */
+const hist = read("data/kalshi/history.json", null);
+let movers = null;
+if (hist && hist.points) {
+  const nowM = Math.round(Date.now() / 60000);
+  const at = (pts, minsAgo) => { let v = null; for (const [t, x] of pts) { if (t <= nowM - minsAgo) v = x; else break; } return v; };
+  const label = (key) => {
+    const [t, ...rest] = key.split("-"); const id = rest.join("-");
+    if (t === "N") return { name: id === "house" ? "House control" : "Senate control", type: "Control" };
+    if (t === "S") return { name: STATE_NAMES[id], type: "Senate", e: kSenate[id] };
+    if (t === "G") return { name: STATE_NAMES[id], type: "Governor", e: kGov[id] };
+    const [st, d] = id.split("-"); return { name: `${st}-${+d}`, type: "House", e: kHouse[id] };
+  };
+  const rows = [];
+  for (const [key, pts] of Object.entries(hist.points)) {
+    if (!pts.length) continue;
+    const now = pts[pts.length - 1][1], d1 = at(pts, 1440), d7 = at(pts, 7 * 1440);
+    const l = label(key);
+    const cand = (side) => l.e && l.e[side] && l.e[side].candidate && !/party/i.test(l.e[side].candidate) ? l.e[side].candidate : null;
+    rows.push({ key, name: l.name, type: l.type, now, ch1: d1 == null ? null : Math.round((now - d1) * 10) / 10, ch7: d7 == null ? null : Math.round((now - d7) * 10) / 10,
+      dem: cand("democrat"), rep: cand("republican"), thirdParty: !!(l.e && l.e.thirdParty) });
+  }
+  const top = (k) => rows.filter((r) => r[k] != null && Math.abs(r[k]) >= 1).sort((a, b) => Math.abs(b[k]) - Math.abs(a[k])).slice(0, 12);
+  movers = { updated: hist.updated, day: top("ch1"), week: top("ch7") };
+}
+
 /* ---------- Market-implied national numbers ---------- */
 const markets = {
   houseControlD: kNational.house && (kNational.house.outcomes.find((o) => /dem/i.test(o.label)) || {}).pct,
@@ -239,12 +268,15 @@ const out = {
   markets,
   governors,
   candidatePerformance,
+  movers,
   flips: flips.slice(0, 40),
   flipCounts: {
     houseDtoR: flips.filter((f) => f.chamber === "House" && f.favored === "R").length,
     houseRtoD: flips.filter((f) => f.chamber === "House" && f.favored === "D").length,
     senateDtoR: flips.filter((f) => f.chamber === "Senate" && f.favored === "R").length,
     senateRtoD: flips.filter((f) => f.chamber === "Senate" && f.favored === "D").length,
+    govRtoD: governors.filter((g) => g.flip && g.holder === "R").length,
+    govDtoR: governors.filter((g) => g.flip && g.holder === "D").length,
   },
   tossups,
   sources: {
