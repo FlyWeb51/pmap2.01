@@ -290,6 +290,14 @@ const cget = (u) => { if (!cache.has(u)) cache.set(u, getJSON(u)); return cache.
 /* ---------- data ---------- */
 let RACES = [], BY = {}, PI = {}, REG = null, BASE = null, GEN = null, NAT = null, OV = null, HIST = null, NAMES = {}, APP = {}, SEATS = {};
 let cur = null, chartMode = "polls", detTab = "polls";
+let BASECD = null;
+/* 2024 presidential margin (Harris minus Trump) for a race: the state for
+   Senate/governor, the district's 2026 lines for House (The Downballot). */
+function base24Of(x) {
+  if (x.t === "H") { const r = BASECD && BASECD.districts[`${x.st}-${pad2(x.d)}`]; return r ? r.marginD : null; }
+  return BASE && BASE.statePresMarginD[x.st] != null ? BASE.statePresMarginD[x.st] : null;
+}
+const isNewLines = (x) => x.t === "H" && !!(BASECD && BASECD.districts[`${x.st}-${pad2(x.d)}`] && BASECD.districts[`${x.st}-${pad2(x.d)}`].newLines);
 const seatKey = (x) => (x.t === "S" ? `${x.st}-senate` : x.t === "G" ? `${x.st}-governor` : `${x.st}-${APP[x.st] === 1 ? "00" : pad2(x.d)}`);
 
 function isThird(e) { return !!e && !!((e.thirdParty && e.republican) || (e.democrat && e.republican && e.democrat.pct + e.republican.pct < 85)); }
@@ -333,8 +341,9 @@ function raceRow(x) {
   x.d7 = p7 != null ? d - p7 : null;
   x.split = d != null && x.poll != null && (x.poll >= 0) !== (d >= 50) && Math.abs(d - 50) > 2 && Math.abs(x.poll) > 0.5;
   x.expected = x.vsExp = null;
-  if (x.t === "S" && !x.ind && x.poll != null && BASE && GEN && BASE.statePresMarginD[x.st] != null) {
-    x.expected = BASE.statePresMarginD[x.st] + (GEN.margin - BASE.nationalPresMarginD);
+  const b24 = base24Of(x);
+  if ((x.t === "S" || x.t === "H") && !x.ind && x.poll != null && BASE && GEN && b24 != null) {
+    x.expected = b24 + (GEN.margin - BASE.nationalPresMarginD);
     x.vsExp = x.poll - x.expected;
   }
   // candidate names: Kalshi -> poll average -> FEC nominee (filled in when the race opens)
@@ -376,7 +385,7 @@ const W = {
   registration: { title: "REGISTERED VOTERS", desc: "Every party's total for the open race's state or district", render: wRegistration },
   regtable: { title: "REGISTRATION BY STATE", desc: "Democrats, Republicans and unaffiliated in every state that registers by party", render: wRegTable },
   control: { title: "CONTROL", desc: "House and Senate control odds", render: wControl },
-  signals: { title: "SIGNALS", desc: "Splits, big movers, Senate over-performers", render: wSignals },
+  signals: { title: "SIGNALS", desc: "Splits, big movers, Senate and House over-performers", render: wSignals },
   movers: { title: "MOVERS · 24H", desc: "Biggest Kalshi price moves", render: wMovers },
   newpolls: { title: "NEW POLLS", desc: "Most recently polled races", render: wNewPolls },
   generic: { title: "NATIONAL ENVIRONMENT", desc: "Generic ballot vs 2024, market House vote", render: wGeneric },
@@ -570,7 +579,7 @@ function signalItems() {
     out.push([x, "SPLIT", `${x.code} ${esc(matchup(x))} · polls ${lead(x.poll, x.ind)}, market ${fav(x.mkt, x.ind)}`]);
   for (const x of RACES.filter((r) => r.d24 != null && Math.abs(r.d24) >= 3).sort((a, b) => Math.abs(b.d24) - Math.abs(a.d24)).slice(0, 4))
     out.push([x, "MOVER", `${x.code} ${esc(matchup(x))} · ${x.d24 > 0 ? "toward " + (x.ind ? "I" : "D") : "toward R"} ${Math.abs(x.d24).toFixed(1)} pts in 24h`]);
-  for (const x of RACES.filter((r) => r.vsExp != null && Math.abs(r.vsExp) >= 3 && r.pollN >= 3).sort((a, b) => Math.abs(b.vsExp) - Math.abs(a.vsExp)).slice(0, 5))
+  for (const x of RACES.filter((r) => r.vsExp != null && Math.abs(r.vsExp) >= 3 && r.pollN >= (r.t === "H" ? 2 : 3)).sort((a, b) => Math.abs(b.vsExp) - Math.abs(a.vsExp)).slice(0, 5))
     out.push([x, x.vsExp >= 0 ? "OVER D" : "OVER R", `${x.code} · ${esc(lastOf(x.vsExp >= 0 ? x.dName : x.rName))} runs ${Math.abs(x.vsExp).toFixed(1)} pts ahead of the national swing`]);
   return out;
 }
@@ -691,13 +700,14 @@ function wCalls(el, sub) {
 /* ---------- boot ---------- */
 (async function boot() {
   try {
-    const [html, ks, kh, kg, nat, meta, pi, reg, base, gen, ov, nytMeta, seats] = await Promise.all([
+    const [html, ks, kh, kg, nat, meta, pi, reg, base, gen, ov, nytMeta, seats, cdBase] = await Promise.all([
       fetch("index.html", { cache: "force-cache" }).then((r) => r.text()),
       getJSON("data/kalshi/all-senate.json"), getJSON("data/kalshi/all-house.json"), getJSON("data/kalshi/all-governor.json"),
       getJSON("data/kalshi/national.json"), getJSON("data/kalshi/meta.json"), getJSON("data/polls/index.json"),
       getJSON("data/registration.json"), getJSON("data/baseline-2024.json"), getJSON("data/poll-average/generic-ballot.json"),
-      getJSON("data/overview.json"), getJSON("data/polls-nyt/meta.json"), getJSON("data/seat-changes.json"),
+      getJSON("data/overview.json"), getJSON("data/polls-nyt/meta.json"), getJSON("data/seat-changes.json"), getJSON("data/baseline-2024-cd.json"),
     ]);
+    BASECD = cdBase;
     PI = (pi && pi.races) || {}; REG = reg; BASE = base; GEN = gen; NAT = nat || {}; OV = ov; SEATS = seats || {};
     const MEMBERS = constFrom(html, "MEMBERS"), RO = constFrom(html, "RATINGS_OVERRIDES");
     APP = constFrom(html, "APPORTION"); NAMES = constFrom(html, "STATE_NAMES");
@@ -767,7 +777,8 @@ function open(x) {
 }
 function header(x) {
   const off = x.t === "S" ? "SENATE" : x.t === "G" ? "GOVERNOR" : "HOUSE";
-  const pres = BASE && BASE.statePresMarginD[x.st] != null && x.t !== "H" ? `2024 pres. ${BASE.statePresMarginD[x.st] >= 0 ? "Harris" : "Trump"} +${Math.abs(BASE.statePresMarginD[x.st]).toFixed(1)}` : "";
+  const pb = base24Of(x);
+  const pres = pb != null ? `2024 pres. ${pb >= 0 ? "Harris" : "Trump"} +${Math.abs(pb).toFixed(1)}${isNewLines(x) ? " (on new 2026 lines)" : ""}` : "";
   const sc = SEATS[seatKey(x)];
   const sub = [sc ? "" : x.holder, x.rating || "", pres].filter(Boolean).join(" · ");
   const nameD = x.dName ? esc(x.dName) : `<span class="mu">${x.ind ? "Independent" : "Democrat"} TBD</span>`;
@@ -847,14 +858,14 @@ function togglePin() {
 function stats(x) {
   const n = x.t === "G" ? {} : nominees(x), p = (x._cen && x._cen.profile) || {}, rg = regFor(x);
   const coh = (c) => (c ? money(c.totals.cash_on_hand) : "–");
-  const b24 = BASE && BASE.statePresMarginD[x.st] != null ? BASE.statePresMarginD[x.st] : null;
-  const vs24 = x.t !== "H" && x.poll != null && !x.ind && b24 != null ? x.poll - b24 : null;
+  const b24 = base24Of(x);
+  const vs24 = x.poll != null && !x.ind && b24 != null ? x.poll - b24 : null;
   const cells = [
     ["POLL AVG", `<span class="${leadCls(x.poll, x.ind)}">${lead(x.poll, x.ind)}</span>`],
     ["POLLS IN AVG", x.pollN ? String(x.pollN) : "–"],
     ["MARKET", x.mkt != null ? `<span class="${favCls(x.mkt, x.ind)}">${fav(x.mkt, x.ind)}</span>` : `<span class="mu">NONE</span>`],
-    ["VS 2024 PRES", x.t === "H" ? `<span class="mu">N/A FOR HOUSE</span>` : vs24 != null ? `<span class="${leadCls(vs24)}">${lead(vs24)}</span>` : "–"],
-    ["VS NATIONAL SWING", x.vsExp != null ? `<span class="${leadCls(x.vsExp)}">${lead(x.vsExp)}</span>` : `<span class="mu">${x.t === "S" ? "–" : "SENATE ONLY"}</span>`],
+    ["VS 2024 PRES", vs24 != null ? `<span class="${leadCls(vs24)}">${lead(vs24)}</span>` : "–"],
+    ["VS NATIONAL SWING", x.vsExp != null ? `<span class="${leadCls(x.vsExp)}">${lead(x.vsExp)}</span>` : `<span class="mu">${x.t === "G" ? "N/A FOR GOV" : "–"}</span>`],
     [`CASH · ${x.dName ? lastOf(x.dName).toUpperCase() : x.ind ? "IND" : "DEM"}`, x.t === "G" ? `<span class="mu">STATE FILING</span>` : coh(n.D)],
     [`CASH · ${x.rName ? lastOf(x.rName).toUpperCase() : "REP"}`, x.t === "G" ? `<span class="mu">STATE FILING</span>` : coh(n.R)],
     [`REGISTERED D–R${rg && rg.stateOnly ? " (STATE)" : ""}`, rg ? `<span class="${leadCls(rg.r.D - rg.r.R)}">${rg.r.D >= rg.r.R ? "D" : "R"} +${kfmt(Math.abs(rg.r.D - rg.r.R))}</span>` : `<span class="mu">${REG && REG.noPartyRegistration.includes(x.st) ? "NO PARTY REG" : "N/A"}</span>`],
@@ -873,20 +884,20 @@ function mathParagraph(x, b24, vs24) {
   const B = (m, t) => `<b class="${m >= 0 ? "d" : "r"}">${t}</b>`;
   const where = x.t === "H" ? "this district" : NAMES[x.st];
   const dL = x.dName ? lastOf(x.dName) : "the Democrat", rL = x.rName ? lastOf(x.rName) : "the Republican";
-  if (x.t === "H") return `This compares a race with how the same place voted for president in 2024. We don't have 2024 presidential results broken out by congressional district yet, so House races don't get this comparison. The Senate and governor races in ${esc(NAMES[x.st])} do.`;
+  if (x.t === "H" && b24 == null) return `There's no 2024 presidential result on file for this district yet.`;
   if (x.ind) return `In 2024, ${b24 >= 0 ? "Harris" : "Trump"} won ${esc(where)} by ${pts(b24)} points. This race is an independent against a Republican, so comparing it with a Democrat-versus-Republican 2024 result would be misleading, and the terminal leaves those two numbers blank.`;
   if (b24 == null) return "";
-  const won = `In 2024, ${b24 >= 0 ? "Harris" : "Trump"} won ${esc(where)} by ${B(b24, pts(b24) + " points")}.`;
+  const won = `In 2024, ${b24 >= 0 ? "Harris" : "Trump"} won ${esc(where)} by ${B(b24, pts(b24) + " points")}${isNewLines(x) ? ` (counting the 2024 votes inside the district's new 2026 lines)` : ""}.`;
   if (x.poll == null) return `${won} There's no polling average for this race yet, so there's nothing to compare against that result.`;
   const leader = x.poll >= 0 ? dL : rL;
   let t = `${won} Today ${esc(leader)} leads the polling average by ${B(x.poll, pts(x.poll) + " points")}, which is ${B(vs24, pts(vs24) + " points better for " + party(vs24))} than the 2024 presidential result here (the "vs 2024" box).`;
-  if (x.t === "S" && x.vsExp != null && GEN && BASE) {
+  if ((x.t === "S" || x.t === "H") && x.vsExp != null && GEN && BASE) {
     const shift = GEN.margin - BASE.nationalPresMarginD, nat = BASE.nationalPresMarginD;
     t += ` Part of that is just the national mood: Trump won the national popular vote by ${pts(nat)} in 2024, and ${party(GEN.margin)} now lead the generic congressional ballot by ${pts(GEN.margin)}, a shift of ${B(shift, pts(shift) + " points toward " + party(shift))}.`
       + ` If ${esc(where)} simply moved with the country, you'd expect ${party(x.expected)} to lead here by about ${B(x.expected, pts(x.expected))}.`
       + ` The actual polls put ${esc(leader)} ahead by ${pts(x.poll)}, so ${esc(x.vsExp >= 0 ? dL : rL)} is running ${B(x.vsExp, pts(x.vsExp) + " points ahead")} of what the national shift alone would predict (the "vs national swing" box).`;
   } else if (x.t === "G") {
-    t += ` The national-swing check is only done for Senate races, because governors often run far ahead of or behind their party's presidential numbers.`;
+    t += ` The national-swing check is skipped for governors, because they often run far ahead of or behind their party's presidential numbers.`;
   }
   return t;
 }

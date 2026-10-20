@@ -633,10 +633,11 @@ async function tabMarket(l, x) {
 /* vs 2024 */
 async function tabVs24(l, x) {
   const id = raceIdOf(l, x);
-  const [base, gen, avg] = await Promise.all([cget("data/baseline-2024.json"), cget("data/poll-average/generic-ballot.json"), cget(`data/poll-average/${id}.json`)]);
-  if (l === "H") return `<p class="muted">District-by-district 2024 presidential results aren't loaded yet, so House seats can't be compared with 2024. Senate and governor races use each state's 2024 result.</p>`;
-  if (!base || base.statePresMarginD[x.st] == null) return `<p class="muted">No 2024 baseline for this state.</p>`;
-  const b = base.statePresMarginD[x.st];
+  const [base, gen, avg, cd] = await Promise.all([cget("data/baseline-2024.json"), cget("data/poll-average/generic-ballot.json"), cget(`data/poll-average/${id}.json`), cget("data/baseline-2024-cd.json")]);
+  const cdRow = l === "H" && cd ? cd.districts[`${x.st}-${pad2(x.d)}`] : null;
+  if (l === "H" && !cdRow) return `<p class="muted">District-by-district 2024 presidential results aren't loaded yet, so House seats can't be compared with 2024. Senate and governor races use each state's 2024 result.</p>`;
+  if (!base || (l !== "H" && base.statePresMarginD[x.st] == null)) return `<p class="muted">No 2024 baseline for this state.</p>`;
+  const b = l === "H" ? cdRow.marginD : base.statePresMarginD[x.st];
   const hasAvg = avg && avg.margin != null;
   const k = raceKalshi(l, x);
   if (k && k.thirdParty && k.republican) return `<p class="muted">This is an independent-vs-Republican race, so a Democratic-vs-Republican baseline doesn't apply.</p><div class="rows"><div><span>2024 presidential here</span><b>${esc(lead(b, "Harris", "Trump"))}</b></div></div>`;
@@ -659,6 +660,7 @@ async function tabVs24(l, x) {
         <p class="muted">${Math.abs(diff) < 1 ? "Polling right in line with the national environment." : `${esc(who)} is running ${Math.abs(diff).toFixed(1)} points ahead of what the national environment alone predicts here.`}</p>`;
     } else h += `</div><p class="muted">No polling average yet, so there's nothing to compare against the expectation.</p>`;
   }
+  if (l === "H") h += `<p class="credit">District 2024 result: <a href="https://www.the-downballot.com/p/the-downballots-calculations-of-presidential" target="_blank" rel="noopener">The Downballot</a>${cdRow.newLines ? ", recalculated on the new 2026 district lines" : ""}.</p>`;
   return h;
 }
 
