@@ -124,6 +124,13 @@
     <div class="scroll"><table id="senate-races"></table></div>
   </section>
 
+  <section class="card" id="cp-card" hidden>
+    <h2>Who's running ahead of their party · Senate</h2>
+    <p class="note" id="cp-explain" style="margin:0 0 12px"></p>
+    <div class="scroll"><table id="cp-table"></table></div>
+    <p class="note">Positive numbers mean the Democrat is beating the national-environment expectation; negative means the Republican is. Races with fewer than 3 polls, and independent-vs-Republican races (Nebraska), are left out.</p>
+  </section>
+
   <section class="card" id="gov-card" hidden>
     <h2>Governor races · most competitive first</h2>
     <div class="scroll"><table id="gov-races"></table></div>
@@ -232,6 +239,26 @@ function renderControl(o) {
   if (m.blueWave && m.blueWave.question) $("mkt-stats").insertAdjacentHTML("afterend", `<p class="note">Blue wave combo asks: ${esc(m.blueWave.question)}</p>`);
 }
 
+function renderPerformance(o) {
+  const c = o.candidatePerformance;
+  if (!c || !c.rows.length) return;
+  $("cp-card").hidden = false;
+  $("cp-explain").innerHTML = `Expected margin = 2024 presidential result in the state + the national shift since 2024 (generic ballot ${fmtM(c.genericMargin)} minus the 2024 popular vote ${fmtM(c.nationalPres2024)} = <b>${fmtM(c.shift)}</b>). The gap between that and the polling average is how much each candidate is beating or trailing their party.`;
+  const lead = (m, d, r) => Math.abs(m) < 0.05 ? "Tied" : m > 0 ? `${esc(d)} +${m.toFixed(1)}` : `${esc(r)} +${(-m).toFixed(1)}`;
+  const last = (n) => String(n || "").split(" ").pop();
+  $("cp-table").innerHTML = `<tr><th>State</th><th>Matchup</th><th>2024 pres.</th><th>Expected</th><th>Polls</th><th>Gap</th><th>Kalshi D</th></tr>` +
+    c.rows.map((r) => {
+      const ahead = r.overUnder >= 0 ? last(r.dem) : last(r.rep);
+      return `<tr><td>${esc(r.name)}${r.special ? ` <span class="note">special</span>` : ""}</td>
+        <td><span class="d">${esc(last(r.dem))}</span> v <span class="r">${esc(last(r.rep))}</span></td>
+        <td class="num ${r.pres2024 >= 0 ? "d" : "r"}">${fmtM(r.pres2024)}</td>
+        <td class="num ${r.expected >= 0 ? "d" : "r"}">${fmtM(r.expected)}</td>
+        <td class="num ${r.pollMargin >= 0 ? "d" : "r"}">${fmtM(r.pollMargin)} <span class="note">${r.polls}</span></td>
+        <td class="num"><b class="${r.overUnder >= 0 ? "d" : "r"}">${r.overUnder >= 0 ? "+" : ""}${r.overUnder.toFixed(1)}</b> <span class="note">${esc(ahead)} ahead</span></td>
+        <td class="num">${r.kalshiD == null ? "–" : Math.round(r.kalshiD * 100) + "%"}</td></tr>`;
+    }).join("");
+}
+
 function renderGovernors(o) {
   const g = o.governors || [];
   if (!g.length) return;
@@ -287,7 +314,7 @@ fetch("data/overview.json", { cache: "no-store" })
   .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then((o) => {
     renderWave(o); renderHouse(o); renderSenate(o); renderControl(o);
-    renderFlips(o); renderTossups(o); renderSenateRaces(o); renderGovernors(o); renderFooter(o);
+    renderFlips(o); renderTossups(o); renderSenateRaces(o); renderPerformance(o); renderGovernors(o); renderFooter(o);
   })
   .catch((e) => {
     document.querySelector("main").insertAdjacentHTML("afterbegin",
