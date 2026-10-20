@@ -1,0 +1,47 @@
+{
+  "raceId": "NY-H-04-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Impact Research",
+      "sponsors": "Protecting American Consumers Together",
+      "startDate": "2026-02-09",
+      "endDate": "2026-02-17",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://protectingamericanconsumers.org/wp-content/uploads/2026/02/IMPACT-NY-2026-Poll.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    }
+  ]
+}

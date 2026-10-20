@@ -1,0 +1,89 @@
+{
+  "raceId": "MI-H-10-2026",
+  "count": 3,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-13",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.thehousemajoritypac.com/news/hmp-poll-christina-hines-tied-with-michael-bouchard-junior-in-mi-10",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mike Bouchard (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Christina Hines (D)",
+          "party": "D",
+          "percentage": 45
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": null,
+      "startDate": "2026-01-16",
+      "endDate": "2026-01-17",
+      "sampleSize": 592,
+      "population": "RV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.the-downballot.com/p/morning-digest-why-a-top-two-lockout",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mike Bouchard (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Eric Chung (D)",
+          "party": "D",
+          "percentage": 41
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": null,
+      "startDate": "2026-01-16",
+      "endDate": "2026-01-17",
+      "sampleSize": 592,
+      "population": "RV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.the-downballot.com/p/morning-digest-why-a-top-two-lockout",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mike Bouchard (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Tim Greimel (D)",
+          "party": "D",
+          "percentage": 42
+        }
+      ],
+      "note": null
+    }
+  ]
+}

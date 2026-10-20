@@ -1,0 +1,83 @@
+{
+  "raceId": "TN-S-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Targoz Market Research",
+      "sponsors": "Beacon Center",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-26",
+      "sampleSize": 607,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://tennsight.com/polls/august-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Bill Hagerty (R)",
+          "party": "R",
+          "percentage": 58
+        },
+        {
+          "candidate": "Marquita Bradshaw (D)",
+          "party": "D",
+          "percentage": 33
+        },
+        {
+          "candidate": "Generic Candidate (I)",
+          "party": "I",
+          "percentage": 5
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Targoz Market Research",
+      "sponsors": "Beacon Center",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-26",
+      "sampleSize": 1157,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://tennsight.com/polls/august-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Bill Hagerty (R)",
+          "party": "R",
+          "percentage": 51
+        },
+        {
+          "candidate": "Marquita Bradshaw (D)",
+          "party": "D",
+          "percentage": 31
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 12
+        },
+        {
+          "candidate": "Generic Candidate (I)",
+          "party": "I",
+          "percentage": 6
+        }
+      ],
+      "note": null
+    }
+  ]
+}

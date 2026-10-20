@@ -1,0 +1,99 @@
+{
+  "raceId": "CA-H-11-2026",
+  "count": 3,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Tavern Research",
+      "sponsors": "Jobs and Democracy PAC",
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-17",
+      "sampleSize": 658,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.politico.com/newsletters/california-playbook/2026/10/02/carl-demaio-is-the-establishment-now-01104622",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Scott Wiener (D)",
+          "party": "D",
+          "percentage": 53
+        },
+        {
+          "candidate": "Connie Chan (D)",
+          "party": "D",
+          "percentage": 47
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Lake Research Partners",
+      "sponsors": null,
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-19",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.politico.com/newsletters/california-playbook/2026/07/27/bass-homelessness-setback-in-la-01012380",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Scott Wiener (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Connie Chan (D)",
+          "party": "D",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 11
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Beacon Research",
+      "sponsors": null,
+      "startDate": "2025-09-12",
+      "endDate": "2025-09-20",
+      "sampleSize": 600,
+      "population": "RV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://thehill.com/homenews/campaign/5521160-pelosi-chakrabarti-california-congressional-race-survey/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Nancy Pelosi (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Saikat Chakrabarti (D)",
+          "party": "D",
+          "percentage": 34
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 19
+        }
+      ],
+      "note": null
+    }
+  ]
+}

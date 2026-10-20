@@ -1,0 +1,68 @@
+{
+  "raceId": "FL-H-16-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": "American Democracy Project",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-02",
+      "sampleSize": 530,
+      "population": "RV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://georgekruse.substack.com/p/informed-voters-trend-toward-kirschner",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sydney Gruters (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Kelly Kirschner (D)",
+          "party": "D",
+          "percentage": 39
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "SEA Polling",
+      "sponsors": null,
+      "startDate": "2026-08-25",
+      "endDate": "2026-08-29",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://kellykirschner.com/wp-content/uploads/2026/09/0926-FL-16-Polling-Memo-1.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kelly Kirschner (D)",
+          "party": "D",
+          "percentage": 40
+        },
+        {
+          "candidate": "Sydney Gruters (R)",
+          "party": "R",
+          "percentage": 39
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 21
+        }
+      ],
+      "note": null
+    }
+  ]
+}

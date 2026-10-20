@@ -1,0 +1,68 @@
+{
+  "raceId": "GA-H-07-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "20/20 Insight",
+      "sponsors": null,
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-09",
+      "sampleSize": 457,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://kozyckiforcongress.com/docs/releases/rel-255316a80123.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Tony Kozycki (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Rich McCormick (R)",
+          "party": "R",
+          "percentage": 45
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "20/20 Insight",
+      "sponsors": null,
+      "startDate": "2026-08-20",
+      "endDate": "2026-08-26",
+      "sampleSize": 445,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.ajc.com/politics/2026/09/bottoms-data-center-stance-reflects-a-fast-changing-georgia-debate/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Rich McCormick (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Tony Kozycki (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 11
+        }
+      ],
+      "note": null
+    }
+  ]
+}

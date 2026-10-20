@@ -1,0 +1,42 @@
+{
+  "raceId": "TX-H-10-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Change Research",
+      "sponsors": null,
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-22",
+      "sampleSize": 613,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.semafor.com/article/10/01/2026/democrats-hopes-rise-in-texas",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Chris Gober (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Caitlin Rourk (D)",
+          "party": "D",
+          "percentage": 41
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 11
+        }
+      ],
+      "note": null
+    }
+  ]
+}

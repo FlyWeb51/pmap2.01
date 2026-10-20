@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T11:37:15.190Z",
+  "generatedAt": "2026-10-20T14:16:56.233Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -51,13 +51,14 @@
         "special": false,
         "kalshiD": 0.431,
         "nyt": {
-          "averageMargin": 0.3,
-          "averagePolls": 28,
+          "averageMargin": 0.6,
+          "averagePolls": 30,
           "latest": {
             "pollster": "co/efficient",
-            "endDate": "2026-10-19"
+            "endDate": "2026-10-19",
+            "margin": -3
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -68,13 +69,14 @@
         "special": false,
         "kalshiD": 0.615,
         "nyt": {
-          "averageMargin": 2.7,
-          "averagePolls": 43,
+          "averageMargin": 2.6,
+          "averagePolls": 33,
           "latest": {
-            "pollster": "CBS News/YouGov",
-            "endDate": "2026-10-16"
+            "pollster": "YouGov",
+            "endDate": "2026-10-16",
+            "margin": 2
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -85,13 +87,14 @@
         "special": false,
         "kalshiD": 0.385,
         "nyt": {
-          "averageMargin": 1.2,
-          "averagePolls": 12,
+          "averageMargin": 0.8,
+          "averagePolls": 14,
           "latest": {
             "pollster": "InsiderAdvantage",
-            "endDate": "2026-10-14"
+            "endDate": "2026-10-14",
+            "margin": -1
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -102,13 +105,14 @@
         "special": false,
         "kalshiD": 0.625,
         "nyt": {
-          "averageMargin": 2.1,
-          "averagePolls": 27,
+          "averageMargin": 1.8,
+          "averagePolls": 21,
           "latest": {
             "pollster": "InsiderAdvantage",
-            "endDate": "2026-10-14"
+            "endDate": "2026-10-14",
+            "margin": 2
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -119,13 +123,14 @@
         "special": true,
         "kalshiD": 0.645,
         "nyt": {
-          "averageMargin": 3.2,
-          "averagePolls": 24,
+          "averageMargin": 3.4,
+          "averagePolls": 22,
           "latest": {
-            "pollster": "ActiVote",
-            "endDate": "2026-10-18"
+            "pollster": "Marist University",
+            "endDate": "2026-10-18",
+            "margin": 9
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -136,13 +141,14 @@
         "special": false,
         "kalshiD": 0.685,
         "nyt": {
-          "averageMargin": 2.6,
-          "averagePolls": 53,
+          "averageMargin": 2.8,
+          "averagePolls": 33,
           "latest": {
-            "pollster": "Rasmussen Reports",
-            "endDate": "2026-10-14"
+            "pollster": "InsiderAdvantage",
+            "endDate": "2026-10-10",
+            "margin": 2.299999999999997
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -152,7 +158,16 @@
         "holder": "R",
         "special": false,
         "kalshiD": 0.275,
-        "nyt": null
+        "nyt": {
+          "averageMargin": -1.7,
+          "averagePolls": 8,
+          "latest": {
+            "pollster": "National Public Affairs",
+            "endDate": "2026-10-05",
+            "margin": -3
+          },
+          "source": "NYT"
+        }
       },
       {
         "state": "AK",
@@ -163,12 +178,13 @@
         "kalshiD": 0.745,
         "nyt": {
           "averageMargin": 2.3,
-          "averagePolls": 14,
+          "averagePolls": 17,
           "latest": {
-            "pollster": "Public Policy Polling",
-            "endDate": "2026-10-15"
+            "pollster": "InsiderAdvantage",
+            "endDate": "2026-10-10",
+            "margin": 5.600000000000001
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -179,13 +195,14 @@
         "special": false,
         "kalshiD": 0.165,
         "nyt": {
-          "averageMargin": -3.1,
-          "averagePolls": 9,
+          "averageMargin": -2.2,
+          "averagePolls": 7,
           "latest": {
             "pollster": "Trafalgar Group",
-            "endDate": "2026-10-18"
+            "endDate": "2026-10-18",
+            "margin": -3
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -196,13 +213,14 @@
         "special": false,
         "kalshiD": 0.865,
         "nyt": {
-          "averageMargin": 3.1,
-          "averagePolls": 17,
+          "averageMargin": 3.3,
+          "averagePolls": 14,
           "latest": {
             "pollster": "Trafalgar Group",
-            "endDate": "2026-10-15"
+            "endDate": "2026-10-15",
+            "margin": 3.5
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -213,13 +231,14 @@
         "special": false,
         "kalshiD": 0.115,
         "nyt": {
-          "averageMargin": -4.3,
-          "averagePolls": 2,
+          "averageMargin": -4,
+          "averagePolls": 1,
           "latest": {
             "pollster": "Wedgewood Polls",
-            "endDate": "2026-10-14"
+            "endDate": "2026-10-14",
+            "margin": -4
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -230,13 +249,14 @@
         "special": false,
         "kalshiD": 0.895,
         "nyt": {
-          "averageMargin": 6.5,
-          "averagePolls": 12,
+          "averageMargin": 5.9,
+          "averagePolls": 13,
           "latest": {
             "pollster": "National Public Affairs",
-            "endDate": "2026-10-12"
+            "endDate": "2026-10-12",
+            "margin": 5
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -247,13 +267,14 @@
         "special": true,
         "kalshiD": 0.091,
         "nyt": {
-          "averageMargin": -6.3,
-          "averagePolls": 13,
+          "averageMargin": -7,
+          "averagePolls": 15,
           "latest": {
-            "pollster": "ActiVote",
-            "endDate": "2026-10-15"
+            "pollster": "YouGov",
+            "endDate": "2026-10-15",
+            "margin": -9
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -264,13 +285,14 @@
         "special": false,
         "kalshiD": 0.052000000000000005,
         "nyt": {
-          "averageMargin": -8.3,
-          "averagePolls": 5,
+          "averageMargin": -9.4,
+          "averagePolls": 2,
           "latest": {
             "pollster": "Hendrix College",
-            "endDate": "2026-10-13"
+            "endDate": "2026-10-13",
+            "margin": -9
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -290,13 +312,14 @@
         "special": false,
         "kalshiD": 0.951,
         "nyt": {
-          "averageMargin": 8.5,
-          "averagePolls": 13,
+          "averageMargin": 8.6,
+          "averagePolls": 11,
           "latest": {
             "pollster": "Quantus Insights",
-            "endDate": "2026-10-17"
+            "endDate": "2026-10-17",
+            "margin": 7.300000000000004
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -307,13 +330,14 @@
         "special": false,
         "kalshiD": 0.956,
         "nyt": {
-          "averageMargin": 9.9,
-          "averagePolls": 41,
+          "averageMargin": 10.5,
+          "averagePolls": 24,
           "latest": {
             "pollster": "SurveyUSA",
-            "endDate": "2026-10-11"
+            "endDate": "2026-10-11",
+            "margin": 14
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -324,13 +348,14 @@
         "special": false,
         "kalshiD": 0.04,
         "nyt": {
-          "averageMargin": -20,
-          "averagePolls": 1,
+          "averageMargin": -22.2,
+          "averagePolls": 2,
           "latest": {
             "pollster": "Targoz Market Research",
-            "endDate": "2026-08-26"
+            "endDate": "2026-08-26",
+            "margin": -25
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -345,9 +370,10 @@
           "averagePolls": 1,
           "latest": {
             "pollster": "Global Strategy Group",
-            "endDate": "2026-08-27"
+            "endDate": "2026-08-27",
+            "margin": -9
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -388,9 +414,10 @@
           "averagePolls": 3,
           "latest": {
             "pollster": "Research & Polling Inc.",
-            "endDate": "2026-10-09"
+            "endDate": "2026-10-09",
+            "margin": 16
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -419,13 +446,14 @@
         "special": false,
         "kalshiD": 0.981,
         "nyt": {
-          "averageMargin": 23.1,
-          "averagePolls": 4,
+          "averageMargin": 26.2,
+          "averagePolls": 6,
           "latest": {
-            "pollster": "MassINC Polling Group",
-            "endDate": "2026-09-22"
+            "pollster": "Suffolk University",
+            "endDate": "2026-10-18",
+            "margin": 28.2
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -437,12 +465,13 @@
         "kalshiD": 0.019,
         "nyt": {
           "averageMargin": -21,
-          "averagePolls": 1,
+          "averagePolls": 2,
           "latest": {
-            "pollster": "RMG Research",
-            "endDate": "2026-09-25"
+            "pollster": "The Alabama Poll",
+            "endDate": "2026-10-16",
+            "margin": -21
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -466,9 +495,10 @@
           "averagePolls": 1,
           "latest": {
             "pollster": "Public Policy Polling",
-            "endDate": "2026-10-01"
+            "endDate": "2026-10-01",
+            "margin": 13
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -479,13 +509,14 @@
         "special": false,
         "kalshiD": 0.9890000000000001,
         "nyt": {
-          "averageMargin": 27.5,
-          "averagePolls": 3,
+          "averageMargin": 27.2,
+          "averagePolls": 4,
           "latest": {
-            "pollster": "Emerson College/WPRI-TV",
-            "endDate": "2026-10-11"
+            "pollster": "Emerson College",
+            "endDate": "2026-10-11",
+            "margin": 33.69
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -514,13 +545,14 @@
         "special": false,
         "kalshiD": 0.004,
         "nyt": {
-          "averageMargin": -22.6,
-          "averagePolls": 12,
+          "averageMargin": -25.6,
+          "averagePolls": 7,
           "latest": {
-            "pollster": "Peak Insights",
-            "endDate": "2026-10-12"
+            "pollster": "Quantus Insights",
+            "endDate": "2026-10-18",
+            "margin": -24.400000000000002
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -553,9 +585,10 @@
           "averagePolls": 1,
           "latest": {
             "pollster": "Hart Research Associates",
-            "endDate": "2026-09-19"
+            "endDate": "2026-09-19",
+            "margin": -4
           },
-          "source": "site"
+          "source": "NYT"
         }
       }
     ]
@@ -813,7 +846,16 @@
       "kalshiD": 0.5,
       "dem": "Keisha Lance Bottoms",
       "rep": "Rick Jackson",
-      "poll": null
+      "poll": {
+        "averageMargin": -1.6,
+        "averagePolls": 10,
+        "latest": {
+          "pollster": "Quantus Insights",
+          "endDate": "2026-10-17",
+          "margin": -1.5
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "NV",
@@ -821,7 +863,16 @@
       "kalshiD": 0.574,
       "dem": "Aaron Ford",
       "rep": "Joe Lombardo",
-      "poll": null
+      "poll": {
+        "averageMargin": -0.9,
+        "averagePolls": 3,
+        "latest": {
+          "pollster": "Noble Predictive Insights",
+          "endDate": "2026-09-26",
+          "margin": -1
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "OH",
@@ -829,7 +880,16 @@
       "kalshiD": 0.718,
       "dem": "Amy Acton",
       "rep": "Vivek Ramaswamy",
-      "poll": null
+      "poll": {
+        "averageMargin": 4.2,
+        "averagePolls": 13,
+        "latest": {
+          "pollster": "ActiVote",
+          "endDate": "2026-10-19",
+          "margin": -2.799999999999997
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "TX",
@@ -837,7 +897,16 @@
       "kalshiD": 0.245,
       "dem": "Gina Hinojosa",
       "rep": "Greg Abbott",
-      "poll": null
+      "poll": {
+        "averageMargin": -2.1,
+        "averagePolls": 28,
+        "latest": {
+          "pollster": "YouGov",
+          "endDate": "2026-10-16",
+          "margin": -4
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "VT",
@@ -845,7 +914,16 @@
       "kalshiD": 0.243,
       "dem": "Amanda Janoo",
       "rep": "Phil Scott",
-      "poll": null
+      "poll": {
+        "averageMargin": -3.3,
+        "averagePolls": 4,
+        "latest": {
+          "pollster": "State Navigate",
+          "endDate": "2026-10-04",
+          "margin": -3
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "WI",
@@ -853,7 +931,16 @@
       "kalshiD": 0.8029999999999999,
       "dem": "David Crowley",
       "rep": "Tom Tiffany",
-      "poll": null
+      "poll": {
+        "averageMargin": 3.2,
+        "averagePolls": 4,
+        "latest": {
+          "pollster": "YouGov",
+          "endDate": "2026-10-09",
+          "margin": 4
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "FL",
@@ -861,7 +948,16 @@
       "kalshiD": 0.18899999999999997,
       "dem": "David Jolly",
       "rep": "Byron Donalds",
-      "poll": null
+      "poll": {
+        "averageMargin": -4.9,
+        "averagePolls": 16,
+        "latest": {
+          "pollster": "ActiVote",
+          "endDate": "2026-10-19",
+          "margin": -3.4000000000000057
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "OR",
@@ -869,7 +965,16 @@
       "kalshiD": 0.815,
       "dem": "Tina Kotek",
       "rep": "Christine Drazan",
-      "poll": null
+      "poll": {
+        "averageMargin": 1,
+        "averagePolls": 4,
+        "latest": {
+          "pollster": "GBAO",
+          "endDate": "2026-10-04",
+          "margin": 4
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "IA",
@@ -877,7 +982,16 @@
       "kalshiD": 0.866,
       "dem": "Rob Sand",
       "rep": "Zach Lahn",
-      "poll": null
+      "poll": {
+        "averageMargin": 7.6,
+        "averagePolls": 20,
+        "latest": {
+          "pollster": "co/efficient",
+          "endDate": "2026-10-19",
+          "margin": 4
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "NE",
@@ -885,7 +999,16 @@
       "kalshiD": 0.111,
       "dem": "Lynne Walz",
       "rep": "Jim Pillen",
-      "poll": null
+      "poll": {
+        "averageMargin": -3.3,
+        "averagePolls": 9,
+        "latest": {
+          "pollster": "Public Policy Polling",
+          "endDate": "2026-10-14",
+          "margin": -2
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "OK",
@@ -893,7 +1016,16 @@
       "kalshiD": 0.096,
       "dem": "Cyndi Munson",
       "rep": "Mike Mazzei",
-      "poll": null
+      "poll": {
+        "averageMargin": -4,
+        "averagePolls": 1,
+        "latest": {
+          "pollster": "Workbench Strategy",
+          "endDate": "2026-10-13",
+          "margin": -4
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "AZ",
@@ -901,7 +1033,16 @@
       "kalshiD": 0.9059999999999999,
       "dem": "Katie Hobbs",
       "rep": "Andy Biggs",
-      "poll": null
+      "poll": {
+        "averageMargin": 10.2,
+        "averagePolls": 4,
+        "latest": {
+          "pollster": "HighGround",
+          "endDate": "2026-10-08",
+          "margin": 16.799999999999997
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "MI",
@@ -909,7 +1050,16 @@
       "kalshiD": 0.915,
       "dem": "Jocelyn Benson",
       "rep": "John James",
-      "poll": null
+      "poll": {
+        "averageMargin": 7.7,
+        "averagePolls": 17,
+        "latest": {
+          "pollster": "Wedgewood Polls",
+          "endDate": "2026-10-09",
+          "margin": 10
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "AL",
@@ -917,7 +1067,16 @@
       "kalshiD": 0.07,
       "dem": "Doug Jones",
       "rep": "Tommy Tuberville",
-      "poll": null
+      "poll": {
+        "averageMargin": -12.2,
+        "averagePolls": 2,
+        "latest": {
+          "pollster": "The Alabama Poll",
+          "endDate": "2026-10-16",
+          "margin": -12
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "SC",
@@ -933,7 +1092,16 @@
       "kalshiD": 0.932,
       "dem": "Deb Haaland",
       "rep": "Greggory D. Hull",
-      "poll": null
+      "poll": {
+        "averageMargin": 6.6,
+        "averagePolls": 3,
+        "latest": {
+          "pollster": "Research & Polling Inc.",
+          "endDate": "2026-10-09",
+          "margin": 7
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "ME",
@@ -941,7 +1109,16 @@
       "kalshiD": 0.938,
       "dem": "Hannah Pingree",
       "rep": "Robert Charles",
-      "poll": null
+      "poll": {
+        "averageMargin": 11.4,
+        "averagePolls": 13,
+        "latest": {
+          "pollster": "Suffolk University",
+          "endDate": "2026-10-11",
+          "margin": 11
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "NY",
@@ -949,7 +1126,16 @@
       "kalshiD": 0.946,
       "dem": "Kathy Hochul",
       "rep": "Bruce Blakeman",
-      "poll": null
+      "poll": {
+        "averageMargin": 12.6,
+        "averagePolls": 7,
+        "latest": {
+          "pollster": "Beacon Research",
+          "endDate": "2026-10-06",
+          "margin": 22
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "MN",
@@ -957,7 +1143,16 @@
       "kalshiD": 0.95,
       "dem": "Amy Klobuchar",
       "rep": "Lisa Demuth",
-      "poll": null
+      "poll": {
+        "averageMargin": 7.7,
+        "averagePolls": 7,
+        "latest": {
+          "pollster": "SurveyUSA",
+          "endDate": "2026-10-12",
+          "margin": 7
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "TN",
@@ -965,7 +1160,16 @@
       "kalshiD": 0.048,
       "dem": "Jerri Green",
       "rep": "Marsha Blackburn",
-      "poll": null
+      "poll": {
+        "averageMargin": -14,
+        "averagePolls": 3,
+        "latest": {
+          "pollster": "TargetSmart",
+          "endDate": "2026-09-12",
+          "margin": -9
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "MA",
@@ -973,7 +1177,16 @@
       "kalshiD": 0.9540000000000001,
       "dem": "Maura Healey",
       "rep": "Mike Minogue",
-      "poll": null
+      "poll": {
+        "averageMargin": 22.8,
+        "averagePolls": 6,
+        "latest": {
+          "pollster": "Suffolk University",
+          "endDate": "2026-10-18",
+          "margin": 22.6
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "IL",
@@ -981,7 +1194,16 @@
       "kalshiD": 0.958,
       "dem": "JB Pritzker",
       "rep": "Darren Bailey",
-      "poll": null
+      "poll": {
+        "averageMargin": 20,
+        "averagePolls": 1,
+        "latest": {
+          "pollster": "Public Policy Polling",
+          "endDate": "2026-10-01",
+          "margin": 20
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "CT",
@@ -989,7 +1211,16 @@
       "kalshiD": 0.9640000000000001,
       "dem": "Ned Lamont",
       "rep": "Ryan Fazio",
-      "poll": null
+      "poll": {
+        "averageMargin": 19.8,
+        "averagePolls": 11,
+        "latest": {
+          "pollster": "GreatBlue Research",
+          "endDate": "2026-10-12",
+          "margin": 27.200000000000003
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "CO",
@@ -1005,7 +1236,16 @@
       "kalshiD": 0.9670000000000001,
       "dem": "Josh Shapiro",
       "rep": "Stacy Garrity",
-      "poll": null
+      "poll": {
+        "averageMargin": 24.5,
+        "averagePolls": 9,
+        "latest": {
+          "pollster": "Bravo Group",
+          "endDate": "2026-10-11",
+          "margin": 30.13
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "CA",
@@ -1013,7 +1253,16 @@
       "kalshiD": 0.968,
       "dem": "Xavier Becerra",
       "rep": "Steve Hilton",
-      "poll": null
+      "poll": {
+        "averageMargin": 19,
+        "averagePolls": 8,
+        "latest": {
+          "pollster": "ActiVote",
+          "endDate": "2026-10-16",
+          "margin": 25.599999999999994
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "SD",
@@ -1021,7 +1270,16 @@
       "kalshiD": 0.025,
       "dem": "Dan Ahlers",
       "rep": "Larry Rhoden",
-      "poll": null
+      "poll": {
+        "averageMargin": -19.3,
+        "averagePolls": 2,
+        "latest": {
+          "pollster": "Mason-Dixon Polling & Research, Inc.",
+          "endDate": "2026-10-14",
+          "margin": -20
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "AR",
@@ -1029,7 +1287,16 @@
       "kalshiD": 0.024,
       "dem": "Fred Love",
       "rep": "Sarah Huckabee Sanders",
-      "poll": null
+      "poll": {
+        "averageMargin": -19,
+        "averagePolls": 1,
+        "latest": {
+          "pollster": "Hendrix College",
+          "endDate": "2026-10-13",
+          "margin": -19
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "MD",
@@ -1037,7 +1304,16 @@
       "kalshiD": 0.977,
       "dem": "Wes Moore",
       "rep": "Dan Cox",
-      "poll": null
+      "poll": {
+        "averageMargin": 27,
+        "averagePolls": 1,
+        "latest": {
+          "pollster": "UMBC Institute of Politics",
+          "endDate": "2026-09-27",
+          "margin": 27
+        },
+        "source": "NYT"
+      }
     },
     {
       "state": "ID",
@@ -1069,7 +1345,16 @@
       "kalshiD": 0.996,
       "dem": "Helena Foulkes",
       "rep": "Aaron Guckian",
-      "poll": null
+      "poll": {
+        "averageMargin": 26.5,
+        "averagePolls": 10,
+        "latest": {
+          "pollster": "Emerson College",
+          "endDate": "2026-10-11",
+          "margin": 35.66
+        },
+        "source": "NYT"
+      }
     }
   ],
   "candidatePerformance": {
@@ -1639,7 +1924,11 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-20T11:37:15.137Z",
-    "nytUpdated": null,
-    "nytAttribution": null
+    "nytUpdated": "2026-10-20T14:16:56.161Z",
+    "nytAttribution": {
+      "text": "Polling data: The New York Times, licensed CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+    }
   }
 }

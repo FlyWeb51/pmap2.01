@@ -1,0 +1,42 @@
+{
+  "raceId": "SD-H-01-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Lake Research Partners",
+      "sponsors": null,
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-30",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/SoDakDems/status/2105413020264357970",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Marty Jackley (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Nikki Gronli (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        }
+      ],
+      "note": null
+    }
+  ]
+}

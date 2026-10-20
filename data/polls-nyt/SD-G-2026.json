@@ -1,0 +1,99 @@
+{
+  "raceId": "SD-G-2026",
+  "count": 3,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Mason-Dixon Polling & Research, Inc.",
+      "sponsors": null,
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.sdnewswatch.org/south-dakota-poll-2026-governor-ahlers-rhoden/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Larry Rhoden (R)",
+          "party": "R",
+          "percentage": 56
+        },
+        {
+          "candidate": "Daniel P. Ahlers (D)",
+          "party": "D",
+          "percentage": 36
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Lake Research Partners",
+      "sponsors": null,
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-30",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/SoDakDems/status/2105413020264357970",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Larry Rhoden (R)",
+          "party": "R",
+          "percentage": 51
+        },
+        {
+          "candidate": "Daniel P. Ahlers (D)",
+          "party": "D",
+          "percentage": 44
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Emerson College",
+      "sponsors": "KELO-TV",
+      "startDate": "2026-07-12",
+      "endDate": "2026-07-13",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://emersoncollegepolling.com/south-dakota-2026-poll-larry-rhoden-leads-toby-doeden-for-runoff-election/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Larry Rhoden (R)",
+          "party": "R",
+          "percentage": 61.5
+        },
+        {
+          "candidate": "Toby Doeden (R)",
+          "party": "R",
+          "percentage": 31.7
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.9
+        }
+      ],
+      "note": null
+    }
+  ]
+}

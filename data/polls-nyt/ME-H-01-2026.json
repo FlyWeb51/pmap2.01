@@ -1,0 +1,47 @@
+{
+  "raceId": "ME-H-01-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "sponsors": null,
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-21",
+      "sampleSize": 657,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1007/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Chellie Pingree (D)",
+          "party": "D",
+          "percentage": 57
+        },
+        {
+          "candidate": "Ronald Russell (R)",
+          "party": "R",
+          "percentage": 35
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    }
+  ]
+}

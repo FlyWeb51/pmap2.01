@@ -1,0 +1,42 @@
+{
+  "raceId": "IL-S-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": "Chicago News Weekly",
+      "startDate": "2026-09-30",
+      "endDate": "2026-10-01",
+      "sampleSize": 569,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.cnwmedia.com/article/cnw-poll-pritzker-leads-bailey-by-20-points-democrats-ahead-in-four-other-statewide-races",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Juliana Stratton (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Don Tracy (R)",
+          "party": "R",
+          "percentage": 36
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 15
+        }
+      ],
+      "note": null
+    }
+  ]
+}

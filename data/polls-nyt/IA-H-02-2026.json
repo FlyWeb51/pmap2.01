@@ -1,0 +1,68 @@
+{
+  "raceId": "IA-H-02-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-07-14",
+      "endDate": "2026-07-19",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://static.notus.org/27/58/c93f2d1946c0814f583fa25c7a31/hmp-ia-02-poll.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Lindsay James (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Joe Mitchell (R)",
+          "party": "R",
+          "percentage": 45
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": null,
+      "startDate": "2026-04-13",
+      "endDate": "2026-04-14",
+      "sampleSize": 673,
+      "population": "RV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/jamesd0wns/status/2049820806016860519",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Lindsay James (D)",
+          "party": "D",
+          "percentage": 36
+        },
+        {
+          "candidate": "Joe Mitchell (R)",
+          "party": "R",
+          "percentage": 33
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 31
+        }
+      ],
+      "note": null
+    }
+  ]
+}

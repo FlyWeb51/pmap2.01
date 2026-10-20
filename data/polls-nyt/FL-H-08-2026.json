@@ -1,0 +1,42 @@
+{
+  "raceId": "FL-H-08-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": null,
+      "startDate": "2026-07-17",
+      "endDate": "2026-07-18",
+      "sampleSize": 633,
+      "population": "RV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://floridapolitics.com/archives/810254-jennifer-jenkins-poll/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mike Haridopolos (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Jennifer Jenkins (D)",
+          "party": "D",
+          "percentage": 35
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 21
+        }
+      ],
+      "note": null
+    }
+  ]
+}

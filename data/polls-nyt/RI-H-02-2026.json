@@ -1,0 +1,73 @@
+{
+  "raceId": "RI-H-02-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": "WPRI-TV",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-11",
+      "sampleSize": 406,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.wpri.com/news/elections/5p-wpri-emerson-poll-story/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Seth M. Magaziner (D)",
+          "party": "D",
+          "percentage": 55.18
+        },
+        {
+          "candidate": "Victor Mellor (R)",
+          "party": "R",
+          "percentage": 39.12
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5.7
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Embold Research",
+      "sponsors": "Salve Regina University Pell Center for International Relations and Public Policy",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-08",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://salve.edu/news/news-listing/pell-center-survey-foulkes-leads-governors-race-11-points-lieutenant-governor-contest-deadlocked",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Seth M. Magaziner (D)",
+          "party": "D",
+          "percentage": 52
+        },
+        {
+          "candidate": "Victor Mellor (R)",
+          "party": "R",
+          "percentage": 39
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7
+        }
+      ],
+      "note": null
+    }
+  ]
+}

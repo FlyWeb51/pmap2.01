@@ -1,0 +1,73 @@
+{
+  "raceId": "CA-H-34-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Center for Strategic Politics",
+      "sponsors": null,
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-12",
+      "sampleSize": 416,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://stratpolitics.org/wp-content/uploads/2026/10/CA-34-General-Election-Poll-Memo-October-2026.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Angela Gonzales-Torres (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Jimmy Gomez (D)",
+          "party": "D",
+          "percentage": 38
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 14
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Upswing Research",
+      "sponsors": "Guardrails Alliance",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-05",
+      "sampleSize": 403,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.semafor.com/article/09/10/2026/california-dem-faces-election-turbulence",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Angela Gonzales-Torres (D)",
+          "party": "D",
+          "percentage": 41
+        },
+        {
+          "candidate": "Jimmy Gomez (D)",
+          "party": "D",
+          "percentage": 38
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 20
+        }
+      ],
+      "note": null
+    }
+  ]
+}

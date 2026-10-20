@@ -1,0 +1,37 @@
+{
+  "raceId": "NC-H-03-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Tulchin Research",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-02",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.ms.now/news/house-democrats-map-trump-midterms-money",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Greg Murphy (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Raymond Smith Jr. (D)",
+          "party": "D",
+          "percentage": 41
+        }
+      ],
+      "note": null
+    }
+  ]
+}

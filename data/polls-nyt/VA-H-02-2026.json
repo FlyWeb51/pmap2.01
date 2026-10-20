@@ -1,0 +1,73 @@
+{
+  "raceId": "VA-H-02-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Christopher Newport University",
+      "sponsors": null,
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-10",
+      "sampleSize": 702,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://cnu.edu/wason/surveys/archive/2026-10-14.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Elaine G. Luria (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Jen Kiggans (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 10
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Tulchin Research",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-07-09",
+      "endDate": "2026-07-13",
+      "sampleSize": 700,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.politico.com/newsletters/playbook/2026/07/24/dinner-with-a-side-of-vicious-01011141?template_id=OT5J0E7B7DD7&is_login_link=true",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jen Kiggans (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Elaine G. Luria (D)",
+          "party": "D",
+          "percentage": 47
+        }
+      ],
+      "note": null
+    }
+  ]
+}

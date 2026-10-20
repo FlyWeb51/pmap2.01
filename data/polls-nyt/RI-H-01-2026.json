@@ -1,0 +1,83 @@
+{
+  "raceId": "RI-H-01-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": "WPRI-TV",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-11",
+      "sampleSize": 394,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.wpri.com/news/elections/5p-wpri-emerson-poll-story/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Gabe Amo (D)",
+          "party": "D",
+          "percentage": 53.93
+        },
+        {
+          "candidate": "Kellie Keenan (R)",
+          "party": "R",
+          "percentage": 25.87
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 14.05
+        },
+        {
+          "candidate": "Pedro DeSouza (I)",
+          "party": "I",
+          "percentage": 6.14
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Embold Research",
+      "sponsors": "Salve Regina University Pell Center for International Relations and Public Policy",
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-08",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://salve.edu/news/news-listing/pell-center-survey-foulkes-leads-governors-race-11-points-lieutenant-governor-contest-deadlocked",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Gabe Amo (D)",
+          "party": "D",
+          "percentage": 52
+        },
+        {
+          "candidate": "Kellie Keenan (R)",
+          "party": "R",
+          "percentage": 33
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 10
+        },
+        {
+          "candidate": "Pedro DeSouza (I)",
+          "party": "I",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    }
+  ]
+}

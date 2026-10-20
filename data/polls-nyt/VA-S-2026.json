@@ -1,0 +1,37 @@
+{
+  "raceId": "VA-S-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Responsive Management",
+      "sponsors": "Virginia Commonwealth University",
+      "startDate": "2024-12-18",
+      "endDate": "2025-01-15",
+      "sampleSize": 806,
+      "population": "A",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://wilder.vcu.edu/news-and-events/news-posts/commonwealth-poll-virginians-overwhelmingly-concerned-about-cost-of-living.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mark Warner (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Glenn Youngkin (R)",
+          "party": "R",
+          "percentage": 38
+        }
+      ],
+      "note": null
+    }
+  ]
+}

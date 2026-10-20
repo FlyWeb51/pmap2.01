@@ -1,0 +1,73 @@
+{
+  "raceId": "IL-G-2026",
+  "count": 2,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": "Chicago News Weekly",
+      "startDate": "2026-09-30",
+      "endDate": "2026-10-01",
+      "sampleSize": 569,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.cnwmedia.com/article/cnw-poll-pritzker-leads-bailey-by-20-points-democrats-ahead-in-four-other-statewide-races",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "JB Pritzker (D)",
+          "party": "D",
+          "percentage": 54
+        },
+        {
+          "candidate": "Darren Bailey (R)",
+          "party": "R",
+          "percentage": 34
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        },
+        {
+          "candidate": "Collin Corbett (I)",
+          "party": "I",
+          "percentage": 6
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Victory Research",
+      "sponsors": null,
+      "startDate": "2025-11-20",
+      "endDate": "2025-11-24",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.fox32chicago.com/news/illinois-jb-pritzker-poll-nov-25",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "JB Pritzker (D)",
+          "party": "D",
+          "percentage": 54.3
+        },
+        {
+          "candidate": "Darren Bailey (R)",
+          "party": "R",
+          "percentage": 34
+        }
+      ],
+      "note": null
+    }
+  ]
+}
