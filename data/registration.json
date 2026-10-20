@@ -1,0 +1,1470 @@
+{
+ "_about": "Voter registration by party from each state's election office. 'npa' = no party / unaffiliated (label per state). Only states that register voters by party are listed. Every row's D + R + npa + other = total.",
+ "updated": "2026-10-20",
+ "noPartyRegistration": [
+  "AL",
+  "AR",
+  "GA",
+  "HI",
+  "IL",
+  "IN",
+  "MI",
+  "MN",
+  "MS",
+  "MO",
+  "MT",
+  "ND",
+  "OH",
+  "SC",
+  "TN",
+  "TX",
+  "VT",
+  "VA",
+  "WA",
+  "WI"
+ ],
+ "notAvailable": {
+  "AK": "Alaska registers by party, but its statistics site requires a human verification check, so it isn't collected automatically.",
+  "NH": "New Hampshire publishes party totals only around elections; no 2026 statewide file is posted yet.",
+  "RI": "Rhode Island doesn't post a statewide party breakdown file online."
+ },
+ "states": {
+  "AZ": {
+   "asOf": "2026-07-07",
+   "report": "Active voter registration, 2026 primary election book close",
+   "source": "https://apps.azsos.gov/election/VoterReg/2026/State-Voter-Registration_July_2026.pdf",
+   "npaLabel": "Other / party not designated",
+   "activeOnly": true,
+   "statewide": {
+    "D": 1210510,
+    "R": 1523886,
+    "npa": 1490185,
+    "other": 81973,
+    "total": 4306554
+   },
+   "districts": {
+    "01": {
+     "D": 135360,
+     "R": 194041,
+     "npa": 170733,
+     "other": 8709,
+     "total": 508843
+    },
+    "02": {
+     "D": 151616,
+     "R": 213091,
+     "npa": 169226,
+     "other": 10244,
+     "total": 544177
+    },
+    "03": {
+     "D": 140242,
+     "R": 48863,
+     "npa": 133930,
+     "other": 7135,
+     "total": 330170
+    },
+    "04": {
+     "D": 124122,
+     "R": 133169,
+     "npa": 149934,
+     "other": 8927,
+     "total": 416152
+    },
+    "05": {
+     "D": 114074,
+     "R": 228723,
+     "npa": 185371,
+     "other": 9493,
+     "total": 537661
+    },
+    "06": {
+     "D": 159568,
+     "R": 190711,
+     "npa": 178264,
+     "other": 9551,
+     "total": 538094
+    },
+    "07": {
+     "D": 166387,
+     "R": 86604,
+     "npa": 160240,
+     "other": 7865,
+     "total": 421096
+    },
+    "08": {
+     "D": 112616,
+     "R": 192194,
+     "npa": 155708,
+     "other": 8916,
+     "total": 469434
+    },
+    "09": {
+     "D": 106525,
+     "R": 236490,
+     "npa": 186779,
+     "other": 11133,
+     "total": 540927
+    }
+   }
+  },
+  "CA": {
+   "asOf": "2026-09-04",
+   "report": "60-Day Report of Registration, Nov 3 2026 General",
+   "source": "https://elections.cdn.sos.ca.gov/ror/60day-gen-2026/congressional.pdf",
+   "npaLabel": "No Party Preference",
+   "activeOnly": false,
+   "statewide": {
+    "D": 10405618,
+    "R": 5747193,
+    "npa": 5313596,
+    "other": 1698570,
+    "total": 23164977
+   },
+   "districts": {
+    "01": {
+     "D": 186302,
+     "R": 141961,
+     "npa": 87340,
+     "other": 41624,
+     "total": 457227
+    },
+    "02": {
+     "D": 220032,
+     "R": 135992,
+     "npa": 94285,
+     "other": 41876,
+     "total": 492185
+    },
+    "03": {
+     "D": 185666,
+     "R": 148779,
+     "npa": 100179,
+     "other": 43145,
+     "total": 477769
+    },
+    "04": {
+     "D": 195789,
+     "R": 134659,
+     "npa": 92687,
+     "other": 38564,
+     "total": 461699
+    },
+    "05": {
+     "D": 144613,
+     "R": 216593,
+     "npa": 90203,
+     "other": 42714,
+     "total": 494123
+    },
+    "06": {
+     "D": 179972,
+     "R": 140319,
+     "npa": 100322,
+     "other": 39591,
+     "total": 460204
+    },
+    "07": {
+     "D": 201167,
+     "R": 135432,
+     "npa": 101349,
+     "other": 37863,
+     "total": 475811
+    },
+    "08": {
+     "D": 234275,
+     "R": 89082,
+     "npa": 99679,
+     "other": 31822,
+     "total": 454858
+    },
+    "09": {
+     "D": 189530,
+     "R": 104228,
+     "npa": 94441,
+     "other": 32346,
+     "total": 420545
+    },
+    "10": {
+     "D": 241548,
+     "R": 110669,
+     "npa": 114114,
+     "other": 34212,
+     "total": 500543
+    },
+    "11": {
+     "D": 298149,
+     "R": 34283,
+     "npa": 112034,
+     "other": 26086,
+     "total": 470552
+    },
+    "12": {
+     "D": 303925,
+     "R": 27834,
+     "npa": 99399,
+     "other": 24483,
+     "total": 455641
+    },
+    "13": {
+     "D": 144559,
+     "R": 94746,
+     "npa": 81628,
+     "other": 27275,
+     "total": 348208
+    },
+    "14": {
+     "D": 211322,
+     "R": 73306,
+     "npa": 117209,
+     "other": 23611,
+     "total": 425448
+    },
+    "15": {
+     "D": 233528,
+     "R": 58997,
+     "npa": 110670,
+     "other": 24634,
+     "total": 427829
+    },
+    "16": {
+     "D": 236658,
+     "R": 74451,
+     "npa": 124284,
+     "other": 23847,
+     "total": 459240
+    },
+    "17": {
+     "D": 187454,
+     "R": 60609,
+     "npa": 119831,
+     "other": 17598,
+     "total": 385492
+    },
+    "18": {
+     "D": 191544,
+     "R": 74594,
+     "npa": 88439,
+     "other": 24642,
+     "total": 379219
+    },
+    "19": {
+     "D": 241189,
+     "R": 108479,
+     "npa": 109902,
+     "other": 34698,
+     "total": 494268
+    },
+    "20": {
+     "D": 118303,
+     "R": 212199,
+     "npa": 86987,
+     "other": 39258,
+     "total": 456747
+    },
+    "21": {
+     "D": 146577,
+     "R": 97227,
+     "npa": 84008,
+     "other": 31966,
+     "total": 359778
+    },
+    "22": {
+     "D": 134553,
+     "R": 82208,
+     "npa": 77161,
+     "other": 25872,
+     "total": 319794
+    },
+    "23": {
+     "D": 139059,
+     "R": 164303,
+     "npa": 93340,
+     "other": 43223,
+     "total": 439925
+    },
+    "24": {
+     "D": 204383,
+     "R": 120069,
+     "npa": 91794,
+     "other": 37396,
+     "total": 453642
+    },
+    "25": {
+     "D": 177542,
+     "R": 118667,
+     "npa": 94480,
+     "other": 32588,
+     "total": 423277
+    },
+    "26": {
+     "D": 203971,
+     "R": 132870,
+     "npa": 101619,
+     "other": 36415,
+     "total": 474875
+    },
+    "27": {
+     "D": 195572,
+     "R": 125926,
+     "npa": 106658,
+     "other": 35640,
+     "total": 463796
+    },
+    "28": {
+     "D": 211141,
+     "R": 108324,
+     "npa": 121152,
+     "other": 29145,
+     "total": 469762
+    },
+    "29": {
+     "D": 211442,
+     "R": 65570,
+     "npa": 100381,
+     "other": 27292,
+     "total": 404685
+    },
+    "30": {
+     "D": 255919,
+     "R": 86665,
+     "npa": 116164,
+     "other": 31251,
+     "total": 489999
+    },
+    "31": {
+     "D": 200356,
+     "R": 117662,
+     "npa": 105913,
+     "other": 33610,
+     "total": 457541
+    },
+    "32": {
+     "D": 227975,
+     "R": 117003,
+     "npa": 111772,
+     "other": 34796,
+     "total": 491546
+    },
+    "33": {
+     "D": 185440,
+     "R": 109055,
+     "npa": 99068,
+     "other": 36450,
+     "total": 430013
+    },
+    "34": {
+     "D": 219551,
+     "R": 40834,
+     "npa": 89010,
+     "other": 24960,
+     "total": 374355
+    },
+    "35": {
+     "D": 180389,
+     "R": 110641,
+     "npa": 99257,
+     "other": 32163,
+     "total": 422450
+    },
+    "36": {
+     "D": 256781,
+     "R": 104867,
+     "npa": 119262,
+     "other": 33920,
+     "total": 514830
+    },
+    "37": {
+     "D": 257359,
+     "R": 35654,
+     "npa": 91183,
+     "other": 28486,
+     "total": 412682
+    },
+    "38": {
+     "D": 192112,
+     "R": 102942,
+     "npa": 106302,
+     "other": 26354,
+     "total": 427710
+    },
+    "39": {
+     "D": 177942,
+     "R": 102427,
+     "npa": 96665,
+     "other": 31880,
+     "total": 408914
+    },
+    "40": {
+     "D": 163150,
+     "R": 207520,
+     "npa": 111071,
+     "other": 41198,
+     "total": 522939
+    },
+    "41": {
+     "D": 217162,
+     "R": 123621,
+     "npa": 100907,
+     "other": 32305,
+     "total": 473995
+    },
+    "42": {
+     "D": 194164,
+     "R": 143378,
+     "npa": 102655,
+     "other": 37431,
+     "total": 477628
+    },
+    "43": {
+     "D": 242050,
+     "R": 48909,
+     "npa": 96104,
+     "other": 31320,
+     "total": 418383
+    },
+    "44": {
+     "D": 224360,
+     "R": 61834,
+     "npa": 97124,
+     "other": 28036,
+     "total": 411354
+    },
+    "45": {
+     "D": 174874,
+     "R": 136404,
+     "npa": 113906,
+     "other": 26494,
+     "total": 451678
+    },
+    "46": {
+     "D": 168696,
+     "R": 88459,
+     "npa": 87816,
+     "other": 22837,
+     "total": 367808
+    },
+    "47": {
+     "D": 168778,
+     "R": 148388,
+     "npa": 118594,
+     "other": 29836,
+     "total": 465596
+    },
+    "48": {
+     "D": 171370,
+     "R": 148932,
+     "npa": 102451,
+     "other": 40294,
+     "total": 463047
+    },
+    "49": {
+     "D": 178389,
+     "R": 154352,
+     "npa": 116633,
+     "other": 38065,
+     "total": 487439
+    },
+    "50": {
+     "D": 186831,
+     "R": 137394,
+     "npa": 114508,
+     "other": 37182,
+     "total": 475915
+    },
+    "51": {
+     "D": 197752,
+     "R": 129027,
+     "npa": 105842,
+     "other": 38405,
+     "total": 471026
+    },
+    "52": {
+     "D": 194453,
+     "R": 98849,
+     "npa": 115814,
+     "other": 31871,
+     "total": 440987
+    }
+   }
+  },
+  "CO": {
+   "asOf": "2026-10-01",
+   "report": "Active registered voters by congressional district (September 2026 statistics, as of 10/01)",
+   "source": "https://www.sos.state.co.us/pubs/elections/VoterRegNumbers/2026/SeptemberStatistics2026.xlsx",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": true,
+   "statewide": {
+    "D": 994101,
+    "R": 888741,
+    "npa": 2051528,
+    "other": 98292,
+    "total": 4032662
+   },
+   "districts": {
+    "01": {
+     "D": 183955,
+     "R": 39526,
+     "npa": 232444,
+     "other": 11920,
+     "total": 467845
+    },
+    "02": {
+     "D": 159707,
+     "R": 75363,
+     "npa": 266999,
+     "other": 10721,
+     "total": 512790
+    },
+    "03": {
+     "D": 106026,
+     "R": 147105,
+     "npa": 255129,
+     "other": 12465,
+     "total": 520725
+    },
+    "04": {
+     "D": 87344,
+     "R": 186551,
+     "npa": 276761,
+     "other": 11680,
+     "total": 562336
+    },
+    "05": {
+     "D": 81162,
+     "R": 136078,
+     "npa": 263564,
+     "other": 13620,
+     "total": 494424
+    },
+    "06": {
+     "D": 130895,
+     "R": 87882,
+     "npa": 239710,
+     "other": 11757,
+     "total": 470244
+    },
+    "07": {
+     "D": 133792,
+     "R": 114284,
+     "npa": 273975,
+     "other": 12262,
+     "total": 534313
+    },
+    "08": {
+     "D": 111220,
+     "R": 101952,
+     "npa": 242946,
+     "other": 13867,
+     "total": 469985
+    }
+   }
+  },
+  "CT": {
+   "asOf": "2025-10-17",
+   "report": "Registration and party enrollment statistics (latest published), active voters",
+   "source": "https://portal.ct.gov/-/media/sots/electionservices/2025/registration-and-enrollment/nov25re.pdf",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": true,
+   "statewide": {
+    "D": 792887,
+    "R": 489905,
+    "npa": 935892,
+    "other": 34030,
+    "total": 2252714
+   }
+  },
+  "DC": {
+   "asOf": "2026-03-31",
+   "report": "Data statistics report, March 2026",
+   "source": "https://www.dcboe.org/getmedia/89d24030-f33b-4ba2-adca-722111a69d11/Data-Statistics-Report-3_2026.pdf",
+   "npaLabel": "No party",
+   "activeOnly": false,
+   "statewide": {
+    "D": 358682,
+    "R": 24457,
+    "npa": 85317,
+    "other": 7756,
+    "total": 476212
+   }
+  },
+  "DE": {
+   "asOf": "2026-10-01",
+   "report": "Voter registration report by political party, October 2026",
+   "source": "https://elections.delaware.gov/voter/registrationtotals/pdfs/vrt_PP20261001.html",
+   "npaLabel": "No party",
+   "activeOnly": false,
+   "statewide": {
+    "D": 332771,
+    "R": 199647,
+    "npa": 255830,
+    "other": 21638,
+    "total": 809886
+   }
+  },
+  "FL": {
+   "asOf": "2026-09-30",
+   "report": "Active registered voters by party",
+   "source": "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-registration-reports/voter-registration-by-party-affiliation/",
+   "npaLabel": "No party affiliation",
+   "activeOnly": true,
+   "statewide": {
+    "D": 4133397,
+    "R": 5678755,
+    "npa": 3345188,
+    "other": 514782,
+    "total": 13672122
+   }
+  },
+  "IA": {
+   "asOf": "2026-09-01",
+   "report": "Voter registration totals by county, September 2026 (active voters)",
+   "source": "https://sos.iowa.gov/elections/pdf/VRStatsArchive/2026/CoSep26.pdf",
+   "npaLabel": "No party",
+   "activeOnly": true,
+   "statewide": {
+    "D": 529275,
+    "R": 711990,
+    "npa": 564581,
+    "other": 13263,
+    "total": 1819109
+   }
+  },
+  "ID": {
+   "asOf": "2026-10-01",
+   "report": "Voter registration totals by county, October 2026",
+   "source": "https://voteidaho.gov/data-and-dashboards/voter-registration-totals/",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": false,
+   "statewide": {
+    "D": 123932,
+    "R": 649080,
+    "npa": 251021,
+    "other": 14908,
+    "total": 1038941
+   }
+  },
+  "KS": {
+   "asOf": "2026-10-01",
+   "report": "Voter registration by congressional district, October 2026",
+   "source": "https://sos.ks.gov/elections/vr-statistics/2026/10-2026-Voter-Registration-Numbers-by-County.xlsx",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": false,
+   "statewide": {
+    "D": 521669,
+    "R": 901822,
+    "npa": 578791,
+    "other": 25238,
+    "total": 2027520
+   },
+   "districts": {
+    "01": {
+     "D": 100758,
+     "R": 247083,
+     "npa": 126946,
+     "other": 5741,
+     "total": 480528
+    },
+    "02": {
+     "D": 125957,
+     "R": 207618,
+     "npa": 151790,
+     "other": 5546,
+     "total": 490911
+    },
+    "03": {
+     "D": 180951,
+     "R": 223556,
+     "npa": 148575,
+     "other": 7021,
+     "total": 560103
+    },
+    "04": {
+     "D": 114003,
+     "R": 223565,
+     "npa": 151480,
+     "other": 6930,
+     "total": 495978
+    }
+   }
+  },
+  "KY": {
+   "asOf": "2026-09",
+   "report": "Voter Registration Statistics, November 2026 general (September 2026 report)",
+   "source": "https://elect.ky.gov/Resources/Documents/voterstatsdistrict-November%20General%202026.pdf",
+   "npaLabel": "Independent + other",
+   "activeOnly": false,
+   "statewide": {
+    "D": 1375839,
+    "R": 1627854,
+    "npa": 368003,
+    "other": 21784,
+    "total": 3393480
+   },
+   "districts": {
+    "01": {
+     "D": 218642,
+     "R": 286077,
+     "npa": 52792,
+     "other": 3453,
+     "total": 560964
+    },
+    "02": {
+     "D": 205528,
+     "R": 291678,
+     "npa": 59532,
+     "other": 3802,
+     "total": 560540
+    },
+    "03": {
+     "D": 317178,
+     "R": 170341,
+     "npa": 68745,
+     "other": 3544,
+     "total": 559808
+    },
+    "04": {
+     "D": 206000,
+     "R": 315285,
+     "npa": 81404,
+     "other": 4505,
+     "total": 607194
+    },
+    "05": {
+     "D": 184391,
+     "R": 319037,
+     "npa": 39463,
+     "other": 2503,
+     "total": 545394
+    },
+    "06": {
+     "D": 244100,
+     "R": 245436,
+     "npa": 66067,
+     "other": 3977,
+     "total": 559580
+    }
+   }
+  },
+  "LA": {
+   "asOf": "2026-10-01",
+   "report": "Statewide registered voters by party (active + inactive)",
+   "source": "https://electionstatistics.sos.la.gov/Data/Registration_Statistics/statewide/2026_1001_sta_comb.pdf",
+   "npaLabel": "No party",
+   "activeOnly": false,
+   "statewide": {
+    "D": 1060252,
+    "R": 1067827,
+    "npa": 825562,
+    "other": 24502,
+    "total": 2978143
+   }
+  },
+  "MA": {
+   "asOf": "2025-02-01",
+   "report": "Enrollment breakdown (latest table the state posts online)",
+   "source": "https://www.sec.state.ma.us/divisions/elections/research-and-statistics/accessible-table/enrollment-breakdown-2025.htm",
+   "npaLabel": "Unenrolled",
+   "activeOnly": false,
+   "statewide": {
+    "D": 1298603,
+    "R": 423387,
+    "npa": 3254435,
+    "other": 49401,
+    "total": 5025826
+   },
+   "note": "Massachusetts has not posted a 2026 enrollment table yet; the Boston Globe reported in August 2026 that unenrolled voters passed 67%."
+  },
+  "MD": {
+   "asOf": "2026-09",
+   "report": "Monthly voter registration summary, September 2026 (active voters)",
+   "source": "https://www.elections.maryland.gov/pdf/vrar/2026/MSR-2026_09.pdf",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": true,
+   "statewide": {
+    "D": 2228877,
+    "R": 1014219,
+    "npa": 1010090,
+    "other": 80668,
+    "total": 4333854
+   }
+  },
+  "ME": {
+   "asOf": "2026-01-01",
+   "report": "Registered and enrolled voters, active (statewide)",
+   "source": "https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/Reg%20%26%20Enr%20as%20of%2001-01-26%20pdf%20(A).pdf",
+   "npaLabel": "Unenrolled",
+   "activeOnly": true,
+   "statewide": {
+    "D": 352343,
+    "R": 308598,
+    "npa": 333425,
+    "other": 44237,
+    "total": 1038603
+   }
+  },
+  "NC": {
+   "asOf": "2026-10-17",
+   "report": "Weekly voter registration statistics",
+   "source": "https://vt.ncsbe.gov/RegStat/Results?date=2026-10-17",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": false,
+   "statewide": {
+    "D": 2333632,
+    "R": 2330391,
+    "npa": 3170362,
+    "other": 51723,
+    "total": 7886108
+   }
+  },
+  "NE": {
+   "asOf": "2026-10-01",
+   "report": "Voter counts by congressional district, October 2026",
+   "source": "https://sos.nebraska.gov/sites/default/files/doc/elections/vrstats/2026VR/Congressional-District-October-2026.pdf",
+   "npaLabel": "Nonpartisan",
+   "activeOnly": false,
+   "statewide": {
+    "D": 329163,
+    "R": 619645,
+    "npa": 283555,
+    "other": 28526,
+    "total": 1260889
+   },
+   "districts": {
+    "01": {
+     "D": 115749,
+     "R": 193182,
+     "npa": 101340,
+     "other": 10098,
+     "total": 420369
+    },
+    "02": {
+     "D": 144858,
+     "R": 158484,
+     "npa": 109538,
+     "other": 11072,
+     "total": 423952
+    },
+    "03": {
+     "D": 68556,
+     "R": 267979,
+     "npa": 72677,
+     "other": 7356,
+     "total": 416568
+    }
+   }
+  },
+  "NJ": {
+   "asOf": "2026-10-01",
+   "report": "Voter registration by congressional district, October 2026",
+   "source": "https://www.nj.gov/state/elections/assets/pdf/svrs-reports/2026/2026-10-voter-registration-by-congressional-district.pdf",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": false,
+   "statewide": {
+    "D": 2572254,
+    "R": 1686614,
+    "npa": 2391969,
+    "other": 74340,
+    "total": 6725177
+   },
+   "districts": {
+    "01": {
+     "D": 257405,
+     "R": 122069,
+     "npa": 195815,
+     "other": 7419,
+     "total": 582708
+    },
+    "02": {
+     "D": 178060,
+     "R": 201759,
+     "npa": 207654,
+     "other": 7758,
+     "total": 595231
+    },
+    "03": {
+     "D": 224268,
+     "R": 170482,
+     "npa": 223046,
+     "other": 6608,
+     "total": 624404
+    },
+    "04": {
+     "D": 135540,
+     "R": 237352,
+     "npa": 212387,
+     "other": 6016,
+     "total": 591295
+    },
+    "05": {
+     "D": 208609,
+     "R": 161875,
+     "npa": 214895,
+     "other": 5497,
+     "total": 590876
+    },
+    "06": {
+     "D": 208666,
+     "R": 106622,
+     "npa": 200991,
+     "other": 6293,
+     "total": 522572
+    },
+    "07": {
+     "D": 202071,
+     "R": 218268,
+     "npa": 212745,
+     "other": 6482,
+     "total": 639566
+    },
+    "08": {
+     "D": 219823,
+     "R": 54893,
+     "npa": 151020,
+     "other": 5221,
+     "total": 430957
+    },
+    "09": {
+     "D": 194471,
+     "R": 101903,
+     "npa": 181900,
+     "other": 6205,
+     "total": 484479
+    },
+    "10": {
+     "D": 274760,
+     "R": 47997,
+     "npa": 180182,
+     "other": 5858,
+     "total": 508797
+    },
+    "11": {
+     "D": 232071,
+     "R": 165351,
+     "npa": 205852,
+     "other": 4996,
+     "total": 608270
+    },
+    "12": {
+     "D": 236510,
+     "R": 98043,
+     "npa": 205482,
+     "other": 5987,
+     "total": 546022
+    }
+   }
+  },
+  "NM": {
+   "asOf": "2026-09-30",
+   "report": "Voter registration by congressional district",
+   "source": "https://klvg4oyd4j.execute-api.us-west-2.amazonaws.com/prod/PublicFiles/ee3072ab0d43456cb15a51f7d82c77a2/2ae5e366-040e-4b7d-bc3c-f2b2e9c8d123/Congressional_09-30-2026.pdf",
+   "npaLabel": "Decline to state + other",
+   "activeOnly": false,
+   "statewide": {
+    "D": 576918,
+    "R": 445214,
+    "npa": 436582,
+    "other": 0,
+    "total": 1458714
+   },
+   "districts": {
+    "01": {
+     "D": 203844,
+     "R": 158556,
+     "npa": 151958,
+     "other": 0,
+     "total": 514358
+    },
+    "02": {
+     "D": 172287,
+     "R": 141397,
+     "npa": 146855,
+     "other": 0,
+     "total": 460539
+    },
+    "03": {
+     "D": 200787,
+     "R": 145261,
+     "npa": 137769,
+     "other": 0,
+     "total": 483817
+    }
+   }
+  },
+  "NV": {
+   "asOf": "2026-10-01",
+   "report": "All voters (active + inactive) by party, statewide total",
+   "source": "https://www.nvsos.gov/elections/voters/voter-registration-statistics/2026-statistics",
+   "npaLabel": "Nonpartisan",
+   "activeOnly": false,
+   "statewide": {
+    "D": 678600,
+    "R": 660470,
+    "npa": 1006232,
+    "other": 160930,
+    "total": 2506232
+   }
+  },
+  "NY": {
+   "asOf": "2026-02-20",
+   "report": "Active voter enrollment by congressional district (NY publishes in February and November)",
+   "source": "https://elections.ny.gov/system/files/documents/2026/03/congress_feb26.xlsx",
+   "npaLabel": "Blank (no party)",
+   "activeOnly": true,
+   "statewide": {
+    "D": 6002006,
+    "R": 2835976,
+    "npa": 3187610,
+    "other": 521550,
+    "total": 12547142
+   },
+   "districts": {
+    "01": {
+     "D": 180008,
+     "R": 191206,
+     "npa": 179386,
+     "other": 29895,
+     "total": 580495
+    },
+    "02": {
+     "D": 175386,
+     "R": 166337,
+     "npa": 158675,
+     "other": 25218,
+     "total": 525616
+    },
+    "03": {
+     "D": 207726,
+     "R": 148153,
+     "npa": 163469,
+     "other": 19609,
+     "total": 538957
+    },
+    "04": {
+     "D": 224023,
+     "R": 160563,
+     "npa": 146879,
+     "other": 19619,
+     "total": 551084
+    },
+    "05": {
+     "D": 295503,
+     "R": 41525,
+     "npa": 92421,
+     "other": 10549,
+     "total": 439998
+    },
+    "06": {
+     "D": 209536,
+     "R": 56357,
+     "npa": 109129,
+     "other": 9199,
+     "total": 384221
+    },
+    "07": {
+     "D": 319455,
+     "R": 33708,
+     "npa": 92806,
+     "other": 9765,
+     "total": 455734
+    },
+    "08": {
+     "D": 302577,
+     "R": 46814,
+     "npa": 88169,
+     "other": 10581,
+     "total": 448141
+    },
+    "09": {
+     "D": 327596,
+     "R": 39469,
+     "npa": 79480,
+     "other": 9339,
+     "total": 455884
+    },
+    "10": {
+     "D": 321476,
+     "R": 33442,
+     "npa": 91746,
+     "other": 8576,
+     "total": 455240
+    },
+    "11": {
+     "D": 185847,
+     "R": 126939,
+     "npa": 120133,
+     "other": 16320,
+     "total": 449239
+    },
+    "12": {
+     "D": 328169,
+     "R": 46656,
+     "npa": 105494,
+     "other": 9089,
+     "total": 489408
+    },
+    "13": {
+     "D": 338109,
+     "R": 23544,
+     "npa": 78309,
+     "other": 9293,
+     "total": 449255
+    },
+    "14": {
+     "D": 254169,
+     "R": 37900,
+     "npa": 86203,
+     "other": 9667,
+     "total": 387939
+    },
+    "15": {
+     "D": 273226,
+     "R": 26360,
+     "npa": 75974,
+     "other": 8742,
+     "total": 384302
+    },
+    "16": {
+     "D": 264463,
+     "R": 77136,
+     "npa": 121609,
+     "other": 16707,
+     "total": 479915
+    },
+    "17": {
+     "D": 211870,
+     "R": 137909,
+     "npa": 145805,
+     "other": 27351,
+     "total": 522935
+    },
+    "18": {
+     "D": 194295,
+     "R": 138421,
+     "npa": 146591,
+     "other": 32169,
+     "total": 511476
+    },
+    "19": {
+     "D": 178325,
+     "R": 163699,
+     "npa": 139633,
+     "other": 33369,
+     "total": 515026
+    },
+    "20": {
+     "D": 206781,
+     "R": 124416,
+     "npa": 157209,
+     "other": 35209,
+     "total": 523615
+    },
+    "21": {
+     "D": 126514,
+     "R": 205573,
+     "npa": 125614,
+     "other": 33171,
+     "total": 490872
+    },
+    "22": {
+     "D": 170584,
+     "R": 146793,
+     "npa": 141095,
+     "other": 30211,
+     "total": 488683
+    },
+    "23": {
+     "D": 144342,
+     "R": 209390,
+     "npa": 132176,
+     "other": 36976,
+     "total": 522884
+    },
+    "24": {
+     "D": 120959,
+     "R": 219522,
+     "npa": 132763,
+     "other": 33438,
+     "total": 506682
+    },
+    "25": {
+     "D": 205728,
+     "R": 130501,
+     "npa": 161139,
+     "other": 11698,
+     "total": 509066
+    },
+    "26": {
+     "D": 235339,
+     "R": 103643,
+     "npa": 115703,
+     "other": 25790,
+     "total": 480475
+    }
+   }
+  },
+  "OK": {
+   "asOf": "2026-06-30",
+   "report": "Voter registration statistics by county, month ending June 30 2026",
+   "source": "https://www.oklahoma.gov/content/dam/ok/en/elections/voter-registration-statistics/2026-vr-statistics/2026-06-30-vrstats-county.pdf",
+   "npaLabel": "Independent",
+   "activeOnly": false,
+   "statewide": {
+    "D": 615488,
+    "R": 1293674,
+    "npa": 498730,
+    "other": 23700,
+    "total": 2431592
+   }
+  },
+  "OR": {
+   "asOf": "2026-09",
+   "report": "Voter registration by congressional district, September 2026",
+   "source": "https://sos.oregon.gov/elections/Documents/Registration/2026-September.pdf",
+   "npaLabel": "Nonaffiliated",
+   "activeOnly": false,
+   "statewide": {
+    "D": 981710,
+    "R": 734773,
+    "npa": 1152084,
+    "other": 219386,
+    "total": 3087953
+   },
+   "districts": {
+    "01": {
+     "D": 189578,
+     "R": 82706,
+     "npa": 195563,
+     "other": 32998,
+     "total": 500845
+    },
+    "02": {
+     "D": 99490,
+     "R": 183562,
+     "npa": 200879,
+     "other": 38559,
+     "total": 522490
+    },
+    "03": {
+     "D": 216957,
+     "R": 68069,
+     "npa": 186907,
+     "other": 33301,
+     "total": 505234
+    },
+    "04": {
+     "D": 163978,
+     "R": 131978,
+     "npa": 188695,
+     "other": 39595,
+     "total": 524246
+    },
+    "05": {
+     "D": 167636,
+     "R": 147484,
+     "npa": 192461,
+     "other": 41271,
+     "total": 548852
+    },
+    "06": {
+     "D": 144071,
+     "R": 120974,
+     "npa": 187579,
+     "other": 33662,
+     "total": 486286
+    }
+   }
+  },
+  "PA": {
+   "asOf": "2026-10-19",
+   "report": "Voter registration by congressional district (weekly; active + inactive)",
+   "source": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/resources/voting-and-elections/voting-and-election-statistics/current%20voterregstatsbycongressionaldistricts.xlsx",
+   "npaLabel": "No affiliation",
+   "activeOnly": false,
+   "statewide": {
+    "D": 3879531,
+    "R": 3638448,
+    "npa": 1209267,
+    "other": 313737,
+    "total": 9040983
+   },
+   "districts": {
+    "01": {
+     "D": 229822,
+     "R": 238313,
+     "npa": 83985,
+     "other": 22002,
+     "total": 574122
+    },
+    "02": {
+     "D": 297041,
+     "R": 80666,
+     "npa": 73365,
+     "other": 11739,
+     "total": 462811
+    },
+    "03": {
+     "D": 456152,
+     "R": 43293,
+     "npa": 78905,
+     "other": 13579,
+     "total": 591929
+    },
+    "04": {
+     "D": 260879,
+     "R": 201684,
+     "npa": 75724,
+     "other": 22582,
+     "total": 560869
+    },
+    "05": {
+     "D": 283447,
+     "R": 165957,
+     "npa": 67578,
+     "other": 19730,
+     "total": 536712
+    },
+    "06": {
+     "D": 223571,
+     "R": 200970,
+     "npa": 84106,
+     "other": 23051,
+     "total": 531698
+    },
+    "07": {
+     "D": 226934,
+     "R": 205564,
+     "npa": 93888,
+     "other": 19154,
+     "total": 545540
+    },
+    "08": {
+     "D": 224901,
+     "R": 208286,
+     "npa": 74122,
+     "other": 16250,
+     "total": 523559
+    },
+    "09": {
+     "D": 133526,
+     "R": 290577,
+     "npa": 57429,
+     "other": 18926,
+     "total": 500458
+    },
+    "10": {
+     "D": 203718,
+     "R": 235253,
+     "npa": 88147,
+     "other": 18140,
+     "total": 545258
+    },
+    "11": {
+     "D": 154261,
+     "R": 272684,
+     "npa": 76618,
+     "other": 20109,
+     "total": 523672
+    },
+    "12": {
+     "D": 315839,
+     "R": 156089,
+     "npa": 70021,
+     "other": 21861,
+     "total": 563810
+    },
+    "13": {
+     "D": 123368,
+     "R": 315929,
+     "npa": 56938,
+     "other": 15105,
+     "total": 511340
+    },
+    "14": {
+     "D": 172255,
+     "R": 271602,
+     "npa": 49607,
+     "other": 14915,
+     "total": 508379
+    },
+    "15": {
+     "D": 131013,
+     "R": 287330,
+     "npa": 53933,
+     "other": 16242,
+     "total": 488518
+    },
+    "16": {
+     "D": 177100,
+     "R": 261855,
+     "npa": 58111,
+     "other": 17965,
+     "total": 515031
+    },
+    "17": {
+     "D": 265704,
+     "R": 202396,
+     "npa": 66790,
+     "other": 22387,
+     "total": 557277
+    }
+   }
+  },
+  "SD": {
+   "asOf": "2026-10",
+   "report": "Current statewide voter registration totals (active voters)",
+   "source": "https://vip.sdsos.gov/VoterRegistrationTotals.aspx",
+   "npaLabel": "Independent + no party",
+   "activeOnly": true,
+   "statewide": {
+    "D": 135270,
+    "R": 331815,
+    "npa": 157564,
+    "other": 3933,
+    "total": 628582
+   }
+  },
+  "UT": {
+   "asOf": "2026-10-13",
+   "report": "Active voters by county and party",
+   "source": "https://vote.utah.gov/wp-content/uploads/2026/10/10.13.2026-Active-Voters-by-County-and-Party.pdf",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": true,
+   "statewide": {
+    "D": 252887,
+    "R": 914916,
+    "npa": 514331,
+    "other": 105639,
+    "total": 1787773
+   }
+  },
+  "WV": {
+   "asOf": "2026-04",
+   "report": "Registration at close of books for the May 12 2026 primary (2026 Primary Election Report)",
+   "source": "https://sos.wv.gov/media/793/download",
+   "npaLabel": "No party",
+   "activeOnly": false,
+   "statewide": {
+    "D": 326962,
+    "R": 519949,
+    "npa": 301919,
+    "other": 49206,
+    "total": 1198036
+   }
+  },
+  "WY": {
+   "asOf": "2026-09-01",
+   "report": "Voter registration statistics, September 2026",
+   "source": "https://sos.wyo.gov/Elections/Docs/VRStats/2026/26SepVR_Stats.pdf",
+   "npaLabel": "Unaffiliated",
+   "activeOnly": false,
+   "statewide": {
+    "D": 30690,
+    "R": 217895,
+    "npa": 25314,
+    "other": 4569,
+    "total": 278468
+   }
+  }
+ }
+}
