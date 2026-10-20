@@ -59,6 +59,8 @@ const pollFor = (raceId) => {
 
 const kalshiD = (e) => {
   if (!e) return null;
+  // Independent-vs-Republican races (Nebraska): opposition = everyone but the Republican
+  if (e.thirdParty && e.republican) return 1 - e.republican.pct / 100;
   const d = e.democrat, r = e.republican;
   if (d && d.share != null) return d.share / 100;
   if (d && r) return d.pct / (d.pct + r.pct);
@@ -180,6 +182,35 @@ const governors = Object.values(kGov).map((g) => {
   };
 }).sort((a, b) => Math.abs(a.kalshiD - 0.5) - Math.abs(b.kalshiD - 0.5));
 
+/* ---------- Candidate performance: polls vs. what 2024 + the national mood predicts ----------
+   expected margin = 2024 presidential margin in the state
+                   + (generic ballot now - 2024 national presidential margin)
+   over/under      = polling average margin - expected margin
+   Senate only: district-level 2024 presidential results aren't in the repo yet. */
+const base24 = read("data/baseline-2024.json", null);
+let candidatePerformance = null;
+if (base24 && generic && generic.margin != null) {
+  const shift = generic.margin - base24.nationalPresMarginD;
+  const rows = [];
+  for (const r of senate.races) {
+    const pa = read(`data/poll-average/${r.state}-S-2026.json`, null);
+    const st = base24.statePresMarginD[r.state];
+    if (!pa || pa.margin == null || st == null || (pa.poll_count || 0) < 3) continue;
+    const ks = kSenate[r.state];
+    if (ks && ks.thirdParty) continue; // independent races don't fit a D-vs-R swing
+    const expected = st + shift;
+    rows.push({
+      state: r.state, name: r.name, special: r.special,
+      dem: pa.demCandidate, rep: pa.repCandidate, polls: pa.poll_count,
+      pres2024: Math.round(st * 10) / 10, expected: Math.round(expected * 10) / 10,
+      pollMargin: pa.margin, overUnder: Math.round((pa.margin - expected) * 10) / 10,
+      kalshiD: r.kalshiD,
+    });
+  }
+  rows.sort((a, b) => a.overUnder - b.overUnder);
+  candidatePerformance = { genericMargin: generic.margin, nationalPres2024: base24.nationalPresMarginD, shift: Math.round(shift * 10) / 10, rows };
+}
+
 /* ---------- Market-implied national numbers ---------- */
 const markets = {
   houseControlD: kNational.house && (kNational.house.outcomes.find((o) => /dem/i.test(o.label)) || {}).pct,
@@ -207,6 +238,7 @@ const out = {
   kalshiNational: kNational,
   markets,
   governors,
+  candidatePerformance,
   flips: flips.slice(0, 40),
   flipCounts: {
     houseDtoR: flips.filter((f) => f.chamber === "House" && f.favored === "R").length,
