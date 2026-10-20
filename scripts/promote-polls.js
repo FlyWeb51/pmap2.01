@@ -230,7 +230,8 @@ function main() {
       const qd = q.results.find((x) => x.party === "D"), qr = q.results.find((x) => x.party === "R");
       const pd = results.find((x) => x.party === "D"), pr = results.find((x) => x.party === "R");
       const same = qd && qr && Math.abs(qd.pct - pd.pct) < 0.6 && Math.abs(qr.pct - pr.pct) < 0.6;
-      return same && (pollsterKey(q.pollster) === pollsterKey(poll.pollster) || pollsterKey(q.pollster).slice(0, 5) === pollsterKey(poll.pollster).slice(0, 5));
+      const a = pollsterKey(cleanPollster(q.pollster).name), b = pollsterKey(poll.pollster);
+      return same && (a === b || a.slice(0, 4) === b.slice(0, 4));
     });
     if (dup) {
       // merge: fill gaps, remember every site it appeared on
