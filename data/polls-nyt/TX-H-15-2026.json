@@ -1,12 +1,43 @@
 {
   "raceId": "TX-H-15-2026",
-  "count": 8,
+  "count": 9,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "sponsors": "San Antonio Express-News",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-16",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.expressnews.com/politics/article/bobby-pulido-monica-de-la-cruz-poll-donald-trump-22483930.php",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Bobby Pulido (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Monica De La Cruz (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Normington, Petts & Associates",
       "sponsors": "House Majority PAC",

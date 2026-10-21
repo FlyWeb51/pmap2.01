@@ -1,8 +1,37 @@
 {
   "raceId": "NE-H-01-2026",
-  "count": 3,
-  "updated_at": "2026-10-21T16:31:18.377Z",
+  "count": 4,
+  "updated_at": "2026-10-21T17:22:58.170Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-19 to 2026-10-20",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Mike Flood (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Chris Backemeyer (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4805
+    },
     {
       "pollster": "Global Strategy Group D-sponsored",
       "endDate": "2026-09-03",
@@ -31,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fight for Nebraska PAC",
-      "weight": 0.1778
+      "weight": 0.1777
     },
     {
       "pollster": "Tavern Research",

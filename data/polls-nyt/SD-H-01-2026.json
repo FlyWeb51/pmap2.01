@@ -1,12 +1,43 @@
 {
   "raceId": "SD-H-01-2026",
-  "count": 1,
+  "count": 2,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Mason-Dixon Polling & Research, Inc.",
+      "sponsors": null,
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": 500,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.sdnewswatch.org/south-dakota-poll-2026-governor-ahlers-rhoden/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Marty Jackley (R)",
+          "party": "R",
+          "percentage": 60
+        },
+        {
+          "candidate": "Nikki Gronli (D)",
+          "party": "D",
+          "percentage": 32
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Lake Research Partners",
       "sponsors": null,

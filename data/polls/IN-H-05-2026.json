@@ -1,8 +1,37 @@
 {
   "raceId": "IN-H-05-2026",
-  "count": 1,
-  "updated_at": "2026-10-21T16:31:18.364Z",
+  "count": 2,
+  "updated_at": "2026-10-21T17:22:58.160Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-04",
+      "fieldDates": "2026-09-30 to 2026-10-04",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Victoria Spartz (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "J.D. Ford (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.332
+    },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-07-20",

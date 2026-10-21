@@ -1,12 +1,38 @@
 {
   "raceId": "TX-H-35-2026",
-  "count": 1,
+  "count": 2,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Normington, Petts & Associates",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Johnny Garcia (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Carlos De La Cruz (R)",
+          "party": "R",
+          "percentage": 45
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Normington, Petts & Associates",
       "sponsors": "House Majority PAC",

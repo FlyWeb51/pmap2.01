@@ -1,12 +1,38 @@
 {
   "raceId": "MT-H-01-2026",
-  "count": 12,
+  "count": 13,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sam Forstag (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Aaron Flint (R)",
+          "party": "R",
+          "percentage": 45
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "American Pulse Research & Polling",
       "sponsors": "NonStop Local",

@@ -1,6 +1,6 @@
 {
   "raceId": "SD-G-2026",
-  "count": 3,
+  "count": 4,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -34,6 +34,42 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 8
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-08",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.documentcloud.org/documents/28817212-sd-sen-gov-concord-public-opinion-partners-oct-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Larry Rhoden (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Daniel P. Ahlers (D)",
+          "party": "D",
+          "percentage": 38
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 10
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 4
         }
       ],
       "note": null

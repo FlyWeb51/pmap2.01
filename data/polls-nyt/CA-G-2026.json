@@ -1,12 +1,38 @@
 {
   "raceId": "CA-G-2026",
-  "count": 18,
+  "count": 20,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": null,
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-19",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://emersoncollegepolling.com/california-2026-poll-xavier-becerra-holds-27-point-lead-over-steve-hilton/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Xavier Becerra (D)",
+          "party": "D",
+          "percentage": 63.63
+        },
+        {
+          "candidate": "Steve Hilton (R)",
+          "party": "R",
+          "percentage": 36.37
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "ActiVote",
       "sponsors": null,
@@ -29,6 +55,42 @@
           "candidate": "Steve Hilton (R)",
           "party": "R",
           "percentage": 37.2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "TrueDot",
+      "sponsors": "Politico | UC Berkeley Citrin Center for Public Opinion Research",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-14",
+      "sampleSize": 909,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.politico.com/newsletters/california-playbook/2026/10/19/the-billionaire-tax-isnt-breaking-through-01125880",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Xavier Becerra (D)",
+          "party": "D",
+          "percentage": 55
+        },
+        {
+          "candidate": "Steve Hilton (R)",
+          "party": "R",
+          "percentage": 35
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 10
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 1
         }
       ],
       "note": null

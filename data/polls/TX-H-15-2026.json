@@ -1,8 +1,37 @@
 {
   "raceId": "TX-H-15-2026",
-  "count": 9,
-  "updated_at": "2026-10-21T16:31:18.388Z",
+  "count": 10,
+  "updated_at": "2026-10-21T17:22:58.177Z",
   "polls": [
+    {
+      "pollster": "Barbara Jordan Public Policy Research and Survey Center",
+      "endDate": "2026-10-16",
+      "fieldDates": "2026-10-13 to 2026-10-16",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "San Antonio Express-News",
+      "results": [
+        {
+          "candidate": "Bobby Pulido (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Monica De La Cruz (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.expressnews.com/politics/article/bobby-pulido-monica-de-la-cruz-poll-donald-trump-22483930.php",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8761
+    },
     {
       "pollster": "Normington, Petts & Associates",
       "endDate": "2026-09-28",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2587,
+      "weight": 0.2585,
       "otherMatchup": true
     },
     {
@@ -60,7 +89,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2587
+      "weight": 0.2585
     },
     {
       "pollster": "Public Policy Research/Texas Southern University",
@@ -88,7 +117,7 @@
         "https://pollingsource.com/house/TX-15"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2911
+      "weight": 0.2909
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center at Texas Southern University",
@@ -117,12 +146,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2911
+      "weight": 0.2909
     },
     {
       "pollster": "Normington, Petts & Associates (D)",
       "endDate": "2026-07-27",
-      "weight": 0.071,
+      "weight": 0.0709,
       "sampleSize": 553,
       "population": "LV",
       "results": [
@@ -177,7 +206,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0675,
+      "weight": 0.0674,
       "otherMatchup": true
     },
     {

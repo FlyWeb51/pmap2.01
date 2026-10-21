@@ -1,8 +1,37 @@
 {
   "raceId": "KY-H-06-2026",
-  "count": 9,
-  "updated_at": "2026-10-21T16:31:18.365Z",
+  "count": 10,
+  "updated_at": "2026-10-21T17:22:58.161Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-19 to 2026-10-20",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Zach Dembo (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Ralph Alvarado (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4805
+    },
     {
       "pollster": "Change Research",
       "endDate": "2026-10-05",
@@ -31,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Kentuckians Not Corruption",
-      "weight": 0.3481
+      "weight": 0.3478
     },
     {
       "pollster": "DCCC Targeting Team",
@@ -72,7 +101,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3743
+      "weight": 0.374
     },
     {
       "pollster": "Lake Research Partners",
@@ -101,7 +130,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2972
+      "weight": 0.2969
     },
     {
       "pollster": "GQR",
@@ -130,7 +159,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2713
+      "weight": 0.2711
     },
     {
       "pollster": "Lake Research Partners",
@@ -160,13 +189,13 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "House Majority PAC",
-      "weight": 0.1126
+      "weight": 0.1125
     },
     {
       "pollster": "DCCC Targeting Team (D)",
       "endDate": "2026-07-30",
       "endDateUS": "7/30/2026",
-      "weight": 0.0704,
+      "weight": 0.0703,
       "sampleSize": 474,
       "population": "LV",
       "results": [

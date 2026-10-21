@@ -1,8 +1,37 @@
 {
   "raceId": "OH-H-15-2026",
-  "count": 5,
-  "updated_at": "2026-10-21T16:31:18.398Z",
+  "count": 6,
+  "updated_at": "2026-10-21T17:22:58.182Z",
   "polls": [
+    {
+      "pollster": "Hart Research Associates",
+      "endDate": "2026-10-12",
+      "fieldDates": "2026-10-09 to 2026-10-12",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Don Leonard (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Carey (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3994
+    },
     {
       "pollster": "Hart Research Associates",
       "endDate": "2026-09-24",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2637,
+      "weight": 0.2635,
       "otherMatchup": true
     },
     {
@@ -60,7 +89,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2637
+      "weight": 0.2635
     },
     {
       "pollster": "Hart Research D-sponsored",
@@ -89,7 +118,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0816
+      "weight": 0.0815
     },
     {
       "pollster": "Hart Research Associates",

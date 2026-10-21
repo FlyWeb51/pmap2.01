@@ -1,8 +1,37 @@
 {
   "raceId": "MN-H-01-2026",
-  "count": 5,
-  "updated_at": "2026-10-21T16:31:18.371Z",
+  "count": 6,
+  "updated_at": "2026-10-21T17:22:58.166Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-13 to 2026-10-14",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Brad Finstad (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Jake Johnson (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4183
+    },
     {
       "pollster": "SurveyUSA",
       "endDate": "2026-10-12",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8498
+      "weight": 0.8491
     },
     {
       "pollster": "GBAO",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2461
+      "weight": 0.2459
     },
     {
       "pollster": "Ragnar Research Partners (R)",

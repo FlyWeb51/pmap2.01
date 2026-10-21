@@ -1,8 +1,37 @@
 {
   "raceId": "MO-H-02-2026",
-  "count": 3,
-  "updated_at": "2026-10-21T16:31:18.373Z",
+  "count": 4,
+  "updated_at": "2026-10-21T17:22:58.167Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-19 to 2026-10-20",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Fred Wellman (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Ann Wagner (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4805
+    },
     {
       "pollster": "Remington Research Group",
       "endDate": "2026-09-15",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2277
+      "weight": 0.2275
     },
     {
       "pollster": "Remington",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4554,
+      "weight": 0.455,
       "otherMatchup": true
     },
     {

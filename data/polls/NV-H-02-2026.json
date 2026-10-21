@@ -1,8 +1,37 @@
 {
   "raceId": "NV-H-02-2026",
-  "count": 3,
-  "updated_at": "2026-10-21T16:31:18.380Z",
+  "count": 4,
+  "updated_at": "2026-10-21T17:22:58.172Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-13",
+      "fieldDates": "2026-10-12 to 2026-10-13",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "David Flippo (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Teresa Benitez-Thompson (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4087
+    },
     {
       "pollster": "GBAO D-sponsored",
       "endDate": "2026-09-03",
@@ -31,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nevada Alliance",
-      "weight": 0.1623
+      "weight": 0.1622
     },
     {
       "pollster": "Strategies 360",
@@ -60,7 +89,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1207
+      "weight": 0.1206
     },
     {
       "pollster": "Wedgewood Polls",

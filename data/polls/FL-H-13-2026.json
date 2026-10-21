@@ -1,8 +1,37 @@
 {
   "raceId": "FL-H-13-2026",
-  "count": 6,
-  "updated_at": "2026-10-21T16:31:18.356Z",
+  "count": 7,
+  "updated_at": "2026-10-21T17:22:58.155Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-15",
+      "fieldDates": "2026-10-14 to 2026-10-15",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Leela Gray (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Anna Paulina Luna (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2112877284684341727?s=46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4281
+    },
     {
       "pollster": "Hart Research Associates D-sponsored",
       "endDate": "2026-08-27",
@@ -31,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "House Majority PAC",
-      "weight": 0.1381
+      "weight": 0.138
     },
     {
       "pollster": "Hart Research Associates",
@@ -60,7 +89,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1381,
+      "weight": 0.138,
       "otherMatchup": true
     },
     {
@@ -96,7 +125,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1381
+      "weight": 0.138
     },
     {
       "pollster": "Fabrizio, Lee & Associates R-sponsored",
@@ -160,7 +189,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.085
+      "weight": 0.0849
     },
     {
       "pollster": "Public Policy Polling (D)",
