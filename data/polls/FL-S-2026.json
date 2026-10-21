@@ -1,8 +1,37 @@
 {
   "raceId": "FL-S-2026",
-  "count": 35,
-  "updated_at": "2026-10-21T05:01:13.654Z",
+  "count": 36,
+  "updated_at": "2026-10-21T12:03:08.289Z",
   "polls": [
+    {
+      "pollster": "University of North Florida",
+      "endDate": "2026-10-19",
+      "fieldDates": "2026-10-12 to 2026-10-19",
+      "sampleSize": 1471,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://floridapolitics.com/archives/825948-unf-poll-governors-race-too-close-to-call-in-final-days/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.6189
+    },
     {
       "pollster": "ActiVote",
       "endDate": "2026-10-15",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7749
+      "weight": 0.7697
     },
     {
       "pollster": "YouGov",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0016,
+      "weight": 0.9948,
       "otherMatchup": true
     },
     {
@@ -90,7 +119,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "EDGE Communications",
-      "weight": 0.7718
+      "weight": 0.7666
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -119,7 +148,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9025
+      "weight": 0.8964
     },
     {
       "pollster": "St. Pete Polls",
@@ -149,7 +178,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Florida Politics",
-      "weight": 0.9312
+      "weight": 0.9249
     },
     {
       "pollster": "YouGov",
@@ -178,7 +207,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3752
+      "weight": 1.366
     },
     {
       "pollster": "James Madison Institute",
@@ -206,7 +235,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0283
+      "weight": 1.0213
     },
     {
       "pollster": "Targoz Market Research",
@@ -235,7 +264,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8745
+      "weight": 0.8686
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -265,7 +294,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "NBC 6 Miami | Telemundo",
-      "weight": 0.7009
+      "weight": 0.6962
     },
     {
       "pollster": "Change Research",
@@ -295,7 +324,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Freedom Project USA",
-      "weight": 0.4167
+      "weight": 0.4139
     },
     {
       "pollster": "InsiderAdvantage",
@@ -324,7 +353,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2725
+      "weight": 0.2707
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -353,7 +382,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6411
+      "weight": 0.6368
     },
     {
       "pollster": "St. Pete Polls",
@@ -383,7 +412,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Florida Politics",
-      "weight": 0.613
+      "weight": 0.6089
     },
     {
       "pollster": "Quantus Insights",
@@ -412,7 +441,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2336
+      "weight": 0.2321
     },
     {
       "pollster": "Change Research D-sponsored",
@@ -442,12 +471,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Freedom Project USA",
-      "weight": 0.2806
+      "weight": 0.2787
     },
     {
       "pollster": "University of North Florida",
       "endDate": "2026-07-17",
-      "weight": 0.141,
+      "weight": 0.1401,
       "sampleSize": 848,
       "population": "LV",
       "results": [
@@ -500,7 +529,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.141
+      "weight": 0.1401
     },
     {
       "pollster": "Change Research",
@@ -528,13 +557,13 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0697,
+      "weight": 0.0692,
       "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.036,
+      "weight": 0.0357,
       "sampleSize": 1015,
       "population": "LV",
       "results": [
@@ -565,7 +594,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.0726,
+      "weight": 0.0721,
       "sampleSize": 1273,
       "population": "RV",
       "results": [
@@ -614,12 +643,12 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0544
+      "weight": 0.054
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-05-21",
-      "weight": 0.0205,
+      "weight": 0.0204,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
@@ -650,7 +679,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.0233,
+      "weight": 0.0231,
       "sampleSize": 2070,
       "population": "RV",
       "results": [
@@ -681,7 +710,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.0461,
+      "weight": 0.0458,
       "sampleSize": 1593,
       "population": "LV",
       "results": [
@@ -707,7 +736,7 @@
     {
       "pollster": "Cherry Communications (R)",
       "endDate": "2026-05-09",
-      "weight": 0.0121,
+      "weight": 0.012,
       "sampleSize": 604,
       "population": "LV",
       "results": [
@@ -791,12 +820,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.011
+      "weight": 0.0109
     },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0099,
+      "weight": 0.0098,
       "sampleSize": 406,
       "population": "LV",
       "results": [
@@ -826,7 +855,7 @@
     {
       "pollster": "MDW Communications",
       "endDate": "2026-04-03",
-      "weight": 0.0183,
+      "weight": 0.0182,
       "sampleSize": 1834,
       "population": "LV",
       "results": [
@@ -886,7 +915,7 @@
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-31",
-      "weight": 0.0134,
+      "weight": 0.0133,
       "sampleSize": 1125,
       "population": "LV",
       "results": [
@@ -939,12 +968,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0134
+      "weight": 0.0133
     },
     {
       "pollster": "University of North Florida",
       "endDate": "2026-03-02",
-      "weight": 0.0057,
+      "weight": 0.0056,
       "sampleSize": 772,
       "population": "LV",
       "results": [

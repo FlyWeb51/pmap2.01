@@ -1,12 +1,38 @@
 {
   "raceId": "FL-G-2026",
-  "count": 61,
+  "count": 62,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "University of North Florida",
+      "sponsors": null,
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-19",
+      "sampleSize": 1471,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://floridapolitics.com/archives/825948-unf-poll-governors-race-too-close-to-call-in-final-days/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "percentage": 49
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "percentage": 47
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "ActiVote",
       "sponsors": null,

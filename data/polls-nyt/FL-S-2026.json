@@ -1,12 +1,43 @@
 {
   "raceId": "FL-S-2026",
-  "count": 35,
+  "count": 36,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "University of North Florida",
+      "sponsors": null,
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-19",
+      "sampleSize": 1471,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://floridapolitics.com/archives/825948-unf-poll-governors-race-too-close-to-call-in-final-days/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": "Univision",

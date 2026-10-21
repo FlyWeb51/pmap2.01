@@ -1,6 +1,6 @@
 {
   "raceId": "GA-S-2026",
-  "count": 61,
+  "count": 62,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -60,6 +60,37 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "University of Georgia",
+      "sponsors": "Atlanta Journal-Constitution",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-15",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.ajc.com/politics/2026/10/rick-jackson-has-outspent-keisha-lance-bottoms-but-democratic-enthusiasm-has-the-race-knotted/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 12
         }
       ],
       "note": null
