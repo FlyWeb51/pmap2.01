@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T17:22:58.202Z",
+  "updated_at": "2026-10-21T21:50:41.771Z",
   "races": {
     "AK-H-01-2026": {
       "count": 16,
@@ -253,12 +253,19 @@
       }
     },
     "FL-H-25-2026": {
-      "count": 4,
+      "count": 5,
       "latest": {
-        "pollster": "Beacon Insights",
-        "endDate": "2026-05-20"
+        "pollster": "National Research",
+        "endDate": "2026-10-15"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 42,
+        "rep": 49,
+        "margin": -7,
+        "demCandidate": "Jared Moskowitz",
+        "repCandidate": "Scott Singer"
+      }
     },
     "FL-H-27-2026": {
       "count": 3,
@@ -284,16 +291,16 @@
       "average": null
     },
     "FL-S-2026": {
-      "count": 37,
+      "count": 39,
       "latest": {
-        "pollster": "Univ. of North Florida",
-        "endDate": "2026-10-19"
+        "pollster": "co/efficient",
+        "endDate": "2026-10-20"
       },
       "average": {
-        "polls": 16,
-        "dem": 43.6,
-        "rep": 49.6,
-        "margin": -6,
+        "polls": 17,
+        "dem": 43.3,
+        "rep": 49.4,
+        "margin": -6.2,
         "demCandidate": "Angie Nixon",
         "repCandidate": "Ashley Moody"
       }
@@ -338,16 +345,16 @@
       "average": null
     },
     "IA-S-2026": {
-      "count": 47,
+      "count": 48,
       "latest": {
         "pollster": "co/efficient",
         "endDate": "2026-10-19"
       },
       "average": {
-        "polls": 33,
+        "polls": 34,
         "dem": 46,
-        "rep": 45.6,
-        "margin": 0.4,
+        "rep": 45.5,
+        "margin": 0.5,
         "demCandidate": "Josh Turek",
         "repCandidate": "Ashley Hinson"
       }
@@ -895,16 +902,16 @@
       }
     },
     "OH-S-2026": {
-      "count": 47,
+      "count": 48,
       "latest": {
         "pollster": "ActiVote",
         "endDate": "2026-10-18"
       },
       "average": {
-        "polls": 29,
+        "polls": 30,
         "dem": 48.3,
-        "rep": 44.4,
-        "margin": 3.9,
+        "rep": 44.3,
+        "margin": 4,
         "demCandidate": "Sherrod Brown",
         "repCandidate": "Jon Husted"
       }
@@ -1106,16 +1113,16 @@
       }
     },
     "TX-S-2026": {
-      "count": 108,
+      "count": 110,
       "latest": {
-        "pollster": "CBS News/YouGov",
-        "endDate": "2026-10-16"
+        "pollster": "ActiVote",
+        "endDate": "2026-10-21"
       },
       "average": {
-        "polls": 53,
-        "dem": 48.3,
-        "rep": 45.6,
-        "margin": 2.7,
+        "polls": 55,
+        "dem": 48.4,
+        "rep": 45.7,
+        "margin": 2.8,
         "demCandidate": "James Talarico",
         "repCandidate": "Ken Paxton"
       }
@@ -1791,10 +1798,10 @@
       }
     },
     "FL-G-2026": {
-      "count": 46,
+      "count": 47,
       "latest": {
-        "pollster": "University of North Florida",
-        "endDate": "2026-10-19"
+        "pollster": "co/efficient",
+        "endDate": "2026-10-20"
       },
       "average": {
         "polls": 17,
@@ -1851,16 +1858,16 @@
       }
     },
     "IA-G-2026": {
-      "count": 22,
+      "count": 23,
       "latest": {
         "pollster": "co/efficient",
         "endDate": "2026-10-19"
       },
       "average": {
-        "polls": 16,
-        "dem": 50.7,
-        "rep": 43.6,
-        "margin": 7.1,
+        "polls": 17,
+        "dem": 50.9,
+        "rep": 43.5,
+        "margin": 7.4,
         "demCandidate": "Rob Sand",
         "repCandidate": "Zach Lahn"
       }
@@ -2099,16 +2106,16 @@
       }
     },
     "NY-G-2026": {
-      "count": 43,
+      "count": 44,
       "latest": {
-        "pollster": "OnMessage Inc.",
-        "endDate": "2026-10-14"
+        "pollster": "Quinnipiac University",
+        "endDate": "2026-10-19"
       },
       "average": {
-        "polls": 11,
-        "dem": 51.8,
-        "rep": 40.4,
-        "margin": 11.4,
+        "polls": 12,
+        "dem": 52.4,
+        "rep": 40.5,
+        "margin": 11.9,
         "demCandidate": "Kathy Hochul",
         "repCandidate": "Bruce Blakeman"
       }
@@ -2137,16 +2144,16 @@
       }
     },
     "OH-G-2026": {
-      "count": 32,
+      "count": 33,
       "latest": {
         "pollster": "ActiVote",
         "endDate": "2026-10-19"
       },
       "average": {
-        "polls": 13,
-        "dem": 48.5,
-        "rep": 44.8,
-        "margin": 3.7,
+        "polls": 14,
+        "dem": 48.6,
+        "rep": 44.7,
+        "margin": 3.9,
         "demCandidate": "Amy Acton",
         "repCandidate": "Vivek Ramaswamy"
       }
@@ -2197,16 +2204,16 @@
       }
     },
     "PA-G-2026": {
-      "count": 20,
+      "count": 21,
       "latest": {
-        "pollster": "Bravo Group",
-        "endDate": "2026-10-11"
+        "pollster": "ActiVote",
+        "endDate": "2026-10-21"
       },
       "average": {
-        "polls": 10,
-        "dem": 55.9,
-        "rep": 31.5,
-        "margin": 24.4,
+        "polls": 11,
+        "dem": 56.7,
+        "rep": 32.5,
+        "margin": 24.2,
         "demCandidate": "Josh Shapiro",
         "repCandidate": "Stacy Garrity"
       }
@@ -2317,16 +2324,16 @@
       }
     },
     "TX-G-2026": {
-      "count": 47,
+      "count": 49,
       "latest": {
-        "pollster": "YouGov",
-        "endDate": "2026-10-16"
+        "pollster": "ActiVote",
+        "endDate": "2026-10-21"
       },
       "average": {
-        "polls": 30,
-        "dem": 46.2,
-        "rep": 48.8,
-        "margin": -2.6,
+        "polls": 32,
+        "dem": 46.3,
+        "rep": 49,
+        "margin": -2.7,
         "demCandidate": "Gina Hinojosa",
         "repCandidate": "Greg Abbott"
       }

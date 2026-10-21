@@ -1,8 +1,37 @@
 {
   "raceId": "TX-G-2026",
-  "count": 47,
-  "updated_at": "2026-10-21T17:22:58.200Z",
+  "count": 49,
+  "updated_at": "2026-10-21T21:50:41.767Z",
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "endDate": "2026-10-21",
+      "fieldDates": "2026-10-17 to 2026-10-21",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Greg Abbott (R)",
+          "party": "R",
+          "pct": 52.5,
+          "percentage": 52.5
+        },
+        {
+          "candidate": "Gina Hinojosa (D)",
+          "party": "D",
+          "pct": 47.5,
+          "percentage": 47.5
+        }
+      ],
+      "sourceUrl": "https://www.activote.net/polls/2026/tx-u-s-senate/2026-10-21/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8758
+    },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-16",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4971
+      "weight": 1.4907
     },
     {
       "pollster": "University of Houston Hobby School of Public Affairs",
@@ -65,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.6731
+      "weight": 1.6659
     },
     {
       "pollster": "ActiVote",
@@ -94,7 +123,42 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7482
+      "weight": 0.745
+    },
+    {
+      "pollster": "New River Strategies/GS Strategy Group",
+      "endDate": "2026-10-13",
+      "fieldDates": "2026-10-09 to 2026-10-13",
+      "sampleSize": 934,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Cook Political Report",
+      "results": [
+        {
+          "candidate": "Greg Abbott (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Gina Hinojosa (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Pat Dixon (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://www.cookpolitical.com/analysis/survey-research/battleground-district-project/senate-battleground-district-project-october",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1124
     },
     {
       "pollster": "Marist University",
@@ -123,7 +187,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2072
+      "weight": 1.202
     },
     {
       "pollster": "GBAO",
@@ -158,7 +222,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4606
+      "weight": 0.4586
     },
     {
       "pollster": "ReconMR/Siena Research Institute",
@@ -187,7 +251,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.809
+      "weight": 0.8055
     },
     {
       "pollster": "YouGov",
@@ -222,7 +286,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8917
+      "weight": 0.8878
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -251,7 +315,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6714
+      "weight": 0.6685
     },
     {
       "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
@@ -286,7 +350,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7536
+      "weight": 0.7504
     },
     {
       "pollster": "Guidant Polling and Strategy",
@@ -321,7 +385,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3656
+      "weight": 0.364
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -350,7 +414,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7673
+      "weight": 0.764
     },
     {
       "pollster": "Big Data Poll",
@@ -385,7 +449,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6521
+      "weight": 0.6493
     },
     {
       "pollster": "Stratus Intelligence",
@@ -414,7 +478,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3466
+      "weight": 0.3451
     },
     {
       "pollster": "Slingshot Strategies",
@@ -449,7 +513,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7141
+      "weight": 0.7111
     },
     {
       "pollster": "Marist University",
@@ -478,7 +542,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6527
+      "weight": 0.6499
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
@@ -513,7 +577,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8908
+      "weight": 0.887
     },
     {
       "pollster": "Emerson College",
@@ -548,7 +612,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5915
+      "weight": 0.589
     },
     {
       "pollster": "SoCal Strategies",
@@ -577,7 +641,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4657
+      "weight": 0.4637
     },
     {
       "pollster": "ReconMR/Siena Research Institute",
@@ -606,7 +670,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4325
+      "weight": 0.4306
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -647,7 +711,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4264
+      "weight": 0.4245
     },
     {
       "pollster": "YouGov",
@@ -676,7 +740,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4225
+      "weight": 0.4207
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
@@ -705,7 +769,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4144
+      "weight": 0.4126
     },
     {
       "pollster": "Overton Insights",
@@ -734,7 +798,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.412
+      "weight": 0.4102
     },
     {
       "pollster": "Slingshot Strategies",
@@ -793,7 +857,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3641
+      "weight": 0.3626
     },
     {
       "pollster": "YouGov",
@@ -828,7 +892,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2784
+      "weight": 0.2772
     },
     {
       "pollster": "Emerson College",
@@ -857,7 +921,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2635
+      "weight": 0.2624
     },
     {
       "pollster": "GBAO",
@@ -886,7 +950,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1287
+      "weight": 0.1282
     },
     {
       "pollster": "ReconMR/Siena Research Institute",
@@ -921,7 +985,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1608
+      "weight": 0.1601
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
@@ -956,7 +1020,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2239
+      "weight": 0.2229
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -985,7 +1049,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1721
+      "weight": 0.1714
     },
     {
       "pollster": "Slingshot Strategies",
@@ -1026,7 +1090,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1549
+      "weight": 0.1543
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -1055,7 +1119,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0772
+      "weight": 0.0769
     },
     {
       "pollster": "SoCal Strategies",
@@ -1084,7 +1148,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0371
+      "weight": 0.037
     },
     {
       "pollster": "YouGov",
@@ -1119,7 +1183,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0665
+      "weight": 0.0662
     },
     {
       "pollster": "ReconMR/Siena Research Institute",
@@ -1154,7 +1218,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0503
+      "weight": 0.0501
     },
     {
       "pollster": "Quantus Insights",
@@ -1183,7 +1247,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0501
+      "weight": 0.0499
     },
     {
       "pollster": "Slingshot Strategies",
@@ -1224,7 +1288,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0616
+      "weight": 0.0613
     },
     {
       "pollster": "Public Policy Polling",
@@ -1288,7 +1352,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0317
+      "weight": 0.0316
     },
     {
       "pollster": "YouGov",
@@ -1317,7 +1381,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0195
+      "weight": 0.0194
     },
     {
       "pollster": "Slingshot Strategies",
@@ -1346,7 +1410,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.02
+      "weight": 0.0199
     },
     {
       "pollster": "University of Texas at Tyler Center for Opinion Research",

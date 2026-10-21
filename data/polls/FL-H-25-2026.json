@@ -1,8 +1,37 @@
 {
   "raceId": "FL-H-25-2026",
-  "count": 4,
-  "updated_at": "2026-10-21T17:22:58.156Z",
+  "count": 5,
+  "updated_at": "2026-10-21T21:50:41.687Z",
   "polls": [
+    {
+      "pollster": "National Research",
+      "endDate": "2026-10-15",
+      "fieldDates": "2026-10-12 to 2026-10-15",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": "R",
+      "sponsors": "NRCC",
+      "results": [
+        {
+          "candidate": "Scott Singer (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jared Moskowitz (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://floridapolitics.com/archives/826146-internal-poll-gives-scott-singer-7-point-lead-over-incumbent-jared-moskowitz-in-cd-25/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3812
+    },
     {
       "pollster": "Beacon Insights",
       "endDate": "2026-05-20",
@@ -29,12 +58,12 @@
         "https://pollingsource.com/house/FL-25"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0242
+      "weight": 0.0241
     },
     {
       "pollster": "Middle Seat (D)",
       "endDate": "2026-05-06",
-      "weight": 0.0109,
+      "weight": 0.0108,
       "sampleSize": 576,
       "population": "LV",
       "results": [
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0109,
+      "weight": 0.0108,
       "otherMatchup": true
     },
     {
@@ -118,7 +147,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0109,
+      "weight": 0.0108,
       "otherMatchup": true
     }
   ]

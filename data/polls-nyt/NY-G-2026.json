@@ -1,12 +1,53 @@
 {
   "raceId": "NY-G-2026",
-  "count": 50,
+  "count": 51,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Quinnipiac University",
+      "sponsors": null,
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-19",
+      "sampleSize": 1167,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://poll.qu.edu/poll-release?releaseid=3972",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kathy Hochul (D)",
+          "party": "D",
+          "percentage": 55
+        },
+        {
+          "candidate": "Bruce Blakeman (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "OnMessage Inc.",
       "sponsors": null,

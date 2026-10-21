@@ -1,23 +1,53 @@
 {
   "SD-S-2026": {
-    "count": 15,
+    "count": 16,
     "latest": {
-      "pollster": "Public Opinion Strategies",
-      "endDate": "2026-10-16",
+      "pollster": "Quantus Insights",
+      "endDate": "2026-10-19",
       "margin": null
     },
     "averageMargin": null,
     "averagePolls": 0
   },
-  "FL-S-2026": {
-    "count": 36,
+  "TX-S-2026": {
+    "count": 121,
     "latest": {
-      "pollster": "University of North Florida",
-      "endDate": "2026-10-19",
-      "margin": -4
+      "pollster": "ActiVote",
+      "endDate": "2026-10-21",
+      "margin": 2
     },
-    "averageMargin": -6.5,
-    "averagePolls": 16
+    "averageMargin": 2.7,
+    "averagePolls": 35
+  },
+  "FL-S-2026": {
+    "count": 38,
+    "latest": {
+      "pollster": "co/efficient",
+      "endDate": "2026-10-20",
+      "margin": -8
+    },
+    "averageMargin": -6.6,
+    "averagePolls": 18
+  },
+  "IA-S-2026": {
+    "count": 46,
+    "latest": {
+      "pollster": "co/efficient",
+      "endDate": "2026-10-19",
+      "margin": -3
+    },
+    "averageMargin": 0.7,
+    "averagePolls": 30
+  },
+  "OH-S-2026": {
+    "count": 41,
+    "latest": {
+      "pollster": "Marist University",
+      "endDate": "2026-10-18",
+      "margin": 9
+    },
+    "averageMargin": 3.6,
+    "averagePolls": 23
   },
   "MI-S-2026": {
     "count": 99,
@@ -89,16 +119,6 @@
     "averageMargin": 5.9,
     "averagePolls": 13
   },
-  "IA-S-2026": {
-    "count": 45,
-    "latest": {
-      "pollster": "co/efficient",
-      "endDate": "2026-10-19",
-      "margin": -3
-    },
-    "averageMargin": 0.6,
-    "averagePolls": 29
-  },
   "MT-S-2026": {
     "count": 32,
     "latest": {
@@ -138,26 +158,6 @@
     },
     "averageMargin": 26.2,
     "averagePolls": 6
-  },
-  "OH-S-2026": {
-    "count": 40,
-    "latest": {
-      "pollster": "Marist University",
-      "endDate": "2026-10-18",
-      "margin": 9
-    },
-    "averageMargin": 3.4,
-    "averagePolls": 22
-  },
-  "TX-S-2026": {
-    "count": 119,
-    "latest": {
-      "pollster": "YouGov",
-      "endDate": "2026-10-16",
-      "margin": 2
-    },
-    "averageMargin": 2.6,
-    "averagePolls": 33
   },
   "SC-S-2026": {
     "count": 21,
@@ -288,6 +288,16 @@
     },
     "averageMargin": null,
     "averagePolls": 0
+  },
+  "FL-H-25-2026": {
+    "count": 4,
+    "latest": {
+      "pollster": "National Research",
+      "endDate": "2026-10-15",
+      "margin": -7
+    },
+    "averageMargin": -7,
+    "averagePolls": 1
   },
   "FL-H-21-2026": {
     "count": 1,
@@ -1289,16 +1299,6 @@
     "averageMargin": null,
     "averagePolls": 0
   },
-  "FL-H-25-2026": {
-    "count": 3,
-    "latest": {
-      "pollster": "Middle Seat",
-      "endDate": "2026-05-06",
-      "margin": 9
-    },
-    "averageMargin": null,
-    "averagePolls": 0
-  },
   "WI-H-03-2026": {
     "count": 4,
     "latest": {
@@ -1439,6 +1439,66 @@
     "averageMargin": null,
     "averagePolls": 0
   },
+  "PA-G-2026": {
+    "count": 25,
+    "latest": {
+      "pollster": "ActiVote",
+      "endDate": "2026-10-21",
+      "margin": 23
+    },
+    "averageMargin": 24,
+    "averagePolls": 9
+  },
+  "TX-G-2026": {
+    "count": 53,
+    "latest": {
+      "pollster": "ActiVote",
+      "endDate": "2026-10-21",
+      "margin": -5
+    },
+    "averageMargin": -2.3,
+    "averagePolls": 30
+  },
+  "FL-G-2026": {
+    "count": 64,
+    "latest": {
+      "pollster": "co/efficient",
+      "endDate": "2026-10-20",
+      "margin": -9
+    },
+    "averageMargin": -5.3,
+    "averagePolls": 19
+  },
+  "IA-G-2026": {
+    "count": 27,
+    "latest": {
+      "pollster": "co/efficient",
+      "endDate": "2026-10-19",
+      "margin": 4
+    },
+    "averageMargin": 7.9,
+    "averagePolls": 20
+  },
+  "OH-G-2026": {
+    "count": 39,
+    "latest": {
+      "pollster": "ActiVote",
+      "endDate": "2026-10-19",
+      "margin": -2.799999999999997
+    },
+    "averageMargin": 4.3,
+    "averagePolls": 14
+  },
+  "NY-G-2026": {
+    "count": 51,
+    "latest": {
+      "pollster": "Quinnipiac University",
+      "endDate": "2026-10-19",
+      "margin": 14
+    },
+    "averageMargin": 12.1,
+    "averagePolls": 9
+  },
   "CA-G-2026": {
     "count": 20,
     "latest": {
@@ -1458,16 +1518,6 @@
     },
     "averageMargin": -16.9,
     "averagePolls": 3
-  },
-  "FL-G-2026": {
-    "count": 62,
-    "latest": {
-      "pollster": "University of North Florida",
-      "endDate": "2026-10-19",
-      "margin": -2
-    },
-    "averageMargin": -4.5,
-    "averagePolls": 17
   },
   "MI-G-2026": {
     "count": 79,
@@ -1509,16 +1559,6 @@
     "averageMargin": -13.6,
     "averagePolls": 2
   },
-  "NY-G-2026": {
-    "count": 50,
-    "latest": {
-      "pollster": "OnMessage Inc.",
-      "endDate": "2026-10-14",
-      "margin": 4.399999999999999
-    },
-    "averageMargin": 11.2,
-    "averagePolls": 8
-  },
   "AK-G-2026": {
     "count": 27,
     "latest": {
@@ -1559,16 +1599,6 @@
     "averageMargin": -10,
     "averagePolls": 7
   },
-  "IA-G-2026": {
-    "count": 26,
-    "latest": {
-      "pollster": "co/efficient",
-      "endDate": "2026-10-19",
-      "margin": 4
-    },
-    "averageMargin": 7.6,
-    "averagePolls": 19
-  },
   "OK-G-2026": {
     "count": 5,
     "latest": {
@@ -1599,16 +1629,6 @@
     "averageMargin": 22.8,
     "averagePolls": 6
   },
-  "OH-G-2026": {
-    "count": 38,
-    "latest": {
-      "pollster": "ActiVote",
-      "endDate": "2026-10-19",
-      "margin": -2.799999999999997
-    },
-    "averageMargin": 4.2,
-    "averagePolls": 13
-  },
   "AZ-G-2026": {
     "count": 42,
     "latest": {
@@ -1628,26 +1648,6 @@
     },
     "averageMargin": 19.8,
     "averagePolls": 11
-  },
-  "PA-G-2026": {
-    "count": 24,
-    "latest": {
-      "pollster": "Bravo Group",
-      "endDate": "2026-10-11",
-      "margin": 30.13
-    },
-    "averageMargin": 24.4,
-    "averagePolls": 8
-  },
-  "TX-G-2026": {
-    "count": 51,
-    "latest": {
-      "pollster": "YouGov",
-      "endDate": "2026-10-16",
-      "margin": -4
-    },
-    "averageMargin": -2.1,
-    "averagePolls": 28
   },
   "WI-G-2026": {
     "count": 37,

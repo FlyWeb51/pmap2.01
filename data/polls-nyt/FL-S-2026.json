@@ -1,12 +1,84 @@
 {
   "raceId": "FL-S-2026",
-  "count": 36,
+  "count": 38,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "co/efficient",
+      "sponsors": null,
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-20",
+      "sampleSize": 1014,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://battlegrounds.coefficient.org/fl/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 11
+        },
+        {
+          "candidate": "Neil Gillespie (NPA)",
+          "party": "NPA",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "co/efficient",
+      "sponsors": null,
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-20",
+      "sampleSize": 1014,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://battlegrounds.coefficient.org/fl/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "percentage": 42
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        },
+        {
+          "candidate": "Generic Candidate (OTH)",
+          "party": "OTH",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "University of North Florida",
       "sponsors": null,

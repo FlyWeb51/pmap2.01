@@ -1,12 +1,48 @@
 {
   "raceId": "SD-S-2026",
-  "count": 15,
+  "count": 16,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Quantus Insights",
+      "sponsors": null,
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-19",
+      "sampleSize": 657,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.semafor.com/article/10/21/2026/poll-shows-big-lead-for-south-dakota-republican-rounds",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mike Rounds (R)",
+          "party": "R",
+          "percentage": 59.4
+        },
+        {
+          "candidate": "Brian Bengs (I)",
+          "party": "I",
+          "percentage": 37.3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1.7
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1.6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Public Opinion Strategies",
       "sponsors": null,

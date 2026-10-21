@@ -1,12 +1,38 @@
 {
   "raceId": "TX-S-2026",
-  "count": 119,
+  "count": 121,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-21",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/tx-u-s-senate/2026-10-21/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 49
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": "CBS News",
@@ -127,6 +153,42 @@
           "candidate": "Ken Paxton (R)",
           "party": "R",
           "percentage": 48.1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "New River Strategies/GS Strategy Group",
+      "sponsors": "Cook Political Report",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-13",
+      "sampleSize": 934,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.cookpolitical.com/analysis/survey-research/battleground-district-project/senate-battleground-district-project-october",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 3
         }
       ],
       "note": null

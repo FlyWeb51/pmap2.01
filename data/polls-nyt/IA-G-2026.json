@@ -1,6 +1,6 @@
 {
   "raceId": "IA-G-2026",
-  "count": 26,
+  "count": 27,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -34,6 +34,37 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 6
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "New River Strategies/GS Strategy Group",
+      "sponsors": "Cook Political Report",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-13",
+      "sampleSize": 602,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.cookpolitical.com/analysis/survey-research/battleground-district-project/senate-battleground-district-project-october",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Rob Sand (D)",
+          "party": "D",
+          "percentage": 54
+        },
+        {
+          "candidate": "Zach Lahn (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
         }
       ],
       "note": null
