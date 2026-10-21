@@ -1,12 +1,38 @@
 {
   "raceId": "IL-S-2026",
-  "count": 1,
+  "count": 2,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-09-26",
+      "endDate": "2026-10-20",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/il-u-s-senate/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Juliana Stratton (D)",
+          "party": "D",
+          "percentage": 58.5
+        },
+        {
+          "candidate": "Don Tracy (R)",
+          "party": "R",
+          "percentage": 41.5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Public Policy Polling",
       "sponsors": "Chicago News Weekly",

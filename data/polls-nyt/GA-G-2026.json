@@ -8,6 +8,32 @@
   },
   "polls": [
     {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-10-06",
+      "endDate": "2026-10-20",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/ga-governor/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Rick Jackson (R)",
+          "party": "R",
+          "percentage": 51.5
+        },
+        {
+          "candidate": "Keisha Lance Bottoms (D)",
+          "party": "D",
+          "percentage": 48.5
+        }
+      ],
+      "note": null
+    },
+    {
       "pollster": "Quantus Insights",
       "sponsors": null,
       "startDate": "2026-10-15",
@@ -101,32 +127,6 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 4
-        }
-      ],
-      "note": null
-    },
-    {
-      "pollster": "Wedgewood Polls",
-      "sponsors": null,
-      "startDate": "2026-10-02",
-      "endDate": "2026-10-03",
-      "sampleSize": 600,
-      "population": "LV",
-      "partisan": null,
-      "internal": false,
-      "sourceUrl": "https://drive.google.com/file/d/1-Qoij2YeWwq-EFaTY_W0iTf1fotSrKHI/view",
-      "sourceTag": "nyt",
-      "hypothetical": false,
-      "results": [
-        {
-          "candidate": "Rick Jackson (R)",
-          "party": "R",
-          "percentage": 51
-        },
-        {
-          "candidate": "Keisha Lance Bottoms (D)",
-          "party": "D",
-          "percentage": 49
         }
       ],
       "note": null

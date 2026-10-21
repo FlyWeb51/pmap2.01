@@ -1,12 +1,38 @@
 {
   "raceId": "NC-S-2026",
-  "count": 59,
+  "count": 60,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-20",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/nc-u-s-senate/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "percentage": 56.9
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "percentage": 43.1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "SurveyUSA",
       "sponsors": "WRAL News | WSOC-TV",

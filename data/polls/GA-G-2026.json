@@ -1,8 +1,37 @@
 {
   "raceId": "GA-G-2026",
   "count": 17,
-  "updated_at": "2026-10-21T02:33:39.287Z",
+  "updated_at": "2026-10-21T05:01:13.680Z",
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-06 to 2026-10-20",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Rick Jackson (R)",
+          "party": "R",
+          "pct": 51.5,
+          "percentage": 51.5
+        },
+        {
+          "candidate": "Keisha Lance Bottoms (D)",
+          "party": "D",
+          "pct": 48.5,
+          "percentage": 48.5
+        }
+      ],
+      "sourceUrl": "https://www.activote.net/polls/2026/ga-governor/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8698
+    },
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-10-17",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1176
+      "weight": 1.1149
     },
     {
       "pollster": "University of Georgia",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2281
+      "weight": 1.2252
     },
     {
       "pollster": "InsiderAdvantage",
@@ -88,36 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0489
-    },
-    {
-      "pollster": "Wedgewood Polls",
-      "endDate": "2026-10-03",
-      "fieldDates": "2026-10-02 to 2026-10-03",
-      "sampleSize": 600,
-      "population": "LV",
-      "partisan": null,
-      "sponsors": null,
-      "results": [
-        {
-          "candidate": "Rick Jackson (R)",
-          "party": "R",
-          "pct": 51,
-          "percentage": 51
-        },
-        {
-          "candidate": "Keisha Lance Bottoms (D)",
-          "party": "D",
-          "pct": 49,
-          "percentage": 49
-        }
-      ],
-      "sourceUrl": "https://drive.google.com/file/d/1-Qoij2YeWwq-EFaTY_W0iTf1fotSrKHI/view",
-      "foundOn": [
-        "https://www.nytimes.com/interactive/polls/latest-polls.html"
-      ],
-      "reviewStatus": "auto",
-      "weight": 0.7209
+      "weight": 1.0464
     },
     {
       "pollster": "InsiderAdvantage",
@@ -146,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8092
+      "weight": 0.8073
     },
     {
       "pollster": "Big Data Poll",
@@ -175,7 +175,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6083
+      "weight": 0.6068
     },
     {
       "pollster": "YouGov",
@@ -204,7 +204,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9307
+      "weight": 0.9285
     },
     {
       "pollster": "InsiderAdvantage",
@@ -233,7 +233,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.281
+      "weight": 0.2804
     },
     {
       "pollster": "Quantus Insights",
@@ -262,7 +262,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.196
+      "weight": 0.1955
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
@@ -291,7 +291,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1544
+      "weight": 0.1541
     },
     {
       "pollster": "State Navigate",
@@ -320,7 +320,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0937
+      "weight": 0.0935
     },
     {
       "pollster": "Wick",
@@ -349,7 +349,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1124
+      "weight": 0.1121
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -378,7 +378,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0871
+      "weight": 0.0869
     },
     {
       "pollster": "Concord Public Opinion Partners",
@@ -407,7 +407,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0194
+      "weight": 0.0193
     },
     {
       "pollster": "Concord Public Opinion Partners",
@@ -436,7 +436,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0194,
+      "weight": 0.0193,
       "otherMatchup": true
     },
     {
