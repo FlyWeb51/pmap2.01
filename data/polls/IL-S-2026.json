@@ -1,16 +1,15 @@
 {
   "raceId": "IL-S-2026",
   "count": 2,
-  "updated_at": "2026-10-21T12:03:08.340Z",
+  "updated_at": "2026-10-21T16:31:18.408Z",
   "polls": [
     {
       "pollster": "ActiVote",
       "endDate": "2026-10-20",
-      "fieldDates": "2026-09-26 to 2026-10-20",
+      "fieldDates": "2026-10-20",
       "sampleSize": 400,
       "population": "LV",
       "partisan": null,
-      "sponsors": null,
       "results": [
         {
           "candidate": "Juliana Stratton (D)",
@@ -27,10 +26,11 @@
       ],
       "sourceUrl": "https://www.activote.net/polls/2026/il-u-s-senate/",
       "foundOn": [
+        "https://pollingsource.com/senate/IL",
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8639
+      "weight": 0.8602
     },
     {
       "pollster": "Public Policy Polling",
@@ -60,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Chicago News Weekly",
-      "weight": 0.3321
+      "weight": 0.3307
     }
   ]
 }
