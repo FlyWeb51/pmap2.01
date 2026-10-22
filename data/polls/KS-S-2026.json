@@ -1,7 +1,7 @@
 {
   "raceId": "KS-S-2026",
-  "count": 18,
-  "updated_at": "2026-10-21T21:50:41.694Z",
+  "count": 19,
+  "updated_at": "2026-10-22T02:27:30.300Z",
   "polls": [
     {
       "pollster": "InsiderAdvantage",
@@ -30,7 +30,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6452
+      "weight": 0.6424
     },
     {
       "pollster": "InsiderAdvantage",
@@ -59,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5883
+      "weight": 0.5856
     },
     {
       "pollster": "YouGov",
@@ -88,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3222
+      "weight": 1.3164
     },
     {
       "pollster": "GBAO",
@@ -117,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3621
+      "weight": 0.3605
     },
     {
       "pollster": "Trafalgar Group",
@@ -146,7 +146,35 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4564
+      "weight": 0.4544
+    },
+    {
+      "pollster": "NY Times/Siena",
+      "endDate": "2026-10-01",
+      "fieldDates": "2026-10-01",
+      "sampleSize": 605,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Hamilton (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Marshall (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/KS"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6755
     },
     {
       "pollster": "New York Times/Siena University",
@@ -174,7 +202,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.663
+      "weight": 0.6601
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -203,7 +231,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.663
+      "weight": 0.6601
     },
     {
       "pollster": "Wedgewood Polls",
@@ -231,7 +259,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5247
+      "weight": 0.5224
     },
     {
       "pollster": "Emerson College",
@@ -261,7 +289,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.5342
+      "weight": 0.5318
     },
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -291,7 +319,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Democratic Attorneys General Association",
-      "weight": 0.2759
+      "weight": 0.2746
     },
     {
       "pollster": "co/efficient",
@@ -320,7 +348,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2568
+      "weight": 0.2557
     },
     {
       "pollster": "co/efficient",
@@ -349,7 +377,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5137,
+      "weight": 0.5114,
       "otherMatchup": true
     },
     {
@@ -385,7 +413,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1348
+      "weight": 0.1342
     },
     {
       "pollster": "OSZ",
@@ -413,7 +441,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1506
+      "weight": 0.1499
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -443,13 +471,13 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Senate Majority PAC",
-      "weight": 0.0945
+      "weight": 0.0941
     },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-13",
       "endDateUS": "7/13/2026",
-      "weight": 0.0532,
+      "weight": 0.053,
       "sampleSize": 600,
       "population": "LV",
       "results": [

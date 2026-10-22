@@ -1,7 +1,7 @@
 {
   "raceId": "IA-S-2026",
-  "count": 48,
-  "updated_at": "2026-10-21T21:50:41.692Z",
+  "count": 50,
+  "updated_at": "2026-10-22T02:27:30.298Z",
   "polls": [
     {
       "pollster": "co/efficient",
@@ -31,7 +31,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6142
+      "weight": 0.6114
     },
     {
       "pollster": "Trafalgar Group",
@@ -61,7 +61,63 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6305
+      "weight": 0.6277
+    },
+    {
+      "pollster": "GS Strategy Group/New River Strategies",
+      "endDate": "2026-10-13",
+      "fieldDates": "October 9–13, 2026",
+      "sampleSize": 602,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3779
+    },
+    {
+      "pollster": "Cook Political Report",
+      "endDate": "2026-10-13",
+      "fieldDates": "2026-10-13",
+      "sampleSize": 602,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Turek (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Hinson (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/IA"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8892
     },
     {
       "pollster": "New River Strategies/GS Strategy Group",
@@ -96,7 +152,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8931
+      "weight": 0.8892
     },
     {
       "pollster": "YouGov",
@@ -126,7 +182,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5907
+      "weight": 1.5836
     },
     {
       "pollster": "NPA Polling",
@@ -154,7 +210,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7872
+      "weight": 0.7838
     },
     {
       "pollster": "National Public Affairs",
@@ -184,7 +240,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "God, Family, & Country PAC",
-      "weight": 0.4631
+      "weight": 0.461
     },
     {
       "pollster": "Marist University",
@@ -214,7 +270,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1527
+      "weight": 1.1476
     },
     {
       "pollster": "Emerson College",
@@ -245,7 +301,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.7894
+      "weight": 0.7859
     },
     {
       "pollster": "SSRS",
@@ -274,7 +330,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8563
+      "weight": 0.8525
     },
     {
       "pollster": "CNN/SSRS",
@@ -309,7 +365,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8563
+      "weight": 0.8525
     },
     {
       "pollster": "Suffolk University",
@@ -339,7 +395,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6611
+      "weight": 0.6582
     },
     {
       "pollster": "New York Times/Siena University",
@@ -368,7 +424,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6791
+      "weight": 0.6761
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -397,7 +453,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6791
+      "weight": 0.6761
     },
     {
       "pollster": "Rasmussen Reports",
@@ -426,7 +482,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4363
+      "weight": 0.4344
     },
     {
       "pollster": "Quantus Insights",
@@ -456,7 +512,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3578
+      "weight": 0.3562
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -487,7 +543,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.4086
+      "weight": 0.4068
     },
     {
       "pollster": "Big Data (I)",
@@ -515,7 +571,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4671
+      "weight": 0.465
     },
     {
       "pollster": "InsiderAdvantage",
@@ -545,7 +601,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3972
+      "weight": 0.3954
     },
     {
       "pollster": "Marist University",
@@ -575,7 +631,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.624
+      "weight": 0.6212
     },
     {
       "pollster": "Trafalgar Group",
@@ -605,7 +661,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3371
+      "weight": 0.3356
     },
     {
       "pollster": "co/efficient",
@@ -635,7 +691,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2812
+      "weight": 0.2799
     },
     {
       "pollster": "co/efficient",
@@ -664,7 +720,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5623,
+      "weight": 0.5598,
       "otherMatchup": true
     },
     {
@@ -696,7 +752,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Iowans for Tax Relief Foundation",
-      "weight": 0.1943
+      "weight": 0.1934
     },
     {
       "pollster": "Rasmussen Reports",
@@ -725,7 +781,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2726
+      "weight": 0.2714
     },
     {
       "pollster": "YouGov",
@@ -755,7 +811,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7251
+      "weight": 0.7219
     },
     {
       "pollster": "YouGov",
@@ -784,7 +840,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7251
+      "weight": 0.7219
     },
     {
       "pollster": "Emerson College",
@@ -815,7 +871,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.3777
+      "weight": 0.3761
     },
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -845,7 +901,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1906
+      "weight": 0.1898
     },
     {
       "pollster": "Abacus Data",
@@ -875,7 +931,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2878
+      "weight": 0.2865
     },
     {
       "pollster": "Wedgewood Polls",
@@ -904,7 +960,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3152
+      "weight": 0.3138
     },
     {
       "pollster": "Abacus Data",
@@ -933,7 +989,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.226
+      "weight": 0.225
     },
     {
       "pollster": "Suffolk University",
@@ -963,7 +1019,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2505
+      "weight": 0.2494
     },
     {
       "pollster": "Abacus data",
@@ -991,7 +1047,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2448
+      "weight": 0.2437
     },
     {
       "pollster": "Iowa State Fair Straw",
@@ -1019,13 +1075,13 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.177
+      "weight": 0.1762
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-08-04",
       "endDateUS": "8/4/2026",
-      "weight": 0.1927,
+      "weight": 0.1919,
       "sampleSize": 712,
       "population": "LV",
       "results": [
@@ -1057,7 +1113,7 @@
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-27",
       "endDateUS": "6/27/2026",
-      "weight": 0.0428,
+      "weight": 0.0426,
       "sampleSize": 1003,
       "population": "RV",
       "results": [
@@ -1090,7 +1146,7 @@
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
       "endDateUS": "6/27/2026",
-      "weight": 0.0735,
+      "weight": 0.0732,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -1142,13 +1198,13 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0735
+      "weight": 0.0732
     },
     {
       "pollster": "Cygnal (R)",
       "endDate": "2026-06-19",
       "endDateUS": "6/19/2026",
-      "weight": 0.0306,
+      "weight": 0.0304,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -1181,7 +1237,7 @@
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-06-11",
       "endDateUS": "6/11/2026",
-      "weight": 0.0328,
+      "weight": 0.0327,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
@@ -1335,7 +1391,7 @@
       "pollster": "Change Research",
       "endDate": "2026-01-11",
       "endDateUS": "1/11/2026",
-      "weight": 0.0011,
+      "weight": 0.001,
       "sampleSize": 1108,
       "population": "LV",
       "results": [
