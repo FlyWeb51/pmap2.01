@@ -1011,11 +1011,13 @@ async function groupsBody(x, el) {
     const rows = [...series.values()].filter((v) => v.pts.length >= 2).map((v) => ({ ...v, t: groupTrend(v.pts), now: v.pts.slice(-3).reduce((a, q) => a + q.m, 0) / Math.min(3, v.pts.length) }));
     const order = Object.keys(CAT_LABEL);
     rows.sort((a, b) => order.indexOf(a.g.cat) - order.indexOf(b.g.cat));
-    const movers = rows.filter((r) => Math.abs(r.t.change) >= 3).sort((a, b) => Math.abs(b.t.change) - Math.abs(a.t.change)).slice(0, 3);
+    // headlines: the core groups (race, sex, age, education), seen in at least 3 polls; smaller or one-off groups stay in the table
+    const core = ["race", "sex", "age", "education"];
+    const movers = rows.filter((r) => core.includes(r.g.cat) && r.pts.length >= 3 && Math.abs(r.t.change) >= 3).sort((a, b) => Math.abs(b.t.change) - Math.abs(a.t.change)).slice(0, 4);
     const who = (v) => (v > 0 ? dN : rN), wk = (d) => (d >= 14 ? `${Math.round(d / 7)} weeks` : `${Math.round(d)} days`);
     const headline = movers.length
       ? movers.map((r) => `<div style="margin:2px 0"><b class="${r.t.change > 0 ? (x.ind ? "i" : "d") : "r"}">${esc(who(r.t.change))}</b> is gaining with <b>${esc(r.g.group.replace(/^(Men|Women)$/, (m) => m.toLowerCase()))}${/voters|Democrats|Republicans|Independents/i.test(r.g.group) ? "" : " voters"}</b>: ${r.t.change > 0 ? (x.ind ? "I" : "D") : "R"} +${Math.abs(r.t.change).toFixed(0)} over ${wk(r.t.span)} <span class="mu">(${r.pts.length} polls${r.t.how === "within" ? ", same-pollster changes" : ""})</span></div>`).join("")
-      : `<div class="mu">No group has moved 3 points or more yet.</div>`;
+      : `<div class="mu">None of the main groups (race, sex, age, education) has moved 3 points or more across 3+ polls yet.</div>`;
     let tb = "";
     let lastCat = null;
     for (const r of rows) {
