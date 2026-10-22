@@ -103,6 +103,11 @@
   #detail{position:absolute;top:0;right:0;height:100%;width:340px;z-index:50;background:var(--panel);border-left:1px solid var(--line);transform:translateX(100%);transition:transform .2s ease;display:flex;flex-direction:column}
   @media (prefers-reduced-motion:reduce){#detail{transition:none}}
   #detail.open{transform:translateX(0)}
+.rz-handle{position:absolute;top:0;left:-5px;width:10px;height:100%;cursor:col-resize;z-index:60;touch-action:none}
+.rz-handle::after{content:"";position:absolute;top:50%;left:3px;width:4px;height:44px;margin-top:-22px;border-radius:2px;background:var(--line);transition:background .15s}
+.rz-handle:hover::after,.rz-handle:focus::after,body.rz-drag .rz-handle::after{background:var(--focus,#6ea8ff)}
+body.rz-drag{cursor:col-resize;user-select:none}
+
   .d-head{padding:16px 18px 12px;border-bottom:1px solid var(--line);position:relative}
   .d-close{position:absolute;top:10px;right:10px;background:none;border:0;color:var(--ink-dim);font-size:18px;cursor:pointer;padding:4px}
   .d-close:hover{color:var(--ink)}
@@ -1714,6 +1719,38 @@ body.predicting .legend{max-width:190px}
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
   setTimeout(init,900);
 })();
+</script>
+
+<script>
+/* Drag the side panel's left edge to make it wider (double-click resets). Width is remembered. */
+(function () {
+  function resizable(panel, opts) {
+    if (!panel || panel.querySelector(".rz-handle")) return;
+    const h = document.createElement("div");
+    h.className = "rz-handle"; h.title = "Drag to resize · double-click to reset"; h.setAttribute("role", "separator"); h.setAttribute("aria-orientation", "vertical");
+    panel.appendChild(h);
+    const get = () => { try { return +localStorage.getItem(opts.key) || 0; } catch { return 0; } };
+    const put = (w) => { try { w ? localStorage.setItem(opts.key, String(Math.round(w))) : localStorage.removeItem(opts.key); } catch {} };
+    const clamp = (w) => Math.max(opts.min, Math.min(Math.max(opts.min, window.innerWidth * opts.maxFrac), w));
+    const apply = (w) => opts.set(w ? clamp(w) : null);
+    const off = () => window.innerWidth < opts.mobile;
+    apply(off() ? null : get());
+    let x0 = 0, w0 = 0;
+    const move = (e) => { const x = e.touches ? e.touches[0].clientX : e.clientX; apply(w0 + (x0 - x)); e.preventDefault(); };
+    const up = () => { document.removeEventListener("pointermove", move); document.removeEventListener("pointerup", up); document.body.classList.remove("rz-drag"); put(opts.cur()); };
+    h.addEventListener("pointerdown", (e) => { if (off()) return; x0 = e.clientX; w0 = opts.cur(); document.body.classList.add("rz-drag"); document.addEventListener("pointermove", move); document.addEventListener("pointerup", up); e.preventDefault(); });
+    h.addEventListener("dblclick", () => { put(0); apply(null); });
+    h.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft" || e.key === "ArrowRight") { apply(opts.cur() + (e.key === "ArrowLeft" ? 40 : -40)); put(opts.cur()); e.preventDefault(); } });
+    h.tabIndex = 0;
+    window.addEventListener("resize", () => apply(off() ? null : get()));
+  }
+  window.__resizable = resizable;
+})();
+</script>
+<script>
+__resizable(document.getElementById("detail"), { key: "pmap-detail-w", min: 300, maxFrac: 0.8, mobile: 861,
+  cur: () => document.getElementById("detail").getBoundingClientRect().width,
+  set: (w) => { document.getElementById("detail").style.width = w ? w + "px" : ""; } });
 </script>
 </body>
 </html>

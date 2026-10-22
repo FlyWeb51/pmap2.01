@@ -43,7 +43,13 @@
   .sc-msg{font-size:11px;margin-top:6px;color:var(--ink-dim);min-height:15px}
   .d{color:var(--nd)} .r{color:var(--lr)}
 
-  main{max-width:1400px;margin:0 auto;padding:12px 22px 28px;display:grid;grid-template-columns:1fr 360px;gap:16px;align-items:start}
+  main{max-width:1400px;margin:0 auto;padding:12px 22px 28px;display:grid;grid-template-columns:1fr var(--sidew,360px);gap:16px;align-items:start}
+  .rz-handle{position:absolute;top:0;left:-5px;width:10px;height:100%;cursor:col-resize;z-index:60;touch-action:none}
+  .side .rz-handle::after{top:140px}
+  .rz-handle::after{content:"";position:absolute;top:50%;left:3px;width:4px;height:44px;margin-top:-22px;border-radius:2px;background:var(--line);transition:background .15s}
+  .rz-handle:hover::after,.rz-handle:focus::after,body.rz-drag .rz-handle::after{background:var(--focus,#6ea8ff)}
+  body.rz-drag{cursor:col-resize;user-select:none}
+  .side{position:relative}
   .mapcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px;position:relative;min-width:0}
   svg{width:100%;height:auto;display:block}
   .st{stroke:#0a0f18;stroke-width:.7;cursor:pointer;transition:fill .12s}
@@ -1052,6 +1058,38 @@ document.addEventListener("keydown", (e) => {
     document.querySelector(".mapcard").innerHTML = `<p class="err">Couldn't load the map data (${esc(e.message)}).</p>`;
   }
 })();
+</script>
+
+<script>
+/* Drag the side panel's left edge to make it wider (double-click resets). Width is remembered. */
+(function () {
+  function resizable(panel, opts) {
+    if (!panel || panel.querySelector(".rz-handle")) return;
+    const h = document.createElement("div");
+    h.className = "rz-handle"; h.title = "Drag to resize · double-click to reset"; h.setAttribute("role", "separator"); h.setAttribute("aria-orientation", "vertical");
+    panel.appendChild(h);
+    const get = () => { try { return +localStorage.getItem(opts.key) || 0; } catch { return 0; } };
+    const put = (w) => { try { w ? localStorage.setItem(opts.key, String(Math.round(w))) : localStorage.removeItem(opts.key); } catch {} };
+    const clamp = (w) => Math.max(opts.min, Math.min(Math.max(opts.min, window.innerWidth * opts.maxFrac), w));
+    const apply = (w) => opts.set(w ? clamp(w) : null);
+    const off = () => window.innerWidth < opts.mobile;
+    apply(off() ? null : get());
+    let x0 = 0, w0 = 0;
+    const move = (e) => { const x = e.touches ? e.touches[0].clientX : e.clientX; apply(w0 + (x0 - x)); e.preventDefault(); };
+    const up = () => { document.removeEventListener("pointermove", move); document.removeEventListener("pointerup", up); document.body.classList.remove("rz-drag"); put(opts.cur()); };
+    h.addEventListener("pointerdown", (e) => { if (off()) return; x0 = e.clientX; w0 = opts.cur(); document.body.classList.add("rz-drag"); document.addEventListener("pointermove", move); document.addEventListener("pointerup", up); e.preventDefault(); });
+    h.addEventListener("dblclick", () => { put(0); apply(null); });
+    h.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft" || e.key === "ArrowRight") { apply(opts.cur() + (e.key === "ArrowLeft" ? 40 : -40)); put(opts.cur()); e.preventDefault(); } });
+    h.tabIndex = 0;
+    window.addEventListener("resize", () => apply(off() ? null : get()));
+  }
+  window.__resizable = resizable;
+})();
+</script>
+<script>
+__resizable(document.querySelector("aside.side"), { key: "pmap-predict-side-w", min: 320, maxFrac: 0.7, mobile: 981,
+  cur: () => document.querySelector("aside.side").getBoundingClientRect().width,
+  set: (w) => { const m = document.querySelector("main"); m.style.setProperty("--sidew", w ? w + "px" : "360px"); } });
 </script>
 </body>
 </html>
