@@ -1,12 +1,38 @@
 {
   "raceId": "NJ-H-02-2026",
-  "count": 1,
+  "count": 2,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Impact Research",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-10",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://newjerseyglobe.com/congress/super-pac-putting-1-5-million-on-broadcast-tv-to-take-out-van-drew/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jeff Van Drew (R)",
+          "party": "R",
+          "percentage": 50
+        },
+        {
+          "candidate": "Zack Mullock (D)",
+          "party": "D",
+          "percentage": 40
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Public Policy Polling",
       "sponsors": "Voter Protection Project",

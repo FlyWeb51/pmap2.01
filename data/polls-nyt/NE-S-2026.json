@@ -1,12 +1,89 @@
 {
   "raceId": "NE-S-2026",
-  "count": 17,
+  "count": 19,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "National Public Affairs",
+      "sponsors": "God, Family, & Country PAC",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-18",
+      "sampleSize": 598,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/NE_Tracker_R2_Trend_Memo_102226.7.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "percentage": 50
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "National Public Affairs",
+      "sponsors": "God, Family, & Country PAC",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-18",
+      "sampleSize": 598,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/NE_Tracker_R2_Trend_Memo_102226.7.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        },
+        {
+          "candidate": "Chuck Conboy (AME)",
+          "party": "AME",
+          "percentage": 2
+        },
+        {
+          "candidate": "Mike Marvin (LMN)",
+          "party": "LMN",
+          "percentage": 2
+        },
+        {
+          "candidate": "Robin Richards (NEB)",
+          "party": "NEB",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "National Public Affairs",
       "sponsors": "God, Family, & Country PAC",

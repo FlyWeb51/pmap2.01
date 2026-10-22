@@ -1,8 +1,37 @@
 {
   "raceId": "NH-H-02-2026",
-  "count": 9,
-  "updated_at": "2026-10-22T17:20:20.110Z",
+  "count": 10,
+  "updated_at": "2026-10-22T21:45:25.841Z",
   "polls": [
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-19 to 2026-10-20",
+      "sampleSize": 811,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Maggie Goodlander (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Lily Tang Williams (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-democrats-leading-congressional-races-affordability-concerns-shape-election-landscape",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1909
+    },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-09-21",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5693
+      "weight": 0.5669
     },
     {
       "pollster": "Saint Anselm College",
@@ -58,7 +87,7 @@
         "https://pollingsource.com/house/NH-02"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2594
+      "weight": 0.2583
     },
     {
       "pollster": "St. Anselm",
@@ -87,12 +116,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2594
+      "weight": 0.2583
     },
     {
       "pollster": "St. Anselm",
       "endDate": "2026-06-25",
-      "weight": 0.0717,
+      "weight": 0.0714,
       "sampleSize": 802,
       "population": "RV",
       "results": [

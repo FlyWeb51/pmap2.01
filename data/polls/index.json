@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T17:20:20.152Z",
+  "updated_at": "2026-10-22T21:45:25.866Z",
   "races": {
     "AK-H-01-2026": {
       "count": 16,
@@ -267,16 +267,16 @@
       }
     },
     "FL-H-25-2026": {
-      "count": 5,
+      "count": 6,
       "latest": {
-        "pollster": "National Research",
-        "endDate": "2026-10-15"
+        "pollster": "Public Policy Polling",
+        "endDate": "2026-10-22"
       },
       "average": {
-        "polls": 1,
-        "dem": 42,
-        "rep": 49,
-        "margin": -7,
+        "polls": 2,
+        "dem": 44.9,
+        "rep": 44.9,
+        "margin": 0.1,
         "demCandidate": "Jared Moskowitz",
         "repCandidate": "Scott Singer"
       }
@@ -757,46 +757,46 @@
       }
     },
     "NE-S-2026": {
-      "count": 14,
+      "count": 15,
       "latest": {
         "pollster": "National Public Affairs",
-        "endDate": "2026-10-05"
+        "endDate": "2026-10-18"
       },
       "average": {
-        "polls": 7,
-        "dem": 46.3,
-        "rep": 46.6,
-        "margin": -0.3,
+        "polls": 8,
+        "dem": 46.4,
+        "rep": 47,
+        "margin": -0.6,
         "demCandidate": "Dan Osborn",
         "repCandidate": "Pete Ricketts"
       }
     },
     "NH-H-02-2026": {
-      "count": 9,
+      "count": 10,
       "latest": {
-        "pollster": "University of New Hampshire",
-        "endDate": "2026-09-21"
+        "pollster": "St. Anselm",
+        "endDate": "2026-10-20"
       },
       "average": {
-        "polls": 3,
-        "dem": 53.1,
-        "rep": 35,
-        "margin": 18.1,
+        "polls": 4,
+        "dem": 53.6,
+        "rep": 36.6,
+        "margin": 17,
         "demCandidate": "Maggie Goodlander",
         "repCandidate": "Lily Tang Williams"
       }
     },
     "NH-S-2026": {
-      "count": 61,
+      "count": 62,
       "latest": {
-        "pollster": "National Public Affairs",
-        "endDate": "2026-10-12"
+        "pollster": "St. Anselm",
+        "endDate": "2026-10-20"
       },
       "average": {
-        "polls": 17,
-        "dem": 48.9,
+        "polls": 18,
+        "dem": 49.1,
         "rep": 43,
-        "margin": 6,
+        "margin": 6.2,
         "demCandidate": "Chris Pappas",
         "repCandidate": "John E. Sununu"
       }
@@ -1540,13 +1540,13 @@
       }
     },
     "NH-H-01-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
-        "pollster": "University of New Hampshire",
-        "endDate": "2026-09-21"
+        "pollster": "St. Anselm",
+        "endDate": "2026-10-20"
       },
       "average": {
-        "polls": 1,
+        "polls": 2,
         "dem": 46,
         "rep": 42,
         "margin": 4,
@@ -1923,16 +1923,16 @@
       }
     },
     "IL-G-2026": {
-      "count": 2,
+      "count": 3,
       "latest": {
-        "pollster": "Public Policy Polling",
-        "endDate": "2026-10-01"
+        "pollster": "ActiVote",
+        "endDate": "2026-10-22"
       },
       "average": {
-        "polls": 1,
-        "dem": 54,
-        "rep": 34,
-        "margin": 20,
+        "polls": 2,
+        "dem": 56.8,
+        "rep": 38.4,
+        "margin": 18.4,
         "demCandidate": "JB Pritzker",
         "repCandidate": "Darren Bailey"
       }
@@ -2043,42 +2043,49 @@
       }
     },
     "NE-G-2026": {
-      "count": 8,
+      "count": 9,
       "latest": {
-        "pollster": "Public Policy Polling",
-        "endDate": "2026-10-14"
+        "pollster": "National Public Affairs",
+        "endDate": "2026-10-18"
       },
       "average": {
-        "polls": 7,
-        "dem": 40.3,
-        "rep": 43.1,
-        "margin": -2.8,
+        "polls": 8,
+        "dem": 40.4,
+        "rep": 43.6,
+        "margin": -3.2,
         "demCandidate": "Lynne Walz",
         "repCandidate": "Jim Pillen"
       }
     },
     "NH-G-2026": {
-      "count": 17,
+      "count": 18,
       "latest": {
-        "pollster": "National Public Affairs",
-        "endDate": "2026-10-12"
+        "pollster": "St. Anselm",
+        "endDate": "2026-10-20"
       },
       "average": {
-        "polls": 8,
-        "dem": 40.3,
-        "rep": 50.6,
-        "margin": -10.2,
+        "polls": 9,
+        "dem": 40.8,
+        "rep": 50.4,
+        "margin": -9.7,
         "demCandidate": "Cinde Warmington",
         "repCandidate": "Kelly Ayotte"
       }
     },
     "NJ-H-02-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
-        "pollster": "Public Policy Polling",
-        "endDate": "2025-05-22"
+        "pollster": "Impact Research",
+        "endDate": "2026-10-10"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 40,
+        "rep": 50,
+        "margin": -10,
+        "demCandidate": "Zack Mullock",
+        "repCandidate": "Jeff Van Drew"
+      }
     },
     "NM-G-2026": {
       "count": 5,
@@ -2314,16 +2321,16 @@
       }
     },
     "SD-G-2026": {
-      "count": 3,
+      "count": 4,
       "latest": {
-        "pollster": "Mason-Dixon Polling & Research, Inc.",
-        "endDate": "2026-10-14"
+        "pollster": "Emerson College",
+        "endDate": "2026-10-20"
       },
       "average": {
-        "polls": 3,
-        "dem": 37.5,
-        "rep": 53.3,
-        "margin": -15.8,
+        "polls": 4,
+        "dem": 37.7,
+        "rep": 54.6,
+        "margin": -16.9,
         "demCandidate": "Daniel P. Ahlers",
         "repCandidate": "Larry Rhoden"
       }

@@ -1,8 +1,37 @@
 {
   "raceId": "NH-H-01-2026",
-  "count": 1,
-  "updated_at": "2026-10-22T17:20:20.129Z",
+  "count": 2,
+  "updated_at": "2026-10-22T21:45:25.853Z",
   "polls": [
+    {
+      "pollster": "St. Anselm",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-19 to 2026-10-20",
+      "sampleSize": 861,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Stefany Shaheen (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Anthony DiLorenzo (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-democrats-leading-congressional-races-affordability-concerns-shape-election-landscape",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.227
+    },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-09-21",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.573
+      "weight": 0.5705
     }
   ]
 }

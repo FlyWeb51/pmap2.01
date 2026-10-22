@@ -1,8 +1,37 @@
 {
   "raceId": "IL-G-2026",
-  "count": 2,
-  "updated_at": "2026-10-22T17:20:20.137Z",
+  "count": 3,
+  "updated_at": "2026-10-22T21:45:25.858Z",
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-02 to 2026-10-22",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "JB Pritzker (D)",
+          "party": "D",
+          "pct": 58.7,
+          "percentage": 58.7
+        },
+        {
+          "candidate": "Darren Bailey (R)",
+          "party": "R",
+          "pct": 41.3,
+          "percentage": 41.3
+        }
+      ],
+      "sourceUrl": "https://www.activote.net/polls/2026/il-governor/2026-10-22/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8759
+    },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-10-01",
@@ -36,7 +65,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5812
+      "weight": 0.5788
     },
     {
       "pollster": "Victory Research",

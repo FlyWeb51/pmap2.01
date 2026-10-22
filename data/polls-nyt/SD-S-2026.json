@@ -1,12 +1,43 @@
 {
   "raceId": "SD-S-2026",
-  "count": 16,
+  "count": 17,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": "KELO-TV",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-20",
+      "sampleSize": 803,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.keloland.com/keloland-com-original/keloland-poll-rounds-leads-bengs-at-8-trump-approval-down/amp/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mike Rounds (R)",
+          "party": "R",
+          "percentage": 50
+        },
+        {
+          "candidate": "Brian Bengs (I)",
+          "party": "I",
+          "percentage": 42
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Quantus Insights",
       "sponsors": null,

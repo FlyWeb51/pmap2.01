@@ -1,8 +1,37 @@
 {
   "raceId": "SD-G-2026",
-  "count": 3,
-  "updated_at": "2026-10-22T17:20:20.147Z",
+  "count": 4,
+  "updated_at": "2026-10-22T21:45:25.863Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-19 to 2026-10-20",
+      "sampleSize": 803,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "KELO-TV",
+      "results": [
+        {
+          "candidate": "Larry Rhoden (R)",
+          "party": "R",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "Daniel P. Ahlers (D)",
+          "party": "D",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://www.keloland.com/keloland-com-original/keloland-poll-rounds-leads-bengs-at-8-trump-approval-down/amp/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.185
+    },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
       "endDate": "2026-10-14",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7357
+      "weight": 0.7326
     },
     {
       "pollster": "Concord Public Opinion Partners",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3183
+      "weight": 0.3169
     },
     {
       "pollster": "Lake Research Partners",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1445
+      "weight": 0.1439
     }
   ]
 }
