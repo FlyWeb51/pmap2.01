@@ -1,6 +1,6 @@
 {
   "raceId": "TX-G-2026",
-  "count": 55,
+  "count": 56,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -29,6 +29,37 @@
           "candidate": "Gina Hinojosa (D)",
           "party": "D",
           "percentage": 47.5
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Emerson College",
+      "sponsors": "Nexstar",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-19",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll-toss-up/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Greg Abbott (R)",
+          "party": "R",
+          "percentage": 51.07
+        },
+        {
+          "candidate": "Gina Hinojosa (D)",
+          "party": "D",
+          "percentage": 46.59
+        },
+        {
+          "candidate": "Pat Dixon (LIB)",
+          "party": "LIB",
+          "percentage": 2.34
         }
       ],
       "note": null

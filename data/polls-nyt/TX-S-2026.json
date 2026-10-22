@@ -1,6 +1,6 @@
 {
   "raceId": "TX-S-2026",
-  "count": 123,
+  "count": 124,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -29,6 +29,37 @@
           "candidate": "Ken Paxton (R)",
           "party": "R",
           "percentage": 49
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Emerson College",
+      "sponsors": "Nexstar",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-19",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://emersoncollegepolling.com/texas-2026-poll-toss-up/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 49.37
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 47.83
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 2.8
         }
       ],
       "note": null
