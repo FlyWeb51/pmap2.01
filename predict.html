@@ -566,14 +566,14 @@ function runOdds() {
   setTimeout(step, 0);
 }
 // "1 in 4.2 trillion" style; takes a natural-log probability so tiny odds don't underflow
-const BIG = [[1e18, "quintillion"], [1e15, "quadrillion"], [1e12, "trillion"], [1e9, "billion"], [1e6, "million"]];
+const BIG = [[1e33, "decillion"], [1e30, "nonillion"], [1e27, "octillion"], [1e24, "septillion"], [1e21, "sextillion"], [1e18, "quintillion"], [1e15, "quadrillion"], [1e12, "trillion"], [1e9, "billion"], [1e6, "million"]];
 function fmtLog(lp) {
   if (lp == null || !isFinite(lp)) return "–";
   const p = Math.exp(lp);
   if (p >= 0.5) return `${Math.round(p * 100)}%`;
   if (p >= 0.05) return `${(p * 100).toFixed(0)}%`;
   const l10 = -lp / Math.LN10; // 1 in 10^l10
-  if (l10 >= 21) return `1 in 10^${Math.round(l10)}`;
+  if (l10 >= 36) return "less than 1 in a decillion";
   const n = Math.pow(10, l10);
   for (const [v, w] of BIG) if (n >= v) return `1 in ${(n / v).toFixed(n / v < 10 ? 1 : 0)} ${w}`;
   return `1 in ${Math.round(n).toLocaleString()}`;
