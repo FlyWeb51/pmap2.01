@@ -220,6 +220,7 @@
     <section class="center" id="detail"><p class="mu">Loading…</p></section>
     <section class="center" id="vMarkets" hidden></section>
     <section class="center" id="vGeneric" hidden></section>
+    <section class="center" id="vSim" hidden></section>
     <section class="frame" id="vFrame" hidden><iframe id="frame" title="Election Center page"></iframe></section>
   </div>
   <aside class="dock" id="dockR" aria-label="Right panels"></aside>
@@ -235,6 +236,7 @@
   <button data-k="F7"><b>F7</b>MONEY</button>
   <button data-k="F8"><b>F8</b>VOTERS</button>
   <button data-k="F9"><b>F9</b>GENERIC</button>
+  <button data-k="F10"><b>F10</b>SEAT SIM</button>
   <button class="help" id="helpBtn"><b>?</b>HELP</button>
 </nav>
 <div class="modal" id="help" hidden><div>
@@ -244,7 +246,7 @@
   <span class="am">/</span> search: <span class="am">TX SEN</span>, <span class="am">PA-07</span>, <span class="am">GA GOV</span>, a state, or a name, then Enter<br>
   <span class="am">↑ ↓</span> step through the watchlist · <span class="am">S</span> star the open race<br>
   <span class="am">P</span> poll chart · <span class="am">K</span> price chart · <span class="am">D R T C</span> call the open race (Dem, Rep, toss-up, clear)<br>
-  <span class="am">F1</span> race · <span class="am">F2</span> map · <span class="am">F3</span> national · <span class="am">F4</span> predict · <span class="am">F5</span> all Kalshi markets · <span class="am">F6</span> polling · <span class="am">F7</span> money · <span class="am">F8</span> voters · <span class="am">F9</span> generic ballot by state · <span class="am">Esc</span> back to the race<br>
+  <span class="am">F1</span> race · <span class="am">F2</span> map · <span class="am">F3</span> national · <span class="am">F4</span> predict · <span class="am">F5</span> all Kalshi markets · <span class="am">F6</span> polling · <span class="am">F7</span> money · <span class="am">F8</span> voters · <span class="am">F9</span> generic ballot by state · <span class="am">F10</span> House seat simulator · <span class="am">Esc</span> back to the race<br>
   Every screen opens inside the terminal; only outside links (Kalshi, poll sources) open a new tab.<br><br>
   <b class="am">COLUMNS</b><br>
   MKT = Kalshi chance for the favorite · 24H = change in the Democratic (or independent) chance; blue is toward D, red toward R · POLLS = polling average · REG = registered Democrats minus Republicans as a share of all registered voters · SPLIT = polls and market favor different candidates<br><br>
@@ -721,7 +723,7 @@ function wCalls(el, sub) {
     for (const [st, n] of Object.entries(APP)) for (let d = 1; d <= n; d++) {
       const dn = n === 1 ? 0 : d, m = MEMBERS.find((x) => x.c === "rep" && x.s === st && (x.d === dn || (n === 1 && (x.d === 0 || x.d === 1))));
       const kid = `${st}-${pad2(d)}`, fkey = `${st}-${n === 1 ? "00" : pad2(d)}`;
-      RACES.push({ t: "H", st, d, id: `H:${kid}`, code: n === 1 ? `${st}-AL` : kid, name: `${NAMES[st]} ${n === 1 ? "at-large" : d}`, holder: holderOf(fkey, m), rating: over[`${st}-${d}`] || (m ? (m.p === "R" ? "Solid R" : "Solid D") : null), k: (kh || {})[kid], pollId: `${st}-H-${pad2(d)}-2026` });
+      RACES.push({ t: "H", st, d, id: `H:${kid}`, code: n === 1 ? `${st}-AL` : kid, name: `${NAMES[st]} ${n === 1 ? "at-large" : d}`, holder: holderOf(fkey, m), rating: over[`${st}-${d}`] || (m ? (m.p === "R" ? "Solid R" : "Solid D") : null), k: (kh || {})[kid], pollId: `${st}-H-${pad2(d)}-2026`, mem: m || null });
     }
     for (const x of RACES) BY[x.id] = x;
 
@@ -1004,6 +1006,7 @@ const VIEWS = {
   markets: { title: "ALL KALSHI MARKETS", key: "F5" },
   polling: { title: "POLLING", key: "F6", src: "polling/?embed=1" },
   generic: { title: "GENERIC BALLOT BY STATE", key: "F9", note: "Two models: anchor (uniform swing) and elastic." },
+  sim: { title: "HOUSE SEAT SIMULATOR", key: "F10", note: "100,000 simulated elections from the district models, against Kalshi." },
 };
 let view = "race", wide = false;
 function applyWide() { const w = wide && view !== "race"; $("main").classList.toggle("noleft", w || !LAYOUT.showL); $("main").classList.toggle("noright", w || !LAYOUT.showR); $("vwide").classList.toggle("on", wide); }
@@ -1014,6 +1017,7 @@ function setView(v, src) {
   $("detail").hidden = v !== "race";
   $("vMarkets").hidden = v !== "markets";
   $("vGeneric").hidden = v !== "generic";
+  $("vSim").hidden = v !== "sim";
   $("vFrame").hidden = !(V.src || src);
   $("vbar").hidden = v === "race";
   $("vtitle").textContent = V.title;
@@ -1022,6 +1026,7 @@ function setView(v, src) {
   applyWide();
   if (v === "markets") renderMarkets();
   if (v === "generic") renderGeneric();
+  if (v === "sim") renderSim();
   if (v === "race") { renderW("calls"); if (cur) { const cb = document.querySelector("#detail .callbar"); if (cb) { cb.outerHTML = callBar(cur); wireCalls(); } } }
   document.querySelectorAll("#fk button[data-k]").forEach((b) => b.classList.toggle("on", b.dataset.k === (V.key || "") || (v === "race" && ((b.dataset.k === "F7" && detTab === "money") || (b.dataset.k === "F8" && detTab === "voters")))));
 }
@@ -1075,7 +1080,17 @@ function renderMarkets() {
    Model 1 (anchor / uniform swing) = lean + national generic ballot
    Model 2 (elastic, Silver Bulletin's benchmark) = lean + national generic ballot x state elasticity
    Districts use their 2024 result on the 2026 lines (no 2020 on redrawn maps) and their state's elasticity. */
-const GB = { inp: null, polls: null, gen: null, sort: "close", q: "", st: null, loading: false };
+const GB = { inp: null, polls: null, wiki: null, gen: null, sort: "close", q: "", st: null, loading: false };
+// Statewide generic polls from both feeds (Wikipedia House tables + NYT), one row per poll.
+// When a poll reports LV and RV, keep LV.
+function gbStatePolls(st) {
+  const w = ((GB.wiki && GB.wiki.states[st]) || []).map((p) => ({ ...p, race: "house", from: "Wikipedia" }));
+  const n = ((GB.polls && GB.polls.states[st]) || []).map((p) => ({ ...p, from: "NYT" }));
+  const key = (p) => `${String(p.pollster).toLowerCase().replace(/[^a-z]/g, "").slice(0, 8)}|${p.end}`;
+  const by = new Map(), rank = { LV: 0, RV: 1, A: 2 };
+  for (const p of [...w, ...n]) { const k = key(p), o = by.get(k); if (!o || (rank[p.pop] ?? 3) < (rank[o.pop] ?? 3)) by.set(k, o && o.url && !p.url ? { ...p, url: o.url } : p); }
+  return [...by.values()].sort((a, b) => (a.end < b.end ? 1 : -1));
+}
 const sm = (m) => (m == null ? "–" : lead(m));
 function gbPollAvg(list) {
   // last 180 days; firms that mainly work for one party count half
@@ -1093,7 +1108,10 @@ function gbStates(g) {
     if (m20 == null || el == null) continue;
     const lean = (2 / 3) * (m24 - BASE.nationalPresMarginD) + (1 / 3) * (m20 - I.pres2020.nationalMarginD);
     const arg = I.argument.marginD[st];
-    out.push({ st, lean, el, m1: lean + g, m2: lean + g * el, arg: arg == null ? null : arg + (g - I.argument.national) * el, argRaw: arg, polls: (GB.polls && GB.polls.states[st]) || [], pa: gbPollAvg(GB.polls && GB.polls.states[st]) });
+    const polls = gbStatePolls(st), pa = gbPollAvg(polls);
+    // vsNat: how the state's own polling runs against what the national average implies (model 2)
+    // impliedNat: the national generic ballot this state's polls would imply
+    out.push({ st, lean, el, m1: lean + g, m2: lean + g * el, arg: arg == null ? null : arg + (g - I.argument.national) * el, argRaw: arg, polls, pa, vsNat: pa ? pa.avg - (lean + g * el) : null, impliedNat: pa ? (pa.avg - lean) / el : null });
   }
   return out;
 }
@@ -1101,8 +1119,8 @@ async function renderGeneric() {
   const el = $("vGeneric");
   if (!GB.inp && !GB.loading) {
     GB.loading = true; el.innerHTML = `<p class="note">Loading…</p>`;
-    const [inp, polls] = await Promise.all([getJSON("data/generic-state-inputs.json"), getJSON("data/generic-polls.json")]);
-    GB.inp = inp; GB.polls = polls || { states: {}, districts: {} }; GB.loading = false;
+    const [inp, polls, wiki] = await Promise.all([getJSON("data/generic-state-inputs.json"), getJSON("data/generic-polls.json"), getJSON("data/generic-wiki.json")]);
+    GB.inp = inp; GB.polls = polls || { states: {}, districts: {} }; GB.wiki = wiki || { states: {} }; GB.loading = false;
   }
   if (!GB.inp || !BASE || !GEN) { el.innerHTML = `<p class="note">${GB.loading ? "Loading…" : "Model inputs aren't available right now."}</p>`; return; }
   const avg = GEN.margin, g = GB.gen == null ? avg : GB.gen;
@@ -1112,28 +1130,31 @@ async function renderGeneric() {
   rows.sort(sorts[GB.sort]);
   const all = gbStates(g).filter((r) => r.st !== "DC"), flips = (k) => all.filter((r) => r[k] > 0).length;
   const swing = g - BASE.nationalPresMarginD;
+  const polled = all.filter((r) => r.pa), wsum = polled.reduce((a, r) => a + Math.sqrt(r.pa.n), 0);
+  const impl = polled.length ? polled.reduce((a, r) => a + Math.sqrt(r.pa.n) * r.impliedNat, 0) / wsum : null;
   const cell = (m, extra = "") => `<td class="n ${leadCls(m)}"${extra}>${sm(m)}</td>`;
   let h = `<div class="mk-top">
       <div><small>${GB.gen == null ? "NATIONAL GENERIC (POLL AVG)" : `WHAT-IF GENERIC · AVG IS ${sm(avg)}`}</small><b class="${leadCls(g)}">${sm(g)}</b></div>
       <div><small>2024 NATIONAL PRES</small><b class="${leadCls(BASE.nationalPresMarginD)}">${sm(BASE.nationalPresMarginD)}</b></div>
       <div><small>SWING SINCE 2024</small><b class="${leadCls(swing)}">${sm(swing)}</b></div>
       <div><small>STATES LEANING D · M1 / M2</small><b>${flips("m1")} / ${flips("m2")} <span class="mu" style="font-size:11px">of 50</span></b></div>
-      <div><small>STATES WITH GENERIC POLLS</small><b>${all.filter((r) => r.pa).length}</b></div></div>
+      <div title="Each polled state's generic-ballot average, turned back into the national number it implies (poll minus lean, divided by elasticity), then averaged with more weight on states with more polls."><small>NATIONAL IMPLIED BY STATE POLLS</small><b class="${leadCls(impl)}">${impl == null ? "–" : sm(impl)}</b> <span class="mu" style="font-size:11px">${impl == null ? "" : `${impl - avg >= 0 ? "+" : ""}${(impl - avg).toFixed(1)} vs avg · ${polled.length} states · ${polled.reduce((a, r) => a + r.pa.n, 0)} polls`}</span></div></div>
     <div class="mk-ctl"><label class="mu" for="gbg">WHAT IF GENERIC =</label>
-      <input id="gbg" type="number" step="0.5" value="${g.toFixed(1)}" style="max-width:76px;min-width:0" aria-label="National generic ballot, Democratic minus Republican"><span class="mu">D minus R</span>
+      <input id="gbg" type="number" step="0.5" value="${g.toFixed(1)}" style="width:70px;min-width:0;flex:none" aria-label="National generic ballot, Democratic minus Republican"><span class="mu">D minus R</span>
       <button id="gbreset"${GB.gen == null ? " disabled" : ""}>RESET TO AVG</button>
       <div class="seg" style="margin:0">${[["close", "CLOSEST"], ["polls", "HAS POLLS"], ["gap", "MODEL GAP"], ["el", "MOST ELASTIC"], ["d", "MOST D"], ["az", "A–Z"]].map(([v, l]) => `<button data-gs="${v}" class="${GB.sort === v ? "on" : ""}">${l}</button>`).join("")}</div>
       <input id="gbq" placeholder="Filter states" value="${esc(GB.q)}" aria-label="Filter states"></div>
-    <div style="overflow-x:auto"><table style="min-width:720px"><colgroup><col style="width:44px"><col><col style="width:62px"><col style="width:52px"><col style="width:70px"><col style="width:70px"><col style="width:50px"><col style="width:76px"><col style="width:96px"></colgroup>
-    <thead><tr><th>ST</th><th>STATE</th><th class="n">LEAN</th><th class="n">ELAST.</th><th class="n">M1 ANCHOR</th><th class="n">M2 ELASTIC</th><th class="n">GAP</th><th class="n">THE ARGUMENT</th><th class="n">STATE POLLS</th></tr></thead><tbody>`;
+    <div style="overflow-x:auto"><table style="min-width:800px"><colgroup><col style="width:44px"><col><col style="width:62px"><col style="width:52px"><col style="width:70px"><col style="width:70px"><col style="width:50px"><col style="width:76px"><col style="width:96px"><col style="width:80px"></colgroup>
+    <thead><tr><th>ST</th><th>STATE</th><th class="n">LEAN</th><th class="n">ELAST.</th><th class="n">M1 ANCHOR</th><th class="n">M2 ELASTIC</th><th class="n">GAP</th><th class="n">THE ARGUMENT</th><th class="n">STATE POLLS</th><th class="n" title="State poll average minus Model 2: is the state running ahead of or behind the national environment?">VS NATIONAL</th></tr></thead><tbody>`;
   for (const r of rows) {
-    const gap = r.m2 - r.m1, pt = r.polls.map((p) => `${p.end} ${p.pollster}${p.lean ? ` (${p.lean}-aligned)` : ""}, generic ${p.race} ballot: ${sm(p.margin)}`).join("\n");
+    const gap = r.m2 - r.m1, pt = r.polls.slice(0, 12).map((p) => `${p.end} ${p.pollster}${p.lean ? ` (${p.lean}-aligned)` : ""}, generic ${p.race} ballot: ${sm(p.margin)}`).join("\n");
     h += `<tr class="click${GB.st === r.st ? " on" : ""}" data-gst="${r.st}"><td class="am">${r.st}</td><td>${esc(NAMES[r.st] || r.st)}</td>${cell(r.lean)}<td class="n">${r.el.toFixed(2)}</td>${cell(r.m1)}${cell(r.m2)}<td class="n mu">${Math.abs(gap) < 0.05 ? "0.0" : (gap > 0 ? "D " : "R ") + Math.abs(gap).toFixed(1)}</td>${cell(r.arg, ` title="The Argument's own estimate, at their D+${GB.inp.argument.national} national number: ${sm(r.argRaw)}"`)}
-      <td class="n ${r.pa ? leadCls(r.pa.avg) : "mu"}" title="${esc(pt || "No generic-ballot polls in this state")}">${r.pa ? `${sm(r.pa.avg)} <span class="mu">(${r.pa.n}${r.pa.aligned ? "*" : ""})</span>` : r.polls.length ? `<span class="mu">old only</span>` : "–"}</td></tr>`;
-    if (GB.st === r.st) h += `<tr><td colspan="9" style="padding:0">${gbDistricts(r, g)}</td></tr>`;
+      <td class="n ${r.pa ? leadCls(r.pa.avg) : "mu"}" title="${esc(pt || "No generic-ballot polls in this state")}">${r.pa ? `${sm(r.pa.avg)} <span class="mu">(${r.pa.n}${r.pa.aligned ? "*" : ""})</span>` : r.polls.length ? `<span class="mu">old only</span>` : "–"}</td>
+      <td class="n ${r.vsNat == null ? "mu" : leadCls(r.vsNat)}">${r.vsNat == null ? "–" : `${r.vsNat >= 0 ? "D" : "R"} ${Math.abs(r.vsNat).toFixed(1)}`}</td></tr>`;
+    if (GB.st === r.st) h += `<tr><td colspan="10" style="padding:0">${gbPollList(r)}${gbDistricts(r, g)}</td></tr>`;
   }
   h += `</tbody></table></div>
-    <p class="credit"><b class="am">HOW THIS WORKS.</b> Each state starts from its lean: how far it voted from the country, two-thirds 2024 and one-third 2020. <b>Model 1 (anchor)</b> adds the national generic ballot straight on, so every state moves the same amount. <b>Model 2 (elastic)</b> multiplies the generic ballot by the state's elasticity first, so swingy states (score above 1) move more and locked-in states (below 1) move less. That is Silver Bulletin's benchmark formula, using their 2026 scores. <b>The Argument</b> column is their MRP estimate built from demographic swings, shifted from their D+${GB.inp.argument.national} likely-voter number to the generic number above so the columns compare fairly (hover for their own figure). <b>State polls</b> are real Generic Democrat vs Generic Republican questions from the last 180 days (hover for each one); some asked about the Senate or governor race rather than Congress. * means a firm that mainly works for one party is in the mix; those polls count half. Click a state to see its House districts. Type any number in WHAT IF to test a different national environment.</p>
+    <p class="credit"><b class="am">HOW THIS WORKS.</b> Each state starts from its lean: how far it voted from the country, two-thirds 2024 and one-third 2020. <b>Model 1 (anchor)</b> adds the national generic ballot straight on, so every state moves the same amount. <b>Model 2 (elastic)</b> multiplies the generic ballot by the state's elasticity first, so swingy states (score above 1) move more and locked-in states (below 1) move less. That is Silver Bulletin's benchmark formula, using their 2026 scores. <b>The Argument</b> column is their MRP estimate built from demographic swings, shifted from their D+${GB.inp.argument.national} likely-voter number to the generic number above so the columns compare fairly (hover for their own figure). <b>State polls</b> are real Generic Democrat vs Generic Republican questions from the last 180 days, from each state's Wikipedia House page and the New York Times feed (click a state to see every poll with its source); a few asked about the Senate or governor race rather than Congress. <b>VS NATIONAL</b> is the state's poll average minus Model 2: D 3.0 means the state is polling 3 points bluer than the national average says it should. <b>National implied by state polls</b> runs that backwards, turning each state's polling into the national number it points to, so you can see whether state polling agrees with the national polls. * means a firm that mainly works for one party is in the mix; those polls count half. Click a state to see its House districts. Type any number in WHAT IF to test a different national environment.</p>
     <p class="credit">Sources: ${esc(GB.inp.elasticity.source)}; ${esc(GB.inp.argument.source)}; 2024 results by district from The Downballot; polls from The New York Times (CC BY 4.0).</p>`;
   el.innerHTML = h;
   el.querySelectorAll("[data-gs]").forEach((b) => (b.onclick = () => { GB.sort = b.dataset.gs; renderGeneric(); }));
@@ -1144,6 +1165,14 @@ async function renderGeneric() {
     const d = e.target.closest("tr[data-id]"); if (d && BY[d.dataset.id]) { open(BY[d.dataset.id]); setView("race"); return; }
     const tr = e.target.closest("tr[data-gst]"); if (tr) { GB.st = GB.st === tr.dataset.gst ? null : tr.dataset.gst; renderGeneric(); }
   };
+}
+function gbPollList(r) {
+  if (!r.polls.length) return "";
+  const cut = new Date(Date.now() - 180 * 864e5).toISOString().slice(0, 10);
+  return `<div style="margin:6px 0 4px 18px;border-left:2px solid var(--am)"><table><colgroup><col style="width:84px"><col><col style="width:84px"><col style="width:66px"><col style="width:46px"><col style="width:46px"><col style="width:60px"><col style="width:66px"><col style="width:26px"></colgroup>
+    <thead><tr><th>ENDED</th><th>POLLSTER · ${esc(NAMES[r.st] || r.st).toUpperCase()} GENERIC BALLOT</th><th>QUESTION</th><th class="n">SAMPLE</th><th class="n">D</th><th class="n">R</th><th class="n">MARGIN</th><th class="n">VS M2</th><th></th></tr></thead><tbody>
+    ${r.polls.map((p) => `<tr${p.end < cut ? ` class="mu" title="Older than 180 days, not in the average"` : ""}><td>${p.end}</td><td>${esc(p.pollster)}${p.lean ? ` <span class="fl" title="Firm mainly works for ${p.lean === "R" ? "Republicans" : "Democrats"}; counts half">${p.lean}</span>` : ""} <span class="mu">· ${p.from}</span></td><td class="mu">${p.race === "house" ? "Congress" : p.race === "senate" ? "Senate*" : "Governor*"}</td><td class="n">${p.n ? p.n.toLocaleString() : ""} ${p.pop || ""}</td><td class="n d">${p.dem != null ? p.dem : ""}</td><td class="n r">${p.rep != null ? p.rep : ""}</td><td class="n ${leadCls(p.margin)}">${sm(p.margin)}</td><td class="n ${leadCls(p.margin - r.m2)}">${p.margin - r.m2 >= 0 ? "D" : "R"} ${Math.abs(p.margin - r.m2).toFixed(1)}</td><td class="n">${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Original source">↗</a>` : ""}</td></tr>`).join("")}
+    </tbody></table><p class="credit" style="margin:4px 8px">* a generic party question asked about that race rather than Congress. VS M2 = this poll minus Model 2 at the national number above.</p></div>`;
 }
 function gbDistricts(r, g) {
   const ds = RACES.filter((x) => x.t === "H" && x.st === r.st).sort((a, b) => a.d - b.d);
@@ -1161,6 +1190,131 @@ function gbDistricts(r, g) {
     <p class="credit" style="margin:4px 8px">District lean is its 2024 result minus the national result; both models use ${esc(NAMES[r.st] || r.st)}'s elasticity (${r.el.toFixed(2)}). * = 2024 votes counted on the new 2026 lines. These are party baselines, so they ignore incumbents and candidate quality; POLL AVG is the real named-candidate polling and KALSHI the market. Click a seat to open it.</p></div>`;
 }
 
+/* ---------- House seat simulator ----------
+   Each district's expected margin starts from Model 2 (its 2024 lean + national generic x state
+   elasticity). Optional: a running incumbent gets a bonus, and real race polling is blended in.
+   Each run draws one national error (shared by every seat), one error per state and one per district,
+   so a polling miss moves many seats together, the way real elections do. */
+const SIM = { gen: null, inc: 2.5, polls: true, nat: 3, stErr: 2, dErr: 5, runs: 100000, res: null, key: "", sort: "gap", busy: false };
+function randn(rng) { let u = 0, v = 0; while (u === 0) u = rng(); v = rng(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
+function mulberry(a) { return () => { a |= 0; a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+const Phi = (z) => { const t = 1 / (1 + 0.2316419 * Math.abs(z)), d = 0.3989423 * Math.exp(-z * z / 2), p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274)))); return z > 0 ? 1 - p : p; };
+// Which party's nominee is a sitting House member (this seat's member, or one moving over from
+// another district in the same state after redistricting). Returns "D", "R" or null.
+function incRunning(x) {
+  const ln = (n) => (n ? lastOf(n).toLowerCase() : "");
+  const members = RACES.filter((r) => r.t === "H" && r.st === x.st && r.mem && r.mem.n);
+  for (const [p, nom] of [["D", x.dName], ["R", x.rName]]) {
+    if (!nom) continue;
+    if (x.mem && x.mem.p === p && ln(x.mem.n) === ln(nom)) return p;
+    if (members.some((r) => r.mem.p === p && ln(r.mem.n) === ln(nom))) return p;
+  }
+  return null;
+}
+function simSeats(g) {
+  const el = (GB.inp && GB.inp.elasticity.values) || {};
+  const seats = [];
+  for (const x of RACES.filter((r) => r.t === "H")) {
+    const b = BASECD && BASECD.districts[`${x.st}-${pad2(x.d)}`]; if (!b) continue;
+    const e = el[x.st] || 1, base = b.marginD - BASE.nationalPresMarginD + g * e;
+    const inc = SIM.inc ? incRunning(x) : null;
+    let mu = base + (inc === "D" ? SIM.inc : inc === "R" ? -SIM.inc : 0);
+    const usePoll = SIM.polls && x.poll != null && !x.ind && x.pollN >= 2;
+    if (usePoll) mu = 0.6 * mu + 0.4 * x.poll;
+    const sd = Math.sqrt(SIM.nat ** 2 + SIM.stErr ** 2 + SIM.dErr ** 2);
+    seats.push({ x, base, mu, inc, usePoll, p: Phi(mu / sd) * 100, mkt: x.mkt == null || x.ind ? null : x.mkt });
+  }
+  return seats;
+}
+// Runs in chunks so the page stays responsive; calls done(result) at the end.
+function runSim(seats, done, progress) {
+  const rng = mulberry(20261103), N = SIM.runs, n = seats.length, hist = new Array(n + 1).fill(0), piv = new Array(n).fill(0), PIV = 10;
+  const states = [...new Set(seats.map((s) => s.x.st))], si = seats.map((s) => states.indexOf(s.x.st));
+  const m = new Float64Array(n), idx = new Uint16Array(n);
+  let dMaj = 0, k = 0;
+  const step = () => {
+  const end = Math.min(N, k + 5000);
+  for (; k < end; k++) {
+    const nat = randn(rng) * SIM.nat, se = states.map(() => randn(rng) * SIM.stErr);
+    let d = 0;
+    for (let i = 0; i < n; i++) { m[i] = seats[i].mu + nat + se[si[i]] + randn(rng) * SIM.dErr; if (m[i] > 0) d++; idx[i] = i; }
+    hist[d]++; if (d >= 218) dMaj++;
+    // tipping point: the 218th seat when seats are lined up from most to least Democratic (every 10th run)
+    if (k % PIV === 0) { const order = Array.from(idx).sort((a, b) => m[b] - m[a]); piv[order[217]]++; }
+  }
+  if (progress) progress(k / N);
+  if (k < N) return setTimeout(step, 0);
+  let acc = 0, med = 0, lo = 0, hi = 0;
+  for (let d = 0; d <= n; d++) { const prev = acc; acc += hist[d]; if (prev < N * 0.1 && acc >= N * 0.1) lo = d; if (prev < N * 0.5 && acc >= N * 0.5) med = d; if (prev < N * 0.9 && acc >= N * 0.9) hi = d; }
+  const tp = piv.map((c, i) => [i, c]).filter(([, c]) => c).sort((a, b) => b[1] - a[1]).slice(0, 10).map(([i, c]) => ({ s: seats[i], share: (c / Math.ceil(N / PIV)) * 100 }));
+  done({ hist, dMaj: (dMaj / N) * 100, med, lo, hi, tp, n, mean: hist.reduce((a, c, d) => a + c * d, 0) / N });
+  };
+  step();
+}
+async function renderSim() {
+  const el = $("vSim");
+  if (!GB.inp) { el.innerHTML = `<p class="note">Loading…</p>`; const inp = await getJSON("data/generic-state-inputs.json"); GB.inp = GB.inp || inp; }
+  if (!BASECD || !BASE || !GEN || !GB.inp) { el.innerHTML = `<p class="note">Simulator inputs aren't available right now.</p>`; return; }
+  const g = SIM.gen == null ? GEN.margin : SIM.gen;
+  const seats = simSeats(g), key = JSON.stringify([g, SIM.inc, SIM.polls, SIM.nat, SIM.stErr, SIM.dErr, seats.length]);
+  if (SIM.key !== key) {
+    if (SIM.busy) return;
+    SIM.busy = true;
+    if (!SIM.res) el.innerHTML = `<p class="note" id="simProg">Running ${SIM.runs.toLocaleString()} elections… 0%</p>`;
+    else { const t = el.querySelector(".credit"); if (t) t.insertAdjacentHTML("beforebegin", `<p class="note am" id="simProg">Re-running… 0%</p>`); }
+    runSim(seats, (res) => { SIM.res = res; SIM.key = key; SIM.busy = false; renderSim(); }, (f) => { const pe = $("simProg"); if (pe) pe.textContent = `${SIM.res ? "Re-running" : `Running ${SIM.runs.toLocaleString()} elections`}… ${Math.round(f * 100)}%`; });
+    return;
+  }
+  const R = SIM.res;
+  const ctl = (o) => { const y = o && (o.outcomes || []).find((z) => /democ/i.test(z.label)); return y ? y.pct : null; };
+  const kH = ctl(NAT.house), kSeats = NAT.houseSeatsD && NAT.houseSeatsD.median, kPop = NAT.housePopVoteMarginD && NAT.housePopVoteMarginD.median;
+  const sumMkt = seats.reduce((a, s) => a + (s.mkt != null ? s.mkt / 100 : s.p / 100), 0);
+  // histogram
+  const W = 760, H = 150, lo = Math.max(0, R.lo - 25), hi = Math.min(R.n, R.hi + 25), bw = W / (hi - lo + 1), max = Math.max(...R.hist.slice(lo, hi + 1));
+  let bars = "";
+  for (let d = lo; d <= hi; d++) { const h = (R.hist[d] / max) * (H - 18); if (h > 0) bars += `<rect x="${((d - lo) * bw).toFixed(1)}" y="${(H - 14 - h).toFixed(1)}" width="${Math.max(1, bw - 1).toFixed(1)}" height="${h.toFixed(1)}" fill="${d >= 218 ? "var(--d)" : "var(--r)"}"><title>${d} D seats: ${((R.hist[d] / SIM.runs) * 100).toFixed(1)}% of runs</title></rect>`; }
+  const x218 = (218 - lo) * bw, ticks = [];
+  for (let d = Math.ceil(lo / 10) * 10; d <= hi; d += 10) ticks.push(`<text x="${((d - lo) * bw + bw / 2).toFixed(1)}" y="${H - 2}" fill="var(--mu)" font-size="10" text-anchor="middle">${d}</text>`);
+  const svg = `<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W}px;display:block" role="img" aria-label="Distribution of Democratic House seats across ${SIM.runs.toLocaleString()} simulated elections">${bars}<line x1="${x218}" x2="${x218}" y1="0" y2="${H - 14}" stroke="var(--am)" stroke-dasharray="3 3"/><text x="${x218 + 4}" y="11" fill="var(--am)" font-size="10">218 = majority</text>${ticks.join("")}</svg>`;
+  const pc = (v) => v == null ? "–" : `${Math.round(v)}%`;
+  const rows = seats.filter((s) => s.mkt != null).map((s) => ({ ...s, gap: s.p - s.mkt }));
+  const sorts = { gap: (a, b) => Math.abs(b.gap) - Math.abs(a.gap), d: (a, b) => b.gap - a.gap, r: (a, b) => a.gap - b.gap, close: (a, b) => Math.abs(a.p - 50) - Math.abs(b.p - 50) };
+  rows.sort(sorts[SIM.sort]);
+  const why = (s) => [s.inc ? `${s.inc} incumbent running${s.x.mem && s.x.mem.p === s.inc && lastOf(s.x.mem.n).toLowerCase() === lastOf(s.inc === "D" ? s.x.dName : s.x.rName).toLowerCase() ? "" : " (moved districts)"}` : "open seat", s.usePoll ? `polls ${lead(s.x.poll)} (${s.x.pollN})` : "", BASECD.districts[`${s.x.st}-${pad2(s.x.d)}`].newLines ? "new lines" : ""].filter(Boolean).join(" · ");
+  const seatRow = (s, extra) => `<tr class="click" data-id="${s.x.id}"><td class="am">${s.x.code}</td><td>${esc(matchup(s.x) || s.x.holder || "")}</td><td class="n ${leadCls(s.mu)}">${sm(s.mu)}</td><td class="n ${s.p >= 50 ? "d" : "r"}">D ${Math.round(s.p)}%</td>${extra}<td class="mu">${esc(why(s))}</td></tr>`;
+  el.innerHTML = `<div class="mk-top">
+      <div><small>MODEL · DEM HOUSE CHANCE</small><b class="${R.dMaj >= 50 ? "d" : "r"}">D ${R.dMaj.toFixed(0)}%</b></div>
+      <div><small>KALSHI · HOUSE CONTROL</small><b class="${kH >= 50 ? "d" : "r"}">${kH == null ? "–" : `D ${Math.round(kH)}%`}</b></div>
+      <div><small>MODEL · DEM SEATS (80% RANGE)</small><b class="d">${R.med}</b> <span class="mu" style="font-size:11px">${R.lo}–${R.hi}</span></div>
+      <div><small>KALSHI · DEM SEATS</small><b class="d">${kSeats != null ? kSeats : "–"}</b> <span class="mu" style="font-size:11px">seat markets add to ${sumMkt.toFixed(0)}</span></div>
+      <div><small>NATIONAL INPUT · KALSHI POP. VOTE</small><b class="${leadCls(g)}">${sm(g)}</b> <span class="mu" style="font-size:11px">${kPop != null ? `market D+${kPop}` : ""}</span></div></div>
+    <div class="mk-ctl"><label class="mu" for="sg">GENERIC</label><input id="sg" type="number" step="0.5" value="${g.toFixed(1)}" style="width:64px;min-width:0;flex:none">
+      <label class="mu" for="si">INCUMBENT BONUS</label><input id="si" type="number" step="0.5" min="0" max="8" value="${SIM.inc}" style="width:52px;min-width:0;flex:none">
+      <label class="mu" for="sn">NATIONAL ERROR ±</label><input id="sn" type="number" step="0.5" min="0" max="10" value="${SIM.nat}" style="width:52px;min-width:0;flex:none">
+      <label class="mu"><input type="checkbox" id="sp" style="flex:none;min-width:0;width:auto;vertical-align:middle"${SIM.polls ? " checked" : ""}> BLEND RACE POLLS</label>
+      <button id="sreset">RESET</button></div>
+    ${svg}
+    <p class="credit">How many seats Democrats won in each of ${SIM.runs.toLocaleString()} simulated elections. Blue bars are Democratic majorities.</p>
+    <div class="kvrow" style="border:0;margin-top:14px"><b class="am">TIPPING-POINT SEATS</b><span class="mu">the seat that delivers the 218th vote, most often</span></div>
+    <div style="overflow-x:auto"><table style="min-width:700px"><colgroup><col style="width:62px"><col><col style="width:66px"><col style="width:62px"><col style="width:62px"><col style="width:300px"></colgroup>
+    <thead><tr><th>SEAT</th><th>MATCHUP</th><th class="n">MODEL</th><th class="n">WIN %</th><th class="n">PIVOT</th><th>WHY</th></tr></thead><tbody>
+    ${R.tp.map((t) => seatRow(t.s, `<td class="n am">${t.share.toFixed(1)}%</td>`)).join("")}</tbody></table></div>
+    <div class="kvrow" style="border:0;margin-top:14px"><b class="am">MODEL VS MARKET</b><span class="mu">each seat's model chance against its Kalshi price</span></div>
+    <div class="seg" style="margin:0 0 6px">${[["gap", "BIGGEST GAPS"], ["d", "MODEL MORE D"], ["r", "MODEL MORE R"], ["close", "CLOSEST SEATS"]].map(([v, l]) => `<button data-ss="${v}" class="${SIM.sort === v ? "on" : ""}">${l}</button>`).join("")}</div>
+    <div style="overflow-x:auto"><table style="min-width:760px"><colgroup><col style="width:62px"><col><col style="width:66px"><col style="width:62px"><col style="width:62px"><col style="width:56px"><col style="width:300px"></colgroup>
+    <thead><tr><th>SEAT</th><th>MATCHUP</th><th class="n">MODEL</th><th class="n">WIN %</th><th class="n">KALSHI</th><th class="n">GAP</th><th>WHY</th></tr></thead><tbody>
+    ${rows.slice(0, 25).map((s) => seatRow(s, `<td class="n ${s.mkt >= 50 ? "d" : "r"}">D ${Math.round(s.mkt)}¢</td><td class="n ${s.gap >= 0 ? "d" : "r"}">${s.gap >= 0 ? "D" : "R"} ${Math.abs(s.gap).toFixed(0)}</td>`)).join("")}</tbody></table></div>
+    <p class="credit"><b class="am">HOW THIS WORKS.</b> Every district starts from Model 2 on the F9 screen: its 2024 presidential result relative to the country, plus the national generic ballot times its state's elasticity. A running incumbent gets the bonus above (they usually run a few points ahead of their party), and when a race has at least two real polls, 40% of the estimate comes from those polls. Then each simulated election adds three kinds of surprise: one national miss shared by every seat (±${SIM.nat} points, typical), a smaller one shared by each state (±${SIM.stErr}) and one for each district (±${SIM.dErr}). Because the national miss moves every seat at once, the seat count swings more than adding up each seat's chance would suggest. WIN % is the seat's chance in the model; GAP is how far that sits from the Kalshi price. Gaps usually mean the market knows something the model doesn't, like a scandal or a strong challenger, so treat them as questions, not answers. Same seed every time, so the numbers only change when the inputs do.</p>`;
+  const num = (id, f) => { const i = $(id); i.onchange = () => { const v = parseFloat(i.value); f(isFinite(v) ? v : null); renderSim(); }; };
+  num("sg", (v) => (SIM.gen = v == null ? null : Math.max(-30, Math.min(30, v))));
+  num("si", (v) => (SIM.inc = v == null ? 0 : Math.max(0, Math.min(8, v))));
+  num("sn", (v) => (SIM.nat = v == null ? 3 : Math.max(0, Math.min(10, v))));
+  $("sp").onchange = () => { SIM.polls = $("sp").checked; renderSim(); };
+  $("sreset").onclick = () => { Object.assign(SIM, { gen: null, inc: 2.5, polls: true, nat: 3 }); renderSim(); };
+  el.querySelectorAll("[data-ss]").forEach((b) => (b.onclick = () => { SIM.sort = b.dataset.ss; renderSim(); }));
+  el.querySelectorAll("tbody").forEach((tb) => (tb.onclick = (e) => { const tr = e.target.closest("tr[data-id]"); if (tr && BY[tr.dataset.id]) { open(BY[tr.dataset.id]); setView("race"); } }));
+}
+
 /* ---------- command bar ---------- */
 let acList = [];
 function matches(q) {
@@ -1174,7 +1328,7 @@ function matches(q) {
   return RACES.filter((x) => { const hay = `${x.code} ${x.name} ${x.dName} ${x.rName} ${x.holder}`.toUpperCase(); return words.every((w) => hay.includes(w)); })
     .sort((a, b) => (a.t === "H") - (b.t === "H") || (a.mkt == null) - (b.mkt == null)).slice(0, 12);
 }
-const CMDS = { GENERIC: "generic", GB: "generic", MODELS: "generic", MAP: "map", HOME: "map", NATIONAL: "national", PREDICT: "predict", MARKETS: "markets", KALSHI: "markets", POLLS: "polling", POLLING: "polling", RACE: "race" };
+const CMDS = { SIM: "sim", SEATS: "sim", SIMULATOR: "sim", GENERIC: "generic", GB: "generic", MODELS: "generic", MAP: "map", HOME: "map", NATIONAL: "national", PREDICT: "predict", MARKETS: "markets", KALSHI: "markets", POLLS: "polling", POLLING: "polling", RACE: "race" };
 function showAC() {
   const q = $("q").value, cmd = CMDS[q.trim().toUpperCase()];
   acList = matches(q);
@@ -1205,7 +1359,7 @@ $("goBtn").onclick = go;
 /* ---------- keys ---------- */
 $("helpBtn").onclick = (e) => { e.stopPropagation(); $("help").hidden = false; };
 $("help").onclick = () => ($("help").hidden = true);
-const FKEY = { F1: "race", F2: "map", F3: "national", F4: "predict", F5: "markets", F6: "polling", F9: "generic" };
+const FKEY = { F1: "race", F2: "map", F3: "national", F4: "predict", F5: "markets", F6: "polling", F9: "generic", F10: "sim" };
 function fkey(k) { if (FKEY[k]) setView(FKEY[k]); else if (k === "F7" || k === "F8") { setView("race"); setTab(k === "F7" ? "money" : "voters"); } }
 $("fk").onclick = (e) => { const b = e.target.closest("button[data-k]"); if (b) fkey(b.dataset.k); };
 document.addEventListener("keydown", (e) => {
@@ -1213,7 +1367,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "/") { e.preventDefault(); $("q").focus(); return; }
   if (e.key === "Escape") { const open_ = !$("help").hidden || !$("layoutMenu").hidden || !$("addMenu").hidden; $("help").hidden = true; $("layoutMenu").hidden = true; $("addMenu").hidden = true; if (!open_ && view !== "race") setView("race"); return; }
   if (e.key === "?") { $("help").hidden = !$("help").hidden; return; }
-  if (/^F[1-9]$/.test(e.key)) { e.preventDefault(); fkey(e.key); return; }
+  if (/^F([1-9]|10)$/.test(e.key)) { e.preventDefault(); fkey(e.key); return; }
   if (e.metaKey || e.ctrlKey || e.altKey || view !== "race") return;
   const k = e.key.toLowerCase();
   if (k === "p") setChart("polls");

@@ -74,6 +74,18 @@
   .legend{display:grid;grid-template-columns:1fr 1fr;gap:5px 10px;font-size:11.5px;color:var(--ink-dim)}
   .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:6px}
   .note{font-size:11px;color:var(--ink-dim);line-height:1.5;margin-top:8px}
+  /* odds of your map */
+  .od-big{font-size:26px;font-weight:700;line-height:1.1}
+  .od-sub{font-size:11.5px;color:var(--ink-dim);margin-top:2px}
+  .od-grid{display:grid;grid-template-columns:1fr auto;gap:3px 10px;font-size:12.5px;margin-top:10px}
+  .od-grid .v{text-align:right;font-family:"IBM Plex Mono","SF Mono",Consolas,monospace}
+  .od-list{margin-top:10px;font-size:12px}
+  .od-list div{display:grid;grid-template-columns:58px 1fr 46px;gap:6px;padding:3px 0;border-top:1px solid var(--line);cursor:pointer}
+  .od-list div:hover{background:var(--panel)}
+  .od-list b{font-weight:600}
+  .od-prog{height:4px;background:var(--vac);border-radius:2px;overflow:hidden;margin-top:8px}
+  .od-prog i{display:block;height:100%;width:0;background:var(--focus)}
+  #odRun{width:100%;margin-top:8px;background:#13203a;border:1px solid var(--focus);color:var(--ink);border-radius:6px;padding:8px;font-size:12.5px}
   .err{padding:30px;color:var(--ink-dim)}
 
 
@@ -206,6 +218,14 @@
         <span><i style="background:var(--toss)"></i>Toss-up</span><span><i style="background:var(--ind)"></i>Independent</span>
         <span><i style="background:var(--ld);opacity:.62"></i>Filled: D</span><span><i style="background:var(--lr);opacity:.62"></i>Filled: R</span>
       </div>
+    </div>
+    <div class="box" id="odBox"><h3>Odds of your map</h3>
+      <div class="seg" id="odWho" style="margin-bottom:6px"><button data-who="all" class="on">All calls on the map</button><button data-who="mine">Only races I clicked</button></div>
+      <div class="seg" id="odSrc"><button data-src="blend" class="on">Kalshi + polls</button><button data-src="kalshi">Kalshi</button><button data-src="polls">Polls</button></div>
+      <div id="odOut"><p class="note">Call some races, then run 100,000 simulated elections to see how likely your map is.</p></div>
+      <div class="od-prog" id="odProg" hidden><i id="odBar"></i></div>
+      <button id="odRun">Run 100,000 elections</button>
+      <p class="note">Each race starts from its Kalshi price, its polling average, or both. The simulations tie races together: one shared national surprise moves every race the same way, and a smaller one moves races in the same state, so a good night for one party lifts many races at once. Toss-up calls don't count as predictions.</p>
     </div>
   </aside>
 </main>
@@ -416,7 +436,127 @@ function tally() {
   const flipTxt = gfl.length ? ` · <b style="color:var(--ind)">${gfl.length} flip${gfl.length === 1 ? "" : "s"}</b> (${gfl.map((x) => x.st).join(", ")})` : "";
   $("gMsg").innerHTML = (g.open ? `${g.open} of ${GOV_STATES.length} not called` : "All governor races called") + flipTxt;
   document.querySelectorAll(".sc").forEach((b) => b.classList.toggle("on", b.dataset.layer === layer));
+  if (typeof oddsChanged === "function") oddsChanged();
 }
+
+/* ---------- odds of your map: 100,000 correlated simulated elections ----------
+   Each race gets a chance of a Democratic (or independent, vs a Republican) win from Kalshi,
+   its polling average, or both blended. That chance becomes a point on a normal curve
+   (z = probit(p)); each run adds a shared national shock, a state shock and a race shock whose
+   variances add to 1, so every race keeps exactly its own chance while races move together. */
+const OD = { who: "all", src: "blend", runs: 100000, rhoNat: 0.3, rhoSt: 0.15, res: null, busy: false, ran: false, timer: null };
+function probit(p) { // inverse normal CDF (Acklam)
+  const a = [-39.69683028665376, 220.9460984245205, -275.9285104469687, 138.357751867269, -30.66479806614716, 2.506628277459239], b = [-54.47609879822406, 161.5858368580409, -155.6989798598866, 66.80131188771972, -13.28068155288572], c = [-0.007784894002430293, -0.3223964580411365, -2.400758277161838, -2.549732539343734, 4.374664141464968, 2.938163982698783], d = [0.007784695709041462, 0.3224671290700398, 2.445134137142996, 3.754408661907416];
+  const q = Math.min(0.998, Math.max(0.002, p));
+  if (q < 0.02425) { const t = Math.sqrt(-2 * Math.log(q)); return (((((c[0] * t + c[1]) * t + c[2]) * t + c[3]) * t + c[4]) * t + c[5]) / ((((d[0] * t + d[1]) * t + d[2]) * t + d[3]) * t + 1); }
+  if (q > 0.97575) { const t = Math.sqrt(-2 * Math.log(1 - q)); return -(((((c[0] * t + c[1]) * t + c[2]) * t + c[3]) * t + c[4]) * t + c[5]) / ((((d[0] * t + d[1]) * t + d[2]) * t + d[3]) * t + 1); }
+  const t = q - 0.5, r = t * t; return ((((((a[0] * r + a[1]) * r + a[2]) * r + a[3]) * r + a[4]) * r + a[5]) * t) / (((((b[0] * r + b[1]) * r + b[2]) * r + b[3]) * r + b[4]) * r + 1);
+}
+const PhiN = (z) => { const t = 1 / (1 + 0.2316419 * Math.abs(z)), dd = 0.3989423 * Math.exp(-z * z / 2), p = dd * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274)))); return z > 0 ? 1 - p : p; };
+const RATING_P = { "Solid D": 0.98, "Likely D": 0.87, "Lean D": 0.72, "Tilt D": 0.58, "Tilt R": 0.42, "Lean R": 0.28, "Likely R": 0.13, "Solid R": 0.02 };
+// chance the non-Republican side wins, and where it came from
+function raceChance(l, x) {
+  const e = raceKalshi(l, x), p = racePoll(l, x);
+  let k = null, ind = false;
+  if (e && e.thirdParty && e.republican) { k = 1 - e.republican.pct / 100; ind = true; } else { const v = kD(e); if (v != null) k = v; }
+  let q = null;
+  if (p && p.average && p.average.margin != null) q = PhiN(p.average.margin / (l === "H" ? 7 : 6)); // a polling lead of m points, with a typical final-poll miss
+  const want = OD.src;
+  if (want === "kalshi" && k != null) return { p: k, from: "Kalshi", ind };
+  if (want === "polls" && q != null) return { p: q, from: "polls", ind };
+  if (want === "blend" && k != null && q != null) return { p: PhiN(0.6 * probit(k) + 0.4 * probit(q)), from: "Kalshi + polls", ind };
+  if (k != null) return { p: k, from: "Kalshi", ind };
+  if (q != null) return { p: q, from: "polls", ind };
+  if (l === "H" && x.rating && RATING_P[x.rating] != null) return { p: RATING_P[x.rating], from: "rating", ind };
+  if (l === "H" && x.party) return { p: x.party === "D" ? 0.97 : x.party === "R" ? 0.03 : 0.5, from: "current party", ind };
+  return { p: 0.5, from: "no data", ind };
+}
+function oddsSetup() {
+  const list = [], states = [];
+  for (const l of ["S", "H", "G"]) for (const x of races(l)) {
+    const ch = raceChance(l, x), c = callOf(l, x);
+    let si = states.indexOf(x.st); if (si < 0) { states.push(x.st); si = states.length - 1; }
+    const call = c && (c.c === "D" || c.c === "R" || c.c === "I") && (OD.who === "all" || c.src === "you") ? c.c : null;
+    list.push({ l, x, z: probit(ch.p), p: ch.p, from: ch.from, ind: ch.ind, si, call, mine: c && c.src === "you", want: call ? call !== "R" : null });
+  }
+  return { list, nSt: states.length };
+}
+function runOdds() {
+  if (OD.busy) { OD.again = true; return; }
+  OD.busy = true; OD.ran = true;
+  const { list, nSt } = oddsSetup(), n = list.length, N = OD.runs;
+  const called = list.map((r, i) => (r.call ? i : -1)).filter((i) => i >= 0);
+  const z = new Float64Array(list.map((r) => r.z)), si = new Int32Array(list.map((r) => r.si));
+  const lay = list.map((r) => r.l), isInd = list.map((r) => r.ind);
+  const want = called.map((i) => list[i].want);
+  const sqN = Math.sqrt(OD.rhoNat), sqS = Math.sqrt(OD.rhoSt), sqE = Math.sqrt(1 - OD.rhoNat - OD.rhoSt);
+  let seed = 20261103; const rnd = () => { seed |= 0; seed = (seed + 0x6d2b79f5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  let spare = null; const gauss = () => { if (spare != null) { const v = spare; spare = null; return v; } let u = 0; while (u === 0) u = rnd(); const v = rnd(), m = Math.sqrt(-2 * Math.log(u)); spare = m * Math.sin(2 * Math.PI * v); return m * Math.cos(2 * Math.PI * v); };
+  const R = { N, all: 0, fail: new Float64Array(called.length), senD: 0, houseD: 0, both: 0, okSen: 0, okHouse: 0, mySen: 0, myHouse: 0, allAndSen: 0, hist: new Float64Array(436) };
+  const tl = count("S"), th = count("H");
+  const mySenD = G.holdD + tl.D >= 51 ? "D" : G.holdR + tl.R >= 50 ? "R" : null, myHouseD = th.D >= 218 ? "D" : th.R >= 218 ? "R" : null;
+  const st = new Float64Array(nSt), win = new Uint8Array(n);
+  let k = 0;
+  const step = () => {
+    const end = Math.min(N, k + 4000);
+    for (; k < end; k++) {
+      const nat = gauss() * sqN;
+      for (let j = 0; j < nSt; j++) st[j] = gauss() * sqS;
+      let sd = G.holdD, hd = 0;
+      for (let i = 0; i < n; i++) { const w = z[i] + nat + st[si[i]] + gauss() * sqE > 0; win[i] = w ? 1 : 0; if (w && !isInd[i]) { if (lay[i] === "S") sd++; else if (lay[i] === "H") hd++; } }
+      let ok = true;
+      for (let c = 0; c < called.length; c++) if ((win[called[c]] === 1) !== want[c]) { ok = false; R.fail[c]++; }
+      const sen = sd >= 51, hou = hd >= 218;
+      if (ok) { R.all++; if (sen) R.okSen++; if (hou) R.okHouse++; } if (sen) R.senD++; if (hou) R.houseD++; if (sen && hou) R.both++;
+      if (mySenD && (mySenD === "D") === sen) R.mySen++; if (myHouseD && (myHouseD === "D") === hou) R.myHouse++;
+      R.hist[hd]++;
+    }
+    $("odBar").style.width = (k / N) * 100 + "%";
+    if (k < N) setTimeout(step, 0);
+    else { OD.busy = false; OD.res = { R, list, called, mySenD, myHouseD }; $("odProg").hidden = true; renderOdds(); if (OD.again) { OD.again = false; runOdds(); } }
+  };
+  $("odProg").hidden = false; $("odBar").style.width = "0"; $("odRun").textContent = "Running…";
+  setTimeout(step, 0);
+}
+const oneIn = (p) => (p <= 0 ? null : p >= 0.5 ? null : Math.round(1 / p));
+function fmtOdds(p, N) {
+  if (p > 0 && p < 1e-9) return { big: "less than 1 in a billion", pct: "" };
+  if (p <= 0) return { big: `< 1 in ${N.toLocaleString()}`, pct: "never happened in the runs" };
+  const pc = p * 100, n = oneIn(p);
+  return { big: n ? `1 in ${n.toLocaleString()}` : `${pc.toFixed(pc >= 10 ? 0 : 1)}%`, pct: n ? `${pc < 0.1 ? pc.toFixed(3) : pc < 1 ? pc.toFixed(2) : pc.toFixed(1)}% of runs` : "" };
+}
+function renderOdds() {
+  const el = $("odOut"), O = OD.res;
+  $("odRun").textContent = OD.ran ? "Run again" : "Run 100,000 elections";
+  if (!O) return;
+  const { R, list, called } = O, N = R.N;
+  const nc = called.length, pAll = R.all / N;
+  const indep = called.reduce((a, i) => a * (list[i].want ? list[i].p : 1 - list[i].p), 1);
+  const f = fmtOdds(pAll, N), fi = fmtOdds(indep, Infinity);
+  const callOdds = called.map((i, c) => ({ r: list[i], p: 1 - R.fail[c] / N })).sort((a, b) => a.p - b.p);
+  const pc = (v) => `${((v / N) * 100).toFixed(1)}%`;
+  const lab = (r) => r.l === "S" ? `${r.x.st} Sen` : r.l === "G" ? `${r.x.st} Gov` : r.x.label;
+  const who = (r) => r.call === "D" ? `<b class="d">D</b>` : r.call === "R" ? `<b class="r">R</b>` : `<b style="color:var(--ind)">I</b>`;
+  let h = nc ? `<div class="od-big num ${pAll >= 0.5 ? "d" : ""}">${f.big}</div><div class="od-sub">chance all ${nc} ${OD.who === "mine" ? "races you clicked" : "calls on your map"} come true${f.pct ? ` · ${f.pct}` : ""}</div>
+      <div class="od-sub">If every race were independent it would be ${fi.big}. ${pAll > indep ? "Races move together, so a sweep is more likely than that." : "Your calls split between the parties, so the races moving together works against you."}</div>`
+    : `<p class="note" style="margin-top:6px">${OD.who === "mine" ? "You haven't clicked any races yet (fills don't count in this mode)." : "No calls yet."} These are the odds with nothing called.</p>`;
+  h += `<div class="od-grid">
+      <span>Democrats win the Senate</span><span class="v d">${pc(R.senD)}</span>
+      <span>Democrats win the House</span><span class="v d">${pc(R.houseD)}</span>
+      <span>Democrats win both</span><span class="v d">${pc(R.both)}</span>
+      ${O.mySenD ? `<span>Your Senate result (${O.mySenD} control)</span><span class="v">${pc(R.mySen)}</span>` : ""}
+      ${O.myHouseD ? `<span>Your House result (${O.myHouseD} control)</span><span class="v">${pc(R.myHouse)}</span>` : ""}
+    </div>`;
+  if (nc && R.all >= 50) h += `<div class="od-grid" style="border-top:1px solid var(--line);padding-top:8px"><span style="grid-column:1/-1;color:var(--ink-dim);font-size:11px">IN THE RUNS WHERE ALL YOUR CALLS CAME TRUE</span>
+      <span>Democrats win the Senate</span><span class="v d">${((R.okSen / R.all) * 100).toFixed(1)}%</span>
+      <span>Democrats win the House</span><span class="v d">${((R.okHouse / R.all) * 100).toFixed(1)}%</span></div>`;
+  if (callOdds.length) h += `<div class="od-list"><div style="cursor:default;color:var(--ink-dim);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase"><span>Race</span><span>Your boldest calls</span><span style="text-align:right">Odds</span></div>
+      ${callOdds.slice(0, 10).map((o) => `<div data-l="${o.r.l}" data-id="${esc(o.r.x.id)}" title="Based on ${esc(o.r.from)}${o.r.mine ? "" : " · filled in, not clicked"}"><span class="num">${esc(lab(o.r))}</span><span>${who(o.r)} wins <span style="color:var(--ink-dim)">· ${esc(o.r.from)}</span></span><span class="num" style="text-align:right">${Math.round(o.p * 100)}%</span></div>`).join("")}</div>
+      <p class="note">${callOdds.length > 10 ? `${callOdds.length - 10} more calls are safer than these. ` : ""}Click a race to open it.</p>`;
+  el.innerHTML = h;
+  el.querySelectorAll(".od-list div[data-id]").forEach((d) => (d.onclick = () => { const l = d.dataset.l, x = races(l).find((y) => String(y.id) === d.dataset.id); if (!x) return; if (l !== layer) setLayer(l); openRace(x); }));
+}
+function oddsChanged() { if (!OD.ran) return; clearTimeout(OD.timer); OD.timer = setTimeout(runOdds, 700); }
 
 /* ---------- controls ---------- */
 function setLayer(l) {
@@ -822,6 +962,9 @@ document.addEventListener("keydown", (e) => {
     $("fillKalshi").classList.toggle("on", fills.kalshi); $("fillPolls").classList.toggle("on", fills.polls); $("fillRatings").classList.toggle("on", !!fills.ratings);
     setMode(clickMode);
     setLayer(layer);
+    $("odRun").onclick = runOdds;
+    document.querySelectorAll("#odWho button").forEach((b) => (b.onclick = () => { OD.who = b.dataset.who; document.querySelectorAll("#odWho button").forEach((y) => y.classList.toggle("on", y === b)); if (OD.ran) runOdds(); }));
+    document.querySelectorAll("#odSrc button").forEach((b) => (b.onclick = () => { OD.src = b.dataset.src; document.querySelectorAll("#odSrc button").forEach((y) => y.classList.toggle("on", y === b)); if (OD.ran) runOdds(); }));
   } catch (e) {
     document.querySelector(".mapcard").innerHTML = `<p class="err">Couldn't load the map data (${esc(e.message)}).</p>`;
   }
