@@ -111,23 +111,42 @@ if (typeof require !== "undefined" && require.main === module) {
   const { DOMParser } = require("linkedom");
   const OUT = path.join(__dirname, "..", "data", "generic-wiki.json");
   (async () => {
+    let old = { states: {} };
+    try { old = JSON.parse(fs.readFileSync(OUT, "utf8")); } catch {}
     const res = { updated: new Date().toISOString(), source: "Wikipedia, 2026 United States House of Representatives elections in each state (statewide polling tables); links go to each poll's original source", states: {} };
-    let fails = 0;
-    for (const [st, name] of Object.entries(STATES)) {
-      const u = `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(pageOf(name))}&prop=text&format=json&formatversion=2&redirects=1`;
-      try {
-        const r = await fetch(u, { headers: { "User-Agent": "pmap2.01 election tracker (github.com/FlyWeb51/pmap2.01)" } });
-        const j = await r.json();
-        if (!j.parse) continue;
-        const doc = new DOMParser().parseFromString(`<html><body>${j.parse.text}</body></html>`, "text/html");
-        const polls = parseStatewide(doc);
-        if (polls.length) res.states[st] = polls;
-      } catch (e) { fails++; console.log(`${st}: ${e.message}`); }
-      await new Promise((ok) => setTimeout(ok, 400)); // be polite to the API
+    const sleep = (ms) => new Promise((ok) => setTimeout(ok, ms));
+    // Wikimedia throttles bursts from cloud servers: one page every 3 seconds, and back off when told to.
+    async function getPage(title) {
+      const u = `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&formatversion=2&redirects=1&maxlag=5`;
+      for (let attempt = 0; attempt < 5; attempt++) {
+        const r = await fetch(u, { headers: { "User-Agent": "pmap2.01-election-tracker/1.0 (https://github.com/FlyWeb51/pmap2.01; election data bot)", "Api-User-Agent": "pmap2.01-election-tracker/1.0 (https://github.com/FlyWeb51/pmap2.01)" } });
+        const body = await r.text();
+        if (r.ok && body.trim().startsWith("{")) return JSON.parse(body);
+        const wait = Math.min(60, +(r.headers.get("retry-after") || 0) || 15 * (attempt + 1));
+        console.log(`  ${title}: HTTP ${r.status} "${body.slice(0, 80).replace(/\s+/g, " ")}", waiting ${wait}s`);
+        await sleep(wait * 1000);
+      }
+      throw new Error("still throttled after 5 tries");
     }
+    const failed = [];
+    for (const [st, name] of Object.entries(STATES)) {
+      try {
+        const j = await getPage(pageOf(name));
+        if (j.parse) {
+          const doc = new DOMParser().parseFromString(`<html><body>${j.parse.text}</body></html>`, "text/html");
+          const polls = parseStatewide(doc);
+          if (polls.length) res.states[st] = polls;
+        }
+      } catch (e) {
+        failed.push(st); console.log(`${st}: ${e.message}`);
+        if (old.states[st]) res.states[st] = old.states[st]; // keep the last good copy
+      }
+      await sleep(3000);
+    }
+    res.failed = failed;
     const n = Object.values(res.states).reduce((a, l) => a + l.length, 0);
-    if (fails > 10) { console.error(`too many failures (${fails}); keeping the old file`); process.exit(1); }
+    if (failed.length > 25 && !Object.keys(old.states).length) { console.error(`too many failures (${failed.length})`); process.exit(1); }
     fs.writeFileSync(OUT, JSON.stringify(res));
-    console.log(`wiki generic: ${n} statewide polls in ${Object.keys(res.states).length} states (${Object.keys(res.states).join(" ")})`);
+    console.log(`wiki generic: ${n} statewide polls in ${Object.keys(res.states).length} states (${Object.keys(res.states).join(" ")})${failed.length ? `; kept old data for ${failed.join(" ")}` : ""}`);
   })();
 }
