@@ -1,0 +1,60 @@
+name: Poll crosstabs (Claude, every 6 hours)
+
+# Reads each new poll's release (web page or PDF) with Claude and saves its
+# results by group (race, sex, age, education, party) to data/crosstabs/.
+# Needs the ANTHROPIC_API_KEY repository secret. Each poll is tried once.
+
+on:
+  schedule:
+    - cron: "52 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Most polls to read this run"
+        required: false
+        default: "40"
+  push:
+    paths:
+      - "scripts/extract-crosstabs.js"
+
+concurrency:
+  group: crosstabs
+  cancel-in-progress: false
+
+jobs:
+  crosstabs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install HTML parser
+        run: npm i --no-save --no-package-lock linkedom@0.18.14
+
+      - name: Read new polls' crosstabs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CROSSTAB_MAX: ${{ github.event.inputs.max || '40' }}
+        run: node scripts/extract-crosstabs.js
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          mkdir -p data/crosstabs
+          git add data/crosstabs
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Crosstabs: new polls"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
