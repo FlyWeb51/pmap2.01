@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T16:29:29.111Z",
+  "updated_at": "2026-10-22T17:20:20.152Z",
   "races": {
     "AK-H-01-2026": {
       "count": 16,
@@ -147,12 +147,19 @@
       "average": null
     },
     "CO-H-05-2026": {
-      "count": 2,
+      "count": 4,
       "latest": {
-        "pollster": "Global Strategy Group (D)",
-        "endDate": "2026-07-21"
+        "pollster": "Global Strategy Group",
+        "endDate": "2026-10-18"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 43,
+        "rep": 38,
+        "margin": 5,
+        "demCandidate": "Jessica Killin",
+        "repCandidate": "Jeff Crank"
+      }
     },
     "FL-H-02-2026": {
       "count": 4,
@@ -720,13 +727,13 @@
       "average": null
     },
     "NC-S-2026": {
-      "count": 70,
+      "count": 71,
       "latest": {
         "pollster": "ActiVote",
         "endDate": "2026-10-20"
       },
       "average": {
-        "polls": 40,
+        "polls": 41,
         "dem": 51,
         "rep": 40.8,
         "margin": 10.2,

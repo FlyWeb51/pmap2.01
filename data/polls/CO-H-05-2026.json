@@ -1,12 +1,83 @@
 {
   "raceId": "CO-H-05-2026",
-  "count": 2,
-  "updated_at": "2026-10-22T16:29:29.035Z",
+  "count": 4,
+  "updated_at": "2026-10-22T17:20:20.092Z",
   "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-14 to 2026-10-18",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://coloradosun.com/2026/10/22/jessica-killin-poll-lead-jeff-crank/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4483,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-14 to 2026-10-18",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jessica Killin (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Jeff Crank (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Christopher Mitchell (CON)",
+          "party": "O",
+          "pct": 4,
+          "percentage": 4
+        },
+        {
+          "candidate": "Mark G. Elworth (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://coloradosun.com/2026/10/22/jessica-killin-poll-lead-jeff-crank/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4483
+    },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-07-21",
-      "weight": 0.0545,
+      "weight": 0.0544,
       "sampleSize": 450,
       "population": "LV",
       "results": [

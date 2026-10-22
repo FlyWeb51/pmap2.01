@@ -1,12 +1,84 @@
 {
   "raceId": "NC-S-2026",
-  "count": 60,
+  "count": 62,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Harper Polling",
+      "sponsors": "Carolina Journal",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-20",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.carolinajournal.com/polls/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "percentage": 51.6
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "percentage": 42
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.5
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Harper Polling",
+      "sponsors": "Carolina Journal",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-20",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.carolinajournal.com/polls/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "percentage": 49.4
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "percentage": 39.1
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.8
+        },
+        {
+          "candidate": "Shannon Bray (LIB)",
+          "party": "LIB",
+          "percentage": 2.9
+        },
+        {
+          "candidate": "Michael Dublin (GRE)",
+          "party": "GRE",
+          "percentage": 1.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "ActiVote",
       "sponsors": null,
