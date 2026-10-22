@@ -1,0 +1,50 @@
+name: State generic ballot polls (Wikipedia, twice daily)
+
+# Statewide generic congressional ballot polls from each state's Wikipedia
+# "2026 U.S. House elections in <State>" page -> data/generic-wiki.json.
+
+on:
+  schedule:
+    - cron: "43 5,17 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/fetch-wiki-generic.js"
+
+concurrency:
+  group: wiki-generic
+  cancel-in-progress: false
+
+jobs:
+  wiki-generic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install HTML parser
+        run: npm i --no-save --no-package-lock linkedom@0.18.14
+
+      - name: Fetch statewide generic ballot polls
+        run: node scripts/fetch-wiki-generic.js
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/generic-wiki.json
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "State generic ballot polls: refresh"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
