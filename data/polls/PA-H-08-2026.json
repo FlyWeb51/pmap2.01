@@ -1,12 +1,41 @@
 {
   "raceId": "PA-H-08-2026",
-  "count": 3,
-  "updated_at": "2026-10-22T12:06:26.128Z",
+  "count": 4,
+  "updated_at": "2026-10-22T14:04:50.798Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-12 to 2026-10-14",
+      "sampleSize": 396,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "Paige Cognetti (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Rob Bresnahan Jr. (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7298
+    },
     {
       "pollster": "Lake Research Partners (D)",
       "endDate": "2026-06-23",
-      "weight": 0.027,
+      "weight": 0.0269,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -37,7 +66,7 @@
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-06-11",
-      "weight": 0.0229,
+      "weight": 0.0228,
       "sampleSize": 500,
       "population": "LV",
       "results": [

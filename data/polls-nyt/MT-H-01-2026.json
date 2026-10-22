@@ -1,12 +1,38 @@
 {
   "raceId": "MT-H-01-2026",
-  "count": 13,
+  "count": 14,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": "Poll Vault",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": 329,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sam Forstag (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Aaron Flint (R)",
+          "party": "R",
+          "percentage": 46
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Public Policy Polling",
       "sponsors": "House Majority PAC",

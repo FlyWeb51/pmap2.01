@@ -1,12 +1,38 @@
 {
   "raceId": "FL-H-14-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": "Poll Vault",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": 315,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kathy Castor (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Mike Beltran (R)",
+          "party": "R",
+          "percentage": 43
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "St. Pete Polls",
       "sponsors": "Florida Politics",

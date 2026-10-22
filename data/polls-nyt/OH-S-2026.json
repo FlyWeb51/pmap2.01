@@ -1,12 +1,89 @@
 {
   "raceId": "OH-S-2026",
-  "count": 43,
+  "count": 45,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Verasight",
+      "sponsors": "VoteHub",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-20",
+      "sampleSize": 531,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://votehub.com/2026/10/22/votehub-verasight-poll-surveys-ohios-u-s-senate-and-gubernatorial-races/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 47.5
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 43.6
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.2
+        },
+        {
+          "candidate": "Bill Redpath (LIB)",
+          "party": "LIB",
+          "percentage": 1.1
+        },
+        {
+          "candidate": "Gregory Levy (I)",
+          "party": "I",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Verasight",
+      "sponsors": "VoteHub",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-20",
+      "sampleSize": 535,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://votehub.com/2026/10/22/votehub-verasight-poll-surveys-ohios-u-s-senate-and-gubernatorial-races/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 45.7
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 43.8
+        },
+        {
+          "candidate": "Bill Redpath (LIB)",
+          "party": "LIB",
+          "percentage": 1.2
+        },
+        {
+          "candidate": "Gregory Levy (I)",
+          "party": "I",
+          "percentage": 1.1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "sponsors": "Fox News",
@@ -34,6 +111,16 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 2
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
         }
       ],
       "note": null
@@ -65,6 +152,16 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 2
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
         }
       ],
       "note": null

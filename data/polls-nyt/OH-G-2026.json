@@ -1,12 +1,79 @@
 {
   "raceId": "OH-G-2026",
-  "count": 41,
+  "count": 43,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Verasight",
+      "sponsors": "VoteHub",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-20",
+      "sampleSize": 531,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://votehub.com/2026/10/22/votehub-verasight-poll-surveys-ohios-u-s-senate-and-gubernatorial-races/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 46.2
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 45.4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5.7
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "LIB",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Verasight",
+      "sponsors": "VoteHub",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-20",
+      "sampleSize": 535,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://votehub.com/2026/10/22/votehub-verasight-poll-surveys-ohios-u-s-senate-and-gubernatorial-races/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 45.9
+        },
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 44.4
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "LIB",
+          "percentage": 2.1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "sponsors": "Fox News",
@@ -36,9 +103,14 @@
           "percentage": 1
         },
         {
-          "candidate": "None/other (NON)",
+          "candidate": "Someone else (NON)",
           "party": "NON",
           "percentage": 1
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
         }
       ],
       "note": null
@@ -72,9 +144,14 @@
           "percentage": 1
         },
         {
-          "candidate": "None/other (NON)",
+          "candidate": "Someone else (NON)",
           "party": "NON",
           "percentage": 1
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
         }
       ],
       "note": null

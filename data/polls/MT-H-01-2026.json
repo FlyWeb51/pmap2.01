@@ -1,8 +1,37 @@
 {
   "raceId": "MT-H-01-2026",
-  "count": 12,
-  "updated_at": "2026-10-22T12:06:26.119Z",
+  "count": 13,
+  "updated_at": "2026-10-22T14:04:50.792Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-12 to 2026-10-14",
+      "sampleSize": 329,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "Sam Forstag (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Aaron Flint (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6652
+    },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-10-14",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4108
+      "weight": 0.41
     },
     {
       "pollster": "American Pulse Research & Polling",
@@ -60,7 +89,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "NonStop Local",
-      "weight": 0.4102
+      "weight": 0.4094
     },
     {
       "pollster": "American Pulse Research & Polling",
@@ -95,7 +124,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4102,
+      "weight": 0.4094,
       "otherMatchup": true
     },
     {
@@ -125,7 +154,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2529
+      "weight": 0.2524
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -155,7 +184,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "The Bench",
-      "weight": 0.1745
+      "weight": 0.1742
     },
     {
       "pollster": "Public Policy Polling",
@@ -184,7 +213,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1745,
+      "weight": 0.1742,
       "otherMatchup": true
     },
     {
@@ -215,12 +244,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Montana Free Press",
-      "weight": 0.2724
+      "weight": 0.2719
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-06-25",
-      "weight": 0.0316,
+      "weight": 0.0315,
       "sampleSize": 500,
       "population": "LV",
       "results": [

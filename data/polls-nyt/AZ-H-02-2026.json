@@ -1,12 +1,38 @@
 {
   "raceId": "AZ-H-02-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": "Poll Vault",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": 345,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jonathan Nez (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Eli Crane (R)",
+          "party": "R",
+          "percentage": 48
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "GBAO",
       "sponsors": null,

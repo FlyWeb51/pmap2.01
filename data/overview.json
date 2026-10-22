@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T12:06:26.246Z",
+  "generatedAt": "2026-10-22T14:04:50.887Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -141,12 +141,12 @@
         "special": true,
         "kalshiD": 0.7120000000000001,
         "nyt": {
-          "averageMargin": 4.1,
-          "averagePolls": 25,
+          "averageMargin": 4,
+          "averagePolls": 27,
           "latest": {
-            "pollster": "Beacon Research/Shaw & Company Research",
-            "endDate": "2026-10-19",
-            "margin": 7
+            "pollster": "Verasight",
+            "endDate": "2026-10-20",
+            "margin": 3.8999999999999986
           },
           "source": "NYT"
         }
@@ -499,12 +499,12 @@
         "special": false,
         "kalshiD": 0.016,
         "nyt": {
-          "averageMargin": -21,
-          "averagePolls": 2,
+          "averageMargin": -18.2,
+          "averagePolls": 3,
           "latest": {
-            "pollster": "The Alabama Poll",
-            "endDate": "2026-10-16",
-            "margin": -21
+            "pollster": "Cygnal Political",
+            "endDate": "2026-10-17",
+            "margin": -14.799999999999997
           },
           "source": "NYT"
         }
@@ -977,12 +977,12 @@
       "dem": "Amy Acton",
       "rep": "Vivek Ramaswamy",
       "poll": {
-        "averageMargin": 4,
-        "averagePolls": 16,
+        "averageMargin": 3.4,
+        "averagePolls": 18,
         "latest": {
-          "pollster": "Beacon Research/Shaw & Company Research",
-          "endDate": "2026-10-19",
-          "margin": 4
+          "pollster": "Verasight",
+          "endDate": "2026-10-20",
+          "margin": 0.8000000000000043
         },
         "source": "NYT"
       }
@@ -1669,6 +1669,19 @@
         "kalshiD": 0.982
       },
       {
+        "state": "AL",
+        "name": "Alabama",
+        "special": false,
+        "dem": "Everett Wess",
+        "rep": "Barry Moore",
+        "polls": 3,
+        "pres2024": -30.5,
+        "expected": -21.2,
+        "pollMargin": -18.4,
+        "overUnder": 2.8,
+        "kalshiD": 0.016
+      },
+      {
         "state": "NC",
         "name": "North Carolina",
         "special": false,
@@ -1713,7 +1726,7 @@
         "special": true,
         "dem": "Sherrod Brown",
         "rep": "Jon Husted",
-        "polls": 33,
+        "polls": 34,
         "pres2024": -11.2,
         "expected": -1.9,
         "pollMargin": 4.3,
@@ -1739,11 +1752,11 @@
         "special": false,
         "dem": "James Talarico",
         "rep": "Ken Paxton",
-        "polls": 61,
+        "polls": 60,
         "pres2024": -13.7,
         "expected": -4.4,
-        "pollMargin": 2.8,
-        "overUnder": 7.2,
+        "pollMargin": 2.6,
+        "overUnder": 7,
         "kalshiD": 0.675
       },
       {
@@ -1782,7 +1795,7 @@
         "name": "NC-9",
         "type": "House",
         "now": 45.6,
-        "ch1": 26.7,
+        "ch1": 25.3,
         "ch7": 28.6,
         "dem": "Richard Ojeda",
         "rep": "Richard Hudson",
@@ -1793,7 +1806,7 @@
         "name": "OH-15",
         "type": "House",
         "now": 44.1,
-        "ch1": 16.3,
+        "ch1": 16.2,
         "ch7": 19.4,
         "dem": "Don Leonard",
         "rep": "Mike Carey",
@@ -1804,7 +1817,7 @@
         "name": "AZ-2",
         "type": "House",
         "now": 37.5,
-        "ch1": 12.3,
+        "ch1": 11.9,
         "ch7": 14,
         "dem": "Jonathan Nez",
         "rep": "Eli Crane",
@@ -1844,17 +1857,6 @@
         "thirdParty": false
       },
       {
-        "key": "G-NV",
-        "name": "Nevada",
-        "type": "Governor",
-        "now": 66.2,
-        "ch1": 8.7,
-        "ch7": 14.7,
-        "dem": "Aaron Ford",
-        "rep": "Joe Lombardo",
-        "thirdParty": false
-      },
-      {
         "key": "G-TX",
         "name": "Texas",
         "type": "Governor",
@@ -1863,6 +1865,28 @@
         "ch7": 12.8,
         "dem": "Gina Hinojosa",
         "rep": "Greg Abbott",
+        "thirdParty": false
+      },
+      {
+        "key": "G-NV",
+        "name": "Nevada",
+        "type": "Governor",
+        "now": 66.2,
+        "ch1": 8.1,
+        "ch7": 14.7,
+        "dem": "Aaron Ford",
+        "rep": "Joe Lombardo",
+        "thirdParty": false
+      },
+      {
+        "key": "H-FL-12",
+        "name": "FL-12",
+        "type": "House",
+        "now": 18,
+        "ch1": 7.5,
+        "ch7": 6.5,
+        "dem": "Kimberly Overman",
+        "rep": "Gus Bilirakis",
         "thirdParty": false
       },
       {
@@ -1877,28 +1901,6 @@
         "thirdParty": false
       },
       {
-        "key": "H-NV-02",
-        "name": "NV-2",
-        "type": "House",
-        "now": 37.5,
-        "ch1": 7.2,
-        "ch7": 10,
-        "dem": "Teresa Benitez-Thompson",
-        "rep": "David Flippo",
-        "thirdParty": false
-      },
-      {
-        "key": "H-FL-12",
-        "name": "FL-12",
-        "type": "House",
-        "now": 18,
-        "ch1": 7.1,
-        "ch7": 6.5,
-        "dem": "Kimberly Overman",
-        "rep": "Gus Bilirakis",
-        "thirdParty": false
-      },
-      {
         "key": "G-GA",
         "name": "Georgia",
         "type": "Governor",
@@ -1908,6 +1910,17 @@
         "dem": "Keisha Lance Bottoms",
         "rep": "Rick Jackson",
         "thirdParty": false
+      },
+      {
+        "key": "H-NV-02",
+        "name": "NV-2",
+        "type": "House",
+        "now": 37.5,
+        "ch1": 6.8,
+        "ch7": 10,
+        "dem": "Teresa Benitez-Thompson",
+        "rep": "David Flippo",
+        "thirdParty": false
       }
     ],
     "week": [
@@ -1916,7 +1929,7 @@
         "name": "NC-9",
         "type": "House",
         "now": 45.6,
-        "ch1": 26.7,
+        "ch1": 25.3,
         "ch7": 28.6,
         "dem": "Richard Ojeda",
         "rep": "Richard Hudson",
@@ -1927,7 +1940,7 @@
         "name": "OH-10",
         "type": "House",
         "now": 37.4,
-        "ch1": 2.7,
+        "ch1": 2.4,
         "ch7": 21.9,
         "dem": "Kristina Knickerbocker",
         "rep": "Mike Turner",
@@ -1938,7 +1951,7 @@
         "name": "OH-15",
         "type": "House",
         "now": 44.1,
-        "ch1": 16.3,
+        "ch1": 16.2,
         "ch7": 19.4,
         "dem": "Don Leonard",
         "rep": "Mike Carey",
@@ -1960,7 +1973,7 @@
         "name": "Nevada",
         "type": "Governor",
         "now": 66.2,
-        "ch1": 8.7,
+        "ch1": 8.1,
         "ch7": 14.7,
         "dem": "Aaron Ford",
         "rep": "Joe Lombardo",
@@ -1971,7 +1984,7 @@
         "name": "AZ-2",
         "type": "House",
         "now": 37.5,
-        "ch1": 12.3,
+        "ch1": 11.9,
         "ch7": 14,
         "dem": "Jonathan Nez",
         "rep": "Eli Crane",
@@ -2015,7 +2028,7 @@
         "name": "Ohio",
         "type": "Governor",
         "now": 79.7,
-        "ch1": 2.6,
+        "ch1": 3.2,
         "ch7": 11.2,
         "dem": "Amy Acton",
         "rep": "Vivek Ramaswamy",
@@ -2445,7 +2458,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-22T10:11:37.378Z",
-    "nytUpdated": "2026-10-22T12:06:25.850Z",
+    "nytUpdated": "2026-10-22T14:04:50.539Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

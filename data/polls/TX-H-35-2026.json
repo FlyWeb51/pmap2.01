@@ -1,8 +1,37 @@
 {
   "raceId": "TX-H-35-2026",
-  "count": 2,
-  "updated_at": "2026-10-22T12:06:26.141Z",
+  "count": 3,
+  "updated_at": "2026-10-22T14:04:50.807Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-12 to 2026-10-14",
+      "sampleSize": 417,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "Johnny Garcia (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Carlos De La Cruz (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7489
+    },
     {
       "pollster": "Normington, Petts & Associates",
       "endDate": "2026-10-14",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4108
+      "weight": 0.41
     },
     {
       "pollster": "Normington, Petts & Associates D-sponsored",
@@ -60,7 +89,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "House Majority PAC",
-      "weight": 0.1486
+      "weight": 0.1484
     }
   ]
 }

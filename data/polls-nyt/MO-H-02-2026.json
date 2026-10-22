@@ -1,6 +1,6 @@
 {
   "raceId": "MO-H-02-2026",
-  "count": 3,
+  "count": 4,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -29,6 +29,32 @@
           "candidate": "Ann Wagner (R)",
           "party": "R",
           "percentage": 45
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Emerson College",
+      "sponsors": "Poll Vault",
+      "startDate": "2026-10-12",
+      "endDate": "2026-10-14",
+      "sampleSize": 401,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Fred Wellman (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Ann Wagner (R)",
+          "party": "R",
+          "percentage": 46
         }
       ],
       "note": null

@@ -1,8 +1,43 @@
 {
   "raceId": "OH-G-2026",
-  "count": 34,
-  "updated_at": "2026-10-22T12:06:26.153Z",
+  "count": 35,
+  "updated_at": "2026-10-22T14:04:50.816Z",
   "polls": [
+    {
+      "pollster": "Verasight",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-01 to 2026-10-20",
+      "sampleSize": 531,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "VoteHub",
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "pct": 46.2,
+          "percentage": 46.2
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "pct": 45.4,
+          "percentage": 45.4
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://votehub.com/2026/10/22/votehub-verasight-poll-surveys-ohios-u-s-senate-and-gubernatorial-races/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9707
+    },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-10-19",
@@ -23,12 +58,6 @@
           "party": "R",
           "pct": 48,
           "percentage": 48
-        },
-        {
-          "candidate": "None/other (NON)",
-          "party": null,
-          "pct": 1,
-          "percentage": 1
         }
       ],
       "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-gender-gap-pocketbook-pain-shape-ohio-senate-race",
@@ -36,7 +65,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.6456
+      "weight": 1.6425
     },
     {
       "pollster": "ActiVote",
@@ -65,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8249
+      "weight": 0.8233
     },
     {
       "pollster": "Marist University",
@@ -94,7 +123,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.382
+      "weight": 1.3794
     },
     {
       "pollster": "New River Strategies/GS Strategy Group",
@@ -129,7 +158,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1119
+      "weight": 1.1098
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
@@ -164,7 +193,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0352
+      "weight": 1.0332
     },
     {
       "pollster": "co/efficient",
@@ -199,7 +228,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9289
+      "weight": 0.9271
     },
     {
       "pollster": "CNN/SSRS",
@@ -234,7 +263,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8228
+      "weight": 0.8212
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -263,7 +292,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6753
+      "weight": 0.6741
     },
     {
       "pollster": "YouGov",
@@ -292,7 +321,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1891
+      "weight": 1.1868
     },
     {
       "pollster": "Big Data Poll",
@@ -327,7 +356,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6469
+      "weight": 0.6457
     },
     {
       "pollster": "Suffolk University",
@@ -362,7 +391,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5547
+      "weight": 0.5537
     },
     {
       "pollster": "Marist University",
@@ -391,7 +420,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8044
+      "weight": 0.8029
     },
     {
       "pollster": "YouGov",
@@ -426,7 +455,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5297
+      "weight": 0.5287
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -461,7 +490,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2338
+      "weight": 0.2334
     },
     {
       "pollster": "Tulchin Research",
@@ -496,7 +525,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0873
+      "weight": 0.0871
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -525,7 +554,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0743
+      "weight": 0.0741
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
@@ -554,7 +583,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.065
+      "weight": 0.0648
     },
     {
       "pollster": "Tulchin Research",
@@ -618,7 +647,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0466
+      "weight": 0.0465
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",

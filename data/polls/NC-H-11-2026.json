@@ -1,8 +1,37 @@
 {
   "raceId": "NC-H-11-2026",
-  "count": 2,
-  "updated_at": "2026-10-22T12:06:26.149Z",
+  "count": 3,
+  "updated_at": "2026-10-22T14:04:50.813Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-12 to 2026-10-14",
+      "sampleSize": 388,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "Jamie Ager (D)",
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "Jennifer Balkcom (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7224
+    },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-09-11",
@@ -30,7 +59,8 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1777
+      "weight": 0.1774,
+      "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling",
@@ -59,7 +89,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1777,
+      "weight": 0.1774,
       "otherMatchup": true
     }
   ]

@@ -1,8 +1,37 @@
 {
   "raceId": "AR-H-02-2026",
-  "count": 2,
-  "updated_at": "2026-10-22T12:06:26.137Z",
+  "count": 3,
+  "updated_at": "2026-10-22T14:04:50.804Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-12 to 2026-10-14",
+      "sampleSize": 383,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "French Hill (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Chris Jones (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7177
+    },
     {
       "pollster": "Hendrix College",
       "endDate": "2026-08-13",
@@ -31,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Talk Business & Politics",
-      "weight": 0.2925
+      "weight": 0.2919
     },
     {
       "pollster": "2040 Strategy Group",

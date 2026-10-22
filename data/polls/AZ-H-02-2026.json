@@ -1,8 +1,37 @@
 {
   "raceId": "AZ-H-02-2026",
-  "count": 3,
-  "updated_at": "2026-10-22T12:06:26.103Z",
+  "count": 4,
+  "updated_at": "2026-10-22T14:04:50.779Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-14",
+      "fieldDates": "2026-10-12 to 2026-10-14",
+      "sampleSize": 345,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "Jonathan Nez (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Eli Crane (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/levee-math",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6812
+    },
     {
       "pollster": "GBAO",
       "endDate": "2026-08-24",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1264
+      "weight": 0.1262
     },
     {
       "pollster": "Peak Insights",
@@ -58,7 +87,7 @@
         "https://pollingsource.com/house/AZ-02"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2062
+      "weight": 0.2058
     },
     {
       "raceId": "AZ-H-02-2026",
@@ -71,7 +100,7 @@
       "moe": 4.4,
       "sponsor": "D",
       "methodology": "Likely voters, 500 respondents, margin of error +/- 4.4",
-      "weight": 0.0251,
+      "weight": 0.025,
       "reviewStatus": "approved",
       "results": [
         {
