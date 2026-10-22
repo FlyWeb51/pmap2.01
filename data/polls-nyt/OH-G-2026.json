@@ -1,12 +1,84 @@
 {
   "raceId": "OH-G-2026",
-  "count": 39,
+  "count": 41,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Beacon Research/Shaw & Company Research",
+      "sponsors": "Fox News",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-19",
+      "sampleSize": 2005,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-gender-gap-pocketbook-pain-shape-ohio-senate-race",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "None/other (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Beacon Research/Shaw & Company Research",
+      "sponsors": "Fox News",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-19",
+      "sampleSize": 1592,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.foxnews.com/politics/fox-news-poll-gender-gap-pocketbook-pain-shape-ohio-senate-race",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "None/other (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "ActiVote",
       "sponsors": null,
