@@ -40679,5 +40679,166 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/senate/TX",
     "scrapedAt": "2026-10-22T16:29:10.092Z"
+  },
+  {
+    "raceId": "ME-senate",
+    "pollster": "rowspan=\"2\" |Beacon Research (D)/ Shaw & Co. Research",
+    "partisanLean": "R",
+    "fieldDates": "rowspan=\"2\"|October 16–20, 2026",
+    "sampleSize": 1514,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Susan Collins (R)",
+        "pct": 49
+      },
+      {
+        "candidate": "Troy Jackson (D)",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine",
+    "scrapedAt": "2026-10-23T03:08:37.452Z"
+  },
+  {
+    "raceId": "NH-senate",
+    "pollster": "Saint Anselm College",
+    "partisanLean": null,
+    "fieldDates": "October 19–20, 2026",
+    "sampleSize": 1672,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Chris Pappas (D)",
+        "pct": 50
+      },
+      {
+        "candidate": "John E. Sununu (R)",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
+    "scrapedAt": "2026-10-23T03:08:40.001Z"
+  },
+  {
+    "raceId": "MN-senate",
+    "pollster": "style=\"text-align:left;|Rasmussen Reports",
+    "partisanLean": "R",
+    "fieldDates": "October 20–21, 2026",
+    "sampleSize": 1182,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Peggy Flanagan (DFL)",
+        "pct": 48
+      },
+      {
+        "candidate": "Michele Tafoya (R)",
+        "pct": 45
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
+    "scrapedAt": "2026-10-23T03:08:42.878Z"
+  },
+  {
+    "raceId": "generic-ballot",
+    "pollster": "Economist/YouGov",
+    "partisanLean": null,
+    "fieldDates": "2026-10-20",
+    "sampleSize": 1312,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Democrats",
+        "pct": 50
+      },
+      {
+        "candidate": "Republicans",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
+    "scrapedAt": "2026-10-23T03:08:51.088Z"
+  },
+  {
+    "raceId": "ME",
+    "pollster": "FOX News",
+    "partisanLean": null,
+    "fieldDates": "2026-10-20",
+    "sampleSize": 1514,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Jackson",
+        "pct": 49
+      },
+      {
+        "candidate": "Collins",
+        "pct": 49
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/ME",
+    "scrapedAt": "2026-10-23T03:09:34.107Z"
+  },
+  {
+    "raceId": "NC",
+    "pollster": "Carolina Journal/Harper",
+    "partisanLean": "R",
+    "fieldDates": "2026-10-20",
+    "sampleSize": 600,
+    "population": "LV",
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Cooper",
+        "pct": 49
+      },
+      {
+        "candidate": "Whatley",
+        "pct": 39
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NC",
+    "scrapedAt": "2026-10-23T03:09:48.228Z"
+  },
+  {
+    "raceId": "NH",
+    "pollster": "St. Anselm 2024 err 3.4",
+    "partisanLean": null,
+    "fieldDates": "2026-10-20",
+    "sampleSize": 1672,
+    "population": "LV",
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Pappas",
+        "pct": 50
+      },
+      {
+        "candidate": "Sununu",
+        "pct": 43
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://pollingsource.com/senate/NH",
+    "scrapedAt": "2026-10-23T03:09:53.524Z"
   }
 ]
