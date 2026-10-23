@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T03:10:42.741Z",
+  "generatedAt": "2026-10-23T05:03:38.536Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -87,11 +87,11 @@
         "special": false,
         "kalshiD": 0.649,
         "nyt": {
-          "averageMargin": 1.8,
-          "averagePolls": 20,
+          "averageMargin": 1.5,
+          "averagePolls": 22,
           "latest": {
-            "pollster": "InsiderAdvantage",
-            "endDate": "2026-10-14",
+            "pollster": "Beacon Research/Shaw & Company Research",
+            "endDate": "2026-10-20",
             "margin": 2
           },
           "source": "NYT"
@@ -106,7 +106,7 @@
         "kalshiD": 0.665,
         "nyt": {
           "averageMargin": 2.7,
-          "averagePolls": 38,
+          "averagePolls": 37,
           "latest": {
             "pollster": "ActiVote",
             "endDate": "2026-10-21",
@@ -196,7 +196,7 @@
         "kalshiD": 0.185,
         "nyt": {
           "averageMargin": -2.2,
-          "averagePolls": 7,
+          "averagePolls": 6,
           "latest": {
             "pollster": "Trafalgar Group",
             "endDate": "2026-10-18",
@@ -231,8 +231,8 @@
         "special": false,
         "kalshiD": 0.899,
         "nyt": {
-          "averageMargin": 6.3,
-          "averagePolls": 14,
+          "averageMargin": 6.5,
+          "averagePolls": 12,
           "latest": {
             "pollster": "St. Anselm",
             "endDate": "2026-10-20",
@@ -463,8 +463,8 @@
         "special": false,
         "kalshiD": 0.981,
         "nyt": {
-          "averageMargin": 26.2,
-          "averagePolls": 6,
+          "averageMargin": 26.9,
+          "averagePolls": 4,
           "latest": {
             "pollster": "Suffolk University",
             "endDate": "2026-10-18",
@@ -499,8 +499,8 @@
         "special": false,
         "kalshiD": 0.983,
         "nyt": {
-          "averageMargin": 27.2,
-          "averagePolls": 4,
+          "averageMargin": 27.4,
+          "averagePolls": 3,
           "latest": {
             "pollster": "Emerson College",
             "endDate": "2026-10-11",
@@ -922,7 +922,7 @@
       "rep": "Greg Abbott",
       "poll": {
         "averageMargin": -2.5,
-        "averagePolls": 33,
+        "averagePolls": 32,
         "latest": {
           "pollster": "ActiVote",
           "endDate": "2026-10-21",
@@ -1281,12 +1281,12 @@
       "dem": "Hannah Pingree",
       "rep": "Robert Charles",
       "poll": {
-        "averageMargin": 11.4,
-        "averagePolls": 13,
+        "averageMargin": 10.9,
+        "averagePolls": 15,
         "latest": {
-          "pollster": "Suffolk University",
-          "endDate": "2026-10-11",
-          "margin": 11
+          "pollster": "Beacon Research/Shaw & Company Research",
+          "endDate": "2026-10-20",
+          "margin": 10
         },
         "source": "NYT"
       }
@@ -1321,8 +1321,8 @@
       "dem": "Maura Healey",
       "rep": "Mike Minogue",
       "poll": {
-        "averageMargin": 22.8,
-        "averagePolls": 6,
+        "averageMargin": 22.6,
+        "averagePolls": 4,
         "latest": {
           "pollster": "Suffolk University",
           "endDate": "2026-10-18",
@@ -1352,8 +1352,8 @@
       "dem": "Ned Lamont",
       "rep": "Ryan Fazio",
       "poll": {
-        "averageMargin": 19.8,
-        "averagePolls": 11,
+        "averageMargin": 19.9,
+        "averagePolls": 10,
         "latest": {
           "pollster": "GreatBlue Research",
           "endDate": "2026-10-12",
@@ -1533,8 +1533,8 @@
       "dem": "Helena Foulkes",
       "rep": "Aaron Guckian",
       "poll": {
-        "averageMargin": 26.8,
-        "averagePolls": 8,
+        "averageMargin": 28.3,
+        "averagePolls": 4,
         "latest": {
           "pollster": "Emerson College",
           "endDate": "2026-10-11",
@@ -1815,47 +1815,14 @@
     "updated": "2026-10-23T01:32:02.300Z",
     "day": [
       {
-        "key": "H-MI-07",
-        "name": "MI-7",
-        "type": "House",
-        "now": 74.5,
-        "ch1": 11,
-        "ch7": 12.4,
-        "dem": "William Lawrence",
-        "rep": "Tom Barrett",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MO-02",
-        "name": "MO-2",
-        "type": "House",
-        "now": 35.5,
-        "ch1": 10,
-        "ch7": 11.2,
-        "dem": "Fred Wellman",
-        "rep": "Ann Wagner",
-        "thirdParty": false
-      },
-      {
         "key": "H-NC-01",
         "name": "NC-1",
         "type": "House",
         "now": 80.1,
         "ch1": 9.6,
-        "ch7": 14.6,
+        "ch7": 12.9,
         "dem": "Don Davis",
         "rep": "Laurie Buckhout",
-        "thirdParty": false
-      },
-      {
-        "key": "H-AZ-02",
-        "name": "AZ-2",
-        "type": "House",
-        "now": 34.2,
-        "ch1": 8.7,
-        "ch7": 10.7,
-        "dem": "Jonathan Nez",
-        "rep": "Eli Crane",
         "thirdParty": false
       },
       {
@@ -1863,32 +1830,21 @@
         "name": "MN-1",
         "type": "House",
         "now": 34.2,
-        "ch1": 8.1,
+        "ch1": 8,
         "ch7": 10.7,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
         "thirdParty": false
       },
       {
-        "key": "H-MT-01",
-        "name": "MT-1",
+        "key": "H-MO-02",
+        "name": "MO-2",
         "type": "House",
-        "now": 44.5,
+        "now": 35.5,
         "ch1": 8,
-        "ch7": 16.3,
-        "dem": "Sam Forstag",
-        "rep": "Aaron Flint",
-        "thirdParty": false
-      },
-      {
-        "key": "H-PA-08",
-        "name": "PA-8",
-        "type": "House",
-        "now": 79.7,
-        "ch1": 7.2,
-        "ch7": 6.2,
-        "dem": "Paige Cognetti",
-        "rep": "Rob Bresnahan",
+        "ch7": 11.2,
+        "dem": "Fred Wellman",
+        "rep": "Ann Wagner",
         "thirdParty": false
       },
       {
@@ -1896,10 +1852,32 @@
         "name": "OH-10",
         "type": "House",
         "now": 33.2,
-        "ch1": 7.2,
+        "ch1": 8,
         "ch7": 17.7,
         "dem": "Kristina Knickerbocker",
         "rep": "Mike Turner",
+        "thirdParty": false
+      },
+      {
+        "key": "H-MI-07",
+        "name": "MI-7",
+        "type": "House",
+        "now": 74.5,
+        "ch1": 7.3,
+        "ch7": 12,
+        "dem": "William Lawrence",
+        "rep": "Tom Barrett",
+        "thirdParty": false
+      },
+      {
+        "key": "H-PA-08",
+        "name": "PA-8",
+        "type": "House",
+        "now": 79.7,
+        "ch1": 6.5,
+        "ch7": 6.2,
+        "dem": "Paige Cognetti",
+        "rep": "Rob Bresnahan",
         "thirdParty": false
       },
       {
@@ -1907,7 +1885,7 @@
         "name": "OH-7",
         "type": "House",
         "now": 89.5,
-        "ch1": 6.8,
+        "ch1": 6.1,
         "ch7": 9,
         "dem": "Brian Poindexter",
         "rep": "Max Miller",
@@ -1925,25 +1903,47 @@
         "thirdParty": false
       },
       {
-        "key": "G-OH",
-        "name": "Ohio",
-        "type": "Governor",
-        "now": 82.5,
-        "ch1": 6,
-        "ch7": 14,
-        "dem": "Amy Acton",
-        "rep": "Vivek Ramaswamy",
-        "thirdParty": false
-      },
-      {
         "key": "H-KY-06",
         "name": "KY-6",
         "type": "House",
         "now": 44.5,
         "ch1": 6,
-        "ch7": 13.7,
+        "ch7": 14,
         "dem": "Zach Dembo",
         "rep": "Ralph Alvarado",
+        "thirdParty": false
+      },
+      {
+        "key": "H-TX-23",
+        "name": "TX-23",
+        "type": "House",
+        "now": 38.5,
+        "ch1": 5.7,
+        "ch7": 8.3,
+        "dem": "Katy Padilla Stout",
+        "rep": "Brandon Herrera",
+        "thirdParty": false
+      },
+      {
+        "key": "H-AZ-02",
+        "name": "AZ-2",
+        "type": "House",
+        "now": 34.2,
+        "ch1": 5.6,
+        "ch7": 10.7,
+        "dem": "Jonathan Nez",
+        "rep": "Eli Crane",
+        "thirdParty": false
+      },
+      {
+        "key": "H-FL-22",
+        "name": "FL-22",
+        "type": "House",
+        "now": 62.1,
+        "ch1": 5.6,
+        "ch7": 7,
+        "dem": "Pia Dandiya",
+        "rep": "Casey Askar",
         "thirdParty": false
       }
     ],
@@ -1953,7 +1953,7 @@
         "name": "OH-10",
         "type": "House",
         "now": 33.2,
-        "ch1": 7.2,
+        "ch1": 8,
         "ch7": 17.7,
         "dem": "Kristina Knickerbocker",
         "rep": "Mike Turner",
@@ -1964,8 +1964,8 @@
         "name": "MT-1",
         "type": "House",
         "now": 44.5,
-        "ch1": 8,
-        "ch7": 16.3,
+        "ch1": -2.2,
+        "ch7": 16,
         "dem": "Sam Forstag",
         "rep": "Aaron Flint",
         "thirdParty": false
@@ -1975,43 +1975,10 @@
         "name": "MI-4",
         "type": "House",
         "now": 62.5,
-        "ch1": 4.6,
-        "ch7": 15.2,
+        "ch1": 3.6,
+        "ch7": 14.7,
         "dem": "Sean McCann",
         "rep": "Bill Huizenga",
-        "thirdParty": false
-      },
-      {
-        "key": "G-NV",
-        "name": "Nevada",
-        "type": "Governor",
-        "now": 66.2,
-        "ch1": 0.4,
-        "ch7": 14.7,
-        "dem": "Aaron Ford",
-        "rep": "Joe Lombardo",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-01",
-        "name": "NC-1",
-        "type": "House",
-        "now": 80.1,
-        "ch1": 9.6,
-        "ch7": 14.6,
-        "dem": "Don Davis",
-        "rep": "Laurie Buckhout",
-        "thirdParty": false
-      },
-      {
-        "key": "G-OH",
-        "name": "Ohio",
-        "type": "Governor",
-        "now": 82.5,
-        "ch1": 6,
-        "ch7": 14,
-        "dem": "Amy Acton",
-        "rep": "Vivek Ramaswamy",
         "thirdParty": false
       },
       {
@@ -2020,9 +1987,42 @@
         "type": "House",
         "now": 44.5,
         "ch1": 6,
-        "ch7": 13.7,
+        "ch7": 14,
         "dem": "Zach Dembo",
         "rep": "Ralph Alvarado",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-01",
+        "name": "NC-1",
+        "type": "House",
+        "now": 80.1,
+        "ch1": 9.6,
+        "ch7": 12.9,
+        "dem": "Don Davis",
+        "rep": "Laurie Buckhout",
+        "thirdParty": false
+      },
+      {
+        "key": "G-NV",
+        "name": "Nevada",
+        "type": "Governor",
+        "now": 66.2,
+        "ch1": 0,
+        "ch7": 12.7,
+        "dem": "Aaron Ford",
+        "rep": "Joe Lombardo",
+        "thirdParty": false
+      },
+      {
+        "key": "G-OH",
+        "name": "Ohio",
+        "type": "Governor",
+        "now": 82.5,
+        "ch1": 5,
+        "ch7": 12.7,
+        "dem": "Amy Acton",
+        "rep": "Vivek Ramaswamy",
         "thirdParty": false
       },
       {
@@ -2030,8 +2030,8 @@
         "name": "Georgia",
         "type": "Governor",
         "now": 59.9,
-        "ch1": 5.4,
-        "ch7": 13.4,
+        "ch1": 3,
+        "ch7": 12.4,
         "dem": "Keisha Lance Bottoms",
         "rep": "Rick Jackson",
         "thirdParty": false
@@ -2041,32 +2041,10 @@
         "name": "MI-7",
         "type": "House",
         "now": 74.5,
-        "ch1": 11,
-        "ch7": 12.4,
+        "ch1": 7.3,
+        "ch7": 12,
         "dem": "William Lawrence",
         "rep": "Tom Barrett",
-        "thirdParty": false
-      },
-      {
-        "key": "H-VA-05",
-        "name": "VA-5",
-        "type": "House",
-        "now": 35.5,
-        "ch1": 3,
-        "ch7": 11.8,
-        "dem": "Tom Perriello",
-        "rep": "John McGuire",
-        "thirdParty": false
-      },
-      {
-        "key": "H-OH-15",
-        "name": "OH-15",
-        "type": "House",
-        "now": 36.2,
-        "ch1": 5.9,
-        "ch7": 11.5,
-        "dem": "Don Leonard",
-        "rep": "Mike Carey",
         "thirdParty": false
       },
       {
@@ -2074,10 +2052,32 @@
         "name": "MO-2",
         "type": "House",
         "now": 35.5,
-        "ch1": 10,
+        "ch1": 8,
         "ch7": 11.2,
         "dem": "Fred Wellman",
         "rep": "Ann Wagner",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NV-02",
+        "name": "NV-2",
+        "type": "House",
+        "now": 37.5,
+        "ch1": 1.4,
+        "ch7": 11,
+        "dem": "Teresa Benitez-Thompson",
+        "rep": "David Flippo",
+        "thirdParty": false
+      },
+      {
+        "key": "H-AZ-02",
+        "name": "AZ-2",
+        "type": "House",
+        "now": 34.2,
+        "ch1": 5.6,
+        "ch7": 10.7,
+        "dem": "Jonathan Nez",
+        "rep": "Eli Crane",
         "thirdParty": false
       }
     ]
@@ -2482,7 +2482,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-23T01:32:02.305Z",
-    "nytUpdated": "2026-10-22T21:45:25.634Z",
+    "nytUpdated": "2026-10-23T05:03:38.145Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
