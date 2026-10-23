@@ -1,12 +1,48 @@
 {
   "raceId": "NE-G-2026",
-  "count": 10,
+  "count": 11,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "sponsors": null,
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-18",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://drive.google.com/file/d/1g4TU7GCq4qgQVhD3aLRfT430gg401LYo/view",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jim Pillen (R)",
+          "party": "R",
+          "percentage": 40
+        },
+        {
+          "candidate": "Lynne Walz (D)",
+          "party": "D",
+          "percentage": 39
+        },
+        {
+          "candidate": "Rick Beard (LMN)",
+          "party": "LMN",
+          "percentage": 5
+        },
+        {
+          "candidate": "Brett Lindstrom (AME)",
+          "party": "AME",
+          "percentage": 5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "National Public Affairs",
       "sponsors": "God, Family, & Country PAC",

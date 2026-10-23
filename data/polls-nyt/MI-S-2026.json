@@ -1,12 +1,38 @@
 {
   "raceId": "MI-S-2026",
-  "count": 99,
+  "count": 100,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "InsiderAdvantage",
+      "sponsors": null,
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-22",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-senate-surveys-mi-el-sayed-47-rogers-46-ia-hinson-47-turek-45-oh-brown-47-husted-44/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "percentage": 46
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Marist University",
       "sponsors": null,

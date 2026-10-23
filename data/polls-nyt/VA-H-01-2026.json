@@ -1,12 +1,38 @@
 {
   "raceId": "VA-H-01-2026",
-  "count": 6,
+  "count": 7,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-22",
+      "sampleSize": 570,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/cjwarnke/status/2113633843999605102",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Shannon Taylor (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Robert Wittman (R)",
+          "party": "R",
+          "percentage": 46
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
       "sponsors": null,

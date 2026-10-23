@@ -1,12 +1,43 @@
 {
   "raceId": "SC-S-2026",
-  "count": 21,
+  "count": 22,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Impact Research",
+      "sponsors": "Fresh Start SC PAC",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-21",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://freshstartpac.org/wp-content/uploads/2026/10/SC-Senate-Track-Public-Memo.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know/Someone else (NON)",
+          "party": "NON",
+          "percentage": 10
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Trafalgar Group",
       "sponsors": null,

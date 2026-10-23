@@ -1,6 +1,6 @@
 {
   "raceId": "TX-S-2026",
-  "count": 124,
+  "count": 127,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -29,6 +29,73 @@
           "candidate": "Ken Paxton (R)",
           "party": "R",
           "percentage": 49
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Verasight",
+      "sponsors": "VoteHub",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-20",
+      "sampleSize": 601,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://cdn.votehub.com/pdfs/VoteHub_Verasight_Oct_2026_Texas_Report_D8A925D0.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 47.6
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 45.2
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5.8
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 1.4
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Verasight",
+      "sponsors": "VoteHub",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-20",
+      "sampleSize": 601,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://cdn.votehub.com/pdfs/VoteHub_Verasight_Oct_2026_Texas_Report_D8A925D0.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 46.1
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 45.3
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 1.5
         }
       ],
       "note": null
@@ -147,6 +214,37 @@
       "note": null
     },
     {
+      "pollster": "Slingshot Strategies",
+      "sponsors": "Texas Public Opinion Research",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-18",
+      "sampleSize": 969,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://texaspublicopinionresearch.substack.com/p/october-poll-in-texas-general-election",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
       "pollster": "YouGov",
       "sponsors": "CBS News",
       "startDate": "2026-10-08",
@@ -234,12 +332,22 @@
         {
           "candidate": "Ken Paxton (R)",
           "party": "R",
-          "percentage": 49
+          "percentage": 48.5
         },
         {
           "candidate": "James Talarico (D)",
           "party": "D",
-          "percentage": 48
+          "percentage": 48.1
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 2.4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
         }
       ],
       "note": null

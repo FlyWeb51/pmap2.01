@@ -1,8 +1,37 @@
 {
   "raceId": "WA-H-03-2026",
-  "count": 5,
-  "updated_at": "2026-10-23T16:46:00.649Z",
+  "count": 6,
+  "updated_at": "2026-10-23T17:17:38.799Z",
   "polls": [
+    {
+      "pollster": "Change Research",
+      "endDate": "2026-10-21",
+      "fieldDates": "2026-10-19 to 2026-10-21",
+      "sampleSize": 551,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Northwest Progressive Institute",
+      "results": [
+        {
+          "candidate": "Marie Gluesenkamp Perez (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "John Braun (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.nwprogressive.org/weblog/2026/10/theyre-tied-again-in-wa-03-npis-autumn-civic-heartbeat-polling-finds-marie-gluesenkamp-perez-at-45-john-braun-at-44.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4929
+    },
     {
       "pollster": "OPB/DHM Research",
       "endDate": "2026-09-27",
@@ -29,7 +58,7 @@
         "https://pollingsource.com/house/WA-03"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5624
+      "weight": 0.5621
     },
     {
       "pollster": "DHM Research",
@@ -58,7 +87,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5624
+      "weight": 0.5621
     },
     {
       "pollster": "Emerson College (D)",

@@ -1,8 +1,37 @@
 {
   "raceId": "VA-H-01-2026",
-  "count": 7,
-  "updated_at": "2026-10-23T16:46:00.647Z",
+  "count": 8,
+  "updated_at": "2026-10-23T17:17:38.798Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-21 to 2026-10-22",
+      "sampleSize": 570,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Shannon Taylor (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Robert Wittman (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2113633843999605102",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.513
+    },
     {
       "pollster": "Washington Post",
       "endDate": "2026-09-29",
@@ -29,7 +58,7 @@
         "https://pollingsource.com/house/VA-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6191
+      "weight": 0.6188
     },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
@@ -58,7 +87,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6095
+      "weight": 0.6092
     },
     {
       "pollster": "DCCC Targeting Team",
@@ -87,7 +116,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2182
+      "weight": 0.2181
     },
     {
       "pollster": "Ragnar Research Partners (R)",

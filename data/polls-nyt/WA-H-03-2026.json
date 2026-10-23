@@ -1,12 +1,48 @@
 {
   "raceId": "WA-H-03-2026",
-  "count": 4,
+  "count": 5,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Change Research",
+      "sponsors": "Northwest Progressive Institute",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-21",
+      "sampleSize": 551,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.nwprogressive.org/weblog/2026/10/theyre-tied-again-in-wa-03-npis-autumn-civic-heartbeat-polling-finds-marie-gluesenkamp-perez-at-45-john-braun-at-44.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Marie Gluesenkamp Perez (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "John Braun (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "DHM Research",
       "sponsors": "Oregon Public Broadcasting",

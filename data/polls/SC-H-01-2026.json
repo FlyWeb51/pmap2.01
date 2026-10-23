@@ -1,8 +1,37 @@
 {
   "raceId": "SC-H-01-2026",
-  "count": 7,
-  "updated_at": "2026-10-23T16:46:00.641Z",
+  "count": 8,
+  "updated_at": "2026-10-23T17:17:38.793Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-21 to 2026-10-22",
+      "sampleSize": 770,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Nancy Lacore (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jenny Costa Honeycutt (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2113636550357528714",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5963
+    },
     {
       "pollster": "co/efficient",
       "endDate": "2026-10-01",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3829
+      "weight": 0.3827
     },
     {
       "pollster": "co/efficient",
@@ -65,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7658,
+      "weight": 0.7654,
       "otherMatchup": true
     },
     {
@@ -96,7 +125,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "The Bench",
-      "weight": 0.1698
+      "weight": 0.1697
     },
     {
       "pollster": "Public Policy Polling",
@@ -125,7 +154,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1698,
+      "weight": 0.1697,
       "otherMatchup": true
     },
     {

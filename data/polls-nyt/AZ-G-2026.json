@@ -1,12 +1,53 @@
 {
   "raceId": "AZ-G-2026",
-  "count": 42,
+  "count": 43,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "GrayHouse",
+      "sponsors": "Friends of Elijah Norton",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-20",
+      "sampleSize": 550,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://x.com/sambbenson/status/2113614478558572788",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Katie Hobbs (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Andy Biggs (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Teri Hourihan (NLP)",
+          "party": "NLP",
+          "percentage": 2
+        },
+        {
+          "candidate": "Risa Lombardo (GRE)",
+          "party": "GRE",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "HighGround",
       "sponsors": null,

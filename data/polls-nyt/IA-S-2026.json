@@ -1,12 +1,43 @@
 {
   "raceId": "IA-S-2026",
-  "count": 46,
+  "count": 47,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "InsiderAdvantage",
+      "sponsors": null,
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-22",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-senate-surveys-mi-el-sayed-47-rogers-46-ia-hinson-47-turek-45-oh-brown-47-husted-44/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "percentage": 49.3
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "percentage": 46.8
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "co/efficient",
       "sponsors": null,
