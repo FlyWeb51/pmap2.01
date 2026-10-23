@@ -1,12 +1,53 @@
 {
   "raceId": "TX-H-35-2026",
-  "count": 3,
+  "count": 4,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
+      "sponsors": null,
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-19",
+      "sampleSize": 605,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.washingtonpost.com/tablet/2026/10/23/oct-14-19-2026-washington-post-schar-school-poll-texass-34th-35th-congressional-districts/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Carlos De La Cruz (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Johnny Garcia (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Emerson College",
       "sponsors": "Poll Vault",

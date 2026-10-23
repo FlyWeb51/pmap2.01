@@ -1,8 +1,37 @@
 {
   "raceId": "TX-H-35-2026",
-  "count": 3,
-  "updated_at": "2026-10-23T05:03:38.434Z",
+  "count": 4,
+  "updated_at": "2026-10-23T11:50:44.862Z",
   "polls": [
+    {
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
+      "endDate": "2026-10-19",
+      "fieldDates": "2026-10-14 to 2026-10-19",
+      "sampleSize": 605,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Carlos De La Cruz (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Johnny Garcia (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://www.washingtonpost.com/tablet/2026/10/23/oct-14-19-2026-washington-post-schar-school-poll-texass-34th-35th-congressional-districts/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9915
+    },
     {
       "pollster": "Emerson College",
       "endDate": "2026-10-14",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7382
+      "weight": 0.7334
     },
     {
       "pollster": "Normington, Petts & Associates",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4042
+      "weight": 0.4015
     },
     {
       "pollster": "Normington, Petts & Associates D-sponsored",
@@ -89,7 +118,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "House Majority PAC",
-      "weight": 0.1462
+      "weight": 0.1453
     }
   ]
 }

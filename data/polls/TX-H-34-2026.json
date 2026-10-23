@@ -1,8 +1,49 @@
 {
   "raceId": "TX-H-34-2026",
-  "count": 5,
-  "updated_at": "2026-10-23T05:03:38.424Z",
+  "count": 6,
+  "updated_at": "2026-10-23T11:50:44.852Z",
   "polls": [
+    {
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
+      "endDate": "2026-10-19",
+      "fieldDates": "2026-10-14 to 2026-10-19",
+      "sampleSize": 626,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Vicente Gonzalez (D)",
+          "party": "D",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Eric Flores (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Eddie Espinoza (GRE)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        },
+        {
+          "candidate": "Chris Royal (LIB)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://www.washingtonpost.com/tablet/2026/10/23/oct-14-19-2026-washington-post-schar-school-poll-texass-34th-35th-congressional-districts/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0086
+    },
     {
       "pollster": "Public Policy Research/Texas Southern University",
       "endDate": "2026-08-22",
@@ -29,7 +70,7 @@
         "https://pollingsource.com/house/TX-34"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2811
+      "weight": 0.2792
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
@@ -70,12 +111,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2811
+      "weight": 0.2792
     },
     {
       "pollster": "Ragnar Research Partners (R)",
       "endDate": "2026-06-16",
-      "weight": 0.0226,
+      "weight": 0.0224,
       "sampleSize": 400,
       "population": "LV",
       "results": [
@@ -105,7 +146,7 @@
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-29",
-      "weight": 0.0104,
+      "weight": 0.0103,
       "sampleSize": 777,
       "population": "LV",
       "results": [
@@ -159,7 +200,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0104,
+      "weight": 0.0103,
       "otherMatchup": true
     }
   ]

@@ -1,12 +1,63 @@
 {
   "raceId": "TX-H-34-2026",
-  "count": 4,
+  "count": 5,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
+      "sponsors": null,
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-19",
+      "sampleSize": 626,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.washingtonpost.com/tablet/2026/10/23/oct-14-19-2026-washington-post-schar-school-poll-texass-34th-35th-congressional-districts/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Vicente Gonzalez (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Eric Flores (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Eddie Espinoza (GRE)",
+          "party": "GRE",
+          "percentage": 2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Chris Royal (LIB)",
+          "party": "LIB",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
       "sponsors": null,
