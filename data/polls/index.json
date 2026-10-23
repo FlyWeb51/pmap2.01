@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-10-23T17:17:38.829Z",
+  "updated_at": "2026-10-23T21:31:12.698Z",
   "races": {
     "AK-H-01-2026": {
-      "count": 16,
+      "count": 15,
       "latest": {
         "pollster": "Data for Progress",
         "endDate": "2026-10-16"
       },
       "average": {
-        "polls": 8,
-        "dem": 7.3,
-        "rep": 48.9,
-        "margin": -41.6,
+        "polls": 7,
+        "dem": 6.9,
+        "rep": 48.8,
+        "margin": -41.9,
         "demCandidate": "Eric Hafner",
         "repCandidate": "Nick Begich"
       }
@@ -139,12 +139,19 @@
       }
     },
     "CO-H-03-2026": {
-      "count": 4,
+      "count": 5,
       "latest": {
-        "pollster": "Keating Research, Inc. (D)",
-        "endDate": "2026-07-23"
+        "pollster": "DCCC Targeting Team",
+        "endDate": "2026-10-21"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 47,
+        "rep": 46,
+        "margin": 1,
+        "demCandidate": "Dwayne Romero",
+        "repCandidate": "Jeff Hurd"
+      }
     },
     "CO-H-05-2026": {
       "count": 4,
@@ -373,24 +380,24 @@
       },
       "average": {
         "polls": 37,
-        "dem": 46.3,
+        "dem": 46,
         "rep": 45.5,
-        "margin": 0.8,
+        "margin": 0.4,
         "demCandidate": "Josh Turek",
         "repCandidate": "Ashley Hinson"
       }
     },
     "ID-H-01-2026": {
-      "count": 5,
+      "count": 6,
       "latest": {
-        "pollster": "Change Research",
-        "endDate": "2026-07-30"
+        "pollster": "VoteNexus",
+        "endDate": "2026-10-22"
       },
       "average": {
-        "polls": 1,
-        "dem": 27,
-        "rep": 48,
-        "margin": -21,
+        "polls": 2,
+        "dem": 26.1,
+        "rep": 51.5,
+        "margin": -25.3,
         "demCandidate": "Kaylee Peterson",
         "repCandidate": "Russ Fulcher"
       }
@@ -651,16 +658,16 @@
       }
     },
     "MS-S-2026": {
-      "count": 4,
+      "count": 5,
       "latest": {
-        "pollster": "Wedgewood Polls In average",
-        "endDate": "2026-10-14"
+        "pollster": "Change Research",
+        "endDate": "2026-10-22"
       },
       "average": {
-        "polls": 2,
-        "dem": 46.5,
-        "rep": 50.8,
-        "margin": -4.3,
+        "polls": 3,
+        "dem": 43.9,
+        "rep": 47.7,
+        "margin": -3.8,
         "demCandidate": "Scott Colom",
         "repCandidate": "Cindy Hyde-Smith"
       }
@@ -705,7 +712,7 @@
         "polls": 4,
         "dem": 46.7,
         "rep": 41.4,
-        "margin": 5.3,
+        "margin": 5.2,
         "demCandidate": "Don Davis",
         "repCandidate": "Laurie Buckhout"
       }
@@ -757,16 +764,16 @@
       }
     },
     "NE-S-2026": {
-      "count": 16,
+      "count": 17,
       "latest": {
-        "pollster": "Impact Research",
-        "endDate": "2026-10-20"
+        "pollster": "GBAO",
+        "endDate": "2026-10-22"
       },
       "average": {
-        "polls": 9,
-        "dem": 46.6,
-        "rep": 47.4,
-        "margin": -0.8,
+        "polls": 10,
+        "dem": 46.5,
+        "rep": 47.1,
+        "margin": -0.6,
         "demCandidate": "Dan Osborn",
         "repCandidate": "Pete Ricketts"
       }
@@ -1908,18 +1915,33 @@
       }
     },
     "ID-G-2026": {
-      "count": 2,
+      "count": 3,
       "latest": {
-        "pollster": "Change Research",
-        "endDate": "2026-07-30"
+        "pollster": "VoteNexus",
+        "endDate": "2026-10-22"
+      },
+      "average": {
+        "polls": 2,
+        "dem": 29.5,
+        "rep": 48.8,
+        "margin": -19.3,
+        "demCandidate": "Terri Pickens",
+        "repCandidate": "Brad Little"
+      }
+    },
+    "ID-H-02-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "VoteNexus",
+        "endDate": "2026-10-22"
       },
       "average": {
         "polls": 1,
-        "dem": 32,
-        "rep": 53,
-        "margin": -21,
-        "demCandidate": "Generic Democrat",
-        "repCandidate": "Brad Little"
+        "dem": 31,
+        "rep": 46,
+        "margin": -15,
+        "demCandidate": "Ellie Gilbreath",
+        "repCandidate": "Mike Simpson"
       }
     },
     "IL-G-2026": {
@@ -1938,18 +1960,33 @@
       }
     },
     "KS-G-2026": {
-      "count": 6,
+      "count": 7,
       "latest": {
-        "pollster": "YouGov",
-        "endDate": "2026-10-04"
+        "pollster": "Global Strategy Group",
+        "endDate": "2026-10-21"
       },
       "average": {
-        "polls": 6,
-        "dem": 44.3,
-        "rep": 48.4,
-        "margin": -4,
+        "polls": 7,
+        "dem": 44.7,
+        "rep": 48.2,
+        "margin": -3.5,
         "demCandidate": "Cindy Holscher",
         "repCandidate": "Ty Masterson"
+      }
+    },
+    "KS-H-02-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "DCCC Targeting Team",
+        "endDate": "2026-10-20"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 46,
+        "rep": 49,
+        "margin": -3,
+        "demCandidate": "Don Coover",
+        "repCandidate": "Derek Schmidt"
       }
     },
     "MA-G-2026": {

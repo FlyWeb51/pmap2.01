@@ -1,8 +1,37 @@
 {
   "raceId": "KS-G-2026",
-  "count": 6,
-  "updated_at": "2026-10-23T17:17:38.814Z",
+  "count": 7,
+  "updated_at": "2026-10-23T21:31:12.683Z",
   "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "endDate": "2026-10-21",
+      "fieldDates": "2026-10-18 to 2026-10-21",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ty Masterson (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Cindy Holscher (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://globalstrategygroup.app.box.com/s/vwojuwfb4y52lmvw4r5c5b60svfyrmqc",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5123
+    },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-04",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2681
+      "weight": 1.2629
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6359
+      "weight": 0.6333
     },
     {
       "pollster": "Global Strategy Group",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2646
+      "weight": 0.2635
     },
     {
       "pollster": "Emerson College",
@@ -117,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5123
+      "weight": 0.5102
     },
     {
       "pollster": "co/efficient",
@@ -146,7 +175,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4926
+      "weight": 0.4906
     },
     {
       "pollster": "Global Strategy Group",
@@ -175,7 +204,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1119
+      "weight": 0.1115
     }
   ]
 }

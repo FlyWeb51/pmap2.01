@@ -1,12 +1,41 @@
 {
   "raceId": "CO-H-03-2026",
-  "count": 4,
-  "updated_at": "2026-10-23T17:17:38.767Z",
+  "count": 5,
+  "updated_at": "2026-10-23T21:31:12.635Z",
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-10-21",
+      "fieldDates": "2026-10-20 to 2026-10-21",
+      "sampleSize": 402,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Dwayne Romero (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jeff Hurd (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://www.cpr.org/2026/10/23/could-democrats-make-gains-3rd-congressional-district/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4193
+    },
     {
       "pollster": "Keating Research, Inc. (D)",
       "endDate": "2026-07-23",
-      "weight": 0.0587,
+      "weight": 0.0585,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -31,8 +60,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "partisan": "D",
-      "fieldDates": "2026-07-23",
-      "otherMatchup": true
+      "fieldDates": "2026-07-23"
     },
     {
       "pollster": "Ragnar Research Partners",
@@ -61,7 +89,8 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0024
+      "weight": 0.0024,
+      "otherMatchup": true
     },
     {
       "pollster": "Ragnar Research Partners",
@@ -120,7 +149,8 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0006
+      "weight": 0.0006,
+      "otherMatchup": true
     }
   ]
 }

@@ -1,12 +1,43 @@
 {
   "raceId": "CO-H-03-2026",
-  "count": 4,
+  "count": 5,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "sponsors": null,
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-21",
+      "sampleSize": 402,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.cpr.org/2026/10/23/could-democrats-make-gains-3rd-congressional-district/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Dwayne Romero (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Jeff Hurd (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Keating Research, Inc.",
       "sponsors": null,

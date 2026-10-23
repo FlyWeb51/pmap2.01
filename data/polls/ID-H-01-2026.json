@@ -1,8 +1,49 @@
 {
   "raceId": "ID-H-01-2026",
-  "count": 5,
-  "updated_at": "2026-10-23T17:17:38.774Z",
+  "count": 6,
+  "updated_at": "2026-10-23T21:31:12.639Z",
   "polls": [
+    {
+      "pollster": "VoteNexus",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-21 to 2026-10-22",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Knock Every Door PAC",
+      "results": [
+        {
+          "candidate": "Russ Fulcher (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Kaylee Peterson (D)",
+          "party": "D",
+          "pct": 26,
+          "percentage": 26
+        },
+        {
+          "candidate": "Brendan Gomez (CON)",
+          "party": "O",
+          "pct": 6,
+          "percentage": 6
+        },
+        {
+          "candidate": "Sarah Zabel (I)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1ZWt7_rFQzMxjeueMCX4GoFyqIe9jRk8X/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4786
+    },
     {
       "pollster": "Change Research",
       "endDate": "2026-07-30",
@@ -30,7 +71,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.076
+      "weight": 0.0756
     },
     {
       "pollster": "SurveyUSA",
@@ -58,12 +99,12 @@
         "https://pollingsource.com/house/ID-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.115
+      "weight": 0.1145
     },
     {
       "pollster": "SurveyUSA (I)",
       "endDate": "2026-07-14",
-      "weight": 0.0934,
+      "weight": 0.093,
       "sampleSize": 480,
       "population": "LV",
       "results": [
@@ -114,7 +155,7 @@
         "https://pollingsource.com/house/ID-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0932
+      "weight": 0.0928
     },
     {
       "pollster": "SurveyUSA",
@@ -143,7 +184,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0467
+      "weight": 0.0465
     }
   ]
 }

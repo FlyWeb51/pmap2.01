@@ -1,12 +1,43 @@
 {
   "raceId": "NE-S-2026",
-  "count": 21,
+  "count": 22,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "GBAO",
+      "sponsors": "Working Class Majority PAC",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-22",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "IND",
+      "internal": false,
+      "sourceUrl": "https://docsend.com/view/hhiqc5yfcc548rdz",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Impact Research",
       "sponsors": null,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T20:27:29.039Z",
+  "generatedAt": "2026-10-23T21:31:12.773Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -51,12 +51,12 @@
         "special": false,
         "kalshiD": 0.415,
         "nyt": {
-          "averageMargin": 0.9,
+          "averageMargin": 0.4,
           "averagePolls": 30,
           "latest": {
             "pollster": "InsiderAdvantage",
             "endDate": "2026-10-22",
-            "margin": 2.5
+            "margin": -2
           },
           "source": "NYT"
         }
@@ -87,7 +87,7 @@
         "special": false,
         "kalshiD": 0.639,
         "nyt": {
-          "averageMargin": 1.5,
+          "averageMargin": 1.6,
           "averagePolls": 22,
           "latest": {
             "pollster": "Beacon Research/Shaw & Company Research",
@@ -177,12 +177,12 @@
         "special": false,
         "kalshiD": 0.235,
         "nyt": {
-          "averageMargin": -1.9,
-          "averagePolls": 11,
+          "averageMargin": -1.6,
+          "averagePolls": 12,
           "latest": {
-            "pollster": "Impact Research",
-            "endDate": "2026-10-20",
-            "margin": -2
+            "pollster": "GBAO",
+            "endDate": "2026-10-22",
+            "margin": 1
           },
           "source": "NYT"
         }
@@ -231,13 +231,14 @@
         "special": false,
         "kalshiD": 0.115,
         "nyt": {
-          "averageMargin": -4.3,
-          "averagePolls": 2,
+          "averageMargin": -3,
+          "averagePolls": 1,
           "latest": {
-            "pollster": "Wedgewood Polls In average",
-            "endDate": "2026-10-14"
+            "pollster": "Change Research",
+            "endDate": "2026-10-22",
+            "margin": -3
           },
-          "source": "site"
+          "source": "NYT"
         }
       },
       {
@@ -961,12 +962,12 @@
       "dem": "Cindy Holscher",
       "rep": "Ty Masterson",
       "poll": {
-        "averageMargin": -3.9,
-        "averagePolls": 5,
+        "averageMargin": -3,
+        "averagePolls": 6,
         "latest": {
-          "pollster": "YouGov",
-          "endDate": "2026-10-04",
-          "margin": -3
+          "pollster": "Global Strategy Group",
+          "endDate": "2026-10-21",
+          "margin": 0
         },
         "source": "NYT"
       }
@@ -1021,8 +1022,8 @@
       "dem": "Tina Kotek",
       "rep": "Christine Drazan",
       "poll": {
-        "averageMargin": 1,
-        "averagePolls": 4,
+        "averageMargin": 0.7,
+        "averagePolls": 5,
         "latest": {
           "pollster": "GBAO",
           "endDate": "2026-10-04",
@@ -1432,13 +1433,14 @@
       "dem": "Terri Pickens",
       "rep": "Brad Little",
       "poll": {
-        "averageMargin": -21,
+        "averageMargin": -19,
         "averagePolls": 1,
         "latest": {
-          "pollster": "Change Research",
-          "endDate": "2026-07-30"
+          "pollster": "VoteNexus",
+          "endDate": "2026-10-22",
+          "margin": -19
         },
-        "source": "site"
+        "source": "NYT"
       }
     },
     {
@@ -1706,6 +1708,19 @@
         "kalshiD": 0.966
       },
       {
+        "state": "IA",
+        "name": "Iowa",
+        "special": false,
+        "dem": "Josh Turek",
+        "rep": "Ashley Hinson",
+        "polls": 37,
+        "pres2024": -13.2,
+        "expected": -3.8,
+        "pollMargin": 0.4,
+        "overUnder": 4.2,
+        "kalshiD": 0.415
+      },
+      {
         "state": "NC",
         "name": "North Carolina",
         "special": false,
@@ -1717,19 +1732,6 @@
         "pollMargin": 10.4,
         "overUnder": 4.2,
         "kalshiD": 0.963
-      },
-      {
-        "state": "IA",
-        "name": "Iowa",
-        "special": false,
-        "dem": "Josh Turek",
-        "rep": "Ashley Hinson",
-        "polls": 37,
-        "pres2024": -13.2,
-        "expected": -3.8,
-        "pollMargin": 0.8,
-        "overUnder": 4.6,
-        "kalshiD": 0.415
       },
       {
         "state": "SC",
@@ -1795,6 +1797,19 @@
         "pollMargin": 0.8,
         "overUnder": 7.5,
         "kalshiD": 0.385
+      },
+      {
+        "state": "MS",
+        "name": "Mississippi",
+        "special": false,
+        "dem": "Scott Colom",
+        "rep": "Cindy Hyde-Smith",
+        "polls": 3,
+        "pres2024": -22.9,
+        "expected": -13.5,
+        "pollMargin": -3.8,
+        "overUnder": 9.7,
+        "kalshiD": 0.115
       },
       {
         "state": "AR",
@@ -2482,7 +2497,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-23T20:27:28.896Z",
-    "nytUpdated": "2026-10-23T17:17:38.499Z",
+    "nytUpdated": "2026-10-23T21:31:12.422Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

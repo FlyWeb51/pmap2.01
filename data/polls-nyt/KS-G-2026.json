@@ -1,12 +1,38 @@
 {
   "raceId": "KS-G-2026",
-  "count": 6,
+  "count": 7,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Global Strategy Group",
+      "sponsors": null,
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-21",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://globalstrategygroup.app.box.com/s/vwojuwfb4y52lmvw4r5c5b60svfyrmqc",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ty Masterson (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Cindy Holscher (D)",
+          "party": "D",
+          "percentage": 47
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": null,

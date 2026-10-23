@@ -1,8 +1,49 @@
 {
   "raceId": "ID-G-2026",
-  "count": 2,
-  "updated_at": "2026-10-23T17:17:38.814Z",
+  "count": 3,
+  "updated_at": "2026-10-23T21:31:12.682Z",
   "polls": [
+    {
+      "pollster": "VoteNexus",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-21 to 2026-10-22",
+      "sampleSize": 700,
+      "population": "LV",
+      "partisan": "IND",
+      "sponsors": "Knock Every Door PAC",
+      "results": [
+        {
+          "candidate": "Brad Little (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Terri Pickens (D)",
+          "party": "D",
+          "pct": 30,
+          "percentage": 30
+        },
+        {
+          "candidate": "John Stegner (I)",
+          "party": "O",
+          "pct": 10,
+          "percentage": 10
+        },
+        {
+          "candidate": "Paul Sand (LIB)",
+          "party": "O",
+          "pct": 4,
+          "percentage": 4
+        }
+      ],
+      "sourceUrl": "https://drive.google.com/file/d/1ZWt7_rFQzMxjeueMCX4GoFyqIe9jRk8X/view",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5662
+    },
     {
       "pollster": "Change Research",
       "endDate": "2026-07-30",
@@ -30,7 +71,8 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1075
+      "weight": 0.107,
+      "otherMatchup": true
     },
     {
       "pollster": "Change Research",
@@ -65,8 +107,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1075,
-      "otherMatchup": true
+      "weight": 0.107
     }
   ]
 }

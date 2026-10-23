@@ -1,8 +1,43 @@
 {
   "raceId": "MS-S-2026",
-  "count": 4,
-  "updated_at": "2026-10-23T17:17:38.783Z",
+  "count": 5,
+  "updated_at": "2026-10-23T21:31:12.648Z",
   "polls": [
+    {
+      "pollster": "Change Research",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-21 to 2026-10-22",
+      "sampleSize": 842,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Government that Works PAC",
+      "results": [
+        {
+          "candidate": "Cindy Hyde-Smith (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Scott Colom (D)",
+          "party": "D",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Ty Pinkins (I)",
+          "party": "O",
+          "pct": 6,
+          "percentage": 6
+        }
+      ],
+      "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/10/23/oil-politics-squeeze-iowa-01133929",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.621
+    },
     {
       "pollster": "Wedgewood Polls In average",
       "endDate": "2026-10-14",
@@ -29,7 +64,7 @@
         "https://pollingsource.com/senate/MS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8076
+      "weight": 0.8043
     },
     {
       "pollster": "Data for Progress D-sponsored missed 2024 by 4.1 pts D-sponsored In average",
@@ -59,12 +94,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Way to Lead PAC",
-      "weight": 0.1425
+      "weight": 0.1419
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-04-12",
-      "weight": 0.0056,
+      "weight": 0.0055,
       "sampleSize": 500,
       "population": "LV",
       "results": [

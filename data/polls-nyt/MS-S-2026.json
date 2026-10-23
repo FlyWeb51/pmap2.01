@@ -1,12 +1,53 @@
 {
   "raceId": "MS-S-2026",
-  "count": 5,
+  "count": 6,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Change Research",
+      "sponsors": "Government that Works PAC",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-22",
+      "sampleSize": 842,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/10/23/oil-politics-squeeze-iowa-01133929",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Cindy Hyde-Smith (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Scott Colom (D)",
+          "party": "D",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 9
+        },
+        {
+          "candidate": "Ty Pinkins (I)",
+          "party": "I",
+          "percentage": 6
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Data for Progress",
       "sponsors": "Way to Lead PAC",

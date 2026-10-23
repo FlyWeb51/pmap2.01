@@ -1,6 +1,6 @@
 {
   "raceId": "OR-G-2026",
-  "count": 10,
+  "count": 11,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -48,11 +48,47 @@
       "sponsors": "The Oregonian/OregonLive",
       "startDate": "2026-09-24",
       "endDate": "2026-10-01",
+      "sampleSize": 600,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.oregonlive.com/politics/2026/10/dig-into-numbers-from-the-oregonianoregonlives-2026-midterm-election-poll.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Christine Drazan (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Tina Kotek (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 11
+        },
+        {
+          "candidate": "Brett Smith (GRE)",
+          "party": "GRE",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "DHM Research",
+      "sponsors": "The Oregonian/OregonLive",
+      "startDate": "2026-09-24",
+      "endDate": "2026-10-01",
       "sampleSize": 549,
       "population": "LV",
       "partisan": null,
       "internal": false,
-      "sourceUrl": "https://www.oregonlive.com/politics/2026/10/oregon-governors-race-may-be-shifting-new-poll-shows.html",
+      "sourceUrl": "https://www.oregonlive.com/politics/2026/10/dig-into-numbers-from-the-oregonianoregonlives-2026-midterm-election-poll.html",
       "sourceTag": "nyt",
       "hypothetical": false,
       "results": [
