@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T02:32:51.072Z",
+  "generatedAt": "2026-10-24T04:48:12.692Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -564,7 +564,7 @@
         "kalshiD": 0.005,
         "nyt": {
           "averageMargin": -25.3,
-          "averagePolls": 8,
+          "averagePolls": 7,
           "latest": {
             "pollster": "Quantus Insights",
             "endDate": "2026-10-18",
@@ -1242,12 +1242,12 @@
       "dem": "Kathy Hochul",
       "rep": "Bruce Blakeman",
       "poll": {
-        "averageMargin": 12.1,
-        "averagePolls": 9,
+        "averageMargin": 13.2,
+        "averagePolls": 10,
         "latest": {
-          "pollster": "Quinnipiac University",
-          "endDate": "2026-10-19",
-          "margin": 14
+          "pollster": "ActiVote",
+          "endDate": "2026-10-23",
+          "margin": 18
         },
         "source": "NYT"
       }
@@ -1835,7 +1835,7 @@
         "type": "House",
         "now": 71.5,
         "ch1": 8,
-        "ch7": 14.6,
+        "ch7": 14.1,
         "dem": "Lindsay James",
         "rep": "Joe Mitchell",
         "thirdParty": false
@@ -1868,7 +1868,7 @@
         "type": "House",
         "now": 88.5,
         "ch1": 4,
-        "ch7": 4,
+        "ch7": 4.1,
         "dem": "Vicente Gonzalez",
         "rep": "Eric Flores",
         "thirdParty": false
@@ -1923,7 +1923,7 @@
         "type": "House",
         "now": 30.2,
         "ch1": -3,
-        "ch7": 14.7,
+        "ch7": 13.6,
         "dem": "Kristina Knickerbocker",
         "rep": "Mike Turner",
         "thirdParty": false
@@ -1934,7 +1934,7 @@
         "type": "House",
         "now": 16.5,
         "ch1": -2.8,
-        "ch7": 4.9,
+        "ch7": 2.1,
         "dem": "Dan Schwartz",
         "rep": "Andy Harris",
         "thirdParty": false
@@ -1956,24 +1956,13 @@
         "type": "House",
         "now": 19.5,
         "ch1": -2.6,
-        "ch7": 0.7,
+        "ch7": 4.3,
         "dem": "Chris Backemeyer",
         "rep": "Mike Flood",
         "thirdParty": false
       }
     ],
     "week": [
-      {
-        "key": "H-MT-01",
-        "name": "MT-1",
-        "type": "House",
-        "now": 45.5,
-        "ch1": 1,
-        "ch7": 17,
-        "dem": "Sam Forstag",
-        "rep": "Aaron Flint",
-        "thirdParty": false
-      },
       {
         "key": "H-KY-06",
         "name": "KY-6",
@@ -1986,25 +1975,36 @@
         "thirdParty": false
       },
       {
+        "key": "H-NC-01",
+        "name": "NC-1",
+        "type": "House",
+        "now": 81.5,
+        "ch1": 1.4,
+        "ch7": 15.5,
+        "dem": "Don Davis",
+        "rep": "Laurie Buckhout",
+        "thirdParty": false
+      },
+      {
         "key": "H-MI-04",
         "name": "MI-4",
         "type": "House",
         "now": 62.5,
         "ch1": 0,
-        "ch7": 14.7,
+        "ch7": 15,
         "dem": "Sean McCann",
         "rep": "Bill Huizenga",
         "thirdParty": false
       },
       {
-        "key": "H-OH-10",
-        "name": "OH-10",
+        "key": "H-MT-01",
+        "name": "MT-1",
         "type": "House",
-        "now": 30.2,
-        "ch1": -3,
-        "ch7": 14.7,
-        "dem": "Kristina Knickerbocker",
-        "rep": "Mike Turner",
+        "now": 45.5,
+        "ch1": 1,
+        "ch7": 15,
+        "dem": "Sam Forstag",
+        "rep": "Aaron Flint",
         "thirdParty": false
       },
       {
@@ -2013,20 +2013,20 @@
         "type": "House",
         "now": 71.5,
         "ch1": 8,
-        "ch7": 14.6,
+        "ch7": 14.1,
         "dem": "Lindsay James",
         "rep": "Joe Mitchell",
         "thirdParty": false
       },
       {
-        "key": "H-NC-01",
-        "name": "NC-1",
+        "key": "H-OH-10",
+        "name": "OH-10",
         "type": "House",
-        "now": 81.5,
-        "ch1": 1.4,
-        "ch7": 14.3,
-        "dem": "Don Davis",
-        "rep": "Laurie Buckhout",
+        "now": 30.2,
+        "ch1": -3,
+        "ch7": 13.6,
+        "dem": "Kristina Knickerbocker",
+        "rep": "Mike Turner",
         "thirdParty": false
       },
       {
@@ -2035,20 +2035,9 @@
         "type": "Governor",
         "now": 66.2,
         "ch1": 0,
-        "ch7": 12.7,
+        "ch7": 11.7,
         "dem": "Aaron Ford",
         "rep": "Joe Lombardo",
-        "thirdParty": false
-      },
-      {
-        "key": "G-OH",
-        "name": "Ohio",
-        "type": "Governor",
-        "now": 81.5,
-        "ch1": -1,
-        "ch7": 11.7,
-        "dem": "Amy Acton",
-        "rep": "Vivek Ramaswamy",
         "thirdParty": false
       },
       {
@@ -2063,17 +2052,6 @@
         "thirdParty": false
       },
       {
-        "key": "H-OH-15",
-        "name": "OH-15",
-        "type": "House",
-        "now": 37.1,
-        "ch1": 0.9,
-        "ch7": 11.3,
-        "dem": "Don Leonard",
-        "rep": "Mike Carey",
-        "thirdParty": false
-      },
-      {
         "key": "H-MO-02",
         "name": "MO-2",
         "type": "House",
@@ -2082,6 +2060,28 @@
         "ch7": 11.2,
         "dem": "Fred Wellman",
         "rep": "Ann Wagner",
+        "thirdParty": false
+      },
+      {
+        "key": "H-OH-15",
+        "name": "OH-15",
+        "type": "House",
+        "now": 37.1,
+        "ch1": 0.9,
+        "ch7": 11.2,
+        "dem": "Don Leonard",
+        "rep": "Mike Carey",
+        "thirdParty": false
+      },
+      {
+        "key": "G-OH",
+        "name": "Ohio",
+        "type": "Governor",
+        "now": 81.5,
+        "ch1": -1,
+        "ch7": 11,
+        "dem": "Amy Acton",
+        "rep": "Vivek Ramaswamy",
         "thirdParty": false
       },
       {
@@ -2497,7 +2497,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-24T02:00:34.212Z",
-    "nytUpdated": "2026-10-23T21:31:12.422Z",
+    "nytUpdated": "2026-10-24T04:48:12.256Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

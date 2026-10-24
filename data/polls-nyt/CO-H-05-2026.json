@@ -1,12 +1,38 @@
 {
   "raceId": "CO-H-05-2026",
-  "count": 5,
+  "count": 6,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-20",
+      "sampleSize": 577,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/cjwarnke/status/2113764039218397211?s=20",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jessica Killin (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Jeff Crank (R)",
+          "party": "R",
+          "percentage": 47
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Global Strategy Group",
       "sponsors": null,

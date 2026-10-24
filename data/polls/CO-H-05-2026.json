@@ -1,8 +1,37 @@
 {
   "raceId": "CO-H-05-2026",
-  "count": 4,
-  "updated_at": "2026-10-24T02:32:50.834Z",
+  "count": 5,
+  "updated_at": "2026-10-24T04:48:12.549Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-19 to 2026-10-20",
+      "sampleSize": 577,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Jessica Killin (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Jeff Crank (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2113764039218397211?s=20",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4874
+    },
     {
       "pollster": "Global Strategy Group",
       "endDate": "2026-10-18",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4342,
+      "weight": 0.4333,
       "otherMatchup": true
     },
     {
@@ -72,12 +101,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4342
+      "weight": 0.4333
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-07-21",
-      "weight": 0.0527,
+      "weight": 0.0526,
       "sampleSize": 450,
       "population": "LV",
       "results": [

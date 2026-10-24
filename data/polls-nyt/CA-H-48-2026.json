@@ -1,12 +1,38 @@
 {
   "raceId": "CA-H-48-2026",
-  "count": 4,
+  "count": 5,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Tarrance Group",
+      "sponsors": null,
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-20",
+      "sampleSize": 410,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://cdn.sanity.io/files/ifn0l6bs/production/378c5b63a7c295e975b77be00ddab8f97bddcf8b.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Marni von Wilpert (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Jim Desmond (R)",
+          "party": "R",
+          "percentage": 44
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "SurveyUSA",
       "sponsors": "KGTV-TV (California) | San Diego Union-Tribune",
