@@ -1,12 +1,43 @@
 {
   "raceId": "CA-G-2026",
-  "count": 20,
+  "count": 21,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "McLaughlin & Associates",
+      "sponsors": "California Post",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-20",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://nypost.com/2026/10/23/us-news/california-voters-favor-aoc-in-new-democratic-presidential-primary-poll/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Xavier Becerra (D)",
+          "party": "D",
+          "percentage": 55
+        },
+        {
+          "candidate": "Steve Hilton (R)",
+          "party": "R",
+          "percentage": 39.3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Emerson College",
       "sponsors": null,

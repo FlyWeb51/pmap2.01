@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T19:01:54.097Z",
+  "generatedAt": "2026-10-24T20:58:37.715Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -1393,12 +1393,12 @@
       "dem": "Xavier Becerra",
       "rep": "Steve Hilton",
       "poll": {
-        "averageMargin": 21,
-        "averagePolls": 10,
+        "averageMargin": 20.1,
+        "averagePolls": 11,
         "latest": {
-          "pollster": "Emerson College",
-          "endDate": "2026-10-19",
-          "margin": 27.260000000000005
+          "pollster": "McLaughlin & Associates",
+          "endDate": "2026-10-20",
+          "margin": 15.700000000000003
         },
         "source": "NYT"
       }
@@ -1830,6 +1830,17 @@
     "updated": "2026-10-24T19:01:53.943Z",
     "day": [
       {
+        "key": "H-NC-03",
+        "name": "NC-3",
+        "type": "House",
+        "now": 28.5,
+        "ch1": 7.8,
+        "ch7": 13,
+        "dem": "Raymond Smith Jr.",
+        "rep": "Greg Murphy",
+        "thirdParty": false
+      },
+      {
         "key": "H-NC-09",
         "name": "NC-9",
         "type": "House",
@@ -1841,25 +1852,14 @@
         "thirdParty": false
       },
       {
-        "key": "H-NC-03",
-        "name": "NC-3",
-        "type": "House",
-        "now": 28.5,
-        "ch1": 7,
-        "ch7": 13,
-        "dem": "Raymond Smith Jr.",
-        "rep": "Greg Murphy",
-        "thirdParty": false
-      },
-      {
-        "key": "H-IA-02",
-        "name": "IA-2",
-        "type": "House",
-        "now": 71.5,
-        "ch1": 6.6,
-        "ch7": 14.1,
-        "dem": "Lindsay James",
-        "rep": "Joe Mitchell",
+        "key": "G-TX",
+        "name": "Texas",
+        "type": "Governor",
+        "now": 31.5,
+        "ch1": 5.3,
+        "ch7": 6.3,
+        "dem": "Gina Hinojosa",
+        "rep": "Greg Abbott",
         "thirdParty": false
       },
       {
@@ -1874,14 +1874,14 @@
         "thirdParty": false
       },
       {
-        "key": "G-TX",
-        "name": "Texas",
-        "type": "Governor",
-        "now": 31.5,
-        "ch1": 4.3,
-        "ch7": 6.3,
-        "dem": "Gina Hinojosa",
-        "rep": "Greg Abbott",
+        "key": "H-IA-02",
+        "name": "IA-2",
+        "type": "House",
+        "now": 71.5,
+        "ch1": 4.2,
+        "ch7": 14.1,
+        "dem": "Lindsay James",
+        "rep": "Joe Mitchell",
         "thirdParty": false
       },
       {
@@ -1918,17 +1918,6 @@
         "thirdParty": false
       },
       {
-        "key": "G-KS",
-        "name": "Kansas",
-        "type": "Governor",
-        "now": 25.5,
-        "ch1": 2.8,
-        "ch7": 1,
-        "dem": "Cindy Holscher",
-        "rep": "Ty Masterson",
-        "thirdParty": false
-      },
-      {
         "key": "H-VA-05",
         "name": "VA-5",
         "type": "House",
@@ -1951,6 +1940,17 @@
         "thirdParty": false
       },
       {
+        "key": "H-CA-01",
+        "name": "CA-1",
+        "type": "House",
+        "now": 93.7,
+        "ch1": -2.1,
+        "ch7": -2.6,
+        "dem": "Mike McGuire",
+        "rep": "James Gallagher",
+        "thirdParty": false
+      },
+      {
         "key": "H-TX-26",
         "name": "TX-26",
         "type": "House",
@@ -1968,7 +1968,7 @@
         "name": "KY-6",
         "type": "House",
         "now": 46.5,
-        "ch1": 1.5,
+        "ch1": 0.5,
         "ch7": 16,
         "dem": "Zach Dembo",
         "rep": "Ralph Alvarado",
@@ -2012,7 +2012,7 @@
         "name": "IA-2",
         "type": "House",
         "now": 71.5,
-        "ch1": 6.6,
+        "ch1": 4.2,
         "ch7": 14.1,
         "dem": "Lindsay James",
         "rep": "Joe Mitchell",
@@ -2023,7 +2023,7 @@
         "name": "NC-3",
         "type": "House",
         "now": 28.5,
-        "ch1": 7,
+        "ch1": 7.8,
         "ch7": 13,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
@@ -2078,7 +2078,7 @@
         "name": "SC-1",
         "type": "House",
         "now": 38.8,
-        "ch1": 1.4,
+        "ch1": -0.3,
         "ch7": 11.3,
         "dem": "Nancy S. Lacore",
         "rep": "Jenny Costa Honeycutt",
@@ -2497,7 +2497,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-24T19:01:53.949Z",
-    "nytUpdated": "2026-10-24T16:05:06.369Z",
+    "nytUpdated": "2026-10-24T20:58:37.375Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
