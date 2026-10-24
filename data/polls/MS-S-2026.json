@@ -1,23 +1,16 @@
 {
   "raceId": "MS-S-2026",
   "count": 5,
-  "updated_at": "2026-10-24T11:17:12.675Z",
+  "updated_at": "2026-10-24T15:55:59.256Z",
   "polls": [
     {
-      "pollster": "Change Research",
+      "pollster": "Change Research D-sponsored In average",
       "endDate": "2026-10-22",
-      "fieldDates": "2026-10-21 to 2026-10-22",
+      "fieldDates": "2026-10-22 this poll",
       "sampleSize": 842,
       "population": "LV",
       "partisan": "D",
-      "sponsors": "Government that Works PAC",
       "results": [
-        {
-          "candidate": "Cindy Hyde-Smith (R)",
-          "party": "R",
-          "pct": 43,
-          "percentage": 43
-        },
         {
           "candidate": "Scott Colom (D)",
           "party": "D",
@@ -25,18 +18,20 @@
           "percentage": 40
         },
         {
-          "candidate": "Ty Pinkins (I)",
-          "party": "O",
-          "pct": 6,
-          "percentage": 6
+          "candidate": "Cindy Hyde-Smith (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
         }
       ],
       "sourceUrl": "https://www.politico.com/newsletters/playbook-pm/2026/10/23/oil-politics-squeeze-iowa-01133929",
       "foundOn": [
+        "https://pollingsource.com/senate/MS",
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6128
+      "sponsors": "Government that Works PAC",
+      "weight": 0.6101
     },
     {
       "pollster": "Wedgewood Polls In average",
@@ -64,7 +59,7 @@
         "https://pollingsource.com/senate/MS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7937
+      "weight": 0.7902
     },
     {
       "pollster": "Data for Progress D-sponsored missed 2024 by 4.1 pts D-sponsored In average",
@@ -94,12 +89,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Way to Lead PAC",
-      "weight": 0.14
+      "weight": 0.1394
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-04-12",
-      "weight": 0.0055,
+      "weight": 0.0054,
       "sampleSize": 500,
       "population": "LV",
       "results": [
