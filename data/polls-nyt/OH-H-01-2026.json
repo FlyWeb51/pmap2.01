@@ -1,12 +1,58 @@
 {
   "raceId": "OH-H-01-2026",
-  "count": 3,
+  "count": 4,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Quantus Insights",
+      "sponsors": null,
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-21",
+      "sampleSize": 561,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://quantusinsights.org/f/ohio-1st-district-poll-landsman-brown-and-acton-all-lead",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Greg Landsman (D)",
+          "party": "D",
+          "percentage": 47.6
+        },
+        {
+          "candidate": "Eric Conroy (R)",
+          "party": "R",
+          "percentage": 43.9
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 3.9
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2.3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1.6
+        },
+        {
+          "candidate": "Nathan Weise (LIB)",
+          "party": "LIB",
+          "percentage": 0.7
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Torchlight Strategies",
       "sponsors": null,
