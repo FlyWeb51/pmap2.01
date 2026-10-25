@@ -1,7 +1,7 @@
 {
   "raceId": "OH-S-2026",
-  "count": 54,
-  "updated_at": "2026-10-25T11:46:46.241Z",
+  "count": 55,
+  "updated_at": "2026-10-25T15:26:38.664Z",
   "polls": [
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts In average",
@@ -9,7 +9,7 @@
       "fieldDates": "2026-10-22 this poll",
       "sampleSize": 1200,
       "population": "LV",
-      "partisan": null,
+      "partisan": "R",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
@@ -30,7 +30,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4291
+      "weight": 0.7121
     },
     {
       "pollster": "Versalight/VoteHub In average",
@@ -58,7 +58,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9077
+      "weight": 0.9046
     },
     {
       "pollster": "Verasight",
@@ -99,7 +99,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9077
+      "weight": 0.9046
     },
     {
       "pollster": "FOX News In average",
@@ -127,7 +127,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5359
+      "weight": 1.5305
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -156,10 +156,10 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5359
+      "weight": 1.5305
     },
     {
-      "pollster": "ActiVote In average",
+      "pollster": "ActiVote Not in average",
       "endDate": "2026-10-18",
       "fieldDates": "2026-10-18",
       "sampleSize": 400,
@@ -185,7 +185,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7523
+      "weight": 0.7496
     },
     {
       "pollster": "Marist University First choice only, not in average",
@@ -214,10 +214,10 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2899
+      "weight": 1.2853
     },
     {
-      "pollster": "Rasmussen Reports missed 2024 by 2.1 pts",
+      "pollster": "Rasmussen Reports missed 2024 by 2.1 pts Not in average",
       "endDate": "2026-10-14",
       "fieldDates": "2026-10-14",
       "sampleSize": 901,
@@ -242,7 +242,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5147
+      "weight": 0.5129
     },
     {
       "pollster": "Cook Political Report missed 2024 by 3.9 pts First choice only, not in average",
@@ -270,7 +270,35 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0377
+      "weight": 1.0341
+    },
+    {
+      "pollster": "GS Strategy Group/New River Strategies R-sponsored Not in average",
+      "endDate": "2026-10-13",
+      "fieldDates": "2026-10-13 this poll",
+      "sampleSize": 959,
+      "population": "LV",
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/OH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.517
     },
     {
       "pollster": "New River Strategies/GS Strategy Group",
@@ -311,7 +339,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0377
+      "weight": 1.0341
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
@@ -340,7 +368,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9661
+      "weight": 0.9627
     },
     {
       "pollster": "co/efficient R-sponsored First choice only, not in average",
@@ -369,7 +397,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4335,
+      "weight": 0.432,
       "otherMatchup": true
     },
     {
@@ -398,7 +426,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7679
+      "weight": 0.7652
     },
     {
       "pollster": "SSRS First choice only, not in average",
@@ -426,7 +454,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7679
+      "weight": 0.7652
     },
     {
       "pollster": "CNN/SSRS",
@@ -461,7 +489,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7679
+      "weight": 0.7652
     },
     {
       "pollster": "NY Times/Siena",
@@ -489,7 +517,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6303
+      "weight": 0.6281
     },
     {
       "pollster": "New York Times/Siena University missed 2024 by 3.1 pts First choice only, not in average",
@@ -517,7 +545,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6303
+      "weight": 0.6281
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -546,7 +574,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6303
+      "weight": 0.6281
     },
     {
       "pollster": "YouGov First choice only, not in average",
@@ -575,7 +603,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1098
+      "weight": 1.1059
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts First choice only, not in average",
@@ -604,7 +632,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.42
+      "weight": 0.4185
     },
     {
       "pollster": "Marist University First choice only, not in average",
@@ -633,15 +661,15 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7508
+      "weight": 0.7481
     },
     {
-      "pollster": "Big Data Poll",
+      "pollster": "Big Data Poll R-sponsored Not in average",
       "endDate": "2026-09-27",
       "fieldDates": "2026-09-27",
       "sampleSize": 678,
       "population": "LV",
-      "partisan": null,
+      "partisan": "R",
       "results": [
         {
           "candidate": "Sherrod Brown (D)",
@@ -663,7 +691,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public Polling Project",
-      "weight": 0.6029
+      "weight": 0.3004
     },
     {
       "pollster": "USA Today/Suffolk",
@@ -691,7 +719,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5177
+      "weight": 0.5159
     },
     {
       "pollster": "Big Data Poll R-sponsored First choice only, not in average",
@@ -721,7 +749,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public Polling Project",
-      "weight": 0.3019
+      "weight": 0.3008
     },
     {
       "pollster": "Suffolk University First choice only, not in average",
@@ -751,7 +779,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "USA Today",
-      "weight": 0.5177
+      "weight": 0.5159
     },
     {
       "pollster": "Quantus Insights R-sponsored First choice only, not in average",
@@ -780,7 +808,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2783
+      "weight": 0.2773
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts First choice only, not in average",
@@ -808,7 +836,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3525
+      "weight": 0.3512
     },
     {
       "pollster": "Trafalgar Group",
@@ -837,7 +865,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2958
+      "weight": 0.2947
     },
     {
       "pollster": "Bowling Green State University/YouGov",
@@ -865,7 +893,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4944
+      "weight": 0.4926
     },
     {
       "pollster": "YouGov",
@@ -906,7 +934,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4944
+      "weight": 0.4926
     },
     {
       "pollster": "Insider Advantage",
@@ -935,7 +963,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2646
+      "weight": 0.2637
     },
     {
       "pollster": "Abacus Data",
@@ -964,7 +992,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2649
+      "weight": 0.264
     },
     {
       "pollster": "Abacus Data",
@@ -993,7 +1021,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2025
+      "weight": 0.2018
     },
     {
       "pollster": "Wedgewood Polls",
@@ -1021,7 +1049,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2315
+      "weight": 0.2307
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -1051,7 +1079,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.1091
+      "weight": 0.1087
     },
     {
       "pollster": "FOX News",
@@ -1079,7 +1107,7 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2182
+      "weight": 0.2175
     },
     {
       "pollster": "Tulchin Research",
@@ -1108,12 +1136,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0814
+      "weight": 0.0811
     },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-28",
-      "weight": 0.0693,
+      "weight": 0.0691,
       "sampleSize": 601,
       "population": "LV",
       "results": [
@@ -1164,12 +1192,12 @@
         "https://pollingsource.com/senate/OH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0693
+      "weight": 0.0691
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
       "endDate": "2026-06-16",
-      "weight": 0.0303,
+      "weight": 0.0302,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -1200,7 +1228,7 @@
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-06-04",
-      "weight": 0.0199,
+      "weight": 0.0198,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -1230,7 +1258,7 @@
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-01",
-      "weight": 0.0435,
+      "weight": 0.0433,
       "sampleSize": 1015,
       "population": "RV",
       "results": [
@@ -1287,7 +1315,7 @@
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-04-09",
-      "weight": 0.0091,
+      "weight": 0.009,
       "sampleSize": 413,
       "population": "LV",
       "results": [
