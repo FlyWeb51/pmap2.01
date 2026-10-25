@@ -1,12 +1,48 @@
 {
   "raceId": "PA-H-10-2026",
-  "count": 5,
+  "count": 6,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": "The Philadelphia Inquirer",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-22",
+      "sampleSize": 404,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/25/polls/times-siena-pa-poll-toplines.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Scott Perry (R)",
+          "party": "R",
+          "percentage": 48.03
+        },
+        {
+          "candidate": "Janelle Stelson (D)",
+          "party": "D",
+          "percentage": 47.65
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4.32
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Susquehanna Polling & Research, Inc.",
       "sponsors": null,

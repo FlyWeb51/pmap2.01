@@ -1,12 +1,48 @@
 {
   "raceId": "PA-H-07-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": "The Philadelphia Inquirer",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-22",
+      "sampleSize": 401,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/25/polls/times-siena-pa-poll-toplines.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Bob Brooks (D)",
+          "party": "D",
+          "percentage": 49.25
+        },
+        {
+          "candidate": "Ryan E. Mackenzie (R)",
+          "party": "R",
+          "percentage": 44.15
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.14
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.46
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Franklin & Marshall College",
       "sponsors": null,

@@ -1,8 +1,37 @@
 {
   "raceId": "PA-H-10-2026",
-  "count": 5,
-  "updated_at": "2026-10-25T04:56:44.205Z",
+  "count": 6,
+  "updated_at": "2026-10-25T11:46:46.242Z",
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-16 to 2026-10-22",
+      "sampleSize": 404,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "The Philadelphia Inquirer",
+      "results": [
+        {
+          "candidate": "Scott Perry (R)",
+          "party": "R",
+          "pct": 48.03,
+          "percentage": 48.03
+        },
+        {
+          "candidate": "Janelle Stelson (D)",
+          "party": "D",
+          "pct": 47.65,
+          "percentage": 47.65
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/25/polls/times-siena-pa-poll-toplines.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8292
+    },
     {
       "pollster": "Susquehanna Polling & Research, Inc.",
       "endDate": "2026-10-11",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5579
+      "weight": 0.5542
     },
     {
       "pollster": "Franklin & Marshall College",
@@ -59,12 +88,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3524
+      "weight": 0.3501
     },
     {
       "pollster": "Normington, Petts & Associates (D)",
       "endDate": "2026-04-23",
-      "weight": 0.0056,
+      "weight": 0.0055,
       "sampleSize": 400,
       "population": "RV",
       "results": [

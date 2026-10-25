@@ -1,12 +1,48 @@
 {
   "raceId": "PA-H-01-2026",
-  "count": 6,
+  "count": 7,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": "The Philadelphia Inquirer",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-22",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/25/polls/times-siena-pa-poll-toplines.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Bob Harvie (D)",
+          "party": "D",
+          "percentage": 48.26
+        },
+        {
+          "candidate": "Brian Fitzpatrick (R)",
+          "party": "R",
+          "percentage": 45.83
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5.92
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Global Strategy Group",
       "sponsors": null,

@@ -1,8 +1,37 @@
 {
   "raceId": "PA-H-01-2026",
-  "count": 7,
-  "updated_at": "2026-10-25T04:56:44.204Z",
+  "count": 8,
+  "updated_at": "2026-10-25T11:46:46.242Z",
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-16 to 2026-10-22",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "The Philadelphia Inquirer",
+      "results": [
+        {
+          "candidate": "Bob Harvie (D)",
+          "party": "D",
+          "pct": 48.26,
+          "percentage": 48.26
+        },
+        {
+          "candidate": "Brian Fitzpatrick (R)",
+          "party": "R",
+          "pct": 45.83,
+          "percentage": 45.83
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/25/polls/times-siena-pa-poll-toplines.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8251
+    },
     {
       "pollster": "Global Strategy Group",
       "endDate": "2026-10-08",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4827
+      "weight": 0.4795
     },
     {
       "pollster": "Public Opinion Strategies R-sponsored",
@@ -60,7 +89,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "NRCC",
-      "weight": 0.1553
+      "weight": 0.1543
     },
     {
       "pollster": "GQR D-sponsored",
@@ -88,7 +117,7 @@
         "https://pollingsource.com/house/PA-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0882
+      "weight": 0.0877
     },
     {
       "pollster": "GQR",
@@ -117,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1038
+      "weight": 0.1031
     },
     {
       "pollster": "Global Strategy Group",
@@ -146,12 +175,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.084
+      "weight": 0.0834
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-03-22",
-      "weight": 0.003,
+      "weight": 0.0029,
       "sampleSize": 400,
       "population": "LV",
       "results": [
