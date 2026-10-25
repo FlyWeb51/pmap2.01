@@ -1,12 +1,43 @@
 {
   "raceId": "ME-S-2026",
-  "count": 70,
+  "count": 71,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Trafalgar Group",
+      "sponsors": null,
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-23",
+      "sampleSize": 1077,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/me-senate-gen-1025/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "percentage": 46.5
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "sponsors": "Fox News",

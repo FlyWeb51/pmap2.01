@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T15:26:38.802Z",
+  "generatedAt": "2026-10-25T16:35:11.981Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -56,7 +56,7 @@
           "latest": {
             "pollster": "InsiderAdvantage",
             "endDate": "2026-10-22",
-            "margin": -2
+            "margin": -1.5
           },
           "source": "NYT"
         }
@@ -69,12 +69,12 @@
         "special": false,
         "kalshiD": 0.605,
         "nyt": {
-          "averageMargin": 1.6,
-          "averagePolls": 22,
+          "averageMargin": 1.4,
+          "averagePolls": 23,
           "latest": {
-            "pollster": "Beacon Research/Shaw & Company Research",
-            "endDate": "2026-10-20",
-            "margin": 2
+            "pollster": "Trafalgar Group",
+            "endDate": "2026-10-23",
+            "margin": -0.5
           },
           "source": "NYT"
         }
@@ -128,7 +128,7 @@
           "latest": {
             "pollster": "InsiderAdvantage",
             "endDate": "2026-10-22",
-            "margin": 3
+            "margin": 2.3000000000000043
           },
           "source": "NYT"
         }
@@ -141,12 +141,12 @@
         "special": false,
         "kalshiD": 0.685,
         "nyt": {
-          "averageMargin": 2.7,
+          "averageMargin": 2.8,
           "averagePolls": 35,
           "latest": {
             "pollster": "InsiderAdvantage",
             "endDate": "2026-10-22",
-            "margin": 1
+            "margin": 1.2000000000000028
           },
           "source": "NYT"
         }
@@ -1472,7 +1472,7 @@
       "dem": "Dan Ahlers",
       "rep": "Larry Rhoden",
       "poll": {
-        "averageMargin": -18.1,
+        "averageMargin": -18.2,
         "averagePolls": 4,
         "latest": {
           "pollster": "Emerson College",
@@ -1559,8 +1559,8 @@
         "polls": 32,
         "pres2024": 6.9,
         "expected": 16.2,
-        "pollMargin": 1.6,
-        "overUnder": -14.6,
+        "pollMargin": 1.5,
+        "overUnder": -14.7,
         "kalshiD": 0.605
       },
       {
@@ -1833,7 +1833,7 @@
         "name": "NC-13",
         "type": "House",
         "now": 35.5,
-        "ch1": 15.5,
+        "ch1": 15,
         "ch7": 23.4,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
@@ -1855,7 +1855,7 @@
         "name": "NC-3",
         "type": "House",
         "now": 33.8,
-        "ch1": 5.3,
+        "ch1": 6,
         "ch7": 17.9,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
@@ -1866,32 +1866,21 @@
         "name": "FL-18",
         "type": "House",
         "now": 9.5,
-        "ch1": 4.3,
+        "ch1": 4.1,
         "ch7": 4,
         "dem": "Curtis Gibson",
         "rep": "Scott Franklin",
         "thirdParty": false
       },
       {
-        "key": "N-senate",
-        "name": "Senate control",
-        "type": "Control",
-        "now": 62.5,
-        "ch1": -4,
-        "ch7": 0,
-        "dem": null,
-        "rep": null,
-        "thirdParty": false
-      },
-      {
-        "key": "G-TX",
-        "name": "Texas",
-        "type": "Governor",
-        "now": 34.5,
-        "ch1": 4,
-        "ch7": 10.2,
-        "dem": "Gina Hinojosa",
-        "rep": "Greg Abbott",
+        "key": "H-PA-10",
+        "name": "PA-10",
+        "type": "House",
+        "now": 79.5,
+        "ch1": -3.9,
+        "ch7": -0.8,
+        "dem": "Janelle Stelson",
+        "rep": "Scott Perry",
         "thirdParty": false
       },
       {
@@ -1906,25 +1895,25 @@
         "thirdParty": false
       },
       {
-        "key": "H-PA-10",
-        "name": "PA-10",
-        "type": "House",
-        "now": 79.5,
-        "ch1": -3.5,
-        "ch7": -0.8,
-        "dem": "Janelle Stelson",
-        "rep": "Scott Perry",
+        "key": "G-TX",
+        "name": "Texas",
+        "type": "Governor",
+        "now": 34.5,
+        "ch1": 3.6,
+        "ch7": 10.2,
+        "dem": "Gina Hinojosa",
+        "rep": "Greg Abbott",
         "thirdParty": false
       },
       {
-        "key": "H-IN-08",
-        "name": "IN-8",
-        "type": "House",
-        "now": 4.2,
-        "ch1": -2.9,
-        "ch7": -0.3,
-        "dem": "Mary Allen",
-        "rep": "Mark Messmer",
+        "key": "N-senate",
+        "name": "Senate control",
+        "type": "Control",
+        "now": 62.5,
+        "ch1": -3,
+        "ch7": 0,
+        "dem": null,
+        "rep": null,
         "thirdParty": false
       },
       {
@@ -1939,25 +1928,36 @@
         "thirdParty": false
       },
       {
+        "key": "H-PA-04",
+        "name": "PA-4",
+        "type": "House",
+        "now": 97.7,
+        "ch1": 2.7,
+        "ch7": 1.2,
+        "dem": "Madeleine Dean",
+        "rep": "Aurora Stuski",
+        "thirdParty": false
+      },
+      {
         "key": "H-MA-06",
         "name": "MA-6",
         "type": "House",
         "now": 94.8,
-        "ch1": -2.7,
+        "ch1": -2.6,
         "ch7": -2.7,
         "dem": "Dan Koh",
         "rep": "Micah Jones",
         "thirdParty": false
       },
       {
-        "key": "S-MN",
-        "name": "Minnesota",
-        "type": "Senate",
-        "now": 82.5,
-        "ch1": -2.6,
-        "ch7": -3.1,
-        "dem": "Peggy Flanagan",
-        "rep": "Michele Tafoya",
+        "key": "G-AR",
+        "name": "Arkansas",
+        "type": "Governor",
+        "now": 1.6,
+        "ch1": -2.5,
+        "ch7": -0.4,
+        "dem": "Fred Love",
+        "rep": "Sarah Huckabee Sanders",
         "thirdParty": false
       }
     ],
@@ -1967,7 +1967,7 @@
         "name": "NC-13",
         "type": "House",
         "now": 35.5,
-        "ch1": 15.5,
+        "ch1": 15,
         "ch7": 23.4,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
@@ -1978,7 +1978,7 @@
         "name": "NC-3",
         "type": "House",
         "now": 33.8,
-        "ch1": 5.3,
+        "ch1": 6,
         "ch7": 17.9,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
@@ -2000,7 +2000,7 @@
         "name": "MT-1",
         "type": "House",
         "now": 45,
-        "ch1": 0.5,
+        "ch1": 0,
         "ch7": 14.5,
         "dem": "Sam Forstag",
         "rep": "Aaron Flint",
@@ -2011,7 +2011,7 @@
         "name": "MI-4",
         "type": "House",
         "now": 61.8,
-        "ch1": -0.7,
+        "ch1": -0.3,
         "ch7": 13.8,
         "dem": "Sean McCann",
         "rep": "Bill Huizenga",
@@ -2044,7 +2044,7 @@
         "name": "NC-9",
         "type": "House",
         "now": 31.7,
-        "ch1": 2.5,
+        "ch1": 2.2,
         "ch7": 13.3,
         "dem": "Richard Ojeda",
         "rep": "Richard Hudson",
@@ -2088,7 +2088,7 @@
         "name": "TX-23",
         "type": "House",
         "now": 40.9,
-        "ch1": 2.4,
+        "ch1": 2,
         "ch7": 11.7,
         "dem": "Katy Padilla Stout",
         "rep": "Brandon Herrera",
@@ -2496,7 +2496,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-25T13:56:29.317Z",
-    "nytUpdated": "2026-10-25T11:46:46.061Z",
+    "nytUpdated": "2026-10-25T16:35:11.626Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
