@@ -1,8 +1,37 @@
 {
   "raceId": "TX-H-09-2026",
-  "count": 2,
-  "updated_at": "2026-10-25T02:18:26.865Z",
+  "count": 3,
+  "updated_at": "2026-10-25T04:56:44.239Z",
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-20 to 2026-10-22",
+      "sampleSize": 490,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Alex Mealer (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Leticia Gutierrez (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://x.com/PollTracker2024/status/2114106229303787586/photo/1",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4596
+    },
     {
       "pollster": "University of Houston Hobby School of Public Affairs",
       "endDate": "2026-10-07",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.766
+      "weight": 0.7641
     },
     {
       "pollster": "Public Policy Polling",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2068
+      "weight": 0.2063
     }
   ]
 }

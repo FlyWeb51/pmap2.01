@@ -1,12 +1,38 @@
 {
   "raceId": "TX-H-09-2026",
-  "count": 3,
+  "count": 4,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "sponsors": null,
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-22",
+      "sampleSize": 490,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/PollTracker2024/status/2114106229303787586/photo/1",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Alex Mealer (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Leticia Gutierrez (D)",
+          "party": "D",
+          "percentage": 47
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "University of Houston Hobby School of Public Affairs",
       "sponsors": null,
