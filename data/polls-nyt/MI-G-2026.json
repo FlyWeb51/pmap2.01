@@ -1,12 +1,74 @@
 {
   "raceId": "MI-G-2026",
-  "count": 79,
+  "count": 81,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
+      "sponsors": null,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-19",
+      "sampleSize": 836,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://ippsr.msu.edu/news/msu-poll-shows-benson-large-lead-while-el-sayed-roger-race-tight",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jocelyn Benson (D)",
+          "party": "D",
+          "percentage": 53.3
+        },
+        {
+          "candidate": "John James (R)",
+          "party": "R",
+          "percentage": 40.9
+        },
+        {
+          "candidate": "Don't know/Someone else (NON)",
+          "party": "NON",
+          "percentage": 5.9
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
+      "sponsors": null,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-19",
+      "sampleSize": 1000,
+      "population": "A",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://ippsr.msu.edu/news/msu-poll-shows-benson-large-lead-while-el-sayed-roger-race-tight",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jocelyn Benson (D)",
+          "party": "D",
+          "percentage": 45.7
+        },
+        {
+          "candidate": "John James (R)",
+          "party": "R",
+          "percentage": 36.6
+        },
+        {
+          "candidate": "Don't know/Someone else (NON)",
+          "party": "NON",
+          "percentage": 17.7
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Marist University",
       "sponsors": null,
