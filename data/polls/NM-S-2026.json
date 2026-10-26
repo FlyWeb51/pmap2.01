@@ -1,7 +1,7 @@
 {
   "raceId": "NM-S-2026",
-  "count": 4,
-  "updated_at": "2026-10-26T13:19:08.484Z",
+  "count": 5,
+  "updated_at": "2026-10-26T18:04:25.548Z",
   "polls": [
     {
       "pollster": "Research & Polling Inc. In average",
@@ -31,7 +31,35 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Albuquerque Journal",
-      "weight": 0.9999
+      "weight": 0.9953
+    },
+    {
+      "pollster": "SurveyUSA In average",
+      "endDate": "2026-10-05",
+      "fieldDates": "2026-10-05 this poll",
+      "sampleSize": 567,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Ben Ray Luján (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Larry E Marker (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/NM"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6442
     },
     {
       "pollster": "SurveyUSA",
@@ -61,7 +89,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "KOB-TV (Albuquerque)",
-      "weight": 0.5766
+      "weight": 0.5739
     },
     {
       "pollster": "SurveyUSA In average",
@@ -89,7 +117,7 @@
         "https://pollingsource.com/senate/NM"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5766
+      "weight": 0.5739
     },
     {
       "pollster": "Research & Polling Inc. In average",
@@ -119,7 +147,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Albuquerque Journal",
-      "weight": 0.2566
+      "weight": 0.2554
     }
   ]
 }
