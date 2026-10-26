@@ -1,6 +1,6 @@
 {
   "raceId": "NE-S-2026",
-  "count": 22,
+  "count": 23,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -101,6 +101,42 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-18",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/nebraska-ge-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 6
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
         }
       ],
       "note": null

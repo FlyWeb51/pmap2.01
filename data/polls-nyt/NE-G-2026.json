@@ -1,12 +1,48 @@
 {
   "raceId": "NE-G-2026",
-  "count": 11,
+  "count": 12,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-18",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/nebraska-ge-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Lynne Walz (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Jim Pillen (R)",
+          "party": "R",
+          "percentage": 40
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 9
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Global Strategy Group",
       "sponsors": null,

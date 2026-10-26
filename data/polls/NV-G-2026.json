@@ -1,8 +1,37 @@
 {
   "raceId": "NV-G-2026",
-  "count": 11,
-  "updated_at": "2026-10-26T04:59:50.412Z",
+  "count": 12,
+  "updated_at": "2026-10-26T13:19:08.528Z",
   "polls": [
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-26 to 2026-09-30",
+      "sampleSize": 565,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Education Reform Now Advocacy",
+      "results": [
+        {
+          "candidate": "Joe Lombardo (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Aaron Ford (D)",
+          "party": "D",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/nevada-ge-2026",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2878
+    },
     {
       "pollster": "Tarrance Group",
       "endDate": "2026-07-29",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0668
+      "weight": 0.0662
     },
     {
       "pollster": "Grassroots Targeting",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0943
+      "weight": 0.0935
     },
     {
       "pollster": "Public Policy Polling",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0498
+      "weight": 0.0494
     },
     {
       "pollster": "Public Opinion Strategies",
@@ -117,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0349
+      "weight": 0.0346
     },
     {
       "pollster": "Global Strategy Group",
@@ -152,7 +181,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0121
+      "weight": 0.012
     },
     {
       "pollster": "Noble Predictive Insights",

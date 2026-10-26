@@ -1,8 +1,37 @@
 {
   "raceId": "NE-G-2026",
-  "count": 10,
-  "updated_at": "2026-10-26T04:59:50.411Z",
+  "count": 11,
+  "updated_at": "2026-10-26T13:19:08.527Z",
   "polls": [
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-15 to 2026-10-18",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Education Reform Now Advocacy",
+      "results": [
+        {
+          "candidate": "Lynne Walz (D)",
+          "party": "D",
+          "pct": 43,
+          "percentage": 43
+        },
+        {
+          "candidate": "Jim Pillen (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/nebraska-ge-2026",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4103
+    },
     {
       "pollster": "Global Strategy Group",
       "endDate": "2026-10-18",
@@ -42,7 +71,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5232
+      "weight": 0.519
     },
     {
       "pollster": "National Public Affairs",
@@ -83,7 +112,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4523
+      "weight": 0.4487
     },
     {
       "pollster": "Public Policy Polling",
@@ -112,7 +141,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.403
+      "weight": 0.3998
     },
     {
       "pollster": "National Public Affairs",
@@ -153,7 +182,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3875
+      "weight": 0.3844
     },
     {
       "pollster": "YouGov",
@@ -182,7 +211,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1123
+      "weight": 1.1035
     },
     {
       "pollster": "co/efficient",
@@ -223,7 +252,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8143
+      "weight": 0.8078
     },
     {
       "pollster": "Lake Research Partners",
@@ -264,7 +293,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.253
+      "weight": 0.251
     },
     {
       "pollster": "SurveyUSA",
@@ -293,7 +322,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3696
+      "weight": 0.3667
     },
     {
       "pollster": "Public Policy Polling",
@@ -340,7 +369,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.136
+      "weight": 0.1349
     },
     {
       "pollster": "Public Policy Polling",
@@ -375,7 +404,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0049
+      "weight": 0.0048
     }
   ]
 }
