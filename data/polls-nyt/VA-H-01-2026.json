@@ -1,12 +1,43 @@
 {
   "raceId": "VA-H-01-2026",
-  "count": 7,
+  "count": 8,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "sponsors": null,
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "sampleSize": 478,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.virginiascope.com/latest-internal-poll-from-democrats-shows-a-1-point-race-in-va-01/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Shannon Taylor (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Robert Wittman (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Public Policy Polling",
       "sponsors": "House Majority PAC",

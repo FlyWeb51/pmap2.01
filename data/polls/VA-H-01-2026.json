@@ -1,8 +1,37 @@
 {
   "raceId": "VA-H-01-2026",
-  "count": 8,
-  "updated_at": "2026-10-27T19:32:08.064Z",
+  "count": 9,
+  "updated_at": "2026-10-27T22:25:24.603Z",
   "polls": [
+    {
+      "pollster": "DCCC Targeting Team",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-24 to 2026-10-25",
+      "sampleSize": 478,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Shannon Taylor (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Robert Wittman (R)",
+          "party": "R",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://www.virginiascope.com/latest-internal-poll-from-democrats-shows-a-1-point-race-in-va-01/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4568
+    },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-10-22",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4667
+      "weight": 0.4655
     },
     {
       "pollster": "Washington Post",
@@ -58,7 +87,7 @@
         "https://pollingsource.com/house/VA-01"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5629
+      "weight": 0.5614
     },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
@@ -87,7 +116,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5542
+      "weight": 0.5527
     },
     {
       "pollster": "DCCC Targeting Team",
@@ -116,7 +145,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1984
+      "weight": 0.1978
     },
     {
       "pollster": "Ragnar Research Partners (R)",

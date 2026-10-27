@@ -1,8 +1,37 @@
 {
   "raceId": "FL-H-25-2026",
-  "count": 6,
-  "updated_at": "2026-10-27T19:32:08.037Z",
+  "count": 7,
+  "updated_at": "2026-10-27T22:25:24.567Z",
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "endDate": "2026-10-27",
+      "fieldDates": "2026-10-26 to 2026-10-27",
+      "sampleSize": 523,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "House Majority PAC",
+      "results": [
+        {
+          "candidate": "Jared Moskowitz (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        },
+        {
+          "candidate": "Scott Singer (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://x.com/cjwarnke/status/2115165777342972342",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.5004
+    },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-10-22",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4757
+      "weight": 0.4744
     },
     {
       "pollster": "National Research",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3326
+      "weight": 0.3317
     },
     {
       "pollster": "Beacon Insights",
@@ -92,7 +121,7 @@
     {
       "pollster": "Middle Seat (D)",
       "endDate": "2026-05-06",
-      "weight": 0.0095,
+      "weight": 0.0094,
       "sampleSize": 576,
       "population": "LV",
       "results": [
@@ -146,7 +175,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0095,
+      "weight": 0.0094,
       "otherMatchup": true
     },
     {
@@ -176,7 +205,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0095,
+      "weight": 0.0094,
       "otherMatchup": true
     }
   ]

@@ -1,12 +1,38 @@
 {
   "raceId": "FL-H-25-2026",
-  "count": 5,
+  "count": 6,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Public Policy Polling",
+      "sponsors": "House Majority PAC",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-27",
+      "sampleSize": 523,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://x.com/cjwarnke/status/2115165777342972342",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jared Moskowitz (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Scott Singer (R)",
+          "party": "R",
+          "percentage": 41
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Public Policy Polling",
       "sponsors": "House Majority PAC",
