@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T05:17:04.423Z",
+  "generatedAt": "2026-10-27T08:23:57.552Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -49,7 +49,7 @@
         "incumbent": "Joni Ernst",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.415,
+        "kalshiD": 0.40700000000000003,
         "nyt": {
           "averageMargin": 0.4,
           "averagePolls": 28,
@@ -67,7 +67,7 @@
         "incumbent": "Susan M. Collins",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.586,
+        "kalshiD": 0.595,
         "nyt": {
           "averageMargin": 1.4,
           "averagePolls": 21,
@@ -85,7 +85,7 @@
         "incumbent": "Roger Marshall",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.395,
+        "kalshiD": 0.40299999999999997,
         "nyt": {
           "averageMargin": 0.7,
           "averagePolls": 13,
@@ -116,24 +116,6 @@
         }
       },
       {
-        "state": "MI",
-        "name": "Michigan",
-        "incumbent": "Gary C. Peters",
-        "holder": "D",
-        "special": false,
-        "kalshiD": 0.675,
-        "nyt": {
-          "averageMargin": 2.8,
-          "averagePolls": 34,
-          "latest": {
-            "pollster": "InsiderAdvantage",
-            "endDate": "2026-10-22",
-            "margin": 1.2000000000000028
-          },
-          "source": "NYT"
-        }
-      },
-      {
         "state": "OH",
         "name": "Ohio",
         "incumbent": "Jon Husted",
@@ -147,6 +129,42 @@
             "pollster": "InsiderAdvantage",
             "endDate": "2026-10-22",
             "margin": 2.3000000000000043
+          },
+          "source": "NYT"
+        }
+      },
+      {
+        "state": "MI",
+        "name": "Michigan",
+        "incumbent": "Gary C. Peters",
+        "holder": "D",
+        "special": false,
+        "kalshiD": 0.6829999999999999,
+        "nyt": {
+          "averageMargin": 2.8,
+          "averagePolls": 34,
+          "latest": {
+            "pollster": "InsiderAdvantage",
+            "endDate": "2026-10-22",
+            "margin": 1.2000000000000028
+          },
+          "source": "NYT"
+        }
+      },
+      {
+        "state": "NE",
+        "name": "Nebraska",
+        "incumbent": "Pete Ricketts",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.275,
+        "nyt": {
+          "averageMargin": -0.9,
+          "averagePolls": 13,
+          "latest": {
+            "pollster": "GBAO",
+            "endDate": "2026-10-22",
+            "margin": 1
           },
           "source": "NYT"
         }
@@ -170,30 +188,12 @@
         }
       },
       {
-        "state": "NE",
-        "name": "Nebraska",
-        "incumbent": "Pete Ricketts",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.265,
-        "nyt": {
-          "averageMargin": -0.9,
-          "averagePolls": 13,
-          "latest": {
-            "pollster": "GBAO",
-            "endDate": "2026-10-22",
-            "margin": 1
-          },
-          "source": "NYT"
-        }
-      },
-      {
         "state": "SC",
         "name": "South Carolina",
         "incumbent": "Darline Graham",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.245,
+        "kalshiD": 0.235,
         "nyt": {
           "averageMargin": -1.1,
           "averagePolls": 5,
@@ -224,6 +224,24 @@
         }
       },
       {
+        "state": "MS",
+        "name": "Mississippi",
+        "incumbent": "Cindy Hyde-Smith",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.115,
+        "nyt": {
+          "averageMargin": -3,
+          "averagePolls": 1,
+          "latest": {
+            "pollster": "Change Research",
+            "endDate": "2026-10-22",
+            "margin": -3
+          },
+          "source": "NYT"
+        }
+      },
+      {
         "state": "FL",
         "name": "Florida",
         "incumbent": "Ashley Moody",
@@ -242,30 +260,12 @@
         }
       },
       {
-        "state": "MS",
-        "name": "Mississippi",
-        "incumbent": "Cindy Hyde-Smith",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.106,
-        "nyt": {
-          "averageMargin": -3,
-          "averagePolls": 1,
-          "latest": {
-            "pollster": "Change Research",
-            "endDate": "2026-10-22",
-            "margin": -3
-          },
-          "source": "NYT"
-        }
-      },
-      {
         "state": "NH",
         "name": "New Hampshire",
         "incumbent": "Jeanne Shaheen",
         "holder": "D",
         "special": false,
-        "kalshiD": 0.895,
+        "kalshiD": 0.8859999999999999,
         "nyt": {
           "averageMargin": 6.5,
           "averagePolls": 12,
@@ -283,7 +283,7 @@
         "incumbent": "Bill Cassidy",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.09699999999999999,
+        "kalshiD": 0.094,
         "nyt": {
           "averageMargin": -4,
           "averagePolls": 1,
@@ -301,7 +301,7 @@
         "incumbent": "Tom Cotton",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.064,
+        "kalshiD": 0.061,
         "nyt": {
           "averageMargin": -9.4,
           "averagePolls": 2,
@@ -319,7 +319,7 @@
         "incumbent": "Jon Ossoff",
         "holder": "D",
         "special": false,
-        "kalshiD": 0.946,
+        "kalshiD": 0.948,
         "nyt": {
           "averageMargin": 8.3,
           "averagePolls": 12,
@@ -349,12 +349,30 @@
         }
       },
       {
+        "state": "NC",
+        "name": "North Carolina",
+        "incumbent": "Thom Tillis",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.9640000000000001,
+        "nyt": {
+          "averageMargin": 10.3,
+          "averagePolls": 29,
+          "latest": {
+            "pollster": "Quantus Insights",
+            "endDate": "2026-10-25",
+            "margin": 8.800000000000004
+          },
+          "source": "NYT"
+        }
+      },
+      {
         "state": "KY",
         "name": "Kentucky",
         "incumbent": "Mitch McConnell",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.036000000000000004,
+        "kalshiD": 0.035,
         "nyt": {
           "averageMargin": -9,
           "averagePolls": 1,
@@ -366,22 +384,13 @@
         }
       },
       {
-        "state": "NC",
-        "name": "North Carolina",
-        "incumbent": "Thom Tillis",
-        "holder": "R",
+        "state": "NJ",
+        "name": "New Jersey",
+        "incumbent": "Cory A. Booker",
+        "holder": "D",
         "special": false,
-        "kalshiD": 0.966,
-        "nyt": {
-          "averageMargin": 10.3,
-          "averagePolls": 29,
-          "latest": {
-            "pollster": "Quantus Insights",
-            "endDate": "2026-10-25",
-            "margin": 8.800000000000004
-          },
-          "source": "NYT"
-        }
+        "kalshiD": 0.9690000000000001,
+        "nyt": null
       },
       {
         "state": "NM",
@@ -400,15 +409,6 @@
           },
           "source": "NYT"
         }
-      },
-      {
-        "state": "NJ",
-        "name": "New Jersey",
-        "incumbent": "Cory A. Booker",
-        "holder": "D",
-        "special": false,
-        "kalshiD": 0.971,
-        "nyt": null
       },
       {
         "state": "OK",
@@ -433,26 +433,8 @@
         "incumbent": "Christopher A. Coons",
         "holder": "D",
         "special": false,
-        "kalshiD": 0.975,
-        "nyt": null
-      },
-      {
-        "state": "IL",
-        "name": "Illinois",
-        "incumbent": "Richard J. Durbin",
-        "holder": "D",
-        "special": false,
         "kalshiD": 0.977,
-        "nyt": {
-          "averageMargin": 15.8,
-          "averagePolls": 2,
-          "latest": {
-            "pollster": "ActiVote",
-            "endDate": "2026-10-20",
-            "margin": 17
-          },
-          "source": "NYT"
-        }
+        "nyt": null
       },
       {
         "state": "WV",
@@ -480,6 +462,33 @@
         "special": false,
         "kalshiD": 0.98,
         "nyt": null
+      },
+      {
+        "state": "WY",
+        "name": "Wyoming",
+        "incumbent": "Cynthia M. Lummis",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.018000000000000002,
+        "nyt": null
+      },
+      {
+        "state": "IL",
+        "name": "Illinois",
+        "incumbent": "Richard J. Durbin",
+        "holder": "D",
+        "special": false,
+        "kalshiD": 0.983,
+        "nyt": {
+          "averageMargin": 15.8,
+          "averagePolls": 2,
+          "latest": {
+            "pollster": "ActiVote",
+            "endDate": "2026-10-20",
+            "margin": 17
+          },
+          "source": "NYT"
+        }
       },
       {
         "state": "MA",
@@ -545,21 +554,12 @@
         }
       },
       {
-        "state": "WY",
-        "name": "Wyoming",
-        "incumbent": "Cynthia M. Lummis",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.013000000000000001,
-        "nyt": null
-      },
-      {
         "state": "MT",
         "name": "Montana",
         "incumbent": "Steve Daines",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.01,
+        "kalshiD": 0.009000000000000001,
         "nyt": {
           "averageMargin": -25.3,
           "averagePolls": 7,
@@ -648,7 +648,7 @@
         {
           "ticker": "CONTROLH-2026-R",
           "label": "Republican Party",
-          "pct": 9.6
+          "pct": 9.7
         }
       ]
     },
@@ -671,7 +671,7 @@
     "housePopVoteMarginD": {
       "event": "KXHOUSEPOPVOTEMARGIND-26NOV03",
       "title": "2026 Midterms: House popular vote margin of victory? (Directional)",
-      "median": 9.6,
+      "median": 9.8,
       "ladder": [
         {
           "atLeast": 2,
@@ -679,11 +679,11 @@
         },
         {
           "atLeast": 4,
-          "pct": 92.5
+          "pct": 95
         },
         {
           "atLeast": 5,
-          "pct": 91.5
+          "pct": 92
         },
         {
           "atLeast": 6,
@@ -691,39 +691,39 @@
         },
         {
           "atLeast": 7,
-          "pct": 80.5
+          "pct": 82.5
         },
         {
           "atLeast": 8,
-          "pct": 76
+          "pct": 77
         },
         {
           "atLeast": 9,
-          "pct": 60
+          "pct": 62.5
         },
         {
           "atLeast": 10,
-          "pct": 44
+          "pct": 47
         },
         {
           "atLeast": 11,
-          "pct": 30
+          "pct": 31.5
         },
         {
           "atLeast": 12,
-          "pct": 19.5
+          "pct": 17
         },
         {
           "atLeast": 13,
-          "pct": 15
+          "pct": 16.5
         },
         {
           "atLeast": 14,
-          "pct": 9.5
+          "pct": 14
         },
         {
           "atLeast": 16,
-          "pct": 6
+          "pct": 5.5
         }
       ]
     },
@@ -750,7 +750,7 @@
         },
         {
           "atLeast": 226,
-          "pct": 81
+          "pct": 81.5
         },
         {
           "atLeast": 230,
@@ -778,7 +778,7 @@
         },
         {
           "atLeast": 254,
-          "pct": 13.5
+          "pct": 13
         },
         {
           "atLeast": 258,
@@ -793,23 +793,23 @@
       "ladder": [
         {
           "atLeast": 10,
-          "pct": 98
+          "pct": 98.5
         },
         {
           "atLeast": 11,
-          "pct": 97
+          "pct": 97.5
         },
         {
           "atLeast": 12,
-          "pct": 95.5
+          "pct": 96.5
         },
         {
           "atLeast": 13,
-          "pct": 95
+          "pct": 94.5
         },
         {
           "atLeast": 14,
-          "pct": 92.5
+          "pct": 92
         },
         {
           "atLeast": 15,
@@ -825,7 +825,7 @@
         },
         {
           "atLeast": 18,
-          "pct": 56.5
+          "pct": 55.5
         },
         {
           "atLeast": 19,
@@ -841,7 +841,7 @@
         },
         {
           "atLeast": 22,
-          "pct": 7.5
+          "pct": 6.5
         }
       ]
     },
@@ -855,7 +855,7 @@
       "question": "Yes",
       "pct": 6.5
     },
-    "fetchedAt": "2026-10-27T02:26:37.788Z"
+    "fetchedAt": "2026-10-27T08:23:57.389Z"
   },
   "markets": {
     "houseControlD": 90.4,
@@ -865,7 +865,7 @@
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
       "pct": 83.5
     },
-    "popVoteMarginD": 9.6,
+    "popVoteMarginD": 9.8,
     "houseSeatsD": 239.7,
     "senateSeatsWonD": 18.3
   },
@@ -873,7 +873,7 @@
     {
       "state": "GA",
       "name": "Georgia",
-      "kalshiD": 0.617,
+      "kalshiD": 0.615,
       "holder": "R",
       "incumbent": "Brian Kemp",
       "flip": true,
@@ -893,7 +893,7 @@
     {
       "state": "TX",
       "name": "Texas",
-      "kalshiD": 0.308,
+      "kalshiD": 0.325,
       "holder": "R",
       "incumbent": "Greg Abbott",
       "flip": false,
@@ -913,7 +913,7 @@
     {
       "state": "NV",
       "name": "Nevada",
-      "kalshiD": 0.695,
+      "kalshiD": 0.708,
       "holder": "R",
       "incumbent": "Joe Lombardo",
       "flip": true,
@@ -926,6 +926,26 @@
           "pollster": "Concord Public Opinion Partners",
           "endDate": "2026-09-30",
           "margin": -1
+        },
+        "source": "NYT"
+      }
+    },
+    {
+      "state": "VT",
+      "name": "Vermont",
+      "kalshiD": 0.24,
+      "holder": "R",
+      "incumbent": "Phil Scott",
+      "flip": false,
+      "dem": "Amanda Janoo",
+      "rep": "Phil Scott",
+      "poll": {
+        "averageMargin": -3.3,
+        "averagePolls": 4,
+        "latest": {
+          "pollster": "State Navigate",
+          "endDate": "2026-10-04",
+          "margin": -3
         },
         "source": "NYT"
       }
@@ -951,21 +971,21 @@
       }
     },
     {
-      "state": "VT",
-      "name": "Vermont",
-      "kalshiD": 0.233,
+      "state": "FL",
+      "name": "Florida",
+      "kalshiD": 0.215,
       "holder": "R",
-      "incumbent": "Phil Scott",
+      "incumbent": "Ron DeSantis",
       "flip": false,
-      "dem": "Amanda Janoo",
-      "rep": "Phil Scott",
+      "dem": "David Jolly",
+      "rep": "Byron Donalds",
       "poll": {
-        "averageMargin": -3.3,
-        "averagePolls": 4,
+        "averageMargin": -5.3,
+        "averagePolls": 19,
         "latest": {
-          "pollster": "State Navigate",
-          "endDate": "2026-10-04",
-          "margin": -3
+          "pollster": "co/efficient",
+          "endDate": "2026-10-20",
+          "margin": -9
         },
         "source": "NYT"
       }
@@ -991,29 +1011,9 @@
       }
     },
     {
-      "state": "FL",
-      "name": "Florida",
-      "kalshiD": 0.205,
-      "holder": "R",
-      "incumbent": "Ron DeSantis",
-      "flip": false,
-      "dem": "David Jolly",
-      "rep": "Byron Donalds",
-      "poll": {
-        "averageMargin": -5.3,
-        "averagePolls": 19,
-        "latest": {
-          "pollster": "co/efficient",
-          "endDate": "2026-10-20",
-          "margin": -9
-        },
-        "source": "NYT"
-      }
-    },
-    {
       "state": "OR",
       "name": "Oregon",
-      "kalshiD": 0.797,
+      "kalshiD": 0.807,
       "holder": "D",
       "incumbent": "Tina Kotek",
       "flip": false,
@@ -1033,7 +1033,7 @@
     {
       "state": "OH",
       "name": "Ohio",
-      "kalshiD": 0.8170000000000001,
+      "kalshiD": 0.825,
       "holder": "R",
       "incumbent": "Mike DeWine",
       "flip": true,
@@ -1093,7 +1093,7 @@
     {
       "state": "AK",
       "name": "Alaska",
-      "kalshiD": 0.875,
+      "kalshiD": 0.87,
       "holder": "R",
       "incumbent": "Mike Dunleavy",
       "flip": true,
@@ -1113,7 +1113,7 @@
     {
       "state": "OK",
       "name": "Oklahoma",
-      "kalshiD": 0.115,
+      "kalshiD": 0.125,
       "holder": "R",
       "incumbent": "Kevin Stitt",
       "flip": false,
@@ -1153,7 +1153,7 @@
     {
       "state": "MI",
       "name": "Michigan",
-      "kalshiD": 0.92,
+      "kalshiD": 0.9209999999999999,
       "holder": "D",
       "incumbent": "Gretchen Whitmer",
       "flip": false,
@@ -1173,7 +1173,7 @@
     {
       "state": "TN",
       "name": "Tennessee",
-      "kalshiD": 0.078,
+      "kalshiD": 0.076,
       "holder": "R",
       "incumbent": "Bill Lee",
       "flip": false,
@@ -1213,7 +1213,7 @@
     {
       "state": "AL",
       "name": "Alabama",
-      "kalshiD": 0.061,
+      "kalshiD": 0.063,
       "holder": "R",
       "incumbent": "Kay Ivey",
       "flip": false,
@@ -1226,26 +1226,6 @@
           "pollster": "Cygnal Political",
           "endDate": "2026-10-17",
           "margin": -11.200000000000003
-        },
-        "source": "NYT"
-      }
-    },
-    {
-      "state": "NY",
-      "name": "New York",
-      "kalshiD": 0.9390000000000001,
-      "holder": "D",
-      "incumbent": "Kathy Hochul",
-      "flip": false,
-      "dem": "Kathy Hochul",
-      "rep": "Bruce Blakeman",
-      "poll": {
-        "averageMargin": 13.2,
-        "averagePolls": 10,
-        "latest": {
-          "pollster": "ActiVote",
-          "endDate": "2026-10-23",
-          "margin": 18
         },
         "source": "NYT"
       }
@@ -1271,21 +1251,21 @@
       }
     },
     {
-      "state": "MA",
-      "name": "Massachusetts",
-      "kalshiD": 0.9490000000000001,
+      "state": "NY",
+      "name": "New York",
+      "kalshiD": 0.9440000000000001,
       "holder": "D",
-      "incumbent": "Maura Healey",
+      "incumbent": "Kathy Hochul",
       "flip": false,
-      "dem": "Maura Healey",
-      "rep": "Mike Minogue",
+      "dem": "Kathy Hochul",
+      "rep": "Bruce Blakeman",
       "poll": {
-        "averageMargin": 22.6,
-        "averagePolls": 4,
+        "averageMargin": 13.2,
+        "averagePolls": 10,
         "latest": {
-          "pollster": "Suffolk University",
-          "endDate": "2026-10-18",
-          "margin": 22.6
+          "pollster": "ActiVote",
+          "endDate": "2026-10-23",
+          "margin": 18
         },
         "source": "NYT"
       }
@@ -1293,7 +1273,7 @@
     {
       "state": "ME",
       "name": "Maine",
-      "kalshiD": 0.951,
+      "kalshiD": 0.945,
       "holder": "D",
       "incumbent": "Janet Mills",
       "flip": false,
@@ -1311,9 +1291,29 @@
       }
     },
     {
+      "state": "MA",
+      "name": "Massachusetts",
+      "kalshiD": 0.95,
+      "holder": "D",
+      "incumbent": "Maura Healey",
+      "flip": false,
+      "dem": "Maura Healey",
+      "rep": "Mike Minogue",
+      "poll": {
+        "averageMargin": 22.6,
+        "averagePolls": 4,
+        "latest": {
+          "pollster": "Suffolk University",
+          "endDate": "2026-10-18",
+          "margin": 22.6
+        },
+        "source": "NYT"
+      }
+    },
+    {
       "state": "MN",
       "name": "Minnesota",
-      "kalshiD": 0.951,
+      "kalshiD": 0.9520000000000001,
       "holder": "D",
       "incumbent": "Tim Walz",
       "flip": false,
@@ -1331,9 +1331,20 @@
       }
     },
     {
+      "state": "CO",
+      "name": "Colorado",
+      "kalshiD": 0.96,
+      "holder": "D",
+      "incumbent": "Jared Polis",
+      "flip": false,
+      "dem": "Phil Weiser",
+      "rep": "Victor Marx",
+      "poll": null
+    },
+    {
       "state": "CA",
       "name": "California",
-      "kalshiD": 0.9620000000000001,
+      "kalshiD": 0.961,
       "holder": "D",
       "incumbent": "Gavin Newsom",
       "flip": false,
@@ -1346,6 +1357,26 @@
           "pollster": "McLaughlin & Associates",
           "endDate": "2026-10-20",
           "margin": 15.700000000000003
+        },
+        "source": "NYT"
+      }
+    },
+    {
+      "state": "CT",
+      "name": "Connecticut",
+      "kalshiD": 0.963,
+      "holder": "D",
+      "incumbent": "Ned Lamont",
+      "flip": false,
+      "dem": "Ned Lamont",
+      "rep": "Ryan Fazio",
+      "poll": {
+        "averageMargin": 19.9,
+        "averagePolls": 10,
+        "latest": {
+          "pollster": "GreatBlue Research",
+          "endDate": "2026-10-12",
+          "margin": 27.200000000000003
         },
         "source": "NYT"
       }
@@ -1371,40 +1402,9 @@
       }
     },
     {
-      "state": "CT",
-      "name": "Connecticut",
-      "kalshiD": 0.9640000000000001,
-      "holder": "D",
-      "incumbent": "Ned Lamont",
-      "flip": false,
-      "dem": "Ned Lamont",
-      "rep": "Ryan Fazio",
-      "poll": {
-        "averageMargin": 19.9,
-        "averagePolls": 10,
-        "latest": {
-          "pollster": "GreatBlue Research",
-          "endDate": "2026-10-12",
-          "margin": 27.200000000000003
-        },
-        "source": "NYT"
-      }
-    },
-    {
-      "state": "CO",
-      "name": "Colorado",
-      "kalshiD": 0.966,
-      "holder": "D",
-      "incumbent": "Jared Polis",
-      "flip": false,
-      "dem": "Phil Weiser",
-      "rep": "Victor Marx",
-      "poll": null
-    },
-    {
       "state": "PA",
       "name": "Pennsylvania",
-      "kalshiD": 0.9670000000000001,
+      "kalshiD": 0.9690000000000001,
       "holder": "D",
       "incumbent": "Josh Shapiro",
       "flip": false,
@@ -1444,7 +1444,7 @@
     {
       "state": "SD",
       "name": "South Dakota",
-      "kalshiD": 0.025,
+      "kalshiD": 0.024,
       "holder": "R",
       "incumbent": "Larry Rhoden",
       "flip": false,
@@ -1462,29 +1462,9 @@
       }
     },
     {
-      "state": "AR",
-      "name": "Arkansas",
-      "kalshiD": 0.024,
-      "holder": "R",
-      "incumbent": "Sarah Huckabee Sanders",
-      "flip": false,
-      "dem": "Fred Love",
-      "rep": "Sarah Huckabee Sanders",
-      "poll": {
-        "averageMargin": -19,
-        "averagePolls": 1,
-        "latest": {
-          "pollster": "Hendrix College",
-          "endDate": "2026-10-13",
-          "margin": -19
-        },
-        "source": "NYT"
-      }
-    },
-    {
       "state": "MD",
       "name": "Maryland",
-      "kalshiD": 0.976,
+      "kalshiD": 0.977,
       "holder": "D",
       "incumbent": "Wes Moore",
       "flip": false,
@@ -1524,6 +1504,26 @@
       "poll": null
     },
     {
+      "state": "AR",
+      "name": "Arkansas",
+      "kalshiD": 0.013999999999999999,
+      "holder": "R",
+      "incumbent": "Sarah Huckabee Sanders",
+      "flip": false,
+      "dem": "Fred Love",
+      "rep": "Sarah Huckabee Sanders",
+      "poll": {
+        "averageMargin": -19,
+        "averagePolls": 1,
+        "latest": {
+          "pollster": "Hendrix College",
+          "endDate": "2026-10-13",
+          "margin": -19
+        },
+        "source": "NYT"
+      }
+    },
+    {
       "state": "RI",
       "name": "Rhode Island",
       "kalshiD": 0.995,
@@ -1560,7 +1560,7 @@
         "expected": 16.3,
         "pollMargin": 1.6,
         "overUnder": -14.7,
-        "kalshiD": 0.586
+        "kalshiD": 0.595
       },
       {
         "state": "MT",
@@ -1573,7 +1573,7 @@
         "expected": -10.5,
         "pollMargin": -25.2,
         "overUnder": -14.6,
-        "kalshiD": 0.01
+        "kalshiD": 0.009000000000000001
       },
       {
         "state": "MN",
@@ -1612,7 +1612,7 @@
         "expected": 12.2,
         "pollMargin": 6.3,
         "overUnder": -5.9,
-        "kalshiD": 0.895
+        "kalshiD": 0.8859999999999999
       },
       {
         "state": "MI",
@@ -1625,7 +1625,7 @@
         "expected": 8,
         "pollMargin": 2.9,
         "overUnder": -5.1,
-        "kalshiD": 0.675
+        "kalshiD": 0.6829999999999999
       },
       {
         "state": "FL",
@@ -1677,7 +1677,7 @@
         "expected": 7.2,
         "pollMargin": 8.4,
         "overUnder": 1.2,
-        "kalshiD": 0.946
+        "kalshiD": 0.948
       },
       {
         "state": "AL",
@@ -1716,7 +1716,7 @@
         "expected": 6.2,
         "pollMargin": 10.3,
         "overUnder": 4.1,
-        "kalshiD": 0.966
+        "kalshiD": 0.9640000000000001
       },
       {
         "state": "IA",
@@ -1729,7 +1729,7 @@
         "expected": -3.8,
         "pollMargin": 0.5,
         "overUnder": 4.3,
-        "kalshiD": 0.415
+        "kalshiD": 0.40700000000000003
       },
       {
         "state": "SC",
@@ -1742,7 +1742,7 @@
         "expected": -8.5,
         "pollMargin": -3,
         "overUnder": 5.5,
-        "kalshiD": 0.245
+        "kalshiD": 0.235
       },
       {
         "state": "OH",
@@ -1794,7 +1794,7 @@
         "expected": -6.7,
         "pollMargin": 0.8,
         "overUnder": 7.5,
-        "kalshiD": 0.395
+        "kalshiD": 0.40299999999999997
       },
       {
         "state": "MS",
@@ -1807,7 +1807,7 @@
         "expected": -13.5,
         "pollMargin": -3.8,
         "overUnder": 9.7,
-        "kalshiD": 0.106
+        "kalshiD": 0.115
       },
       {
         "state": "AR",
@@ -1820,143 +1820,143 @@
         "expected": -21.3,
         "pollMargin": -8.7,
         "overUnder": 12.6,
-        "kalshiD": 0.064
+        "kalshiD": 0.061
       }
     ]
   },
   "movers": {
-    "updated": "2026-10-27T02:26:37.802Z",
+    "updated": "2026-10-27T08:23:57.405Z",
     "day": [
-      {
-        "key": "H-CO-05",
-        "name": "CO-5",
-        "type": "House",
-        "now": 38.7,
-        "ch1": 7.4,
-        "ch7": 14.4,
-        "dem": "Jessica Killin",
-        "rep": "Jeff Crank",
-        "thirdParty": false
-      },
       {
         "key": "H-NJ-02",
         "name": "NJ-2",
         "type": "House",
-        "now": 24.5,
-        "ch1": 6,
-        "ch7": 6.7,
+        "now": 26.5,
+        "ch1": 6.8,
+        "ch7": 8.7,
         "dem": "Zack Mullock",
         "rep": "Jeff Van Drew",
+        "thirdParty": false
+      },
+      {
+        "key": "H-CO-05",
+        "name": "CO-5",
+        "type": "House",
+        "now": 39.5,
+        "ch1": 6,
+        "ch7": 15.2,
+        "dem": "Jessica Killin",
+        "rep": "Jeff Crank",
         "thirdParty": false
       },
       {
         "key": "H-FL-25",
         "name": "FL-25",
         "type": "House",
-        "now": 78.7,
-        "ch1": -5.4,
-        "ch7": -3.2,
+        "now": 76.5,
+        "ch1": -6,
+        "ch7": -5.4,
         "dem": "Jared Moskowitz",
         "rep": "Scott Singer",
         "thirdParty": false
       },
       {
-        "key": "H-MI-10",
-        "name": "MI-10",
+        "key": "H-NC-03",
+        "name": "NC-3",
         "type": "House",
-        "now": 66.8,
-        "ch1": -4.4,
-        "ch7": 0.1,
-        "dem": "Christina Hines",
-        "rep": "Michael Bouchard Jr.",
-        "thirdParty": false
-      },
-      {
-        "key": "S-SC",
-        "name": "South Carolina",
-        "type": "Senate",
-        "now": 24.5,
-        "ch1": 4,
-        "ch7": 7.4,
-        "dem": "Annie Andrews",
-        "rep": "Darline Graham",
-        "thirdParty": false
-      },
-      {
-        "key": "H-FL-07",
-        "name": "FL-7",
-        "type": "House",
-        "now": 24.7,
-        "ch1": -3.1,
-        "ch7": 0.2,
-        "dem": "Bale Dalton",
-        "rep": "Ryan Elijah",
+        "now": 31.5,
+        "ch1": -4,
+        "ch7": 15.9,
+        "dem": "Raymond Smith Jr.",
+        "rep": "Greg Murphy",
         "thirdParty": false
       },
       {
         "key": "H-IN-05",
         "name": "IN-5",
         "type": "House",
-        "now": 19.4,
-        "ch1": 3.1,
-        "ch7": 2.2,
+        "now": 20.2,
+        "ch1": 3.7,
+        "ch7": 3,
         "dem": "J.D. Ford",
         "rep": "Victoria Spartz",
         "thirdParty": false
       },
       {
-        "key": "G-NE",
-        "name": "Nebraska",
+        "key": "G-NV",
+        "name": "Nevada",
         "type": "Governor",
-        "now": 17.3,
-        "ch1": 2.9,
-        "ch7": 6.2,
-        "dem": "Lynne Walz",
-        "rep": "Jim Pillen",
+        "now": 70.8,
+        "ch1": 3.3,
+        "ch7": 15.3,
+        "dem": "Aaron Ford",
+        "rep": "Joe Lombardo",
+        "thirdParty": false
+      },
+      {
+        "key": "S-SC",
+        "name": "South Carolina",
+        "type": "Senate",
+        "now": 23.5,
+        "ch1": 3,
+        "ch7": 6.4,
+        "dem": "Annie Andrews",
+        "rep": "Darline Graham",
+        "thirdParty": false
+      },
+      {
+        "key": "H-FL-11",
+        "name": "FL-11",
+        "type": "House",
+        "now": 12.5,
+        "ch1": -2.9,
+        "ch7": 3.8,
+        "dem": "James Pericola",
+        "rep": "Joe Strada",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-13",
+        "name": "NC-13",
+        "type": "House",
+        "now": 28.5,
+        "ch1": -2.8,
+        "ch7": 14.5,
+        "dem": "Paul Barringer",
+        "rep": "Brad Knott",
         "thirdParty": false
       },
       {
         "key": "H-MO-06",
         "name": "MO-6",
         "type": "House",
-        "now": 5.4,
-        "ch1": 2.7,
-        "ch7": 2.7,
+        "now": 5.8,
+        "ch1": 2.6,
+        "ch7": 3.1,
         "dem": "Josh Smead",
         "rep": "Chris Stigall",
         "thirdParty": false
       },
       {
-        "key": "H-NC-14",
-        "name": "NC-14",
-        "type": "House",
-        "now": 14.5,
-        "ch1": 2.4,
-        "ch7": 5.5,
-        "dem": "LaKesha Womack",
-        "rep": "Tim Moore",
+        "key": "S-MI",
+        "name": "Michigan",
+        "type": "Senate",
+        "now": 68.3,
+        "ch1": 2.5,
+        "ch7": -0.2,
+        "dem": "Abdul El-Sayed",
+        "rep": "Mike Rogers",
         "thirdParty": false
       },
       {
-        "key": "H-CO-04",
-        "name": "CO-4",
+        "key": "H-FL-16",
+        "name": "FL-16",
         "type": "House",
-        "now": 31.5,
-        "ch1": 2.3,
-        "ch7": 6.5,
-        "dem": "Eileen Laubacher",
-        "rep": "Lauren Boebert",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MN-01",
-        "name": "MN-1",
-        "type": "House",
-        "now": 36.8,
-        "ch1": 2.3,
-        "ch7": 13.1,
-        "dem": "Jake Johnson",
-        "rep": "Brad Finstad",
+        "now": 24.1,
+        "ch1": 2.5,
+        "ch7": 6,
+        "dem": "Kelly Kirschner",
+        "rep": "Sydney Gruters",
         "thirdParty": false
       }
     ],
@@ -1965,31 +1965,31 @@
         "key": "H-NC-03",
         "name": "NC-3",
         "type": "House",
-        "now": 32.5,
-        "ch1": -1,
-        "ch7": 16.9,
+        "now": 31.5,
+        "ch1": -4,
+        "ch7": 15.9,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
         "thirdParty": false
       },
       {
-        "key": "H-NC-13",
-        "name": "NC-13",
-        "type": "House",
-        "now": 30.5,
-        "ch1": 0.7,
-        "ch7": 16.5,
-        "dem": "Paul Barringer",
-        "rep": "Brad Knott",
+        "key": "G-NV",
+        "name": "Nevada",
+        "type": "Governor",
+        "now": 70.8,
+        "ch1": 3.3,
+        "ch7": 15.3,
+        "dem": "Aaron Ford",
+        "rep": "Joe Lombardo",
         "thirdParty": false
       },
       {
         "key": "H-KY-06",
         "name": "KY-6",
         "type": "House",
-        "now": 47,
-        "ch1": 1,
-        "ch7": 15.8,
+        "now": 46.5,
+        "ch1": 0.5,
+        "ch7": 15.3,
         "dem": "Zach Dembo",
         "rep": "Ralph Alvarado",
         "thirdParty": false
@@ -1998,9 +1998,9 @@
         "key": "H-TX-23",
         "name": "TX-23",
         "type": "House",
-        "now": 43.1,
-        "ch1": -0.2,
-        "ch7": 14.9,
+        "now": 43.5,
+        "ch1": -0.1,
+        "ch7": 15.3,
         "dem": "Katy Padilla Stout",
         "rep": "Brandon Herrera",
         "thirdParty": false
@@ -2009,9 +2009,9 @@
         "key": "H-CO-05",
         "name": "CO-5",
         "type": "House",
-        "now": 38.7,
-        "ch1": 7.4,
-        "ch7": 14.4,
+        "now": 39.5,
+        "ch1": 6,
+        "ch7": 15.2,
         "dem": "Jessica Killin",
         "rep": "Jeff Crank",
         "thirdParty": false
@@ -2020,31 +2020,31 @@
         "key": "H-NC-01",
         "name": "NC-1",
         "type": "House",
-        "now": 81.7,
-        "ch1": 0.2,
-        "ch7": 14.2,
+        "now": 82.5,
+        "ch1": 1,
+        "ch7": 15,
         "dem": "Don Davis",
         "rep": "Laurie Buckhout",
         "thirdParty": false
       },
       {
-        "key": "G-NV",
-        "name": "Nevada",
-        "type": "Governor",
-        "now": 69.5,
-        "ch1": 2,
-        "ch7": 14,
-        "dem": "Aaron Ford",
-        "rep": "Joe Lombardo",
+        "key": "H-NC-13",
+        "name": "NC-13",
+        "type": "House",
+        "now": 28.5,
+        "ch1": -2.8,
+        "ch7": 14.5,
+        "dem": "Paul Barringer",
+        "rep": "Brad Knott",
         "thirdParty": false
       },
       {
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
-        "now": 36.8,
-        "ch1": 2.3,
-        "ch7": 13.1,
+        "now": 36.7,
+        "ch1": 1.2,
+        "ch7": 13,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
         "thirdParty": false
@@ -2053,33 +2053,11 @@
         "key": "H-OH-10",
         "name": "OH-10",
         "type": "House",
-        "now": 29.5,
-        "ch1": 0,
-        "ch7": 13,
+        "now": 29.2,
+        "ch1": -0.3,
+        "ch7": 12.7,
         "dem": "Kristina Knickerbocker",
         "rep": "Mike Turner",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NV-02",
-        "name": "NV-2",
-        "type": "House",
-        "now": 40.1,
-        "ch1": 1.6,
-        "ch7": 12.6,
-        "dem": "Teresa Benitez-Thompson",
-        "rep": "David Flippo",
-        "thirdParty": false
-      },
-      {
-        "key": "G-GA",
-        "name": "Georgia",
-        "type": "Governor",
-        "now": 61.7,
-        "ch1": 1.6,
-        "ch7": 12.2,
-        "dem": "Keisha Lance Bottoms",
-        "rep": "Rick Jackson",
         "thirdParty": false
       },
       {
@@ -2087,23 +2065,37 @@
         "name": "MO-2",
         "type": "House",
         "now": 35.5,
-        "ch1": 0.4,
+        "ch1": 0,
         "ch7": 12.2,
         "dem": "Fred Wellman",
         "rep": "Ann Wagner",
+        "thirdParty": false
+      },
+      {
+        "key": "H-PA-08",
+        "name": "PA-8",
+        "type": "House",
+        "now": 84.5,
+        "ch1": 2,
+        "ch7": 12,
+        "dem": "Paige Cognetti",
+        "rep": "Rob Bresnahan",
+        "thirdParty": false
+      },
+      {
+        "key": "G-GA",
+        "name": "Georgia",
+        "type": "Governor",
+        "now": 61.5,
+        "ch1": 1.4,
+        "ch7": 12,
+        "dem": "Keisha Lance Bottoms",
+        "rep": "Rick Jackson",
         "thirdParty": false
       }
     ]
   },
   "flips": [
-    {
-      "chamber": "Senate",
-      "id": "NC",
-      "holder": "R",
-      "incumbent": "Thom Tillis",
-      "favored": "D",
-      "prob": 97
-    },
     {
       "chamber": "House",
       "id": "CA-41",
@@ -2117,6 +2109,14 @@
       "id": "UT-01",
       "holder": "R",
       "incumbent": "Blake D. Moore",
+      "favored": "D",
+      "prob": 96
+    },
+    {
+      "chamber": "Senate",
+      "id": "NC",
+      "holder": "R",
+      "incumbent": "Thom Tillis",
       "favored": "D",
       "prob": 96
     },
@@ -2146,14 +2146,6 @@
     },
     {
       "chamber": "House",
-      "id": "IA-01",
-      "holder": "R",
-      "incumbent": "Mariannette Miller-Meeks",
-      "favored": "D",
-      "prob": 92
-    },
-    {
-      "chamber": "House",
       "id": "LA-06",
       "holder": "D",
       "incumbent": "Cleo Fields",
@@ -2166,6 +2158,22 @@
       "holder": "R",
       "incumbent": "Don Bacon",
       "favored": "D",
+      "prob": 92
+    },
+    {
+      "chamber": "House",
+      "id": "CA-22",
+      "holder": "R",
+      "incumbent": "David G. Valadao",
+      "favored": "D",
+      "prob": 91
+    },
+    {
+      "chamber": "House",
+      "id": "IA-01",
+      "holder": "R",
+      "incumbent": "Mariannette Miller-Meeks",
+      "favored": "D",
       "prob": 91
     },
     {
@@ -2174,15 +2182,7 @@
       "holder": "R",
       "incumbent": "Juan Ciscomani",
       "favored": "D",
-      "prob": 90
-    },
-    {
-      "chamber": "House",
-      "id": "CA-22",
-      "holder": "R",
-      "incumbent": "David G. Valadao",
-      "favored": "D",
-      "prob": 90
+      "prob": 89
     },
     {
       "chamber": "House",
@@ -2190,7 +2190,7 @@
       "holder": "R",
       "incumbent": "Jennifer A. Kiggans",
       "favored": "D",
-      "prob": 90
+      "prob": 89
     },
     {
       "chamber": "House",
@@ -2222,7 +2222,15 @@
       "holder": "R",
       "incumbent": "Gabe Evans",
       "favored": "D",
-      "prob": 84
+      "prob": 85
+    },
+    {
+      "chamber": "House",
+      "id": "PA-08",
+      "holder": "R",
+      "incumbent": "Robert P. Bresnahan, Jr.",
+      "favored": "D",
+      "prob": 85
     },
     {
       "chamber": "House",
@@ -2234,18 +2242,10 @@
     },
     {
       "chamber": "House",
-      "id": "PA-08",
-      "holder": "R",
-      "incumbent": "Robert P. Bresnahan, Jr.",
-      "favored": "D",
-      "prob": 83
-    },
-    {
-      "chamber": "House",
-      "id": "TX-15",
-      "holder": "R",
-      "incumbent": "Monica De La Cruz",
-      "favored": "D",
+      "id": "TN-09",
+      "holder": "D",
+      "incumbent": "Steve Cohen",
+      "favored": "R",
       "prob": 82
     },
     {
@@ -2258,11 +2258,11 @@
     },
     {
       "chamber": "House",
-      "id": "TN-09",
-      "holder": "D",
-      "incumbent": "Steve Cohen",
-      "favored": "R",
-      "prob": 80
+      "id": "TX-15",
+      "holder": "R",
+      "incumbent": "Monica De La Cruz",
+      "favored": "D",
+      "prob": 81
     },
     {
       "chamber": "House",
@@ -2278,7 +2278,7 @@
       "holder": "D",
       "incumbent": "Al Green",
       "favored": "R",
-      "prob": 78
+      "prob": 79
     },
     {
       "chamber": "House",
@@ -2302,7 +2302,7 @@
       "holder": "R",
       "incumbent": "Tom Barrett",
       "favored": "D",
-      "prob": 73
+      "prob": 72
     },
     {
       "chamber": "House",
@@ -2354,33 +2354,33 @@
     },
     {
       "chamber": "House",
-      "id": "MI-04",
-      "holder": "R",
-      "incumbent": "Bill Huizenga",
-      "favored": "D",
-      "prob": 61
-    },
-    {
-      "chamber": "House",
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
       "favored": "D",
-      "prob": 61
+      "prob": 62
     },
     {
       "chamber": "House",
-      "id": "NY-17",
+      "id": "MI-04",
       "holder": "R",
-      "incumbent": "Michael Lawler",
+      "incumbent": "Bill Huizenga",
       "favored": "D",
-      "prob": 59
+      "prob": 60
     },
     {
       "chamber": "Senate",
       "id": "ME",
       "holder": "R",
       "incumbent": "Susan M. Collins",
+      "favored": "D",
+      "prob": 60
+    },
+    {
+      "chamber": "House",
+      "id": "NY-17",
+      "holder": "R",
+      "incumbent": "Michael Lawler",
       "favored": "D",
       "prob": 59
     },
@@ -2430,13 +2430,13 @@
       "id": "PA-01",
       "holder": "R",
       "incumbent": "Brian K. Fitzpatrick",
-      "dPct": 44
+      "dPct": 45
     },
     {
       "id": "TX-23",
       "holder": "V",
       "incumbent": null,
-      "dPct": 43
+      "dPct": 44
     },
     {
       "id": "NY-17",
@@ -2445,34 +2445,28 @@
       "dPct": 59
     },
     {
+      "id": "MI-04",
+      "holder": "R",
+      "incumbent": "Bill Huizenga",
+      "dPct": 60
+    },
+    {
+      "id": "CO-05",
+      "holder": "R",
+      "incumbent": "Jeff Crank",
+      "dPct": 40
+    },
+    {
       "id": "NV-02",
       "holder": "R",
       "incumbent": "Mark E. Amodei",
       "dPct": 40
     },
     {
-      "id": "MI-04",
-      "holder": "R",
-      "incumbent": "Bill Huizenga",
-      "dPct": 61
-    },
-    {
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
-      "dPct": 61
-    },
-    {
-      "id": "CO-05",
-      "holder": "R",
-      "incumbent": "Jeff Crank",
-      "dPct": 39
-    },
-    {
-      "id": "FL-22",
-      "holder": "D",
-      "incumbent": "Lois Frankel",
-      "dPct": 63
+      "dPct": 62
     },
     {
       "id": "SC-01",
@@ -2481,20 +2475,26 @@
       "dPct": 38
     },
     {
-      "id": "OH-15",
-      "holder": "R",
-      "incumbent": "Mike Carey",
-      "dPct": 37
+      "id": "FL-22",
+      "holder": "D",
+      "incumbent": "Lois Frankel",
+      "dPct": 63
     },
     {
       "id": "MN-01",
       "holder": "R",
       "incumbent": "Brad Finstad",
       "dPct": 37
+    },
+    {
+      "id": "OH-15",
+      "holder": "R",
+      "incumbent": "Mike Carey",
+      "dPct": 37
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-10-27T02:26:37.810Z",
+    "kalshiUpdated": "2026-10-27T08:23:57.412Z",
     "nytUpdated": "2026-10-27T05:17:04.067Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
