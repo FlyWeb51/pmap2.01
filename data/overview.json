@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T14:56:09.345Z",
+  "generatedAt": "2026-10-27T17:13:42.209Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -377,7 +377,7 @@
           "averageMargin": -9,
           "averagePolls": 1,
           "latest": {
-            "pollster": "Global Strategy Group D-sponsored In average",
+            "pollster": "Global Strategy Group D-sponsored Not in average",
             "endDate": "2026-08-27"
           },
           "source": "site"
@@ -600,12 +600,12 @@
     ]
   },
   "generic": {
-    "dem": 49.9,
+    "dem": 49.8,
     "rep": 42,
-    "margin": 7.9,
-    "polls": 117,
-    "source": "117 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
-    "asOf": "2026-10-23",
+    "margin": 7.8,
+    "polls": 121,
+    "source": "121 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
+    "asOf": "2026-10-26",
     "label": "Blue wave"
   },
   "history": [
@@ -1545,23 +1545,10 @@
     }
   ],
   "candidatePerformance": {
-    "genericMargin": 7.9,
+    "genericMargin": 7.8,
     "nationalPres2024": -1.48,
-    "shift": 9.4,
+    "shift": 9.3,
     "rows": [
-      {
-        "state": "ME",
-        "name": "Maine",
-        "special": false,
-        "dem": "Troy Jackson",
-        "rep": "Susan M. Collins",
-        "polls": 33,
-        "pres2024": 6.9,
-        "expected": 16.3,
-        "pollMargin": 1.6,
-        "overUnder": -14.7,
-        "kalshiD": 0.605
-      },
       {
         "state": "MT",
         "name": "Montana",
@@ -1570,10 +1557,23 @@
         "rep": "Kurt Alme",
         "polls": 9,
         "pres2024": -19.9,
-        "expected": -10.5,
+        "expected": -10.6,
         "pollMargin": -25.2,
-        "overUnder": -14.6,
+        "overUnder": -14.5,
         "kalshiD": 0.008
+      },
+      {
+        "state": "ME",
+        "name": "Maine",
+        "special": false,
+        "dem": "Troy Jackson",
+        "rep": "Susan M. Collins",
+        "polls": 34,
+        "pres2024": 6.9,
+        "expected": 16.2,
+        "pollMargin": 1.9,
+        "overUnder": -14.3,
+        "kalshiD": 0.605
       },
       {
         "state": "MN",
@@ -1583,9 +1583,9 @@
         "rep": "Michele Tafoya",
         "polls": 22,
         "pres2024": 4.2,
-        "expected": 13.6,
+        "expected": 13.5,
         "pollMargin": 3.5,
-        "overUnder": -10.1,
+        "overUnder": -10,
         "kalshiD": 0.843
       },
       {
@@ -1596,9 +1596,9 @@
         "rep": "John Deaton",
         "polls": 9,
         "pres2024": 25.2,
-        "expected": 34.6,
+        "expected": 34.5,
         "pollMargin": 25.9,
-        "overUnder": -8.7,
+        "overUnder": -8.6,
         "kalshiD": 0.983
       },
       {
@@ -1607,11 +1607,11 @@
         "special": false,
         "dem": "Chris Pappas",
         "rep": "John E. Sununu",
-        "polls": 19,
+        "polls": 20,
         "pres2024": 2.8,
-        "expected": 12.2,
+        "expected": 12.1,
         "pollMargin": 6.3,
-        "overUnder": -5.9,
+        "overUnder": -5.8,
         "kalshiD": 0.895
       },
       {
@@ -1622,9 +1622,9 @@
         "rep": "Mike Rogers",
         "polls": 54,
         "pres2024": -1.4,
-        "expected": 8,
+        "expected": 7.9,
         "pollMargin": 3,
-        "overUnder": -5,
+        "overUnder": -4.9,
         "kalshiD": 0.685
       },
       {
@@ -1633,11 +1633,11 @@
         "special": true,
         "dem": "Angie Nixon",
         "rep": "Ashley Moody",
-        "polls": 18,
+        "polls": 20,
         "pres2024": -13.1,
-        "expected": -3.7,
+        "expected": -3.8,
         "pollMargin": -6.3,
-        "overUnder": -2.6,
+        "overUnder": -2.5,
         "kalshiD": 0.115
       },
       {
@@ -1648,9 +1648,9 @@
         "rep": "Kevin Hern",
         "polls": 3,
         "pres2024": -34.3,
-        "expected": -24.9,
+        "expected": -25,
         "pollMargin": -24,
-        "overUnder": 0.9,
+        "overUnder": 1,
         "kalshiD": 0.027999999999999997
       },
       {
@@ -1661,9 +1661,9 @@
         "rep": "Raymond McKay",
         "polls": 7,
         "pres2024": 13.8,
-        "expected": 23.2,
+        "expected": 23.1,
         "pollMargin": 24.1,
-        "overUnder": 0.9,
+        "overUnder": 1,
         "kalshiD": 0.985
       },
       {
@@ -1674,9 +1674,9 @@
         "rep": "Mike Collins",
         "polls": 14,
         "pres2024": -2.2,
-        "expected": 7.2,
+        "expected": 7.1,
         "pollMargin": 8.4,
-        "overUnder": 1.2,
+        "overUnder": 1.3,
         "kalshiD": 0.9470000000000001
       },
       {
@@ -1687,9 +1687,9 @@
         "rep": "Barry Moore",
         "polls": 4,
         "pres2024": -30.5,
-        "expected": -21.1,
+        "expected": -21.2,
         "pollMargin": -19.7,
-        "overUnder": 1.4,
+        "overUnder": 1.5,
         "kalshiD": 0.017
       },
       {
@@ -1700,23 +1700,10 @@
         "rep": "Larry E Marker",
         "polls": 5,
         "pres2024": 6,
-        "expected": 15.4,
+        "expected": 15.3,
         "pollMargin": 17.1,
-        "overUnder": 1.7,
+        "overUnder": 1.8,
         "kalshiD": 0.971
-      },
-      {
-        "state": "NC",
-        "name": "North Carolina",
-        "special": false,
-        "dem": "Roy Cooper",
-        "rep": "Michael Whatley",
-        "polls": 43,
-        "pres2024": -3.2,
-        "expected": 6.2,
-        "pollMargin": 10.3,
-        "overUnder": 4.1,
-        "kalshiD": 0.9640000000000001
       },
       {
         "state": "IA",
@@ -1724,12 +1711,38 @@
         "special": false,
         "dem": "Josh Turek",
         "rep": "Ashley Hinson",
-        "polls": 37,
+        "polls": 38,
         "pres2024": -13.2,
-        "expected": -3.8,
-        "pollMargin": 0.5,
+        "expected": -3.9,
+        "pollMargin": 0.4,
         "overUnder": 4.3,
         "kalshiD": 0.409
+      },
+      {
+        "state": "NC",
+        "name": "North Carolina",
+        "special": false,
+        "dem": "Roy Cooper",
+        "rep": "Michael Whatley",
+        "polls": 44,
+        "pres2024": -3.2,
+        "expected": 6.1,
+        "pollMargin": 10.5,
+        "overUnder": 4.4,
+        "kalshiD": 0.9640000000000001
+      },
+      {
+        "state": "OH",
+        "name": "Ohio",
+        "special": true,
+        "dem": "Sherrod Brown",
+        "rep": "Jon Husted",
+        "polls": 38,
+        "pres2024": -11.2,
+        "expected": -1.9,
+        "pollMargin": 4.2,
+        "overUnder": 6.1,
+        "kalshiD": 0.675
       },
       {
         "state": "SC",
@@ -1739,23 +1752,10 @@
         "rep": "Darline Graham",
         "polls": 12,
         "pres2024": -17.9,
-        "expected": -8.5,
+        "expected": -8.6,
         "pollMargin": -2.5,
-        "overUnder": 6,
-        "kalshiD": 0.235
-      },
-      {
-        "state": "OH",
-        "name": "Ohio",
-        "special": true,
-        "dem": "Sherrod Brown",
-        "rep": "Jon Husted",
-        "polls": 37,
-        "pres2024": -11.2,
-        "expected": -1.8,
-        "pollMargin": 4.3,
         "overUnder": 6.1,
-        "kalshiD": 0.675
+        "kalshiD": 0.235
       },
       {
         "state": "AK",
@@ -1765,23 +1765,10 @@
         "rep": "Dan S. Sullivan",
         "polls": 16,
         "pres2024": -13.1,
-        "expected": -3.7,
+        "expected": -3.9,
         "pollMargin": 2.3,
-        "overUnder": 6.1,
+        "overUnder": 6.2,
         "kalshiD": 0.735
-      },
-      {
-        "state": "TX",
-        "name": "Texas",
-        "special": false,
-        "dem": "James Talarico",
-        "rep": "Ken Paxton",
-        "polls": 70,
-        "pres2024": -13.7,
-        "expected": -4.3,
-        "pollMargin": 3,
-        "overUnder": 7.3,
-        "kalshiD": 0.655
       },
       {
         "state": "KS",
@@ -1789,12 +1776,25 @@
         "special": false,
         "dem": "Jacques Hamilton",
         "rep": "Roger Marshall",
-        "polls": 15,
+        "polls": 16,
         "pres2024": -16.1,
-        "expected": -6.7,
-        "pollMargin": 0.8,
-        "overUnder": 7.5,
+        "expected": -6.8,
+        "pollMargin": 0.6,
+        "overUnder": 7.4,
         "kalshiD": 0.405
+      },
+      {
+        "state": "TX",
+        "name": "Texas",
+        "special": false,
+        "dem": "James Talarico",
+        "rep": "Ken Paxton",
+        "polls": 71,
+        "pres2024": -13.7,
+        "expected": -4.4,
+        "pollMargin": 3.1,
+        "overUnder": 7.5,
+        "kalshiD": 0.655
       },
       {
         "state": "MS",
@@ -1804,9 +1804,9 @@
         "rep": "Cindy Hyde-Smith",
         "polls": 3,
         "pres2024": -22.9,
-        "expected": -13.5,
+        "expected": -13.6,
         "pollMargin": -3.8,
-        "overUnder": 9.7,
+        "overUnder": 9.8,
         "kalshiD": 0.106
       },
       {
@@ -1817,9 +1817,9 @@
         "rep": "Tom Cotton",
         "polls": 5,
         "pres2024": -30.6,
-        "expected": -21.3,
+        "expected": -21.4,
         "pollMargin": -8.7,
-        "overUnder": 12.6,
+        "overUnder": 12.7,
         "kalshiD": 0.061
       }
     ]
@@ -1833,7 +1833,7 @@
         "type": "House",
         "now": 53.3,
         "ch1": -6.9,
-        "ch7": 3,
+        "ch7": 3.3,
         "dem": "Sean McCann",
         "rep": "Bill Huizenga",
         "thirdParty": false
@@ -1899,7 +1899,7 @@
         "type": "Governor",
         "now": 71.5,
         "ch1": 4,
-        "ch7": 16,
+        "ch7": 14.1,
         "dem": "Aaron Ford",
         "rep": "Joe Lombardo",
         "thirdParty": false
@@ -1910,7 +1910,7 @@
         "type": "Senate",
         "now": 23.5,
         "ch1": 3,
-        "ch7": 6.4,
+        "ch7": 5.8,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
         "thirdParty": false
@@ -1943,7 +1943,7 @@
         "type": "Senate",
         "now": 68.5,
         "ch1": 2.7,
-        "ch7": 0,
+        "ch7": 0.3,
         "dem": "Abdul El-Sayed",
         "rep": "Mike Rogers",
         "thirdParty": false
@@ -1984,17 +1984,6 @@
         "thirdParty": false
       },
       {
-        "key": "G-NV",
-        "name": "Nevada",
-        "type": "Governor",
-        "now": 71.5,
-        "ch1": 4,
-        "ch7": 16,
-        "dem": "Aaron Ford",
-        "rep": "Joe Lombardo",
-        "thirdParty": false
-      },
-      {
         "key": "H-CO-05",
         "name": "CO-5",
         "type": "House",
@@ -2028,17 +2017,6 @@
         "thirdParty": false
       },
       {
-        "key": "H-NC-01",
-        "name": "NC-1",
-        "type": "House",
-        "now": 82.5,
-        "ch1": 1,
-        "ch7": 15,
-        "dem": "Don Davis",
-        "rep": "Laurie Buckhout",
-        "thirdParty": false
-      },
-      {
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
@@ -2050,14 +2028,25 @@
         "thirdParty": false
       },
       {
-        "key": "G-OH",
-        "name": "Ohio",
+        "key": "G-NV",
+        "name": "Nevada",
         "type": "Governor",
-        "now": 83.3,
-        "ch1": 1.8,
-        "ch7": 12.8,
-        "dem": "Amy Acton",
-        "rep": "Vivek Ramaswamy",
+        "now": 71.5,
+        "ch1": 4,
+        "ch7": 14.1,
+        "dem": "Aaron Ford",
+        "rep": "Joe Lombardo",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-01",
+        "name": "NC-1",
+        "type": "House",
+        "now": 82.5,
+        "ch1": 1,
+        "ch7": 13.6,
+        "dem": "Don Davis",
+        "rep": "Laurie Buckhout",
         "thirdParty": false
       },
       {
@@ -2091,6 +2080,17 @@
         "ch7": 12.2,
         "dem": "Teresa Benitez-Thompson",
         "rep": "David Flippo",
+        "thirdParty": false
+      },
+      {
+        "key": "G-GA",
+        "name": "Georgia",
+        "type": "Governor",
+        "now": 61.5,
+        "ch1": 1,
+        "ch7": 12,
+        "dem": "Keisha Lance Bottoms",
+        "rep": "Rick Jackson",
         "thirdParty": false
       }
     ]
