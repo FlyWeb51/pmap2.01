@@ -126,7 +126,7 @@ async function checkPollAverage(raceId) {
       "average must be an ARRAY of {candidate, percentage} - an object here is the NaN bug"
     );
   for (const a of d.average) {
-    if (typeof a.percentage !== "number")
+    if (typeof (a.percentage !== undefined ? a.percentage : a.pct) !== "number")
       fail(`data/poll-average/${raceId}.json`, `"${a.candidate}" percentage not numeric`);
   }
 }
