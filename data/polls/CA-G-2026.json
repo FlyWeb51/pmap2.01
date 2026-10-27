@@ -1,8 +1,37 @@
 {
   "raceId": "CA-G-2026",
-  "count": 16,
-  "updated_at": "2026-10-27T17:13:42.115Z",
+  "count": 17,
+  "updated_at": "2026-10-27T19:32:08.076Z",
   "polls": [
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-10-24",
+      "fieldDates": "2026-10-19 to 2026-10-24",
+      "sampleSize": 799,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "KGTV-TV (California) | San Diego Union-Tribune",
+      "results": [
+        {
+          "candidate": "Xavier Becerra (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Steve Hilton (R)",
+          "party": "R",
+          "pct": 32,
+          "percentage": 32
+        }
+      ],
+      "sourceUrl": "https://results.surveyusa.com/client/PollReport.aspx?g=b118a915-559d-4669-b870-8a3eae933903",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1575
+    },
     {
       "pollster": "McLaughlin & Associates",
       "endDate": "2026-10-20",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0583
+      "weight": 1.056
     },
     {
       "pollster": "Emerson College",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1562
+      "weight": 1.1536
     },
     {
       "pollster": "ActiVote",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6823
+      "weight": 0.6808
     },
     {
       "pollster": "TrueDot",
@@ -117,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9821
+      "weight": 0.9799
     },
     {
       "pollster": "Manhattan Institute",
@@ -152,7 +181,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7628
+      "weight": 0.7611
     },
     {
       "pollster": "IVC Media",
@@ -181,7 +210,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0065
+      "weight": 1.0043
     },
     {
       "pollster": "University of California Berkeley Institute of Governmental Studies",
@@ -210,7 +239,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8367
+      "weight": 0.8348
     },
     {
       "pollster": "SurveyUSA",
@@ -239,7 +268,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5096
+      "weight": 0.5085
     },
     {
       "pollster": "TrueDot",
@@ -268,7 +297,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7253
+      "weight": 0.7237
     },
     {
       "pollster": "Public Policy Institute of California",
@@ -303,7 +332,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.492
+      "weight": 0.4909
     },
     {
       "pollster": "University of California Berkeley Institute of Governmental Studies",
@@ -332,7 +361,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.317
+      "weight": 0.3163
     },
     {
       "pollster": "Public Policy Institute of California",
@@ -367,7 +396,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1023
+      "weight": 0.1021
     },
     {
       "pollster": "Kreate Strategies",
@@ -396,7 +425,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0563
+      "weight": 0.0561
     },
     {
       "pollster": "University of Southern California/California State University Long Beach Center for Urban Politics and Policy/Cal Poly Pomona",
@@ -425,7 +454,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.034
+      "weight": 0.0339
     },
     {
       "pollster": "University of Southern California/California State University Long Beach Center for Urban Politics and Policy/Cal Poly Pomona",
@@ -454,7 +483,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.034,
+      "weight": 0.0339,
       "otherMatchup": true
     },
     {
@@ -484,7 +513,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0482
+      "weight": 0.0481
     }
   ]
 }

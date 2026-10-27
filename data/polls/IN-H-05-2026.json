@@ -1,8 +1,37 @@
 {
   "raceId": "IN-H-05-2026",
-  "count": 2,
-  "updated_at": "2026-10-27T17:13:42.066Z",
+  "count": 3,
+  "updated_at": "2026-10-27T19:32:08.041Z",
   "polls": [
+    {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-10-22",
+      "fieldDates": "2026-10-21 to 2026-10-22",
+      "sampleSize": 634,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Victoria Spartz (R)",
+          "party": "R",
+          "pct": 47.4,
+          "percentage": 47.4
+        },
+        {
+          "candidate": "J.D. Ford (D)",
+          "party": "D",
+          "pct": 44.6,
+          "percentage": 44.6
+        }
+      ],
+      "sourceUrl": "https://www.indystar.com/story/news/politics/elections/2026/10/27/new-poll-spartz-in-close-race-with-democratic-challenger-in-indianas-5th/92441978007/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9845
+    },
     {
       "pollster": "Expedition Strategies",
       "endDate": "2026-10-04",
@@ -30,13 +59,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2891
+      "weight": 0.2884
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-07-20",
       "endDateUS": "7/20/2026",
-      "weight": 0.0447,
+      "weight": 0.0446,
       "sampleSize": 400,
       "population": "LV",
       "results": [

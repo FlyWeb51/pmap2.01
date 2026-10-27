@@ -1,12 +1,58 @@
 {
   "raceId": "AZ-G-2026",
-  "count": 43,
+  "count": 44,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "HighGround",
+      "sponsors": null,
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-25",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.12news.com/article/news/politics/elections/poll-arizona-democrats-lead-statewide-races-hobbs-ahead-12-points-arizona-election/75-c9151a02-b7da-437e-a547-a89d8deb16dc",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Katie Hobbs (D)",
+          "party": "D",
+          "percentage": 51.5
+        },
+        {
+          "candidate": "Andy Biggs (R)",
+          "party": "R",
+          "percentage": 39.3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5.7
+        },
+        {
+          "candidate": "Teri Hourihan (NLP)",
+          "party": "NLP",
+          "percentage": 1.8
+        },
+        {
+          "candidate": "Risa Lombardo (GRE)",
+          "party": "GRE",
+          "percentage": 1.5
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "GrayHouse",
       "sponsors": "Friends of Elijah Norton",

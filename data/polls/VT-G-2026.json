@@ -1,8 +1,37 @@
 {
   "raceId": "VT-G-2026",
-  "count": 7,
-  "updated_at": "2026-10-27T17:13:42.138Z",
+  "count": 8,
+  "updated_at": "2026-10-27T19:32:08.092Z",
   "polls": [
+    {
+      "pollster": "State Navigate",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-23 to 2026-10-25",
+      "sampleSize": 1752,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Phil Scott (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Amanda Janoo (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://articles.statenavigate.com/vt/final-vermont-governor-poll-has-phil-scott-holding-a-3-point-lead/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.7541
+    },
     {
       "pollster": "State Navigate",
       "endDate": "2026-10-04",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.796
+      "weight": 0.7943
     },
     {
       "pollster": "Braun Research",
@@ -83,7 +112,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.518
+      "weight": 0.5169
     },
     {
       "pollster": "University of New Hampshire",
@@ -130,7 +159,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5513
+      "weight": 0.55
     },
     {
       "pollster": "University of New Hampshire",
@@ -171,7 +200,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1358,
+      "weight": 0.1355,
       "otherMatchup": true
     },
     {
@@ -213,7 +242,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1358
+      "weight": 0.1355
     },
     {
       "pollster": "University of New Hampshire",
@@ -254,7 +283,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0705,
+      "weight": 0.0703,
       "otherMatchup": true
     },
     {
@@ -296,7 +325,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0705
+      "weight": 0.0703
     }
   ]
 }

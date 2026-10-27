@@ -1,12 +1,38 @@
 {
   "raceId": "NV-G-2026",
-  "count": 16,
+  "count": 17,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Hart Research Associates/Public Opinion Strategies",
+      "sponsors": "A More Affordable Nevada",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-25",
+      "sampleSize": 950,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://hub.nationaljournal.com/wednesday-morning-quarterbacking",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Aaron Ford (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Joe Lombardo (R)",
+          "party": "R",
+          "percentage": 45
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Concord Public Opinion Partners",
       "sponsors": "Education Reform Now Advocacy",

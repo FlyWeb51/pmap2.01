@@ -1,12 +1,48 @@
 {
   "raceId": "VT-G-2026",
-  "count": 8,
+  "count": 9,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "State Navigate",
+      "sponsors": null,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "sampleSize": 1752,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://articles.statenavigate.com/vt/final-vermont-governor-poll-has-phil-scott-holding-a-3-point-lead/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Phil Scott (R)",
+          "party": "R",
+          "percentage": 49
+        },
+        {
+          "candidate": "Amanda Janoo (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "State Navigate",
       "sponsors": null,

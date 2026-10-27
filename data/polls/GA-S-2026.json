@@ -1,8 +1,37 @@
 {
   "raceId": "GA-S-2026",
-  "count": 49,
-  "updated_at": "2026-10-27T17:13:42.062Z",
+  "count": 50,
+  "updated_at": "2026-10-27T19:32:08.039Z",
   "polls": [
+    {
+      "pollster": "Echelon Insights",
+      "endDate": "2026-10-23",
+      "fieldDates": "2026-10-16 to 2026-10-23",
+      "sampleSize": 508,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "NetChoice",
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "pct": 55,
+          "percentage": 55
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        }
+      ],
+      "sourceUrl": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9019
+    },
     {
       "pollster": "ActiVote In average",
       "endDate": "2026-10-20",
@@ -31,7 +60,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7483
+      "weight": 0.7467
     },
     {
       "pollster": "Quantus Insights R-sponsored In average",
@@ -61,7 +90,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4796
+      "weight": 0.4786
     },
     {
       "pollster": "Atlanta Journal-Constitution In average",
@@ -89,7 +118,7 @@
         "https://pollingsource.com/senate/GA"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0541
+      "weight": 1.0518
     },
     {
       "pollster": "University of Georgia School of Public and International Affairs In average",
@@ -120,7 +149,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Atlanta Journal-Constitution",
-      "weight": 1.0541
+      "weight": 1.0518
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -150,7 +179,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4815
+      "weight": 0.4804
     },
     {
       "pollster": "Wedgewood Polls First choice only, not in average",
@@ -179,7 +208,7 @@
         "https://pollingsource.com/senate/GA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6188
+      "weight": 0.6174
     },
     {
       "pollster": "Big Data Poll R-sponsored First choice only, not in average",
@@ -209,7 +238,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public Polling Project",
-      "weight": 0.2611
+      "weight": 0.2605
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts First choice only, not in average",
@@ -239,7 +268,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3473
+      "weight": 0.3465
     },
     {
       "pollster": "Big Data Poll",
@@ -267,7 +296,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2288
+      "weight": 0.2283
     },
     {
       "pollster": "YouGov",
@@ -297,7 +326,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7989
+      "weight": 0.7971
     },
     {
       "pollster": "Quantus Insights",
@@ -327,7 +356,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2166
+      "weight": 0.2161
     },
     {
       "pollster": "Rasmussen Reports",
@@ -356,7 +385,7 @@
         "https://pollingsource.com/senate/GA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5199
+      "weight": 0.5187
     },
     {
       "pollster": "Trafalgar Group",
@@ -386,7 +415,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2568
+      "weight": 0.2563
     },
     {
       "pollster": "InsiderAdvantage",
@@ -417,12 +446,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "James Magazine Online",
-      "weight": 0.1206
+      "weight": 0.1203
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
       "endDate": "2026-07-16",
-      "weight": 0.0663,
+      "weight": 0.0661,
       "sampleSize": 1060,
       "population": "LV",
       "results": [
@@ -453,7 +482,7 @@
     {
       "pollster": "Wick",
       "endDate": "2026-06-30",
-      "weight": 0.0964,
+      "weight": 0.0962,
       "sampleSize": 1175,
       "population": "LV",
       "results": [
@@ -482,7 +511,7 @@
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-06-27",
-      "weight": 0.0374,
+      "weight": 0.0373,
       "sampleSize": 1002,
       "population": "RV",
       "results": [
@@ -536,7 +565,7 @@
         "https://pollingsource.com/senate/GA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0748
+      "weight": 0.0746
     },
     {
       "pollster": "Echelon Insights",
@@ -571,7 +600,7 @@
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-02",
-      "weight": 0.0056,
+      "weight": 0.0055,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
@@ -624,7 +653,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0056,
+      "weight": 0.0055,
       "otherMatchup": true
     },
     {

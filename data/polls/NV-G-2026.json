@@ -1,8 +1,37 @@
 {
   "raceId": "NV-G-2026",
-  "count": 12,
-  "updated_at": "2026-10-27T17:13:42.127Z",
+  "count": 13,
+  "updated_at": "2026-10-27T19:32:08.086Z",
   "polls": [
+    {
+      "pollster": "Hart Research Associates/Public Opinion Strategies",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-20 to 2026-10-25",
+      "sampleSize": 950,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "A More Affordable Nevada",
+      "results": [
+        {
+          "candidate": "Aaron Ford (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Joe Lombardo (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://hub.nationaljournal.com/wednesday-morning-quarterbacking",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.6458
+    },
     {
       "pollster": "Concord Public Opinion Partners",
       "endDate": "2026-09-30",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2801
+      "weight": 0.2795
     },
     {
       "pollster": "Tarrance Group",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0645
+      "weight": 0.0643
     },
     {
       "pollster": "Grassroots Targeting",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.091
+      "weight": 0.0908
     },
     {
       "pollster": "Public Policy Polling",
@@ -117,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0481
+      "weight": 0.048
     },
     {
       "pollster": "Public Opinion Strategies",
@@ -146,7 +175,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0337
+      "weight": 0.0336
     },
     {
       "pollster": "Global Strategy Group",

@@ -1,12 +1,63 @@
 {
   "raceId": "NE-G-2026",
-  "count": 12,
+  "count": 13,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Echelon Insights",
+      "sponsors": "NetChoice",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-23",
+      "sampleSize": 407,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jim Pillen (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Lynne Walz (D)",
+          "party": "D",
+          "percentage": 40
+        },
+        {
+          "candidate": "Rick Beard (LMN)",
+          "party": "LMN",
+          "percentage": 7
+        },
+        {
+          "candidate": "Brett Lindstrom (AME)",
+          "party": "AME",
+          "percentage": 4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Concord Public Opinion Partners",
       "sponsors": "Education Reform Now Advocacy",

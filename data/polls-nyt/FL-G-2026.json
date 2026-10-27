@@ -1,12 +1,58 @@
 {
   "raceId": "FL-G-2026",
-  "count": 64,
+  "count": 65,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Echelon Insights",
+      "sponsors": "NetChoice",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-23",
+      "sampleSize": 515,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "percentage": 50
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        },
+        {
+          "candidate": "Scott Eckhard Jewett (LIB)",
+          "party": "LIB",
+          "percentage": 1
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "co/efficient",
       "sponsors": null,

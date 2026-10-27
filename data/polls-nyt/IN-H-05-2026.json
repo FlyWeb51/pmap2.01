@@ -1,12 +1,53 @@
 {
   "raceId": "IN-H-05-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Quantus Insights",
+      "sponsors": null,
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-22",
+      "sampleSize": 634,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.indystar.com/story/news/politics/elections/2026/10/27/new-poll-spartz-in-close-race-with-democratic-challenger-in-indianas-5th/92441978007/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Victoria Spartz (R)",
+          "party": "R",
+          "percentage": 47.4
+        },
+        {
+          "candidate": "J.D. Ford (D)",
+          "party": "D",
+          "percentage": 44.6
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4.7
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2.2
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 1.2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Expedition Strategies",
       "sponsors": "House Majority PAC",

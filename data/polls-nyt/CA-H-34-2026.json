@@ -1,12 +1,43 @@
 {
   "raceId": "CA-H-34-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "USC Democracy and Fair Elections Lab",
+      "sponsors": null,
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-24",
+      "sampleSize": 423,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.politico.com/newsletters/california-playbook/2026/10/27/poll-jimmy-gomez-tough-race-01135850?nname=california-playbook&nid=00000150-384f-da43-aff2-bf7fd35a0000&nrid=052cd1f0-7504-4186-96c4-85ef214e718b",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Angela Gonzales-Torres (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Jimmy Gomez (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Center for Strategic Politics",
       "sponsors": null,
