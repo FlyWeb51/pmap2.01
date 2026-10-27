@@ -1,12 +1,53 @@
 {
   "raceId": "SC-S-2026",
-  "count": 22,
+  "count": 23,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Targoz Market Research",
+      "sponsors": "South Carolina Policy Council",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-25",
+      "sampleSize": 895,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.foxcarolina.com/2026/10/26/new-poll-shows-neck-and-neck-senate-race-double-digit-lead-governor-sc-midterms/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Kasie Whitener (LIB)",
+          "party": "LIB",
+          "percentage": 2
+        },
+        {
+          "candidate": "Mark Hackett (CON)",
+          "party": "CON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Impact Research",
       "sponsors": "Fresh Start SC PAC",

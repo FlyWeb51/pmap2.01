@@ -1,12 +1,53 @@
 {
   "raceId": "TX-G-2026",
-  "count": 57,
+  "count": 58,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "YouGov",
+      "sponsors": "Univision",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-21",
+      "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.univision.com/noticias/politica/poll-univision-texas-latinos",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Greg Abbott (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Gina Hinojosa (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "ActiVote",
       "sponsors": null,

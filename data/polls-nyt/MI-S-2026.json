@@ -1,12 +1,43 @@
 {
   "raceId": "MI-S-2026",
-  "count": 100,
+  "count": 101,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Glengariff Group, Inc.",
+      "sponsors": "Detroit News | WDIV-TV",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-22",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://detroitnews.com/story/news/politics/2026/10/27/jocelyn-bensons-lead-over-john-james-grows-in-michigan-governor-race/92441176007/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "percentage": 51.4
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "percentage": 45.1
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3.6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "InsiderAdvantage",
       "sponsors": null,

@@ -1,12 +1,84 @@
 {
   "raceId": "ME-S-2026",
-  "count": 71,
+  "count": 73,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Marist University",
+      "sponsors": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-25",
+      "sampleSize": 1449,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-maine-october-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "percentage": 53
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Marist University",
+      "sponsors": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-25",
+      "sampleSize": 1449,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-maine-october-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Trafalgar Group",
       "sponsors": null,

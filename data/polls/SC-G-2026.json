@@ -1,8 +1,49 @@
 {
   "raceId": "SC-G-2026",
-  "count": 4,
-  "updated_at": "2026-10-27T05:17:04.340Z",
+  "count": 5,
+  "updated_at": "2026-10-27T12:27:10.021Z",
   "polls": [
+    {
+      "pollster": "Targoz Market Research",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-16 to 2026-10-25",
+      "sampleSize": 895,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "South Carolina Policy Council",
+      "results": [
+        {
+          "candidate": "Alan Wilson (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Jermaine Johnson (D)",
+          "party": "D",
+          "pct": 41,
+          "percentage": 41
+        },
+        {
+          "candidate": "Michael Addison (UCP)",
+          "party": null,
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Walid Hakim (GRE)",
+          "party": null,
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://www.foxcarolina.com/2026/10/26/new-poll-shows-neck-and-neck-senate-race-double-digit-lead-governor-sc-midterms/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.2623
+    },
     {
       "pollster": "Trafalgar Group",
       "endDate": "2026-10-18",
@@ -42,7 +83,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.598
+      "weight": 0.5938
     },
     {
       "pollster": "National Public Affairs",
@@ -83,7 +124,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.424
+      "weight": 0.4211
     },
     {
       "pollster": "Hart Research Associates",
@@ -112,7 +153,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1009
+      "weight": 0.1002
     },
     {
       "pollster": "Public Policy Polling",
@@ -141,7 +182,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0456
+      "weight": 0.0452
     }
   ]
 }
