@@ -46,11 +46,14 @@ jobs:
       - name: Pull out generic-ballot polls by state and district
         run: node scripts/build-generic-polls.js
 
+      - name: Rebuild national generic ballot file
+        run: node scripts/build-generic-ballot.js
+
       - name: Commit if changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A data/polls-nyt data/polls data/poll-average data/overview.json data/generic-polls.json
+          git add -A data/polls-nyt data/polls data/poll-average data/overview.json data/generic-polls.json data/generic-ballot.json
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
           git commit -m "NYT polls: refresh"
           for i in 1 2 3; do
