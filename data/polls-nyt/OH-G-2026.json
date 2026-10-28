@@ -1,6 +1,6 @@
 {
   "raceId": "OH-G-2026",
-  "count": 45,
+  "count": 46,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -728,6 +728,42 @@
           "candidate": "Someone else (NON)",
           "party": "NON",
           "percentage": 3
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-31",
+      "sampleSize": 504,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/ohio-ge-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 37
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 12
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "LIB",
+          "percentage": 2
         }
       ],
       "note": null

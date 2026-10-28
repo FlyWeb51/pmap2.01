@@ -1,12 +1,38 @@
 {
   "raceId": "TX-G-2026",
-  "count": 58,
+  "count": 59,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "YouGov Blue",
+      "sponsors": "254 Labs",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-26",
+      "sampleSize": 1000,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://254labs.io/news/2026-10-tx",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Gina Hinojosa (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Greg Abbott (R)",
+          "party": "R",
+          "percentage": 46
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": "Univision",

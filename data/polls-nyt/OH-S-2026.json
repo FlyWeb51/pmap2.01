@@ -1,6 +1,6 @@
 {
   "raceId": "OH-S-2026",
-  "count": 48,
+  "count": 49,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -1071,6 +1071,42 @@
           "candidate": "Someone else (NON)",
           "party": "NON",
           "percentage": 2.6
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-31",
+      "sampleSize": 504,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/ohio-ge-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 4
         }
       ],
       "note": null

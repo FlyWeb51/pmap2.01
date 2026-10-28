@@ -1,12 +1,74 @@
 {
   "raceId": "WI-G-2026",
-  "count": 37,
+  "count": 39,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Marquette University Law School",
+      "sponsors": null,
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-22",
+      "sampleSize": 818,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://law.marquette.edu/poll/2026/10/28/mlsp92-press-release/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "David Crowley (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Tom Tiffany (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Marquette University Law School",
+      "sponsors": null,
+      "startDate": "2026-10-14",
+      "endDate": "2026-10-22",
+      "sampleSize": 668,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://law.marquette.edu/poll/2026/10/28/mlsp92-press-release/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "David Crowley (D)",
+          "party": "D",
+          "percentage": 53
+        },
+        {
+          "candidate": "Tom Tiffany (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": "CFC Action Fund | City Forward Collective",

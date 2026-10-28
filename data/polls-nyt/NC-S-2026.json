@@ -1,6 +1,6 @@
 {
   "raceId": "NC-S-2026",
-  "count": 64,
+  "count": 65,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -85,6 +85,47 @@
           "candidate": "Someone else (NON)",
           "party": "NON",
           "percentage": 0.4
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "High Point University",
+      "sponsors": null,
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-20",
+      "sampleSize": 620,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.highpoint.edu/blog/2026/10/hpu-yougov-poll-north-carolina-likely-voters-weigh-in-on-u-s-senate-race-and-more/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "percentage": 54
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know/Would not vote (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Shannon Bray (LIB)",
+          "party": "LIB",
+          "percentage": 2
+        },
+        {
+          "candidate": "Michael Dublin (GRE)",
+          "party": "GRE",
+          "percentage": 1
         }
       ],
       "note": null

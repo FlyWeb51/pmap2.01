@@ -1,8 +1,49 @@
 {
   "raceId": "MT-S-2026",
-  "count": 25,
-  "updated_at": "2026-10-28T17:49:10.346Z",
+  "count": 26,
+  "updated_at": "2026-10-28T22:42:20.426Z",
   "polls": [
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "endDate": "2026-10-23",
+      "fieldDates": "2026-10-22 to 2026-10-23",
+      "sampleSize": 410,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Education Reform Now Advocacy",
+      "results": [
+        {
+          "candidate": "Seth Bodnar (I)",
+          "party": "O",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        },
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "pct": 10,
+          "percentage": 10
+        },
+        {
+          "candidate": "Kyle Austin (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://dfer.org/policy-polling-memos/montana/montana-general-election-poll-findings/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3947
+    },
     {
       "pollster": "Quantus Insights R-sponsored In average",
       "endDate": "2026-10-18",
@@ -30,7 +71,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4506
+      "weight": 0.4484
     },
     {
       "pollster": "Peak Insights R-sponsored In average",
@@ -59,7 +100,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3396
+      "weight": 0.338
     },
     {
       "pollster": "Concord Public Opinion Partners D-sponsored Internal In average",
@@ -89,7 +130,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Education Reform Now Advocacy",
-      "weight": 0.2787
+      "weight": 0.2774
     },
     {
       "pollster": "American Pulse Research & Polling",
@@ -119,7 +160,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "NonStop Local",
-      "weight": 0.2463
+      "weight": 0.2451
     },
     {
       "pollster": "Quantus Insights",
@@ -148,7 +189,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2035
+      "weight": 0.2025
     },
     {
       "pollster": "Aspect Strategic",
@@ -189,7 +230,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2176
+      "weight": 0.2166
     },
     {
       "pollster": "Rutgers University Eagleton Institute of Politics",
@@ -219,7 +260,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Montana Free Press",
-      "weight": 0.354
+      "weight": 0.3523
     },
     {
       "pollster": "Peak Insights",
@@ -248,7 +289,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1227
+      "weight": 0.1221
     },
     {
       "pollster": "Hart Research D-sponsored",
@@ -278,7 +319,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Forward Montana",
-      "weight": 0.0872
+      "weight": 0.0868
     },
     {
       "pollster": "Tavern Research",
@@ -306,12 +347,12 @@
         "https://pollingsource.com/senate/MT"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0583
+      "weight": 0.058
     },
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.112,
+      "weight": 0.1115,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -336,7 +377,7 @@
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.112,
+      "weight": 0.1115,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -361,7 +402,7 @@
     {
       "pollster": "GQR (I)",
       "endDate": "2026-07-26",
-      "weight": 0.112,
+      "weight": 0.1115,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -411,12 +452,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Contours Inc.",
-      "weight": 0.056
+      "weight": 0.0558
     },
     {
       "pollster": "The Bullfinch Group",
       "endDate": "2026-07-16",
-      "weight": 0.056,
+      "weight": 0.0557,
       "sampleSize": 793,
       "population": "LV",
       "results": [
@@ -469,12 +510,12 @@
         "https://pollingsource.com/senate/MT"
       ],
       "reviewStatus": "auto",
-      "weight": 0.056
+      "weight": 0.0557
     },
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-06-24",
-      "weight": 0.0338,
+      "weight": 0.0337,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -504,7 +545,7 @@
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-06-24",
-      "weight": 0.0677,
+      "weight": 0.0673,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -529,7 +570,7 @@
     {
       "pollster": "GrayHouse",
       "endDate": "2026-06-24",
-      "weight": 0.0535,
+      "weight": 0.0532,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -557,7 +598,7 @@
     {
       "pollster": "Public Opinion Strategies (R)",
       "endDate": "2026-06-11",
-      "weight": 0.0198,
+      "weight": 0.0197,
       "sampleSize": 500,
       "population": "LV",
       "results": [

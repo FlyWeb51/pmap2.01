@@ -1,12 +1,53 @@
 {
   "raceId": "MT-S-2026",
-  "count": 32,
+  "count": 33,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-23",
+      "sampleSize": 410,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://dfer.org/policy-polling-memos/montana/montana-general-election-poll-findings/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Seth Bodnar (I)",
+          "party": "I",
+          "percentage": 39
+        },
+        {
+          "candidate": "Kurt Alme (R)",
+          "party": "R",
+          "percentage": 38
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 11
+        },
+        {
+          "candidate": "Alani Bankhead (D)",
+          "party": "D",
+          "percentage": 10
+        },
+        {
+          "candidate": "Kyle Austin (LIB)",
+          "party": "LIB",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Quantus Insights",
       "sponsors": null,

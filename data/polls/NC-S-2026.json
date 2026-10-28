@@ -1,7 +1,7 @@
 {
   "raceId": "NC-S-2026",
-  "count": 76,
-  "updated_at": "2026-10-28T17:49:10.348Z",
+  "count": 77,
+  "updated_at": "2026-10-28T22:42:20.427Z",
   "polls": [
     {
       "pollster": "Quantus Insights R-sponsored In average",
@@ -31,7 +31,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5511
+      "weight": 0.5485
     },
     {
       "pollster": "ActiVote In average",
@@ -61,7 +61,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7308
+      "weight": 0.7274
     },
     {
       "pollster": "Carolina Journal/Harper R-sponsored In average",
@@ -89,7 +89,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4475
+      "weight": 0.4454
     },
     {
       "pollster": "Harper Polling",
@@ -119,7 +119,48 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Carolina Journal",
-      "weight": 0.4475
+      "weight": 0.4454
+    },
+    {
+      "pollster": "High Point University",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-01 to 2026-10-20",
+      "sampleSize": 620,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Shannon Bray (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        },
+        {
+          "candidate": "Michael Dublin (GRE)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://www.highpoint.edu/blog/2026/10/hpu-yougov-poll-north-carolina-likely-voters-weigh-in-on-u-s-senate-race-and-more/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9056
     },
     {
       "pollster": "SurveyUSA",
@@ -150,7 +191,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "WRAL News | WSOC-TV",
-      "weight": 0.7526
+      "weight": 0.7491
     },
     {
       "pollster": "WRAL-TV/SurveyUSA",
@@ -178,7 +219,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7526
+      "weight": 0.7491
     },
     {
       "pollster": "SurveyUSA In average",
@@ -206,7 +247,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7526
+      "weight": 0.7491
     },
     {
       "pollster": "SurveyUSA Not in average",
@@ -234,7 +275,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7526
+      "weight": 0.7491
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -264,7 +305,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.479
+      "weight": 0.4767
     },
     {
       "pollster": "Elon University/YouGov First choice only, not in average",
@@ -293,7 +334,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6559
+      "weight": 0.6529
     },
     {
       "pollster": "YouGov",
@@ -334,7 +375,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6553
+      "weight": 0.6523
     },
     {
       "pollster": "Change Research D-sponsored First choice only, not in average",
@@ -365,7 +406,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Carolina Forward",
-      "weight": 0.3896
+      "weight": 0.3877
     },
     {
       "pollster": "Carolina Forward/Change Res.",
@@ -393,7 +434,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3896
+      "weight": 0.3877
     },
     {
       "pollster": "East Carolina University First choice only, not in average",
@@ -423,7 +464,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7022
+      "weight": 0.6989
     },
     {
       "pollster": "Big Data Poll First choice only, not in average",
@@ -454,7 +495,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public Polling Project",
-      "weight": 0.5699
+      "weight": 0.5673
     },
     {
       "pollster": "Quantus Insights",
@@ -484,7 +525,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.251
+      "weight": 0.2498
     },
     {
       "pollster": "Rasmussen Reports",
@@ -512,7 +553,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6192
+      "weight": 0.6163
     },
     {
       "pollster": "Opinion Diagnostics",
@@ -543,7 +584,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Common Cause North Carolina",
-      "weight": 0.2674
+      "weight": 0.2662
     },
     {
       "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
@@ -574,7 +615,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "AARP",
-      "weight": 0.305
+      "weight": 0.3036
     },
     {
       "pollster": "Harper Polling",
@@ -602,7 +643,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1915
+      "weight": 0.1906
     },
     {
       "pollster": "YouGov",
@@ -632,7 +673,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7802
+      "weight": 0.7765
     },
     {
       "pollster": "InsiderAdvantage",
@@ -662,7 +703,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2953
+      "weight": 0.2939
     },
     {
       "pollster": "Quantus Insights",
@@ -690,7 +731,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4231
+      "weight": 0.4211
     },
     {
       "pollster": "High Point University",
@@ -719,7 +760,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4426
+      "weight": 0.4405
     },
     {
       "pollster": "High Point University",
@@ -747,7 +788,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4037
+      "weight": 0.4018
     },
     {
       "pollster": "Harper Polling",
@@ -778,7 +819,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Carolina Journal",
-      "weight": 0.2007
+      "weight": 0.1997
     },
     {
       "pollster": "Carolina Journal/Harper",
@@ -806,7 +847,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4014
+      "weight": 0.3995
     },
     {
       "pollster": "Catawba College/YouGov",
@@ -835,7 +876,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4842
+      "weight": 0.482
     },
     {
       "pollster": "YouGov",
@@ -864,7 +905,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4842
+      "weight": 0.482
     },
     {
       "pollster": "The Trafalgar Group",
@@ -893,7 +934,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2387
+      "weight": 0.2376
     },
     {
       "pollster": "Trafalgar Group",
@@ -922,7 +963,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2387
+      "weight": 0.2376
     },
     {
       "pollster": "East Carolina University Center for Survey Research",
@@ -952,7 +993,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3205
+      "weight": 0.319
     },
     {
       "pollster": "Elon University/YouGov",
@@ -981,7 +1022,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3256
+      "weight": 0.324
     },
     {
       "pollster": "YouGov",
@@ -1022,7 +1063,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2736
+      "weight": 0.2723
     },
     {
       "pollster": "High Point University/YouGov",
@@ -1052,7 +1093,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2099
+      "weight": 0.2089
     },
     {
       "pollster": "High Point University",
@@ -1080,7 +1121,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1906
+      "weight": 0.1897
     },
     {
       "pollster": "Harper Polling",
@@ -1111,7 +1152,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Carolina Journal",
-      "weight": 0.0868
+      "weight": 0.0864
     },
     {
       "pollster": "Carolina Journal/Harper",
@@ -1139,7 +1180,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1736
+      "weight": 0.1727
     },
     {
       "pollster": "Change Research",
@@ -1170,7 +1211,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Carolina Forward",
-      "weight": 0.0977
+      "weight": 0.0972
     },
     {
       "pollster": "Carolina Forward/Change Res.",
@@ -1198,7 +1239,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1954
+      "weight": 0.1945
     },
     {
       "pollster": "Change Research",
@@ -1229,7 +1270,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Gary Pearce | Sam Hunt",
-      "weight": 0.0895
+      "weight": 0.0891
     },
     {
       "pollster": "Elon University/YouGov",
@@ -1258,7 +1299,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1214
+      "weight": 0.1208
     },
     {
       "pollster": "Political Polls",
@@ -1286,7 +1327,7 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1257
+      "weight": 0.1252
     },
     {
       "pollster": "YouGov",
@@ -1316,12 +1357,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Elon University",
-      "weight": 0.1214
+      "weight": 0.1208
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-07-27",
-      "weight": 0.0731,
+      "weight": 0.0728,
       "sampleSize": 1005,
       "population": "RV",
       "results": [
@@ -1375,12 +1416,12 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1463
+      "weight": 0.1456
     },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-07-11",
-      "weight": 0.0439,
+      "weight": 0.0437,
       "sampleSize": 759,
       "population": "RV",
       "results": [
@@ -1433,12 +1474,12 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0878
+      "weight": 0.0874
     },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
-      "weight": 0.0628,
+      "weight": 0.0626,
       "sampleSize": 601,
       "population": "LV",
       "results": [
@@ -1489,12 +1530,12 @@
         "https://pollingsource.com/senate/NC"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0628
+      "weight": 0.0626
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-06-10",
-      "weight": 0.0521,
+      "weight": 0.0518,
       "sampleSize": 905,
       "population": "LV",
       "results": [
@@ -1544,12 +1585,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0443
+      "weight": 0.0441
     },
     {
       "pollster": "Harper Polling",
       "endDate": "2026-05-11",
-      "weight": 0.0106,
+      "weight": 0.0105,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -1579,7 +1620,7 @@
     {
       "pollster": "Change Research (D)",
       "endDate": "2026-05-08",
-      "weight": 0.0125,
+      "weight": 0.0124,
       "sampleSize": 957,
       "population": "LV",
       "results": [
@@ -1609,7 +1650,7 @@
     {
       "pollster": "Opinion Diagnostics",
       "endDate": "2026-04-24",
-      "weight": 0.0076,
+      "weight": 0.0075,
       "sampleSize": 830,
       "population": "RV",
       "results": [
@@ -1638,7 +1679,7 @@
     {
       "pollster": "Opinion Diagnostics",
       "endDate": "2026-04-24",
-      "weight": 0.0152,
+      "weight": 0.0151,
       "sampleSize": 830,
       "population": "RV",
       "results": [
@@ -1826,7 +1867,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0067
+      "weight": 0.0066
     },
     {
       "pollster": "Public Policy Polling",
@@ -1881,7 +1922,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0049
+      "weight": 0.0048
     },
     {
       "pollster": "Change Research",
