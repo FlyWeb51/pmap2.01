@@ -6,12 +6,12 @@
       {
         "ticker": "CONTROLH-2026-D",
         "label": "Democratic Party",
-        "pct": 90.6
+        "pct": 91.1
       },
       {
         "ticker": "CONTROLH-2026-R",
         "label": "Republican Party",
-        "pct": 9.7
+        "pct": 9
       }
     ]
   },
@@ -34,23 +34,23 @@
   "housePopVoteMarginD": {
     "event": "KXHOUSEPOPVOTEMARGIND-26NOV03",
     "title": "2026 Midterms: House popular vote margin of victory? (Directional)",
-    "median": 9.7,
+    "median": 9.6,
     "ladder": [
       {
         "atLeast": 2,
-        "pct": 94.5
+        "pct": 95
       },
       {
         "atLeast": 4,
-        "pct": 92.5
+        "pct": 91.5
       },
       {
         "atLeast": 5,
-        "pct": 91
+        "pct": 90.5
       },
       {
         "atLeast": 6,
-        "pct": 89
+        "pct": 90
       },
       {
         "atLeast": 7,
@@ -62,11 +62,11 @@
       },
       {
         "atLeast": 9,
-        "pct": 61
+        "pct": 60.5
       },
       {
         "atLeast": 10,
-        "pct": 44.5
+        "pct": 44
       },
       {
         "atLeast": 11,
@@ -74,7 +74,7 @@
       },
       {
         "atLeast": 12,
-        "pct": 16.5
+        "pct": 17
       },
       {
         "atLeast": 13,
@@ -86,14 +86,14 @@
       },
       {
         "atLeast": 16,
-        "pct": 3.5
+        "pct": 4
       }
     ]
   },
   "houseSeatsD": {
     "event": "KXDHOUSEWON-26NOV03",
     "title": "How many House seats will Democrats win in the Midterms?",
-    "median": 239.7,
+    "median": 239.3,
     "ladder": [
       {
         "atLeast": 210,
@@ -109,7 +109,7 @@
       },
       {
         "atLeast": 222,
-        "pct": 87.5
+        "pct": 87
       },
       {
         "atLeast": 226,
@@ -121,11 +121,11 @@
       },
       {
         "atLeast": 234,
-        "pct": 68
+        "pct": 67.5
       },
       {
         "atLeast": 238,
-        "pct": 56.5
+        "pct": 54
       },
       {
         "atLeast": 242,
@@ -137,11 +137,11 @@
       },
       {
         "atLeast": 250,
-        "pct": 19.5
+        "pct": 20
       },
       {
         "atLeast": 254,
-        "pct": 12.5
+        "pct": 12
       },
       {
         "atLeast": 258,
@@ -152,7 +152,7 @@
   "senateSeatsWonD": {
     "event": "KXDSENATEWON-26NOV03",
     "title": "How many Senate seats will Democrats win in the Midterms?",
-    "median": 18.3,
+    "median": 18.4,
     "ladder": [
       {
         "atLeast": 10,
@@ -168,7 +168,7 @@
       },
       {
         "atLeast": 13,
-        "pct": 94.5
+        "pct": 95.5
       },
       {
         "atLeast": 14,
@@ -188,11 +188,11 @@
       },
       {
         "atLeast": 18,
-        "pct": 55.5
+        "pct": 56.5
       },
       {
         "atLeast": 19,
-        "pct": 37.5
+        "pct": 38.5
       },
       {
         "atLeast": 20,
@@ -200,23 +200,23 @@
       },
       {
         "atLeast": 21,
-        "pct": 14
+        "pct": 13.5
       },
       {
         "atLeast": 22,
-        "pct": 7.5
+        "pct": 7
       }
     ]
   },
   "blueWave": {
     "event": "KXBLUEWAVECOMBO-27FEB",
     "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
-    "pct": 80.5
+    "pct": 82.5
   },
   "redWave": {
     "event": "KXREDWAVECOMBO-27FEBB",
     "question": "Yes",
     "pct": 6.5
   },
-  "fetchedAt": "2026-10-28T11:40:52.041Z"
+  "fetchedAt": "2026-10-28T17:26:14.957Z"
 }
