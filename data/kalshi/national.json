@@ -6,12 +6,12 @@
       {
         "ticker": "CONTROLH-2026-D",
         "label": "Democratic Party",
-        "pct": 91.1
+        "pct": 91
       },
       {
         "ticker": "CONTROLH-2026-R",
         "label": "Republican Party",
-        "pct": 9
+        "pct": 9.3
       }
     ]
   },
@@ -22,35 +22,35 @@
       {
         "ticker": "CONTROLS-2026-D",
         "label": "Democratic Party",
-        "pct": 63.5
+        "pct": 65.5
       },
       {
         "ticker": "CONTROLS-2026-R",
         "label": "Republican Party",
-        "pct": 36.5
+        "pct": 35.5
       }
     ]
   },
   "housePopVoteMarginD": {
     "event": "KXHOUSEPOPVOTEMARGIND-26NOV03",
     "title": "2026 Midterms: House popular vote margin of victory? (Directional)",
-    "median": 9.6,
+    "median": 9.7,
     "ladder": [
       {
         "atLeast": 2,
-        "pct": 95
+        "pct": 95.5
       },
       {
         "atLeast": 4,
-        "pct": 91.5
+        "pct": 93
       },
       {
         "atLeast": 5,
-        "pct": 90.5
+        "pct": 92
       },
       {
         "atLeast": 6,
-        "pct": 90
+        "pct": 88
       },
       {
         "atLeast": 7,
@@ -58,11 +58,11 @@
       },
       {
         "atLeast": 8,
-        "pct": 77
+        "pct": 73.5
       },
       {
         "atLeast": 9,
-        "pct": 60.5
+        "pct": 67
       },
       {
         "atLeast": 10,
@@ -70,38 +70,38 @@
       },
       {
         "atLeast": 11,
-        "pct": 31
+        "pct": 35.5
       },
       {
         "atLeast": 12,
-        "pct": 17
+        "pct": 17.5
       },
       {
         "atLeast": 13,
-        "pct": 16.5
+        "pct": 17
       },
       {
         "atLeast": 14,
-        "pct": 15
+        "pct": 18
       },
       {
         "atLeast": 16,
-        "pct": 4
+        "pct": 8
       }
     ]
   },
   "houseSeatsD": {
     "event": "KXDHOUSEWON-26NOV03",
     "title": "How many House seats will Democrats win in the Midterms?",
-    "median": 239.3,
+    "median": 239.2,
     "ladder": [
       {
         "atLeast": 210,
-        "pct": 96.5
+        "pct": 97
       },
       {
         "atLeast": 214,
-        "pct": 95
+        "pct": 94
       },
       {
         "atLeast": 218,
@@ -113,19 +113,19 @@
       },
       {
         "atLeast": 226,
-        "pct": 82
+        "pct": 83
       },
       {
         "atLeast": 230,
-        "pct": 74
+        "pct": 74.5
       },
       {
         "atLeast": 234,
-        "pct": 67.5
+        "pct": 70.5
       },
       {
         "atLeast": 238,
-        "pct": 54
+        "pct": 53.5
       },
       {
         "atLeast": 242,
@@ -137,11 +137,11 @@
       },
       {
         "atLeast": 250,
-        "pct": 20
+        "pct": 20.5
       },
       {
         "atLeast": 254,
-        "pct": 12
+        "pct": 12.5
       },
       {
         "atLeast": 258,
@@ -152,19 +152,19 @@
   "senateSeatsWonD": {
     "event": "KXDSENATEWON-26NOV03",
     "title": "How many Senate seats will Democrats win in the Midterms?",
-    "median": 18.4,
+    "median": 18.2,
     "ladder": [
       {
         "atLeast": 10,
-        "pct": 98
+        "pct": 98.5
       },
       {
         "atLeast": 11,
-        "pct": 97.5
+        "pct": 97
       },
       {
         "atLeast": 12,
-        "pct": 96
+        "pct": 95
       },
       {
         "atLeast": 13,
@@ -188,15 +188,15 @@
       },
       {
         "atLeast": 18,
-        "pct": 56.5
+        "pct": 53
       },
       {
         "atLeast": 19,
-        "pct": 38.5
+        "pct": 38
       },
       {
         "atLeast": 20,
-        "pct": 23
+        "pct": 23.5
       },
       {
         "atLeast": 21,
@@ -204,19 +204,19 @@
       },
       {
         "atLeast": 22,
-        "pct": 7
+        "pct": 7.5
       }
     ]
   },
   "blueWave": {
     "event": "KXBLUEWAVECOMBO-27FEB",
     "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
-    "pct": 82.5
+    "pct": 81.5
   },
   "redWave": {
     "event": "KXREDWAVECOMBO-27FEBB",
     "question": "Yes",
     "pct": 6.5
   },
-  "fetchedAt": "2026-10-28T17:26:14.957Z"
+  "fetchedAt": "2026-10-28T21:54:25.744Z"
 }
