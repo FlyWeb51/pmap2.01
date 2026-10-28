@@ -1,6 +1,6 @@
 {
   "raceId": "CA-G-2026",
-  "count": 22,
+  "count": 23,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -34,6 +34,42 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 14
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Public Policy Institute of California",
+      "sponsors": null,
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-22",
+      "sampleSize": 1086,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.ppic.org/publication/ppic-statewide-survey-californians-and-their-government-october-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Xavier Becerra (D)",
+          "party": "D",
+          "percentage": 61
+        },
+        {
+          "candidate": "Steve Hilton (R)",
+          "party": "R",
+          "percentage": 37
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 1
         }
       ],
       "note": null

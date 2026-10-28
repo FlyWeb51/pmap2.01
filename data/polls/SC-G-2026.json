@@ -1,8 +1,49 @@
 {
   "raceId": "SC-G-2026",
-  "count": 5,
-  "updated_at": "2026-10-28T03:06:18.383Z",
+  "count": 6,
+  "updated_at": "2026-10-28T05:56:14.481Z",
   "polls": [
+    {
+      "pollster": "The Citadel School of Humanities and Social Sciences",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-14 to 2026-10-25",
+      "sampleSize": 890,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Alan Wilson (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Jermaine Johnson (D)",
+          "party": "D",
+          "pct": 31,
+          "percentage": 31
+        },
+        {
+          "candidate": "Walid Hakim (GRE)",
+          "party": null,
+          "pct": 0,
+          "percentage": 0
+        },
+        {
+          "candidate": "Michael Addison (UCP)",
+          "party": null,
+          "pct": 0,
+          "percentage": 0
+        }
+      ],
+      "sourceUrl": "https://poll.citadel.edu/2026/10/27/sc-voters-look-to-pass-the-torch-in-the-midterms/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.2377
+    },
     {
       "pollster": "Targoz Market Research",
       "endDate": "2026-10-25",
@@ -42,7 +83,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2446
+      "weight": 1.2412
     },
     {
       "pollster": "Trafalgar Group",
@@ -83,7 +124,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5855
+      "weight": 0.5839
     },
     {
       "pollster": "National Public Affairs",
@@ -124,7 +165,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4152
+      "weight": 0.4141
     },
     {
       "pollster": "Hart Research Associates",
@@ -153,7 +194,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0988
+      "weight": 0.0985
     },
     {
       "pollster": "Public Policy Polling",
@@ -182,7 +223,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0446
+      "weight": 0.0445
     }
   ]
 }
