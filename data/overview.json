@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T23:47:17.122Z",
+  "generatedAt": "2026-10-28T03:06:18.467Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -587,15 +587,7 @@
         "holder": "R",
         "special": false,
         "kalshiD": 0.001,
-        "nyt": {
-          "averageMargin": -30,
-          "averagePolls": 1,
-          "latest": {
-            "pollster": "Change Research",
-            "endDate": "2026-07-30"
-          },
-          "source": "site"
-        }
+        "nyt": null
       }
     ]
   },
@@ -1620,7 +1612,7 @@
         "special": false,
         "dem": "Abdul El-Sayed",
         "rep": "Mike Rogers",
-        "polls": 54,
+        "polls": 53,
         "pres2024": -1.4,
         "expected": 7.9,
         "pollMargin": 3,
@@ -1732,6 +1724,19 @@
         "kalshiD": 0.966
       },
       {
+        "state": "AK",
+        "name": "Alaska",
+        "special": false,
+        "dem": "Mary Peltola",
+        "rep": "Dan S. Sullivan",
+        "polls": 17,
+        "pres2024": -13.1,
+        "expected": -3.9,
+        "pollMargin": 1.8,
+        "overUnder": 5.7,
+        "kalshiD": 0.735
+      },
+      {
         "state": "OH",
         "name": "Ohio",
         "special": true,
@@ -1758,19 +1763,6 @@
         "kalshiD": 0.235
       },
       {
-        "state": "AK",
-        "name": "Alaska",
-        "special": false,
-        "dem": "Mary Peltola",
-        "rep": "Dan S. Sullivan",
-        "polls": 16,
-        "pres2024": -13.1,
-        "expected": -3.9,
-        "pollMargin": 2.3,
-        "overUnder": 6.2,
-        "kalshiD": 0.735
-      },
-      {
         "state": "KS",
         "name": "Kansas",
         "special": false,
@@ -1789,7 +1781,7 @@
         "special": false,
         "dem": "James Talarico",
         "rep": "Ken Paxton",
-        "polls": 72,
+        "polls": 68,
         "pres2024": -13.7,
         "expected": -4.4,
         "pollMargin": 3.1,
@@ -1833,7 +1825,7 @@
         "type": "House",
         "now": 43.5,
         "ch1": 11,
-        "ch7": 26,
+        "ch7": 25.5,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
         "thirdParty": false
@@ -1850,25 +1842,25 @@
         "thirdParty": false
       },
       {
-        "key": "H-NJ-02",
-        "name": "NJ-2",
-        "type": "House",
-        "now": 29.2,
-        "ch1": 5.7,
-        "ch7": 9.2,
-        "dem": "Zack Mullock",
-        "rep": "Jeff Van Drew",
-        "thirdParty": false
-      },
-      {
         "key": "H-MI-04",
         "name": "MI-4",
         "type": "House",
         "now": 55.5,
         "ch1": -5,
-        "ch7": 4.8,
+        "ch7": 4,
         "dem": "Sean McCann",
         "rep": "Bill Huizenga",
+        "thirdParty": false
+      },
+      {
+        "key": "G-OH",
+        "name": "Ohio",
+        "type": "Governor",
+        "now": 76.7,
+        "ch1": -5,
+        "ch7": 1.2,
+        "dem": "Amy Acton",
+        "rep": "Vivek Ramaswamy",
         "thirdParty": false
       },
       {
@@ -1883,25 +1875,14 @@
         "thirdParty": false
       },
       {
-        "key": "G-OH",
-        "name": "Ohio",
-        "type": "Governor",
-        "now": 76.7,
-        "ch1": -4.8,
-        "ch7": 1.9,
-        "dem": "Amy Acton",
-        "rep": "Vivek Ramaswamy",
-        "thirdParty": false
-      },
-      {
-        "key": "H-CO-05",
-        "name": "CO-5",
+        "key": "H-NJ-02",
+        "name": "NJ-2",
         "type": "House",
-        "now": 39.5,
-        "ch1": 3.4,
-        "ch7": 15,
-        "dem": "Jessica Killin",
-        "rep": "Jeff Crank",
+        "now": 29.2,
+        "ch1": 4.7,
+        "ch7": 8.6,
+        "dem": "Zack Mullock",
+        "rep": "Jeff Van Drew",
         "thirdParty": false
       },
       {
@@ -1909,43 +1890,10 @@
         "name": "FL-11",
         "type": "House",
         "now": 12.4,
-        "ch1": -3.1,
-        "ch7": 1.7,
+        "ch1": -2.9,
+        "ch7": 1.5,
         "dem": "James Pericola",
         "rep": "Joe Strada",
-        "thirdParty": false
-      },
-      {
-        "key": "S-MI",
-        "name": "Michigan",
-        "type": "Senate",
-        "now": 68.5,
-        "ch1": 3,
-        "ch7": 0,
-        "dem": "Abdul El-Sayed",
-        "rep": "Mike Rogers",
-        "thirdParty": false
-      },
-      {
-        "key": "G-FL",
-        "name": "Florida",
-        "type": "Governor",
-        "now": 22.5,
-        "ch1": 3,
-        "ch7": 1,
-        "dem": "David Jolly",
-        "rep": "Byron Donalds",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-14",
-        "name": "NC-14",
-        "type": "House",
-        "now": 16.1,
-        "ch1": 3,
-        "ch7": 7,
-        "dem": "LaKesha Womack",
-        "rep": "Tim Moore",
         "thirdParty": false
       },
       {
@@ -1958,6 +1906,50 @@
         "dem": "Kristin Hook",
         "rep": "Mark Teixeira",
         "thirdParty": false
+      },
+      {
+        "key": "G-KS",
+        "name": "Kansas",
+        "type": "Governor",
+        "now": 26.2,
+        "ch1": 2.7,
+        "ch7": 1.9,
+        "dem": "Cindy Holscher",
+        "rep": "Ty Masterson",
+        "thirdParty": false
+      },
+      {
+        "key": "H-PA-08",
+        "name": "PA-8",
+        "type": "House",
+        "now": 84.7,
+        "ch1": 2.2,
+        "ch7": 12.2,
+        "dem": "Paige Cognetti",
+        "rep": "Rob Bresnahan",
+        "thirdParty": false
+      },
+      {
+        "key": "H-TN-02",
+        "name": "TN-2",
+        "type": "House",
+        "now": 6.5,
+        "ch1": 2.1,
+        "ch7": 1.4,
+        "dem": "Michaela Barnett",
+        "rep": "Tim Burchett",
+        "thirdParty": false
+      },
+      {
+        "key": "S-NE",
+        "name": "Nebraska",
+        "type": "Senate",
+        "now": 28.5,
+        "ch1": 2,
+        "ch7": 0,
+        "dem": "Cindy Burbank",
+        "rep": "Pete Ricketts",
+        "thirdParty": true
       }
     ],
     "week": [
@@ -1967,7 +1959,7 @@
         "type": "House",
         "now": 43.5,
         "ch1": 11,
-        "ch7": 26,
+        "ch7": 25.5,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
         "thirdParty": false
@@ -1999,21 +1991,10 @@
         "name": "CO-5",
         "type": "House",
         "now": 39.5,
-        "ch1": 3.4,
-        "ch7": 15,
+        "ch1": 0.8,
+        "ch7": 14.6,
         "dem": "Jessica Killin",
         "rep": "Jeff Crank",
-        "thirdParty": false
-      },
-      {
-        "key": "H-TX-23",
-        "name": "TX-23",
-        "type": "House",
-        "now": 42.5,
-        "ch1": -1,
-        "ch7": 14.3,
-        "dem": "Katy Padilla Stout",
-        "rep": "Brandon Herrera",
         "thirdParty": false
       },
       {
@@ -2028,14 +2009,36 @@
         "thirdParty": false
       },
       {
+        "key": "H-TX-23",
+        "name": "TX-23",
+        "type": "House",
+        "now": 42.5,
+        "ch1": -0.6,
+        "ch7": 14,
+        "dem": "Katy Padilla Stout",
+        "rep": "Brandon Herrera",
+        "thirdParty": false
+      },
+      {
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
         "now": 37.9,
-        "ch1": 1.4,
-        "ch7": 13.4,
+        "ch1": 1.1,
+        "ch7": 13.6,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
+        "thirdParty": false
+      },
+      {
+        "key": "H-FL-25",
+        "name": "FL-25",
+        "type": "House",
+        "now": 77.6,
+        "ch1": -1.1,
+        "ch7": -12.4,
+        "dem": "Jared Moskowitz",
+        "rep": "Scott Singer",
         "thirdParty": false
       },
       {
@@ -2043,7 +2046,7 @@
         "name": "NV-2",
         "type": "House",
         "now": 40.5,
-        "ch1": 1,
+        "ch1": 0.4,
         "ch7": 12.3,
         "dem": "Teresa Benitez-Thompson",
         "rep": "David Flippo",
@@ -2072,25 +2075,14 @@
         "thirdParty": false
       },
       {
-        "key": "H-MO-02",
-        "name": "MO-2",
-        "type": "House",
-        "now": 35.5,
-        "ch1": 0,
-        "ch7": 11.2,
-        "dem": "Fred Wellman",
-        "rep": "Ann Wagner",
-        "thirdParty": false
-      },
-      {
-        "key": "H-FL-25",
-        "name": "FL-25",
-        "type": "House",
-        "now": 77.6,
-        "ch1": -1.9,
-        "ch7": -11,
-        "dem": "Jared Moskowitz",
-        "rep": "Scott Singer",
+        "key": "G-GA",
+        "name": "Georgia",
+        "type": "Governor",
+        "now": 61.5,
+        "ch1": -0.2,
+        "ch7": 11,
+        "dem": "Keisha Lance Bottoms",
+        "rep": "Rick Jackson",
         "thirdParty": false
       }
     ]
