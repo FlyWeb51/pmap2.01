@@ -1,12 +1,53 @@
 {
   "raceId": "OH-S-2026",
-  "count": 47,
+  "count": 48,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Suffolk University",
+      "sponsors": "USA Today",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-26",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/other-states#collapse-October-28-2026-Ohio-Governor-and-US-Senate-with-USA-TODAY-Network-Ohio",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 46.6
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 43.8
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.4
+        },
+        {
+          "candidate": "Gregory Levy (I)",
+          "party": "I",
+          "percentage": 1.6
+        },
+        {
+          "candidate": "Bill Redpath (LIB)",
+          "party": "LIB",
+          "percentage": 1.6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Echelon Insights",
       "sponsors": "NetChoice",

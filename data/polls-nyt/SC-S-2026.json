@@ -1,12 +1,48 @@
 {
   "raceId": "SC-S-2026",
-  "count": 25,
+  "count": 26,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-26",
+      "sampleSize": 707,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/28/polls/times-siena-sc-poll-toplines.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "percentage": 48.47
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "percentage": 47.76
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3.29
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.47
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The Citadel School of Humanities and Social Sciences",
       "sponsors": null,

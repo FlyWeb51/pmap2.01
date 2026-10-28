@@ -1,12 +1,84 @@
 {
   "raceId": "FL-G-2026",
-  "count": 65,
+  "count": 67,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "St. Pete Polls",
+      "sponsors": "Florida Politics",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-27",
+      "sampleSize": 916,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://floridapolitics.com/archives/827489-final-st-pete-polls-ashley-moody-holds-49-to-45-over-angie-nixon-with-a-cushion-that-shrinks-if-republicans-stay-home/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "percentage": 47.8
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "percentage": 45.5
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3.4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 3.2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-25",
+      "sampleSize": 813,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/28/polls/times-siena-fl-poll-toplines.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "percentage": 48.36
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "percentage": 44.43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7.03
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.17
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Echelon Insights",
       "sponsors": "NetChoice",

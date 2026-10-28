@@ -1,8 +1,66 @@
 {
   "raceId": "FL-G-2026",
-  "count": 48,
-  "updated_at": "2026-10-28T05:56:14.471Z",
+  "count": 50,
+  "updated_at": "2026-10-28T13:13:22.556Z",
   "polls": [
+    {
+      "pollster": "St. Pete Polls",
+      "endDate": "2026-10-27",
+      "fieldDates": "2026-10-25 to 2026-10-27",
+      "sampleSize": 916,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Florida Politics",
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "pct": 47.8,
+          "percentage": 47.8
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "pct": 45.5,
+          "percentage": 45.5
+        }
+      ],
+      "sourceUrl": "https://floridapolitics.com/archives/827489-final-st-pete-polls-ashley-moody-holds-49-to-45-over-angie-nixon-with-a-cushion-that-shrinks-if-republicans-stay-home/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.3059
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-19 to 2026-10-25",
+      "sampleSize": 813,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "pct": 48.36,
+          "percentage": 48.36
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "pct": 44.43,
+          "percentage": 44.43
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/28/polls/times-siena-fl-poll-toplines.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1747
+    },
     {
       "pollster": "Echelon Insights",
       "endDate": "2026-10-23",
@@ -36,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.899
+      "weight": 0.8927
     },
     {
       "pollster": "co/efficient",
@@ -65,7 +123,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.177,
+      "weight": 1.1688,
       "otherMatchup": true
     },
     {
@@ -95,7 +153,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3853
+      "weight": 1.3756
     },
     {
       "pollster": "ActiVote",
@@ -124,7 +182,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7224
+      "weight": 0.7173
     },
     {
       "pollster": "YouGov",
@@ -153,7 +211,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8512
+      "weight": 0.8453
     },
     {
       "pollster": "Fabrizio, Lee & Associates",
@@ -182,7 +240,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.52
+      "weight": 0.5164
     },
     {
       "pollster": "MDW Communications",
@@ -211,7 +269,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.312
+      "weight": 1.3028
     },
     {
       "pollster": "Change Research",
@@ -240,7 +298,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4449
+      "weight": 0.4418
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -269,7 +327,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7671
+      "weight": 0.7617
     },
     {
       "pollster": "St. Pete Polls",
@@ -298,7 +356,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7914
+      "weight": 0.7859
     },
     {
       "pollster": "YouGov",
@@ -327,7 +385,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1688
+      "weight": 1.1607
     },
     {
       "pollster": "Targoz Market Research",
@@ -356,7 +414,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7442
+      "weight": 0.739
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -385,7 +443,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5957
+      "weight": 0.5916
     },
     {
       "pollster": "Change Research",
@@ -414,7 +472,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3542
+      "weight": 0.3517
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -443,7 +501,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5449
+      "weight": 0.5411
     },
     {
       "pollster": "St. Pete Polls",
@@ -472,7 +530,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.521
+      "weight": 0.5174
     },
     {
       "pollster": "Change Research",
@@ -501,7 +559,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2384
+      "weight": 0.2368
     },
     {
       "pollster": "Hart Research Associates",
@@ -530,7 +588,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0941
+      "weight": 0.0934
     },
     {
       "pollster": "Targoz Market Research",
@@ -559,7 +617,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1623
+      "weight": 0.1612
     },
     {
       "pollster": "Targoz Market Research",
@@ -588,7 +646,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1665,
+      "weight": 0.1653,
       "otherMatchup": true
     },
     {
@@ -618,7 +676,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1199
+      "weight": 0.119
     },
     {
       "pollster": "Kaplan Strategies",
@@ -653,7 +711,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0221
+      "weight": 0.022
     },
     {
       "pollster": "Change Research",
@@ -682,7 +740,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0196
+      "weight": 0.0195
     },
     {
       "pollster": "Cherry Communications",
@@ -711,7 +769,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0103,
+      "weight": 0.0102,
       "otherMatchup": true
     },
     {
@@ -830,7 +888,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0156
+      "weight": 0.0155
     },
     {
       "pollster": "Emerson College",
@@ -859,7 +917,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0114,
+      "weight": 0.0113,
       "otherMatchup": true
     },
     {
@@ -889,7 +947,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0114,
+      "weight": 0.0113,
       "otherMatchup": true
     },
     {
@@ -919,7 +977,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0114,
+      "weight": 0.0113,
       "otherMatchup": true
     },
     {
@@ -949,7 +1007,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0114
+      "weight": 0.0113
     },
     {
       "pollster": "University of North Florida",

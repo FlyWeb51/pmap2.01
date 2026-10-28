@@ -1,12 +1,48 @@
 {
   "raceId": "MN-S-2026",
-  "count": 23,
+  "count": 24,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-26",
+      "sampleSize": 752,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/28/polls/times-siena-mn-poll-toplines.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "percentage": 54.21
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "percentage": 40.31
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5.26
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.23
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Trafalgar Group",
       "sponsors": null,

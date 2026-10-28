@@ -1,12 +1,84 @@
 {
   "raceId": "NY-G-2026",
-  "count": 52,
+  "count": 55,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Marist University",
+      "sponsors": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-25",
+      "sampleSize": 1448,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-new-york-october-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kathy Hochul (D)",
+          "party": "D",
+          "percentage": 55
+        },
+        {
+          "candidate": "Bruce Blakeman (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Marist University",
+      "sponsors": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-25",
+      "sampleSize": 1448,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://maristpoll.marist.edu/polls/the-midterm-elections-in-new-york-october-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kathy Hochul (D)",
+          "party": "D",
+          "percentage": 53
+        },
+        {
+          "candidate": "Bruce Blakeman (R)",
+          "party": "R",
+          "percentage": 42
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "ActiVote",
       "sponsors": null,
@@ -29,6 +101,42 @@
           "candidate": "Bruce Blakeman (R)",
           "party": "R",
           "percentage": 41
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-22",
+      "sampleSize": 807,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://sri.siena.edu/2026/10/28/siena-poll-of-likely-new-york-state-voters/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kathy Hochul (D)",
+          "party": "D",
+          "percentage": 54
+        },
+        {
+          "candidate": "Bruce Blakeman (R)",
+          "party": "R",
+          "percentage": 40
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
         }
       ],
       "note": null

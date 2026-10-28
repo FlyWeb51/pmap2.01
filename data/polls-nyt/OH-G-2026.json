@@ -1,12 +1,48 @@
 {
   "raceId": "OH-G-2026",
-  "count": 44,
+  "count": 45,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Suffolk University",
+      "sponsors": "USA Today",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-26",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/other-states#collapse-October-28-2026-Ohio-Governor-and-US-Senate-with-USA-TODAY-Network-Ohio",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "LIB",
+          "percentage": 3.6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Echelon Insights",
       "sponsors": "NetChoice",
