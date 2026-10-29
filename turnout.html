@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<title>Turnout Simulator | Election Center 2026</title>
+<style>
+  :root{
+    --bg:#0e1420; --panel:#0a0f18; --panel-2:#111a29; --line:#1e2a3d;
+    --ink:#e8edf5; --ink-dim:#8b98ac;
+    --sd:#1f5fc4; --ld:#3f7fdd; --nd:#6fa3ec; --td:#a9c8f4;
+    --tr:#f0b3b3; --nr:#e88a8a; --lr:#d95c5c; --sr:#b93838;
+    --vac:#3a4557; --gold:#d9b45c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Archivo","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh}
+  .num{font-family:"IBM Plex Mono","SF Mono",Consolas,monospace;font-variant-numeric:tabular-nums}
+  a{color:var(--nd)}
+  header{border-bottom:1px solid var(--line);background:var(--panel);padding:14px 22px}
+  .hrow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1180px;margin:0 auto}
+  h1{font-size:18px;letter-spacing:.06em;text-transform:uppercase}
+  .sub{font-size:11px;color:var(--ink-dim);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+  .nav{display:flex;gap:8px;flex-wrap:wrap}
+  .nav a{font-size:12px;letter-spacing:.05em;color:var(--ink-dim);text-decoration:none;border:1px solid var(--line);padding:6px 10px;border-radius:6px}
+  .nav a:hover{color:var(--ink);border-color:var(--ink-dim)}
+  .nav a.on{color:var(--ink);border-color:var(--nd)}
+  main{max-width:1180px;margin:0 auto;padding:22px;display:grid;gap:18px}
+  .card{background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0}
+  .card h2{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:12px;font-weight:600}
+  .note{font-size:11px;color:var(--ink-dim);line-height:1.55;margin-top:10px}
+  .d{color:var(--nd)} .r{color:var(--lr)}
+  .empty{color:var(--ink-dim);font-size:13px}
+
+  .presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .presets button,.mini{background:none;border:1px solid var(--line);color:var(--ink-dim);font:inherit;font-size:12px;padding:6px 10px;border-radius:7px;cursor:pointer}
+  .presets button:hover,.mini:hover{color:var(--ink);border-color:var(--ink-dim)}
+  .presets button.on{color:var(--ink);border-color:var(--gold)}
+
+  .groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .grp{border:1px solid var(--line);border-radius:9px;padding:12px;background:var(--panel)}
+  .grp .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .grp .name{font-weight:700;font-size:14px}
+  .grp .elig{font-size:11px;color:var(--ink-dim)}
+  .sl{margin-top:12px}
+  .sl .lab{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-dim);letter-spacing:.04em}
+  .sl .lab b{color:var(--ink);font-size:13px}
+  .sl .base{font-size:10px;color:var(--ink-dim);margin-top:2px}
+  .sl .base.moved{color:var(--gold)}
+  input[type=range]{width:100%;margin-top:6px;accent-color:var(--gold);height:22px}
+  input[type=range].party{accent-color:var(--nd)}
+  .changed{border-color:var(--gold)}
+
+  .head{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .big{font-size:30px;font-weight:700;line-height:1.1}
+  .k{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);margin-top:4px}
+  .s{font-size:12px;color:var(--ink-dim);margin-top:4px}
+  .delta{font-size:12px;font-weight:600;margin-left:6px}
+  .bar{position:relative;display:flex;height:14px;border-radius:4px;overflow:hidden;background:var(--vac);margin-top:10px}
+  .bar i{display:block;height:100%}
+  .bar .tick{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+  @media (max-width:900px){.layout{grid-template-columns:1fr}}
+
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{text-align:left;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-dim);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+  th.n,td.n{text-align:right}
+  td{padding:7px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+  tr.flip td{background:rgba(217,180,92,.07)}
+  .tablewrap{overflow-x:auto}
+  .scroll{max-height:420px;overflow:auto}
+  .tag{display:inline-block;font-size:10px;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:1px 7px;margin-left:6px;border:1px solid var(--gold);color:var(--gold)}
+
+  .tiles{display:grid;grid-template-columns:repeat(12,1fr);gap:4px}
+  .tile{aspect-ratio:1;border-radius:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#0b1220;min-width:0;position:relative}
+  .tile span{font-size:9px;font-weight:600}
+  .tile.na{background:#1a2333;color:var(--ink-dim)}
+  .tile.sen::after{content:"";position:absolute;top:3px;right:3px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+  .scale{display:flex;align-items:center;gap:8px;font-size:10px;color:var(--ink-dim);margin-top:12px}
+  .scale .ramp{flex:1;height:8px;border-radius:4px;background:linear-gradient(90deg,#b93838,#efd0d0 49%,#c9d8ee 51%,#1f5fc4)}
+  @media (max-width:560px){.tile{font-size:9px}.tile span{display:none}}
+  footer{max-width:1180px;margin:0 auto;padding:6px 22px 30px;font-size:11px;color:var(--ink-dim);line-height:1.6}
+  @media (max-width:820px){main{padding:14px 16px}.card{padding:14px}td,th{padding:6px 5px}}
+</style>
+<script>
+(function () {
+  if (!/[?&]embed=1/.test(location.search)) return;
+  document.documentElement.classList.add("embed");
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a || a.target === "_blank") return;
+    var u = new URL(a.href, location.href);
+    if (u.origin !== location.origin || u.pathname === location.pathname && u.hash) return;
+    e.preventDefault();
+    parent.postMessage({ term: u.pathname + u.search + u.hash }, location.origin);
+  }, true);
+})();
+</script>
+<style>html.embed header .nav,html.embed nav.nav{display:none!important}</style>
+</head>
+<body>
+<header>
+  <div class="hrow">
+    <div>
+      <h1>Turnout Simulator</h1>
+      <div class="sub">2026 Midterms · Who votes, and how they vote</div>
+    </div>
+    <nav class="nav">
+      <a href="./">House map</a>
+      <a href="./overview.html">National picture</a>
+      <a href="./predict.html">Prediction map</a>
+      <a href="polling/">Polling</a>
+      <a href="./markets.html">Markets</a>
+      <a href="./early-vote.html">Early vote</a>
+      <a href="./turnout.html" class="on">Turnout sim</a>
+      <a href="./terminal.html">Terminal</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Set the electorate</h2>
+    <div class="presets" id="presets"></div>
+    <div class="groups" id="groups"><div class="empty">Loading…</div></div>
+    <p class="note">Turnout is the share of eligible voters (citizens 18+) in each group who cast a ballot. Party share is the Democratic share of that group's two-party vote. Sliders start at 2024: turnout from the Census Bureau's 2024 voting report, party shares from Pew Research Center's 2024 validated voters. Changes apply nationwide; each district and state keeps its own local lean.</p>
+  </section>
+
+  <section class="card" id="result"><div class="empty">Loading…</div></section>
+
+  <section class="card">
+    <h2>Votes by group</h2>
+    <div class="tablewrap"><table id="gtbl"></table></div>
+  </section>
+
+  <div class="layout">
+    <section class="card">
+      <h2>Senate 2026 · polls plus your shift</h2>
+      <div class="tablewrap scroll"><table id="stbl"></table></div>
+      <p class="note">Starting point is the site's current polling average for each race (2024 presidential margin where there are no polls). The shift is how much your electorate moves that state compared with 2024.</p>
+    </section>
+    <section class="card">
+      <h2>Shift by state</h2>
+      <div class="tiles" id="tiles"></div>
+      <div class="scale"><span>R+6</span><div class="ramp"></div><span>D+6</span></div>
+      <p class="note">How far each state's margin moves from its 2024 result under your settings. Gold dot: Senate race.</p>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>House districts that change hands</h2>
+    <div class="tablewrap scroll"><table id="htbl"></table></div>
+    <p class="note">On 2024 presidential results by district: which seats would vote the other way with your electorate. Treat this as the direction and size of the change, not a seat forecast; House candidates run ahead of or behind the top of the ticket.</p>
+  </section>
+</main>
+
+<footer id="credit"></footer>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => n == null ? "–" : Math.round(n).toLocaleString();
+const fmtM = (n) => (n / 1e6).toFixed(n >= 1e7 ? 1 : 2) + "M";
+const EPS = 0.05; // margins closer than this are a tie, not a lean
+const mg = (m, d = 1) => m == null || !isFinite(m) ? "–" : Math.abs(m) < EPS ? "Even" : (m > 0 ? "D+" : "R+") + Math.abs(m).toFixed(d);
+const cls = (m) => m == null || Math.abs(m) < EPS ? "" : m > 0 ? "d" : "r";
+const dv = (x) => Math.abs(x) < 5e3 ? "no change" : (x > 0 ? "+" : "−") + fmtM(Math.abs(x));
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+const GROUPS = [
+  { k: "white", name: "White", note: "not Hispanic" },
+  { k: "black", name: "Black" },
+  { k: "hispanic", name: "Hispanic", note: "any race" },
+  { k: "asian", name: "Asian" },
+  { k: "other", name: "Other", note: "multiracial, Native, other" },
+];
+// 2024 baseline. Turnout: Census P20-590, voted / citizens 18+ (Table 2).
+// Party: Pew 2024 validated voters, Democratic share of the two-party vote
+// (White 43/55, Black 83/15, Hispanic 51/48, Asian 57/40). "Other" is assumed.
+const BASE = {
+  turnout: { white: 70.4, black: 60.0, hispanic: 50.6, asian: 57.8, other: 58.0 },
+  dem: { white: 43.9, black: 84.7, hispanic: 51.5, asian: 58.8, other: 52.0 },
+};
+const PRESETS = [
+  { id: "2024", label: "2024 electorate", t: {}, d: {} },
+  { id: "2022", label: "2022 midterm turnout", t: { white: 57.6, black: 45.6, hispanic: 37.9, asian: 40.2, other: 45.0 }, d: {} },
+  { id: "w30", label: "Only 30% of white voters turn out", t: { white: 30 }, d: {} },
+  { id: "hisp", label: "Hispanic voters swing back to D (60%)", t: {}, d: { hispanic: 60 } },
+  { id: "black", label: "Black turnout matches white", t: { black: 70.4 }, d: {} },
+];
+
+let S = { t: { ...BASE.turnout }, d: { ...BASE.dem } };
+let GEO = { districts: [], states: {} }, SENATE = [], HOLD = { D: 34, R: 31 }, NAT_CVAP = null, SRC = {};
+
+/* ---------- model ---------- */
+const sig = (x) => 1 / (1 + Math.exp(-x));
+const logit = (p) => { p = Math.min(0.995, Math.max(0.005, p)); return Math.log(p / (1 - p)); };
+
+// Fit one place so the 2024 settings reproduce its actual 2024 result.
+//   m      local turnout level: scales every group's turnout so the place's
+//          total vote matches 2024 (some places vote more than others)
+//   delta  local lean: shifts every group's party share (in log-odds) so the
+//          place's 2024 Democratic share comes out exactly
+// F[k] then rescales each group nationally so that, added up over every
+// district, a group's turnout equals its slider. Without it the table would
+// show 68.6% when the slider says 70.4%.
+const F = { white: 1, black: 1, hispanic: 1, asian: 1, other: 1 };
+function fitTurnout(c, A) {
+  const s = GROUPS.reduce((a, g) => a + (c[g.k] || 0) * BASE.turnout[g.k] / 100, 0);
+  return s && A ? A / s : null;
+}
+function fitLean(cal, harris, trump) {
+  const V = GROUPS.map((g) => (cal.c[g.k] || 0) * BASE.turnout[g.k] / 100 * cal.m / F[g.k]);
+  const tot = V.reduce((a, b) => a + b, 0), target = tot * harris / (harris + trump);
+  const L = GROUPS.map((g) => logit(BASE.dem[g.k] / 100));
+  let lo = -9, hi = 9;
+  for (let i = 0; i < 60; i++) {
+    const mid = (lo + hi) / 2, d = V.reduce((a, v, j) => a + v * sig(L[j] + mid), 0);
+    if (d > target) hi = mid; else lo = mid;
+  }
+  cal.delta = (lo + hi) / 2;
+  cal.base = (harris - trump) / (harris + trump) * 100;
+  return cal;
+}
+function run(cal, set = S) {
+  const out = { D: 0, R: 0, by: {} };
+  for (const g of GROUPS) {
+    const elig = cal.c[g.k] || 0;
+    const votes = Math.min(elig * 0.98, elig * set.t[g.k] / 100 * cal.m / F[g.k]);
+    const dsh = sig(logit(set.d[g.k] / 100) + cal.delta);
+    out.by[g.k] = { votes, D: votes * dsh, R: votes * (1 - dsh) };
+    out.D += votes * dsh; out.R += votes * (1 - dsh);
+  }
+  out.margin = (out.D - out.R) / (out.D + out.R) * 100;
+  out.shift = out.margin - cal.base;
+  return out;
+}
+
+/* ---------- controls ---------- */
+function renderGroups() {
+  $("groups").innerHTML = GROUPS.map((g) => {
+    const el = NAT_CVAP ? NAT_CVAP[g.k] : null;
+    return `<div class="grp" id="g-${g.k}">
+      <div class="top"><span class="name">${g.name}</span><span class="elig">${el ? fmtM(el) + " eligible" : ""}</span></div>
+      ${g.note ? `<div class="elig">${g.note}</div>` : ""}
+      <div class="sl"><div class="lab"><span>Turnout</span><b class="num" id="tv-${g.k}"></b></div>
+        <input type="range" min="5" max="95" step="0.5" id="t-${g.k}" aria-label="${g.name} turnout">
+        <div class="base" id="tb-${g.k}"></div></div>
+      <div class="sl"><div class="lab"><span>Vote Democratic</span><b class="num" id="dv-${g.k}"></b></div>
+        <input type="range" class="party" min="1" max="99" step="0.5" id="d-${g.k}" aria-label="${g.name} Democratic share">
+        <div class="base" id="db-${g.k}"></div></div>
+    </div>`;
+  }).join("");
+  for (const g of GROUPS) {
+    $("t-" + g.k).oninput = (e) => { S.t[g.k] = +e.target.value; update(); };
+    $("d-" + g.k).oninput = (e) => { S.d[g.k] = +e.target.value; update(); };
+  }
+}
+function syncControls() {
+  for (const g of GROUPS) {
+    const t = S.t[g.k], d = S.d[g.k];
+    $("t-" + g.k).value = t; $("d-" + g.k).value = d;
+    $("tv-" + g.k).textContent = t.toFixed(1) + "%";
+    $("dv-" + g.k).innerHTML = `<span class="d">${d.toFixed(0)}</span> / <span class="r">${(100 - d).toFixed(0)}</span>`;
+    const tm = Math.abs(t - BASE.turnout[g.k]) > 0.01, dm = Math.abs(d - BASE.dem[g.k]) > 0.01;
+    $("tb-" + g.k).textContent = `2024: ${BASE.turnout[g.k]}%` + (tm ? ` · ${t > BASE.turnout[g.k] ? "+" : ""}${(t - BASE.turnout[g.k]).toFixed(1)}` : "");
+    $("tb-" + g.k).classList.toggle("moved", tm);
+    $("db-" + g.k).textContent = `2024: ${BASE.dem[g.k]}% D` + (dm ? ` · ${d > BASE.dem[g.k] ? "+" : ""}${(d - BASE.dem[g.k]).toFixed(1)}` : "");
+    $("db-" + g.k).classList.toggle("moved", dm);
+    $("g-" + g.k).classList.toggle("changed", tm || dm);
+  }
+  const cur = PRESETS.find((p) => GROUPS.every((g) => Math.abs(S.t[g.k] - (p.t[g.k] ?? BASE.turnout[g.k])) < 0.01 && Math.abs(S.d[g.k] - (p.d[g.k] ?? BASE.dem[g.k])) < 0.01));
+  document.querySelectorAll("#presets button").forEach((b) => b.classList.toggle("on", cur && b.dataset.p === cur.id));
+}
+$("presets").innerHTML = PRESETS.map((p) => `<button data-p="${p.id}">${p.label}</button>`).join("");
+$("presets").onclick = (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  const p = PRESETS.find((x) => x.id === b.dataset.p);
+  S = { t: { ...BASE.turnout, ...p.t }, d: { ...BASE.dem, ...p.d } };
+  update();
+};
+
+/* ---------- output ---------- */
+const GRID = { AK:[0,0], ME:[0,11], WI:[1,6], VT:[1,10], NH:[1,11], WA:[2,1], ID:[2,2], MT:[2,3], ND:[2,4], MN:[2,5], IL:[2,6], MI:[2,7], NY:[2,9], MA:[2,10], OR:[3,1], NV:[3,2], WY:[3,3], SD:[3,4], IA:[3,5], IN:[3,6], OH:[3,7], PA:[3,8], NJ:[3,9], CT:[3,10], RI:[3,11], CA:[4,1], UT:[4,2], CO:[4,3], NE:[4,4], MO:[4,5], KY:[4,6], WV:[4,7], VA:[4,8], MD:[4,9], DE:[4,10], AZ:[5,2], NM:[5,3], KS:[5,4], AR:[5,5], TN:[5,6], NC:[5,7], SC:[5,8], DC:[5,9], OK:[6,4], LA:[6,5], MS:[6,6], AL:[6,7], GA:[6,8], HI:[7,0], TX:[7,4], FL:[7,9] };
+function mix(a, b, t) { const h = (c) => [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16)); const x = h(a), y = h(b); return "#" + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, "0")).join(""); }
+
+function update() {
+  syncControls();
+  // national = sum of every district
+  const tot = { D: 0, R: 0, base: { D: 0, R: 0 }, by: {} };
+  for (const g of GROUPS) tot.by[g.k] = { votes: 0, D: 0, R: 0, elig: 0 };
+  let dSeats = 0, dBase = 0;
+  const flips = [];
+  for (const x of GEO.districts) {
+    const o = run(x.cal);
+    tot.D += o.D; tot.R += o.R; tot.base.D += x.harris; tot.base.R += x.trump;
+    for (const g of GROUPS) { const b = tot.by[g.k], y = o.by[g.k]; b.votes += y.votes; b.D += y.D; b.R += y.R; b.elig += x.cal.c[g.k] || 0; }
+    if (o.margin > 0) dSeats++;
+    if (x.cal.base > 0) dBase++;
+    if ((o.margin > 0) !== (x.cal.base > 0) && Math.abs(o.shift) >= EPS) flips.push({ id: x.id, base: x.cal.base, now: o.margin });
+  }
+  for (const x of GEO.fixed) { if (x.base > 0) { dSeats++; dBase++; } }
+  // Headline = actual 2024 national margin + how far your electorate moves
+  // the model away from its own 2024 run, so the 2024 settings show 2024 exactly.
+  const natBase = (tot.base.D - tot.base.R) / (tot.base.D + tot.base.R) * 100;
+  const B = GEO.baseRun;
+  const natShift = (tot.D - tot.R) / (tot.D + tot.R) * 100 - (B.D - B.R) / (B.D + B.R) * 100;
+  const nat = natBase + natShift;
+  const votes = tot.D + tot.R, votesBase = B.D + B.R;
+
+  // Senate
+  let senD = HOLD.D;
+  const sen = SENATE.map((r) => {
+    const cal = GEO.states[r.state];
+    const shift = cal ? run(cal).shift : 0;
+    const start = r.poll != null ? r.poll : cal ? cal.base : null;
+    const now = start == null ? null : start + shift;
+    const side = now == null || Math.abs(now) < EPS ? null : now > 0 ? "D" : "R";
+    if (side === "D") senD++;
+    return { ...r, shift, start, now, tie: now != null && !side, flip: side != null && side !== r.holder };
+  }).sort((a, b) => Math.abs(a.now ?? 99) - Math.abs(b.now ?? 99));
+  const ties = sen.filter((x) => x.tie).length;
+  const senR = 100 - senD - ties;
+
+  const dVotesDelta = tot.D - B.D, rVotesDelta = tot.R - B.R;
+  $("result").innerHTML = `
+    <h2>Result with this electorate</h2>
+    <div class="head">
+      <div><div class="big num ${cls(nat)}">${mg(nat)}</div><div class="k">National two-party vote</div>
+        <div class="s">2024 was ${mg(natBase)} · your shift <span class="${cls(natShift)}">${mg(natShift)}</span></div>
+        <div class="bar"><i style="width:${50 + nat / 2}%;background:var(--ld)"></i><i style="flex:1;background:var(--lr)"></i><span class="tick" style="left:50%"></span></div></div>
+      <div><div class="big num">${fmtM(votes)}</div><div class="k">Ballots for D or R</div>
+        <div class="s">${dv(votes - votesBase)} vs 2024 · <span class="d">D ${fmtM(tot.D)}</span> (${dv(dVotesDelta)}) · <span class="r">R ${fmtM(tot.R)}</span> (${dv(rVotesDelta)})</div></div>
+      <div><div class="big num"><span class="d">${senD}</span> <span style="color:var(--ink-dim);font-size:20px">–</span> <span class="r">${senR}</span></div><div class="k">Senate, 51 for D control</div>
+        <div class="s">${ties ? `${ties} tied · ` : ""}${senD >= 51 ? "Democrats win control" : senD === 50 && !ties ? "50–50, the Vice President breaks ties (R)" : senR >= 50 ? "Republicans keep control" : "Control comes down to the ties"} · ${sen.filter((x) => x.flip).length} seats flip</div></div>
+      <div><div class="big num"><span class="d">${dSeats}</span> <span style="color:var(--ink-dim);font-size:20px">–</span> <span class="r">${435 - dSeats}</span></div><div class="k">House districts by 2024 pres. lines</div>
+        <div class="s">Harris carried ${dBase} · change <span class="${cls(dSeats - dBase)}">${dSeats - dBase >= 0 ? "+" : ""}${dSeats - dBase} D</span></div></div>
+    </div>`;
+
+  // groups table
+  const tv = Object.values(tot.by).reduce((a, b) => a + b.votes, 0);
+  $("gtbl").innerHTML = `<thead><tr><th>Group</th><th class="n">Eligible</th><th class="n">Turnout</th><th class="n">Ballots</th><th class="n">Share of voters</th><th class="n">D votes</th><th class="n">R votes</th><th class="n">Net</th></tr></thead><tbody>${GROUPS.map((g) => {
+    const b = tot.by[g.k], net = b.D - b.R;
+    return `<tr><td>${g.name}</td><td class="n num">${fmtM(b.elig)}</td><td class="n num">${b.elig ? (b.votes / b.elig * 100).toFixed(1) + "%" : "–"}</td><td class="n num">${fmtM(b.votes)}</td><td class="n num">${(b.votes / tv * 100).toFixed(1)}%</td><td class="n num d">${fmtM(b.D)}</td><td class="n num r">${fmtM(b.R)}</td><td class="n num ${cls(net)}">${net >= 0 ? "D +" : "R +"}${fmtM(Math.abs(net))}</td></tr>`;
+  }).join("")}</tbody>`;
+
+  // senate table
+  $("stbl").innerHTML = `<thead><tr><th>State</th><th>Holds</th><th class="n">Start</th><th class="n">Your shift</th><th class="n">Result</th></tr></thead><tbody>${sen.map((r) => `<tr class="${r.flip ? "flip" : ""}"><td>${esc(r.name)}${r.special ? " (special)" : ""}${r.flip ? `<span class="tag">Flips</span>` : r.tie ? `<span class="tag">Tied</span>` : ""}</td><td class="${r.holder === "D" ? "d" : "r"}">${r.holder}</td><td class="n num ${cls(r.start)}" title="${r.poll != null ? "Polling average" : "2024 presidential"}">${mg(r.start)}${r.poll == null ? "*" : ""}</td><td class="n num ${cls(r.shift)}">${mg(r.shift)}</td><td class="n num ${cls(r.now)}"><b>${mg(r.now)}</b></td></tr>`).join("")}</tbody>`;
+
+  // tiles
+  const SEN = Object.fromEntries(SENATE.map((r) => [r.state, 1]));
+  $("tiles").innerHTML = Object.entries(GRID).map(([st, [r, c]]) => {
+    const cal = GEO.states[st];
+    if (!cal) return `<div class="tile na${SEN[st] ? " sen" : ""}" style="grid-row:${r + 1};grid-column:${c + 1}">${st}</div>`;
+    const sh = run(cal).shift, t = Math.min(1, Math.abs(sh) / 6);
+    const col = Math.abs(sh) < 0.05 ? "#5b6577" : sh > 0 ? mix("#c9d8ee", "#1f5fc4", t) : mix("#efd0d0", "#b93838", t);
+    return `<div class="tile${SEN[st] ? " sen" : ""}" style="grid-row:${r + 1};grid-column:${c + 1};background:${col}" title="${st}: ${mg(sh)}">${st}<span>${Math.abs(sh) < 0.05 ? "0" : mg(sh, 1).replace("+", "")}</span></div>`;
+  }).join("");
+
+  // house flips
+  flips.sort((a, b) => Math.abs(a.now) - Math.abs(b.now));
+  $("htbl").innerHTML = flips.length ? `<thead><tr><th>District</th><th class="n">2024 pres.</th><th class="n">With your electorate</th><th>Goes</th></tr></thead><tbody>${flips.map((f) => `<tr><td>${f.id}</td><td class="n num ${cls(f.base)}">${mg(f.base)}</td><td class="n num ${cls(f.now)}"><b>${mg(f.now)}</b></td><td class="${f.now > 0 ? "d" : "r"}">${f.now > 0 ? "R → D" : "D → R"}</td></tr>`).join("")}</tbody>` : `<tbody><tr><td class="empty">No districts change hands. Move a slider.</td></tr></tbody>`;
+
+  // shareable link
+  const enc = GROUPS.map((g) => S.t[g.k]).join(",") + ";" + GROUPS.map((g) => S.d[g.k]).join(",");
+  history.replaceState(null, "", location.pathname + location.search + "#s=" + enc);
+}
+
+/* ---------- data ---------- */
+async function load() {
+  const get = (u) => fetch(u, { cache: "no-cache" }).then((r) => r.ok ? r.json() : null).catch(() => null);
+  const [race, base, ov] = await Promise.all([get("data/census/race-cvap.json"), get("data/baseline-2024-cd.json"), get("data/overview.json")]);
+  if (!race || !base) {
+    $("groups").innerHTML = `<div class="empty">${!race ? "Census eligible-voter data by race is still building. Check back after the next data refresh." : "2024 district results are missing."}</div>`;
+    $("result").innerHTML = ""; return;
+  }
+  NAT_CVAP = race.us;
+  const stTot = {};
+  GEO.fixed = [];
+  for (const [id, r] of Object.entries(base.districts)) {
+    const st = id.slice(0, 2);
+    (stTot[st] ||= { harris: 0, trump: 0 });
+    stTot[st].harris += r.harris; stTot[st].trump += r.trump;
+    const c = race.districts[id] || race.districts[st + "-00"];
+    const m = c && fitTurnout(c, r.harris + r.trump);
+    if (m) GEO.districts.push({ id, harris: r.harris, trump: r.trump, cal: { c, m }, newLines: r.newLines });
+    else GEO.fixed.push({ id, base: (r.harris - r.trump) / (r.harris + r.trump) * 100 });
+  }
+  // national per-group correction (see F above), then each place's lean
+  for (const g of GROUPS) {
+    let raw = 0, want = 0;
+    for (const x of GEO.districts) { const e = x.cal.c[g.k] || 0; raw += e * BASE.turnout[g.k] / 100 * x.cal.m; want += e * BASE.turnout[g.k] / 100; }
+    F[g.k] = want ? raw / want : 1;
+  }
+  for (const x of GEO.districts) fitLean(x.cal, x.harris, x.trump);
+  for (const [st, t] of Object.entries(stTot)) {
+    const c = race.states[st]; const m = c && fitTurnout(c, t.harris + t.trump);
+    if (m) GEO.states[st] = fitLean({ c, m }, t.harris, t.trump);
+  }
+  const set2024 = { t: { ...BASE.turnout }, d: { ...BASE.dem } };
+  GEO.baseRun = GEO.districts.reduce((a, x) => { const o = run(x.cal, set2024); a.D += o.D; a.R += o.R; return a; }, { D: 0, R: 0 });
+  const s = ov && ov.senate;
+  if (s) {
+    if (s.holdover) HOLD = s.holdover;
+    SENATE = (s.races || []).map((r) => ({ state: r.state, name: r.name, holder: r.holder === "R" ? "R" : "D", special: r.special, poll: r.nyt && r.nyt.averageMargin != null ? r.nyt.averageMargin : null }));
+  }
+  // restore a shared scenario from the link
+  const m = location.hash.match(/s=([\d.,]+);([\d.,]+)/);
+  if (m) {
+    const t = m[1].split(",").map(Number), d = m[2].split(",").map(Number);
+    GROUPS.forEach((g, i) => { if (isFinite(t[i])) S.t[g.k] = t[i]; if (isFinite(d[i])) S.d[g.k] = d[i]; });
+  }
+  renderGroups(); update();
+  $("credit").innerHTML = `Eligible voters: ${esc(race.source)}. 2024 district results: <a href="${esc(base.source)}" target="_blank" rel="noopener">The Downballot</a>. Turnout baseline: <a href="https://www2.census.gov/library/publications/2026/demo/p20-590.pdf" target="_blank" rel="noopener">Census Bureau, Voting and Registration in the Election of November 2024</a>. Party baseline: <a href="https://www.pewresearch.org/politics/2025/06/26/voting-patterns-in-the-2024-election/" target="_blank" rel="noopener">Pew Research Center, 2024 validated voters</a>. Method: each district and state is fitted so the 2024 settings reproduce its actual 2024 result, then your changes are applied on top. ${GEO.districts.filter((x) => x.newLines).length} districts were redrawn for 2026 and use the closest available Census figures.`;
+}
+load();
+</script>
+</body>
+</html>
