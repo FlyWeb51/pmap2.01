@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T03:28:02.971Z",
+  "generatedAt": "2026-10-29T06:01:25.973Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -232,7 +232,7 @@
         "kalshiD": 0.8859999999999999,
         "nyt": {
           "averageMargin": 6.5,
-          "averagePolls": 12,
+          "averagePolls": 11,
           "latest": {
             "pollster": "St. Anselm",
             "endDate": "2026-10-20",
@@ -507,12 +507,12 @@
         "special": false,
         "kalshiD": 0.016,
         "nyt": {
-          "averageMargin": -18.2,
-          "averagePolls": 3,
+          "averageMargin": -14,
+          "averagePolls": 4,
           "latest": {
-            "pollster": "Cygnal Political",
-            "endDate": "2026-10-17",
-            "margin": -14.799999999999997
+            "pollster": "Blueprint Polling",
+            "endDate": "2026-10-24",
+            "margin": -8.299999999999997
           },
           "source": "NYT"
         }
@@ -1072,12 +1072,12 @@
       "dem": "David Crowley",
       "rep": "Tom Tiffany",
       "poll": {
-        "averageMargin": 4.4,
-        "averagePolls": 6,
+        "averageMargin": 4.2,
+        "averagePolls": 7,
         "latest": {
-          "pollster": "Marquette University Law School",
-          "endDate": "2026-10-22",
-          "margin": 3
+          "pollster": "Wick",
+          "endDate": "2026-10-23",
+          "margin": 3.1000000000000014
         },
         "source": "NYT"
       }
@@ -1212,12 +1212,12 @@
       "dem": "Doug Jones",
       "rep": "Tommy Tuberville",
       "poll": {
-        "averageMargin": -11.7,
-        "averagePolls": 3,
+        "averageMargin": -8,
+        "averagePolls": 4,
         "latest": {
-          "pollster": "Cygnal Political",
-          "endDate": "2026-10-17",
-          "margin": -11.200000000000003
+          "pollster": "Blueprint Polling",
+          "endDate": "2026-10-24",
+          "margin": -3
         },
         "source": "NYT"
       }
@@ -1423,8 +1423,8 @@
       "dem": "Dan Ahlers",
       "rep": "Larry Rhoden",
       "poll": {
-        "averageMargin": -18.2,
-        "averagePolls": 4,
+        "averageMargin": -18.4,
+        "averagePolls": 3,
         "latest": {
           "pollster": "Emerson College",
           "endDate": "2026-10-21",
@@ -1659,19 +1659,6 @@
         "kalshiD": 0.985
       },
       {
-        "state": "AL",
-        "name": "Alabama",
-        "special": false,
-        "dem": "Everett W Wess",
-        "rep": "Barry Moore",
-        "polls": 4,
-        "pres2024": -30.5,
-        "expected": -21.2,
-        "pollMargin": -19.7,
-        "overUnder": 1.5,
-        "kalshiD": 0.016
-      },
-      {
         "state": "GA",
         "name": "Georgia",
         "special": false,
@@ -1750,6 +1737,19 @@
         "kalshiD": 0.6679999999999999
       },
       {
+        "state": "AL",
+        "name": "Alabama",
+        "special": false,
+        "dem": "Everett W Wess",
+        "rep": "Barry Moore",
+        "polls": 5,
+        "pres2024": -30.5,
+        "expected": -21.2,
+        "pollMargin": -15.3,
+        "overUnder": 5.9,
+        "kalshiD": 0.016
+      },
+      {
         "state": "SC",
         "name": "South Carolina",
         "special": false,
@@ -1820,23 +1820,12 @@
     "updated": "2026-10-29T01:48:12.245Z",
     "day": [
       {
-        "key": "H-WI-03",
-        "name": "WI-3",
-        "type": "House",
-        "now": 87.5,
-        "ch1": 10,
-        "ch7": 10.5,
-        "dem": "Rebecca Cooke",
-        "rep": "Derrick Van Orden",
-        "thirdParty": false
-      },
-      {
         "key": "H-AL-02",
         "name": "AL-2",
         "type": "House",
         "now": 41.9,
         "ch1": 9.4,
-        "ch7": 14.5,
+        "ch7": 14.4,
         "dem": "Shomari Figures",
         "rep": "Rhett Marques",
         "thirdParty": false
@@ -1847,53 +1836,53 @@
         "type": "House",
         "now": 42.1,
         "ch1": 7.6,
-        "ch7": 9.6,
+        "ch7": 10.9,
         "dem": "Tom Perriello",
         "rep": "John McGuire",
         "thirdParty": false
       },
       {
-        "key": "H-TX-15",
-        "name": "TX-15",
+        "key": "H-WI-03",
+        "name": "WI-3",
         "type": "House",
         "now": 87.5,
-        "ch1": 6.2,
-        "ch7": 0,
-        "dem": "Bobby Pulido",
-        "rep": "Monica De La Cruz",
-        "thirdParty": false
-      },
-      {
-        "key": "G-FL",
-        "name": "Florida",
-        "type": "Governor",
-        "now": 28.5,
         "ch1": 6,
-        "ch7": 6,
-        "dem": "David Jolly",
-        "rep": "Byron Donalds",
+        "ch7": 10.5,
+        "dem": "Rebecca Cooke",
+        "rep": "Derrick Van Orden",
         "thirdParty": false
       },
       {
-        "key": "H-FL-22",
-        "name": "FL-22",
-        "type": "House",
-        "now": 68.2,
-        "ch1": 5.4,
-        "ch7": 11.7,
-        "dem": "Pia Dandiya",
-        "rep": "Casey Askar",
+        "key": "S-SC",
+        "name": "South Carolina",
+        "type": "Senate",
+        "now": 28.2,
+        "ch1": 5.7,
+        "ch7": 10.8,
+        "dem": "Annie Andrews",
+        "rep": "Darline Graham",
         "thirdParty": false
       },
       {
-        "key": "H-NC-03",
-        "name": "NC-3",
-        "type": "House",
-        "now": 38.1,
-        "ch1": -5.4,
-        "ch7": 17.6,
-        "dem": "Raymond Smith Jr.",
-        "rep": "Greg Murphy",
+        "key": "G-SC",
+        "name": "South Carolina",
+        "type": "Governor",
+        "now": 9.7,
+        "ch1": 5.6,
+        "ch7": 3.1,
+        "dem": "Jermaine Johnson",
+        "rep": "Alan Wilson",
+        "thirdParty": false
+      },
+      {
+        "key": "G-WI",
+        "name": "Wisconsin",
+        "type": "Governor",
+        "now": 83.5,
+        "ch1": 5.6,
+        "ch7": 3,
+        "dem": "David Crowley",
+        "rep": "Tom Tiffany",
         "thirdParty": false
       },
       {
@@ -1902,9 +1891,20 @@
         "type": "Senate",
         "now": 89.6,
         "ch1": 5.1,
-        "ch7": 2.1,
+        "ch7": 3.1,
         "dem": "Peggy Flanagan",
         "rep": "Michele Tafoya",
+        "thirdParty": false
+      },
+      {
+        "key": "H-FL-22",
+        "name": "FL-22",
+        "type": "House",
+        "now": 68.2,
+        "ch1": 5.1,
+        "ch7": 11.7,
+        "dem": "Pia Dandiya",
+        "rep": "Casey Askar",
         "thirdParty": false
       },
       {
@@ -1919,36 +1919,36 @@
         "thirdParty": false
       },
       {
-        "key": "G-WI",
-        "name": "Wisconsin",
-        "type": "Governor",
-        "now": 83.5,
-        "ch1": 4.8,
-        "ch7": 3,
-        "dem": "David Crowley",
-        "rep": "Tom Tiffany",
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 3.9,
+        "ch1": -3.9,
+        "ch7": -2.8,
+        "dem": null,
+        "rep": null,
         "thirdParty": false
       },
       {
-        "key": "S-SC",
-        "name": "South Carolina",
-        "type": "Senate",
-        "now": 28.2,
-        "ch1": 4.7,
-        "ch7": 10.9,
-        "dem": "Annie Andrews",
-        "rep": "Darline Graham",
+        "key": "H-NC-14",
+        "name": "NC-14",
+        "type": "House",
+        "now": 19.5,
+        "ch1": 3.8,
+        "ch7": 10.2,
+        "dem": "LaKesha Womack",
+        "rep": "Tim Moore",
         "thirdParty": false
       },
       {
-        "key": "G-SC",
-        "name": "South Carolina",
-        "type": "Governor",
-        "now": 9.7,
-        "ch1": 4.6,
-        "ch7": 3.2,
-        "dem": "Jermaine Johnson",
-        "rep": "Alan Wilson",
+        "key": "H-CO-05",
+        "name": "CO-5",
+        "type": "House",
+        "now": 42.6,
+        "ch1": 3.5,
+        "ch7": 17,
+        "dem": "Jessica Killin",
+        "rep": "Jeff Crank",
         "thirdParty": false
       }
     ],
@@ -1958,8 +1958,8 @@
         "name": "NC-3",
         "type": "House",
         "now": 38.1,
-        "ch1": -5.4,
-        "ch7": 17.6,
+        "ch1": -3.4,
+        "ch7": 19.4,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
         "thirdParty": false
@@ -1969,8 +1969,8 @@
         "name": "CO-5",
         "type": "House",
         "now": 42.6,
-        "ch1": 3.1,
-        "ch7": 17.3,
+        "ch1": 3.5,
+        "ch7": 17,
         "dem": "Jessica Killin",
         "rep": "Jeff Crank",
         "thirdParty": false
@@ -1980,7 +1980,7 @@
         "name": "NC-13",
         "type": "House",
         "now": 32.8,
-        "ch1": -2.7,
+        "ch1": -1.7,
         "ch7": 16.9,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
@@ -1992,7 +1992,7 @@
         "type": "House",
         "now": 41.9,
         "ch1": 9.4,
-        "ch7": 14.5,
+        "ch7": 14.4,
         "dem": "Shomari Figures",
         "rep": "Rhett Marques",
         "thirdParty": false
@@ -2002,8 +2002,8 @@
         "name": "PA-8",
         "type": "House",
         "now": 86.6,
-        "ch1": 1.9,
-        "ch7": 14.1,
+        "ch1": 1.1,
+        "ch7": 13.4,
         "dem": "Paige Cognetti",
         "rep": "Rob Bresnahan",
         "thirdParty": false
@@ -2013,7 +2013,7 @@
         "name": "NC-1",
         "type": "House",
         "now": 83.5,
-        "ch1": 1.6,
+        "ch1": 0,
         "ch7": 13,
         "dem": "Don Davis",
         "rep": "Laurie Buckhout",
@@ -2024,10 +2024,21 @@
         "name": "MN-1",
         "type": "House",
         "now": 38.1,
-        "ch1": 0.2,
-        "ch7": 12,
+        "ch1": 0.6,
+        "ch7": 11.9,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
+        "thirdParty": false
+      },
+      {
+        "key": "H-FL-22",
+        "name": "FL-22",
+        "type": "House",
+        "now": 68.2,
+        "ch1": 5.1,
+        "ch7": 11.7,
+        "dem": "Pia Dandiya",
+        "rep": "Casey Askar",
         "thirdParty": false
       },
       {
@@ -2036,20 +2047,20 @@
         "type": "Governor",
         "now": 77.5,
         "ch1": 1,
-        "ch7": 11.7,
+        "ch7": 11.3,
         "dem": "Aaron Ford",
         "rep": "Joe Lombardo",
         "thirdParty": false
       },
       {
-        "key": "H-FL-22",
-        "name": "FL-22",
+        "key": "H-VA-05",
+        "name": "VA-5",
         "type": "House",
-        "now": 68.2,
-        "ch1": 5.4,
-        "ch7": 11.7,
-        "dem": "Pia Dandiya",
-        "rep": "Casey Askar",
+        "now": 42.1,
+        "ch1": 7.6,
+        "ch7": 10.9,
+        "dem": "Tom Perriello",
+        "rep": "John McGuire",
         "thirdParty": false
       },
       {
@@ -2057,8 +2068,8 @@
         "name": "South Carolina",
         "type": "Senate",
         "now": 28.2,
-        "ch1": 4.7,
-        "ch7": 10.9,
+        "ch1": 5.7,
+        "ch7": 10.8,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
         "thirdParty": false
@@ -2068,21 +2079,10 @@
         "name": "WI-3",
         "type": "House",
         "now": 87.5,
-        "ch1": 10,
+        "ch1": 6,
         "ch7": 10.5,
         "dem": "Rebecca Cooke",
         "rep": "Derrick Van Orden",
-        "thirdParty": false
-      },
-      {
-        "key": "H-CO-04",
-        "name": "CO-4",
-        "type": "House",
-        "now": 35.1,
-        "ch1": 2.6,
-        "ch7": 10.4,
-        "dem": "Eileen Laubacher",
-        "rep": "Lauren Boebert",
         "thirdParty": false
       }
     ]
@@ -2487,7 +2487,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-29T01:48:12.250Z",
-    "nytUpdated": "2026-10-28T22:42:20.181Z",
+    "nytUpdated": "2026-10-29T06:01:25.607Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

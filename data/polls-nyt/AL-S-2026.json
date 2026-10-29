@@ -1,12 +1,43 @@
 {
   "raceId": "AL-S-2026",
-  "count": 9,
+  "count": 10,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Blueprint Polling",
+      "sponsors": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-24",
+      "sampleSize": 695,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.chismstrategies.com/field-notes/new-alabama-poll-governors-race-a-toss-up-as-tuberville-edges-jones-48--45",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Barry Moore (R)",
+          "party": "R",
+          "percentage": 47.8
+        },
+        {
+          "candidate": "Everett Wess (D)",
+          "party": "D",
+          "percentage": 39.5
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 12.7
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Cygnal Political",
       "sponsors": "Alabama Daily News | Gray Television",

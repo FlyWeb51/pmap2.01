@@ -1,12 +1,43 @@
 {
   "raceId": "WI-G-2026",
-  "count": 39,
+  "count": 40,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Wick",
+      "sponsors": "League of American Workers",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-23",
+      "sampleSize": 1213,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://wick.io/law-wisconsin-poll-results",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "David Crowley (D)",
+          "party": "D",
+          "percentage": 47.7
+        },
+        {
+          "candidate": "Tom Tiffany (R)",
+          "party": "R",
+          "percentage": 44.6
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7.7
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Marquette University Law School",
       "sponsors": null,

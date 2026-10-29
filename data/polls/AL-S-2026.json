@@ -1,8 +1,37 @@
 {
   "raceId": "AL-S-2026",
-  "count": 5,
-  "updated_at": "2026-10-29T03:28:02.806Z",
+  "count": 6,
+  "updated_at": "2026-10-29T06:01:25.842Z",
   "polls": [
+    {
+      "pollster": "Blueprint Polling",
+      "endDate": "2026-10-24",
+      "fieldDates": "2026-10-22 to 2026-10-24",
+      "sampleSize": 695,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Barry Moore (R)",
+          "party": "R",
+          "pct": 47.8,
+          "percentage": 47.8
+        },
+        {
+          "candidate": "Everett Wess (D)",
+          "party": "D",
+          "pct": 39.5,
+          "percentage": 39.5
+        }
+      ],
+      "sourceUrl": "https://www.chismstrategies.com/field-notes/new-alabama-poll-governors-race-a-toss-up-as-tuberville-edges-jones-48--45",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0443
+    },
     {
       "pollster": "Cygnal R-sponsored missed 2024 by 4.2 pts In average",
       "endDate": "2026-10-17",
@@ -31,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Alabama Daily News | Gray Television",
-      "weight": 0.3777
+      "weight": 0.3767
     },
     {
       "pollster": "The Alabama Poll In average",
@@ -60,7 +89,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8085
+      "weight": 0.8065
     },
     {
       "pollster": "RMG Research",
@@ -90,7 +119,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Alabama Policy Action | Napolitan News Service",
-      "weight": 0.2586
+      "weight": 0.258
     },
     {
       "pollster": "RMG Research R-sponsored In average",
@@ -118,12 +147,12 @@
         "https://pollingsource.com/senate/AL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2586
+      "weight": 0.258
     },
     {
       "pollster": "yes. every kid. foundation.",
       "endDate": "2026-07-11",
-      "weight": 0.086,
+      "weight": 0.0858,
       "sampleSize": 601,
       "population": "LV",
       "results": [
