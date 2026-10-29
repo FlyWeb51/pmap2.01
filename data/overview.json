@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T20:37:46.994Z",
+  "generatedAt": "2026-10-29T22:52:06.955Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -1192,8 +1192,8 @@
       "dem": "Jocelyn Benson",
       "rep": "John James",
       "poll": {
-        "averageMargin": 9,
-        "averagePolls": 22,
+        "averageMargin": 8.6,
+        "averagePolls": 23,
         "latest": {
           "pollster": "CNN/SSRS",
           "endDate": "2026-10-27",
@@ -1835,7 +1835,7 @@
         "name": "PA-1",
         "type": "House",
         "now": 52.5,
-        "ch1": 9.6,
+        "ch1": 10,
         "ch7": 13.4,
         "dem": "Bob Harvie",
         "rep": "Brian Fitzpatrick",
@@ -1853,36 +1853,25 @@
         "thirdParty": false
       },
       {
-        "key": "H-KY-06",
-        "name": "KY-6",
-        "type": "House",
-        "now": 55.5,
-        "ch1": 9.5,
-        "ch7": 13,
-        "dem": "Zach Dembo",
-        "rep": "Ralph Alvarado",
-        "thirdParty": false
-      },
-      {
-        "key": "H-AL-02",
-        "name": "AL-2",
-        "type": "House",
-        "now": 43.1,
-        "ch1": 9.3,
-        "ch7": 14.6,
-        "dem": "Shomari Figures",
-        "rep": "Rhett Marques",
-        "thirdParty": false
-      },
-      {
         "key": "H-FL-22",
         "name": "FL-22",
         "type": "House",
         "now": 70.8,
         "ch1": 7.7,
-        "ch7": 8.4,
+        "ch7": 7.7,
         "dem": "Pia Dandiya",
         "rep": "Casey Askar",
+        "thirdParty": false
+      },
+      {
+        "key": "H-KY-06",
+        "name": "KY-6",
+        "type": "House",
+        "now": 55.5,
+        "ch1": 7.5,
+        "ch7": 12,
+        "dem": "Zach Dembo",
+        "rep": "Ralph Alvarado",
         "thirdParty": false
       },
       {
@@ -1897,36 +1886,36 @@
         "thirdParty": false
       },
       {
-        "key": "S-MI",
-        "name": "Michigan",
-        "type": "Senate",
-        "now": 74.5,
-        "ch1": 6,
-        "ch7": 5,
-        "dem": "Abdul El-Sayed",
-        "rep": "Mike Rogers",
-        "thirdParty": false
-      },
-      {
-        "key": "G-FL",
-        "name": "Florida",
-        "type": "Governor",
-        "now": 30.5,
-        "ch1": 5.8,
-        "ch7": 10,
-        "dem": "David Jolly",
-        "rep": "Byron Donalds",
-        "thirdParty": false
-      },
-      {
         "key": "H-NC-14",
         "name": "NC-14",
         "type": "House",
         "now": 25.2,
         "ch1": 5.7,
-        "ch7": 15.2,
+        "ch7": 14.8,
         "dem": "LaKesha Womack",
         "rep": "Tim Moore",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 4.7,
+        "ch1": -5.4,
+        "ch7": -2.3,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "S-MI",
+        "name": "Michigan",
+        "type": "Senate",
+        "now": 74.5,
+        "ch1": 5.3,
+        "ch7": 5.5,
+        "dem": "Abdul El-Sayed",
+        "rep": "Mike Rogers",
         "thirdParty": false
       },
       {
@@ -1935,7 +1924,7 @@
         "type": "House",
         "now": 24.7,
         "ch1": 5.2,
-        "ch7": 3.5,
+        "ch7": 2.7,
         "dem": "Chris Backemeyer",
         "rep": "Mike Flood",
         "thirdParty": false
@@ -1949,6 +1938,17 @@
         "ch7": -0.1,
         "dem": "Christina Hines",
         "rep": "Michael Bouchard Jr.",
+        "thirdParty": false
+      },
+      {
+        "key": "H-SC-01",
+        "name": "SC-1",
+        "type": "House",
+        "now": 41.5,
+        "ch1": 4,
+        "ch7": 9,
+        "dem": "Nancy S. Lacore",
+        "rep": "Jenny Costa Honeycutt",
         "thirdParty": false
       }
     ],
@@ -1970,7 +1970,7 @@
         "type": "House",
         "now": 41.1,
         "ch1": 3,
-        "ch7": 20.6,
+        "ch7": 21.6,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
         "thirdParty": false
@@ -1981,7 +1981,7 @@
         "type": "House",
         "now": 25.2,
         "ch1": 5.7,
-        "ch7": 15.2,
+        "ch7": 14.8,
         "dem": "LaKesha Womack",
         "rep": "Tim Moore",
         "thirdParty": false
@@ -1991,7 +1991,7 @@
         "name": "AL-2",
         "type": "House",
         "now": 43.1,
-        "ch1": 9.3,
+        "ch1": 0.2,
         "ch7": 14.6,
         "dem": "Shomari Figures",
         "rep": "Rhett Marques",
@@ -2002,7 +2002,7 @@
         "name": "PA-1",
         "type": "House",
         "now": 52.5,
-        "ch1": 9.6,
+        "ch1": 10,
         "ch7": 13.4,
         "dem": "Bob Harvie",
         "rep": "Brian Fitzpatrick",
@@ -2013,8 +2013,8 @@
         "name": "KY-6",
         "type": "House",
         "now": 55.5,
-        "ch1": 9.5,
-        "ch7": 13,
+        "ch1": 7.5,
+        "ch7": 12,
         "dem": "Zach Dembo",
         "rep": "Ralph Alvarado",
         "thirdParty": false
@@ -2031,17 +2031,6 @@
         "thirdParty": false
       },
       {
-        "key": "H-CO-05",
-        "name": "CO-5",
-        "type": "House",
-        "now": 42.1,
-        "ch1": 2.6,
-        "ch7": 11.3,
-        "dem": "Jessica Killin",
-        "rep": "Jeff Crank",
-        "thirdParty": false
-      },
-      {
         "key": "S-KS",
         "name": "Kansas",
         "type": "Senate",
@@ -2053,36 +2042,47 @@
         "thirdParty": false
       },
       {
+        "key": "G-FL",
+        "name": "Florida",
+        "type": "Governor",
+        "now": 30.5,
+        "ch1": 3,
+        "ch7": 10.8,
+        "dem": "David Jolly",
+        "rep": "Byron Donalds",
+        "thirdParty": false
+      },
+      {
         "key": "H-PA-08",
         "name": "PA-8",
         "type": "House",
         "now": 90.3,
-        "ch1": 4.8,
+        "ch1": 3.7,
         "ch7": 10.7,
         "dem": "Paige Cognetti",
         "rep": "Rob Bresnahan",
         "thirdParty": false
       },
       {
-        "key": "G-FL",
-        "name": "Florida",
-        "type": "Governor",
-        "now": 30.5,
-        "ch1": 5.8,
-        "ch7": 10,
-        "dem": "David Jolly",
-        "rep": "Byron Donalds",
+        "key": "H-CO-05",
+        "name": "CO-5",
+        "type": "House",
+        "now": 42.1,
+        "ch1": 1.6,
+        "ch7": 10.6,
+        "dem": "Jessica Killin",
+        "rep": "Jeff Crank",
         "thirdParty": false
       },
       {
-        "key": "H-CO-04",
-        "name": "CO-4",
+        "key": "H-MT-01",
+        "name": "MT-1",
         "type": "House",
-        "now": 35.5,
-        "ch1": 3,
-        "ch7": 10,
-        "dem": "Eileen Laubacher",
-        "rep": "Lauren Boebert",
+        "now": 54,
+        "ch1": 9.5,
+        "ch7": 9.5,
+        "dem": "Sam Forstag",
+        "rep": "Aaron Flint",
         "thirdParty": false
       }
     ]
@@ -2511,7 +2511,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-29T20:37:46.871Z",
-    "nytUpdated": "2026-10-29T20:24:04.669Z",
+    "nytUpdated": "2026-10-29T22:52:06.595Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

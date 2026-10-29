@@ -1,12 +1,43 @@
 {
   "raceId": "AZ-H-01-2026",
-  "count": 4,
+  "count": 5,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Keating Research, Inc.",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-28",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://keatingresearch.com/polls/az-01-october-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amish Shah (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Jay Feely (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "FirstStrategic Communications and Public Affairs",
       "sponsors": null,
