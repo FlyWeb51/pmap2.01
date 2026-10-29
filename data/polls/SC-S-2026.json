@@ -1,7 +1,7 @@
 {
   "raceId": "SC-S-2026",
-  "count": 22,
-  "updated_at": "2026-10-29T18:03:01.599Z",
+  "count": 23,
+  "updated_at": "2026-10-29T20:24:04.991Z",
   "polls": [
     {
       "pollster": "The New York Times/Siena University",
@@ -30,7 +30,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0904
+      "weight": 1.0879
     },
     {
       "pollster": "Targoz Market Research In average",
@@ -60,7 +60,48 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "South Carolina Policy Council",
-      "weight": 1.1988
+      "weight": 1.1961
+    },
+    {
+      "pollster": "East Carolina University Center for Survey Research",
+      "endDate": "2026-10-24",
+      "fieldDates": "2026-10-19 to 2026-10-24",
+      "sampleSize": 955,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "pct": 51.2,
+          "percentage": 51.2
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "pct": 47.3,
+          "percentage": 47.3
+        },
+        {
+          "candidate": "Mark Hackett (CON)",
+          "party": null,
+          "pct": 0.7,
+          "percentage": 0.7
+        },
+        {
+          "candidate": "Kasie Whitener (LIB)",
+          "party": "O",
+          "pct": 0.7,
+          "percentage": 0.7
+        }
+      ],
+      "sourceUrl": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-finds-graham-leading-andrews-by-four-points",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.2073
     },
     {
       "pollster": "Impact Research D-sponsored D-sponsored In average",
@@ -91,7 +132,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fresh Start SC PAC",
-      "weight": 0.5167
+      "weight": 0.5155
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts In average",
@@ -121,7 +162,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.564
+      "weight": 0.5627
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts Not in average",
@@ -150,7 +191,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3914
+      "weight": 0.3905
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts Not in average",
@@ -180,7 +221,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3806
+      "weight": 0.3798
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -210,7 +251,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3303
+      "weight": 0.3295
     },
     {
       "pollster": "Rasmussen Reports",
@@ -239,7 +280,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2464
+      "weight": 0.2459
     },
     {
       "pollster": "InsiderAdvantage",
@@ -269,7 +310,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2398
+      "weight": 0.2392
     },
     {
       "pollster": "Abacus Data",
@@ -297,7 +338,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2041
+      "weight": 0.2036
     },
     {
       "pollster": "Abacus Data",
@@ -326,7 +367,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1835
+      "weight": 0.1831
     },
     {
       "pollster": "Impact Research",
@@ -356,7 +397,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1265
+      "weight": 0.1263
     },
     {
       "pollster": "Impact Research",
@@ -390,13 +431,13 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1165
+      "weight": 0.1162
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-07-17",
       "endDateUS": "7/17/2026",
-      "weight": 0.043,
+      "weight": 0.0429,
       "sampleSize": 577,
       "population": "RV",
       "results": [
@@ -451,7 +492,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.043,
+      "weight": 0.0429,
       "otherMatchup": true
     },
     {
@@ -481,7 +522,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.043,
+      "weight": 0.0429,
       "otherMatchup": true
     },
     {
@@ -511,7 +552,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.043,
+      "weight": 0.0429,
       "otherMatchup": true
     },
     {
@@ -541,7 +582,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.043,
+      "weight": 0.0429,
       "otherMatchup": true
     },
     {
@@ -572,7 +613,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0295
+      "weight": 0.0294
     },
     {
       "pollster": "Impact Research",

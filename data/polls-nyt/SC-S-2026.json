@@ -1,6 +1,6 @@
 {
   "raceId": "SC-S-2026",
-  "count": 26,
+  "count": 27,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -44,7 +44,7 @@
       "note": null
     },
     {
-      "pollster": "The Citadel School of Humanities and Social Sciences",
+      "pollster": "The Citadel Poll",
       "sponsors": null,
       "startDate": "2026-10-14",
       "endDate": "2026-10-25",
@@ -95,7 +95,7 @@
       "note": null
     },
     {
-      "pollster": "The Citadel School of Humanities and Social Sciences",
+      "pollster": "The Citadel Poll",
       "sponsors": null,
       "startDate": "2026-10-14",
       "endDate": "2026-10-25",
@@ -177,6 +177,47 @@
           "candidate": "Mark Hackett (CON)",
           "party": "CON",
           "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "East Carolina University Center for Survey Research",
+      "sponsors": null,
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-24",
+      "sampleSize": 955,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-finds-graham-leading-andrews-by-four-points",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "percentage": 51.2
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "percentage": 47.3
+        },
+        {
+          "candidate": "Mark Hackett (CON)",
+          "party": "CON",
+          "percentage": 0.7
+        },
+        {
+          "candidate": "Kasie Whitener (LIB)",
+          "party": "LIB",
+          "percentage": 0.7
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.2
         }
       ],
       "note": null

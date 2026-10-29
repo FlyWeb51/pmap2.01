@@ -1,12 +1,48 @@
 {
   "raceId": "AR-S-2026",
-  "count": 6,
+  "count": 7,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "GrayHouse",
+      "sponsors": "America One Policies",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-28",
+      "sampleSize": 509,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://www.grayhouse.com/post/arkansas-senate-poll-october-2026-cotton",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Tom Cotton (R)",
+          "party": "R",
+          "percentage": 55
+        },
+        {
+          "candidate": "Hallie Shoffner (D)",
+          "party": "D",
+          "percentage": 39
+        },
+        {
+          "candidate": "Jeff Wadlin (LIB)",
+          "party": "LIB",
+          "percentage": 4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Hendrix College",
       "sponsors": "Talk Business & Politics",

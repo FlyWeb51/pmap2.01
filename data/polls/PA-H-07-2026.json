@@ -1,7 +1,7 @@
 {
   "raceId": "PA-H-07-2026",
-  "count": 3,
-  "updated_at": "2026-10-29T18:03:01.597Z",
+  "count": 4,
+  "updated_at": "2026-10-29T20:24:04.989Z",
   "polls": [
     {
       "pollster": "The New York Times/Siena University",
@@ -30,7 +30,36 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7487
+      "weight": 0.747
+    },
+    {
+      "pollster": "Muhlenberg College",
+      "endDate": "2026-10-15",
+      "fieldDates": "2026-10-06 to 2026-10-15",
+      "sampleSize": 529,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Bob Brooks (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Ryan E. Mackenzie (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": "https://www.muhlenberg.edu/muhlenberg-now/pa-7th-congressional-survey-october-2026/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7298
     },
     {
       "pollster": "Franklin & Marshall College",
@@ -59,12 +88,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3035
+      "weight": 0.3028
     },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-02",
-      "weight": 0.033,
+      "weight": 0.0329,
       "sampleSize": 550,
       "population": "LV",
       "results": [

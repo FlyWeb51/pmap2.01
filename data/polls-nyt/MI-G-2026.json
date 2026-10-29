@@ -1,6 +1,6 @@
 {
   "raceId": "MI-G-2026",
-  "count": 83,
+  "count": 84,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -44,6 +44,37 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Michigan State University Office for Survey Research/Verasight",
+      "sponsors": null,
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-23",
+      "sampleSize": 1383,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://polisci.msu.edu/news-events/news/smidt-poll102926.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jocelyn Benson (D)",
+          "party": "D",
+          "percentage": 51.4
+        },
+        {
+          "candidate": "John James (R)",
+          "party": "R",
+          "percentage": 41.2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 7.4
         }
       ],
       "note": null
