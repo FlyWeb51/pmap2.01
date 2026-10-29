@@ -96,6 +96,14 @@
   .ym-split b{color:var(--ink);font-weight:600}
   .ym-share{margin-top:8px;background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:5px 10px;font-size:11.5px}
   .ym-share:hover{border-color:var(--focus)}
+  .od-sw{display:inline-flex;align-items:center;gap:7px;background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:999px;padding:3px 9px 3px 4px;font:inherit;font-size:11px;letter-spacing:.04em;cursor:pointer}
+  .od-sw i{position:relative;width:26px;height:14px;border-radius:7px;background:var(--vac);transition:background .15s}
+  .od-sw i::after{content:"";position:absolute;top:2px;left:2px;width:10px;height:10px;border-radius:50%;background:var(--ink-dim);transition:transform .15s,background .15s}
+  .od-sw[aria-checked=true]{color:var(--ink);border-color:var(--focus)}
+  .od-sw[aria-checked=true] i{background:var(--ld)}
+  .od-sw[aria-checked=true] i::after{transform:translateX(12px);background:#fff}
+  .od-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+  .od-head h3{margin:0}
   .od-whole{display:grid;grid-template-columns:1fr auto;gap:3px 10px;font-size:12.5px;margin-top:4px}
   .od-whole b{text-align:right;font-size:14px}
   .od-whole b:first-of-type{color:#f0c674}
@@ -212,7 +220,8 @@
     <div class="sc-nums"><b class="num d" id="gD">–</b><span class="sc-mid" id="gMid"></span><b class="num r" id="gR">–</b></div>
     <div class="bar"><i id="gBD" style="background:var(--ld)"></i><i id="gBT" style="background:var(--toss)"></i><i style="flex:1"></i><i id="gBR" style="background:var(--lr)"></i></div>
     <div class="sc-msg" id="gMsg"></div></button>
-  <div class="sc ym" id="yourMap" aria-live="polite"><div class="sc-top"><span class="sc-name">Your map</span><span class="sc-need" id="ymState">simulating…</span></div>
+  <div class="sc ym" id="yourMap" aria-live="polite"><div class="sc-top"><span class="sc-name">Your map</span><button class="od-sw" id="ymSw" role="switch" aria-checked="false" title="Turn the 100,000-election odds on or off"><i></i><span>Odds off</span></button></div>
+    <div class="sc-need" id="ymState" style="margin-top:2px">off</div>
     <div class="num ym-big" id="ymBig">–</div>
     <div class="sc-msg" id="ymSub" style="margin-top:2px">Working out how likely your map is…</div>
     <div class="ym-split" id="ymSplit"></div>
@@ -247,11 +256,11 @@
         <span><i style="background:var(--ld);opacity:.62"></i>Filled: D</span><span><i style="background:var(--lr);opacity:.62"></i>Filled: R</span>
       </div>
     </div>
-    <div class="box" id="odBox"><h3>How likely is your map?</h3>
+    <div class="box" id="odBox"><div class="od-head"><h3>How likely is your map?</h3><button class="od-sw" id="odSw" role="switch" aria-checked="false" title="Turn the 100,000-election odds on or off"><i></i><span>Off</span></button></div>
       <div class="seg" id="odWho" style="margin-bottom:6px"><button data-who="all" class="on">All calls on the map</button><button data-who="mine">Only races I clicked</button></div>
       <div id="odOut"><p class="note">Working out the odds…</p></div>
       <div class="od-prog" id="odProg" hidden><i id="odBar"></i></div>
-      <p class="note">Updates by itself whenever you change a call. Each race starts from its Kalshi price, its polling average, or both blended (60% Kalshi, 40% polls). The simulations tie races together: one shared national surprise moves every race the same way, and a smaller one moves races in the same state, so a good night for one party lifts many races at once. Toss-up calls don't count as predictions.</p>
+      <p class="note">When it's on, it updates by itself whenever you change a call. It runs 100,000 simulated elections each time, which can slow the map down on some devices, so it starts off. Each race starts from its Kalshi price, its polling average, or both blended (60% Kalshi, 40% polls). The simulations tie races together: one shared national surprise moves every race the same way, and a smaller one moves races in the same state, so a good night for one party lifts many races at once. Toss-up calls don't count as predictions.</p>
     </div>
   </aside>
 </main>
@@ -471,7 +480,7 @@ function tally() {
    point on a normal curve (z = probit(p)). Each run draws one shared national shock, one shock per
    state and one per race (variances add to 1), so every race keeps exactly its own chance while
    races still move together. All three sources use the same draws, so they compare fairly. */
-const OD = { who: "all", runs: 100000, rhoNat: 0.3, rhoSt: 0.15, res: null, busy: false, again: false, timer: null, sort: "blend" };
+const OD = { on: (() => { try { return localStorage.getItem("pmap-odds") === "on"; } catch { return false; } })(), who: "all", runs: 100000, rhoNat: 0.3, rhoSt: 0.15, res: null, busy: false, again: false, timer: null, sort: "blend" };
 const SRC = [["blend", "Kalshi + polls"], ["kalshi", "Kalshi"], ["polls", "Polls"]];
 function probit(p) { // inverse normal CDF (Acklam)
   const a = [-39.69683028665376, 220.9460984245205, -275.9285104469687, 138.357751867269, -30.66479806614716, 2.506628277459239], b = [-54.47609879822406, 161.5858368580409, -155.6989798598866, 66.80131188771972, -13.28068155288572], c = [-0.007784894002430293, -0.3223964580411365, -2.400758277161838, -2.549732539343734, 4.374664141464968, 2.938163982698783], d = [0.007784695709041462, 0.3224671290700398, 2.445134137142996, 3.754408661907416];
@@ -512,6 +521,7 @@ function oddsSetup() {
   return { list, nSt: states.length, toss };
 }
 function runOdds() {
+  if (!OD.on) { renderOddsOff(); return; }
   if (OD.busy) { OD.again = true; return; }
   if (!G) return;
   OD.busy = true;
@@ -535,6 +545,7 @@ function runOdds() {
   const st = new Float64Array(nSt), shock = new Float64Array(n), sd = new Int32Array(S), hd = new Int32Array(S);
   let k = 0;
   const step = () => {
+    if (!OD.on) { OD.busy = false; OD.again = false; $("odProg").hidden = true; $("ymProg").hidden = true; renderOddsOff(); return; }
     const end = Math.min(N, k + 4000);
     for (; k < end; k++) {
       const nat = gauss() * sqN;
@@ -641,7 +652,22 @@ function renderOdds() {
   $("odOut").querySelectorAll(".od-r").forEach((d) => (d.onclick = () => { const l = d.dataset.l, x = races(l).find((y) => String(y.id) === d.dataset.id); if (!x) return; if (l !== layer) setLayer(l); openRace(x); }));
   $("odOut").querySelectorAll(".sortk").forEach((b) => (b.onclick = () => { OD.sort = b.dataset.sort; renderOdds(); }));
 }
-function oddsChanged() { clearTimeout(OD.timer); OD.timer = setTimeout(runOdds, 500); }
+function oddsChanged() { clearTimeout(OD.timer); if (!OD.on) { renderOddsOff(); return; } OD.timer = setTimeout(runOdds, 500); }
+// On/off switch: the simulations are heavy, so they only run when someone asks for them.
+function renderOddsOff() {
+  $("ymBig").textContent = "Off"; $("ymBig").className = "num ym-big";
+  $("ymSub").textContent = "Turn on to see how likely your map is (100,000 simulated elections).";
+  $("ymSplit").innerHTML = ""; $("ymShare").hidden = true; $("ymState").textContent = "off";
+  $("odOut").innerHTML = `<p class="note">Odds are off, so the map stays fast. Turn them on to see the chance your map comes true, and each party's chance of winning the Senate and House.</p>`;
+}
+function setOdds(on) {
+  OD.on = on;
+  try { localStorage.setItem("pmap-odds", on ? "on" : "off"); } catch {}
+  for (const id of ["ymSw", "odSw"]) { const b = $(id); if (!b) continue; b.setAttribute("aria-checked", on ? "true" : "false"); b.querySelector("span").textContent = on ? (id === "ymSw" ? "Odds on" : "On") : (id === "ymSw" ? "Odds off" : "Off"); }
+  if (on) { clearTimeout(OD.timer); runOdds(); } else { clearTimeout(OD.timer); if (!OD.busy) renderOddsOff(); }
+}
+for (const id of ["ymSw", "odSw"]) { const b = $(id); if (b) b.onclick = (e) => { e.stopPropagation(); setOdds(!OD.on); }; }
+setOdds(OD.on);
 
 /* ---------- controls ---------- */
 function setLayer(l) {
