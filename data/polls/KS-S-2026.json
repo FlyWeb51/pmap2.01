@@ -1,8 +1,43 @@
 {
   "raceId": "KS-S-2026",
-  "count": 20,
-  "updated_at": "2026-10-29T06:01:25.848Z",
+  "count": 21,
+  "updated_at": "2026-10-29T13:20:26.530Z",
   "polls": [
+    {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-26",
+      "fieldDates": "2026-10-20 to 2026-10-26",
+      "sampleSize": 838,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": null,
+          "pct": 4,
+          "percentage": 4
+        }
+      ],
+      "sourceUrl": "https://edition.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1925
+    },
     {
       "pollster": "RedBox Research In average",
       "endDate": "2026-10-23",
@@ -29,7 +64,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6981
+      "weight": 0.6932
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts In average",
@@ -58,7 +93,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5446
+      "weight": 0.5407
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts In average",
@@ -87,7 +122,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4965
+      "weight": 0.493
     },
     {
       "pollster": "YouGov First choice only, not in average",
@@ -116,7 +151,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.116
+      "weight": 1.1081
     },
     {
       "pollster": "GBAO D-sponsored Not in average",
@@ -145,7 +180,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3056
+      "weight": 0.3035
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -174,7 +209,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3852
+      "weight": 0.3825
     },
     {
       "pollster": "NY Times/Siena missed 2024 by 3.1 pts First choice only, not in average",
@@ -202,7 +237,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5727
+      "weight": 0.5687
     },
     {
       "pollster": "New York Times/Siena University missed 2024 by 3.1 pts Not in average",
@@ -230,7 +265,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5596
+      "weight": 0.5557
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -259,7 +294,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5596
+      "weight": 0.5557
     },
     {
       "pollster": "Wedgewood Polls First choice only, not in average",
@@ -287,7 +322,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4429
+      "weight": 0.4398
     },
     {
       "pollster": "Emerson College",
@@ -317,7 +352,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.4509
+      "weight": 0.4477
     },
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -347,7 +382,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Democratic Attorneys General Association",
-      "weight": 0.2328
+      "weight": 0.2312
     },
     {
       "pollster": "co/efficient",
@@ -376,7 +411,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2168
+      "weight": 0.2152
     },
     {
       "pollster": "co/efficient",
@@ -405,7 +440,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4335,
+      "weight": 0.4305,
       "otherMatchup": true
     },
     {
@@ -441,7 +476,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1138
+      "weight": 0.113
     },
     {
       "pollster": "OSZ",
@@ -469,7 +504,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1271
+      "weight": 0.1262
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -499,13 +534,13 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Senate Majority PAC",
-      "weight": 0.0797
+      "weight": 0.0792
     },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-13",
       "endDateUS": "7/13/2026",
-      "weight": 0.0449,
+      "weight": 0.0446,
       "sampleSize": 600,
       "population": "LV",
       "results": [

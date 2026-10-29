@@ -1,7 +1,7 @@
 {
   "raceId": "MA-S-2026",
-  "count": 27,
-  "updated_at": "2026-10-29T06:01:25.849Z",
+  "count": 28,
+  "updated_at": "2026-10-29T13:20:26.532Z",
   "polls": [
     {
       "pollster": "Boston Globe/Suffolk In average",
@@ -29,7 +29,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7711
+      "weight": 0.7657
     },
     {
       "pollster": "Suffolk University In average",
@@ -59,7 +59,60 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Boston Globe",
-      "weight": 0.7711
+      "weight": 0.7657
+    },
+    {
+      "pollster": "UMass Lowell",
+      "endDate": "2026-10-18",
+      "fieldDates": "2026-10-07 to 2026-10-18",
+      "sampleSize": 850,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "pct": 55,
+          "percentage": 55
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "pct": 26,
+          "percentage": 26
+        },
+        {
+          "candidate": "Philip Devincentis (IAP)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        },
+        {
+          "candidate": "Morgan Dawicki (I)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Shiva Ayyadurai (I)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Joe Tache (PSL)",
+          "party": "O",
+          "pct": 0,
+          "percentage": 0
+        }
+      ],
+      "sourceUrl": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9983
     },
     {
       "pollster": "UMass Amherst/YouGov In average",
@@ -87,7 +140,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7642
+      "weight": 0.7588
     },
     {
       "pollster": "YouGov",
@@ -128,7 +181,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7642
+      "weight": 0.7588
     },
     {
       "pollster": "MassINC Polling Group In average",
@@ -158,7 +211,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Commonwealth Beacon",
-      "weight": 0.5349
+      "weight": 0.5311
     },
     {
       "pollster": "University of New Hampshire",
@@ -187,7 +240,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4389
+      "weight": 0.4358
     },
     {
       "pollster": "University of New Hampshire",
@@ -217,7 +270,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "7News",
-      "weight": 0.2872
+      "weight": 0.2852
     },
     {
       "pollster": "University of New Hampshire",
@@ -252,7 +305,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2892,
+      "weight": 0.2871,
       "otherMatchup": true
     },
     {
@@ -281,7 +334,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1867
+      "weight": 0.1854
     },
     {
       "pollster": "YouGov",
@@ -310,7 +363,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1867,
+      "weight": 0.1854,
       "otherMatchup": true
     },
     {
@@ -340,12 +393,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1867
+      "weight": 0.1854
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.0574,
+      "weight": 0.057,
       "sampleSize": 618,
       "population": "LV",
       "results": [
@@ -397,7 +450,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0581,
+      "weight": 0.0577,
       "otherMatchup": true
     },
     {
@@ -427,13 +480,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0566,
+      "weight": 0.0562,
       "otherMatchup": true
     },
     {
       "pollster": "Suffolk University",
       "endDate": "2026-06-12",
-      "weight": 0.0361,
+      "weight": 0.0358,
       "sampleSize": 500,
       "population": "RV",
       "results": [
@@ -485,7 +538,7 @@
         "https://pollingsource.com/senate/MA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0401
+      "weight": 0.0398
     },
     {
       "pollster": "Suffolk University",
@@ -514,13 +567,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0361,
+      "weight": 0.0358,
       "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-04-20",
-      "weight": 0.0129,
+      "weight": 0.0128,
       "sampleSize": 603,
       "population": "LV",
       "results": [
@@ -572,7 +625,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0129,
+      "weight": 0.0128,
       "otherMatchup": true
     },
     {

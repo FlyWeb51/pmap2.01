@@ -1,12 +1,73 @@
 {
   "raceId": "MA-S-2026",
-  "count": 22,
+  "count": 23,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "UMass Lowell",
+      "sponsors": null,
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-18",
+      "sampleSize": 850,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "percentage": 55
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "percentage": 26
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 12
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Philip Devincentis (IAP)",
+          "party": "IAP",
+          "percentage": 2
+        },
+        {
+          "candidate": "Morgan Dawicki (I)",
+          "party": "I",
+          "percentage": 1
+        },
+        {
+          "candidate": "Shiva Ayyadurai (I)",
+          "party": "I",
+          "percentage": 1
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Joe Tache (PSL)",
+          "party": "PSL",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Suffolk University",
       "sponsors": "Boston Globe",

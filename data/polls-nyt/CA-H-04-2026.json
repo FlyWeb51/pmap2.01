@@ -1,0 +1,47 @@
+{
+  "raceId": "CA-H-04-2026",
+  "count": 1,
+  "attribution": {
+    "text": "Polling data: The New York Times, licensed CC BY 4.0",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
+  },
+  "polls": [
+    {
+      "pollster": "David Binder Research",
+      "sponsors": null,
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-21",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.sfgate.com/politics/article/mike-thompson-california-polls-22499420.php",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Eric Jones (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Mike Thompson (D)",
+          "party": "D",
+          "percentage": 35
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 13
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7
+        }
+      ],
+      "note": null
+    }
+  ]
+}

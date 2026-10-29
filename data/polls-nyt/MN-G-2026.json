@@ -1,12 +1,48 @@
 {
   "raceId": "MN-G-2026",
-  "count": 29,
+  "count": 30,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "State Navigate",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-28",
+      "sampleSize": 806,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://articles.statenavigate.com/mn/new-minnesota-governor-poll-shows-amy-klobuchars-crossover-appeal-fading/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Klobuchar (D)",
+          "party": "D",
+          "percentage": 52
+        },
+        {
+          "candidate": "Lisa Demuth (R)",
+          "party": "R",
+          "percentage": 42
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Steven Young (GRE)",
+          "party": "GRE",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The New York Times/Siena University",
       "sponsors": null,

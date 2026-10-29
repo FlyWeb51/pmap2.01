@@ -1,4 +1,64 @@
 {
+  "TX-S-2026": {
+    "count": 129,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-27",
+      "margin": 6
+    },
+    "averageMargin": 3.2,
+    "averagePolls": 43
+  },
+  "MA-S-2026": {
+    "count": 23,
+    "latest": {
+      "pollster": "UMass Lowell",
+      "endDate": "2026-10-18",
+      "margin": 29
+    },
+    "averageMargin": 27.6,
+    "averagePolls": 5
+  },
+  "NH-S-2026": {
+    "count": 52,
+    "latest": {
+      "pollster": "St. Anselm",
+      "endDate": "2026-10-20",
+      "margin": 7
+    },
+    "averageMargin": 6.6,
+    "averagePolls": 12
+  },
+  "KS-S-2026": {
+    "count": 22,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-26",
+      "margin": 4
+    },
+    "averageMargin": 1.5,
+    "averagePolls": 14
+  },
+  "ME-S-2026": {
+    "count": 75,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-26",
+      "margin": 4
+    },
+    "averageMargin": 2.8,
+    "averagePolls": 25
+  },
+  "MI-S-2026": {
+    "count": 103,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-27",
+      "margin": 7
+    },
+    "averageMargin": 3.7,
+    "averagePolls": 37
+  },
   "AL-S-2026": {
     "count": 10,
     "latest": {
@@ -8,16 +68,6 @@
     },
     "averageMargin": -14,
     "averagePolls": 4
-  },
-  "MI-S-2026": {
-    "count": 102,
-    "latest": {
-      "pollster": "Mitchell Research & Communications",
-      "endDate": "2026-10-27",
-      "margin": 7
-    },
-    "averageMargin": 3.4,
-    "averagePolls": 36
   },
   "OH-S-2026": {
     "count": 49,
@@ -48,16 +98,6 @@
     },
     "averageMargin": 10.6,
     "averagePolls": 30
-  },
-  "TX-S-2026": {
-    "count": 127,
-    "latest": {
-      "pollster": "YouGov Blue",
-      "endDate": "2026-10-26",
-      "margin": 8
-    },
-    "averageMargin": 3.2,
-    "averagePolls": 41
   },
   "MN-S-2026": {
     "count": 25,
@@ -109,16 +149,6 @@
     "averageMargin": -0.9,
     "averagePolls": 14
   },
-  "ME-S-2026": {
-    "count": 74,
-    "latest": {
-      "pollster": "Marist University",
-      "endDate": "2026-10-25",
-      "margin": 9
-    },
-    "averageMargin": 2.7,
-    "averagePolls": 24
-  },
   "GA-S-2026": {
     "count": 63,
     "latest": {
@@ -148,16 +178,6 @@
     },
     "averageMargin": -3,
     "averagePolls": 1
-  },
-  "NH-S-2026": {
-    "count": 51,
-    "latest": {
-      "pollster": "St. Anselm",
-      "endDate": "2026-10-20",
-      "margin": 7
-    },
-    "averageMargin": 6.5,
-    "averagePolls": 11
   },
   "SD-S-2026": {
     "count": 18,
@@ -199,16 +219,6 @@
     "averageMargin": 27.4,
     "averagePolls": 3
   },
-  "MA-S-2026": {
-    "count": 22,
-    "latest": {
-      "pollster": "Suffolk University",
-      "endDate": "2026-10-18",
-      "margin": 28.2
-    },
-    "averageMargin": 26.9,
-    "averagePolls": 4
-  },
   "AR-S-2026": {
     "count": 6,
     "latest": {
@@ -218,16 +228,6 @@
     },
     "averageMargin": -9.4,
     "averagePolls": 2
-  },
-  "KS-S-2026": {
-    "count": 21,
-    "latest": {
-      "pollster": "InsiderAdvantage",
-      "endDate": "2026-10-14",
-      "margin": -1.1000000000000014
-    },
-    "averageMargin": 0.7,
-    "averagePolls": 13
   },
   "NM-S-2026": {
     "count": 3,
@@ -288,6 +288,26 @@
     },
     "averageMargin": null,
     "averagePolls": 0
+  },
+  "CA-H-04-2026": {
+    "count": 1,
+    "latest": {
+      "pollster": "David Binder Research",
+      "endDate": "2026-10-21",
+      "margin": null
+    },
+    "averageMargin": null,
+    "averagePolls": 0
+  },
+  "AL-H-02-2026": {
+    "count": 5,
+    "latest": {
+      "pollster": "Remington",
+      "endDate": "2026-10-25",
+      "margin": -7
+    },
+    "averageMargin": -4.4,
+    "averagePolls": 3
   },
   "VA-H-01-2026": {
     "count": 8,
@@ -1209,16 +1229,6 @@
     "averageMargin": 1,
     "averagePolls": 2
   },
-  "AL-H-02-2026": {
-    "count": 3,
-    "latest": {
-      "pollster": "Tulchin Research",
-      "endDate": "2026-08-31",
-      "margin": 0
-    },
-    "averageMargin": 0,
-    "averagePolls": 1
-  },
   "CA-H-07-2026": {
     "count": 1,
     "latest": {
@@ -1469,6 +1479,76 @@
     "averageMargin": null,
     "averagePolls": 0
   },
+  "MN-G-2026": {
+    "count": 30,
+    "latest": {
+      "pollster": "State Navigate",
+      "endDate": "2026-10-28",
+      "margin": 10
+    },
+    "averageMargin": 10.6,
+    "averagePolls": 10
+  },
+  "TX-G-2026": {
+    "count": 61,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-27",
+      "margin": -2
+    },
+    "averageMargin": -2.1,
+    "averagePolls": 37
+  },
+  "MA-G-2026": {
+    "count": 31,
+    "latest": {
+      "pollster": "UMass Lowell",
+      "endDate": "2026-10-18",
+      "margin": 28
+    },
+    "averageMargin": 24.5,
+    "averagePolls": 5
+  },
+  "NH-G-2026": {
+    "count": 19,
+    "latest": {
+      "pollster": "St. Anselm",
+      "endDate": "2026-10-20",
+      "margin": -8
+    },
+    "averageMargin": -8.6,
+    "averagePolls": 8
+  },
+  "KS-G-2026": {
+    "count": 8,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-26",
+      "margin": -5
+    },
+    "averageMargin": -3.8,
+    "averagePolls": 7
+  },
+  "ME-G-2026": {
+    "count": 24,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-26",
+      "margin": 14
+    },
+    "averageMargin": 9.8,
+    "averagePolls": 19
+  },
+  "MI-G-2026": {
+    "count": 83,
+    "latest": {
+      "pollster": "CNN/SSRS",
+      "endDate": "2026-10-27",
+      "margin": 12
+    },
+    "averageMargin": 8.8,
+    "averagePolls": 21
+  },
   "WI-G-2026": {
     "count": 40,
     "latest": {
@@ -1498,26 +1578,6 @@
     },
     "averageMargin": 3.1,
     "averagePolls": 21
-  },
-  "TX-G-2026": {
-    "count": 59,
-    "latest": {
-      "pollster": "YouGov Blue",
-      "endDate": "2026-10-26",
-      "margin": 3
-    },
-    "averageMargin": -2,
-    "averagePolls": 35
-  },
-  "MN-G-2026": {
-    "count": 29,
-    "latest": {
-      "pollster": "The New York Times/Siena University",
-      "endDate": "2026-10-26",
-      "margin": 18.04
-    },
-    "averageMargin": 10.9,
-    "averagePolls": 9
   },
   "FL-G-2026": {
     "count": 67,
@@ -1599,16 +1659,6 @@
     "averageMargin": -3,
     "averagePolls": 12
   },
-  "ME-G-2026": {
-    "count": 23,
-    "latest": {
-      "pollster": "Marist University",
-      "endDate": "2026-10-25",
-      "margin": 11
-    },
-    "averageMargin": 9.3,
-    "averagePolls": 18
-  },
   "VT-G-2026": {
     "count": 9,
     "latest": {
@@ -1628,16 +1678,6 @@
     },
     "averageMargin": 1.3,
     "averagePolls": 5
-  },
-  "MI-G-2026": {
-    "count": 82,
-    "latest": {
-      "pollster": "Glengariff Group, Inc.",
-      "endDate": "2026-10-22",
-      "margin": 6.899999999999999
-    },
-    "averageMargin": 8.3,
-    "averagePolls": 20
   },
   "AK-G-2026": {
     "count": 29,
@@ -1659,16 +1699,6 @@
     "averageMargin": -19,
     "averagePolls": 1
   },
-  "KS-G-2026": {
-    "count": 7,
-    "latest": {
-      "pollster": "Global Strategy Group",
-      "endDate": "2026-10-21",
-      "margin": 0
-    },
-    "averageMargin": -3,
-    "averagePolls": 6
-  },
   "IL-G-2026": {
     "count": 3,
     "latest": {
@@ -1678,16 +1708,6 @@
     },
     "averageMargin": 18.1,
     "averagePolls": 2
-  },
-  "NH-G-2026": {
-    "count": 18,
-    "latest": {
-      "pollster": "St. Anselm",
-      "endDate": "2026-10-20",
-      "margin": -8
-    },
-    "averageMargin": -9.2,
-    "averagePolls": 7
   },
   "SD-G-2026": {
     "count": 5,
@@ -1737,16 +1757,6 @@
       "margin": 35.66
     },
     "averageMargin": 28.3,
-    "averagePolls": 4
-  },
-  "MA-G-2026": {
-    "count": 30,
-    "latest": {
-      "pollster": "Suffolk University",
-      "endDate": "2026-10-18",
-      "margin": 22.6
-    },
-    "averageMargin": 22.6,
     "averagePolls": 4
   },
   "CT-G-2026": {

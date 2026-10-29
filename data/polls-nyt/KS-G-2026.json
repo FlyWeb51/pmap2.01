@@ -1,12 +1,53 @@
 {
   "raceId": "KS-G-2026",
-  "count": 7,
+  "count": 8,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "CNN/SSRS",
+      "sponsors": null,
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-26",
+      "sampleSize": 838,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://edition.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ty Masterson (R)",
+          "party": "R",
+          "percentage": 50
+        },
+        {
+          "candidate": "Cindy Holscher (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Neither (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Global Strategy Group",
       "sponsors": null,

@@ -1,6 +1,6 @@
 {
   "raceId": "NH-G-2026",
-  "count": 18,
+  "count": 19,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -39,6 +39,52 @@
           "candidate": "Someone else (NON)",
           "party": "NON",
           "percentage": 3
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "UMass Lowell",
+      "sponsors": null,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-19",
+      "sampleSize": 600,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kelly Ayotte (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Cinde Warmington (D)",
+          "party": "D",
+          "percentage": 42
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7
+        },
+        {
+          "candidate": "Stephen Villee (LIB)",
+          "party": "LIB",
+          "percentage": 3
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
         }
       ],
       "note": null

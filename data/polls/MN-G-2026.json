@@ -1,8 +1,43 @@
 {
   "raceId": "MN-G-2026",
-  "count": 22,
-  "updated_at": "2026-10-29T06:01:25.896Z",
+  "count": 23,
+  "updated_at": "2026-10-29T13:20:26.561Z",
   "polls": [
+    {
+      "pollster": "State Navigate",
+      "endDate": "2026-10-28",
+      "fieldDates": "2026-10-26 to 2026-10-28",
+      "sampleSize": 806,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Amy Klobuchar (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Lisa Demuth (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Steven Young (GRE)",
+          "party": null,
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://articles.statenavigate.com/mn/new-minnesota-governor-poll-shows-amy-klobuchars-crossover-appeal-fading/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.2248
+    },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-10-26",
@@ -30,7 +65,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1376
+      "weight": 1.1296
     },
     {
       "pollster": "Victory Insights",
@@ -59,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6535
+      "weight": 0.6489
     },
     {
       "pollster": "SurveyUSA",
@@ -94,7 +129,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8044
+      "weight": 0.7988
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -123,7 +158,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7565
+      "weight": 0.7512
     },
     {
       "pollster": "Morning Consult",
@@ -152,7 +187,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7612
+      "weight": 0.7558
     },
     {
       "pollster": "co/efficient",
@@ -181,7 +216,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4643
+      "weight": 0.4611
     },
     {
       "pollster": "SurveyUSA",
@@ -216,7 +251,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.402
+      "weight": 0.3992
     },
     {
       "pollster": "TIPP Insights",
@@ -251,7 +286,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2057
+      "weight": 0.2042
     },
     {
       "pollster": "SurveyUSA",
@@ -286,7 +321,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2116
+      "weight": 0.2102
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -315,7 +350,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0484,
+      "weight": 0.048,
       "otherMatchup": true
     },
     {
@@ -345,7 +380,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0484,
+      "weight": 0.048,
       "otherMatchup": true
     },
     {
@@ -375,7 +410,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0484
+      "weight": 0.048
     },
     {
       "pollster": "Emerson College",

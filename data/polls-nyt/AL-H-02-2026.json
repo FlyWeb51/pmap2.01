@@ -1,12 +1,74 @@
 {
   "raceId": "AL-H-02-2026",
-  "count": 3,
+  "count": 5,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Remington",
+      "sponsors": null,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "sampleSize": 642,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://1819news.com/news/item/al-2-poll-marques-48-figures-46",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "percentage": 51
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Remington",
+      "sponsors": null,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "sampleSize": 642,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://1819news.com/news/item/al-2-poll-marques-48-figures-46",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Rhett Marques (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Shomari Figures (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Tulchin Research",
       "sponsors": "House Majority PAC",

@@ -1,8 +1,67 @@
 {
   "raceId": "AL-H-02-2026",
-  "count": 3,
-  "updated_at": "2026-10-29T06:01:25.842Z",
+  "count": 5,
+  "updated_at": "2026-10-29T13:20:26.524Z",
   "polls": [
+    {
+      "pollster": "Remington",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-23 to 2026-10-25",
+      "sampleSize": 642,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Generic Republican (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Generic Democrat (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://1819news.com/news/item/al-2-poll-marques-48-figures-46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0199,
+      "otherMatchup": true
+    },
+    {
+      "pollster": "Remington",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-23 to 2026-10-25",
+      "sampleSize": 642,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Rhett Marques (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Shomari Figures (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": "https://1819news.com/news/item/al-2-poll-marques-48-figures-46",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.0199
+    },
     {
       "pollster": "Tulchin Research D-sponsored",
       "endDate": "2026-08-31",
@@ -31,7 +90,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "House Majority PAC",
-      "weight": 0.1272
+      "weight": 0.1263
     },
     {
       "pollster": "DCCC Targeting Team",
@@ -60,12 +119,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0557
+      "weight": 0.0553
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-06-25",
-      "weight": 0.0242,
+      "weight": 0.024,
       "sampleSize": 400,
       "population": "LV",
       "results": [
