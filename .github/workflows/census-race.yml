@@ -1,0 +1,43 @@
+name: Census eligible voters by race (monthly)
+
+# Citizens 18+ by race and ethnicity for every district and state, for the
+# turnout simulator. ACS 5-year data changes once a year, so monthly is plenty.
+on:
+  schedule:
+    - cron: "43 7 4 * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build-census-race.js"
+
+concurrency:
+  group: census-race
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Pull race and ethnicity tables
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+        run: node scripts/build-census-race.js
+      - name: Commit if changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/census/race-cvap.json
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Census: eligible voters by race"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
