@@ -1,8 +1,36 @@
 {
   "raceId": "ME-S-2026",
-  "count": 85,
-  "updated_at": "2026-10-29T13:20:26.533Z",
+  "count": 86,
+  "updated_at": "2026-10-29T18:03:01.581Z",
   "polls": [
+    {
+      "pollster": "SSRS",
+      "endDate": "2026-10-26",
+      "fieldDates": "October 20–26, 2026",
+      "sampleSize": 783,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9754
+    },
     {
       "pollster": "CNN/SSRS",
       "endDate": "2026-10-26",
@@ -36,7 +64,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1527
+      "weight": 1.1475
     },
     {
       "pollster": "Marist missed 2024 by 4.3 pts In average (final round)",
@@ -66,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5323
+      "weight": 1.5253
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts In average (final round)",
@@ -96,7 +124,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6307
+      "weight": 0.6278
     },
     {
       "pollster": "Echelon Insights R-sponsored missed 2024 by 1.9 pts In average (final round)",
@@ -127,7 +155,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "NetChoice",
-      "weight": 0.8594
+      "weight": 0.8556
     },
     {
       "pollster": "Beacon Research/ Shaw & Co. Research missed 2024 by 2.3 pts In average (final round)",
@@ -158,7 +186,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.6977
+      "weight": 0.6945
     },
     {
       "pollster": "FOX News In average (final round)",
@@ -186,7 +214,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3954
+      "weight": 1.3891
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts In average",
@@ -216,7 +244,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5407
+      "weight": 0.5383
     },
     {
       "pollster": "Suffolk University In average (final round)",
@@ -246,7 +274,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6513
+      "weight": 0.6484
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts In average (final round)",
@@ -275,7 +303,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3853
+      "weight": 0.3836
     },
     {
       "pollster": "The Washington Post/George Mason University School of Policy and Government Not in average",
@@ -305,7 +333,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7172
+      "weight": 0.714
     },
     {
       "pollster": "Washington Post missed 2024 by 2.2 pts Not in average",
@@ -333,7 +361,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7172
+      "weight": 0.714
     },
     {
       "pollster": "Marist missed 2024 by 4.3 pts Not in average",
@@ -363,7 +391,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8651
+      "weight": 0.8612
     },
     {
       "pollster": "Wedgewood Polls Not in average",
@@ -392,7 +420,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4624
+      "weight": 0.4603
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average first-round numbers",
@@ -422,7 +450,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3818
+      "weight": 0.3801
     },
     {
       "pollster": "CBS News missed 2024 by 2.6 pts Not in average",
@@ -451,7 +479,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7792
+      "weight": 0.7757
     },
     {
       "pollster": "YouGov",
@@ -480,7 +508,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7792
+      "weight": 0.7757
     },
     {
       "pollster": "co/efficient R-sponsored First choice only, not in average first-round numbers",
@@ -510,7 +538,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3978
+      "weight": 0.396
     },
     {
       "pollster": "co/efficient",
@@ -539,7 +567,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7955,
+      "weight": 0.7919,
       "otherMatchup": true
     },
     {
@@ -570,7 +598,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2887
+      "weight": 0.2874
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts",
@@ -600,7 +628,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3329
+      "weight": 0.3314
     },
     {
       "pollster": "New York Times/Siena University",
@@ -629,7 +657,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4672
+      "weight": 0.4651
     },
     {
       "pollster": "Siena College Research Institute",
@@ -657,7 +685,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4672
+      "weight": 0.4651
     },
     {
       "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
@@ -688,7 +716,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "AARP",
-      "weight": 0.2942
+      "weight": 0.2929
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -717,7 +745,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4672
+      "weight": 0.4651
     },
     {
       "pollster": "University of New Hampshire",
@@ -747,7 +775,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6647
+      "weight": 0.6617
     },
     {
       "pollster": "Quantus Insights",
@@ -777,7 +805,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.199
+      "weight": 0.1981
     },
     {
       "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
@@ -807,7 +835,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.398
+      "weight": 0.3962
     },
     {
       "pollster": "Rasmussen Reports",
@@ -836,7 +864,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2287
+      "weight": 0.2277
     },
     {
       "pollster": "YouGov",
@@ -866,7 +894,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4965
+      "weight": 0.4943
     },
     {
       "pollster": "SSRS",
@@ -895,7 +923,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3849
+      "weight": 0.3832
     },
     {
       "pollster": "CNN/SSRS",
@@ -930,7 +958,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3849
+      "weight": 0.3832
     },
     {
       "pollster": "Abacus Data",
@@ -960,7 +988,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.195
+      "weight": 0.1942
     },
     {
       "pollster": "Abacus Data",
@@ -988,7 +1016,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine"
       ],
       "reviewStatus": "auto",
-      "weight": 0.162
+      "weight": 0.1613
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -1019,7 +1047,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.0989
+      "weight": 0.0985
     },
     {
       "pollster": "Fox",
@@ -1047,13 +1075,13 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1399
+      "weight": 0.1393
     },
     {
       "pollster": "Hart Research Associates (D)",
       "endDate": "2026-08-01",
       "endDateUS": "8/1/2026",
-      "weight": 0.08,
+      "weight": 0.0796,
       "sampleSize": 802,
       "population": "LV",
       "results": [
@@ -1108,13 +1136,13 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0913
+      "weight": 0.0909
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-07-20",
       "endDateUS": "7/20/2026",
-      "weight": 0.1469,
+      "weight": 0.1462,
       "sampleSize": 1178,
       "population": "LV",
       "results": [
@@ -1166,14 +1194,14 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.051,
+      "weight": 0.0508,
       "otherMatchup": true
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-07-07",
       "endDateUS": "7/7/2026",
-      "weight": 0.04,
+      "weight": 0.0398,
       "sampleSize": 785,
       "population": "RV",
       "results": [
@@ -1225,7 +1253,7 @@
         "https://pollingsource.com/senate/ME"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0377
+      "weight": 0.0376
     },
     {
       "pollster": "Public Policy Polling",
@@ -1254,7 +1282,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.04,
+      "weight": 0.0398,
       "otherMatchup": true
     },
     {
@@ -1284,7 +1312,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.04,
+      "weight": 0.0398,
       "otherMatchup": true
     },
     {
@@ -1314,7 +1342,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.04,
+      "weight": 0.0398,
       "otherMatchup": true
     },
     {
@@ -1344,14 +1372,14 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.04,
+      "weight": 0.0398,
       "otherMatchup": true
     },
     {
       "pollster": "Wedgewood Polls",
       "endDate": "2026-07-06",
       "endDateUS": "7/6/2026",
-      "weight": 0.0623,
+      "weight": 0.0621,
       "sampleSize": 405,
       "population": "LV",
       "results": [
@@ -1404,7 +1432,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0508,
+      "weight": 0.0505,
       "otherMatchup": true
     },
     {
@@ -1434,7 +1462,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.0359,
+      "weight": 0.0357,
       "otherMatchup": true
     },
     {
@@ -1464,7 +1492,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Portland Press Herald",
-      "weight": 0.0606,
+      "weight": 0.0603,
       "otherMatchup": true
     },
     {
@@ -1494,7 +1522,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "2Way",
-      "weight": 0.0296,
+      "weight": 0.0294,
       "otherMatchup": true
     },
     {
@@ -1523,7 +1551,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0256,
+      "weight": 0.0255,
       "otherMatchup": true
     },
     {
@@ -1550,7 +1578,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0307,
+      "weight": 0.0306,
       "otherMatchup": true
     },
     {
@@ -1579,7 +1607,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0329,
+      "weight": 0.0327,
       "otherMatchup": true
     },
     {
@@ -1609,7 +1637,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0657,
+      "weight": 0.0654,
       "otherMatchup": true
     },
     {
@@ -1668,7 +1696,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Pine Tree Results",
-      "weight": 0.0204,
+      "weight": 0.0203,
       "otherMatchup": true
     },
     {
@@ -1695,7 +1723,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.026,
+      "weight": 0.0259,
       "otherMatchup": true
     },
     {
@@ -1725,7 +1753,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0306,
+      "weight": 0.0305,
       "otherMatchup": true
     },
     {
@@ -1754,7 +1782,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0415,
+      "weight": 0.0413,
       "otherMatchup": true
     },
     {
@@ -1783,7 +1811,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0144,
+      "weight": 0.0143,
       "otherMatchup": true
     },
     {
@@ -1843,7 +1871,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0079,
+      "weight": 0.0078,
       "otherMatchup": true
     },
     {
@@ -1902,7 +1930,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0113,
+      "weight": 0.0112,
       "otherMatchup": true
     },
     {
@@ -1931,7 +1959,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.009,
+      "weight": 0.0089,
       "otherMatchup": true
     },
     {
@@ -1961,7 +1989,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.009,
+      "weight": 0.0089,
       "otherMatchup": true
     },
     {
@@ -2050,7 +2078,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0026,
+      "weight": 0.0025,
       "otherMatchup": true
     },
     {
@@ -2168,7 +2196,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0041,
+      "weight": 0.004,
       "otherMatchup": true
     },
     {
