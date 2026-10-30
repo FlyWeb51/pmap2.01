@@ -1,12 +1,48 @@
 {
   "raceId": "MT-H-01-2026",
-  "count": 14,
+  "count": 15,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Montana State University Billings",
+      "sponsors": null,
+      "startDate": "2026-10-05",
+      "endDate": "2026-10-21",
+      "sampleSize": 287,
+      "population": "A",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://dailymontanan.com/2026/10/29/mountain-state-poll-shows-close-races-for-federal-offices/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sam Forstag (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Aaron Flint (R)",
+          "party": "R",
+          "percentage": 32
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 11
+        },
+        {
+          "candidate": "Nick Sheedy (LIB)",
+          "party": "LIB",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Emerson College",
       "sponsors": "Poll Vault",

@@ -1,8 +1,49 @@
 {
   "raceId": "MT-H-02-2026",
-  "count": 1,
-  "updated_at": "2026-10-30T03:32:12.501Z",
+  "count": 2,
+  "updated_at": "2026-10-30T06:01:55.766Z",
   "polls": [
+    {
+      "pollster": "Montana State University Billings",
+      "endDate": "2026-10-21",
+      "fieldDates": "2026-10-05 to 2026-10-21",
+      "sampleSize": 350,
+      "population": "A",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Troy Downing (R)",
+          "party": "R",
+          "pct": 29,
+          "percentage": 29
+        },
+        {
+          "candidate": "Brian Miller (D)",
+          "party": "D",
+          "pct": 18,
+          "percentage": 18
+        },
+        {
+          "candidate": "Michael Eisenhauer (I)",
+          "party": "O",
+          "pct": 15,
+          "percentage": 15
+        },
+        {
+          "candidate": "Patrick McCracken (LIB)",
+          "party": "O",
+          "pct": 2,
+          "percentage": 2
+        }
+      ],
+      "sourceUrl": "https://dailymontanan.com/2026/10/29/mountain-state-poll-shows-close-races-for-federal-offices/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.473
+    },
     {
       "pollster": "Rutgers University Eagleton Institute of Politics",
       "endDate": "2026-09-07",
@@ -31,7 +72,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Montana Free Press",
-      "weight": 0.2556
+      "weight": 0.255
     }
   ]
 }

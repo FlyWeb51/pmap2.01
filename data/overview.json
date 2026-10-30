@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T03:32:12.611Z",
+  "generatedAt": "2026-10-30T06:01:55.871Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -69,8 +69,8 @@
         "special": false,
         "kalshiD": 0.475,
         "nyt": {
-          "averageMargin": 0,
-          "averagePolls": 31,
+          "averageMargin": -0.1,
+          "averagePolls": 30,
           "latest": {
             "pollster": "co/efficient",
             "endDate": "2026-10-28",
@@ -160,7 +160,7 @@
         "kalshiD": 0.695,
         "nyt": {
           "averageMargin": 3.6,
-          "averagePolls": 29,
+          "averagePolls": 28,
           "latest": {
             "pollster": "Suffolk University",
             "endDate": "2026-10-26",
@@ -357,7 +357,7 @@
         "kalshiD": 0.965,
         "nyt": {
           "averageMargin": 10.6,
-          "averagePolls": 30,
+          "averagePolls": 27,
           "latest": {
             "pollster": "Quantus Insights",
             "endDate": "2026-10-25",
@@ -561,8 +561,8 @@
         "special": false,
         "kalshiD": 0.006,
         "nyt": {
-          "averageMargin": -25.8,
-          "averagePolls": 8,
+          "averageMargin": -21.9,
+          "averagePolls": 9,
           "latest": {
             "pollster": "Concord Public Opinion Partners",
             "endDate": "2026-10-23",
@@ -1013,7 +1013,7 @@
       "rep": "Vivek Ramaswamy",
       "poll": {
         "averageMargin": 3.1,
-        "averagePolls": 21,
+        "averagePolls": 20,
         "latest": {
           "pollster": "Suffolk University",
           "endDate": "2026-10-26",
@@ -1273,7 +1273,7 @@
       "rep": "Bruce Blakeman",
       "poll": {
         "averageMargin": 13,
-        "averagePolls": 13,
+        "averagePolls": 12,
         "latest": {
           "pollster": "Marist University",
           "endDate": "2026-10-25",
@@ -1542,19 +1542,6 @@
     "shift": 9.3,
     "rows": [
       {
-        "state": "MT",
-        "name": "Montana",
-        "special": false,
-        "dem": "Alani Ines Bankhead",
-        "rep": "Kurt Alme",
-        "polls": 10,
-        "pres2024": -19.9,
-        "expected": -10.6,
-        "pollMargin": -25.6,
-        "overUnder": -14.9,
-        "kalshiD": 0.006
-      },
-      {
         "state": "ME",
         "name": "Maine",
         "special": false,
@@ -1566,6 +1553,19 @@
         "pollMargin": 2.2,
         "overUnder": -14,
         "kalshiD": 0.635
+      },
+      {
+        "state": "MT",
+        "name": "Montana",
+        "special": false,
+        "dem": "Alani Ines Bankhead",
+        "rep": "Kurt Alme",
+        "polls": 11,
+        "pres2024": -19.9,
+        "expected": -10.6,
+        "pollMargin": -22.2,
+        "overUnder": -11.5,
+        "kalshiD": 0.006
       },
       {
         "state": "MN",
@@ -2511,7 +2511,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-30T00:25:06.375Z",
-    "nytUpdated": "2026-10-29T22:52:06.595Z",
+    "nytUpdated": "2026-10-30T06:01:55.413Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
