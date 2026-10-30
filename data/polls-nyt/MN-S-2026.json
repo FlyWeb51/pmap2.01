@@ -1,12 +1,53 @@
 {
   "raceId": "MN-S-2026",
-  "count": 25,
+  "count": 26,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "SurveyUSA",
+      "sponsors": "KSTP-TV Minneapolis",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-28",
+      "sampleSize": 714,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-minnesota-statewide-races-inch-left-in-final-poll-before-election-day/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7
+        },
+        {
+          "candidate": "Marisa Simonetti (I)",
+          "party": "I",
+          "percentage": 2
+        },
+        {
+          "candidate": "Rebecca Whiting (LIB)",
+          "party": "LIB",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The New York Times/Siena University",
       "sponsors": null,

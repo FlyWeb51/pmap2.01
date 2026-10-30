@@ -1,12 +1,43 @@
 {
   "raceId": "CA-H-22-2026",
-  "count": 1,
+  "count": 2,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "USC Democracy and Fair Elections Lab",
+      "sponsors": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-28",
+      "sampleSize": 356,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.thedemocracylab.com/ca-polling-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Randy Villegas (D)",
+          "party": "D",
+          "percentage": 54
+        },
+        {
+          "candidate": "David G. Valadao (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Tulchin Research",
       "sponsors": "House Majority PAC",

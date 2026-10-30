@@ -1,8 +1,37 @@
 {
   "raceId": "KS-G-2026",
-  "count": 9,
-  "updated_at": "2026-10-30T17:39:46.501Z",
+  "count": 10,
+  "updated_at": "2026-10-30T22:29:33.751Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-10-28",
+      "fieldDates": "2026-10-26 to 2026-10-28",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ty Masterson (R)",
+          "party": "R",
+          "pct": 52.5,
+          "percentage": 52.5
+        },
+        {
+          "candidate": "Cindy Holscher (D)",
+          "party": "D",
+          "pct": 47.5,
+          "percentage": 47.5
+        }
+      ],
+      "sourceUrl": "https://emersoncollegepolling.com/october-2026-kansas-poll-hamilton-maintains-edge-over-marshall/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1819
+    },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
       "endDate": "2026-10-26",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1345
+      "weight": 1.1292
     },
     {
       "pollster": "CNN/SSRS",
@@ -65,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1604
+      "weight": 1.155
     },
     {
       "pollster": "Global Strategy Group",
@@ -94,7 +123,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4374
+      "weight": 0.4354
     },
     {
       "pollster": "YouGov",
@@ -123,7 +152,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0783
+      "weight": 1.0733
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -152,7 +181,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5407
+      "weight": 0.5382
     },
     {
       "pollster": "Global Strategy Group",
@@ -181,7 +210,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.225
+      "weight": 0.2239
     },
     {
       "pollster": "Emerson College",
@@ -210,7 +239,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4357
+      "weight": 0.4336
     },
     {
       "pollster": "co/efficient",
@@ -239,7 +268,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4189
+      "weight": 0.417
     },
     {
       "pollster": "Global Strategy Group",
@@ -268,7 +297,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0952
+      "weight": 0.0948
     }
   ]
 }

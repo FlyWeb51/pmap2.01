@@ -1,8 +1,96 @@
 {
   "raceId": "FL-G-2026",
-  "count": 51,
-  "updated_at": "2026-10-30T17:39:46.496Z",
+  "count": 53,
+  "updated_at": "2026-10-30T22:29:33.750Z",
   "polls": [
+    {
+      "pollster": "Big Data Poll",
+      "endDate": "2026-10-30",
+      "fieldDates": "2026-10-26 to 2026-10-30",
+      "sampleSize": 1067,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "1776 Law Center | Public Polling Project",
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "pct": 47.4,
+          "percentage": 47.4
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "pct": 44.2,
+          "percentage": 44.2
+        },
+        {
+          "candidate": "Scott Jewett (LIB)",
+          "party": "O",
+          "pct": 2.9,
+          "percentage": 2.9
+        },
+        {
+          "candidate": "Frank Russo (NPA)",
+          "party": null,
+          "pct": 1.9,
+          "percentage": 1.9
+        },
+        {
+          "candidate": "Moe Dimanche (NPA)",
+          "party": null,
+          "pct": 1.5,
+          "percentage": 1.5
+        },
+        {
+          "candidate": "Jeffrey Datto (NPA)",
+          "party": null,
+          "pct": 1.2,
+          "percentage": 1.2
+        },
+        {
+          "candidate": "Dean Abrams (NPA)",
+          "party": null,
+          "pct": 0.7,
+          "percentage": 0.7
+        }
+      ],
+      "sourceUrl": "https://www.bigdatapoll.com/blog/sunshine-state-poll-ashley-moody-leads-angie-craig-governors-race-tight/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.4295
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "endDate": "2026-10-29",
+      "fieldDates": "2026-10-28 to 2026-10-29",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-florida-survey-donalds-49-jolly-45-moody-49-nixon-43/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.4814
+    },
     {
       "pollster": "St. Pete Polls",
       "endDate": "2026-10-27",
@@ -30,7 +118,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2416
+      "weight": 1.2358
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -59,7 +147,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1169
+      "weight": 1.1117
     },
     {
       "pollster": "Echelon Insights",
@@ -83,7 +171,7 @@
           "percentage": 44
         },
         {
-          "candidate": "Scott Eckhard Jewett (LIB)",
+          "candidate": "Scott Jewett (LIB)",
           "party": "O",
           "pct": 1,
           "percentage": 1
@@ -94,7 +182,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8488
+      "weight": 0.8448
     },
     {
       "pollster": "Workbench Strategy",
@@ -123,7 +211,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5169
+      "weight": 0.5145
     },
     {
       "pollster": "co/efficient",
@@ -152,7 +240,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1112,
+      "weight": 1.1061,
       "otherMatchup": true
     },
     {
@@ -182,7 +270,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3079
+      "weight": 1.3018
     },
     {
       "pollster": "ActiVote",
@@ -211,7 +299,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.682
+      "weight": 0.6788
     },
     {
       "pollster": "YouGov",
@@ -240,7 +328,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8037
+      "weight": 0.8
     },
     {
       "pollster": "Fabrizio, Lee & Associates",
@@ -269,7 +357,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.491
+      "weight": 0.4887
     },
     {
       "pollster": "MDW Communications",
@@ -298,7 +386,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2387
+      "weight": 1.2329
     },
     {
       "pollster": "Change Research",
@@ -327,7 +415,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4201
+      "weight": 0.4181
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -356,7 +444,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7242
+      "weight": 0.7209
     },
     {
       "pollster": "St. Pete Polls",
@@ -385,7 +473,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7472
+      "weight": 0.7437
     },
     {
       "pollster": "YouGov",
@@ -414,7 +502,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1035
+      "weight": 1.0984
     },
     {
       "pollster": "Targoz Market Research",
@@ -443,7 +531,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7026
+      "weight": 0.6993
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -472,7 +560,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5624
+      "weight": 0.5598
     },
     {
       "pollster": "Change Research",
@@ -501,7 +589,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3344
+      "weight": 0.3328
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -530,7 +618,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5144
+      "weight": 0.512
     },
     {
       "pollster": "St. Pete Polls",
@@ -559,7 +647,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4919
+      "weight": 0.4896
     },
     {
       "pollster": "Change Research",
@@ -588,7 +676,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2251
+      "weight": 0.2241
     },
     {
       "pollster": "Hart Research Associates",
@@ -617,7 +705,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0888
+      "weight": 0.0884
     },
     {
       "pollster": "Targoz Market Research",
@@ -646,7 +734,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1533
+      "weight": 0.1525
     },
     {
       "pollster": "Targoz Market Research",
@@ -675,7 +763,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1572,
+      "weight": 0.1564,
       "otherMatchup": true
     },
     {
@@ -705,7 +793,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1132
+      "weight": 0.1126
     },
     {
       "pollster": "Kaplan Strategies",
@@ -740,7 +828,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0209
+      "weight": 0.0208
     },
     {
       "pollster": "Change Research",
@@ -769,7 +857,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0185
+      "weight": 0.0184
     },
     {
       "pollster": "Cherry Communications",
@@ -828,7 +916,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0126,
+      "weight": 0.0125,
       "otherMatchup": true
     },
     {
@@ -858,7 +946,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0126
+      "weight": 0.0125
     },
     {
       "pollster": "Echelon Insights",
@@ -887,7 +975,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.008,
+      "weight": 0.0079,
       "otherMatchup": true
     },
     {
@@ -917,7 +1005,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0147
+      "weight": 0.0146
     },
     {
       "pollster": "Emerson College",
@@ -1065,7 +1153,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0046,
+      "weight": 0.0045,
       "otherMatchup": true
     },
     {

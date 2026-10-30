@@ -1,12 +1,43 @@
 {
   "raceId": "CA-H-06-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "USC Democracy and Fair Elections Lab",
+      "sponsors": null,
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-26",
+      "sampleSize": 439,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.thedemocracylab.com/ca-polling-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Richard Pan (D)",
+          "party": "D",
+          "percentage": 55
+        },
+        {
+          "candidate": "Kevin Kiley (I)",
+          "party": "I",
+          "percentage": 43
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The Bullfinch Group",
       "sponsors": "Independent Leadership Council",

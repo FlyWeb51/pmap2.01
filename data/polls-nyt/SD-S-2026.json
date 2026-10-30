@@ -1,12 +1,48 @@
 {
   "raceId": "SD-S-2026",
-  "count": 18,
+  "count": 19,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-26",
+      "sampleSize": 448,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/south-dakota-ge-2026-oct26",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Brian Bengs (I)",
+          "party": "I",
+          "percentage": 43
+        },
+        {
+          "candidate": "Mike Rounds (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 9
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Emerson College",
       "sponsors": "KELO-TV",

@@ -1,8 +1,37 @@
 {
   "raceId": "SD-G-2026",
-  "count": 4,
-  "updated_at": "2026-10-30T17:39:46.516Z",
+  "count": 5,
+  "updated_at": "2026-10-30T22:29:33.755Z",
   "polls": [
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "endDate": "2026-10-26",
+      "fieldDates": "2026-10-22 to 2026-10-26",
+      "sampleSize": 448,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Education Reform Now Advocacy",
+      "results": [
+        {
+          "candidate": "Larry Rhoden (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Daniel P. Ahlers (D)",
+          "party": "D",
+          "pct": 39,
+          "percentage": 39
+        }
+      ],
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/south-dakota-ge-2026-oct26",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4223
+    },
     {
       "pollster": "Emerson College",
       "endDate": "2026-10-21",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.012
+      "weight": 1.0073
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6793
+      "weight": 0.6762
     },
     {
       "pollster": "Concord Public Opinion Partners",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2645
+      "weight": 0.2632
     },
     {
       "pollster": "Lake Research Partners",
@@ -117,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1201
+      "weight": 0.1195
     }
   ]
 }

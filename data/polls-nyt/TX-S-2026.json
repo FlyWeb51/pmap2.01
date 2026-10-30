@@ -1,6 +1,6 @@
 {
   "raceId": "TX-S-2026",
-  "count": 132,
+  "count": 133,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -62,8 +62,8 @@
           "percentage": 52.1
         },
         {
-          "candidate": "Don't know (NON)",
-          "party": "NON",
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
           "percentage": 47.9
         }
       ],
@@ -152,6 +152,42 @@
       "startDate": "2026-10-21",
       "endDate": "2026-10-26",
       "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://254labs.io/news/2026-10-tx",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 52
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "YouGov Blue",
+      "sponsors": "254 Labs",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-26",
+      "sampleSize": 1000,
       "population": "LV",
       "partisan": null,
       "internal": false,
@@ -173,6 +209,11 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 5
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
         }
       ],
       "note": null

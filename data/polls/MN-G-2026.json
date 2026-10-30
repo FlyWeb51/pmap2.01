@@ -1,8 +1,43 @@
 {
   "raceId": "MN-G-2026",
-  "count": 23,
-  "updated_at": "2026-10-30T17:39:46.504Z",
+  "count": 24,
+  "updated_at": "2026-10-30T22:29:33.752Z",
   "polls": [
+    {
+      "pollster": "SurveyUSA",
+      "endDate": "2026-10-28",
+      "fieldDates": "2026-10-24 to 2026-10-28",
+      "sampleSize": 714,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "KSTP-TV Minneapolis",
+      "results": [
+        {
+          "candidate": "Amy Klobuchar (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Lisa Demuth (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Steven Young (GRE)",
+          "party": null,
+          "pct": 3,
+          "percentage": 3
+        }
+      ],
+      "sourceUrl": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-minnesota-statewide-races-inch-left-in-final-poll-before-election-day/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1166
+    },
     {
       "pollster": "State Navigate",
       "endDate": "2026-10-28",
@@ -36,7 +71,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1919
+      "weight": 1.1863
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -65,7 +100,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0993
+      "weight": 1.0942
     },
     {
       "pollster": "Victory Insights",
@@ -94,7 +129,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6314
+      "weight": 0.6285
     },
     {
       "pollster": "SurveyUSA",
@@ -129,7 +164,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7773
+      "weight": 0.7737
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -158,7 +193,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7309
+      "weight": 0.7276
     },
     {
       "pollster": "Morning Consult",
@@ -187,7 +222,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7355
+      "weight": 0.7321
     },
     {
       "pollster": "co/efficient",
@@ -216,7 +251,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4487
+      "weight": 0.4466
     },
     {
       "pollster": "SurveyUSA",
@@ -251,7 +286,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3885
+      "weight": 0.3867
     },
     {
       "pollster": "TIPP Insights",
@@ -286,7 +321,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1987
+      "weight": 0.1978
     },
     {
       "pollster": "SurveyUSA",
@@ -321,7 +356,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2045
+      "weight": 0.2035
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -350,7 +385,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0468,
+      "weight": 0.0465,
       "otherMatchup": true
     },
     {
@@ -380,7 +415,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0468,
+      "weight": 0.0465,
       "otherMatchup": true
     },
     {
@@ -410,7 +445,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0468
+      "weight": 0.0465
     },
     {
       "pollster": "Emerson College",

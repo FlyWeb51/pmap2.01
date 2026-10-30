@@ -1,12 +1,43 @@
 {
   "raceId": "KS-S-2026",
-  "count": 24,
+  "count": 25,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-28",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://emersoncollegepolling.com/october-2026-kansas-poll-hamilton-maintains-edge-over-marshall/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "percentage": 49.5
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "percentage": 47.1
+        },
+        {
+          "candidate": "David Graham (LIB)",
+          "party": "LIB",
+          "percentage": 3.4
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
       "sponsors": null,

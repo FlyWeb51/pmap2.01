@@ -1,12 +1,53 @@
 {
   "raceId": "NV-G-2026",
-  "count": 17,
+  "count": 18,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Noble Predictive Insights",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-28",
+      "sampleSize": 487,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.noblepredictiveinsights.com/post/nevada-poll-of-record-lombardo-ford-deadlocked-at-47",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Aaron Ford (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Joe Lombardo (R)",
+          "party": "R",
+          "percentage": 47
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Danielle Ford (NPA)",
+          "party": "NPA",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Hart Research Associates/Public Opinion Strategies",
       "sponsors": "A More Affordable Nevada",

@@ -1,12 +1,58 @@
 {
   "raceId": "SC-S-2026",
-  "count": 27,
+  "count": 28,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Patinkin Research Strategies",
+      "sponsors": "Voices of the Electorate PAC",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-29",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://static1.squarespace.com/static/54512d3ce4b07de69d8320c7/t/6ae4f0f24aec54388059c463/1793388786248/PRS%2BProjectVOTE.SCSW+Poll+Release.103026.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Kasie Whitener (LIB)",
+          "party": "LIB",
+          "percentage": 3
+        },
+        {
+          "candidate": "Mark Hackett (CON)",
+          "party": "CON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The New York Times/Siena University",
       "sponsors": null,

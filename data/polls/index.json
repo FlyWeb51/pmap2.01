@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T17:39:46.521Z",
+  "updated_at": "2026-10-30T22:29:33.757Z",
   "races": {
     "AK-H-01-2026": {
       "count": 15,
@@ -108,12 +108,19 @@
       "average": null
     },
     "CA-H-22-2026": {
-      "count": 1,
+      "count": 2,
       "latest": {
-        "pollster": "Tulchin Research (D)",
-        "endDate": "2026-06-21"
+        "pollster": "USC Democracy and Fair Elections Lab",
+        "endDate": "2026-10-28"
       },
-      "average": null
+      "average": {
+        "polls": 1,
+        "dem": 54,
+        "rep": 44,
+        "margin": 10,
+        "demCandidate": "Randy Villegas",
+        "repCandidate": "David G. Valadao"
+      }
     },
     "CA-H-40-2026": {
       "count": 1,
@@ -124,16 +131,16 @@
       "average": null
     },
     "CA-H-48-2026": {
-      "count": 5,
+      "count": 6,
       "latest": {
-        "pollster": "Tarrance Group",
-        "endDate": "2026-10-20"
+        "pollster": "USC Democracy and Fair Elections Lab",
+        "endDate": "2026-10-27"
       },
       "average": {
-        "polls": 3,
-        "dem": 46.6,
-        "rep": 40.6,
-        "margin": 5.9,
+        "polls": 4,
+        "dem": 48.9,
+        "rep": 42.1,
+        "margin": 6.8,
         "demCandidate": "Marni von Wilpert",
         "repCandidate": "Jim Desmond"
       }
@@ -291,13 +298,13 @@
       "average": null
     },
     "FL-S-2026": {
-      "count": 48,
+      "count": 50,
       "latest": {
-        "pollster": "St. Pete Polls In average",
-        "endDate": "2026-10-27"
+        "pollster": "Big Data Poll",
+        "endDate": "2026-10-30"
       },
       "average": {
-        "polls": 26,
+        "polls": 28,
         "dem": 43.7,
         "rep": 49.8,
         "margin": -6.1,
@@ -420,15 +427,15 @@
       }
     },
     "KS-S-2026": {
-      "count": 24,
+      "count": 25,
       "latest": {
-        "pollster": "CNN missed 2024 by 2.9 pts In average",
-        "endDate": "2026-10-27"
+        "pollster": "Emerson College",
+        "endDate": "2026-10-28"
       },
       "average": {
-        "polls": 20,
-        "dem": 48.1,
-        "rep": 45.3,
+        "polls": 21,
+        "dem": 48.2,
+        "rep": 45.4,
         "margin": 2.8,
         "demCandidate": "Jacques Hamilton",
         "repCandidate": "Roger Marshall"
@@ -600,16 +607,16 @@
       }
     },
     "MN-S-2026": {
-      "count": 32,
+      "count": 33,
       "latest": {
-        "pollster": "New York Times/Siena University missed 2024 by 3.1 pts In average",
-        "endDate": "2026-10-26"
+        "pollster": "SurveyUSA",
+        "endDate": "2026-10-28"
       },
       "average": {
-        "polls": 25,
+        "polls": 26,
         "dem": 47.7,
-        "rep": 42.3,
-        "margin": 5.4,
+        "rep": 42.2,
+        "margin": 5.6,
         "demCandidate": "Peggy Flanagan",
         "repCandidate": "Michele Tafoya"
       }
@@ -872,7 +879,7 @@
       "average": {
         "polls": 3,
         "dem": 47.5,
-        "rep": 37.6,
+        "rep": 37.7,
         "margin": 9.8,
         "demCandidate": "Brian Poindexter",
         "repCandidate": "Max Miller"
@@ -1022,16 +1029,16 @@
       "average": null
     },
     "SC-S-2026": {
-      "count": 25,
+      "count": 26,
       "latest": {
-        "pollster": "New York Times/Siena University missed 2024 by 3.1 pts In average",
-        "endDate": "2026-10-26"
+        "pollster": "Patinkin Research Strategies",
+        "endDate": "2026-10-29"
       },
       "average": {
-        "polls": 16,
-        "dem": 44.9,
-        "rep": 47.2,
-        "margin": -2.4,
+        "polls": 17,
+        "dem": 45,
+        "rep": 47,
+        "margin": -2,
         "demCandidate": "Annie Andrews",
         "repCandidate": "Darline Graham"
       }
@@ -1257,16 +1264,16 @@
       }
     },
     "LA-S-2026": {
-      "count": 2,
+      "count": 3,
       "latest": {
-        "pollster": "Hart Research Associates Not in average",
-        "endDate": "2026-09-19"
+        "pollster": "Hart Research Associates",
+        "endDate": "2026-10-29"
       },
       "average": {
-        "polls": 1,
-        "dem": 44,
-        "rep": 48,
-        "margin": -4,
+        "polls": 2,
+        "dem": 44.7,
+        "rep": 45.9,
+        "margin": -1.1,
         "demCandidate": "Jamie Davis",
         "repCandidate": "Julia Letlow"
       }
@@ -1730,16 +1737,16 @@
       }
     },
     "AZ-G-2026": {
-      "count": 41,
+      "count": 42,
       "latest": {
-        "pollster": "Noble Predictive Insights",
-        "endDate": "2026-10-28"
+        "pollster": "GrayHouse",
+        "endDate": "2026-10-29"
       },
       "average": {
-        "polls": 15,
-        "dem": 48.9,
-        "rep": 40.4,
-        "margin": 8.5,
+        "polls": 16,
+        "dem": 49,
+        "rep": 40.7,
+        "margin": 8.3,
         "demCandidate": "Katie Hobbs",
         "repCandidate": "Andy Biggs"
       }
@@ -1772,6 +1779,21 @@
         "margin": 21.5,
         "demCandidate": "Xavier Becerra",
         "repCandidate": "Steve Hilton"
+      }
+    },
+    "CA-H-01-2026": {
+      "count": 1,
+      "latest": {
+        "pollster": "USC Democracy and Fair Elections Lab",
+        "endDate": "2026-10-26"
+      },
+      "average": {
+        "polls": 1,
+        "dem": 56,
+        "rep": 41,
+        "margin": 15,
+        "demCandidate": "Mike McGuire",
+        "repCandidate": "James Gallagher"
       }
     },
     "CO-G-2026": {
@@ -1813,16 +1835,16 @@
       }
     },
     "FL-G-2026": {
-      "count": 51,
+      "count": 53,
       "latest": {
-        "pollster": "St. Pete Polls",
-        "endDate": "2026-10-27"
+        "pollster": "Big Data Poll",
+        "endDate": "2026-10-30"
       },
       "average": {
-        "polls": 20,
+        "polls": 22,
         "dem": 44.3,
         "rep": 48.1,
-        "margin": -3.9,
+        "margin": -3.8,
         "demCandidate": "David Jolly",
         "repCandidate": "Byron Donalds"
       }
@@ -1933,16 +1955,16 @@
       }
     },
     "KS-G-2026": {
-      "count": 9,
+      "count": 10,
       "latest": {
-        "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
-        "endDate": "2026-10-26"
+        "pollster": "Emerson College",
+        "endDate": "2026-10-28"
       },
       "average": {
-        "polls": 9,
-        "dem": 46.1,
-        "rep": 47.9,
-        "margin": -1.9,
+        "polls": 10,
+        "dem": 46.3,
+        "rep": 48.7,
+        "margin": -2.4,
         "demCandidate": "Cindy Holscher",
         "repCandidate": "Ty Masterson"
       }
@@ -2023,16 +2045,16 @@
       }
     },
     "MN-G-2026": {
-      "count": 23,
+      "count": 24,
       "latest": {
-        "pollster": "State Navigate",
+        "pollster": "SurveyUSA",
         "endDate": "2026-10-28"
       },
       "average": {
-        "polls": 10,
+        "polls": 11,
         "dem": 50.6,
-        "rep": 40.7,
-        "margin": 9.9,
+        "rep": 40.4,
+        "margin": 10.2,
         "demCandidate": "Amy Klobuchar",
         "repCandidate": "Lisa Demuth"
       }
@@ -2346,16 +2368,16 @@
       }
     },
     "SD-G-2026": {
-      "count": 4,
+      "count": 5,
       "latest": {
-        "pollster": "Emerson College",
-        "endDate": "2026-10-21"
+        "pollster": "Concord Public Opinion Partners",
+        "endDate": "2026-10-26"
       },
       "average": {
-        "polls": 4,
+        "polls": 5,
         "dem": 38.8,
-        "rep": 56.5,
-        "margin": -17.7,
+        "rep": 55,
+        "margin": -16.2,
         "demCandidate": "Daniel P. Ahlers",
         "repCandidate": "Larry Rhoden"
       }

@@ -1,12 +1,110 @@
 {
   "raceId": "FL-S-2026",
-  "count": 43,
+  "count": 46,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Big Data Poll",
+      "sponsors": "1776 Law Center | Public Polling Project",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-30",
+      "sampleSize": 1067,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/sunshine-state-poll-ashley-moody-leads-angie-craig-governors-race-tight/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "percentage": 51.6
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "percentage": 44.7
+        },
+        {
+          "candidate": "Neil Gillespie (NPA)",
+          "party": "NPA",
+          "percentage": 3.8
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Big Data Poll",
+      "sponsors": "1776 Law Center | Public Polling Project",
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-30",
+      "sampleSize": 1122,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.bigdatapoll.com/blog/sunshine-state-poll-ashley-moody-leads-angie-craig-governors-race-tight/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "percentage": 50.9
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "percentage": 44.5
+        },
+        {
+          "candidate": "Neil Gillespie (NPA)",
+          "party": "NPA",
+          "percentage": 4.5
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "sponsors": null,
+      "startDate": "2026-10-28",
+      "endDate": "2026-10-29",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-florida-survey-donalds-49-jolly-45-moody-49-nixon-43/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "percentage": 49
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "St. Pete Polls",
       "sponsors": "Florida Politics",

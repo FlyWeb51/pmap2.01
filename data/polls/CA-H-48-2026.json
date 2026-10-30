@@ -1,8 +1,37 @@
 {
   "raceId": "CA-H-48-2026",
-  "count": 5,
-  "updated_at": "2026-10-30T17:39:46.428Z",
+  "count": 6,
+  "updated_at": "2026-10-30T22:29:33.630Z",
   "polls": [
+    {
+      "pollster": "USC Democracy and Fair Elections Lab",
+      "endDate": "2026-10-27",
+      "fieldDates": "2026-10-22 to 2026-10-27",
+      "sampleSize": 474,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Marni von Wilpert (D)",
+          "party": "D",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Jim Desmond (R)",
+          "party": "R",
+          "pct": 44,
+          "percentage": 44
+        }
+      ],
+      "sourceUrl": "https://www.thedemocracylab.com/ca-polling-2026",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.889
+    },
     {
       "pollster": "Tarrance Group",
       "endDate": "2026-10-20",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3533
+      "weight": 0.3517
     },
     {
       "pollster": "SurveyUSA",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5882
+      "weight": 0.5854
     },
     {
       "pollster": "SurveyUSA",
@@ -89,12 +118,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "KGTV-TV (California) | San Diego Union-Tribune",
-      "weight": 0.257
+      "weight": 0.2558
     },
     {
       "pollster": "Lake Research Partners (D)",
       "endDate": "2026-07-14",
-      "weight": 0.0405,
+      "weight": 0.0404,
       "sampleSize": 500,
       "population": "LV",
       "results": [

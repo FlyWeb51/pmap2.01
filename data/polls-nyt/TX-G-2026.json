@@ -1,6 +1,6 @@
 {
   "raceId": "TX-G-2026",
-  "count": 63,
+  "count": 64,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -116,6 +116,42 @@
       "startDate": "2026-10-21",
       "endDate": "2026-10-26",
       "sampleSize": 1000,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://254labs.io/news/2026-10-tx",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Gina Hinojosa (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Greg Abbott (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "YouGov Blue",
+      "sponsors": "254 Labs",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-26",
+      "sampleSize": 1000,
       "population": "LV",
       "partisan": null,
       "internal": false,
@@ -132,6 +168,16 @@
           "candidate": "Greg Abbott (R)",
           "party": "R",
           "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
         }
       ],
       "note": null

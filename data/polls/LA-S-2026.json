@@ -1,8 +1,37 @@
 {
   "raceId": "LA-S-2026",
-  "count": 2,
-  "updated_at": "2026-10-30T17:39:46.477Z",
+  "count": 3,
+  "updated_at": "2026-10-30T22:29:33.744Z",
   "polls": [
+    {
+      "pollster": "Hart Research Associates",
+      "endDate": "2026-10-29",
+      "fieldDates": "2026-10-28 to 2026-10-29",
+      "sampleSize": 502,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Julia Letlow (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        },
+        {
+          "candidate": "Jamie Davis (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": "https://www.perdidostreet.news/p/new-poll-shows-toss-up-in-louisiana-senate-contest-as-turnout-in-early-vote-buoys-democrats-hopes-of",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4791
+    },
     {
       "pollster": "Hart Research Associates Not in average",
       "endDate": "2026-09-19",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1906
+      "weight": 0.1897
     },
     {
       "pollster": "Public Policy Polling D-sponsored missed 2024 by 2.0 pts D-sponsored In average",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0447
+      "weight": 0.0445
     }
   ]
 }

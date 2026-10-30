@@ -1,12 +1,48 @@
 {
   "raceId": "MN-G-2026",
-  "count": 30,
+  "count": 31,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "SurveyUSA",
+      "sponsors": "KSTP-TV Minneapolis",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-28",
+      "sampleSize": 714,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-minnesota-statewide-races-inch-left-in-final-poll-before-election-day/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Klobuchar (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Lisa Demuth (R)",
+          "party": "R",
+          "percentage": 39
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        },
+        {
+          "candidate": "Steven Young (GRE)",
+          "party": "GRE",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "State Navigate",
       "sponsors": null,
