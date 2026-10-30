@@ -1,65 +1,94 @@
 {
   "raceId": "FL-S-2026",
-  "count": 46,
-  "updated_at": "2026-10-29T22:52:06.838Z",
+  "count": 47,
+  "updated_at": "2026-10-30T03:32:12.457Z",
   "polls": [
     {
-      "pollster": "St. Pete Polls",
+      "pollster": "St. Pete Polls In average",
       "endDate": "2026-10-27",
-      "fieldDates": "2026-10-25 to 2026-10-27",
+      "fieldDates": "2026-10-27 this poll",
       "sampleSize": 916,
       "population": "LV",
       "partisan": null,
-      "sponsors": "Florida Politics",
       "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 45,
+          "percentage": 45
+        },
         {
           "candidate": "Ashley Moody (R)",
           "party": "R",
           "pct": 49,
           "percentage": 49
-        },
-        {
-          "candidate": "Angie Nixon (D)",
-          "party": "D",
-          "pct": 44.7,
-          "percentage": 44.7
         }
       ],
       "sourceUrl": "https://floridapolitics.com/archives/827489-final-st-pete-polls-ashley-moody-holds-49-to-45-over-angie-nixon-with-a-cushion-that-shrinks-if-republicans-stay-home/",
       "foundOn": [
+        "https://pollingsource.com/senate/FL",
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2642
+      "sponsors": "Florida Politics",
+      "weight": 1.2586
     },
     {
-      "pollster": "ActiVote",
+      "pollster": "ActiVote In average",
       "endDate": "2026-10-27",
-      "fieldDates": "2026-10-17 to 2026-10-27",
+      "fieldDates": "2026-10-27 this poll",
       "sampleSize": 400,
       "population": "LV",
       "partisan": null,
-      "sponsors": null,
       "results": [
-        {
-          "candidate": "Ashley Moody (R)",
-          "party": "R",
-          "pct": 53,
-          "percentage": 53
-        },
         {
           "candidate": "Angie Nixon (D)",
           "party": "D",
           "pct": 47,
           "percentage": 47
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 53,
+          "percentage": 53
         }
       ],
       "sourceUrl": "https://www.activote.net/polls/2026/fl-u-s-senate/2026-10-27/",
       "foundOn": [
+        "https://pollingsource.com/senate/FL",
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8354
+      "weight": 0.8317
+    },
+    {
+      "pollster": "New York Times/Siena University missed 2024 by 3.1 pts In average",
+      "endDate": "2026-10-25",
+      "fieldDates": "2026-10-25 this poll",
+      "sampleSize": 813,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "pct": 44,
+          "percentage": 44
+        },
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/FL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1322
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -88,10 +117,10 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1373
+      "weight": 1.1322
     },
     {
-      "pollster": "RedBox Research In average",
+      "pollster": "RedBox Research Not in average",
       "endDate": "2026-10-23",
       "fieldDates": "2026-10-23 this poll",
       "sampleSize": 4832,
@@ -116,23 +145,16 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8516
+      "weight": 0.8478
     },
     {
-      "pollster": "Echelon Insights",
+      "pollster": "Echelon Insights R-sponsored missed 2024 by 1.9 pts Not in average",
       "endDate": "2026-10-23",
-      "fieldDates": "2026-10-16 to 2026-10-23",
+      "fieldDates": "2026-10-23 this poll",
       "sampleSize": 515,
       "population": "LV",
       "partisan": null,
-      "sponsors": "NetChoice",
       "results": [
-        {
-          "candidate": "Ashley Moody (R)",
-          "party": "R",
-          "pct": 51,
-          "percentage": 51
-        },
         {
           "candidate": "Angie Nixon (D)",
           "party": "D",
@@ -140,21 +162,23 @@
           "percentage": 43
         },
         {
-          "candidate": "Neil Gillespie (NPA)",
-          "party": null,
-          "pct": 3,
-          "percentage": 3
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "pct": 51,
+          "percentage": 51
         }
       ],
       "sourceUrl": "https://netchoice.org/netchoice-echelon-insights-poll-voters-rank-ai-regulation-far-behind-cost-of-living-want-one-national-ai-standard/",
       "foundOn": [
+        "https://pollingsource.com/senate/FL",
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8643
+      "sponsors": "NetChoice",
+      "weight": 0.8604
     },
     {
-      "pollster": "co/efficient R-sponsored In average",
+      "pollster": "co/efficient R-sponsored Not in average",
       "endDate": "2026-10-20",
       "fieldDates": "2026-10-20",
       "sampleSize": 1014,
@@ -180,7 +204,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5658
+      "weight": 0.5632
     },
     {
       "pollster": "co/efficient",
@@ -215,11 +239,11 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1315,
+      "weight": 1.1265,
       "otherMatchup": true
     },
     {
-      "pollster": "Univ. of North Florida In average",
+      "pollster": "Univ. of North Florida Not in average",
       "endDate": "2026-10-19",
       "fieldDates": "2026-10-19",
       "sampleSize": 1471,
@@ -227,13 +251,13 @@
       "partisan": null,
       "results": [
         {
-          "candidate": "Nixon (D)",
+          "candidate": "Angie Nixon (D)",
           "party": "D",
           "pct": 45,
           "percentage": 45
         },
         {
-          "candidate": "Moody (R)",
+          "candidate": "Ashley Moody (R)",
           "party": "R",
           "pct": 49,
           "percentage": 49
@@ -244,7 +268,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3317
+      "weight": 1.3258
     },
     {
       "pollster": "University of North Florida In average",
@@ -273,7 +297,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3317
+      "weight": 1.3258
     },
     {
       "pollster": "ActiVote Not in average",
@@ -302,7 +326,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6331
+      "weight": 0.6303
     },
     {
       "pollster": "Univision/YouGov First choice only, not in average",
@@ -330,7 +354,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8184
+      "weight": 0.8147
     },
     {
       "pollster": "YouGov",
@@ -359,7 +383,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8184,
+      "weight": 0.8147,
       "otherMatchup": true
     },
     {
@@ -390,7 +414,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "EDGE Communications",
-      "weight": 0.6306
+      "weight": 0.6278
     },
     {
       "pollster": "MDW D-sponsored Not in average",
@@ -418,7 +442,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7977
+      "weight": 0.7941
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -447,7 +471,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7374
+      "weight": 0.7341
     },
     {
       "pollster": "St. Pete Polls First choice only, not in average",
@@ -477,7 +501,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Florida Politics",
-      "weight": 0.7609
+      "weight": 0.7574
     },
     {
       "pollster": "YouGov First choice only, not in average",
@@ -506,7 +530,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1237
+      "weight": 1.1186
     },
     {
       "pollster": "James Madison Institute First choice only, not in average",
@@ -534,7 +558,7 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8402
+      "weight": 0.8364
     },
     {
       "pollster": "Targoz Market Research Not in average",
@@ -564,7 +588,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "James Madison Institute",
-      "weight": 0.7146
+      "weight": 0.7114
     },
     {
       "pollster": "Mason-Dixon First choice only, not in average",
@@ -594,7 +618,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "NBC 6 Miami | Telemundo",
-      "weight": 0.5727
+      "weight": 0.5701
     },
     {
       "pollster": "Change Research D-sponsored First choice only, not in average",
@@ -624,7 +648,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Freedom Project USA",
-      "weight": 0.3405
+      "weight": 0.339
     },
     {
       "pollster": "InsiderAdvantage",
@@ -653,7 +677,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2227
+      "weight": 0.2217
     },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
@@ -682,7 +706,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5238
+      "weight": 0.5215
     },
     {
       "pollster": "St. Pete Polls",
@@ -712,7 +736,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Florida Politics",
-      "weight": 0.5009
+      "weight": 0.4986
     },
     {
       "pollster": "Quantus Insights",
@@ -741,7 +765,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1909
+      "weight": 0.19
     },
     {
       "pollster": "Change Research D-sponsored",
@@ -771,12 +795,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Freedom Project USA",
-      "weight": 0.2292
+      "weight": 0.2282
     },
     {
       "pollster": "University of North Florida",
       "endDate": "2026-07-17",
-      "weight": 0.1152,
+      "weight": 0.1147,
       "sampleSize": 848,
       "population": "LV",
       "results": [
@@ -829,7 +853,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1152
+      "weight": 0.1147
     },
     {
       "pollster": "Change Research",
@@ -857,13 +881,13 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0569,
+      "weight": 0.0567,
       "otherMatchup": true
     },
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.0294,
+      "weight": 0.0293,
       "sampleSize": 1015,
       "population": "LV",
       "results": [
@@ -894,7 +918,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-06-14",
-      "weight": 0.0593,
+      "weight": 0.059,
       "sampleSize": 1273,
       "population": "RV",
       "results": [
@@ -943,12 +967,12 @@
         "https://pollingsource.com/senate/FL"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0444
+      "weight": 0.0442
     },
     {
       "pollster": "Global Strategy Group (D)",
       "endDate": "2026-05-21",
-      "weight": 0.0168,
+      "weight": 0.0167,
       "sampleSize": 1000,
       "population": "LV",
       "results": [
@@ -979,7 +1003,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.019,
+      "weight": 0.0189,
       "sampleSize": 2070,
       "population": "RV",
       "results": [
@@ -1010,7 +1034,7 @@
     {
       "pollster": "Change Research",
       "endDate": "2026-05-16",
-      "weight": 0.0377,
+      "weight": 0.0375,
       "sampleSize": 1593,
       "population": "LV",
       "results": [
@@ -1036,7 +1060,7 @@
     {
       "pollster": "Cherry Communications (R)",
       "endDate": "2026-05-09",
-      "weight": 0.0099,
+      "weight": 0.0098,
       "sampleSize": 604,
       "population": "LV",
       "results": [
@@ -1067,7 +1091,7 @@
     {
       "pollster": "Stetson University Center for Public Opinion Research",
       "endDate": "2026-04-13",
-      "weight": 0.0092,
+      "weight": 0.0091,
       "sampleSize": 434,
       "population": "LV",
       "results": [
@@ -1120,7 +1144,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.009
+      "weight": 0.0089
     },
     {
       "pollster": "Echelon Insights",
@@ -1155,7 +1179,7 @@
     {
       "pollster": "MDW Communications",
       "endDate": "2026-04-03",
-      "weight": 0.015,
+      "weight": 0.0149,
       "sampleSize": 1834,
       "population": "LV",
       "results": [
