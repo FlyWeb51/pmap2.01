@@ -1,4 +1,34 @@
 {
+  "TX-S-2026": {
+    "count": 132,
+    "latest": {
+      "pollster": "Quantus Insights",
+      "endDate": "2026-10-28",
+      "margin": -1
+    },
+    "averageMargin": 3,
+    "averagePolls": 45
+  },
+  "KS-S-2026": {
+    "count": 24,
+    "latest": {
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
+      "endDate": "2026-10-26",
+      "margin": 10
+    },
+    "averageMargin": 4.1,
+    "averagePolls": 16
+  },
+  "FL-S-2026": {
+    "count": 43,
+    "latest": {
+      "pollster": "St. Pete Polls",
+      "endDate": "2026-10-27",
+      "margin": -4.299999999999997
+    },
+    "averageMargin": -6.2,
+    "averagePolls": 23
+  },
   "MT-S-2026": {
     "count": 34,
     "latest": {
@@ -8,16 +38,6 @@
     },
     "averageMargin": -21.9,
     "averagePolls": 9
-  },
-  "TX-S-2026": {
-    "count": 131,
-    "latest": {
-      "pollster": "ActiVote",
-      "endDate": "2026-10-28",
-      "margin": null
-    },
-    "averageMargin": 3.2,
-    "averagePolls": 44
   },
   "MI-S-2026": {
     "count": 105,
@@ -79,16 +99,6 @@
     "averageMargin": 6.6,
     "averagePolls": 12
   },
-  "KS-S-2026": {
-    "count": 22,
-    "latest": {
-      "pollster": "CNN/SSRS",
-      "endDate": "2026-10-26",
-      "margin": 4
-    },
-    "averageMargin": 1.5,
-    "averagePolls": 14
-  },
   "ME-S-2026": {
     "count": 75,
     "latest": {
@@ -138,16 +148,6 @@
     },
     "averageMargin": 5.6,
     "averagePolls": 16
-  },
-  "FL-S-2026": {
-    "count": 42,
-    "latest": {
-      "pollster": "St. Pete Polls",
-      "endDate": "2026-10-27",
-      "margin": -4.299999999999997
-    },
-    "averageMargin": -6.4,
-    "averagePolls": 22
   },
   "NE-S-2026": {
     "count": 24,
@@ -864,9 +864,9 @@
     "latest": {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
       "endDate": "2026-10-14",
-      "margin": -28
+      "margin": -27.8
     },
-    "averageMargin": -28,
+    "averageMargin": -27.8,
     "averagePolls": 1
   },
   "ME-H-02-2026": {
@@ -1490,14 +1490,44 @@
     "averagePolls": 0
   },
   "TX-G-2026": {
-    "count": 62,
+    "count": 63,
     "latest": {
       "pollster": "ActiVote",
       "endDate": "2026-10-29",
       "margin": -4.200000000000003
     },
-    "averageMargin": -2.2,
-    "averagePolls": 38
+    "averageMargin": -2.4,
+    "averagePolls": 39
+  },
+  "KS-G-2026": {
+    "count": 9,
+    "latest": {
+      "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
+      "endDate": "2026-10-26",
+      "margin": 6
+    },
+    "averageMargin": -1,
+    "averagePolls": 8
+  },
+  "FL-G-2026": {
+    "count": 68,
+    "latest": {
+      "pollster": "St. Pete Polls",
+      "endDate": "2026-10-27",
+      "margin": -2.299999999999997
+    },
+    "averageMargin": -4.7,
+    "averagePolls": 23
+  },
+  "AZ-G-2026": {
+    "count": 46,
+    "latest": {
+      "pollster": "Noble Predictive Insights",
+      "endDate": "2026-10-28",
+      "margin": 6
+    },
+    "averageMargin": 8.5,
+    "averagePolls": 8
   },
   "MI-G-2026": {
     "count": 85,
@@ -1518,16 +1548,6 @@
     },
     "averageMargin": 7.1,
     "averagePolls": 21
-  },
-  "AZ-G-2026": {
-    "count": 45,
-    "latest": {
-      "pollster": "Kreate Strategies",
-      "endDate": "2026-10-27",
-      "margin": 5.130000000000003
-    },
-    "averageMargin": 9.2,
-    "averagePolls": 7
   },
   "MN-G-2026": {
     "count": 30,
@@ -1558,16 +1578,6 @@
     },
     "averageMargin": -8.6,
     "averagePolls": 8
-  },
-  "KS-G-2026": {
-    "count": 8,
-    "latest": {
-      "pollster": "CNN/SSRS",
-      "endDate": "2026-10-26",
-      "margin": -5
-    },
-    "averageMargin": -3.8,
-    "averagePolls": 7
   },
   "ME-G-2026": {
     "count": 24,
@@ -1609,16 +1619,6 @@
     "averageMargin": 3.1,
     "averagePolls": 20
   },
-  "FL-G-2026": {
-    "count": 67,
-    "latest": {
-      "pollster": "St. Pete Polls",
-      "endDate": "2026-10-27",
-      "margin": -2.299999999999997
-    },
-    "averageMargin": -4.9,
-    "averagePolls": 22
-  },
   "GA-G-2026": {
     "count": 31,
     "latest": {
@@ -1639,6 +1639,16 @@
     "averageMargin": 13,
     "averagePolls": 12
   },
+  "CA-G-2026": {
+    "count": 24,
+    "latest": {
+      "pollster": "University of California Berkeley Institute of Governmental Studies",
+      "endDate": "2026-10-25",
+      "margin": 27
+    },
+    "averageMargin": 22,
+    "averagePolls": 14
+  },
   "SC-G-2026": {
     "count": 15,
     "latest": {
@@ -1648,16 +1658,6 @@
     },
     "averageMargin": -8.8,
     "averagePolls": 6
-  },
-  "CA-G-2026": {
-    "count": 23,
-    "latest": {
-      "pollster": "SurveyUSA",
-      "endDate": "2026-10-24",
-      "margin": 22
-    },
-    "averageMargin": 21,
-    "averagePolls": 13
   },
   "NE-G-2026": {
     "count": 13,
@@ -1726,7 +1726,7 @@
       "endDate": "2026-10-21",
       "margin": -19
     },
-    "averageMargin": -18.4,
+    "averageMargin": -18.6,
     "averagePolls": 3
   },
   "PA-G-2026": {

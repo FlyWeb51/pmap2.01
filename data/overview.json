@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T06:29:39.355Z",
+  "generatedAt": "2026-10-30T13:12:29.621Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -51,12 +51,12 @@
         "special": false,
         "kalshiD": 0.48,
         "nyt": {
-          "averageMargin": 1.5,
-          "averagePolls": 14,
+          "averageMargin": 4.1,
+          "averagePolls": 16,
           "latest": {
-            "pollster": "CNN/SSRS",
+            "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
             "endDate": "2026-10-26",
-            "margin": 4
+            "margin": 10
           },
           "source": "NYT"
         }
@@ -141,12 +141,12 @@
         "special": false,
         "kalshiD": 0.695,
         "nyt": {
-          "averageMargin": 3.2,
-          "averagePolls": 44,
+          "averageMargin": 3,
+          "averagePolls": 45,
           "latest": {
-            "pollster": "ActiVote",
+            "pollster": "Quantus Insights",
             "endDate": "2026-10-28",
-            "margin": null
+            "margin": -1
           },
           "source": "NYT"
         }
@@ -249,8 +249,8 @@
         "special": true,
         "kalshiD": 0.106,
         "nyt": {
-          "averageMargin": -6.4,
-          "averagePolls": 22,
+          "averageMargin": -6.2,
+          "averagePolls": 23,
           "latest": {
             "pollster": "St. Pete Polls",
             "endDate": "2026-10-27",
@@ -892,8 +892,8 @@
       "dem": "Gina Hinojosa",
       "rep": "Greg Abbott",
       "poll": {
-        "averageMargin": -2.2,
-        "averagePolls": 38,
+        "averageMargin": -2.4,
+        "averagePolls": 39,
         "latest": {
           "pollster": "ActiVote",
           "endDate": "2026-10-29",
@@ -912,8 +912,8 @@
       "dem": "David Jolly",
       "rep": "Byron Donalds",
       "poll": {
-        "averageMargin": -4.9,
-        "averagePolls": 22,
+        "averageMargin": -4.7,
+        "averagePolls": 23,
         "latest": {
           "pollster": "St. Pete Polls",
           "endDate": "2026-10-27",
@@ -952,12 +952,12 @@
       "dem": "Cindy Holscher",
       "rep": "Ty Masterson",
       "poll": {
-        "averageMargin": -3.8,
-        "averagePolls": 7,
+        "averageMargin": -1,
+        "averagePolls": 8,
         "latest": {
-          "pollster": "CNN/SSRS",
+          "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
           "endDate": "2026-10-26",
-          "margin": -5
+          "margin": 6
         },
         "source": "NYT"
       }
@@ -1132,12 +1132,12 @@
       "dem": "Katie Hobbs",
       "rep": "Andy Biggs",
       "poll": {
-        "averageMargin": 9.2,
-        "averagePolls": 7,
+        "averageMargin": 8.5,
+        "averagePolls": 8,
         "latest": {
-          "pollster": "Kreate Strategies",
-          "endDate": "2026-10-27",
-          "margin": 5.130000000000003
+          "pollster": "Noble Predictive Insights",
+          "endDate": "2026-10-28",
+          "margin": 6
         },
         "source": "NYT"
       }
@@ -1343,12 +1343,12 @@
       "dem": "Xavier Becerra",
       "rep": "Steve Hilton",
       "poll": {
-        "averageMargin": 21,
-        "averagePolls": 13,
+        "averageMargin": 22,
+        "averagePolls": 14,
         "latest": {
-          "pollster": "SurveyUSA",
-          "endDate": "2026-10-24",
-          "margin": 22
+          "pollster": "University of California Berkeley Institute of Governmental Studies",
+          "endDate": "2026-10-25",
+          "margin": 27
         },
         "source": "NYT"
       }
@@ -1443,7 +1443,7 @@
       "dem": "Dan Ahlers",
       "rep": "Larry Rhoden",
       "poll": {
-        "averageMargin": -18.4,
+        "averageMargin": -18.6,
         "averagePolls": 3,
         "latest": {
           "pollster": "Emerson College",
@@ -1625,11 +1625,11 @@
         "special": true,
         "dem": "Angie Nixon",
         "rep": "Ashley Moody",
-        "polls": 25,
+        "polls": 26,
         "pres2024": -13.1,
         "expected": -3.8,
-        "pollMargin": -6.2,
-        "overUnder": -2.4,
+        "pollMargin": -6.1,
+        "overUnder": -2.3,
         "kalshiD": 0.106
       },
       {
@@ -1768,11 +1768,11 @@
         "special": false,
         "dem": "James Talarico",
         "rep": "Ken Paxton",
-        "polls": 76,
+        "polls": 77,
         "pres2024": -13.7,
         "expected": -4.4,
-        "pollMargin": 3.2,
-        "overUnder": 7.6,
+        "pollMargin": 3.1,
+        "overUnder": 7.5,
         "kalshiD": 0.695
       },
       {
@@ -1781,11 +1781,11 @@
         "special": false,
         "dem": "Jacques Hamilton",
         "rep": "Roger Marshall",
-        "polls": 18,
+        "polls": 19,
         "pres2024": -16.1,
         "expected": -6.8,
-        "pollMargin": 1,
-        "overUnder": 7.8,
+        "pollMargin": 2,
+        "overUnder": 8.8,
         "kalshiD": 0.48
       },
       {
@@ -1820,6 +1820,17 @@
     "updated": "2026-10-30T06:29:39.223Z",
     "day": [
       {
+        "key": "H-SC-01",
+        "name": "SC-1",
+        "type": "House",
+        "now": 45.8,
+        "ch1": 11.6,
+        "ch7": 12.3,
+        "dem": "Nancy S. Lacore",
+        "rep": "Jenny Costa Honeycutt",
+        "thirdParty": false
+      },
+      {
         "key": "H-MT-01",
         "name": "MT-1",
         "type": "House",
@@ -1835,7 +1846,7 @@
         "name": "PA-1",
         "type": "House",
         "now": 53,
-        "ch1": 10.5,
+        "ch1": 10.1,
         "ch7": 13.5,
         "dem": "Bob Harvie",
         "rep": "Brian Fitzpatrick",
@@ -1853,58 +1864,47 @@
         "thirdParty": false
       },
       {
-        "key": "H-SC-01",
-        "name": "SC-1",
-        "type": "House",
-        "now": 45.8,
-        "ch1": 8.3,
-        "ch7": 12.3,
-        "dem": "Nancy S. Lacore",
-        "rep": "Jenny Costa Honeycutt",
-        "thirdParty": false
-      },
-      {
-        "key": "H-KY-06",
-        "name": "KY-6",
-        "type": "House",
-        "now": 55.5,
-        "ch1": 7.5,
-        "ch7": 11,
-        "dem": "Zach Dembo",
-        "rep": "Ralph Alvarado",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MI-10",
-        "name": "MI-10",
-        "type": "House",
-        "now": 72.2,
-        "ch1": 6.4,
-        "ch7": 1.1,
-        "dem": "Christina Hines",
-        "rep": "Michael Bouchard Jr.",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MI-04",
-        "name": "MI-4",
-        "type": "House",
-        "now": 62.5,
-        "ch1": 6,
-        "ch7": 0,
-        "dem": "Sean McCann",
-        "rep": "Bill Huizenga",
-        "thirdParty": false
-      },
-      {
         "key": "H-NC-14",
         "name": "NC-14",
         "type": "House",
         "now": 25.5,
-        "ch1": 6,
-        "ch7": 15.5,
+        "ch1": 8.1,
+        "ch7": 15.6,
         "dem": "LaKesha Womack",
         "rep": "Tim Moore",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NY-05",
+        "name": "NY-5",
+        "type": "House",
+        "now": 98.5,
+        "ch1": 7,
+        "ch7": -0.7,
+        "dem": "Gregory Meeks",
+        "rep": "George Marsh",
+        "thirdParty": false
+      },
+      {
+        "key": "H-WI-05",
+        "name": "WI-5",
+        "type": "House",
+        "now": 2.6,
+        "ch1": -6.6,
+        "ch7": 1.3,
+        "dem": "Andrew Beck",
+        "rep": "Scott Fitzgerald",
+        "thirdParty": false
+      },
+      {
+        "key": "H-CA-46",
+        "name": "CA-46",
+        "type": "House",
+        "now": 97.9,
+        "ch1": 6.3,
+        "ch7": -0.4,
+        "dem": "Lou Correa",
+        "rep": "David Pan",
         "thirdParty": false
       },
       {
@@ -1912,21 +1912,32 @@
         "name": "Michigan",
         "type": "Senate",
         "now": 75.5,
-        "ch1": 5.8,
+        "ch1": 5.7,
         "ch7": 7,
         "dem": "Abdul El-Sayed",
         "rep": "Mike Rogers",
         "thirdParty": false
       },
       {
-        "key": "H-OK-05",
-        "name": "OK-5",
+        "key": "H-NY-16",
+        "name": "NY-16",
         "type": "House",
-        "now": 10.4,
-        "ch1": -5.1,
-        "ch7": -6.1,
-        "dem": "Jena Nelson",
-        "rep": "Stephanie Bice",
+        "now": 98,
+        "ch1": 5.6,
+        "ch7": 0.7,
+        "dem": "George Latimer",
+        "rep": "Joseph Cinquemani",
+        "thirdParty": false
+      },
+      {
+        "key": "H-MI-04",
+        "name": "MI-4",
+        "type": "House",
+        "now": 62.5,
+        "ch1": 5,
+        "ch7": 0,
+        "dem": "Sean McCann",
+        "rep": "Bill Huizenga",
         "thirdParty": false
       },
       {
@@ -1934,45 +1945,34 @@
         "name": "NC-13",
         "type": "House",
         "now": 37.5,
-        "ch1": 4.7,
-        "ch7": 21,
+        "ch1": 5,
+        "ch7": 20.2,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
-        "thirdParty": false
-      },
-      {
-        "key": "H-IN-05",
-        "name": "IN-5",
-        "type": "House",
-        "now": 13.5,
-        "ch1": -3.8,
-        "ch7": -0.3,
-        "dem": "J.D. Ford",
-        "rep": "Victoria Spartz",
         "thirdParty": false
       }
     ],
     "week": [
       {
-        "key": "H-NC-03",
-        "name": "NC-3",
-        "type": "House",
-        "now": 40.5,
-        "ch1": 2.4,
-        "ch7": 21,
-        "dem": "Raymond Smith Jr.",
-        "rep": "Greg Murphy",
-        "thirdParty": false
-      },
-      {
         "key": "H-NC-13",
         "name": "NC-13",
         "type": "House",
         "now": 37.5,
-        "ch1": 4.7,
-        "ch7": 21,
+        "ch1": 5,
+        "ch7": 20.2,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-03",
+        "name": "NC-3",
+        "type": "House",
+        "now": 40.5,
+        "ch1": 2.6,
+        "ch7": 19.9,
+        "dem": "Raymond Smith Jr.",
+        "rep": "Greg Murphy",
         "thirdParty": false
       },
       {
@@ -1980,8 +1980,8 @@
         "name": "NC-14",
         "type": "House",
         "now": 25.5,
-        "ch1": 6,
-        "ch7": 15.5,
+        "ch1": 8.1,
+        "ch7": 15.6,
         "dem": "LaKesha Womack",
         "rep": "Tim Moore",
         "thirdParty": false
@@ -1991,8 +1991,8 @@
         "name": "AL-2",
         "type": "House",
         "now": 43.1,
-        "ch1": 1.2,
-        "ch7": 13.9,
+        "ch1": 0.6,
+        "ch7": 13.6,
         "dem": "Shomari Figures",
         "rep": "Rhett Marques",
         "thirdParty": false
@@ -2002,7 +2002,7 @@
         "name": "PA-1",
         "type": "House",
         "now": 53,
-        "ch1": 10.5,
+        "ch1": 10.1,
         "ch7": 13.5,
         "dem": "Bob Harvie",
         "rep": "Brian Fitzpatrick",
@@ -2013,7 +2013,7 @@
         "name": "SC-1",
         "type": "House",
         "now": 45.8,
-        "ch1": 8.3,
+        "ch1": 11.6,
         "ch7": 12.3,
         "dem": "Nancy S. Lacore",
         "rep": "Jenny Costa Honeycutt",
@@ -2068,7 +2068,7 @@
         "name": "KY-6",
         "type": "House",
         "now": 55.5,
-        "ch1": 7.5,
+        "ch1": 3.5,
         "ch7": 11,
         "dem": "Zach Dembo",
         "rep": "Ralph Alvarado",
@@ -2511,7 +2511,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-10-30T06:29:39.230Z",
-    "nytUpdated": "2026-10-30T06:01:55.413Z",
+    "nytUpdated": "2026-10-30T13:12:29.159Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

@@ -1,6 +1,6 @@
 {
   "raceId": "FL-S-2026",
-  "count": 42,
+  "count": 43,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -142,6 +142,32 @@
           "candidate": "Someone else (NON)",
           "party": "NON",
           "percentage": 0
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Workbench Strategy",
+      "sponsors": null,
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-22",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://www.politico.com/newsletters/florida-playbook/2026/10/30/gop-closing-message-keep-florida-great-01142052",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "percentage": 49
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "percentage": 47
         }
       ],
       "note": null

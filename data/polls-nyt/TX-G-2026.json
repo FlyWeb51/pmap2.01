@@ -1,6 +1,6 @@
 {
   "raceId": "TX-G-2026",
-  "count": 62,
+  "count": 63,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -29,6 +29,42 @@
           "candidate": "Gina Hinojosa (D)",
           "party": "D",
           "percentage": 47.9
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Quantus Insights",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-28",
+      "sampleSize": 1214,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://quantusinsights.org/polling/f/texas-survey-paxton-up-one-abbott-ahead-by-five",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Greg Abbott (R)",
+          "party": "R",
+          "percentage": 51.6
+        },
+        {
+          "candidate": "Gina Hinojosa (D)",
+          "party": "D",
+          "percentage": 46.3
+        },
+        {
+          "candidate": "Pat Dixon (LIB)",
+          "party": "LIB",
+          "percentage": 1.2
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
         }
       ],
       "note": null

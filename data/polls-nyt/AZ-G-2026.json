@@ -1,12 +1,48 @@
 {
   "raceId": "AZ-G-2026",
-  "count": 45,
+  "count": 46,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Noble Predictive Insights",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-28",
+      "sampleSize": 511,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.noblepredictiveinsights.com/post/az-poll-of-record-hobbs-6-yee-bucks-the-trend",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Katie Hobbs (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Andy Biggs (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Teri Hourihan (NLP)",
+          "party": "NLP",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Kreate Strategies",
       "sponsors": "American Encore",

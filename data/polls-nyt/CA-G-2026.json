@@ -1,12 +1,43 @@
 {
   "raceId": "CA-G-2026",
-  "count": 23,
+  "count": 24,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "University of California Berkeley Institute of Governmental Studies",
+      "sponsors": "Los Angeles Times",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-25",
+      "sampleSize": 1477,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.latimes.com/california/story/2026-10-28/bass-comes-from-behind-now-in-dead-heat-with-raman-in-mayors-race-new-poll-shows",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Xavier Becerra (D)",
+          "party": "D",
+          "percentage": 61
+        },
+        {
+          "candidate": "Steve Hilton (R)",
+          "party": "R",
+          "percentage": 34
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "SurveyUSA",
       "sponsors": "KGTV-TV (California) | San Diego Union-Tribune",
