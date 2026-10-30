@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T13:37:00.845Z",
+  "generatedAt": "2026-10-30T17:39:46.605Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -1594,6 +1594,19 @@
         "kalshiD": 0.986
       },
       {
+        "state": "IL",
+        "name": "Illinois",
+        "special": false,
+        "dem": "Juliana Stratton",
+        "rep": "Don Tracy",
+        "polls": 3,
+        "pres2024": 10.9,
+        "expected": 20.2,
+        "pollMargin": 13.7,
+        "overUnder": -6.5,
+        "kalshiD": 0.981
+      },
+      {
         "state": "NH",
         "name": "New Hampshire",
         "special": false,
@@ -1768,11 +1781,11 @@
         "special": false,
         "dem": "James Talarico",
         "rep": "Ken Paxton",
-        "polls": 77,
+        "polls": 78,
         "pres2024": -13.7,
         "expected": -4.4,
-        "pollMargin": 3.1,
-        "overUnder": 7.5,
+        "pollMargin": 3.2,
+        "overUnder": 7.6,
         "kalshiD": 0.695
       },
       {
@@ -1781,11 +1794,11 @@
         "special": false,
         "dem": "Jacques Hamilton",
         "rep": "Roger Marshall",
-        "polls": 19,
+        "polls": 20,
         "pres2024": -16.1,
         "expected": -6.8,
-        "pollMargin": 2,
-        "overUnder": 8.8,
+        "pollMargin": 2.8,
+        "overUnder": 9.6,
         "kalshiD": 0.515
       },
       {
@@ -1820,14 +1833,14 @@
     "updated": "2026-10-30T13:37:00.752Z",
     "day": [
       {
-        "key": "S-KS",
-        "name": "Kansas",
-        "type": "Senate",
-        "now": 51.5,
-        "ch1": 12,
-        "ch7": 13,
-        "dem": "Adam Hamilton",
-        "rep": "Roger Marshall",
+        "key": "H-MT-01",
+        "name": "MT-1",
+        "type": "House",
+        "now": 55.5,
+        "ch1": 11,
+        "ch7": 10,
+        "dem": "Sam Forstag",
+        "rep": "Aaron Flint",
         "thirdParty": false
       },
       {
@@ -1835,43 +1848,10 @@
         "name": "SC-1",
         "type": "House",
         "now": 45.6,
-        "ch1": 11.4,
-        "ch7": 12.1,
+        "ch1": 8.1,
+        "ch7": 8.2,
         "dem": "Nancy S. Lacore",
         "rep": "Jenny Costa Honeycutt",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MT-01",
-        "name": "MT-1",
-        "type": "House",
-        "now": 55.5,
-        "ch1": 11,
-        "ch7": 11,
-        "dem": "Sam Forstag",
-        "rep": "Aaron Flint",
-        "thirdParty": false
-      },
-      {
-        "key": "H-PA-01",
-        "name": "PA-1",
-        "type": "House",
-        "now": 53,
-        "ch1": 10.1,
-        "ch7": 13.5,
-        "dem": "Bob Harvie",
-        "rep": "Brian Fitzpatrick",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-14",
-        "name": "NC-14",
-        "type": "House",
-        "now": 25.5,
-        "ch1": 8.1,
-        "ch7": 15.6,
-        "dem": "LaKesha Womack",
-        "rep": "Tim Moore",
         "thirdParty": false
       },
       {
@@ -1879,54 +1859,10 @@
         "name": "FL-7",
         "type": "House",
         "now": 33.3,
-        "ch1": 7.6,
+        "ch1": 7.1,
         "ch7": 4.5,
         "dem": "Bale Dalton",
         "rep": "Ryan Elijah",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NY-05",
-        "name": "NY-5",
-        "type": "House",
-        "now": 98.5,
-        "ch1": 7,
-        "ch7": -0.7,
-        "dem": "Gregory Meeks",
-        "rep": "George Marsh",
-        "thirdParty": false
-      },
-      {
-        "key": "H-WI-05",
-        "name": "WI-5",
-        "type": "House",
-        "now": 2.6,
-        "ch1": -6.6,
-        "ch7": 1.3,
-        "dem": "Andrew Beck",
-        "rep": "Scott Fitzgerald",
-        "thirdParty": false
-      },
-      {
-        "key": "H-CA-46",
-        "name": "CA-46",
-        "type": "House",
-        "now": 97.7,
-        "ch1": 6.1,
-        "ch7": -0.6,
-        "dem": "Lou Correa",
-        "rep": "David Pan",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-03",
-        "name": "NC-3",
-        "type": "House",
-        "now": 43.9,
-        "ch1": 6,
-        "ch7": 23.3,
-        "dem": "Raymond Smith Jr.",
-        "rep": "Greg Murphy",
         "thirdParty": false
       },
       {
@@ -1941,14 +1877,91 @@
         "thirdParty": false
       },
       {
-        "key": "H-NY-16",
-        "name": "NY-16",
+        "key": "H-PA-01",
+        "name": "PA-1",
         "type": "House",
-        "now": 97.9,
+        "now": 53,
         "ch1": 5.5,
-        "ch7": 0.6,
-        "dem": "George Latimer",
-        "rep": "Joseph Cinquemani",
+        "ch7": 13.5,
+        "dem": "Bob Harvie",
+        "rep": "Brian Fitzpatrick",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-13",
+        "name": "NC-13",
+        "type": "House",
+        "now": 34.2,
+        "ch1": -4.9,
+        "ch7": 15.3,
+        "dem": "Paul Barringer",
+        "rep": "Brad Knott",
+        "thirdParty": false
+      },
+      {
+        "key": "H-OK-05",
+        "name": "OK-5",
+        "type": "House",
+        "now": 9.7,
+        "ch1": -4.9,
+        "ch7": -7.3,
+        "dem": "Jena Nelson",
+        "rep": "Stephanie Bice",
+        "thirdParty": false
+      },
+      {
+        "key": "S-MI",
+        "name": "Michigan",
+        "type": "Senate",
+        "now": 74.8,
+        "ch1": 4.3,
+        "ch7": 6.3,
+        "dem": "Abdul El-Sayed",
+        "rep": "Mike Rogers",
+        "thirdParty": false
+      },
+      {
+        "key": "G-GA",
+        "name": "Georgia",
+        "type": "Governor",
+        "now": 65.8,
+        "ch1": 4.3,
+        "ch7": 6.5,
+        "dem": "Keisha Lance Bottoms",
+        "rep": "Rick Jackson",
+        "thirdParty": false
+      },
+      {
+        "key": "H-OH-10",
+        "name": "OH-10",
+        "type": "House",
+        "now": 32.8,
+        "ch1": 4,
+        "ch7": 3.6,
+        "dem": "Kristina Knickerbocker",
+        "rep": "Mike Turner",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-03",
+        "name": "NC-3",
+        "type": "House",
+        "now": 43.9,
+        "ch1": 3.8,
+        "ch7": 22.4,
+        "dem": "Raymond Smith Jr.",
+        "rep": "Greg Murphy",
+        "thirdParty": false
+      },
+      {
+        "key": "H-GA-01",
+        "name": "GA-1",
+        "type": "House",
+        "now": 8.9,
+        "ch1": -3.5,
+        "ch7": -3.6,
+        "dem": "Amanda Hollowell",
+        "rep": "Jim Kingston",
         "thirdParty": false
       }
     ],
@@ -1958,8 +1971,8 @@
         "name": "NC-3",
         "type": "House",
         "now": 43.9,
-        "ch1": 6,
-        "ch7": 23.3,
+        "ch1": 3.8,
+        "ch7": 22.4,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
         "thirdParty": false
@@ -1969,8 +1982,8 @@
         "name": "NC-13",
         "type": "House",
         "now": 34.2,
-        "ch1": 1.7,
-        "ch7": 16.9,
+        "ch1": -4.9,
+        "ch7": 15.3,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
         "thirdParty": false
@@ -1980,21 +1993,21 @@
         "name": "NC-14",
         "type": "House",
         "now": 25.5,
-        "ch1": 8.1,
-        "ch7": 15.6,
+        "ch1": 1,
+        "ch7": 15.2,
         "dem": "LaKesha Womack",
         "rep": "Tim Moore",
         "thirdParty": false
       },
       {
-        "key": "H-AL-02",
-        "name": "AL-2",
-        "type": "House",
-        "now": 43.1,
-        "ch1": 0.6,
-        "ch7": 13.6,
-        "dem": "Shomari Figures",
-        "rep": "Rhett Marques",
+        "key": "G-FL",
+        "name": "Florida",
+        "type": "Governor",
+        "now": 31.5,
+        "ch1": 1.3,
+        "ch7": 14,
+        "dem": "David Jolly",
+        "rep": "Byron Donalds",
         "thirdParty": false
       },
       {
@@ -2002,7 +2015,7 @@
         "name": "PA-1",
         "type": "House",
         "now": 53,
-        "ch1": 10.1,
+        "ch1": 5.5,
         "ch7": 13.5,
         "dem": "Bob Harvie",
         "rep": "Brian Fitzpatrick",
@@ -2013,32 +2026,21 @@
         "name": "Kansas",
         "type": "Senate",
         "now": 51.5,
-        "ch1": 12,
+        "ch1": 2.5,
         "ch7": 13,
         "dem": "Adam Hamilton",
         "rep": "Roger Marshall",
         "thirdParty": false
       },
       {
-        "key": "G-FL",
-        "name": "Florida",
-        "type": "Governor",
-        "now": 31.5,
-        "ch1": 3,
-        "ch7": 12.8,
-        "dem": "David Jolly",
-        "rep": "Byron Donalds",
-        "thirdParty": false
-      },
-      {
-        "key": "H-SC-01",
-        "name": "SC-1",
+        "key": "H-AL-02",
+        "name": "AL-2",
         "type": "House",
-        "now": 45.6,
-        "ch1": 11.4,
-        "ch7": 12.1,
-        "dem": "Nancy S. Lacore",
-        "rep": "Jenny Costa Honeycutt",
+        "now": 43.1,
+        "ch1": 0,
+        "ch7": 12.9,
+        "dem": "Shomari Figures",
+        "rep": "Rhett Marques",
         "thirdParty": false
       },
       {
@@ -2046,32 +2048,10 @@
         "name": "CO-5",
         "type": "House",
         "now": 42.6,
-        "ch1": 0,
+        "ch1": 0.5,
         "ch7": 11.1,
         "dem": "Jessica Killin",
         "rep": "Jeff Crank",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MT-01",
-        "name": "MT-1",
-        "type": "House",
-        "now": 55.5,
-        "ch1": 11,
-        "ch7": 11,
-        "dem": "Sam Forstag",
-        "rep": "Aaron Flint",
-        "thirdParty": false
-      },
-      {
-        "key": "H-KY-06",
-        "name": "KY-6",
-        "type": "House",
-        "now": 55.5,
-        "ch1": 3.5,
-        "ch7": 11,
-        "dem": "Zach Dembo",
-        "rep": "Ralph Alvarado",
         "thirdParty": false
       },
       {
@@ -2083,6 +2063,39 @@
         "ch7": 10.5,
         "dem": "Aaron Ford",
         "rep": "Joe Lombardo",
+        "thirdParty": false
+      },
+      {
+        "key": "H-KY-06",
+        "name": "KY-6",
+        "type": "House",
+        "now": 55.5,
+        "ch1": 0.5,
+        "ch7": 10.5,
+        "dem": "Zach Dembo",
+        "rep": "Ralph Alvarado",
+        "thirdParty": false
+      },
+      {
+        "key": "G-TX",
+        "name": "Texas",
+        "type": "Governor",
+        "now": 37.5,
+        "ch1": 1,
+        "ch7": 10.3,
+        "dem": "Gina Hinojosa",
+        "rep": "Greg Abbott",
+        "thirdParty": false
+      },
+      {
+        "key": "H-MT-01",
+        "name": "MT-1",
+        "type": "House",
+        "now": 55.5,
+        "ch1": 11,
+        "ch7": 10,
+        "dem": "Sam Forstag",
+        "rep": "Aaron Flint",
         "thirdParty": false
       }
     ]

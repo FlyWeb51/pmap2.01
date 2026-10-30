@@ -1,8 +1,36 @@
 {
   "raceId": "IL-S-2026",
-  "count": 2,
-  "updated_at": "2026-10-30T13:12:29.514Z",
+  "count": 3,
+  "updated_at": "2026-10-30T17:39:46.491Z",
   "polls": [
+    {
+      "pollster": "ActiVote In average",
+      "endDate": "2026-10-30",
+      "fieldDates": "2026-10-30 this poll",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Juliana Stratton (D)",
+          "party": "D",
+          "pct": 55.6,
+          "percentage": 55.6
+        },
+        {
+          "candidate": "Don Tracy (R)",
+          "party": "R",
+          "pct": 44.4,
+          "percentage": 44.4
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/IL"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8793
+    },
     {
       "pollster": "ActiVote In average",
       "endDate": "2026-10-20",
@@ -30,7 +58,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7009
+      "weight": 0.6979
     },
     {
       "pollster": "Public Policy Polling D-sponsored missed 2024 by 2.0 pts In average",
@@ -60,7 +88,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Chicago News Weekly",
-      "weight": 0.2695
+      "weight": 0.2683
     }
   ]
 }
