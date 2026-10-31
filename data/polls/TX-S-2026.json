@@ -1,7 +1,7 @@
 {
   "raceId": "TX-S-2026",
-  "count": 140,
-  "updated_at": "2026-10-30T22:29:33.741Z",
+  "count": 141,
+  "updated_at": "2026-10-31T03:16:08.700Z",
   "polls": [
     {
       "pollster": "ActiVote",
@@ -30,7 +30,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8357
+      "weight": 0.8319
     },
     {
       "pollster": "Quantus Insights R-sponsored In average",
@@ -60,7 +60,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4602
+      "weight": 1.4535
     },
     {
       "pollster": "SSRS",
@@ -88,7 +88,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0545
+      "weight": 1.0496
     },
     {
       "pollster": "A2 Insights",
@@ -117,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0257
+      "weight": 1.021
     },
     {
       "pollster": "A2 Insights In average",
@@ -145,10 +145,10 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0257
+      "weight": 1.021
     },
     {
-      "pollster": "CNN missed 2024 by 2.9 pts In average",
+      "pollster": "CNN missed 2024 by 2.9 pts Not in average",
       "endDate": "2026-10-27",
       "fieldDates": "2026-10-27 this poll",
       "sampleSize": 923,
@@ -173,7 +173,35 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2405
+      "weight": 1.2348
+    },
+    {
+      "pollster": "Data for Progress D-sponsored missed 2024 by 4.1 pts In average",
+      "endDate": "2026-10-27",
+      "fieldDates": "2026-10-27 this poll",
+      "sampleSize": null,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/TX"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9089
     },
     {
       "pollster": "CNN/SSRS",
@@ -208,7 +236,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2405
+      "weight": 1.2348
     },
     {
       "pollster": "YouGov Blue D-sponsored In average",
@@ -239,7 +267,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "254 Labs",
-      "weight": 0.6309
+      "weight": 0.628
     },
     {
       "pollster": "254 Labs/YouGov Blue Not in average",
@@ -267,7 +295,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2618
+      "weight": 1.256
     },
     {
       "pollster": "Texas Southern University",
@@ -301,7 +329,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4821
+      "weight": 1.4753
     },
     {
       "pollster": "TSU/YouGov Not in average",
@@ -329,7 +357,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.7436
+      "weight": 1.7356
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
@@ -364,7 +392,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.7436
+      "weight": 1.7356
     },
     {
       "pollster": "ActiVote Not in average",
@@ -394,7 +422,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7109
+      "weight": 0.7077
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts Not in average",
@@ -423,7 +451,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5521
+      "weight": 0.5496
     },
     {
       "pollster": "Univision/YouGov Not in average",
@@ -452,7 +480,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0117
+      "weight": 1.007
     },
     {
       "pollster": "YouGov",
@@ -481,7 +509,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0117
+      "weight": 1.007
     },
     {
       "pollster": "Verasight Not in average",
@@ -512,7 +540,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "VoteHub",
-      "weight": 1.0813
+      "weight": 1.0763
     },
     {
       "pollster": "VoteHub In average",
@@ -540,7 +568,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0813
+      "weight": 1.0763
     },
     {
       "pollster": "Beacon Research/ Shaw & Co. Research missed 2024 by 2.3 pts Not in average",
@@ -571,7 +599,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.6345
+      "weight": 0.6316
     },
     {
       "pollster": "FOX News In average",
@@ -599,7 +627,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2691
+      "weight": 1.2633
     },
     {
       "pollster": "Emerson College missed 2024 by 2.7 pts In average",
@@ -630,7 +658,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 1.0733
+      "weight": 1.0684
     },
     {
       "pollster": "TPOR First choice only, not in average",
@@ -658,7 +686,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0324
+      "weight": 1.0277
     },
     {
       "pollster": "Texas Public Opinion Research Not in average",
@@ -687,7 +715,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5162
+      "weight": 0.5138
     },
     {
       "pollster": "Pollfinity Research",
@@ -716,7 +744,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4977
+      "weight": 0.4954
     },
     {
       "pollster": "Slingshot Strategies D-sponsored Not in average",
@@ -746,7 +774,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Texas Public Opinion Research",
-      "weight": 1.0324
+      "weight": 1.0277
     },
     {
       "pollster": "CBS News/YouGov First choice only, not in average",
@@ -775,7 +803,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2232
+      "weight": 1.2176
     },
     {
       "pollster": "YouGov",
@@ -804,7 +832,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2092
+      "weight": 1.2037
     },
     {
       "pollster": "Heritage Action/Cor Strategies Not in average",
@@ -832,7 +860,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1616
+      "weight": 1.1563
     },
     {
       "pollster": "Pollfinity Research Not in average",
@@ -860,7 +888,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4644
+      "weight": 0.4622
     },
     {
       "pollster": "Cor Strategies",
@@ -890,7 +918,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Heritage Action",
-      "weight": 0.5808
+      "weight": 0.5781
     },
     {
       "pollster": "ActiVote First choice only, not in average",
@@ -920,7 +948,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6048
+      "weight": 0.602
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts First choice only, not in average",
@@ -950,7 +978,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5237
+      "weight": 0.5213
     },
     {
       "pollster": "Marist Poll Not in average",
@@ -978,7 +1006,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6762
+      "weight": 0.6731
     },
     {
       "pollster": "University of Houston Hobby School of Public Affairs",
@@ -1008,7 +1036,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3523
+      "weight": 1.3461
     },
     {
       "pollster": "GS Strategy Group/ New River Strategies R-sponsored Not in average",
@@ -1037,7 +1065,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4515
+      "weight": 0.4494
     },
     {
       "pollster": "Cook Political Report missed 2024 by 3.9 pts First choice only, not in average",
@@ -1065,7 +1093,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.903
+      "weight": 0.8989
     },
     {
       "pollster": "New River Strategies/GS Strategy Group",
@@ -1100,7 +1128,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.903
+      "weight": 0.8989
     },
     {
       "pollster": "Quantus Insights R-sponsored First choice only, not in average",
@@ -1130,7 +1158,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4122
+      "weight": 0.4104
     },
     {
       "pollster": "Marist University First choice only, not in average",
@@ -1160,7 +1188,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9757
+      "weight": 0.9712
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -1190,7 +1218,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4338
+      "weight": 0.4318
     },
     {
       "pollster": "ReconMR/Siena University First choice only, not in average",
@@ -1220,7 +1248,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6539
+      "weight": 0.6509
     },
     {
       "pollster": "YouGov First choice only, not in average",
@@ -1250,7 +1278,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0984
+      "weight": 1.0934
     },
     {
       "pollster": "University of Texas/Texas Politics Project First choice only, not in average",
@@ -1279,7 +1307,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7207
+      "weight": 0.7174
     },
     {
       "pollster": "YouGov",
@@ -1314,7 +1342,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7207
+      "weight": 0.7174
     },
     {
       "pollster": "New York Times/Siena University missed 2024 by 3.1 pts First choice only, not in average",
@@ -1343,7 +1371,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5426
+      "weight": 0.5402
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -1372,7 +1400,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5426
+      "weight": 0.5402
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts First choice only, not in average",
@@ -1401,7 +1429,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7181
+      "weight": 0.7148
     },
     {
       "pollster": "Beacon Research/ Shaw & Co. Research missed 2024 by 2.3 pts First choice only, not in average",
@@ -1432,7 +1460,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.3101
+      "weight": 0.3087
     },
     {
       "pollster": "Guidant Polling & Strategy R-sponsored R-sponsored First choice only, not in average",
@@ -1463,7 +1491,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public First Action",
-      "weight": 0.2955
+      "weight": 0.2941
     },
     {
       "pollster": "UMass Lowell/YouGov First choice only, not in average",
@@ -1492,7 +1520,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6091
+      "weight": 0.6064
     },
     {
       "pollster": "FOX News Not in average",
@@ -1520,7 +1548,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6202
+      "weight": 0.6173
     },
     {
       "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
@@ -1555,7 +1583,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6091
+      "weight": 0.6064
     },
     {
       "pollster": "Pulse Decision Science<!--this is the source used by NYT in its polls collection page -->",
@@ -1585,7 +1613,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2887
+      "weight": 0.2874
     },
     {
       "pollster": "Big Data Poll First choice only, not in average",
@@ -1616,7 +1644,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public Polling Project",
-      "weight": 0.5271
+      "weight": 0.5247
     },
     {
       "pollster": "Stratus Intelligence R-sponsored R-sponsored First choice only, not in average",
@@ -1647,7 +1675,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Texans for a Conservative Majority",
-      "weight": 0.2787
+      "weight": 0.2774
     },
     {
       "pollster": "Texas Public Opinion Research",
@@ -1676,7 +1704,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2886
+      "weight": 0.2873
     },
     {
       "pollster": "Slingshot Strategies",
@@ -1711,7 +1739,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5772
+      "weight": 0.5745
     },
     {
       "pollster": "Marist University",
@@ -1741,7 +1769,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5275
+      "weight": 0.5251
     },
     {
       "pollster": "Texas Southern University",
@@ -1770,7 +1798,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.72
+      "weight": 0.7167
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
@@ -1805,7 +1833,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.72
+      "weight": 0.7167
     },
     {
       "pollster": "Trafalgar Group",
@@ -1835,7 +1863,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2661
+      "weight": 0.2649
     },
     {
       "pollster": "Emerson College",
@@ -1866,7 +1894,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.4781
+      "weight": 0.4759
     },
     {
       "pollster": "SoCal Strategies",
@@ -1895,7 +1923,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1882
+      "weight": 0.1873
     },
     {
       "pollster": "ReconMR/Siena Research Institute",
@@ -1925,7 +1953,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3496
+      "weight": 0.3479
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -1956,7 +1984,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Telemundo",
-      "weight": 0.3446
+      "weight": 0.343
     },
     {
       "pollster": "InsiderAdvantage",
@@ -1986,7 +2014,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2333
+      "weight": 0.2322
     },
     {
       "pollster": "Univision/YouGov",
@@ -2015,7 +2043,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3415
+      "weight": 0.34
     },
     {
       "pollster": "YouGov",
@@ -2044,7 +2072,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3415
+      "weight": 0.34
     },
     {
       "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
@@ -2075,7 +2103,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "AARP",
-      "weight": 0.1675
+      "weight": 0.1667
     },
     {
       "pollster": "Overton Insights R-sponsored",
@@ -2106,7 +2134,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Texas Public Policy Foundation",
-      "weight": 0.1665
+      "weight": 0.1657
     },
     {
       "pollster": "Overton Insights",
@@ -2134,7 +2162,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1415,
+      "weight": 0.1409,
       "otherMatchup": true
     },
     {
@@ -2164,7 +2192,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1472
+      "weight": 0.1465
     },
     {
       "pollster": "TPOR",
@@ -2192,7 +2220,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2081
+      "weight": 0.2072
     },
     {
       "pollster": "Slingshot Strategies",
@@ -2245,7 +2273,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2943
+      "weight": 0.293
     },
     {
       "pollster": "TSU",
@@ -2273,7 +2301,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1987
+      "weight": 0.1978
     },
     {
       "pollster": "University of Texas/Texas Politics Project",
@@ -2302,7 +2330,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.225
+      "weight": 0.224
     },
     {
       "pollster": "UT",
@@ -2330,7 +2358,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1453
+      "weight": 0.1446
     },
     {
       "pollster": "YouGov",
@@ -2365,7 +2393,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.225
+      "weight": 0.224
     },
     {
       "pollster": "Emerson College",
@@ -2396,12 +2424,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.213
+      "weight": 0.212
     },
     {
       "pollster": "Wedgewood Polls",
       "endDate": "2026-07-31",
-      "weight": 0.1512,
+      "weight": 0.1505,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -2456,12 +2484,12 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "254 Labs",
-      "weight": 0.0846
+      "weight": 0.0842
     },
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
       "endDate": "2026-07-30",
-      "weight": 0.1809,
+      "weight": 0.1801,
       "sampleSize": 1200,
       "population": "LV",
       "results": [
@@ -2513,7 +2541,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1809
+      "weight": 0.1801
     },
     {
       "pollster": "Texas A&M University/ReconMR/Siena University",
@@ -2542,7 +2570,7 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.13
+      "weight": 0.1294
     },
     {
       "pollster": "ReconMR/Siena Research Institute",
@@ -2571,12 +2599,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.13
+      "weight": 0.1294
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
       "endDate": "2026-07-27",
-      "weight": 0.0696,
+      "weight": 0.0692,
       "sampleSize": 1006,
       "population": "RV",
       "results": [
@@ -2607,7 +2635,7 @@
     {
       "pollster": "Slingshot Strategies",
       "endDate": "2026-07-17",
-      "weight": 0.1252,
+      "weight": 0.1246,
       "sampleSize": 1048,
       "population": "LV",
       "results": [
@@ -2659,12 +2687,12 @@
         "https://pollingsource.com/senate/TX"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1252
+      "weight": 0.1246
     },
     {
       "pollster": "A2 Insights",
       "endDate": "2026-06-28",
-      "weight": 0.062,
+      "weight": 0.0617,
       "sampleSize": 618,
       "population": "LV",
       "results": [
@@ -2692,7 +2720,7 @@
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
-      "weight": 0.0624,
+      "weight": 0.0621,
       "sampleSize": 656,
       "population": "LV",
       "results": [
@@ -2741,12 +2769,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0531
+      "weight": 0.0528
     },
     {
       "pollster": "SoCal Strategies (R)",
       "endDate": "2026-06-21",
-      "weight": 0.03,
+      "weight": 0.0299,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -2776,7 +2804,7 @@
     {
       "pollster": "YouGov",
       "endDate": "2026-06-12",
-      "weight": 0.0537,
+      "weight": 0.0535,
       "sampleSize": 1200,
       "population": "RV",
       "results": [
@@ -2826,12 +2854,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0507
+      "weight": 0.0505
     },
     {
       "pollster": "Siena University",
       "endDate": "2026-06-04",
-      "weight": 0.0407,
+      "weight": 0.0405,
       "sampleSize": 807,
       "population": "LV",
       "results": [
@@ -2856,7 +2884,7 @@
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-06-04",
-      "weight": 0.0203,
+      "weight": 0.0202,
       "sampleSize": 800,
       "population": "LV",
       "results": [
@@ -2906,7 +2934,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0346
+      "weight": 0.0344
     },
     {
       "pollster": "ReconMR/Siena Research Institute",
@@ -2935,12 +2963,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0407
+      "weight": 0.0405
     },
     {
       "pollster": "Slingshot Strategies",
       "endDate": "2026-05-28",
-      "weight": 0.0498,
+      "weight": 0.0496,
       "sampleSize": 1670,
       "population": "LV",
       "results": [
@@ -2990,12 +3018,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0423
+      "weight": 0.0421
     },
     {
       "pollster": "Public Policy Polling (D)",
       "endDate": "2026-05-23",
-      "weight": 0.0124,
+      "weight": 0.0123,
       "sampleSize": 643,
       "population": "RV",
       "results": [
@@ -3025,7 +3053,7 @@
     {
       "pollster": "Barbara Jordan Public Policy Research and Survey Center",
       "endDate": "2026-05-06",
-      "weight": 0.0256,
+      "weight": 0.0255,
       "sampleSize": 1223,
       "population": "LV",
       "results": [
@@ -3074,12 +3102,12 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0218
+      "weight": 0.0217
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-04-20",
-      "weight": 0.0158,
+      "weight": 0.0157,
       "sampleSize": 1200,
       "population": "RV",
       "results": [
@@ -3108,7 +3136,7 @@
     {
       "pollster": "Slingshot Strategies",
       "endDate": "2026-04-20",
-      "weight": 0.0162,
+      "weight": 0.0161,
       "sampleSize": 1018,
       "population": "LV",
       "results": [
@@ -3184,7 +3212,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0149
+      "weight": 0.0148
     },
     {
       "pollster": "YouGov",
@@ -3213,7 +3241,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0158,
+      "weight": 0.0157,
       "otherMatchup": true
     },
     {
@@ -3243,13 +3271,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0162,
+      "weight": 0.0161,
       "otherMatchup": true
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-03-17",
-      "weight": 0.0035,
+      "weight": 0.0034,
       "sampleSize": 900,
       "population": "LV",
       "results": [
@@ -3308,7 +3336,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0035,
+      "weight": 0.0034,
       "otherMatchup": true
     },
     {
@@ -3404,7 +3432,7 @@
     {
       "pollster": "University of Houston Hobby School of Public Affairs",
       "endDate": "2026-01-31",
-      "weight": 0.0032,
+      "weight": 0.0031,
       "sampleSize": 1502,
       "population": "LV",
       "results": [
@@ -3462,7 +3490,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0032,
+      "weight": 0.0031,
       "otherMatchup": true
     },
     {
@@ -3498,7 +3526,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0032,
+      "weight": 0.0031,
       "otherMatchup": true
     },
     {
