@@ -1,12 +1,43 @@
 {
   "raceId": "NE-S-2026",
-  "count": 24,
+  "count": 25,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-29",
+      "sampleSize": 809,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/10/31/polls/times-siena-ne-poll-toplines.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "percentage": 48.7
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "percentage": 43.01
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8.29
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Echelon Insights",
       "sponsors": "NetChoice",
