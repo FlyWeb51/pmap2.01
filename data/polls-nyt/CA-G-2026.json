@@ -1,12 +1,38 @@
 {
   "raceId": "CA-G-2026",
-  "count": 24,
+  "count": 25,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-31",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/ca-governor/2026-10-31/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Xavier Becerra (D)",
+          "party": "D",
+          "percentage": 63.2
+        },
+        {
+          "candidate": "Steve Hilton (R)",
+          "party": "R",
+          "percentage": 36.8
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "University of California Berkeley Institute of Governmental Studies",
       "sponsors": "Los Angeles Times",

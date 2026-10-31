@@ -1,12 +1,38 @@
 {
   "raceId": "OH-G-2026",
-  "count": 46,
+  "count": 47,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-31",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/oh-governor/2026-10-31/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 50.8
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 49.2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Suffolk University",
       "sponsors": "USA Today",

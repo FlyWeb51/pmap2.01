@@ -1,12 +1,74 @@
 {
   "raceId": "FL-G-2026",
-  "count": 71,
+  "count": 74,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-31",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/fl-governor/2026-10-31/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "percentage": 52.3
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "percentage": 47.7
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Stetson University Center for Public Opinion Research",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-30",
+      "sampleSize": 858,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.stetson.edu/artsci/cpor/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "percentage": 51
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Big Data Poll",
       "sponsors": "1776 Law Center | Public Polling Project",
@@ -130,17 +192,53 @@
         {
           "candidate": "David Jolly (D)",
           "party": "D",
-          "percentage": 45
+          "percentage": 44.9
         },
         {
           "candidate": "Don't know (NON)",
           "party": "NON",
-          "percentage": 4
+          "percentage": 3.9
+        },
+        {
+          "candidate": "Scott Jewett (LIB)",
+          "party": "LIB",
+          "percentage": 1.6
         },
         {
           "candidate": "Someone else (NON)",
           "party": "NON",
-          "percentage": 2
+          "percentage": 0.5
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "The Political Matrix/The Listener Group",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-28",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://palafoxproductions.com/new-florida-statewide-poll-for-november-election/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Byron Donalds (R)",
+          "party": "R",
+          "percentage": 40.3
+        },
+        {
+          "candidate": "David Jolly (D)",
+          "party": "D",
+          "percentage": 38.8
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 20.9
         }
       ],
       "note": null

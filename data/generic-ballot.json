@@ -1,20 +1,20 @@
 {
   "meta": {
     "title": "U.S. House generic ballot, 2026",
-    "generated": "2026-10-31T12:48:23.029Z",
-    "asOf": "2026-10-26",
+    "generated": "2026-10-31T21:44:30.621Z",
+    "asOf": "2026-10-30",
     "source": "Site poll set (NYT polling data, Wikipedia, PollingSource); average matches data/poll-average/generic-ballot.json",
     "weighting": "recency (30-day half-life) x sqrt(sample size, capped 2x) x population (LV 1.0 / RV 0.9 / A 0.7) x independence (partisan 0.5), last 90 days",
-    "pollCount": 120,
+    "pollCount": 127,
     "dateRange": [
       "2026-08-02",
-      "2026-10-26"
+      "2026-10-30"
     ]
   },
   "average": {
-    "dem": 49.9,
-    "rep": 42,
-    "margin": 7.8
+    "dem": 50.1,
+    "rep": 42.1,
+    "margin": 8
   },
   "series": [
     {
@@ -115,15 +115,15 @@
     },
     {
       "date": "2026-10-25",
-      "dem": 49.77,
-      "rep": 41.96,
-      "margin": 7.81
+      "dem": 49.82,
+      "rep": 41.99,
+      "margin": 7.83
     },
     {
       "date": "2026-10-31",
-      "dem": 49.9,
-      "rep": 42,
-      "margin": 7.8
+      "dem": 50.1,
+      "rep": 42.1,
+      "margin": 8
     }
   ],
   "polls": [
@@ -1616,7 +1616,7 @@
       "race": "House - Generic Ballot"
     },
     {
-      "pollster": "Cygnal R-sponsored missed 2024 by 4.2 pts",
+      "pollster": "Cygnal R-sponsored missed 2024 by 4.2 pts Not in average",
       "lean": null,
       "date": "2026-10-10",
       "n": 1500,
@@ -1868,7 +1868,7 @@
       "race": "House - Generic Ballot"
     },
     {
-      "pollster": "CBS News missed 2024 by 2.6 pts In average",
+      "pollster": "CBS News missed 2024 by 2.6 pts Not in average",
       "lean": null,
       "date": "2026-10-23",
       "n": 1749,
@@ -1880,7 +1880,19 @@
       "race": "House - Generic Ballot"
     },
     {
-      "pollster": "NPR/PBS/Marist missed 2024 by 3.5 pts In average",
+      "pollster": "Cygnal R-sponsored missed 2024 by 4.2 pts Not in average",
+      "lean": null,
+      "date": "2026-10-24",
+      "n": 1500,
+      "population": "LV",
+      "dem": 52,
+      "rep": 43,
+      "margin": 9,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "NPR/PBS/Marist missed 2024 by 3.5 pts Not in average",
       "lean": null,
       "date": "2026-10-25",
       "n": 1289,
@@ -1900,6 +1912,78 @@
       "dem": 53,
       "rep": 44,
       "margin": 9,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Emerson missed 2024 by 2.7 pts Not in average",
+      "lean": null,
+      "date": "2026-10-26",
+      "n": 1000,
+      "population": "LV",
+      "dem": 52,
+      "rep": 42,
+      "margin": 10,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Economist/YouGov Not in average",
+      "lean": null,
+      "date": "2026-10-26",
+      "n": 1263,
+      "population": "LV",
+      "dem": 50,
+      "rep": 41,
+      "margin": 9,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Tufts University Not in average",
+      "lean": null,
+      "date": "2026-10-27",
+      "n": 499,
+      "population": "LV",
+      "dem": 52,
+      "rep": 40,
+      "margin": 12,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Reuters/Ipsos missed 2024 by 3.8 pts In average",
+      "lean": null,
+      "date": "2026-10-28",
+      "n": 1209,
+      "population": "LV",
+      "dem": 50,
+      "rep": 44,
+      "margin": 6,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "THP/MM In average",
+      "lean": null,
+      "date": "2026-10-29",
+      "n": 1158,
+      "population": "LV",
+      "dem": 54,
+      "rep": 41,
+      "margin": 13,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "ActiVote In average",
+      "lean": null,
+      "date": "2026-10-30",
+      "n": 2000,
+      "population": "LV",
+      "dem": 53.5,
+      "rep": 46.5,
+      "margin": 7,
       "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
       "race": "House - Generic Ballot"
     }

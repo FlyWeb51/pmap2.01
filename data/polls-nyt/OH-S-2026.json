@@ -1,12 +1,38 @@
 {
   "raceId": "OH-S-2026",
-  "count": 49,
+  "count": 50,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "ActiVote",
+      "sponsors": null,
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-31",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.activote.net/polls/2026/oh-u-s-senate/2026-10-31/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 50.2
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 49.8
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Suffolk University",
       "sponsors": "USA Today",
