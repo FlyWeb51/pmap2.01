@@ -1,6 +1,6 @@
 {
   "raceId": "TX-S-2026",
-  "count": 133,
+  "count": 134,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -142,6 +142,42 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 0
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Data for Progress",
+      "sponsors": null,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-26",
+      "sampleSize": 712,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.dataforprogress.org/blog/2026/10/30/democratic-senate-candidates-lead-in-maine-michigan-and-texas",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 2
         }
       ],
       "note": null

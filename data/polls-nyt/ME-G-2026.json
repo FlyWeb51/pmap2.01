@@ -1,12 +1,48 @@
 {
   "raceId": "ME-G-2026",
-  "count": 24,
+  "count": 25,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Data for Progress",
+      "sponsors": null,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-27",
+      "sampleSize": 652,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.dataforprogress.org/blog/2026/10/30/democratic-senate-candidates-lead-in-maine-michigan-and-texas",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Hannah Pingree (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Bobby Charles (R)",
+          "party": "R",
+          "percentage": 37
+        },
+        {
+          "candidate": "Rick Bennett (I)",
+          "party": "I",
+          "percentage": 7
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "CNN/SSRS",
       "sponsors": null,
