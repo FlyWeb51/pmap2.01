@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T02:14:28.428Z",
+  "generatedAt": "2026-11-01T03:10:32.808Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -592,11 +592,11 @@
     ]
   },
   "generic": {
-    "dem": 50.1,
+    "dem": 50.2,
     "rep": 42.1,
     "margin": 8,
-    "polls": 127,
-    "source": "127 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
+    "polls": 125,
+    "source": "125 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
     "asOf": "2026-10-30",
     "label": "Blue wave"
   },
@@ -1837,11 +1837,22 @@
         "name": "NC-13",
         "type": "House",
         "now": 40.9,
-        "ch1": 8.4,
+        "ch1": 8.7,
         "ch7": 20.4,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
         "thirdParty": false
+      },
+      {
+        "key": "S-NE",
+        "name": "Nebraska",
+        "type": "Senate",
+        "now": 25.5,
+        "ch1": -7,
+        "ch7": 2,
+        "dem": "Cindy Burbank",
+        "rep": "Pete Ricketts",
+        "thirdParty": true
       },
       {
         "key": "G-NE",
@@ -1853,17 +1864,6 @@
         "dem": "Lynne Walz",
         "rep": "Jim Pillen",
         "thirdParty": false
-      },
-      {
-        "key": "S-NE",
-        "name": "Nebraska",
-        "type": "Senate",
-        "now": 25.5,
-        "ch1": -6,
-        "ch7": 2,
-        "dem": "Cindy Burbank",
-        "rep": "Pete Ricketts",
-        "thirdParty": true
       },
       {
         "key": "H-VA-05",
@@ -1921,6 +1921,17 @@
         "thirdParty": false
       },
       {
+        "key": "H-NC-03",
+        "name": "NC-3",
+        "type": "House",
+        "now": 44.5,
+        "ch1": 4,
+        "ch7": 16,
+        "dem": "Raymond Smith Jr.",
+        "rep": "Greg Murphy",
+        "thirdParty": false
+      },
+      {
         "key": "G-FL",
         "name": "Florida",
         "type": "Governor",
@@ -1932,36 +1943,25 @@
         "thirdParty": false
       },
       {
-        "key": "H-NC-03",
-        "name": "NC-3",
+        "key": "H-AZ-01",
+        "name": "AZ-1",
         "type": "House",
-        "now": 44.5,
-        "ch1": 3.6,
-        "ch7": 16,
-        "dem": "Raymond Smith Jr.",
-        "rep": "Greg Murphy",
+        "now": 81.3,
+        "ch1": -2.4,
+        "ch7": -0.2,
+        "dem": "Amish Shah",
+        "rep": "Jay Feely",
         "thirdParty": false
       },
       {
-        "key": "G-TX",
-        "name": "Texas",
-        "type": "Governor",
-        "now": 34.2,
-        "ch1": -3.3,
-        "ch7": 1.7,
-        "dem": "Gina Hinojosa",
-        "rep": "Greg Abbott",
-        "thirdParty": false
-      },
-      {
-        "key": "H-OH-10",
-        "name": "OH-10",
+        "key": "H-MI-07",
+        "name": "MI-7",
         "type": "House",
-        "now": 30.5,
-        "ch1": -3,
-        "ch7": 1,
-        "dem": "Kristina Knickerbocker",
-        "rep": "Mike Turner",
+        "now": 78.3,
+        "ch1": 2.3,
+        "ch7": 4.8,
+        "dem": "William Lawrence",
+        "rep": "Tom Barrett",
         "thirdParty": false
       }
     ],
@@ -1971,7 +1971,7 @@
         "name": "NC-13",
         "type": "House",
         "now": 40.9,
-        "ch1": 8.4,
+        "ch1": 8.7,
         "ch7": 20.4,
         "dem": "Paul Barringer",
         "rep": "Brad Knott",
@@ -1993,7 +1993,7 @@
         "name": "NC-3",
         "type": "House",
         "now": 44.5,
-        "ch1": 3.6,
+        "ch1": 4,
         "ch7": 16,
         "dem": "Raymond Smith Jr.",
         "rep": "Greg Murphy",
@@ -2015,7 +2015,7 @@
         "name": "CO-5",
         "type": "House",
         "now": 44.5,
-        "ch1": 1,
+        "ch1": 1.4,
         "ch7": 14,
         "dem": "Jessica Killin",
         "rep": "Jeff Crank",
@@ -2037,7 +2037,7 @@
         "name": "NC-14",
         "type": "House",
         "now": 23.5,
-        "ch1": -0.8,
+        "ch1": -0.5,
         "ch7": 13,
         "dem": "LaKesha Womack",
         "rep": "Tim Moore",
@@ -2059,7 +2059,7 @@
         "name": "Kansas",
         "type": "Senate",
         "now": 50.5,
-        "ch1": 0,
+        "ch1": -0.5,
         "ch7": 11,
         "dem": "Adam Hamilton",
         "rep": "Roger Marshall",
@@ -2081,7 +2081,7 @@
         "name": "SC-1",
         "type": "House",
         "now": 49,
-        "ch1": 2.5,
+        "ch1": 1.5,
         "ch7": 10.9,
         "dem": "Nancy S. Lacore",
         "rep": "Jenny Costa Honeycutt",
