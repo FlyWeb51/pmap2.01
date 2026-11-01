@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T21:11:44.562Z",
+  "generatedAt": "2026-11-01T22:11:47.597Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -124,11 +124,11 @@
         "kalshiD": 0.29500000000000004,
         "nyt": {
           "averageMargin": -1.5,
-          "averagePolls": 16,
+          "averagePolls": 18,
           "latest": {
-            "pollster": "YouGov",
+            "pollster": "National Public Affairs",
             "endDate": "2026-10-29",
-            "margin": 0
+            "margin": -1
           },
           "source": "NYT"
         }
@@ -141,8 +141,8 @@
         "special": true,
         "kalshiD": 0.705,
         "nyt": {
-          "averageMargin": 3.2,
-          "averagePolls": 30,
+          "averageMargin": 3.1,
+          "averagePolls": 31,
           "latest": {
             "pollster": "ActiVote",
             "endDate": "2026-10-31",
@@ -249,11 +249,11 @@
         "special": false,
         "kalshiD": 0.109,
         "nyt": {
-          "averageMargin": -0.5,
-          "averagePolls": 2,
+          "averageMargin": -0.2,
+          "averagePolls": 3,
           "latest": {
-            "pollster": "Hart Research Associates",
-            "endDate": "2026-10-29",
+            "pollster": "Lincoln Park Strategies",
+            "endDate": "2026-10-31",
             "margin": 0
           },
           "source": "NYT"
@@ -993,7 +993,7 @@
       "rep": "Vivek Ramaswamy",
       "poll": {
         "averageMargin": 3.4,
-        "averagePolls": 22,
+        "averagePolls": 23,
         "latest": {
           "pollster": "ActiVote",
           "endDate": "2026-10-31",
@@ -1729,11 +1729,11 @@
         "special": true,
         "dem": "Sherrod Brown",
         "rep": "Jon Husted",
-        "polls": 43,
+        "polls": 44,
         "pres2024": -11.2,
         "expected": -1.7,
-        "pollMargin": 3.7,
-        "overUnder": 5.4,
+        "pollMargin": 3.6,
+        "overUnder": 5.3,
         "kalshiD": 0.705
       },
       {
@@ -1826,6 +1826,19 @@
         "pollMargin": -9.9,
         "overUnder": 11.3,
         "kalshiD": 0.045
+      },
+      {
+        "state": "LA",
+        "name": "Louisiana",
+        "special": false,
+        "dem": "Jamie Davis",
+        "rep": "Julia Letlow",
+        "polls": 3,
+        "pres2024": -22,
+        "expected": -12.5,
+        "pollMargin": -0.6,
+        "overUnder": 11.9,
+        "kalshiD": 0.109
       }
     ]
   },
@@ -2524,7 +2537,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-11-01T21:11:44.445Z",
-    "nytUpdated": "2026-11-01T17:58:46.542Z",
+    "nytUpdated": "2026-11-01T22:11:47.295Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",

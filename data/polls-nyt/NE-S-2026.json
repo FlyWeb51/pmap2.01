@@ -1,12 +1,89 @@
 {
   "raceId": "NE-S-2026",
-  "count": 26,
+  "count": 28,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "National Public Affairs",
+      "sponsors": "God, Family, & Country PAC",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-29",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/Nebraska_General_Election_Memo_103126.2.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "percentage": 49
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "National Public Affairs",
+      "sponsors": "God, Family, & Country PAC",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-29",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/Nebraska_General_Election_Memo_103126.2.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "percentage": 48
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Mike Marvin (LMN)",
+          "party": "LMN",
+          "percentage": 2
+        },
+        {
+          "candidate": "Chuck Conboy (AME)",
+          "party": "AME",
+          "percentage": 1
+        },
+        {
+          "candidate": "Robin Richards (NEB)",
+          "party": "NEB",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": null,
