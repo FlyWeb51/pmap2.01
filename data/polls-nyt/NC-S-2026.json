@@ -1,12 +1,53 @@
 {
   "raceId": "NC-S-2026",
-  "count": 65,
+  "count": 66,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "YouGov",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-29",
+      "sampleSize": 2130,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_nc_20261026_lv.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "percentage": 55
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Quantus Insights",
       "sponsors": null,

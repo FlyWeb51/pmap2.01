@@ -1,12 +1,53 @@
 {
   "raceId": "NE-G-2026",
-  "count": 14,
+  "count": 15,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "YouGov",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-29",
+      "sampleSize": 1979,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ne_20261026_lv.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jim Pillen (R)",
+          "party": "R",
+          "percentage": 50
+        },
+        {
+          "candidate": "Lynne Walz (D)",
+          "party": "D",
+          "percentage": 47
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The New York Times/Siena University",
       "sponsors": null,

@@ -1,12 +1,53 @@
 {
   "raceId": "MI-G-2026",
-  "count": 86,
+  "count": 87,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "YouGov",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-29",
+      "sampleSize": 2093,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_mi_20261026_lv.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jocelyn Benson (D)",
+          "party": "D",
+          "percentage": 52
+        },
+        {
+          "candidate": "John James (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "CNN/SSRS",
       "sponsors": null,

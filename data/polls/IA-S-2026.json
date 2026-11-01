@@ -1,35 +1,36 @@
 {
   "raceId": "IA-S-2026",
   "count": 55,
-  "updated_at": "2026-11-01T17:36:19.791Z",
+  "updated_at": "2026-11-01T17:58:46.853Z",
   "polls": [
     {
       "pollster": "YouGov",
       "endDate": "2026-10-29",
       "fieldDates": "October 26–29, 2026",
       "sampleSize": 2020,
-      "population": null,
+      "population": "LV",
       "partisan": null,
       "results": [
-        {
-          "candidate": "Ashley Hinson (R)",
-          "party": "R",
-          "pct": 49,
-          "percentage": 49
-        },
         {
           "candidate": "Josh Turek (D)",
           "party": "D",
           "pct": 50,
           "percentage": 50
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
         }
       ],
-      "sourceUrl": null,
+      "sourceUrl": "https://d3nkl3psvxxpe9.cloudfront.net/documents/ttw_ia_20261026_lv.pdf",
       "foundOn": [
-        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa",
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5595
+      "weight": 1.834
     },
     {
       "pollster": "co/efficient R-sponsored In average",
@@ -59,7 +60,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6402
+      "weight": 0.6399
     },
     {
       "pollster": "Echelon Insights R-sponsored missed 2024 by 1.9 pts In average",
@@ -89,7 +90,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3585
+      "weight": 0.3584
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts In average",
@@ -119,7 +120,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6045
+      "weight": 0.6042
     },
     {
       "pollster": "co/efficient R-sponsored Not in average",
@@ -149,7 +150,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4783
+      "weight": 0.4781
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts Not in average",
@@ -179,7 +180,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.491
+      "weight": 0.4908
     },
     {
       "pollster": "GS Strategy Group/ New River Strategies R-sponsored Not in average",
@@ -208,7 +209,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3478
+      "weight": 0.3476
     },
     {
       "pollster": "Cook Political Report missed 2024 by 3.9 pts In average",
@@ -236,7 +237,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6955
+      "weight": 0.6953
     },
     {
       "pollster": "New River Strategies/GS Strategy Group",
@@ -271,7 +272,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6955
+      "weight": 0.6953
     },
     {
       "pollster": "YouGov First choice only, not in average",
@@ -301,7 +302,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2387
+      "weight": 1.2383
     },
     {
       "pollster": "NPA Polling Not in average",
@@ -330,7 +331,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7212
+      "weight": 0.721
     },
     {
       "pollster": "National Public Affairs R-sponsored First choice only, not in average",
@@ -360,7 +361,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "God, Family, & Country PAC",
-      "weight": 0.3606
+      "weight": 0.3605
     },
     {
       "pollster": "Marist University First choice only, not in average",
@@ -390,7 +391,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8977
+      "weight": 0.8974
     },
     {
       "pollster": "Emerson College missed 2024 by 2.7 pts First choice only, not in average",
@@ -421,7 +422,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.6148
+      "weight": 0.6146
     },
     {
       "pollster": "SSRS First choice only, not in average",
@@ -450,7 +451,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6669
+      "weight": 0.6666
     },
     {
       "pollster": "CNN missed 2024 by 2.9 pts Not in average",
@@ -478,7 +479,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6669
+      "weight": 0.6666
     },
     {
       "pollster": "CNN/SSRS Not in average",
@@ -507,7 +508,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6669
+      "weight": 0.6666
     },
     {
       "pollster": "Suffolk University First choice only, not in average",
@@ -537,7 +538,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5148
+      "weight": 0.5147
     },
     {
       "pollster": "New York Times/Siena University missed 2024 by 3.1 pts First choice only, not in average",
@@ -566,7 +567,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5288
+      "weight": 0.5287
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -595,7 +596,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5288
+      "weight": 0.5287
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts First choice only, not in average",
@@ -624,7 +625,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3398
+      "weight": 0.3397
     },
     {
       "pollster": "Quantus Insights R-sponsored First choice only, not in average",
@@ -654,7 +655,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2786
+      "weight": 0.2785
     },
     {
       "pollster": "Beacon Research/ Shaw & Co. Research missed 2024 by 2.3 pts First choice only, not in average",
@@ -685,7 +686,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.3182
+      "weight": 0.3181
     },
     {
       "pollster": "Big Data (I)",
@@ -713,7 +714,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3638
+      "weight": 0.3636
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts First choice only, not in average",
@@ -743,7 +744,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3093
+      "weight": 0.3092
     },
     {
       "pollster": "Marist University",
@@ -773,7 +774,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4859
+      "weight": 0.4857
     },
     {
       "pollster": "Trafalgar Group",
@@ -803,7 +804,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2625
+      "weight": 0.2624
     },
     {
       "pollster": "co/efficient",
@@ -833,7 +834,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.219
+      "weight": 0.2189
     },
     {
       "pollster": "co/efficient",
@@ -862,7 +863,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4379,
+      "weight": 0.4377,
       "otherMatchup": true
     },
     {
@@ -923,7 +924,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2123
+      "weight": 0.2122
     },
     {
       "pollster": "YouGov",
@@ -953,7 +954,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5647
+      "weight": 0.5645
     },
     {
       "pollster": "YouGov",
@@ -982,7 +983,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5647
+      "weight": 0.5645
     },
     {
       "pollster": "Emerson College",
@@ -1013,7 +1014,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.2942
+      "weight": 0.2941
     },
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -1073,7 +1074,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2241
+      "weight": 0.224
     },
     {
       "pollster": "Wedgewood Polls",
@@ -1102,7 +1103,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2455
+      "weight": 0.2454
     },
     {
       "pollster": "Abacus Data",
@@ -1131,7 +1132,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.176
+      "weight": 0.1759
     },
     {
       "pollster": "Suffolk University",
@@ -1161,7 +1162,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1951
+      "weight": 0.195
     },
     {
       "pollster": "Abacus data",
@@ -1223,7 +1224,7 @@
       "pollster": "Emerson College",
       "endDate": "2026-08-04",
       "endDateUS": "8/4/2026",
-      "weight": 0.1501,
+      "weight": 0.15,
       "sampleSize": 712,
       "population": "LV",
       "results": [
@@ -1288,7 +1289,7 @@
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-06-27",
       "endDateUS": "6/27/2026",
-      "weight": 0.0573,
+      "weight": 0.0572,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -1340,7 +1341,7 @@
         "https://pollingsource.com/senate/IA"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0573
+      "weight": 0.0572
     },
     {
       "pollster": "Cygnal (R)",
