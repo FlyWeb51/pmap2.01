@@ -1,12 +1,58 @@
 {
   "raceId": "MI-S-2026",
-  "count": 109,
+  "count": 110,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Trafalgar Group",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "sampleSize": 1087,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/mi-senate-gen-1101/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "percentage": 47.1
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "percentage": 45.9
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4.8
+        },
+        {
+          "candidate": "Lydia Christensen (LIB)",
+          "party": "LIB",
+          "percentage": 1.5
+        },
+        {
+          "candidate": "Timothy Long (CON)",
+          "party": "CON",
+          "percentage": 0.3
+        },
+        {
+          "candidate": "Douglas Marsh (GRE)",
+          "party": "GRE",
+          "percentage": 0.3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Research Co.",
       "sponsors": null,
@@ -84,7 +130,7 @@
       "sponsors": null,
       "startDate": "2026-10-26",
       "endDate": "2026-10-29",
-      "sampleSize": 2093,
+      "sampleSize": 2088,
       "population": "LV",
       "partisan": null,
       "internal": false,

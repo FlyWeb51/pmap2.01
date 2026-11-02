@@ -1,8 +1,37 @@
 {
   "raceId": "KS-G-2026",
-  "count": 12,
-  "updated_at": "2026-11-02T21:15:56.696Z",
+  "count": 13,
+  "updated_at": "2026-11-02T21:48:37.921Z",
   "polls": [
+    {
+      "pollster": "Survey 160",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-27 to 2026-11-01",
+      "sampleSize": 1267,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Cindy Holscher (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Ty Masterson (R)",
+          "party": "R",
+          "pct": 48,
+          "percentage": 48
+        }
+      ],
+      "sourceUrl": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.5232
+    },
     {
       "pollster": "The New York Times/Siena University",
       "endDate": "2026-11-01",
@@ -30,13 +59,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1615
+      "weight": 1.1609
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-29",
       "fieldDates": "2026-10-26 to 2026-10-29",
-      "sampleSize": 2092,
+      "sampleSize": 2085,
       "population": "LV",
       "partisan": null,
       "sponsors": null,
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.7865
+      "weight": 1.7856
     },
     {
       "pollster": "Emerson College",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1041
+      "weight": 1.1035
     },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
@@ -117,7 +146,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0549
+      "weight": 1.0543
     },
     {
       "pollster": "CNN/SSRS",
@@ -152,7 +181,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.079
+      "weight": 1.0784
     },
     {
       "pollster": "Global Strategy Group",
@@ -181,7 +210,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4067
+      "weight": 0.4065
     },
     {
       "pollster": "YouGov",
@@ -210,7 +239,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0026
+      "weight": 1.0021
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -239,7 +268,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5028
+      "weight": 0.5025
     },
     {
       "pollster": "Global Strategy Group",
@@ -268,7 +297,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2092
+      "weight": 0.2091
     },
     {
       "pollster": "Emerson College",
@@ -297,7 +326,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4051
+      "weight": 0.4049
     },
     {
       "pollster": "co/efficient",
@@ -326,7 +355,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3895
+      "weight": 0.3893
     },
     {
       "pollster": "Global Strategy Group",

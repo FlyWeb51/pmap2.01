@@ -1,12 +1,84 @@
 {
   "raceId": "MN-G-2026",
-  "count": 32,
+  "count": 34,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Survey 160",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 1365,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Klobuchar (D)",
+          "party": "D",
+          "percentage": 53
+        },
+        {
+          "candidate": "Lisa Demuth (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Survey 160",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 1409,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Klobuchar (D)",
+          "party": "D",
+          "percentage": 53
+        },
+        {
+          "candidate": "Lisa Demuth (R)",
+          "party": "R",
+          "percentage": 42
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Research Co.",
       "sponsors": null,

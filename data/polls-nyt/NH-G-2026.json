@@ -1,6 +1,6 @@
 {
   "raceId": "NH-G-2026",
-  "count": 20,
+  "count": 21,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -39,6 +39,42 @@
           "candidate": "Don't know (NON)",
           "party": "NON",
           "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "National Public Affairs",
+      "sponsors": "God, Family, & Country PAC",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-29",
+      "sampleSize": 800,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://backend.natpublicaffairs.com/media/NH_General_Election_Memo_103126.2.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Kelly Ayotte (R)",
+          "party": "R",
+          "percentage": 52
+        },
+        {
+          "candidate": "Cinde Warmington (D)",
+          "party": "D",
+          "percentage": 43
+        },
+        {
+          "candidate": "Stephen Villee (LIB)",
+          "party": "LIB",
+          "percentage": 3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
         }
       ],
       "note": null

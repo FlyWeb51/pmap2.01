@@ -1,12 +1,79 @@
 {
   "raceId": "AK-S-2026",
-  "count": 42,
+  "count": 44,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "InsiderAdvantage",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-final-alaska-survey-race-tied-in-first-round-48-peltola-48-sullivan-tied-in-ranked-choice-round/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "percentage": 48.3
+        },
+        {
+          "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "percentage": 48.1
+        },
+        {
+          "candidate": "Dan J. Sullivan (R)",
+          "party": "R",
+          "percentage": 2
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1.1
+        },
+        {
+          "candidate": "Gerald Heikes (R)",
+          "party": "R",
+          "percentage": 0.5
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-final-alaska-survey-race-tied-in-first-round-48-peltola-48-sullivan-tied-in-ranked-choice-round/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Mary Peltola (D)",
+          "party": "D",
+          "percentage": 50.1
+        },
+        {
+          "candidate": "Dan Sullivan (R)",
+          "party": "R",
+          "percentage": 49.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The New York Times/Siena University",
       "sponsors": null,

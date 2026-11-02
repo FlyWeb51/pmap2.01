@@ -1,12 +1,53 @@
 {
   "raceId": "SC-S-2026",
-  "count": 28,
+  "count": 29,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Trafalgar Group",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "sampleSize": 1091,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/sc-senate-general-1102/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Darline Graham (R)",
+          "party": "R",
+          "percentage": 47.5
+        },
+        {
+          "candidate": "Annie Andrews (D)",
+          "party": "D",
+          "percentage": 45.5
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4.2
+        },
+        {
+          "candidate": "Kasie Whitener (LIB)",
+          "party": "LIB",
+          "percentage": 1.8
+        },
+        {
+          "candidate": "Mark Hackett (CON)",
+          "party": "CON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Patinkin Research Strategies",
       "sponsors": "Voices of the Electorate PAC",

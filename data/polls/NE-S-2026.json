@@ -1,8 +1,55 @@
 {
   "raceId": "NE-S-2026",
-  "count": 22,
-  "updated_at": "2026-11-02T21:15:56.656Z",
+  "count": 23,
+  "updated_at": "2026-11-02T21:48:37.891Z",
   "polls": [
+    {
+      "pollster": "GrayHouse",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-29 to 2026-11-01",
+      "sampleSize": 534,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Pete Ricketts (R)",
+          "party": "R",
+          "pct": 50,
+          "percentage": 50
+        },
+        {
+          "candidate": "Dan Osborn (D)",
+          "party": "D",
+          "pct": 46,
+          "percentage": 46
+        },
+        {
+          "candidate": "Chuck Conboy (AME)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Robin Richards (NEB)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        },
+        {
+          "candidate": "Mike Marvin (LMN)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://www.grayhouse.com/post/grayhouse-poll-ricketts-leads-in-nebraska-by-4",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9889
+    },
     {
       "pollster": "National Public Affairs",
       "endDate": "2026-10-29",
@@ -30,13 +77,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5649
+      "weight": 0.5646
     },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-29",
       "fieldDates": "2026-10-26 to 2026-10-29",
-      "sampleSize": 1979,
+      "sampleSize": 1974,
       "population": "LV",
       "partisan": null,
       "sponsors": null,
@@ -59,7 +106,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.7771
+      "weight": 1.7739
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -88,7 +135,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1362
+      "weight": 1.1356
     },
     {
       "pollster": "Echelon Insights",
@@ -129,7 +176,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7016
+      "weight": 0.7012
     },
     {
       "pollster": "GBAO",
@@ -158,7 +205,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4806
+      "weight": 0.4803
     },
     {
       "pollster": "Impact Research",
@@ -187,7 +234,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3974
+      "weight": 0.3972
     },
     {
       "pollster": "Concord Public Opinion Partners",
@@ -216,7 +263,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3464
+      "weight": 0.3462
     },
     {
       "pollster": "National Public Affairs",
@@ -245,7 +292,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3788
+      "weight": 0.3786
     },
     {
       "pollster": "National Public Affairs",
@@ -274,7 +321,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3245
+      "weight": 0.3243
     },
     {
       "pollster": "YouGov",
@@ -303,7 +350,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9315
+      "weight": 0.931
     },
     {
       "pollster": "co/efficient",
@@ -332,7 +379,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6819
+      "weight": 0.6816
     },
     {
       "pollster": "SurveyUSA",
@@ -361,7 +408,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3095
+      "weight": 0.3094
     },
     {
       "pollster": "GBAO",
@@ -390,7 +437,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1739
+      "weight": 0.1738
     },
     {
       "pollster": "Impact Research",
@@ -419,7 +466,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0826
+      "weight": 0.0825
     },
     {
       "pollster": "GBAO",

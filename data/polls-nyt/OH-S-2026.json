@@ -1,12 +1,125 @@
 {
   "raceId": "OH-S-2026",
-  "count": 55,
+  "count": 58,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Survey 160",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 1122,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Survey 160",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 1159,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.survey160.com/methodological-research-blog/survey-160-pre-election-surveys-in-four-states",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Trafalgar Group",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "sampleSize": 1092,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/oh-senate-gen-1102/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Sherrod Brown (D)",
+          "party": "D",
+          "percentage": 46.6
+        },
+        {
+          "candidate": "Jon Husted (R)",
+          "party": "R",
+          "percentage": 45.1
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3.5
+        },
+        {
+          "candidate": "Gregory Levy (I)",
+          "party": "I",
+          "percentage": 3.4
+        },
+        {
+          "candidate": "Bill Redpath (LIB)",
+          "party": "LIB",
+          "percentage": 1.4
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Research Co.",
       "sponsors": null,
@@ -151,7 +264,7 @@
       "sponsors": null,
       "startDate": "2026-10-26",
       "endDate": "2026-10-29",
-      "sampleSize": 2090,
+      "sampleSize": 2084,
       "population": "LV",
       "partisan": null,
       "internal": false,

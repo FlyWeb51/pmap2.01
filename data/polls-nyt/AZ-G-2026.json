@@ -1,6 +1,6 @@
 {
   "raceId": "AZ-G-2026",
-  "count": 47,
+  "count": 48,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -367,6 +367,42 @@
           "candidate": "Risa Lombardo (GRE)",
           "party": "GRE",
           "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Lake Research Partners",
+      "sponsors": "Ballot Initiative Strategy Center",
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-30",
+      "sampleSize": 600,
+      "population": "RV",
+      "partisan": "OTH",
+      "internal": false,
+      "sourceUrl": "https://ballot.org/wp-content/uploads/2026/10/LRP-Topline-AZ-BISC-State-Partners-10.8.26.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Katie Hobbs (D)",
+          "party": "D",
+          "percentage": 56
+        },
+        {
+          "candidate": "Andy Biggs (R)",
+          "party": "R",
+          "percentage": 33
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
         }
       ],
       "note": null

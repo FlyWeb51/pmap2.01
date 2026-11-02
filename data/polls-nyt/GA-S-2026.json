@@ -1,12 +1,43 @@
 {
   "raceId": "GA-S-2026",
-  "count": 63,
+  "count": 64,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "InsiderAdvantage",
+      "sponsors": "James Magazine Online",
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-02",
+      "sampleSize": 2500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://jamesmagazinega.com/2026/11/02/48131/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Jon Ossoff (D)",
+          "party": "D",
+          "percentage": 52.7
+        },
+        {
+          "candidate": "Mike Collins (R)",
+          "party": "R",
+          "percentage": 46
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1.3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Echelon Insights",
       "sponsors": "NetChoice",

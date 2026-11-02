@@ -1,12 +1,84 @@
 {
   "raceId": "CO-G-2026",
-  "count": 1,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "YouGov",
+      "sponsors": "University of Colorado American Politics Research Lab",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-20",
+      "sampleSize": 710,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.colorado.edu/lab/aprl/media/84",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Phil Weiser (D)",
+          "party": "D",
+          "percentage": 57
+        },
+        {
+          "candidate": "Victor Marx (R)",
+          "party": "R",
+          "percentage": 37
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Lake Research Partners",
+      "sponsors": "Ballot Initiative Strategy Center",
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-30",
+      "sampleSize": 600,
+      "population": "RV",
+      "partisan": "OTH",
+      "internal": false,
+      "sourceUrl": "https://ballot.org/wp-content/uploads/2026/10/LRP-Topline-CO-BISC-State-Partners-10.8.26.pdf",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Phil Weiser (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Victor Marx (R)",
+          "party": "R",
+          "percentage": 36
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 10
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Magellan Strategies",
       "sponsors": null,

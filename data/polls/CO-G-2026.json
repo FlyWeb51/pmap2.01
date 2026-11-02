@@ -1,8 +1,66 @@
 {
   "raceId": "CO-G-2026",
-  "count": 1,
-  "updated_at": "2026-11-02T21:15:56.691Z",
+  "count": 3,
+  "updated_at": "2026-11-02T21:48:37.918Z",
   "polls": [
+    {
+      "pollster": "YouGov",
+      "endDate": "2026-10-20",
+      "fieldDates": "2026-10-09 to 2026-10-20",
+      "sampleSize": 710,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "University of Colorado American Politics Research Lab",
+      "results": [
+        {
+          "candidate": "Phil Weiser (D)",
+          "party": "D",
+          "pct": 57,
+          "percentage": 57
+        },
+        {
+          "candidate": "Victor Marx (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://www.colorado.edu/lab/aprl/media/84",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.8641
+    },
+    {
+      "pollster": "Lake Research Partners",
+      "endDate": "2026-09-30",
+      "fieldDates": "2026-09-16 to 2026-09-30",
+      "sampleSize": 600,
+      "population": "RV",
+      "partisan": "OTH",
+      "sponsors": "Ballot Initiative Strategy Center",
+      "results": [
+        {
+          "candidate": "Phil Weiser (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Victor Marx (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": "https://ballot.org/wp-content/uploads/2026/10/LRP-Topline-CO-BISC-State-Partners-10.8.26.pdf",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.2252
+    },
     {
       "pollster": "Magellan Strategies",
       "endDate": "2025-08-12",
@@ -30,7 +88,8 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0
+      "weight": 0,
+      "otherMatchup": true
     }
   ]
 }
