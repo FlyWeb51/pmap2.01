@@ -1,12 +1,48 @@
 {
   "raceId": "KS-S-2026",
-  "count": 26,
+  "count": 27,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 736,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "percentage": 43.9
+        },
+        {
+          "candidate": "David Graham (LIB)",
+          "party": "LIB",
+          "percentage": 4.4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2.7
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": null,

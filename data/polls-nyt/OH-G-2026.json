@@ -1,12 +1,84 @@
 {
   "raceId": "OH-G-2026",
-  "count": 49,
+  "count": 52,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "sponsors": null,
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://researchco.ca/2026/11/01/midterms-2026-one/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 42
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 9
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "LIB",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-01",
+      "sampleSize": 717,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 48.8
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 43.2
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7.5
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.4
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "ActiVote",
       "sponsors": null,
@@ -49,22 +121,22 @@
         {
           "candidate": "Amy Acton (D)",
           "party": "D",
-          "percentage": 49
+          "percentage": 49.2
         },
         {
           "candidate": "Vivek Ramaswamy (R)",
           "party": "R",
-          "percentage": 46
+          "percentage": 46.3
         },
         {
-          "candidate": "Someone else (NON)",
-          "party": "NON",
+          "candidate": "Donald Kissick (LIB)",
+          "party": "LIB",
           "percentage": 3
         },
         {
           "candidate": "Don't know (NON)",
           "party": "NON",
-          "percentage": 2
+          "percentage": 1.5
         }
       ],
       "note": null
@@ -142,6 +214,42 @@
           "candidate": "Donald Kissick (LIB)",
           "party": "LIB",
           "percentage": 3.6
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-24",
+      "sampleSize": 469,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/ohio-ge-2026-oct",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "percentage": 49
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "percentage": 39
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "LIB",
+          "percentage": 5
         }
       ],
       "note": null

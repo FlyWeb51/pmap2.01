@@ -1,12 +1,63 @@
 {
   "raceId": "VT-G-2026",
-  "count": 9,
+  "count": 10,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-31",
+      "sampleSize": 1164,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1012/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Amanda Janoo (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Phil Scott (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Brian Judd (I)",
+          "party": "I",
+          "percentage": 4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Dean Roy (OTH)",
+          "party": "OTH",
+          "percentage": 1
+        },
+        {
+          "candidate": "June Goodband (OTH)",
+          "party": "OTH",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "State Navigate",
       "sponsors": null,

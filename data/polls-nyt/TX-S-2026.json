@@ -1,12 +1,151 @@
 {
   "raceId": "TX-S-2026",
-  "count": 136,
+  "count": 140,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Trafalgar Group",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-01",
+      "sampleSize": 1089,
+      "population": "LV",
+      "partisan": "REP",
+      "internal": false,
+      "sourceUrl": "https://www.thetrafalgargroup.org/news/tx-senate-gen-1101/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 48.1
+        },
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 47.5
+        },
+        {
+          "candidate": "Ted Brown (LIB)",
+          "party": "LIB",
+          "percentage": 2.4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "AtlasIntel",
+      "sponsors": null,
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-01",
+      "sampleSize": 1678,
+      "population": "A",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.atlasintel.org/poll/usa-texas-2026-11-01",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 52.2
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 46.2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1.5
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 1215,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 50.2
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 43.1
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 6.2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.4
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 1215,
+      "population": "RV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "James Talarico (D)",
+          "party": "D",
+          "percentage": 51.5
+        },
+        {
+          "candidate": "Ken Paxton (R)",
+          "party": "R",
+          "percentage": 39.3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 8.3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Kreate Strategies",
       "sponsors": null,

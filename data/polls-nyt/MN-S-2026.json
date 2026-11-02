@@ -1,12 +1,89 @@
 {
   "raceId": "MN-S-2026",
-  "count": 26,
+  "count": 28,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "sponsors": null,
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://researchco.ca/2026/11/01/midterms-2026-one/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "percentage": 48
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 7
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "InsiderAdvantage",
+      "sponsors": null,
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-30",
+      "sampleSize": 1200,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-final-minnesota-senate-survey-flanagan-49-tafoya-46/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "percentage": 49.3
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "percentage": 46.4
+        },
+        {
+          "candidate": "Rebecca Whiting (LIB)",
+          "party": "LIB",
+          "percentage": 2.7
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1.1
+        },
+        {
+          "candidate": "Marisa Simonetti (I)",
+          "party": "I",
+          "percentage": 0.5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "SurveyUSA",
       "sponsors": "KSTP-TV Minneapolis",

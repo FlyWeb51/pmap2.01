@@ -1,8 +1,66 @@
 {
   "raceId": "MI-G-2026",
-  "count": 66,
-  "updated_at": "2026-11-02T03:18:54.366Z",
+  "count": 68,
+  "updated_at": "2026-11-02T06:27:06.378Z",
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-30 to 2026-11-01",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jocelyn Benson (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "John James (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://researchco.ca/2026/11/01/midterms-2026-one/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9213
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-23 to 2026-11-01",
+      "sampleSize": 1011,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Jocelyn Benson (D)",
+          "party": "D",
+          "pct": 51.8,
+          "percentage": 51.8
+        },
+        {
+          "candidate": "John James (R)",
+          "party": "R",
+          "pct": 39.4,
+          "percentage": 39.4
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.3809
+    },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-29",
@@ -30,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.8176
+      "weight": 1.8122
     },
     {
       "pollster": "CNN/SSRS",
@@ -65,7 +123,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0755
+      "weight": 1.0722
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -94,7 +152,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9787
+      "weight": 0.9758
     },
     {
       "pollster": "Data for Progress",
@@ -141,7 +199,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9242
+      "weight": 0.9214
     },
     {
       "pollster": "Michigan State University Office for Survey Research/Verasight",
@@ -170,7 +228,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3158
+      "weight": 1.3119
     },
     {
       "pollster": "Glengariff Group, Inc.",
@@ -199,7 +257,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8469
+      "weight": 0.8443
     },
     {
       "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
@@ -228,7 +286,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9327
+      "weight": 0.9299
     },
     {
       "pollster": "Marist University",
@@ -257,7 +315,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0851
+      "weight": 1.0818
     },
     {
       "pollster": "YouGov",
@@ -286,7 +344,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0201
+      "weight": 1.017
     },
     {
       "pollster": "Z to A Research",
@@ -333,7 +391,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2339
+      "weight": 0.2332
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -380,7 +438,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5558
+      "weight": 0.5541
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -409,7 +467,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6367
+      "weight": 0.6348
     },
     {
       "pollster": "Guidant Polling and Strategy",
@@ -438,7 +496,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2744
+      "weight": 0.2736
     },
     {
       "pollster": "Marist University",
@@ -467,7 +525,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6137
+      "weight": 0.6119
     },
     {
       "pollster": "co/efficient",
@@ -496,7 +554,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5137
+      "weight": 0.5121
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -525,7 +583,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4252
+      "weight": 0.4239
     },
     {
       "pollster": "Cygnal/Beacon Research",
@@ -572,7 +630,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4138
+      "weight": 0.4125
     },
     {
       "pollster": "Suffolk University",
@@ -619,7 +677,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3691
+      "weight": 0.368
     },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
@@ -648,7 +706,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4072
+      "weight": 0.406
     },
     {
       "pollster": "Emerson College",
@@ -695,7 +753,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4544
+      "weight": 0.453
     },
     {
       "pollster": "CNN/SSRS",
@@ -730,7 +788,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3468
+      "weight": 0.3458
     },
     {
       "pollster": "Glengariff Group, Inc.",
@@ -759,7 +817,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.273
+      "weight": 0.2722
     },
     {
       "pollster": "EPIC-MRA",
@@ -788,7 +846,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2377
+      "weight": 0.2369
     },
     {
       "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
@@ -817,7 +875,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2251
+      "weight": 0.2244
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
@@ -846,7 +904,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.194
+      "weight": 0.1934
     },
     {
       "pollster": "TIPP Insights",
@@ -875,7 +933,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1116
+      "weight": 0.1112
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -904,7 +962,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1827
+      "weight": 0.1822
     },
     {
       "pollster": "EPIC-MRA",
@@ -933,7 +991,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1244,
+      "weight": 0.1241,
       "otherMatchup": true
     },
     {
@@ -963,7 +1021,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1244
+      "weight": 0.1241
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -992,7 +1050,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1258
+      "weight": 0.1254
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -1021,7 +1079,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1258,
+      "weight": 0.1254,
       "otherMatchup": true
     },
     {
@@ -1051,7 +1109,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1059,
+      "weight": 0.1055,
       "otherMatchup": true
     },
     {
@@ -1081,7 +1139,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1059,
+      "weight": 0.1055,
       "otherMatchup": true
     },
     {
@@ -1111,7 +1169,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1059
+      "weight": 0.1055
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -1140,7 +1198,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0482
+      "weight": 0.0481
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -1169,7 +1227,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0482,
+      "weight": 0.0481,
       "otherMatchup": true
     },
     {
@@ -1199,7 +1257,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0482,
+      "weight": 0.0481,
       "otherMatchup": true
     },
     {
@@ -1229,7 +1287,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0176
+      "weight": 0.0175
     },
     {
       "pollster": "Mitchell Research & Communications",

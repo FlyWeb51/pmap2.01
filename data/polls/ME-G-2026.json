@@ -1,8 +1,72 @@
 {
   "raceId": "ME-G-2026",
-  "count": 21,
-  "updated_at": "2026-11-02T03:18:54.365Z",
+  "count": 23,
+  "updated_at": "2026-11-02T06:27:06.378Z",
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-27 to 2026-11-01",
+      "sampleSize": 714,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Hannah Pingree (D)",
+          "party": "D",
+          "pct": 54.8,
+          "percentage": 54.8
+        },
+        {
+          "candidate": "Bobby Charles (R)",
+          "party": "R",
+          "pct": 39.8,
+          "percentage": 39.8
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1605
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-10-31",
+      "fieldDates": "2026-10-27 to 2026-10-31",
+      "sampleSize": 1648,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Hannah Pingree (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Bobby Charles (R)",
+          "party": "R",
+          "pct": 40,
+          "percentage": 40
+        },
+        {
+          "candidate": "Rick Bennett (I)",
+          "party": "O",
+          "pct": 7,
+          "percentage": 7
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1013/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.7228
+    },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-29",
@@ -30,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5757
+      "weight": 1.5709
     },
     {
       "pollster": "Data for Progress",
@@ -65,7 +129,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9909
+      "weight": 0.988
     },
     {
       "pollster": "CNN/SSRS",
@@ -100,7 +164,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0611
+      "weight": 1.0579
     },
     {
       "pollster": "Marist University",
@@ -135,7 +199,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4106
+      "weight": 1.4063
     },
     {
       "pollster": "Echelon Insights",
@@ -170,7 +234,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7191
+      "weight": 0.7169
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -205,7 +269,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2845
+      "weight": 1.2807
     },
     {
       "pollster": "Suffolk University",
@@ -240,7 +304,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5996
+      "weight": 0.5978
     },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
@@ -275,7 +339,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6603
+      "weight": 0.6583
     },
     {
       "pollster": "Marist University",
@@ -310,7 +374,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7964
+      "weight": 0.794
     },
     {
       "pollster": "YouGov",
@@ -339,7 +403,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7164
+      "weight": 0.7142
     },
     {
       "pollster": "co/efficient",
@@ -374,7 +438,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7323
+      "weight": 0.7301
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
@@ -409,7 +473,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5417
+      "weight": 0.5401
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -438,7 +502,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4301
+      "weight": 0.4288
     },
     {
       "pollster": "University of New Hampshire",
@@ -473,7 +537,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6119
+      "weight": 0.61
     },
     {
       "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
@@ -502,7 +566,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3664
+      "weight": 0.3653
     },
     {
       "pollster": "YouGov",
@@ -537,7 +601,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4569
+      "weight": 0.4555
     },
     {
       "pollster": "CNN/SSRS",
@@ -572,7 +636,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3543
+      "weight": 0.3533
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -607,7 +671,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1822
+      "weight": 0.1816
     },
     {
       "pollster": "University of New Hampshire",
@@ -642,7 +706,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1336
+      "weight": 0.1332
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -671,7 +735,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.066
+      "weight": 0.0658
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -706,7 +770,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0558
+      "weight": 0.0556
     }
   ]
 }

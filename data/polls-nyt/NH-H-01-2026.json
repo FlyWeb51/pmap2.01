@@ -1,12 +1,48 @@
 {
   "raceId": "NH-H-01-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-31",
+      "sampleSize": 1029,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1011/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Stefany Shaheen (D)",
+          "party": "D",
+          "percentage": 56
+        },
+        {
+          "candidate": "Anthony DiLorenzo (R)",
+          "party": "R",
+          "percentage": 43
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "St. Anselm",
       "sponsors": null,

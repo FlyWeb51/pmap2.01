@@ -1,12 +1,48 @@
 {
   "raceId": "NC-S-2026",
-  "count": 66,
+  "count": 67,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "East Carolina University Center for Survey Research",
+      "sponsors": null,
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-29",
+      "sampleSize": 1041,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-cooper-leads-whatley-by-9-points-as-election-day-nears",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Roy Cooper (D)",
+          "party": "D",
+          "percentage": 54
+        },
+        {
+          "candidate": "Michael Whatley (R)",
+          "party": "R",
+          "percentage": 44.9
+        },
+        {
+          "candidate": "Shannon Bray (LIB)",
+          "party": "LIB",
+          "percentage": 0.8
+        },
+        {
+          "candidate": "Michael Dublin (GRE)",
+          "party": "GRE",
+          "percentage": 0.3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": null,

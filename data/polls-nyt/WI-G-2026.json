@@ -1,12 +1,43 @@
 {
   "raceId": "WI-G-2026",
-  "count": 40,
+  "count": 41,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "sponsors": null,
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://researchco.ca/2026/11/01/midterms-2026-one/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "David Crowley (D)",
+          "party": "D",
+          "percentage": 50
+        },
+        {
+          "candidate": "Tom Tiffany (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 5
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Wick",
       "sponsors": "League of American Workers",

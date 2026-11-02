@@ -1,12 +1,48 @@
 {
   "raceId": "KS-G-2026",
-  "count": 11,
+  "count": 12,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 736,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Cindy Holscher (D)",
+          "party": "D",
+          "percentage": 47.8
+        },
+        {
+          "candidate": "Ty Masterson (R)",
+          "party": "R",
+          "percentage": 47.4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4.6
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": null,

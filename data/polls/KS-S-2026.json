@@ -1,8 +1,43 @@
 {
   "raceId": "KS-S-2026",
-  "count": 26,
-  "updated_at": "2026-11-02T03:18:54.305Z",
+  "count": 27,
+  "updated_at": "2026-11-02T06:27:06.339Z",
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-27 to 2026-11-01",
+      "sampleSize": 736,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Adam Hamilton (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Roger Marshall (R)",
+          "party": "R",
+          "pct": 43.9,
+          "percentage": 43.9
+        },
+        {
+          "candidate": "David Graham (LIB)",
+          "party": "O",
+          "pct": 4.4,
+          "percentage": 4.4
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1782
+    },
     {
       "pollster": "YouGov In average",
       "endDate": "2026-10-29",
@@ -30,7 +65,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.8176
+      "weight": 1.8122
     },
     {
       "pollster": "Emerson missed 2024 by 2.7 pts In average",
@@ -59,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1233
+      "weight": 1.1199
     },
     {
       "pollster": "CNN missed 2024 by 2.9 pts In average",
@@ -87,7 +122,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 1.1234
+      "weight": 1.12
     },
     {
       "pollster": "Washington Post missed 2024 by 2.2 pts Not in average",
@@ -115,7 +150,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0733
+      "weight": 1.07
     },
     {
       "pollster": "CNN/SSRS In average",
@@ -144,7 +179,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0978
+      "weight": 1.0945
     },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
@@ -173,7 +208,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0733
+      "weight": 1.07
     },
     {
       "pollster": "RedBox Research Not in average",
@@ -201,7 +236,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6381
+      "weight": 0.6362
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts Not in average",
@@ -230,7 +265,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4978
+      "weight": 0.4963
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts Not in average",
@@ -259,7 +294,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4538
+      "weight": 0.4525
     },
     {
       "pollster": "YouGov First choice only, not in average",
@@ -288,7 +323,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0201
+      "weight": 1.017
     },
     {
       "pollster": "GBAO D-sponsored Not in average",
@@ -317,7 +352,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2794
+      "weight": 0.2785
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -346,7 +381,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3521
+      "weight": 0.3511
     },
     {
       "pollster": "NY Times/Siena missed 2024 by 3.1 pts First choice only, not in average",
@@ -374,7 +409,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5235
+      "weight": 0.5219
     },
     {
       "pollster": "New York Times/Siena University missed 2024 by 3.1 pts Not in average",
@@ -402,7 +437,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5115
+      "weight": 0.51
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -431,7 +466,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5115
+      "weight": 0.51
     },
     {
       "pollster": "Wedgewood Polls First choice only, not in average",
@@ -459,7 +494,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4048
+      "weight": 0.4036
     },
     {
       "pollster": "Emerson College",
@@ -489,7 +524,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.4121
+      "weight": 0.4109
     },
     {
       "pollster": "Global Strategy Group D-sponsored",
@@ -519,7 +554,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Democratic Attorneys General Association",
-      "weight": 0.2128
+      "weight": 0.2122
     },
     {
       "pollster": "co/efficient",
@@ -548,7 +583,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1981
+      "weight": 0.1976
     },
     {
       "pollster": "co/efficient",
@@ -577,7 +612,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3963,
+      "weight": 0.3951,
       "otherMatchup": true
     },
     {
@@ -613,7 +648,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.104
+      "weight": 0.1037
     },
     {
       "pollster": "OSZ",
@@ -641,7 +676,7 @@
         "https://pollingsource.com/senate/KS"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1162
+      "weight": 0.1158
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -671,13 +706,13 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Senate Majority PAC",
-      "weight": 0.0729
+      "weight": 0.0727
     },
     {
       "pollster": "GBAO (D)",
       "endDate": "2026-07-13",
       "endDateUS": "7/13/2026",
-      "weight": 0.0411,
+      "weight": 0.0409,
       "sampleSize": 600,
       "population": "LV",
       "results": [

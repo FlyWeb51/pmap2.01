@@ -1,12 +1,74 @@
 {
   "raceId": "ME-S-2026",
-  "count": 77,
+  "count": 79,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "The New York Times/Siena University",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-11-01",
+      "sampleSize": 714,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "percentage": 50.9
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3.8
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.2
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "University of New Hampshire",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-31",
+      "sampleSize": 1633,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1013/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Troy Jackson (D)",
+          "party": "D",
+          "percentage": 54
+        },
+        {
+          "candidate": "Susan Collins (R)",
+          "party": "R",
+          "percentage": 45
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "YouGov",
       "sponsors": null,

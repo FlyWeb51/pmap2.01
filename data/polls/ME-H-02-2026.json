@@ -1,8 +1,37 @@
 {
   "raceId": "ME-H-02-2026",
-  "count": 18,
-  "updated_at": "2026-11-02T03:18:54.307Z",
+  "count": 19,
+  "updated_at": "2026-11-02T06:27:06.340Z",
   "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-10-31",
+      "fieldDates": "2026-10-27 to 2026-10-31",
+      "sampleSize": 793,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Paul LePage (R)",
+          "party": "R",
+          "pct": 52,
+          "percentage": 52
+        },
+        {
+          "candidate": "Matt Dunlap (D)",
+          "party": "D",
+          "pct": 47,
+          "percentage": 47
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1013/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.195
+    },
     {
       "pollster": "Tulchin Research",
       "endDate": "2026-10-14",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3213
+      "weight": 0.3203
     },
     {
       "pollster": "Tulchin Research D-sponsored",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2325
+      "weight": 0.2318
     },
     {
       "pollster": "University of New Hampshire",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.423
+      "weight": 0.4217
     },
     {
       "pollster": "Impact Research D-sponsored",
@@ -118,7 +147,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "House Majority PAC",
-      "weight": 0.1534
+      "weight": 0.1529
     },
     {
       "pollster": "Impact Research",
@@ -147,7 +176,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1534,
+      "weight": 0.1529,
       "otherMatchup": true
     },
     {
@@ -177,12 +206,12 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0855
+      "weight": 0.0852
     },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-07-16",
-      "weight": 0.044,
+      "weight": 0.0439,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -242,7 +271,7 @@
     {
       "pollster": "co/efficient (R)",
       "endDate": "2026-04-28",
-      "weight": 0.0088,
+      "weight": 0.0087,
       "sampleSize": 918,
       "population": "LV",
       "results": [
@@ -296,7 +325,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0088,
+      "weight": 0.0087,
       "otherMatchup": true
     },
     {
@@ -326,7 +355,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0015,
+      "weight": 0.0014,
       "otherMatchup": true
     },
     {

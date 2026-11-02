@@ -1,12 +1,48 @@
 {
   "raceId": "NH-H-02-2026",
-  "count": 9,
+  "count": 10,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-31",
+      "sampleSize": 997,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1011/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Maggie Goodlander (D)",
+          "party": "D",
+          "percentage": 56
+        },
+        {
+          "candidate": "Lily Tang Williams (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Robbie Mahrou (I)",
+          "party": "I",
+          "percentage": 2
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "St. Anselm",
       "sponsors": null,

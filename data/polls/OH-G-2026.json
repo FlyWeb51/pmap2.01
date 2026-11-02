@@ -1,8 +1,72 @@
 {
   "raceId": "OH-G-2026",
-  "count": 41,
-  "updated_at": "2026-11-02T03:18:54.374Z",
+  "count": 44,
+  "updated_at": "2026-11-02T06:27:06.380Z",
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-30 to 2026-11-01",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "O",
+          "pct": 1,
+          "percentage": 1
+        }
+      ],
+      "sourceUrl": "https://researchco.ca/2026/11/01/midterms-2026-one/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9213
+    },
+    {
+      "pollster": "The New York Times/Siena University",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-26 to 2026-11-01",
+      "sampleSize": 717,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "pct": 48.8,
+          "percentage": 48.8
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "pct": 43.2,
+          "percentage": 43.2
+        }
+      ],
+      "sourceUrl": "https://www.nytimes.com/interactive/2026/11/01/polls/times-siena-poll-crosstabs.html",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1629
+    },
     {
       "pollster": "ActiVote",
       "endDate": "2026-10-31",
@@ -30,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8513
+      "weight": 0.8487
     },
     {
       "pollster": "InsiderAdvantage",
@@ -44,14 +108,20 @@
         {
           "candidate": "Amy Acton (D)",
           "party": "D",
-          "pct": 49,
-          "percentage": 49
+          "pct": 49.2,
+          "percentage": 49.2
         },
         {
           "candidate": "Vivek Ramaswamy (R)",
           "party": "R",
-          "pct": 46,
-          "percentage": 46
+          "pct": 46.3,
+          "percentage": 46.3
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "O",
+          "pct": 3,
+          "percentage": 3
         }
       ],
       "sourceUrl": "https://insideradvantage.com/final-insideradvantage-ohio-survey-brown-49-husted-47-acton-49-ramaswamy-46/",
@@ -59,7 +129,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.4408
+      "weight": 1.4365
     },
     {
       "pollster": "YouGov",
@@ -88,7 +158,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.8176
+      "weight": 1.8122
     },
     {
       "pollster": "Suffolk University",
@@ -123,7 +193,42 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.848
+      "weight": 0.8454
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "endDate": "2026-10-24",
+      "fieldDates": "2026-10-22 to 2026-10-24",
+      "sampleSize": 469,
+      "population": "LV",
+      "partisan": "D",
+      "sponsors": "Education Reform Now Advocacy",
+      "results": [
+        {
+          "candidate": "Amy Acton (D)",
+          "party": "D",
+          "pct": 49,
+          "percentage": 49
+        },
+        {
+          "candidate": "Vivek Ramaswamy (R)",
+          "party": "R",
+          "pct": 39,
+          "percentage": 39
+        },
+        {
+          "candidate": "Donald Kissick (LIB)",
+          "party": "O",
+          "pct": 5,
+          "percentage": 5
+        }
+      ],
+      "sourceUrl": "https://concordpublicopinionpartners.org/polls/ohio-ge-2026-oct",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.3909
     },
     {
       "pollster": "Echelon Insights",
@@ -158,7 +263,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7975
+      "weight": 0.7951
     },
     {
       "pollster": "Verasight",
@@ -193,7 +298,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7607
+      "weight": 0.7584
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -222,7 +327,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2871
+      "weight": 1.2832
     },
     {
       "pollster": "ActiVote",
@@ -251,7 +356,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6452
+      "weight": 0.6432
     },
     {
       "pollster": "Marist University",
@@ -280,7 +385,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.081
+      "weight": 1.0777
     },
     {
       "pollster": "New River Strategies/GS Strategy Group",
@@ -315,7 +420,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8697
+      "weight": 0.867
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",
@@ -350,7 +455,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8097
+      "weight": 0.8072
     },
     {
       "pollster": "co/efficient",
@@ -385,7 +490,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7266
+      "weight": 0.7244
     },
     {
       "pollster": "CNN/SSRS",
@@ -420,7 +525,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6435
+      "weight": 0.6416
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -449,7 +554,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5282
+      "weight": 0.5266
     },
     {
       "pollster": "YouGov",
@@ -478,7 +583,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9301
+      "weight": 0.9273
     },
     {
       "pollster": "Big Data Poll",
@@ -513,7 +618,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.506
+      "weight": 0.5045
     },
     {
       "pollster": "Suffolk University",
@@ -548,7 +653,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4339
+      "weight": 0.4326
     },
     {
       "pollster": "Marist University",
@@ -577,7 +682,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6292
+      "weight": 0.6273
     },
     {
       "pollster": "YouGov",
@@ -612,7 +717,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4143
+      "weight": 0.413
     },
     {
       "pollster": "Concord Public Opinion Partners",
@@ -647,7 +752,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1167
+      "weight": 0.1164
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -682,7 +787,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1829
+      "weight": 0.1824
     },
     {
       "pollster": "Tulchin Research",
@@ -717,7 +822,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0682
+      "weight": 0.068
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -746,7 +851,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0581
+      "weight": 0.0579
     },
     {
       "pollster": "Fabrizio Ward/Impact Research",
@@ -775,7 +880,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0508
+      "weight": 0.0507
     },
     {
       "pollster": "Tulchin Research",
@@ -810,7 +915,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0167
+      "weight": 0.0166
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -839,7 +944,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0364
+      "weight": 0.0363
     },
     {
       "pollster": "Bowling Green State University Democracy and Public Policy Research Network/YouGov",

@@ -1,8 +1,37 @@
 {
   "raceId": "ME-H-01-2026",
-  "count": 1,
-  "updated_at": "2026-11-02T03:18:54.350Z",
+  "count": 2,
+  "updated_at": "2026-11-02T06:27:06.367Z",
   "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "endDate": "2026-10-31",
+      "fieldDates": "2026-10-27 to 2026-10-31",
+      "sampleSize": 839,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Chellie Pingree (D)",
+          "party": "D",
+          "pct": 65,
+          "percentage": 65
+        },
+        {
+          "candidate": "Ronald Russell (R)",
+          "party": "R",
+          "pct": 32,
+          "percentage": 32
+        }
+      ],
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1013/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.2292
+    },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-09-21",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4402
+      "weight": 0.4388
     }
   ]
 }

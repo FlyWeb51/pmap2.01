@@ -1,12 +1,53 @@
 {
   "raceId": "MA-S-2026",
-  "count": 23,
+  "count": 24,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "University of New Hampshire",
+      "sponsors": null,
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-31",
+      "sampleSize": 877,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1014/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ed Markey (D)",
+          "party": "D",
+          "percentage": 53
+        },
+        {
+          "candidate": "John Deaton (R)",
+          "party": "R",
+          "percentage": 32
+        },
+        {
+          "candidate": "Joe Tache (PSL)",
+          "party": "PSL",
+          "percentage": 7
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Shiva Ayyadurai (I)",
+          "party": "I",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "UMass Lowell",
       "sponsors": null,
