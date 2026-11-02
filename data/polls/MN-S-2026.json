@@ -1,16 +1,15 @@
 {
   "raceId": "MN-S-2026",
-  "count": 36,
-  "updated_at": "2026-11-02T06:27:06.343Z",
+  "count": 37,
+  "updated_at": "2026-11-02T21:15:56.650Z",
   "polls": [
     {
       "pollster": "Research Co.",
       "endDate": "2026-11-01",
-      "fieldDates": "2026-10-30 to 2026-11-01",
+      "fieldDates": "October 30 – November 1, 2026",
       "sampleSize": 450,
       "population": "LV",
       "partisan": null,
-      "sponsors": null,
       "results": [
         {
           "candidate": "Peggy Flanagan (D)",
@@ -27,10 +26,39 @@
       ],
       "sourceUrl": "https://researchco.ca/2026/11/01/midterms-2026-one/",
       "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota",
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9213
+      "weight": 0.9082
+    },
+    {
+      "pollster": "Research Co. In average",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-11-01 this poll",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Peggy Flanagan (D)",
+          "party": "D",
+          "pct": 48,
+          "percentage": 48
+        },
+        {
+          "candidate": "Michele Tafoya (R)",
+          "party": "R",
+          "pct": 43,
+          "percentage": 43
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/MN"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9082
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts In average",
@@ -60,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7182
+      "weight": 0.7081
     },
     {
       "pollster": "KSTP/SurveyUSA missed 2024 by 3.2 pts In average",
@@ -89,7 +117,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 1.058
+      "weight": 1.043
     },
     {
       "pollster": "SurveyUSA",
@@ -130,10 +158,10 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.058
+      "weight": 1.043
     },
     {
-      "pollster": "New York Times/Siena University missed 2024 by 3.1 pts In average",
+      "pollster": "New York Times/Siena University missed 2024 by 3.1 pts Not in average",
       "endDate": "2026-10-26",
       "fieldDates": "October 19–26, 2026",
       "sampleSize": 752,
@@ -159,7 +187,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0368
+      "weight": 1.0221
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -188,7 +216,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0368
+      "weight": 1.0221
     },
     {
       "pollster": "Victory Insights R-sponsored Not in average",
@@ -218,7 +246,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5955
+      "weight": 0.5871
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts Not in average",
@@ -247,7 +275,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.579
+      "weight": 0.5708
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts Not in average",
@@ -277,7 +305,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4816
+      "weight": 0.4748
     },
     {
       "pollster": "KSTP/SurveyUSA missed 2024 by 3.2 pts Not in average",
@@ -306,7 +334,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7331
+      "weight": 0.7227
     },
     {
       "pollster": "SurveyUSA",
@@ -347,7 +375,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7331
+      "weight": 0.7227
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts First choice only, not in average",
@@ -376,7 +404,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3566
+      "weight": 0.3515
     },
     {
       "pollster": "Morning Consult missed 2024 by 4.0 pts Not in average",
@@ -407,7 +435,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "The Daily Agenda",
-      "weight": 0.3468
+      "weight": 0.3419
     },
     {
       "pollster": "Mason-Dixon Polling & Strategy First choice only, not in average",
@@ -438,7 +466,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "KARE 11 | Minnesota Star Tribune",
-      "weight": 0.6894
+      "weight": 0.6796
     },
     {
       "pollster": "Daily Agenda/Morning Consult First choice only, not in average",
@@ -466,7 +494,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6937
+      "weight": 0.6839
     },
     {
       "pollster": "Star Tribune/Mason-Dixon Not in average",
@@ -494,7 +522,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6894
+      "weight": 0.6796
     },
     {
       "pollster": "GQR",
@@ -525,7 +553,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Senate Majority PAC",
-      "weight": 0.3216
+      "weight": 0.3171
     },
     {
       "pollster": "GQR D-sponsored First choice only, not in average",
@@ -553,7 +581,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3216
+      "weight": 0.3171
     },
     {
       "pollster": "Big Data Poll First choice only, not in average",
@@ -584,7 +612,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public Polling Project",
-      "weight": 0.2586
+      "weight": 0.2549
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts First choice only, not in average",
@@ -614,7 +642,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3509
+      "weight": 0.346
     },
     {
       "pollster": "SurveyUSA",
@@ -644,7 +672,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "KSTP-TV Minneapolis",
-      "weight": 0.3837
+      "weight": 0.3783
     },
     {
       "pollster": "co/efficient",
@@ -674,7 +702,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2116
+      "weight": 0.2086
     },
     {
       "pollster": "co/efficient",
@@ -703,7 +731,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4231,
+      "weight": 0.4172,
       "otherMatchup": true
     },
     {
@@ -733,7 +761,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3664
+      "weight": 0.3612
     },
     {
       "pollster": "Quantus Insights",
@@ -763,7 +791,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1752
+      "weight": 0.1728
     },
     {
       "pollster": "TIPP Insights",
@@ -806,7 +834,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "League of American Workers",
-      "weight": 0.1874
+      "weight": 0.1848
     },
     {
       "pollster": "SurveyUSA",
@@ -834,7 +862,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2487
+      "weight": 0.2452
     },
     {
       "pollster": "Deep Root Analytics",
@@ -863,7 +891,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0844
+      "weight": 0.0832
     },
     {
       "pollster": "KTSP/SurveyUSA",
@@ -892,7 +920,7 @@
         "https://pollingsource.com/senate/MN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1929
+      "weight": 0.1901
     },
     {
       "pollster": "SurveyUSA",
@@ -922,7 +950,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "KSTP-TV Minneapolis",
-      "weight": 0.1929
+      "weight": 0.1901
     },
     {
       "pollster": "Mason-Dixon Polling & Research, Inc.",
@@ -951,13 +979,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0441,
+      "weight": 0.0435,
       "otherMatchup": true
     },
     {
       "pollster": "Impact Research (D)",
       "endDate": "2026-05-28",
-      "weight": 0.0164,
+      "weight": 0.0162,
       "sampleSize": 808,
       "population": "LV",
       "results": [

@@ -1,16 +1,15 @@
 {
   "raceId": "NH-S-2026",
-  "count": 66,
-  "updated_at": "2026-11-02T06:27:06.358Z",
+  "count": 68,
+  "updated_at": "2026-11-02T21:15:56.658Z",
   "polls": [
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-10-31",
-      "fieldDates": "2026-10-27 to 2026-10-31",
+      "fieldDates": "October 27–31, 2026",
       "sampleSize": 2035,
       "population": "LV",
       "partisan": null,
-      "sponsors": null,
       "results": [
         {
           "candidate": "Chris Pappas (D)",
@@ -33,10 +32,67 @@
       ],
       "sourceUrl": "https://scholars.unh.edu/survey_center_polls/1011/",
       "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire",
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.8979
+      "weight": 1.871
+    },
+    {
+      "pollster": "UNH missed 2024 by 4.2 pts In average",
+      "endDate": "2026-10-31",
+      "fieldDates": "2026-10-31 this poll",
+      "sampleSize": 2040,
+      "population": "LV",
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "John E. Sununu (R)",
+          "party": "R",
+          "pct": 42,
+          "percentage": 42
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://pollingsource.com/senate/NH"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.871
+    },
+    {
+      "pollster": "National Public Affairs",
+      "endDate": "2026-10-29",
+      "fieldDates": "October 25–29, 2026",
+      "sampleSize": 800,
+      "population": null,
+      "partisan": "R",
+      "results": [
+        {
+          "candidate": "Chris Pappas (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "John E. Sununu (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.4802
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts In average",
@@ -65,7 +121,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5493
+      "weight": 0.5415
     },
     {
       "pollster": "Saint Anselm College In average",
@@ -94,7 +150,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3458
+      "weight": 1.3268
     },
     {
       "pollster": "St. Anselm missed 2024 by 3.4 pts In average",
@@ -123,10 +179,10 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3458
+      "weight": 1.3268
     },
     {
-      "pollster": "UMass Lowell missed 2024 by 3.6 pts In average",
+      "pollster": "UMass Lowell missed 2024 by 3.6 pts Not in average",
       "endDate": "2026-10-19",
       "fieldDates": "2026-10-19 this poll",
       "sampleSize": 600,
@@ -152,7 +208,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7878
+      "weight": 0.7766
     },
     {
       "pollster": "National Public Affairs R-sponsored Not in average",
@@ -183,7 +239,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "God, Family, & Country PAC",
-      "weight": 0.3351
+      "weight": 0.3303
     },
     {
       "pollster": "YouGov Not in average",
@@ -213,7 +269,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9074
+      "weight": 0.8945
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts First choice only, not in average",
@@ -242,7 +298,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3558
+      "weight": 0.3507
     },
     {
       "pollster": "Saint Anselm College First choice only, not in average",
@@ -271,7 +327,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.654
+      "weight": 0.6447
     },
     {
       "pollster": "St. Anselm",
@@ -300,7 +356,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.654
+      "weight": 0.6447
     },
     {
       "pollster": "Trafalgar Group",
@@ -335,7 +391,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3182
+      "weight": 0.3137
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -364,7 +420,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3049
+      "weight": 0.3006
     },
     {
       "pollster": "New York Times/Siena University",
@@ -393,7 +449,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4222
+      "weight": 0.4162
     },
     {
       "pollster": "NY Times/Siena",
@@ -421,7 +477,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4267
+      "weight": 0.4207
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -450,7 +506,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4267
+      "weight": 0.4207
     },
     {
       "pollster": "University of New Hampshire",
@@ -480,7 +536,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6342
+      "weight": 0.6252
     },
     {
       "pollster": "InsiderAdvantage",
@@ -510,7 +566,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2659
+      "weight": 0.2622
     },
     {
       "pollster": "co/efficient",
@@ -540,7 +596,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2069,
+      "weight": 0.2039,
       "otherMatchup": true
     },
     {
@@ -570,7 +626,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2065
+      "weight": 0.2036
     },
     {
       "pollster": "Fabrizio, Lee, & Associates",
@@ -601,7 +657,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "National Republican Senatorial Committee",
-      "weight": 0.1241
+      "weight": 0.1223
     },
     {
       "pollster": "University of New Hampshire",
@@ -631,7 +687,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "7News",
-      "weight": 0.3789,
+      "weight": 0.3735,
       "otherMatchup": true
     },
     {
@@ -661,7 +717,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3789
+      "weight": 0.3735
     },
     {
       "pollster": "Saint Anselm College",
@@ -689,7 +745,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2451,
+      "weight": 0.2417,
       "otherMatchup": true
     },
     {
@@ -718,7 +774,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2884
+      "weight": 0.2843
     },
     {
       "pollster": "St. Anselm",
@@ -747,7 +803,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2884
+      "weight": 0.2843
     },
     {
       "pollster": "St. Anselm",
@@ -776,13 +832,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2884,
+      "weight": 0.2843,
       "otherMatchup": true
     },
     {
       "pollster": "Peak Insights (R)",
       "endDate": "2026-06-27",
-      "weight": 0.0258,
+      "weight": 0.0254,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -813,7 +869,7 @@
     {
       "pollster": "St. Anselm",
       "endDate": "2026-06-25",
-      "weight": 0.0797,
+      "weight": 0.0786,
       "sampleSize": 1614,
       "population": "RV",
       "results": [
@@ -864,7 +920,7 @@
         "https://pollingsource.com/senate/NH"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0797,
+      "weight": 0.0786,
       "otherMatchup": true
     },
     {
@@ -894,13 +950,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0797,
+      "weight": 0.0786,
       "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-06-23",
-      "weight": 0.0941,
+      "weight": 0.0928,
       "sampleSize": 2157,
       "population": "LV",
       "results": [
@@ -952,13 +1008,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0941,
+      "weight": 0.0928,
       "otherMatchup": true
     },
     {
       "pollster": "University of New Hampshire",
       "endDate": "2026-04-21",
-      "weight": 0.0165,
+      "weight": 0.0163,
       "sampleSize": 1130,
       "population": "LV",
       "results": [
@@ -1009,13 +1065,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0164,
+      "weight": 0.0162,
       "otherMatchup": true
     },
     {
       "pollster": "Emerson College",
       "endDate": "2026-03-23",
-      "weight": 0.0083,
+      "weight": 0.0082,
       "sampleSize": 1100,
       "population": "LV",
       "results": [
@@ -1066,7 +1122,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0083,
+      "weight": 0.0082,
       "otherMatchup": true
     },
     {
@@ -1093,7 +1149,7 @@
       "sourceUrl": null,
       "foundOn": [],
       "reviewStatus": "auto",
-      "weight": 0.0073,
+      "weight": 0.0072,
       "otherMatchup": true
     },
     {
@@ -1123,7 +1179,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0078
+      "weight": 0.0077
     },
     {
       "pollster": "St. Anselm",
@@ -1152,13 +1208,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0078,
+      "weight": 0.0077,
       "otherMatchup": true
     },
     {
       "pollster": "yes. every kid. foundation.",
       "endDate": "2026-01-29",
-      "weight": 0.0018,
+      "weight": 0.0017,
       "sampleSize": 563,
       "population": "LV",
       "results": [

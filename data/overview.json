@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T17:27:57.222Z",
+  "generatedAt": "2026-11-02T21:15:56.802Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -569,7 +569,15 @@
         "holder": "D",
         "special": false,
         "kalshiD": 0.993,
-        "nyt": null
+        "nyt": {
+          "averageMargin": 18,
+          "averagePolls": 2,
+          "latest": {
+            "pollster": "U. of Colorado/YouGov In average",
+            "endDate": "2026-10-20"
+          },
+          "source": "site"
+        }
       },
       {
         "state": "ID",
@@ -595,8 +603,8 @@
     "dem": 50.2,
     "rep": 42.1,
     "margin": 8.1,
-    "polls": 122,
-    "source": "122 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
+    "polls": 126,
+    "source": "126 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
     "asOf": "2026-10-30",
     "label": "Blue wave"
   },
@@ -1571,13 +1579,13 @@
         "state": "MA",
         "name": "Massachusetts",
         "special": false,
-        "dem": "Ed Markey",
+        "dem": "Edward J. Markey",
         "rep": "John Deaton",
-        "polls": 11,
+        "polls": 12,
         "pres2024": 25.2,
         "expected": 34.8,
-        "pollMargin": 25.4,
-        "overUnder": -9.4,
+        "pollMargin": 24.6,
+        "overUnder": -10.2,
         "kalshiD": 0.992
       },
       {
@@ -1586,7 +1594,7 @@
         "special": false,
         "dem": "Peggy Flanagan",
         "rep": "Michele Tafoya",
-        "polls": 29,
+        "polls": 30,
         "pres2024": 4.2,
         "expected": 13.8,
         "pollMargin": 5.5,
@@ -1612,11 +1620,11 @@
         "special": false,
         "dem": "Chris Pappas",
         "rep": "John E. Sununu",
-        "polls": 22,
+        "polls": 24,
         "pres2024": 2.8,
         "expected": 12.4,
-        "pollMargin": 7.2,
-        "overUnder": -5.2,
+        "pollMargin": 7.7,
+        "overUnder": -4.7,
         "kalshiD": 0.938
       },
       {
@@ -1625,11 +1633,11 @@
         "special": false,
         "dem": "Abdul El-Sayed",
         "rep": "Mike Rogers",
-        "polls": 66,
+        "polls": 68,
         "pres2024": -1.4,
         "expected": 8.2,
-        "pollMargin": 4.5,
-        "overUnder": -3.7,
+        "pollMargin": 4.4,
+        "overUnder": -3.8,
         "kalshiD": 0.775
       },
       {
@@ -1638,11 +1646,11 @@
         "special": true,
         "dem": "Angie Nixon",
         "rep": "Ashley Moody",
-        "polls": 31,
+        "polls": 32,
         "pres2024": -13.1,
         "expected": -3.5,
-        "pollMargin": -6,
-        "overUnder": -2.5,
+        "pollMargin": -5.7,
+        "overUnder": -2.2,
         "kalshiD": 0.145
       },
       {
@@ -1659,29 +1667,16 @@
         "kalshiD": 0.017
       },
       {
-        "state": "RI",
-        "name": "Rhode Island",
-        "special": false,
-        "dem": "Jack Reed",
-        "rep": "Raymond McKay",
-        "polls": 7,
-        "pres2024": 13.8,
-        "expected": 23.4,
-        "pollMargin": 24.1,
-        "overUnder": 0.7,
-        "kalshiD": 0.993
-      },
-      {
         "state": "GA",
         "name": "Georgia",
         "special": false,
         "dem": "Jon Ossoff",
         "rep": "Mike Collins",
-        "polls": 15,
+        "polls": 16,
         "pres2024": -2.2,
         "expected": 7.4,
-        "pollMargin": 8.8,
-        "overUnder": 1.4,
+        "pollMargin": 8.6,
+        "overUnder": 1.2,
         "kalshiD": 0.971
       },
       {
@@ -1698,16 +1693,29 @@
         "kalshiD": 0.9890000000000001
       },
       {
+        "state": "RI",
+        "name": "Rhode Island",
+        "special": false,
+        "dem": "Jack Reed",
+        "rep": "Raymond McKay",
+        "polls": 8,
+        "pres2024": 13.8,
+        "expected": 23.4,
+        "pollMargin": 25.7,
+        "overUnder": 2.3,
+        "kalshiD": 0.993
+      },
+      {
         "state": "IA",
         "name": "Iowa",
         "special": false,
         "dem": "Josh Turek",
         "rep": "Ashley Hinson",
-        "polls": 43,
+        "polls": 45,
         "pres2024": -13.2,
         "expected": -3.6,
-        "pollMargin": 0.5,
-        "overUnder": 4.1,
+        "pollMargin": 0.4,
+        "overUnder": 4,
         "kalshiD": 0.51
       },
       {
@@ -1719,22 +1727,9 @@
         "polls": 44,
         "pres2024": -3.2,
         "expected": 6.4,
-        "pollMargin": 10.5,
-        "overUnder": 4.1,
+        "pollMargin": 10.4,
+        "overUnder": 4,
         "kalshiD": 0.9740000000000001
-      },
-      {
-        "state": "OH",
-        "name": "Ohio",
-        "special": true,
-        "dem": "Sherrod Brown",
-        "rep": "Jon Husted",
-        "polls": 47,
-        "pres2024": -11.2,
-        "expected": -1.6,
-        "pollMargin": 3.7,
-        "overUnder": 5.3,
-        "kalshiD": 0.705
       },
       {
         "state": "AK",
@@ -1742,12 +1737,25 @@
         "special": false,
         "dem": "Mary Peltola",
         "rep": "Dan S. Sullivan",
-        "polls": 19,
+        "polls": 20,
         "pres2024": -13.1,
         "expected": -3.6,
-        "pollMargin": 1.8,
-        "overUnder": 5.4,
+        "pollMargin": 1.5,
+        "overUnder": 5.1,
         "kalshiD": 0.715
+      },
+      {
+        "state": "OH",
+        "name": "Ohio",
+        "special": true,
+        "dem": "Sherrod Brown",
+        "rep": "Jon Husted",
+        "polls": 50,
+        "pres2024": -11.2,
+        "expected": -1.6,
+        "pollMargin": 3.6,
+        "overUnder": 5.2,
+        "kalshiD": 0.705
       },
       {
         "state": "SC",
@@ -1794,11 +1802,11 @@
         "special": false,
         "dem": "Jacques Hamilton",
         "rep": "Roger Marshall",
-        "polls": 23,
+        "polls": 24,
         "pres2024": -16.1,
         "expected": -6.5,
-        "pollMargin": 2.9,
-        "overUnder": 9.4,
+        "pollMargin": 3,
+        "overUnder": 9.5,
         "kalshiD": 0.625
       },
       {
@@ -1850,7 +1858,7 @@
         "name": "Kansas",
         "type": "Senate",
         "now": 62.5,
-        "ch1": 11.5,
+        "ch1": 10,
         "ch7": 23,
         "dem": "Adam Hamilton",
         "rep": "Roger Marshall",
@@ -1862,7 +1870,7 @@
         "type": "Governor",
         "now": 31.5,
         "ch1": 8,
-        "ch7": 8.2,
+        "ch7": 7.2,
         "dem": "Amanda Janoo",
         "rep": "Phil Scott",
         "thirdParty": false
@@ -1872,8 +1880,8 @@
         "name": "Iowa",
         "type": "Senate",
         "now": 51,
-        "ch1": 7.9,
-        "ch7": 9.9,
+        "ch1": 6.9,
+        "ch7": 9.5,
         "dem": "Josh Turek",
         "rep": "Ashley Hinson",
         "thirdParty": false
@@ -1884,7 +1892,7 @@
         "type": "Senate",
         "now": 77.5,
         "ch1": 6,
-        "ch7": 11.7,
+        "ch7": 12,
         "dem": "Abdul El-Sayed",
         "rep": "Mike Rogers",
         "thirdParty": false
@@ -1895,7 +1903,7 @@
         "type": "Governor",
         "now": 39.5,
         "ch1": 6,
-        "ch7": 6.7,
+        "ch7": 7.3,
         "dem": "Gina Hinojosa",
         "rep": "Greg Abbott",
         "thirdParty": false
@@ -1923,23 +1931,12 @@
         "thirdParty": false
       },
       {
-        "key": "S-NE",
-        "name": "Nebraska",
-        "type": "Senate",
-        "now": 30.5,
-        "ch1": 5,
-        "ch7": 4,
-        "dem": "Cindy Burbank",
-        "rep": "Pete Ricketts",
-        "thirdParty": true
-      },
-      {
         "key": "H-FL-27",
         "name": "FL-27",
         "type": "House",
         "now": 42.1,
         "ch1": 4.6,
-        "ch7": 7.9,
+        "ch7": 9.3,
         "dem": "Eliott Rodriguez",
         "rep": "Maria Elvira Salazar",
         "thirdParty": false
@@ -1950,20 +1947,9 @@
         "type": "Senate",
         "now": 32.2,
         "ch1": 4.4,
-        "ch7": 11.7,
+        "ch7": 8.7,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NY-17",
-        "name": "NY-17",
-        "type": "House",
-        "now": 58.5,
-        "ch1": -4.4,
-        "ch7": -0.8,
-        "dem": "Cait Conley",
-        "rep": "Mike Lawler",
         "thirdParty": false
       },
       {
@@ -1976,6 +1962,28 @@
         "dem": "Teresa Benitez-Thompson",
         "rep": "David Flippo",
         "thirdParty": false
+      },
+      {
+        "key": "H-NY-17",
+        "name": "NY-17",
+        "type": "House",
+        "now": 58.5,
+        "ch1": -4,
+        "ch7": -1.4,
+        "dem": "Cait Conley",
+        "rep": "Mike Lawler",
+        "thirdParty": false
+      },
+      {
+        "key": "N-senate",
+        "name": "Senate control",
+        "type": "Control",
+        "now": 74.5,
+        "ch1": 4,
+        "ch7": 11,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
       }
     ],
     "week": [
@@ -1984,7 +1992,7 @@
         "name": "Kansas",
         "type": "Senate",
         "now": 62.5,
-        "ch1": 11.5,
+        "ch1": 10,
         "ch7": 23,
         "dem": "Adam Hamilton",
         "rep": "Roger Marshall",
@@ -1995,21 +2003,10 @@
         "name": "Florida",
         "type": "Governor",
         "now": 37.1,
-        "ch1": 1.6,
-        "ch7": 16.6,
+        "ch1": 0.6,
+        "ch7": 17.8,
         "dem": "David Jolly",
         "rep": "Byron Donalds",
-        "thirdParty": false
-      },
-      {
-        "key": "H-AL-02",
-        "name": "AL-2",
-        "type": "House",
-        "now": 44.9,
-        "ch1": 2.8,
-        "ch7": 13.4,
-        "dem": "Shomari Figures",
-        "rep": "Rhett Marques",
         "thirdParty": false
       },
       {
@@ -2017,10 +2014,21 @@
         "name": "Maine",
         "type": "Senate",
         "now": 72.5,
-        "ch1": 4,
-        "ch7": 13,
+        "ch1": 3.3,
+        "ch7": 13.6,
         "dem": "Troy Jackson",
         "rep": "Susan Collins",
+        "thirdParty": false
+      },
+      {
+        "key": "H-AL-02",
+        "name": "AL-2",
+        "type": "House",
+        "now": 44.9,
+        "ch1": 3.4,
+        "ch7": 13.4,
+        "dem": "Shomari Figures",
+        "rep": "Rhett Marques",
         "thirdParty": false
       },
       {
@@ -2028,21 +2036,10 @@
         "name": "MT-1",
         "type": "House",
         "now": 57.5,
-        "ch1": -0.4,
-        "ch7": 12.6,
+        "ch1": -1,
+        "ch7": 13,
         "dem": "Sam Forstag",
         "rep": "Aaron Flint",
-        "thirdParty": false
-      },
-      {
-        "key": "H-SC-01",
-        "name": "SC-1",
-        "type": "House",
-        "now": 49.5,
-        "ch1": 0.5,
-        "ch7": 12.4,
-        "dem": "Nancy S. Lacore",
-        "rep": "Jenny Costa Honeycutt",
         "thirdParty": false
       },
       {
@@ -2051,20 +2048,31 @@
         "type": "Senate",
         "now": 77.5,
         "ch1": 6,
-        "ch7": 11.7,
+        "ch7": 12,
         "dem": "Abdul El-Sayed",
         "rep": "Mike Rogers",
         "thirdParty": false
       },
       {
-        "key": "S-SC",
-        "name": "South Carolina",
-        "type": "Senate",
-        "now": 32.2,
-        "ch1": 4.4,
-        "ch7": 11.7,
-        "dem": "Annie Andrews",
-        "rep": "Darline Graham",
+        "key": "H-NC-03",
+        "name": "NC-3",
+        "type": "House",
+        "now": 44.5,
+        "ch1": 0.4,
+        "ch7": 12,
+        "dem": "Raymond Smith Jr.",
+        "rep": "Greg Murphy",
+        "thirdParty": false
+      },
+      {
+        "key": "H-SC-01",
+        "name": "SC-1",
+        "type": "House",
+        "now": 49.5,
+        "ch1": 0.5,
+        "ch7": 12,
+        "dem": "Nancy S. Lacore",
+        "rep": "Jenny Costa Honeycutt",
         "thirdParty": false
       },
       {
@@ -2083,7 +2091,7 @@
         "name": "Senate control",
         "type": "Control",
         "now": 74.5,
-        "ch1": 3,
+        "ch1": 4,
         "ch7": 11,
         "dem": null,
         "rep": null,
@@ -2094,7 +2102,7 @@
         "name": "WI-3",
         "type": "House",
         "now": 88.4,
-        "ch1": 0,
+        "ch1": 0.3,
         "ch7": 10.9,
         "dem": "Rebecca Cooke",
         "rep": "Derrick Van Orden",
@@ -2106,7 +2114,7 @@
         "type": "House",
         "now": 54.5,
         "ch1": 1.5,
-        "ch7": 10.7,
+        "ch7": 10.4,
         "dem": "Bob Harvie",
         "rep": "Brian Fitzpatrick",
         "thirdParty": false
