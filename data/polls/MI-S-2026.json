@@ -1,8 +1,36 @@
 {
   "raceId": "MI-S-2026",
-  "count": 119,
-  "updated_at": "2026-11-02T21:48:37.884Z",
+  "count": 123,
+  "updated_at": "2026-11-03T04:36:30.256Z",
   "polls": [
+    {
+      "pollster": "John Zogby Strategies",
+      "endDate": "2026-11-02",
+      "fieldDates": "October 31 – November 2, 2026",
+      "sampleSize": 1001,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 49,
+          "percentage": 49
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.17
+    },
     {
       "pollster": "New York Times/Siena University missed 2024 by 3.1 pts In average",
       "endDate": "2026-11-01",
@@ -30,7 +58,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3606
+      "weight": 1.3517
     },
     {
       "pollster": "Research Co.",
@@ -59,7 +87,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9078
+      "weight": 0.9018
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts In average",
@@ -88,7 +116,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7054
+      "weight": 0.7008
     },
     {
       "pollster": "Research Co. In average",
@@ -116,7 +144,91 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9078
+      "weight": 0.9018
+    },
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-11-01",
+      "fieldDates": "October 31 – November 1, 2026",
+      "sampleSize": 500,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 45,
+          "percentage": 45
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.808
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "endDate": "2026-11-01",
+      "fieldDates": "October 31 – November 1, 2026",
+      "sampleSize": 510,
+      "population": null,
+      "partisan": "D",
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 51,
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.408
+    },
+    {
+      "pollster": "AtlasIntel",
+      "endDate": "2026-11-01",
+      "fieldDates": "October 28 – November 1, 2026",
+      "sampleSize": 1316,
+      "population": null,
+      "partisan": null,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "pct": 54,
+          "percentage": 54
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "pct": 46,
+          "percentage": 46
+        }
+      ],
+      "sourceUrl": null,
+      "foundOn": [
+        "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.3109
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -145,7 +257,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.3606
+      "weight": 1.3517
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts Not in average",
@@ -174,7 +286,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5449
+      "weight": 0.5413
     },
     {
       "pollster": "YouGov Not in average",
@@ -204,7 +316,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.7856
+      "weight": 1.7739
     },
     {
       "pollster": "Upswing Research D-sponsored Not in average",
@@ -233,7 +345,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4384
+      "weight": 0.4355
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -287,7 +399,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "CBS Detroit",
-      "weight": 0.9614
+      "weight": 0.9552
     },
     {
       "pollster": "SSRS",
@@ -315,7 +427,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
       ],
       "reviewStatus": "auto",
-      "weight": 0.898
+      "weight": 0.8922
     },
     {
       "pollster": "CNN missed 2024 by 2.9 pts In average",
@@ -343,7 +455,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0565
+      "weight": 1.0496
     },
     {
       "pollster": "CBS News/Mitchell Not in average",
@@ -371,7 +483,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9614
+      "weight": 0.9552
     },
     {
       "pollster": "CNN/SSRS Not in average",
@@ -400,7 +512,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0565
+      "weight": 1.0496
     },
     {
       "pollster": "Data for Progress D-sponsored missed 2024 by 4.1 pts Not in average",
@@ -430,7 +542,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4539
+      "weight": 0.451
     },
     {
       "pollster": "Upswing Research",
@@ -459,7 +571,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.409
+      "weight": 0.4063
     },
     {
       "pollster": "RedBox Research Not in average",
@@ -488,7 +600,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 1.5544
+      "weight": 1.5443
     },
     {
       "pollster": "Michigan State University Department of Political Science/Verasight Not in average",
@@ -518,7 +630,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.2926
+      "weight": 1.2842
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts Not in average",
@@ -548,7 +660,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5883
+      "weight": 0.5844
     },
     {
       "pollster": "Glengariff Group, Inc. Not in average",
@@ -579,7 +691,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Detroit News | WDIV-TV",
-      "weight": 0.8319
+      "weight": 0.8265
     },
     {
       "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
@@ -609,7 +721,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.9309
+      "weight": 0.9249
     },
     {
       "pollster": "Marist missed 2024 by 4.3 pts Not in average",
@@ -639,7 +751,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.066
+      "weight": 1.059
     },
     {
       "pollster": "Rasmussen Reports missed 2024 by 2.1 pts Not in average",
@@ -668,7 +780,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3988
+      "weight": 0.3962
     },
     {
       "pollster": "InsiderAdvantage missed 2024 by 1.9 pts Not in average",
@@ -698,7 +810,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4458
+      "weight": 0.4429
     },
     {
       "pollster": "Wedgewood Polls First choice only, not in average",
@@ -727,7 +839,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6197
+      "weight": 0.6156
     },
     {
       "pollster": "The Tyson Group R-sponsored R-sponsored First choice only, not in average",
@@ -758,7 +870,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Alliance for a Better Future",
-      "weight": 0.301
+      "weight": 0.299
     },
     {
       "pollster": "Quantus Insights R-sponsored First choice only, not in average",
@@ -788,7 +900,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3239
+      "weight": 0.3218
     },
     {
       "pollster": "YouGov First choice only, not in average",
@@ -818,7 +930,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 1.0021
+      "weight": 0.9956
     },
     {
       "pollster": "Mitchell Research & Communications First choice only, not in average",
@@ -848,7 +960,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5452
+      "weight": 0.5416
     },
     {
       "pollster": "Z to A Research D-sponsored D-sponsored First choice only, not in average",
@@ -879,7 +991,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Rust Belt Rising",
-      "weight": 0.2297
+      "weight": 0.2282
     },
     {
       "pollster": "Trafalgar Group R-sponsored missed 2024 by 1.8 pts First choice only, not in average",
@@ -909,7 +1021,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3365
+      "weight": 0.3343
     },
     {
       "pollster": "Beacon Research/ Shaw & Co. Research missed 2024 by 2.3 pts First choice only, not in average",
@@ -940,7 +1052,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.3127
+      "weight": 0.3107
     },
     {
       "pollster": "FOX News missed 2024 by 2.3 pts Not in average",
@@ -968,7 +1080,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6254
+      "weight": 0.6214
     },
     {
       "pollster": "Marist University First choice only, not in average",
@@ -998,7 +1110,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6029
+      "weight": 0.599
     },
     {
       "pollster": "Guidant Polling & Strategy R-sponsored First choice only, not in average",
@@ -1029,7 +1141,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public First Action",
-      "weight": 0.2696
+      "weight": 0.2678
     },
     {
       "pollster": "The Tyson Group R-sponsored First choice only, not in average",
@@ -1060,7 +1172,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Alliance for a Better Future",
-      "weight": 0.2335
+      "weight": 0.2319
     },
     {
       "pollster": "Big Data Poll R-sponsored First choice only, not in average",
@@ -1091,7 +1203,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Public Polling Project",
-      "weight": 0.2315
+      "weight": 0.23
     },
     {
       "pollster": "co/efficient R-sponsored First choice only, not in average",
@@ -1121,7 +1233,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2523
+      "weight": 0.2506
     },
     {
       "pollster": "co/efficient",
@@ -1150,7 +1262,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5046,
+      "weight": 0.5013,
       "otherMatchup": true
     },
     {
@@ -1180,7 +1292,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.416
+      "weight": 0.4133
     },
     {
       "pollster": "NY Times/Siena",
@@ -1208,7 +1320,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4177
+      "weight": 0.415
     },
     {
       "pollster": "Rasmussen Reports",
@@ -1236,7 +1348,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.563
+      "weight": 0.5593
     },
     {
       "pollster": "GBAO",
@@ -1267,7 +1379,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Senate Majority PAC",
-      "weight": 0.2402
+      "weight": 0.2386
     },
     {
       "pollster": "The New York Times/Siena University",
@@ -1296,7 +1408,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4177
+      "weight": 0.415
     },
     {
       "pollster": "Cygnal/Beacon Research R-sponsored",
@@ -1327,7 +1439,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Michigan Enjoyer",
-      "weight": 0.2032
+      "weight": 0.2019
     },
     {
       "pollster": "Suffolk University",
@@ -1357,7 +1469,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3626
+      "weight": 0.3602
     },
     {
       "pollster": "Torchlight Strategies R-sponsored",
@@ -1388,7 +1500,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Common Sense for America PAC",
-      "weight": 0.2009
+      "weight": 0.1996
     },
     {
       "pollster": "InsiderAdvantage",
@@ -1418,7 +1530,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.262
+      "weight": 0.2603
     },
     {
       "pollster": "Emerson College",
@@ -1449,7 +1561,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Nexstar",
-      "weight": 0.4464
+      "weight": 0.4435
     },
     {
       "pollster": "The Washington Post/George Mason University Schar School of Policy and Government",
@@ -1479,7 +1591,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4
+      "weight": 0.3974
     },
     {
       "pollster": "Washington Post",
@@ -1507,7 +1619,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4
+      "weight": 0.3974
     },
     {
       "pollster": "Trafalgar Group",
@@ -1537,7 +1649,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2065
+      "weight": 0.2052
     },
     {
       "pollster": "SSRS",
@@ -1566,7 +1678,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3407
+      "weight": 0.3385
     },
     {
       "pollster": "CNN",
@@ -1594,7 +1706,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3407
+      "weight": 0.3385
     },
     {
       "pollster": "CNN/SSRS",
@@ -1629,7 +1741,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3407
+      "weight": 0.3385
     },
     {
       "pollster": "Glengariff Group, Inc.",
@@ -1659,7 +1771,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Detroit News | WDIV-TV",
-      "weight": 0.2682
+      "weight": 0.2664
     },
     {
       "pollster": "Detroit News/Glengariff",
@@ -1687,7 +1799,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2682
+      "weight": 0.2664
     },
     {
       "pollster": "Abacus Data",
@@ -1717,7 +1829,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1777
+      "weight": 0.1766
     },
     {
       "pollster": "EPIC-MRA",
@@ -1747,7 +1859,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2335
+      "weight": 0.2319
     },
     {
       "pollster": "Michigan State University Institute for Public Policy and Social Research/YouGov",
@@ -1777,7 +1889,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2211
+      "weight": 0.2197
     },
     {
       "pollster": "Michigan State University/YouGov",
@@ -1806,7 +1918,7 @@
         "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2211
+      "weight": 0.2197
     },
     {
       "pollster": "Susquehanna Polling & Research, Inc.",
@@ -1836,7 +1948,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1045
+      "weight": 0.1039
     },
     {
       "pollster": "ToWin",
@@ -1864,7 +1976,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1311
+      "weight": 0.1302
     },
     {
       "pollster": "Fabrizio Ward/ Impact Research R-sponsored",
@@ -1895,7 +2007,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "AARP",
-      "weight": 0.0953
+      "weight": 0.0947
     },
     {
       "pollster": "Beacon Research/Shaw & Company Research",
@@ -1926,7 +2038,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Fox News",
-      "weight": 0.0897
+      "weight": 0.0892
     },
     {
       "pollster": "FOX News",
@@ -1954,7 +2066,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1795
+      "weight": 0.1783
     },
     {
       "pollster": "GBAO D-sponsored",
@@ -1985,7 +2097,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Senate Majority PAC",
-      "weight": 0.0889
+      "weight": 0.0883
     },
     {
       "pollster": "Senate Majority PAC",
@@ -2013,7 +2125,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1195
+      "weight": 0.1187
     },
     {
       "pollster": "TIPP Insights",
@@ -2044,7 +2156,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "League of American Workers",
-      "weight": 0.1096
+      "weight": 0.1089
     },
     {
       "pollster": "TIPP",
@@ -2072,12 +2184,12 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2192
+      "weight": 0.2177
     },
     {
       "pollster": "EPIC-MRA",
       "endDate": "2026-07-31",
-      "weight": 0.1222,
+      "weight": 0.1215,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -2132,13 +2244,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1222,
+      "weight": 0.1215,
       "otherMatchup": true
     },
     {
       "pollster": "SoCal Strategies (R)",
       "endDate": "2026-07-30",
-      "weight": 0.0617,
+      "weight": 0.0613,
       "sampleSize": 640,
       "population": "LV",
       "results": [
@@ -2169,7 +2281,7 @@
     {
       "pollster": "Mitchell Research & Communications",
       "endDate": "2026-07-29",
-      "weight": 0.1235,
+      "weight": 0.1227,
       "sampleSize": 672,
       "population": "LV",
       "results": [
@@ -2220,7 +2332,7 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1235
+      "weight": 0.1227
     },
     {
       "pollster": "Mitchell Research & Communications",
@@ -2249,13 +2361,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1235,
+      "weight": 0.1227,
       "otherMatchup": true
     },
     {
       "pollster": "Glengariff Group, Inc.",
       "endDate": "2026-07-24",
-      "weight": 0.104,
+      "weight": 0.1033,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -2309,7 +2421,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Business Leaders for Michigan | Michigan Education Association",
-      "weight": 0.104,
+      "weight": 0.1033,
       "otherMatchup": true
     },
     {
@@ -2338,12 +2450,12 @@
         "https://pollingsource.com/senate/MI"
       ],
       "reviewStatus": "auto",
-      "weight": 0.104
+      "weight": 0.1033
     },
     {
       "pollster": "Quantus Insights",
       "endDate": "2026-06-30",
-      "weight": 0.075,
+      "weight": 0.0745,
       "sampleSize": 947,
       "population": "LV",
       "results": [
@@ -2395,13 +2507,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.075,
+      "weight": 0.0745,
       "otherMatchup": true
     },
     {
       "pollster": "Wedgewood Polls",
       "endDate": "2026-06-28",
-      "weight": 0.0571,
+      "weight": 0.0568,
       "sampleSize": 602,
       "population": "LV",
       "results": [
@@ -2429,7 +2541,7 @@
     {
       "pollster": "Data for Progress (D)",
       "endDate": "2026-06-22",
-      "weight": 0.027,
+      "weight": 0.0268,
       "sampleSize": 709,
       "population": "LV",
       "results": [
@@ -2483,13 +2595,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.027,
+      "weight": 0.0268,
       "otherMatchup": true
     },
     {
       "pollster": "Zenith Research (D)",
       "endDate": "2026-06-14",
-      "weight": 0.0207,
+      "weight": 0.0205,
       "sampleSize": 602,
       "population": "LV",
       "results": [
@@ -2543,13 +2655,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0207,
+      "weight": 0.0205,
       "otherMatchup": true
     },
     {
       "pollster": "Mitchell Research & Communications",
       "endDate": "2026-06-13",
-      "weight": 0.0473,
+      "weight": 0.047,
       "sampleSize": 827,
       "population": "LV",
       "results": [
@@ -2602,7 +2714,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0473,
+      "weight": 0.047,
       "otherMatchup": true
     },
     {
@@ -2632,13 +2744,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0473,
+      "weight": 0.047,
       "otherMatchup": true
     },
     {
       "pollster": "Tulchin Research (D)",
       "endDate": "2026-06-04",
-      "weight": 0.015,
+      "weight": 0.0149,
       "sampleSize": 500,
       "population": "LV",
       "results": [
@@ -2668,7 +2780,7 @@
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2026-05-23",
-      "weight": 0.0173,
+      "weight": 0.0172,
       "sampleSize": 1163,
       "population": "LV",
       "results": [
@@ -2698,7 +2810,7 @@
     {
       "pollster": "TIPP Insights (R)",
       "endDate": "2026-05-23",
-      "weight": 0.0174,
+      "weight": 0.0173,
       "sampleSize": 1456,
       "population": "RV",
       "results": [
@@ -2749,7 +2861,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0173,
+      "weight": 0.0172,
       "otherMatchup": true
     },
     {
@@ -2779,13 +2891,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0173,
+      "weight": 0.0172,
       "otherMatchup": true
     },
     {
       "pollster": "Mitchell Research & Communications",
       "endDate": "2026-05-07",
-      "weight": 0.0173,
+      "weight": 0.0171,
       "sampleSize": 607,
       "population": "LV",
       "results": [
@@ -2838,13 +2950,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.0172,
+      "weight": 0.0171,
       "otherMatchup": true
     },
     {
       "pollster": "Glengariff Group, Inc.",
       "endDate": "2026-05-01",
-      "weight": 0.0149,
+      "weight": 0.0148,
       "sampleSize": 600,
       "population": "LV",
       "results": [
@@ -2897,7 +3009,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Detroit Regional Chamber",
-      "weight": 0.0149,
+      "weight": 0.0148,
       "otherMatchup": true
     },
     {
