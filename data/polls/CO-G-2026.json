@@ -1,8 +1,37 @@
 {
   "raceId": "CO-G-2026",
-  "count": 3,
-  "updated_at": "2026-11-03T04:36:30.300Z",
+  "count": 4,
+  "updated_at": "2026-11-03T06:59:25.585Z",
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "endDate": "2026-11-02",
+      "fieldDates": "2026-10-31 to 2026-11-02",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Phil Weiser (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Victor Marx (R)",
+          "party": "R",
+          "pct": 38,
+          "percentage": 38
+        }
+      ],
+      "sourceUrl": "https://researchco.ca/2026/11/02/midterms-2026-two/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9208
+    },
     {
       "pollster": "YouGov",
       "endDate": "2026-10-20",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8585
+      "weight": 0.8565
     },
     {
       "pollster": "Lake Research Partners",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2237
+      "weight": 0.2232
     },
     {
       "pollster": "Magellan Strategies",

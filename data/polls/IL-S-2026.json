@@ -1,8 +1,37 @@
 {
   "raceId": "IL-S-2026",
-  "count": 3,
-  "updated_at": "2026-11-03T04:36:30.295Z",
+  "count": 4,
+  "updated_at": "2026-11-03T06:59:25.574Z",
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "endDate": "2026-11-02",
+      "fieldDates": "2026-10-31 to 2026-11-02",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Juliana Stratton (D)",
+          "party": "D",
+          "pct": 53,
+          "percentage": 53
+        },
+        {
+          "candidate": "Don Tracy (R)",
+          "party": "R",
+          "pct": 41,
+          "percentage": 41
+        }
+      ],
+      "sourceUrl": "https://researchco.ca/2026/11/02/midterms-2026-two/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9208
+    },
     {
       "pollster": "ActiVote In average",
       "endDate": "2026-10-30",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8119
+      "weight": 0.81
     },
     {
       "pollster": "ActiVote In average",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6444
+      "weight": 0.6429
     },
     {
       "pollster": "Public Policy Polling D-sponsored missed 2024 by 2.0 pts In average",
@@ -89,7 +118,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Chicago News Weekly",
-      "weight": 0.2477
+      "weight": 0.2472
     }
   ]
 }

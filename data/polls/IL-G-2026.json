@@ -1,8 +1,37 @@
 {
   "raceId": "IL-G-2026",
-  "count": 4,
-  "updated_at": "2026-11-03T04:36:30.306Z",
+  "count": 5,
+  "updated_at": "2026-11-03T06:59:25.588Z",
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "endDate": "2026-11-02",
+      "fieldDates": "2026-10-31 to 2026-11-02",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "JB Pritzker (D)",
+          "party": "D",
+          "pct": 57,
+          "percentage": 57
+        },
+        {
+          "candidate": "Darren Bailey (R)",
+          "party": "R",
+          "pct": 36,
+          "percentage": 36
+        }
+      ],
+      "sourceUrl": "https://researchco.ca/2026/11/02/midterms-2026-two/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9208
+    },
     {
       "pollster": "ActiVote",
       "endDate": "2026-10-31",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.8308
+      "weight": 0.8289
     },
     {
       "pollster": "ActiVote",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.6748
+      "weight": 0.6733
     },
     {
       "pollster": "Public Policy Polling",
@@ -94,7 +123,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4459
+      "weight": 0.4449
     },
     {
       "pollster": "Victory Research",

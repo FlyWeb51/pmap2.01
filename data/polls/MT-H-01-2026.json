@@ -1,8 +1,37 @@
 {
   "raceId": "MT-H-01-2026",
-  "count": 14,
-  "updated_at": "2026-11-03T04:36:30.260Z",
+  "count": 15,
+  "updated_at": "2026-11-03T06:59:25.545Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-31 to 2026-11-01",
+      "sampleSize": 311,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "Sam Forstag (D)",
+          "party": "D",
+          "pct": 48.8,
+          "percentage": 48.8
+        },
+        {
+          "candidate": "Aaron Flint (R)",
+          "party": "R",
+          "pct": 48.5,
+          "percentage": 48.5
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/new-poll-vault-emerson-senate-and",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.748
+    },
     {
       "pollster": "Montana State University Billings",
       "endDate": "2026-10-21",
@@ -36,7 +65,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.391
+      "weight": 0.3901
     },
     {
       "pollster": "Emerson College",
@@ -65,7 +94,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5087
+      "weight": 0.5076
     },
     {
       "pollster": "Public Policy Polling",
@@ -94,7 +123,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3136
+      "weight": 0.3129
     },
     {
       "pollster": "American Pulse Research & Polling",
@@ -124,7 +153,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "NonStop Local",
-      "weight": 0.3131
+      "weight": 0.3124
     },
     {
       "pollster": "American Pulse Research & Polling",
@@ -159,7 +188,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3131,
+      "weight": 0.3124,
       "otherMatchup": true
     },
     {
@@ -189,7 +218,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.193
+      "weight": 0.1926
     },
     {
       "pollster": "Public Policy Polling D-sponsored",
@@ -219,7 +248,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "The Bench",
-      "weight": 0.1332
+      "weight": 0.1329
     },
     {
       "pollster": "Public Policy Polling",
@@ -248,7 +277,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1332,
+      "weight": 0.1329,
       "otherMatchup": true
     },
     {
@@ -279,7 +308,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Montana Free Press",
-      "weight": 0.2079
+      "weight": 0.2074
     },
     {
       "pollster": "Impact Research (D)",
@@ -313,7 +342,7 @@
     {
       "pollster": "Upswing Research (D)",
       "endDate": "2026-05-05",
-      "weight": 0.0067,
+      "weight": 0.0066,
       "sampleSize": 401,
       "population": "LV",
       "results": [

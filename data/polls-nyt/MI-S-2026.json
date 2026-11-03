@@ -1,12 +1,151 @@
 {
   "raceId": "MI-S-2026",
-  "count": 110,
+  "count": 114,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "John Zogby Strategies",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-02",
+      "sampleSize": 1001,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://johnzogbystrategies.com/el-sayed-leads-rogers-51-49-new-john-zogby-strategies-eve-of-election-day-poll/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "percentage": 49
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Emerson College",
+      "sponsors": "Poll Vault",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "sampleSize": 500,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollvault.substack.com/p/new-poll-vault-emerson-senate-and",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "percentage": 51.2
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "percentage": 45.2
+        },
+        {
+          "candidate": "Lydia Christensen (LIB)",
+          "party": "LIB",
+          "percentage": 3.2
+        },
+        {
+          "candidate": "Walter Kristy (NAT)",
+          "party": "NAT",
+          "percentage": 0.4
+        },
+        {
+          "candidate": "Douglas Marsh (GRE)",
+          "party": "GRE",
+          "percentage": 0.1
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "Concord Public Opinion Partners",
+      "sponsors": "Education Reform Now Advocacy",
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "sampleSize": 510,
+      "population": "LV",
+      "partisan": "DEM",
+      "internal": false,
+      "sourceUrl": "https://concordpublicopinionpartners.org/blog/michigan-ge-2026",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "percentage": 51
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "percentage": 41
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 4
+        }
+      ],
+      "note": null
+    },
+    {
+      "pollster": "AtlasIntel",
+      "sponsors": null,
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-01",
+      "sampleSize": 1316,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollstergraph.com/poll/exclusive-atlas-us-mi-20261101-senate",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Abdul El-Sayed (D)",
+          "party": "D",
+          "percentage": 53.5
+        },
+        {
+          "candidate": "Mike Rogers (R)",
+          "party": "R",
+          "percentage": 46.4
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 0.1
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Trafalgar Group",
       "sponsors": null,

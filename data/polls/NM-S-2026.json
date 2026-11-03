@@ -1,8 +1,37 @@
 {
   "raceId": "NM-S-2026",
-  "count": 5,
-  "updated_at": "2026-11-03T04:36:30.289Z",
+  "count": 6,
+  "updated_at": "2026-11-03T06:59:25.572Z",
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "endDate": "2026-11-02",
+      "fieldDates": "2026-10-31 to 2026-11-02",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Ben Ray Luján (D)",
+          "party": "D",
+          "pct": 56,
+          "percentage": 56
+        },
+        {
+          "candidate": "Larry Marker (R)",
+          "party": "R",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://researchco.ca/2026/11/02/midterms-2026-two/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.9208
+    },
     {
       "pollster": "Research & Polling Inc. In average",
       "endDate": "2026-10-09",
@@ -31,7 +60,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Albuquerque Journal",
-      "weight": 0.8381
+      "weight": 0.8362
     },
     {
       "pollster": "SurveyUSA In average",
@@ -59,7 +88,7 @@
         "https://pollingsource.com/senate/NM"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5425
+      "weight": 0.5412
     },
     {
       "pollster": "SurveyUSA",
@@ -89,7 +118,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "KOB-TV (Albuquerque)",
-      "weight": 0.4833
+      "weight": 0.4822
     },
     {
       "pollster": "SurveyUSA In average",
@@ -117,7 +146,7 @@
         "https://pollingsource.com/senate/NM"
       ],
       "reviewStatus": "auto",
-      "weight": 0.4833
+      "weight": 0.4822
     },
     {
       "pollster": "Research & Polling Inc. In average",
@@ -147,7 +176,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Albuquerque Journal",
-      "weight": 0.2151
+      "weight": 0.2146
     }
   ]
 }

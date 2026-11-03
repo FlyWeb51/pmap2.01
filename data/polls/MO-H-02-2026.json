@@ -1,8 +1,37 @@
 {
   "raceId": "MO-H-02-2026",
-  "count": 5,
-  "updated_at": "2026-11-03T04:36:30.259Z",
+  "count": 6,
+  "updated_at": "2026-11-03T06:59:25.544Z",
   "polls": [
+    {
+      "pollster": "Emerson College",
+      "endDate": "2026-11-01",
+      "fieldDates": "2026-10-31 to 2026-11-01",
+      "sampleSize": 413,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": "Poll Vault",
+      "results": [
+        {
+          "candidate": "Fred Wellman (D)",
+          "party": "D",
+          "pct": 49.5,
+          "percentage": 49.5
+        },
+        {
+          "candidate": "Ann Wagner (R)",
+          "party": "R",
+          "pct": 48.7,
+          "percentage": 48.7
+        }
+      ],
+      "sourceUrl": "https://pollvault.substack.com/p/new-poll-vault-emerson-senate-and",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.862
+    },
     {
       "pollster": "Public Policy Polling",
       "endDate": "2026-10-20",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3602
+      "weight": 0.3594
     },
     {
       "pollster": "Emerson College",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.5617
+      "weight": 0.5604
     },
     {
       "pollster": "Remington Research Group",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1706
+      "weight": 0.1702
     },
     {
       "pollster": "Remington",
@@ -117,13 +146,13 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.3411,
+      "weight": 0.3404,
       "otherMatchup": true
     },
     {
       "pollster": "FM3 Research (D)",
       "endDate": "2026-05-31",
-      "weight": 0.0297,
+      "weight": 0.0296,
       "sampleSize": 600,
       "population": "LV",
       "results": [

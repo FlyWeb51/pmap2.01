@@ -1,12 +1,43 @@
 {
   "raceId": "GA-G-2026",
-  "count": 32,
+  "count": 33,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-02",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://researchco.ca/2026/11/02/midterms-2026-two/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Keisha Lance Bottoms (D)",
+          "party": "D",
+          "percentage": 46
+        },
+        {
+          "candidate": "Rick Jackson (R)",
+          "party": "R",
+          "percentage": 45
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 9
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "InsiderAdvantage",
       "sponsors": "James Magazine Online",

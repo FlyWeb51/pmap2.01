@@ -1,12 +1,48 @@
 {
   "raceId": "TN-S-2026",
-  "count": 2,
+  "count": 3,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Targoz Market Research",
+      "sponsors": null,
+      "startDate": "2025-10-24",
+      "endDate": "2026-11-02",
+      "sampleSize": 716,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.targoz.com/market-matters-blog/2026/11/2/tennessee-poll-blackburn-leads-green-by-19-points-hagerty-leads-bradshaw-by-20-points",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Bill Hagerty (R)",
+          "party": "R",
+          "percentage": 57
+        },
+        {
+          "candidate": "Marquita Bradshaw (D)",
+          "party": "D",
+          "percentage": 37
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Targoz Market Research",
       "sponsors": "Beacon Center",

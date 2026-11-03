@@ -1,19 +1,19 @@
 {
   "meta": {
     "title": "U.S. House generic ballot, 2026",
-    "generated": "2026-11-02T21:48:38.150Z",
-    "asOf": "2026-10-30",
+    "generated": "2026-11-03T06:59:25.735Z",
+    "asOf": "2026-11-01",
     "source": "Site poll set (NYT polling data, Wikipedia, PollingSource); average matches data/poll-average/generic-ballot.json",
     "weighting": "recency (30-day half-life) x sqrt(sample size, capped 2x) x population (LV 1.0 / RV 0.9 / A 0.7) x independence (partisan 0.5), last 90 days",
-    "pollCount": 126,
+    "pollCount": 130,
     "dateRange": [
-      "2026-08-04",
-      "2026-10-30"
+      "2026-08-07",
+      "2026-11-01"
     ]
   },
   "average": {
-    "dem": 50.2,
-    "rep": 42.1,
+    "dem": 50.4,
+    "rep": 42.3,
     "margin": 8.1
   },
   "series": [
@@ -121,14 +121,14 @@
     },
     {
       "date": "2026-11-01",
-      "dem": 50.17,
-      "rep": 42.09,
-      "margin": 8.08
+      "dem": 50.32,
+      "rep": 42.25,
+      "margin": 8.07
     },
     {
-      "date": "2026-11-02",
-      "dem": 50.2,
-      "rep": 42.1,
+      "date": "2026-11-03",
+      "dem": 50.4,
+      "rep": 42.3,
       "margin": 8.1
     }
   ],
@@ -2006,7 +2006,7 @@
       "race": "House - Generic Ballot"
     },
     {
-      "pollster": "ActiVote In average",
+      "pollster": "ActiVote Not in average",
       "lean": null,
       "date": "2026-10-30",
       "n": 2000,
@@ -2018,7 +2018,7 @@
       "race": "House - Generic Ballot"
     },
     {
-      "pollster": "Big Data Poll In average",
+      "pollster": "Big Data Poll Not in average",
       "lean": null,
       "date": "2026-10-30",
       "n": 3214,
@@ -2030,7 +2030,7 @@
       "race": "House - Generic Ballot"
     },
     {
-      "pollster": "NBC News missed 2024 by 2.3 pts In average",
+      "pollster": "NBC News missed 2024 by 2.3 pts Not in average",
       "lean": null,
       "date": "2026-10-30",
       "n": 1000,
@@ -2038,6 +2038,54 @@
       "dem": 52,
       "rep": 45,
       "margin": 7,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Economist/YouGov In average",
+      "lean": null,
+      "date": "2026-10-30",
+      "n": 3915,
+      "population": "LV",
+      "dem": 53,
+      "rep": 44,
+      "margin": 9,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Reuters/Ipsos missed 2024 by 3.8 pts In average",
+      "lean": null,
+      "date": "2026-11-01",
+      "n": 1212,
+      "population": "LV",
+      "dem": 52,
+      "rep": 44,
+      "margin": 8,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Financial Times In average",
+      "lean": null,
+      "date": "2026-11-01",
+      "n": 2090,
+      "population": "LV",
+      "dem": 52,
+      "rep": 45,
+      "margin": 7,
+      "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
+      "race": "House - Generic Ballot"
+    },
+    {
+      "pollster": "Morning Consult missed 2024 by 4.0 pts Not in average",
+      "lean": null,
+      "date": "2026-11-01",
+      "n": 16929,
+      "population": "LV",
+      "dem": 51,
+      "rep": 43,
+      "margin": 8,
       "sourceUrl": "https://pollingsource.com/polls/generic-ballot",
       "race": "House - Generic Ballot"
     }

@@ -1,12 +1,53 @@
 {
   "raceId": "AK-H-01-2026",
-  "count": 31,
+  "count": 32,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "AtlasIntel",
+      "sponsors": null,
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-01",
+      "sampleSize": 522,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollstergraph.com/poll/exclusive-atlas-us-ak-20261101-house",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Bill Hill (I)",
+          "party": "I",
+          "percentage": 46.6
+        },
+        {
+          "candidate": "Nick Begich (R)",
+          "party": "R",
+          "percentage": 46.5
+        },
+        {
+          "candidate": "Eric Hafner (D)",
+          "party": "D",
+          "percentage": 5.9
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 0.6
+        },
+        {
+          "candidate": "Jim C. McDermott (LIB)",
+          "party": "LIB",
+          "percentage": 0.3
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The New York Times/Siena University",
       "sponsors": null,

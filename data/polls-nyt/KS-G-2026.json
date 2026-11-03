@@ -1,12 +1,53 @@
 {
   "raceId": "KS-G-2026",
-  "count": 14,
+  "count": 15,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "AtlasIntel",
+      "sponsors": null,
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-01",
+      "sampleSize": 2038,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollstergraph.com/poll/exclusive-atlas-us-ks-20261101-senate",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Cindy Holscher (D)",
+          "party": "D",
+          "percentage": 49.9
+        },
+        {
+          "candidate": "Ty Masterson (R)",
+          "party": "R",
+          "percentage": 45.6
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 2.3
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1.5
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 0.6
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Survey 160",
       "sponsors": null,

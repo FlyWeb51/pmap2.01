@@ -1,12 +1,48 @@
 {
   "raceId": "FL-S-2026",
-  "count": 49,
+  "count": 50,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Research Co.",
+      "sponsors": null,
+      "startDate": "2026-10-31",
+      "endDate": "2026-11-02",
+      "sampleSize": 450,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://researchco.ca/2026/11/02/midterms-2026-two/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Ashley Moody (R)",
+          "party": "R",
+          "percentage": 51
+        },
+        {
+          "candidate": "Angie Nixon (D)",
+          "party": "D",
+          "percentage": 44
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 4
+        },
+        {
+          "candidate": "Neil Gillespie (NPA)",
+          "party": "NPA",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Stetson University Center for Public Opinion Research",
       "sponsors": null,

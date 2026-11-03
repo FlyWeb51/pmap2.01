@@ -1,12 +1,58 @@
 {
   "raceId": "TN-G-2026",
-  "count": 9,
+  "count": 10,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Targoz Market Research",
+      "sponsors": null,
+      "startDate": "2025-10-24",
+      "endDate": "2026-11-02",
+      "sampleSize": 718,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://www.targoz.com/market-matters-blog/2026/11/2/tennessee-poll-blackburn-leads-green-by-19-points-hagerty-leads-bradshaw-by-20-points",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Marsha Blackburn (R)",
+          "party": "R",
+          "percentage": 54
+        },
+        {
+          "candidate": "Jerri Green (D)",
+          "party": "D",
+          "percentage": 35
+        },
+        {
+          "candidate": "David Hatley (I)",
+          "party": "I",
+          "percentage": 7
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 1
+        },
+        {
+          "candidate": "Lauren Pinkston (I)",
+          "party": "I",
+          "percentage": 1
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Spry Strategies",
       "sponsors": null,

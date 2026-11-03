@@ -1,8 +1,37 @@
 {
   "raceId": "TN-S-2026",
-  "count": 2,
-  "updated_at": "2026-11-03T04:36:30.289Z",
+  "count": 3,
+  "updated_at": "2026-11-03T06:59:25.572Z",
   "polls": [
+    {
+      "pollster": "Targoz Market Research",
+      "endDate": "2026-11-02",
+      "fieldDates": "2025-10-24 to 2026-11-02",
+      "sampleSize": 716,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Bill Hagerty (R)",
+          "party": "R",
+          "pct": 57,
+          "percentage": 57
+        },
+        {
+          "candidate": "Marquita Bradshaw (D)",
+          "party": "D",
+          "pct": 37,
+          "percentage": 37
+        }
+      ],
+      "sourceUrl": "https://www.targoz.com/market-matters-blog/2026/11/2/tennessee-poll-blackburn-leads-green-by-19-points-hagerty-leads-bradshaw-by-20-points",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 1.1615
+    },
     {
       "pollster": "Targoz Market Research",
       "endDate": "2026-08-26",
@@ -37,7 +66,7 @@
       ],
       "reviewStatus": "auto",
       "sponsors": "Beacon Center",
-      "weight": 0.2227
+      "weight": 0.2222
     },
     {
       "pollster": "Beacon Center Not in average",
@@ -65,7 +94,7 @@
         "https://pollingsource.com/senate/TN"
       ],
       "reviewStatus": "auto",
-      "weight": 0.2022
+      "weight": 0.2017
     }
   ]
 }

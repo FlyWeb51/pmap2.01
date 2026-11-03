@@ -1,12 +1,53 @@
 {
   "raceId": "IA-S-2026",
-  "count": 53,
+  "count": 54,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "AtlasIntel",
+      "sponsors": null,
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-01",
+      "sampleSize": 1219,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://pollstergraph.com/poll/exclusive-atlas-us-ia-20261101-governor",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "Josh Turek (D)",
+          "party": "D",
+          "percentage": 50.5
+        },
+        {
+          "candidate": "Ashley Hinson (R)",
+          "party": "R",
+          "percentage": 46.4
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2.7
+        },
+        {
+          "candidate": "Would not vote (NON)",
+          "party": "NON",
+          "percentage": 0.3
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 0.2
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "The New York Times/Siena University",
       "sponsors": null,
