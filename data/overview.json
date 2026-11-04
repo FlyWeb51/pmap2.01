@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T03:56:21.630Z",
+  "generatedAt": "2026-11-04T06:42:21.651Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -1883,7 +1883,7 @@
         "type": "House",
         "now": 86.1,
         "ch1": 66.6,
-        "ch7": 66.4,
+        "ch7": 67.4,
         "dem": "J.D. Ford",
         "rep": "Victoria Spartz",
         "thirdParty": false
@@ -1894,7 +1894,7 @@
         "type": "Senate",
         "now": 81.5,
         "ch1": 49,
-        "ch7": 58,
+        "ch7": 59,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
         "thirdParty": false
@@ -1905,7 +1905,7 @@
         "type": "House",
         "now": 88.2,
         "ch1": 48.7,
-        "ch7": 57.7,
+        "ch7": 58,
         "dem": "Darren Soto",
         "rep": "Dan Green",
         "thirdParty": false
@@ -1916,7 +1916,7 @@
         "type": "House",
         "now": 75.5,
         "ch1": 44.3,
-        "ch7": 46.3,
+        "ch7": 46,
         "dem": "Zack Mullock",
         "rep": "Jeff Van Drew",
         "thirdParty": false
@@ -1927,7 +1927,7 @@
         "type": "Governor",
         "now": 81.3,
         "ch1": 43.8,
-        "ch7": 48.8,
+        "ch7": 47.8,
         "dem": "Gina Hinojosa",
         "rep": "Greg Abbott",
         "thirdParty": false
@@ -1949,7 +1949,7 @@
         "type": "House",
         "now": 46.6,
         "ch1": 41,
-        "ch7": 39.6,
+        "ch7": 39.7,
         "dem": "Shaun Finnie",
         "rep": "Steve Toth",
         "thirdParty": false
@@ -1971,7 +1971,7 @@
         "type": "House",
         "now": 78.5,
         "ch1": 37,
-        "ch7": 34.9,
+        "ch7": 35.3,
         "dem": "Matt Dunlap",
         "rep": "Paul LePage",
         "thirdParty": false
@@ -1982,7 +1982,7 @@
         "type": "House",
         "now": 56.3,
         "ch1": 37,
-        "ch7": 36.2,
+        "ch7": 36.6,
         "dem": "Don Coover",
         "rep": "Derek Schmidt",
         "thirdParty": false
@@ -2004,7 +2004,7 @@
         "type": "House",
         "now": 69.5,
         "ch1": 36.7,
-        "ch7": 29,
+        "ch7": 29.4,
         "dem": "Teresa Benitez-Thompson",
         "rep": "David Flippo",
         "thirdParty": false
@@ -2017,7 +2017,7 @@
         "type": "House",
         "now": 86.1,
         "ch1": 66.6,
-        "ch7": 66.4,
+        "ch7": 67.4,
         "dem": "J.D. Ford",
         "rep": "Victoria Spartz",
         "thirdParty": false
@@ -2028,7 +2028,7 @@
         "type": "Senate",
         "now": 81.5,
         "ch1": 49,
-        "ch7": 58,
+        "ch7": 59,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
         "thirdParty": false
@@ -2039,20 +2039,9 @@
         "type": "House",
         "now": 88.2,
         "ch1": 48.7,
-        "ch7": 57.7,
+        "ch7": 58,
         "dem": "Darren Soto",
         "rep": "Dan Green",
-        "thirdParty": false
-      },
-      {
-        "key": "G-TX",
-        "name": "Texas",
-        "type": "Governor",
-        "now": 81.3,
-        "ch1": 43.8,
-        "ch7": 48.8,
-        "dem": "Gina Hinojosa",
-        "rep": "Greg Abbott",
         "thirdParty": false
       },
       {
@@ -2061,9 +2050,20 @@
         "type": "Senate",
         "now": 87.4,
         "ch1": 24.9,
-        "ch7": 46.9,
+        "ch7": 47.9,
         "dem": "Adam Hamilton",
         "rep": "Roger Marshall",
+        "thirdParty": false
+      },
+      {
+        "key": "G-TX",
+        "name": "Texas",
+        "type": "Governor",
+        "now": 81.3,
+        "ch1": 43.8,
+        "ch7": 47.8,
+        "dem": "Gina Hinojosa",
+        "rep": "Greg Abbott",
         "thirdParty": false
       },
       {
@@ -2078,17 +2078,6 @@
         "thirdParty": false
       },
       {
-        "key": "H-NJ-02",
-        "name": "NJ-2",
-        "type": "House",
-        "now": 75.5,
-        "ch1": 44.3,
-        "ch7": 46.3,
-        "dem": "Zack Mullock",
-        "rep": "Jeff Van Drew",
-        "thirdParty": false
-      },
-      {
         "key": "H-AL-02",
         "name": "AL-2",
         "type": "House",
@@ -2100,12 +2089,23 @@
         "thirdParty": false
       },
       {
+        "key": "H-NJ-02",
+        "name": "NJ-2",
+        "type": "House",
+        "now": 75.5,
+        "ch1": 44.3,
+        "ch7": 46,
+        "dem": "Zack Mullock",
+        "rep": "Jeff Van Drew",
+        "thirdParty": false
+      },
+      {
         "key": "H-PA-01",
         "name": "PA-1",
         "type": "House",
         "now": 88.1,
         "ch1": 34.1,
-        "ch7": 45,
+        "ch7": 45.2,
         "dem": "Bob Harvie",
         "rep": "Brian Fitzpatrick",
         "thirdParty": false
@@ -2122,17 +2122,6 @@
         "thirdParty": false
       },
       {
-        "key": "S-IA",
-        "name": "Iowa",
-        "type": "Senate",
-        "now": 82.9,
-        "ch1": 31.9,
-        "ch7": 41.4,
-        "dem": "Josh Turek",
-        "rep": "Ashley Hinson",
-        "thirdParty": false
-      },
-      {
         "key": "H-SC-01",
         "name": "SC-1",
         "type": "House",
@@ -2141,6 +2130,17 @@
         "ch7": 39.8,
         "dem": "Nancy S. Lacore",
         "rep": "Jenny Costa Honeycutt",
+        "thirdParty": false
+      },
+      {
+        "key": "H-TX-02",
+        "name": "TX-2",
+        "type": "House",
+        "now": 46.6,
+        "ch1": 41,
+        "ch7": 39.7,
+        "dem": "Shaun Finnie",
+        "rep": "Steve Toth",
         "thirdParty": false
       }
     ]
@@ -2569,7 +2569,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-11-04T01:21:55.770Z",
-    "nytUpdated": "2026-11-03T19:38:51.450Z",
+    "nytUpdated": "2026-11-04T06:42:21.246Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
