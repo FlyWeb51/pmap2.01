@@ -64902,5 +64902,82 @@
     "sourceUrl": null,
     "aggregatorUrl": "https://pollingsource.com/polls/generic-ballot",
     "scrapedAt": "2026-11-04T03:55:01.488Z"
+  },
+  {
+    "raceId": "AK-senate",
+    "pollster": "AtlasIntel",
+    "partisanLean": null,
+    "fieldDates": "October 28 – November 1, 2026",
+    "sampleSize": 522,
+    "methodology": null,
+    "weight": 1,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Dan S. Sullivan (R)",
+        "pct": 45
+      },
+      {
+        "candidate": "Mary Peltola (D)",
+        "pct": 50
+      },
+      {
+        "candidate": "Dan J. Sullivan (I)",
+        "pct": 1
+      },
+      {
+        "candidate": "Gerald Heikes (R)",
+        "pct": 2
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska",
+    "scrapedAt": "2026-11-04T19:13:01.976Z"
+  },
+  {
+    "raceId": "NE-senate",
+    "pollster": "rowspan=\"2\" |GrayHouse",
+    "partisanLean": "R",
+    "fieldDates": "rowspan=\"2\"|October 29 – November 1, 2026",
+    "sampleSize": 534,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Pete Ricketts (R)",
+        "pct": 50
+      },
+      {
+        "candidate": "Dan Osborn (I)",
+        "pct": 44
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska",
+    "scrapedAt": "2026-11-04T19:13:03.208Z"
+  },
+  {
+    "raceId": "SC-senate",
+    "pollster": "Rasmussen Reports",
+    "partisanLean": "R",
+    "fieldDates": "October 27–31, 2026",
+    "sampleSize": 1028,
+    "methodology": null,
+    "weight": 0.6,
+    "reviewStatus": "pending",
+    "results": [
+      {
+        "candidate": "Darline Graham (R)",
+        "pct": 50
+      },
+      {
+        "candidate": "Annie Andrews (D)",
+        "pct": 47
+      }
+    ],
+    "sourceUrl": null,
+    "aggregatorUrl": "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina",
+    "scrapedAt": "2026-11-04T19:13:04.477Z"
   }
 ]
