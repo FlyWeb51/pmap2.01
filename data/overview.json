@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T17:21:46.473Z",
+  "generatedAt": "2026-11-07T18:48:04.632Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -49,7 +49,7 @@
         "incumbent": "Dan Sullivan",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.968,
+        "kalshiD": 0.971,
         "nyt": {
           "averageMargin": 1.9,
           "averagePolls": 25,
@@ -633,7 +633,7 @@
     "housePopVoteMarginD": {
       "event": "KXHOUSEPOPVOTEMARGIND-26NOV03",
       "title": "2026 Midterms: House popular vote margin of victory? (Directional)",
-      "median": 14.3,
+      "median": 14.4,
       "ladder": [
         {
           "atLeast": 2,
@@ -645,7 +645,7 @@
         },
         {
           "atLeast": 5,
-          "pct": 98.5
+          "pct": 99
         },
         {
           "atLeast": 6,
@@ -669,7 +669,7 @@
         },
         {
           "atLeast": 11,
-          "pct": 98
+          "pct": 89
         },
         {
           "atLeast": 12,
@@ -677,31 +677,31 @@
         },
         {
           "atLeast": 13,
-          "pct": 97.5
+          "pct": 91.5
         },
         {
           "atLeast": 13.5,
-          "pct": 95.5
+          "pct": 88.5
         },
         {
           "atLeast": 14,
-          "pct": 84.5
+          "pct": 94
         },
         {
           "atLeast": 14.2,
-          "pct": 58
+          "pct": 52
         },
         {
           "atLeast": 14.4,
-          "pct": 33
+          "pct": 51.5
         },
         {
           "atLeast": 14.5,
-          "pct": 17.5
+          "pct": 11
         },
         {
           "atLeast": 15,
-          "pct": 6.5
+          "pct": 10.5
         },
         {
           "atLeast": 15.5,
@@ -716,7 +716,7 @@
     "houseSeatsD": {
       "event": "KXDHOUSEWON-26NOV03",
       "title": "How many House seats will Democrats win in the Midterms?",
-      "median": 260.2,
+      "median": 260.1,
       "ladder": [
         {
           "atLeast": 210,
@@ -772,7 +772,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 10.5
+          "pct": 8
         },
         {
           "atLeast": 266,
@@ -861,7 +861,7 @@
       "question": "Yes",
       "pct": 1.5
     },
-    "fetchedAt": "2026-11-07T14:05:50.442Z"
+    "fetchedAt": "2026-11-07T18:48:04.487Z"
   },
   "markets": {
     "blueWave": {
@@ -869,8 +869,8 @@
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
       "pct": 98.9
     },
-    "popVoteMarginD": 14.3,
-    "houseSeatsD": 260.2,
+    "popVoteMarginD": 14.4,
+    "houseSeatsD": 260.1,
     "senateSeatsWonD": 22.5
   },
   "governors": [
@@ -1146,26 +1146,6 @@
       }
     },
     {
-      "state": "KS",
-      "name": "Kansas",
-      "kalshiD": 0.995,
-      "holder": "D",
-      "incumbent": "Laura Kelly",
-      "flip": false,
-      "dem": "Cindy Holscher",
-      "rep": "Ty Masterson",
-      "poll": {
-        "averageMargin": 0.3,
-        "averagePolls": 14,
-        "latest": {
-          "pollster": "AtlasIntel",
-          "endDate": "2026-11-01",
-          "margin": 4.299999999999997
-        },
-        "source": "NYT"
-      }
-    },
-    {
       "state": "IA",
       "name": "Iowa",
       "kalshiD": 0.996,
@@ -1181,6 +1161,26 @@
           "pollster": "AtlasIntel",
           "endDate": "2026-11-01",
           "margin": 10.100000000000001
+        },
+        "source": "NYT"
+      }
+    },
+    {
+      "state": "KS",
+      "name": "Kansas",
+      "kalshiD": 0.996,
+      "holder": "D",
+      "incumbent": "Laura Kelly",
+      "flip": false,
+      "dem": "Cindy Holscher",
+      "rep": "Ty Masterson",
+      "poll": {
+        "averageMargin": 0.3,
+        "averagePolls": 14,
+        "latest": {
+          "pollster": "AtlasIntel",
+          "endDate": "2026-11-01",
+          "margin": 4.299999999999997
         },
         "source": "NYT"
       }
@@ -1781,7 +1781,7 @@
         "expected": -3.6,
         "pollMargin": 1.5,
         "overUnder": 5.1,
-        "kalshiD": 0.968
+        "kalshiD": 0.971
       },
       {
         "state": "SC",
@@ -1890,61 +1890,94 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-07T14:05:50.452Z",
+    "updated": "2026-11-07T18:48:04.500Z",
     "day": [
       {
         "key": "H-CA-23",
         "name": "CA-23",
         "type": "House",
-        "now": 3.6,
-        "ch1": -3.2,
-        "ch7": -0.2,
+        "now": 2.4,
+        "ch1": -4.4,
+        "ch7": -1.4,
         "dem": "Tessa Lynn Hodge",
         "rep": "Jay Obernolte",
-        "thirdParty": false
-      },
-      {
-        "key": "H-AZ-02",
-        "name": "AZ-2",
-        "type": "House",
-        "now": 1.2,
-        "ch1": -2.8,
-        "ch7": -39.9,
-        "dem": "Jonathan Nez",
-        "rep": "Eli Crane",
         "thirdParty": false
       },
       {
         "key": "H-WA-05",
         "name": "WA-5",
         "type": "House",
-        "now": 1,
-        "ch1": -2.8,
-        "ch7": -16.3,
+        "now": 0.7,
+        "ch1": -3.1,
+        "ch7": -16.6,
         "dem": "Carmela Conroy",
         "rep": "Michael Baumgartner",
         "thirdParty": false
       },
       {
-        "key": "H-FL-26",
-        "name": "FL-26",
+        "key": "H-AZ-02",
+        "name": "AZ-2",
         "type": "House",
-        "now": 0.4,
-        "ch1": -1.5,
-        "ch7": -15.1,
-        "dem": "Nicole Locklin",
-        "rep": "Mario Díaz-Balart",
+        "now": 1.1,
+        "ch1": -2.9,
+        "ch7": -40,
+        "dem": "Jonathan Nez",
+        "rep": "Eli Crane",
+        "thirdParty": false
+      },
+      {
+        "key": "H-FL-27",
+        "name": "FL-27",
+        "type": "House",
+        "now": 4.3,
+        "ch1": 2,
+        "ch7": -31.6,
+        "dem": "Eliott Rodriguez",
+        "rep": "Maria Elvira Salazar",
         "thirdParty": false
       },
       {
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
-        "now": 9.5,
-        "ch1": -1.5,
-        "ch7": 4.8,
+        "now": 9.2,
+        "ch1": -1.8,
+        "ch7": 4.5,
         "dem": null,
         "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "H-MN-01",
+        "name": "MN-1",
+        "type": "House",
+        "now": 97.7,
+        "ch1": 1.6,
+        "ch7": 58,
+        "dem": "Jake Johnson",
+        "rep": "Brad Finstad",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-03",
+        "name": "NC-3",
+        "type": "House",
+        "now": 78.9,
+        "ch1": -1.4,
+        "ch7": 36.7,
+        "dem": "Raymond Smith Jr.",
+        "rep": "Greg Murphy",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-05",
+        "name": "NC-5",
+        "type": "House",
+        "now": 97.7,
+        "ch1": 1.3,
+        "ch7": 80.8,
+        "dem": "Chuck Hubbard",
+        "rep": "Virginia Foxx",
         "thirdParty": false
       },
       {
@@ -1957,28 +1990,6 @@
         "dem": "Scott Colom",
         "rep": "Cindy Hyde-Smith",
         "thirdParty": false
-      },
-      {
-        "key": "H-CO-04",
-        "name": "CO-4",
-        "type": "House",
-        "now": 97.2,
-        "ch1": -1,
-        "ch7": 58.1,
-        "dem": "Eileen Laubacher",
-        "rep": "Lauren Boebert",
-        "thirdParty": false
-      },
-      {
-        "key": "H-TN-04",
-        "name": "TN-4",
-        "type": "House",
-        "now": 95,
-        "ch1": -1,
-        "ch7": 92,
-        "dem": "Victoria Broderick",
-        "rep": "Scott DesJarlais",
-        "thirdParty": false
       }
     ],
     "week": [
@@ -1986,9 +1997,9 @@
         "key": "H-TN-04",
         "name": "TN-4",
         "type": "House",
-        "now": 95,
-        "ch1": -1,
-        "ch7": 92,
+        "now": 96,
+        "ch1": 0,
+        "ch7": 93,
         "dem": "Victoria Broderick",
         "rep": "Scott DesJarlais",
         "thirdParty": false
@@ -2019,9 +2030,9 @@
         "key": "H-NC-05",
         "name": "NC-5",
         "type": "House",
-        "now": 96.9,
-        "ch1": 0.5,
-        "ch7": 80,
+        "now": 97.7,
+        "ch1": 1.3,
+        "ch7": 80.8,
         "dem": "Chuck Hubbard",
         "rep": "Virginia Foxx",
         "thirdParty": false
@@ -2041,9 +2052,9 @@
         "key": "G-KS",
         "name": "Kansas",
         "type": "Governor",
-        "now": 99.5,
-        "ch1": 0,
-        "ch7": 73,
+        "now": 99.6,
+        "ch1": 0.1,
+        "ch7": 73.1,
         "dem": "Cindy Holscher",
         "rep": "Ty Masterson",
         "thirdParty": false
@@ -2375,19 +2386,19 @@
     },
     {
       "chamber": "House",
-      "id": "PA-08",
+      "id": "CO-04",
       "holder": "R",
-      "incumbent": "Robert P. Bresnahan, Jr.",
+      "incumbent": "Lauren Boebert",
       "favored": "D",
       "prob": 98
     },
     {
       "chamber": "House",
-      "id": "CO-04",
+      "id": "MN-01",
       "holder": "R",
-      "incumbent": "Lauren Boebert",
+      "incumbent": "Brad Finstad",
       "favored": "D",
-      "prob": 97
+      "prob": 98
     },
     {
       "chamber": "House",
@@ -2395,7 +2406,15 @@
       "holder": "R",
       "incumbent": "Virginia Foxx",
       "favored": "D",
-      "prob": 97
+      "prob": 98
+    },
+    {
+      "chamber": "House",
+      "id": "PA-08",
+      "holder": "R",
+      "incumbent": "Robert P. Bresnahan, Jr.",
+      "favored": "D",
+      "prob": 98
     },
     {
       "chamber": "Senate",
@@ -2407,9 +2426,9 @@
     },
     {
       "chamber": "House",
-      "id": "MN-01",
+      "id": "TN-04",
       "holder": "R",
-      "incumbent": "Brad Finstad",
+      "incumbent": "Scott DesJarlais",
       "favored": "D",
       "prob": 96
     },
@@ -2420,14 +2439,6 @@
       "incumbent": "Julie Johnson",
       "favored": "R",
       "prob": 96
-    },
-    {
-      "chamber": "House",
-      "id": "TN-04",
-      "holder": "R",
-      "incumbent": "Scott DesJarlais",
-      "favored": "D",
-      "prob": 95
     },
     {
       "chamber": "House",
@@ -2451,13 +2462,13 @@
       "id": "NC-03",
       "holder": "R",
       "incumbent": "Gregory F. Murphy",
-      "dPct": 80
+      "dPct": 79
     },
     {
       "id": "LA-06",
       "holder": "D",
       "incumbent": "Cleo Fields",
-      "dPct": 10
+      "dPct": 9
     },
     {
       "id": "NH-01",
@@ -2466,22 +2477,16 @@
       "dPct": 93
     },
     {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
-      "dPct": 6
-    },
-    {
       "id": "NY-19",
       "holder": "D",
       "incumbent": "Josh Riley",
       "dPct": 94
     },
     {
-      "id": "TN-04",
+      "id": "LA-05",
       "holder": "R",
-      "incumbent": "Scott DesJarlais",
-      "dPct": 95
+      "incumbent": "Julia Letlow",
+      "dPct": 6
     },
     {
       "id": "MI-08",
@@ -2496,9 +2501,15 @@
       "dPct": 96
     },
     {
-      "id": "MN-01",
+      "id": "FL-27",
       "holder": "R",
-      "incumbent": "Brad Finstad",
+      "incumbent": "Maria Elvira Salazar",
+      "dPct": 4
+    },
+    {
+      "id": "TN-04",
+      "holder": "R",
+      "incumbent": "Scott DesJarlais",
       "dPct": 96
     },
     {
@@ -2508,38 +2519,38 @@
       "dPct": 4
     },
     {
-      "id": "CA-23",
-      "holder": "R",
-      "incumbent": "Jay Obernolte",
-      "dPct": 4
-    },
-    {
-      "id": "NC-05",
-      "holder": "R",
-      "incumbent": "Virginia Foxx",
-      "dPct": 97
-    },
-    {
-      "id": "FL-27",
-      "holder": "R",
-      "incumbent": "Maria Elvira Salazar",
-      "dPct": 3
-    },
-    {
       "id": "VA-10",
       "holder": "D",
       "incumbent": "Suhas Subramanyam",
       "dPct": 97
     },
     {
-      "id": "CO-04",
-      "holder": "R",
-      "incumbent": "Lauren Boebert",
+      "id": "IN-07",
+      "holder": "D",
+      "incumbent": "André Carson",
       "dPct": 97
+    },
+    {
+      "id": "NY-22",
+      "holder": "D",
+      "incumbent": "John W. Mannion",
+      "dPct": 98
+    },
+    {
+      "id": "CA-23",
+      "holder": "R",
+      "incumbent": "Jay Obernolte",
+      "dPct": 2
+    },
+    {
+      "id": "CA-27",
+      "holder": "D",
+      "incumbent": "George Whitesides",
+      "dPct": 98
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-07T14:05:50.459Z",
+    "kalshiUpdated": "2026-11-07T18:48:04.506Z",
     "nytUpdated": "2026-11-07T13:18:15.634Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
