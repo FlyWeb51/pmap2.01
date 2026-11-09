@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:53:22.020Z",
+  "generatedAt": "2026-11-09T07:59:57.928Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -67,7 +67,7 @@
         "incumbent": "Cindy Hyde-Smith",
         "holder": "R",
         "special": false,
-        "kalshiD": 0.986,
+        "kalshiD": 0.985,
         "nyt": {
           "averageMargin": -3,
           "averagePolls": 1,
@@ -685,15 +685,15 @@
         },
         {
           "atLeast": 14,
-          "pct": 83
+          "pct": 84.5
         },
         {
           "atLeast": 14.2,
-          "pct": 49
+          "pct": 49.5
         },
         {
           "atLeast": 14.4,
-          "pct": 15.5
+          "pct": 14.5
         },
         {
           "atLeast": 14.5,
@@ -768,11 +768,11 @@
         },
         {
           "atLeast": 258,
-          "pct": 98
+          "pct": 97.5
         },
         {
           "atLeast": 262,
-          "pct": 7.5
+          "pct": 8
         },
         {
           "atLeast": 266,
@@ -784,7 +784,7 @@
         },
         {
           "atLeast": 274,
-          "pct": 1.5
+          "pct": 1
         }
       ]
     },
@@ -839,7 +839,7 @@
         },
         {
           "atLeast": 21,
-          "pct": 98.5
+          "pct": 98
         },
         {
           "atLeast": 22,
@@ -861,7 +861,7 @@
       "question": "Yes",
       "pct": 1.5
     },
-    "fetchedAt": "2026-11-09T00:55:31.523Z"
+    "fetchedAt": "2026-11-09T07:59:57.831Z"
   },
   "markets": {
     "blueWave": {
@@ -937,7 +937,7 @@
     {
       "state": "AK",
       "name": "Alaska",
-      "kalshiD": 0.986,
+      "kalshiD": 0.9840000000000001,
       "holder": "R",
       "incumbent": "Mike Dunleavy",
       "flip": true,
@@ -1833,7 +1833,7 @@
         "expected": -13.3,
         "pollMargin": -3.8,
         "overUnder": 9.5,
-        "kalshiD": 0.986
+        "kalshiD": 0.985
       },
       {
         "state": "NE",
@@ -1890,17 +1890,28 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-09T00:55:31.537Z",
+    "updated": "2026-11-09T07:59:57.840Z",
     "day": [
       {
-        "key": "H-WA-05",
-        "name": "WA-5",
+        "key": "H-TN-04",
+        "name": "TN-4",
         "type": "House",
-        "now": 2.1,
-        "ch1": 1.6,
-        "ch7": -14.4,
-        "dem": "Carmela Conroy",
-        "rep": "Michael Baumgartner",
+        "now": 95,
+        "ch1": -1.9,
+        "ch7": 92,
+        "dem": "Victoria Broderick",
+        "rep": "Scott DesJarlais",
+        "thirdParty": false
+      },
+      {
+        "key": "H-MN-01",
+        "name": "MN-1",
+        "type": "House",
+        "now": 96.2,
+        "ch1": -1.2,
+        "ch7": 56.3,
+        "dem": "Jake Johnson",
+        "rep": "Brad Finstad",
         "thirdParty": false
       },
       {
@@ -1909,7 +1920,7 @@
         "type": "House",
         "now": 0.1,
         "ch1": -1.2,
-        "ch7": -24.4,
+        "ch7": -25.8,
         "dem": "Kim Hardy",
         "rep": "David Rouzer",
         "thirdParty": false
@@ -1920,9 +1931,9 @@
         "key": "H-TN-04",
         "name": "TN-4",
         "type": "House",
-        "now": 96,
-        "ch1": -0.9,
-        "ch7": 93.3,
+        "now": 95,
+        "ch1": -1.9,
+        "ch7": 92,
         "dem": "Victoria Broderick",
         "rep": "Scott DesJarlais",
         "thirdParty": false
@@ -1942,11 +1953,22 @@
         "key": "S-MS",
         "name": "Mississippi",
         "type": "Senate",
-        "now": 98.6,
-        "ch1": -0.2,
-        "ch7": 88.1,
+        "now": 98.5,
+        "ch1": -0.3,
+        "ch7": 84.9,
         "dem": "Scott Colom",
         "rep": "Cindy Hyde-Smith",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-05",
+        "name": "NC-5",
+        "type": "House",
+        "now": 95.7,
+        "ch1": 0.6,
+        "ch7": 78.4,
+        "dem": "Chuck Hubbard",
+        "rep": "Virginia Foxx",
         "thirdParty": false
       },
       {
@@ -1955,20 +1977,9 @@
         "type": "House",
         "now": 98,
         "ch1": 0,
-        "ch7": 78.5,
+        "ch7": 76.5,
         "dem": null,
         "rep": null,
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-05",
-        "name": "NC-5",
-        "type": "House",
-        "now": 95.5,
-        "ch1": 0.4,
-        "ch7": 78.2,
-        "dem": "Chuck Hubbard",
-        "rep": "Virginia Foxx",
         "thirdParty": false
       },
       {
@@ -1983,34 +1994,23 @@
         "thirdParty": false
       },
       {
-        "key": "G-KS",
-        "name": "Kansas",
-        "type": "Governor",
-        "now": 99.7,
-        "ch1": 0.1,
-        "ch7": 74.2,
-        "dem": "Cindy Holscher",
-        "rep": "Ty Masterson",
-        "thirdParty": false
-      },
-      {
         "key": "S-SC",
         "name": "South Carolina",
         "type": "Senate",
         "now": 99.8,
         "ch1": 0,
-        "ch7": 72,
+        "ch7": 69,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
         "thirdParty": false
       },
       {
-        "key": "H-IN-05",
-        "name": "IN-5",
+        "key": "H-OH-10",
+        "name": "OH-10",
         "type": "House",
-        "now": 86.1,
+        "now": 99.5,
         "ch1": 0,
-        "ch7": 69.6,
+        "ch7": 69,
         "dem": null,
         "rep": null,
         "thirdParty": false
@@ -2021,31 +2021,42 @@
         "type": "House",
         "now": 99.3,
         "ch1": 0,
-        "ch7": 69.1,
+        "ch7": 68.1,
         "dem": null,
         "rep": null,
         "thirdParty": false
       },
       {
-        "key": "H-OH-10",
-        "name": "OH-10",
+        "key": "H-IN-05",
+        "name": "IN-5",
         "type": "House",
-        "now": 99.5,
+        "now": 86.1,
         "ch1": 0,
-        "ch7": 68.3,
+        "ch7": 67.6,
         "dem": null,
         "rep": null,
         "thirdParty": false
       },
       {
-        "key": "G-TX",
-        "name": "Texas",
+        "key": "G-KS",
+        "name": "Kansas",
         "type": "Governor",
-        "now": 99.8,
+        "now": 99.7,
+        "ch1": 0.1,
+        "ch7": 67.2,
+        "dem": "Cindy Holscher",
+        "rep": "Ty Masterson",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-09",
+        "name": "NC-9",
+        "type": "House",
+        "now": 99.6,
         "ch1": 0,
-        "ch7": 66.3,
-        "dem": "Gina Hinojosa",
-        "rep": "Greg Abbott",
+        "ch7": 64.5,
+        "dem": null,
+        "rep": null,
         "thirdParty": false
       }
     ]
@@ -2277,14 +2288,6 @@
     },
     {
       "chamber": "House",
-      "id": "CO-04",
-      "holder": "R",
-      "incumbent": "Lauren Boebert",
-      "favored": "D",
-      "prob": 99
-    },
-    {
-      "chamber": "House",
       "id": "IA-01",
       "holder": "R",
       "incumbent": "Mariannette Miller-Meeks",
@@ -2317,19 +2320,19 @@
     },
     {
       "chamber": "House",
-      "id": "PA-08",
+      "id": "CO-04",
       "holder": "R",
-      "incumbent": "Robert P. Bresnahan, Jr.",
+      "incumbent": "Lauren Boebert",
       "favored": "D",
       "prob": 98
     },
     {
       "chamber": "House",
-      "id": "MN-01",
+      "id": "PA-08",
       "holder": "R",
-      "incumbent": "Brad Finstad",
+      "incumbent": "Robert P. Bresnahan, Jr.",
       "favored": "D",
-      "prob": 97
+      "prob": 98
     },
     {
       "chamber": "Senate",
@@ -2341,17 +2344,17 @@
     },
     {
       "chamber": "House",
-      "id": "NC-05",
+      "id": "MN-01",
       "holder": "R",
-      "incumbent": "Virginia Foxx",
+      "incumbent": "Brad Finstad",
       "favored": "D",
       "prob": 96
     },
     {
       "chamber": "House",
-      "id": "TN-04",
+      "id": "NC-05",
       "holder": "R",
-      "incumbent": "Scott DesJarlais",
+      "incumbent": "Virginia Foxx",
       "favored": "D",
       "prob": 96
     },
@@ -2362,6 +2365,14 @@
       "incumbent": "Julie Johnson",
       "favored": "R",
       "prob": 96
+    },
+    {
+      "chamber": "House",
+      "id": "TN-04",
+      "holder": "R",
+      "incumbent": "Scott DesJarlais",
+      "favored": "D",
+      "prob": 95
     },
     {
       "chamber": "House",
@@ -2412,6 +2423,12 @@
       "dPct": 6
     },
     {
+      "id": "TN-04",
+      "holder": "R",
+      "incumbent": "Scott DesJarlais",
+      "dPct": 95
+    },
+    {
       "id": "MI-08",
       "holder": "D",
       "incumbent": "Kristen McDonald Rivet",
@@ -2430,28 +2447,22 @@
       "dPct": 96
     },
     {
-      "id": "TN-04",
-      "holder": "R",
-      "incumbent": "Scott DesJarlais",
-      "dPct": 96
-    },
-    {
       "id": "TX-32",
       "holder": "D",
       "incumbent": "Julie Johnson",
       "dPct": 4
     },
     {
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
+      "dPct": 96
+    },
+    {
       "id": "CA-23",
       "holder": "R",
       "incumbent": "Jay Obernolte",
       "dPct": 3
-    },
-    {
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "dPct": 97
     },
     {
       "id": "VA-10",
@@ -2473,7 +2484,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-09T00:55:31.543Z",
+    "kalshiUpdated": "2026-11-09T07:59:57.844Z",
     "nytUpdated": "2026-11-09T06:53:21.602Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
