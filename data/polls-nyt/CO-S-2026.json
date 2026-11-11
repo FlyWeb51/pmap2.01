@@ -1,12 +1,48 @@
 {
   "raceId": "CO-S-2026",
-  "count": 3,
+  "count": 4,
   "attribution": {
     "text": "Polling data: The New York Times, licensed CC BY 4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "source": "https://www.nytimes.com/interactive/polls/latest-polls.html"
   },
   "polls": [
+    {
+      "pollster": "Keating Research, Inc.",
+      "sponsors": null,
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-02",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "internal": false,
+      "sourceUrl": "https://keatingresearch.com/polls/colorado-statewide-november-2026/",
+      "sourceTag": "nyt",
+      "hypothetical": false,
+      "results": [
+        {
+          "candidate": "John Hickenlooper (D)",
+          "party": "D",
+          "percentage": 57.67
+        },
+        {
+          "candidate": "Mark Baisley (R)",
+          "party": "R",
+          "percentage": 37.49
+        },
+        {
+          "candidate": "Someone else (NON)",
+          "party": "NON",
+          "percentage": 2.76
+        },
+        {
+          "candidate": "Don't know (NON)",
+          "party": "NON",
+          "percentage": 2.08
+        }
+      ],
+      "note": null
+    },
     {
       "pollster": "Research Co.",
       "sponsors": null,

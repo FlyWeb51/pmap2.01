@@ -1,8 +1,37 @@
 {
   "raceId": "CO-G-2026",
-  "count": 4,
-  "updated_at": "2026-11-11T19:14:41.125Z",
+  "count": 5,
+  "updated_at": "2026-11-11T19:43:42.995Z",
   "polls": [
+    {
+      "pollster": "Keating Research, Inc.",
+      "endDate": "2026-11-02",
+      "fieldDates": "2026-11-01 to 2026-11-02",
+      "sampleSize": 400,
+      "population": "LV",
+      "partisan": null,
+      "sponsors": null,
+      "results": [
+        {
+          "candidate": "Phil Weiser (D)",
+          "party": "D",
+          "pct": 59.12,
+          "percentage": 59.12
+        },
+        {
+          "candidate": "Victor Marx (R)",
+          "party": "R",
+          "pct": 32.62,
+          "percentage": 32.62
+        }
+      ],
+      "sourceUrl": "https://keatingresearch.com/polls/colorado-statewide-november-2026/",
+      "foundOn": [
+        "https://www.nytimes.com/interactive/polls/latest-polls.html"
+      ],
+      "reviewStatus": "auto",
+      "weight": 0.7128
+    },
     {
       "pollster": "Research Co.",
       "endDate": "2026-11-02",
@@ -30,7 +59,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7564
+      "weight": 0.7561
     },
     {
       "pollster": "YouGov",
@@ -59,7 +88,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.7036
+      "weight": 0.7033
     },
     {
       "pollster": "Lake Research Partners",
@@ -88,7 +117,7 @@
         "https://www.nytimes.com/interactive/polls/latest-polls.html"
       ],
       "reviewStatus": "auto",
-      "weight": 0.1834
+      "weight": 0.1833
     },
     {
       "pollster": "Magellan Strategies",
