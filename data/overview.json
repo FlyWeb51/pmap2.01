@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T17:06:27.059Z",
+  "generatedAt": "2026-11-12T19:31:14.807Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -1901,14 +1901,14 @@
     "updated": "2026-11-12T17:06:26.962Z",
     "day": [
       {
-        "key": "H-LA-05",
-        "name": "LA-5",
+        "key": "H-LA-06",
+        "name": "LA-6",
         "type": "House",
-        "now": 5.2,
-        "ch1": -2.9,
-        "ch7": -3.2,
-        "dem": "Pat Moore",
-        "rep": "Gabe Firment",
+        "now": 5.8,
+        "ch1": 2,
+        "ch7": -1.9,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       },
       {
@@ -1916,8 +1916,8 @@
         "name": "MN-1",
         "type": "House",
         "now": 97,
-        "ch1": 1.4,
-        "ch7": 4.7,
+        "ch1": 1.7,
+        "ch7": 0.8,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
         "thirdParty": false
@@ -1927,8 +1927,8 @@
         "name": "TN-4",
         "type": "House",
         "now": 98.8,
-        "ch1": 1.3,
-        "ch7": 5.3,
+        "ch1": 1,
+        "ch7": 4.5,
         "dem": "Victoria Broderick",
         "rep": "Scott DesJarlais",
         "thirdParty": false
@@ -1936,25 +1936,25 @@
     ],
     "week": [
       {
+        "key": "H-NC-03",
+        "name": "NC-3",
+        "type": "House",
+        "now": 99.8,
+        "ch1": 0.1,
+        "ch7": 29.4,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      },
+      {
         "key": "H-AZ-02",
         "name": "AZ-2",
         "type": "House",
         "now": 0.7,
         "ch1": 0,
-        "ch7": -31.5,
+        "ch7": -25.8,
         "dem": "Jonathan Nez",
         "rep": "Eli Crane",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-03",
-        "name": "NC-3",
-        "type": "House",
-        "now": 99.8,
-        "ch1": 0.8,
-        "ch7": 20.6,
-        "dem": null,
-        "rep": null,
         "thirdParty": false
       },
       {
@@ -1962,8 +1962,8 @@
         "name": "CA-23",
         "type": "House",
         "now": 1.5,
-        "ch1": 0,
-        "ch7": -16.4,
+        "ch1": -0.4,
+        "ch7": -17,
         "dem": "Tessa Lynn Hodge",
         "rep": "Jay Obernolte",
         "thirdParty": false
@@ -1974,7 +1974,51 @@
         "type": "House",
         "now": 1.4,
         "ch1": 0,
-        "ch7": -10.1,
+        "ch7": -10.9,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-05",
+        "name": "NC-5",
+        "type": "House",
+        "now": 99.3,
+        "ch1": 0.1,
+        "ch7": 5.6,
+        "dem": "Chuck Hubbard",
+        "rep": "Virginia Foxx",
+        "thirdParty": false
+      },
+      {
+        "key": "H-AZ-05",
+        "name": "AZ-5",
+        "type": "House",
+        "now": 0.4,
+        "ch1": 0,
+        "ch7": -4.6,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "H-TN-04",
+        "name": "TN-4",
+        "type": "House",
+        "now": 98.8,
+        "ch1": 1,
+        "ch7": 4.5,
+        "dem": "Victoria Broderick",
+        "rep": "Scott DesJarlais",
+        "thirdParty": false
+      },
+      {
+        "key": "S-AK",
+        "name": "Alaska",
+        "type": "Senate",
+        "now": 99.2,
+        "ch1": 0.3,
+        "ch7": 4.1,
         "dem": null,
         "rep": null,
         "thirdParty": false
@@ -1984,8 +2028,8 @@
         "name": "CO-4",
         "type": "House",
         "now": 99.2,
-        "ch1": 0.1,
-        "ch7": 8.7,
+        "ch1": 0,
+        "ch7": 3.8,
         "dem": "Eileen Laubacher",
         "rep": "Lauren Boebert",
         "thirdParty": false
@@ -1996,64 +2040,20 @@
         "type": "House",
         "now": 2.9,
         "ch1": 0,
-        "ch7": -6.4,
+        "ch7": -3.7,
         "dem": null,
         "rep": null,
         "thirdParty": false
       },
       {
-        "key": "H-TN-04",
-        "name": "TN-4",
+        "key": "H-LA-05",
+        "name": "LA-5",
         "type": "House",
-        "now": 98.8,
-        "ch1": 1.3,
-        "ch7": 5.3,
-        "dem": "Victoria Broderick",
-        "rep": "Scott DesJarlais",
-        "thirdParty": false
-      },
-      {
-        "key": "H-AZ-05",
-        "name": "AZ-5",
-        "type": "House",
-        "now": 0.4,
-        "ch1": 0,
-        "ch7": -5,
-        "dem": null,
-        "rep": null,
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-05",
-        "name": "NC-5",
-        "type": "House",
-        "now": 99.3,
-        "ch1": 0.2,
-        "ch7": 4.9,
-        "dem": "Chuck Hubbard",
-        "rep": "Virginia Foxx",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MN-01",
-        "name": "MN-1",
-        "type": "House",
-        "now": 97,
-        "ch1": 1.4,
-        "ch7": 4.7,
-        "dem": "Jake Johnson",
-        "rep": "Brad Finstad",
-        "thirdParty": false
-      },
-      {
-        "key": "S-AK",
-        "name": "Alaska",
-        "type": "Senate",
-        "now": 99.2,
-        "ch1": 0.2,
-        "ch7": 4,
-        "dem": null,
-        "rep": null,
+        "now": 5.2,
+        "ch1": -0.7,
+        "ch7": -3.7,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
         "thirdParty": false
       },
       {
@@ -2061,8 +2061,8 @@
         "name": "Mississippi",
         "type": "Senate",
         "now": 99.9,
-        "ch1": 0.6,
-        "ch7": 3.2,
+        "ch1": 0.3,
+        "ch7": 2.8,
         "dem": "Scott Colom",
         "rep": "Cindy Hyde-Smith",
         "thirdParty": false
