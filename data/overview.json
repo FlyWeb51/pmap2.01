@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T11:36:32.053Z",
+  "generatedAt": "2026-11-13T18:47:47.616Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -89,6 +89,24 @@
         }
       },
       {
+        "state": "AK",
+        "name": "Alaska",
+        "incumbent": "Dan Sullivan",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.995,
+        "nyt": {
+          "averageMargin": 1.8,
+          "averagePolls": 20,
+          "latest": {
+            "pollster": "AtlasIntel",
+            "endDate": "2026-11-01",
+            "margin": 5.5
+          },
+          "source": "NYT"
+        }
+      },
+      {
         "state": "IL",
         "name": "Illinois",
         "incumbent": "Richard J. Durbin",
@@ -131,24 +149,6 @@
         "special": false,
         "kalshiD": 0.003,
         "nyt": null
-      },
-      {
-        "state": "AK",
-        "name": "Alaska",
-        "incumbent": "Dan Sullivan",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.997,
-        "nyt": {
-          "averageMargin": 1.8,
-          "averagePolls": 20,
-          "latest": {
-            "pollster": "AtlasIntel",
-            "endDate": "2026-11-01",
-            "margin": 5.5
-          },
-          "source": "NYT"
-        }
       },
       {
         "state": "SD",
@@ -685,7 +685,7 @@
         },
         {
           "atLeast": 13,
-          "pct": 97.5
+          "pct": 98
         },
         {
           "atLeast": 13.5,
@@ -693,7 +693,7 @@
         },
         {
           "atLeast": 14,
-          "pct": 87
+          "pct": 86.5
         },
         {
           "atLeast": 14.2,
@@ -780,7 +780,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 5.5
+          "pct": 4.5
         },
         {
           "atLeast": 266,
@@ -788,7 +788,7 @@
         },
         {
           "atLeast": 270,
-          "pct": 1
+          "pct": 2
         },
         {
           "atLeast": 274,
@@ -869,7 +869,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-13T11:36:31.893Z"
+    "fetchedAt": "2026-11-13T18:47:47.493Z"
   },
   "markets": {
     "blueWave": {
@@ -1134,26 +1134,6 @@
       }
     },
     {
-      "state": "AK",
-      "name": "Alaska",
-      "kalshiD": 0.996,
-      "holder": "R",
-      "incumbent": "Mike Dunleavy",
-      "flip": true,
-      "dem": "Democratic party",
-      "rep": "Republican party",
-      "poll": {
-        "averageMargin": 15,
-        "averagePolls": 17,
-        "latest": {
-          "pollster": "AtlasIntel",
-          "endDate": "2026-11-01",
-          "margin": 17.5
-        },
-        "source": "NYT"
-      }
-    },
-    {
       "state": "IA",
       "name": "Iowa",
       "kalshiD": 0.996,
@@ -1229,6 +1209,26 @@
           "pollster": "Blueprint Polling",
           "endDate": "2026-10-24",
           "margin": -3
+        },
+        "source": "NYT"
+      }
+    },
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "kalshiD": 0.998,
+      "holder": "R",
+      "incumbent": "Mike Dunleavy",
+      "flip": true,
+      "dem": "Democratic party",
+      "rep": "Republican party",
+      "poll": {
+        "averageMargin": 15,
+        "averagePolls": 17,
+        "latest": {
+          "pollster": "AtlasIntel",
+          "endDate": "2026-11-01",
+          "margin": 17.5
         },
         "source": "NYT"
       }
@@ -1769,7 +1769,7 @@
         "expected": -3.5,
         "pollMargin": 1.5,
         "overUnder": 5,
-        "kalshiD": 0.997
+        "kalshiD": 0.995
       },
       {
         "state": "SC",
@@ -1865,28 +1865,28 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-13T11:36:31.907Z",
+    "updated": "2026-11-13T18:47:47.504Z",
     "day": [
       {
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 4.3,
-        "ch1": -2.1,
-        "ch7": -1.5,
+        "now": 4.1,
+        "ch1": -1.1,
+        "ch7": -1.9,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
       },
       {
-        "key": "H-LA-06",
-        "name": "LA-6",
+        "key": "H-CA-23",
+        "name": "CA-23",
         "type": "House",
-        "now": 4.9,
+        "now": 0.5,
         "ch1": -1,
-        "ch7": -3.1,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
+        "ch7": -6.3,
+        "dem": "Tessa Lynn Hodge",
+        "rep": "Jay Obernolte",
         "thirdParty": false
       }
     ],
@@ -1897,7 +1897,7 @@
         "type": "House",
         "now": 99.8,
         "ch1": 0,
-        "ch7": 24.4,
+        "ch7": 19.5,
         "dem": null,
         "rep": null,
         "thirdParty": false
@@ -1906,22 +1906,22 @@
         "key": "H-CA-23",
         "name": "CA-23",
         "type": "House",
-        "now": 1.1,
-        "ch1": -0.2,
-        "ch7": -4.8,
+        "now": 0.5,
+        "ch1": -1,
+        "ch7": -6.3,
         "dem": "Tessa Lynn Hodge",
         "rep": "Jay Obernolte",
         "thirdParty": false
       },
       {
-        "key": "H-NC-05",
-        "name": "NC-5",
+        "key": "H-LA-06",
+        "name": "LA-6",
         "type": "House",
-        "now": 99.3,
-        "ch1": -0.2,
-        "ch7": 4.8,
-        "dem": "Chuck Hubbard",
-        "rep": "Virginia Foxx",
+        "now": 4.9,
+        "ch1": -0.9,
+        "ch7": -6.1,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       },
       {
@@ -1930,42 +1930,20 @@
         "type": "House",
         "now": 0.7,
         "ch1": 0,
-        "ch7": -3.4,
+        "ch7": -3.3,
         "dem": "Jonathan Nez",
         "rep": "Eli Crane",
         "thirdParty": false
       },
       {
-        "key": "S-AK",
-        "name": "Alaska",
-        "type": "Senate",
-        "now": 99.7,
-        "ch1": 0.5,
-        "ch7": 3.1,
-        "dem": null,
-        "rep": null,
-        "thirdParty": false
-      },
-      {
-        "key": "H-LA-06",
-        "name": "LA-6",
+        "key": "H-NC-05",
+        "name": "NC-5",
         "type": "House",
-        "now": 4.9,
-        "ch1": -1,
-        "ch7": -3.1,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
-        "thirdParty": false
-      },
-      {
-        "key": "S-MS",
-        "name": "Mississippi",
-        "type": "Senate",
-        "now": 99.9,
+        "now": 99.3,
         "ch1": 0,
-        "ch7": 2.5,
-        "dem": "Scott Colom",
-        "rep": "Cindy Hyde-Smith",
+        "ch7": 2.9,
+        "dem": "Chuck Hubbard",
+        "rep": "Virginia Foxx",
         "thirdParty": false
       },
       {
@@ -1974,9 +1952,64 @@
         "type": "House",
         "now": 1.4,
         "ch1": 0,
-        "ch7": -2.3,
+        "ch7": -2.4,
         "dem": null,
         "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "S-AK",
+        "name": "Alaska",
+        "type": "Senate",
+        "now": 99.5,
+        "ch1": 0.3,
+        "ch7": 2.3,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "S-MS",
+        "name": "Mississippi",
+        "type": "Senate",
+        "now": 99.9,
+        "ch1": 0,
+        "ch7": 2.2,
+        "dem": "Scott Colom",
+        "rep": "Cindy Hyde-Smith",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 4.1,
+        "ch1": -1.1,
+        "ch7": -1.9,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
+        "thirdParty": false
+      },
+      {
+        "key": "H-TN-04",
+        "name": "TN-4",
+        "type": "House",
+        "now": 97.9,
+        "ch1": -0.9,
+        "ch7": 1.9,
+        "dem": "Victoria Broderick",
+        "rep": "Scott DesJarlais",
+        "thirdParty": false
+      },
+      {
+        "key": "H-MN-01",
+        "name": "MN-1",
+        "type": "House",
+        "now": 97.5,
+        "ch1": 0.5,
+        "ch7": 1.4,
+        "dem": "Jake Johnson",
+        "rep": "Brad Finstad",
         "thirdParty": false
       },
       {
@@ -1984,43 +2017,10 @@
         "name": "CO-4",
         "type": "House",
         "now": 99.5,
-        "ch1": 0,
-        "ch7": 2.1,
+        "ch1": 0.3,
+        "ch7": 1.3,
         "dem": "Eileen Laubacher",
         "rep": "Lauren Boebert",
-        "thirdParty": false
-      },
-      {
-        "key": "H-TN-04",
-        "name": "TN-4",
-        "type": "House",
-        "now": 98,
-        "ch1": 0,
-        "ch7": 1.7,
-        "dem": "Victoria Broderick",
-        "rep": "Scott DesJarlais",
-        "thirdParty": false
-      },
-      {
-        "key": "H-LA-05",
-        "name": "LA-5",
-        "type": "House",
-        "now": 4.3,
-        "ch1": -2.1,
-        "ch7": -1.5,
-        "dem": "Pat Moore",
-        "rep": "Gabe Firment",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-07",
-        "name": "NC-7",
-        "type": "House",
-        "now": 0.8,
-        "ch1": -0.8,
-        "ch7": -1.2,
-        "dem": "Kim Hardy",
-        "rep": "David Rouzer",
         "thirdParty": false
       }
     ]
@@ -2308,6 +2308,14 @@
     },
     {
       "chamber": "House",
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
+      "favored": "D",
+      "prob": 98
+    },
+    {
+      "chamber": "House",
       "id": "PA-08",
       "holder": "R",
       "incumbent": "Robert P. Bresnahan, Jr.",
@@ -2321,14 +2329,6 @@
       "incumbent": "Scott DesJarlais",
       "favored": "D",
       "prob": 98
-    },
-    {
-      "chamber": "House",
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "favored": "D",
-      "prob": 97
     },
     {
       "chamber": "House",
@@ -2399,12 +2399,6 @@
       "dPct": 4
     },
     {
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "dPct": 97
-    },
-    {
       "id": "VA-10",
       "holder": "D",
       "incumbent": "Suhas Subramanyam",
@@ -2415,6 +2409,12 @@
       "holder": "D",
       "incumbent": "André Carson",
       "dPct": 97
+    },
+    {
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
+      "dPct": 98
     },
     {
       "id": "NY-22",
@@ -2435,20 +2435,20 @@
       "dPct": 98
     },
     {
-      "id": "PA-08",
-      "holder": "R",
-      "incumbent": "Robert P. Bresnahan, Jr.",
-      "dPct": 98
-    },
-    {
       "id": "TN-04",
       "holder": "R",
       "incumbent": "Scott DesJarlais",
       "dPct": 98
+    },
+    {
+      "id": "PA-08",
+      "holder": "R",
+      "incumbent": "Robert P. Bresnahan, Jr.",
+      "dPct": 98
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-13T11:36:31.915Z",
+    "kalshiUpdated": "2026-11-13T18:47:47.510Z",
     "nytUpdated": "2026-11-13T06:57:20.769Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
