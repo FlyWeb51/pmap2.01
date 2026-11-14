@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T19:53:08.385Z",
+  "generatedAt": "2026-11-14T00:20:08.266Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -24,10 +24,10 @@
       "tiltR": 7,
       "R": 213
     },
-    "expectedD": 240,
-    "expectedR": 195,
-    "kalshiMarkets": 84,
-    "netD": 27
+    "expectedD": 239,
+    "expectedR": 196,
+    "kalshiMarkets": 83,
+    "netD": 26
   },
   "senate": {
     "current": {
@@ -693,19 +693,19 @@
         },
         {
           "atLeast": 14,
-          "pct": 86.5
+          "pct": 87
         },
         {
           "atLeast": 14.2,
-          "pct": 30
+          "pct": 29.5
         },
         {
           "atLeast": 14.4,
-          "pct": 11
+          "pct": 10.5
         },
         {
           "atLeast": 14.5,
-          "pct": 7.5
+          "pct": 8.5
         },
         {
           "atLeast": 15,
@@ -780,7 +780,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 4.5
+          "pct": 4
         },
         {
           "atLeast": 266,
@@ -869,7 +869,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-13T18:47:47.493Z"
+    "fetchedAt": "2026-11-14T00:20:08.147Z"
   },
   "markets": {
     "blueWave": {
@@ -1865,28 +1865,17 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-13T18:47:47.504Z",
+    "updated": "2026-11-14T00:20:08.157Z",
     "day": [
       {
-        "key": "H-LA-05",
-        "name": "LA-5",
+        "key": "H-LA-06",
+        "name": "LA-6",
         "type": "House",
-        "now": 4.1,
-        "ch1": -1.1,
-        "ch7": -1.9,
-        "dem": "Pat Moore",
-        "rep": "Gabe Firment",
-        "thirdParty": false
-      },
-      {
-        "key": "H-CA-23",
-        "name": "CA-23",
-        "type": "House",
-        "now": 0.5,
-        "ch1": -1,
-        "ch7": -6.3,
-        "dem": "Tessa Lynn Hodge",
-        "rep": "Jay Obernolte",
+        "now": 6.5,
+        "ch1": 2.3,
+        "ch7": -0.6,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ],
@@ -1897,7 +1886,7 @@
         "type": "House",
         "now": 99.8,
         "ch1": 0,
-        "ch7": 19.5,
+        "ch7": 21.3,
         "dem": null,
         "rep": null,
         "thirdParty": false
@@ -1906,22 +1895,33 @@
         "key": "H-CA-23",
         "name": "CA-23",
         "type": "House",
-        "now": 0.5,
-        "ch1": -1,
-        "ch7": -6.3,
+        "now": 0.8,
+        "ch1": -0.4,
+        "ch7": -10,
         "dem": "Tessa Lynn Hodge",
         "rep": "Jay Obernolte",
         "thirdParty": false
       },
       {
-        "key": "H-LA-06",
-        "name": "LA-6",
+        "key": "H-CO-04",
+        "name": "CO-4",
         "type": "House",
-        "now": 4.9,
-        "ch1": -0.9,
-        "ch7": -6.1,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
+        "now": 99.5,
+        "ch1": 0,
+        "ch7": 4.6,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-05",
+        "name": "NC-5",
+        "type": "House",
+        "now": 99.3,
+        "ch1": 0.2,
+        "ch7": 3.7,
+        "dem": "Chuck Hubbard",
+        "rep": "Virginia Foxx",
         "thirdParty": false
       },
       {
@@ -1936,23 +1936,12 @@
         "thirdParty": false
       },
       {
-        "key": "H-NC-05",
-        "name": "NC-5",
-        "type": "House",
-        "now": 99.3,
-        "ch1": 0,
-        "ch7": 2.9,
-        "dem": "Chuck Hubbard",
-        "rep": "Virginia Foxx",
-        "thirdParty": false
-      },
-      {
         "key": "H-WA-05",
         "name": "WA-5",
         "type": "House",
         "now": 1.4,
         "ch1": 0,
-        "ch7": -2.4,
+        "ch7": -2.2,
         "dem": null,
         "rep": null,
         "thirdParty": false
@@ -1962,10 +1951,21 @@
         "name": "Alaska",
         "type": "Senate",
         "now": 99.5,
-        "ch1": 0.3,
-        "ch7": 2.3,
+        "ch1": 0.1,
+        "ch7": 1.8,
         "dem": null,
         "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-07",
+        "name": "NC-7",
+        "type": "House",
+        "now": 0.7,
+        "ch1": -0.5,
+        "ch7": -1.1,
+        "dem": "Kim Hardy",
+        "rep": "David Rouzer",
         "thirdParty": false
       },
       {
@@ -1974,53 +1974,20 @@
         "type": "Senate",
         "now": 99.9,
         "ch1": 0,
-        "ch7": 2.2,
+        "ch7": 1,
         "dem": "Scott Colom",
         "rep": "Cindy Hyde-Smith",
         "thirdParty": false
       },
       {
-        "key": "H-LA-05",
-        "name": "LA-5",
-        "type": "House",
-        "now": 4.1,
-        "ch1": -1.1,
-        "ch7": -1.9,
-        "dem": "Pat Moore",
-        "rep": "Gabe Firment",
-        "thirdParty": false
-      },
-      {
-        "key": "H-TN-04",
-        "name": "TN-4",
-        "type": "House",
-        "now": 97.9,
-        "ch1": -0.9,
-        "ch7": 1.9,
-        "dem": "Victoria Broderick",
-        "rep": "Scott DesJarlais",
-        "thirdParty": false
-      },
-      {
-        "key": "H-MN-01",
-        "name": "MN-1",
-        "type": "House",
-        "now": 97.5,
-        "ch1": 0.5,
-        "ch7": 1.4,
-        "dem": "Jake Johnson",
-        "rep": "Brad Finstad",
-        "thirdParty": false
-      },
-      {
-        "key": "H-CO-04",
-        "name": "CO-4",
-        "type": "House",
-        "now": 99.5,
-        "ch1": 0.3,
-        "ch7": 1.3,
-        "dem": "Eileen Laubacher",
-        "rep": "Lauren Boebert",
+        "key": "G-AK",
+        "name": "Alaska",
+        "type": "Governor",
+        "now": 99.8,
+        "ch1": 0.1,
+        "ch7": 1,
+        "dem": null,
+        "rep": null,
         "thirdParty": false
       }
     ]
@@ -2039,14 +2006,6 @@
       "id": "CA-41",
       "holder": "R",
       "incumbent": "Ken Calvert",
-      "favored": "D",
-      "prob": 100
-    },
-    {
-      "chamber": "House",
-      "id": "CO-04",
-      "holder": "R",
-      "incumbent": "Lauren Boebert",
       "favored": "D",
       "prob": 100
     },
@@ -2308,14 +2267,6 @@
     },
     {
       "chamber": "House",
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "favored": "D",
-      "prob": 98
-    },
-    {
-      "chamber": "House",
       "id": "PA-08",
       "holder": "R",
       "incumbent": "Robert P. Bresnahan, Jr.",
@@ -2332,6 +2283,14 @@
     },
     {
       "chamber": "House",
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
+      "favored": "D",
+      "prob": 97
+    },
+    {
+      "chamber": "House",
       "id": "TX-32",
       "holder": "D",
       "incumbent": "Julie Johnson",
@@ -2344,12 +2303,12 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 95
+      "prob": 94
     }
   ],
   "flipCounts": {
     "houseDtoR": 3,
-    "houseRtoD": 28,
+    "houseRtoD": 27,
     "senateDtoR": 0,
     "senateRtoD": 9,
     "govRtoD": 6,
@@ -2363,16 +2322,22 @@
       "dPct": 93
     },
     {
+      "id": "LA-06",
+      "holder": "D",
+      "incumbent": "Cleo Fields",
+      "dPct": 7
+    },
+    {
       "id": "NY-19",
       "holder": "D",
       "incumbent": "Josh Riley",
       "dPct": 94
     },
     {
-      "id": "LA-06",
-      "holder": "D",
-      "incumbent": "Cleo Fields",
-      "dPct": 5
+      "id": "LA-05",
+      "holder": "R",
+      "incumbent": "Julia Letlow",
+      "dPct": 6
     },
     {
       "id": "MI-08",
@@ -2385,12 +2350,6 @@
       "holder": "D",
       "incumbent": "Mike Levin",
       "dPct": 96
-    },
-    {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
-      "dPct": 4
     },
     {
       "id": "TX-32",
@@ -2414,7 +2373,7 @@
       "id": "MN-01",
       "holder": "R",
       "incumbent": "Brad Finstad",
-      "dPct": 98
+      "dPct": 97
     },
     {
       "id": "NY-22",
@@ -2435,20 +2394,20 @@
       "dPct": 98
     },
     {
-      "id": "TN-04",
-      "holder": "R",
-      "incumbent": "Scott DesJarlais",
-      "dPct": 98
-    },
-    {
       "id": "PA-08",
       "holder": "R",
       "incumbent": "Robert P. Bresnahan, Jr.",
       "dPct": 98
+    },
+    {
+      "id": "NJ-05",
+      "holder": "D",
+      "incumbent": "Josh Gottheimer",
+      "dPct": 98
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-13T18:47:47.510Z",
+    "kalshiUpdated": "2026-11-14T00:20:08.162Z",
     "nytUpdated": "2026-11-13T19:53:08.092Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
