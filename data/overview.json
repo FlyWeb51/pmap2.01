@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T06:44:23.194Z",
+  "generatedAt": "2026-11-14T07:03:35.526Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -84,24 +84,6 @@
             "pollster": "Research Co.",
             "endDate": "2026-11-02",
             "margin": 19
-          },
-          "source": "NYT"
-        }
-      },
-      {
-        "state": "AK",
-        "name": "Alaska",
-        "incumbent": "Dan Sullivan",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.995,
-        "nyt": {
-          "averageMargin": 1.8,
-          "averagePolls": 20,
-          "latest": {
-            "pollster": "AtlasIntel",
-            "endDate": "2026-11-01",
-            "margin": 5.5
           },
           "source": "NYT"
         }
@@ -211,6 +193,24 @@
         "special": false,
         "kalshiD": 0.998,
         "nyt": null
+      },
+      {
+        "state": "AK",
+        "name": "Alaska",
+        "incumbent": "Dan Sullivan",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.998,
+        "nyt": {
+          "averageMargin": 1.8,
+          "averagePolls": 20,
+          "latest": {
+            "pollster": "AtlasIntel",
+            "endDate": "2026-11-01",
+            "margin": 5.5
+          },
+          "source": "NYT"
+        }
       },
       {
         "state": "NC",
@@ -665,7 +665,7 @@
         },
         {
           "atLeast": 8,
-          "pct": 98.5
+          "pct": 99
         },
         {
           "atLeast": 9,
@@ -673,7 +673,7 @@
         },
         {
           "atLeast": 10,
-          "pct": 98.5
+          "pct": 99
         },
         {
           "atLeast": 11,
@@ -780,7 +780,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 4
+          "pct": 4.5
         },
         {
           "atLeast": 266,
@@ -855,7 +855,7 @@
         },
         {
           "atLeast": 23,
-          "pct": 4
+          "pct": 3.5
         }
       ]
     },
@@ -869,7 +869,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-14T00:20:08.147Z"
+    "fetchedAt": "2026-11-14T07:03:35.426Z"
   },
   "markets": {
     "blueWave": {
@@ -1214,26 +1214,6 @@
       }
     },
     {
-      "state": "AK",
-      "name": "Alaska",
-      "kalshiD": 0.998,
-      "holder": "R",
-      "incumbent": "Mike Dunleavy",
-      "flip": true,
-      "dem": "Democratic party",
-      "rep": "Republican party",
-      "poll": {
-        "averageMargin": 15,
-        "averagePolls": 17,
-        "latest": {
-          "pollster": "AtlasIntel",
-          "endDate": "2026-11-01",
-          "margin": 17.5
-        },
-        "source": "NYT"
-      }
-    },
-    {
       "state": "CT",
       "name": "Connecticut",
       "kalshiD": 0.998,
@@ -1400,6 +1380,26 @@
           "pollster": "Targoz Market Research",
           "endDate": "2026-11-02",
           "margin": -19
+        },
+        "source": "NYT"
+      }
+    },
+    {
+      "state": "AK",
+      "name": "Alaska",
+      "kalshiD": 0.9990000000000001,
+      "holder": "R",
+      "incumbent": "Mike Dunleavy",
+      "flip": true,
+      "dem": "Democratic party",
+      "rep": "Republican party",
+      "poll": {
+        "averageMargin": 15,
+        "averagePolls": 17,
+        "latest": {
+          "pollster": "AtlasIntel",
+          "endDate": "2026-11-01",
+          "margin": 17.5
         },
         "source": "NYT"
       }
@@ -1769,7 +1769,7 @@
         "expected": -3.5,
         "pollMargin": 1.5,
         "overUnder": 5,
-        "kalshiD": 0.995
+        "kalshiD": 0.998
       },
       {
         "state": "SC",
@@ -1865,15 +1865,15 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-14T00:20:08.157Z",
+    "updated": "2026-11-14T07:03:35.434Z",
     "day": [
       {
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
-        "now": 6.5,
-        "ch1": 2.3,
-        "ch7": -2.5,
+        "now": 6.4,
+        "ch1": 2.2,
+        "ch7": -2.6,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
         "thirdParty": false
@@ -1882,9 +1882,9 @@
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 5.5,
-        "ch1": 1.3,
-        "ch7": -0.8,
+        "now": 6.1,
+        "ch1": 1.9,
+        "ch7": -0.2,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
@@ -1906,20 +1906,31 @@
         "key": "H-CA-23",
         "name": "CA-23",
         "type": "House",
-        "now": 0.8,
-        "ch1": -0.3,
-        "ch7": -9.4,
+        "now": 1.7,
+        "ch1": 0.6,
+        "ch7": -8.5,
         "dem": "Tessa Lynn Hodge",
         "rep": "Jay Obernolte",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 6.4,
+        "ch1": 2.2,
+        "ch7": -2.6,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       },
       {
         "key": "H-NC-05",
         "name": "NC-5",
         "type": "House",
-        "now": 99.3,
-        "ch1": 0.2,
-        "ch7": 2.9,
+        "now": 99,
+        "ch1": -0.1,
+        "ch7": 2.6,
         "dem": "Chuck Hubbard",
         "rep": "Virginia Foxx",
         "thirdParty": false
@@ -1936,23 +1947,23 @@
         "thirdParty": false
       },
       {
-        "key": "H-LA-06",
-        "name": "LA-6",
-        "type": "House",
-        "now": 6.5,
-        "ch1": 2.3,
-        "ch7": -2.5,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
-        "thirdParty": false
-      },
-      {
         "key": "H-CO-04",
         "name": "CO-4",
         "type": "House",
         "now": 99.5,
         "ch1": 0,
         "ch7": 2.2,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "S-AK",
+        "name": "Alaska",
+        "type": "Senate",
+        "now": 99.8,
+        "ch1": 0.5,
+        "ch7": 2,
         "dem": null,
         "rep": null,
         "thirdParty": false
@@ -1966,17 +1977,6 @@
         "ch7": -1.9,
         "dem": "Jonathan Nez",
         "rep": "Eli Crane",
-        "thirdParty": false
-      },
-      {
-        "key": "S-AK",
-        "name": "Alaska",
-        "type": "Senate",
-        "now": 99.5,
-        "ch1": 0.2,
-        "ch7": 1.7,
-        "dem": null,
-        "rep": null,
         "thirdParty": false
       },
       {
@@ -1994,33 +1994,33 @@
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
-        "now": 97.4,
-        "ch1": -0.3,
-        "ch7": 1.3,
+        "now": 97.3,
+        "ch1": -0.4,
+        "ch7": 1.2,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-07",
-        "name": "NC-7",
-        "type": "House",
-        "now": 0.7,
-        "ch1": -0.4,
-        "ch7": -1.1,
-        "dem": "Kim Hardy",
-        "rep": "David Rouzer",
         "thirdParty": false
       },
       {
         "key": "G-AK",
         "name": "Alaska",
         "type": "Governor",
-        "now": 99.8,
-        "ch1": 0.2,
-        "ch7": 1.1,
+        "now": 99.9,
+        "ch1": 0.3,
+        "ch7": 1.2,
         "dem": null,
         "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-07",
+        "name": "NC-7",
+        "type": "House",
+        "now": 0.8,
+        "ch1": -0.3,
+        "ch7": -1,
+        "dem": "Kim Hardy",
+        "rep": "David Rouzer",
         "thirdParty": false
       }
     ]
@@ -2358,19 +2358,19 @@
       "id": "LA-06",
       "holder": "D",
       "incumbent": "Cleo Fields",
-      "dPct": 7
-    },
-    {
-      "id": "NY-19",
-      "holder": "D",
-      "incumbent": "Josh Riley",
-      "dPct": 94
+      "dPct": 6
     },
     {
       "id": "LA-05",
       "holder": "R",
       "incumbent": "Julia Letlow",
       "dPct": 6
+    },
+    {
+      "id": "NY-19",
+      "holder": "D",
+      "incumbent": "Josh Riley",
+      "dPct": 94
     },
     {
       "id": "MI-08",
@@ -2440,7 +2440,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-14T00:20:08.162Z",
+    "kalshiUpdated": "2026-11-14T07:03:35.437Z",
     "nytUpdated": "2026-11-14T06:44:22.716Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
