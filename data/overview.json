@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T02:08:17.235Z",
+  "generatedAt": "2026-11-16T03:49:29.517Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -1595,7 +1595,7 @@
         "special": false,
         "dem": "Peggy Flanagan",
         "rep": "Michele Tafoya",
-        "polls": 30,
+        "polls": 29,
         "pres2024": 4.2,
         "expected": 13.9,
         "pollMargin": 5.5,
@@ -1621,11 +1621,11 @@
         "special": false,
         "dem": "Chris Pappas",
         "rep": "John E. Sununu",
-        "polls": 25,
+        "polls": 23,
         "pres2024": 2.8,
         "expected": 12.5,
-        "pollMargin": 7.7,
-        "overUnder": -4.8,
+        "pollMargin": 7.8,
+        "overUnder": -4.7,
         "kalshiD": 0.9990000000000001
       },
       {
@@ -1829,11 +1829,11 @@
         "special": false,
         "dem": "Hallie Shoffner",
         "rep": "Tom Cotton",
-        "polls": 5,
+        "polls": 4,
         "pres2024": -30.6,
         "expected": -21,
-        "pollMargin": -11.1,
-        "overUnder": 9.9,
+        "pollMargin": -10.6,
+        "overUnder": 10.4,
         "kalshiD": 0.001
       },
       {
@@ -1866,7 +1866,19 @@
   },
   "movers": {
     "updated": "2026-11-16T02:08:17.102Z",
-    "day": [],
+    "day": [
+      {
+        "key": "H-NC-07",
+        "name": "NC-7",
+        "type": "House",
+        "now": 0.2,
+        "ch1": -1.4,
+        "ch7": 0.1,
+        "dem": "Kim Hardy",
+        "rep": "David Rouzer",
+        "thirdParty": false
+      }
+    ],
     "week": [
       {
         "key": "H-NC-03",
@@ -1895,7 +1907,7 @@
         "name": "Alaska",
         "type": "Senate",
         "now": 99.7,
-        "ch1": 0,
+        "ch1": -0.1,
         "ch7": 2.5,
         "dem": null,
         "rep": null,
@@ -1917,7 +1929,7 @@
         "name": "CA-23",
         "type": "House",
         "now": 1.6,
-        "ch1": 0.3,
+        "ch1": -0.4,
         "ch7": -1.8,
         "dem": "Tessa Lynn Hodge",
         "rep": "Jay Obernolte",
