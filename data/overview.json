@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:42:49.801Z",
+  "generatedAt": "2026-11-18T11:41:53.237Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -193,24 +193,6 @@
         "special": false,
         "kalshiD": 0.998,
         "nyt": null
-      },
-      {
-        "state": "AK",
-        "name": "Alaska",
-        "incumbent": "Dan Sullivan",
-        "holder": "R",
-        "special": false,
-        "kalshiD": 0.998,
-        "nyt": {
-          "averageMargin": 1.9,
-          "averagePolls": 17,
-          "latest": {
-            "pollster": "AtlasIntel",
-            "endDate": "2026-11-01",
-            "margin": 5.5
-          },
-          "source": "NYT"
-        }
       },
       {
         "state": "NC",
@@ -474,6 +456,24 @@
         }
       },
       {
+        "state": "AK",
+        "name": "Alaska",
+        "incumbent": "Dan Sullivan",
+        "holder": "R",
+        "special": false,
+        "kalshiD": 0.9990000000000001,
+        "nyt": {
+          "averageMargin": 1.9,
+          "averagePolls": 17,
+          "latest": {
+            "pollster": "AtlasIntel",
+            "endDate": "2026-11-01",
+            "margin": 5.5
+          },
+          "source": "NYT"
+        }
+      },
+      {
         "state": "IA",
         "name": "Iowa",
         "incumbent": "Joni Ernst",
@@ -693,11 +693,11 @@
         },
         {
           "atLeast": 14,
-          "pct": 93.5
+          "pct": 92.5
         },
         {
           "atLeast": 14.2,
-          "pct": 24.5
+          "pct": 24
         },
         {
           "atLeast": 14.4,
@@ -780,7 +780,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 4.5
+          "pct": 4
         },
         {
           "atLeast": 266,
@@ -796,90 +796,27 @@
         }
       ]
     },
-    "senateSeatsWonD": {
-      "event": "KXDSENATEWON-26NOV03",
-      "title": "How many Senate seats will Democrats win in the Midterms?",
-      "median": 22.5,
-      "ladder": [
-        {
-          "atLeast": 10,
-          "pct": 99
-        },
-        {
-          "atLeast": 11,
-          "pct": 99
-        },
-        {
-          "atLeast": 12,
-          "pct": 99
-        },
-        {
-          "atLeast": 13,
-          "pct": 99
-        },
-        {
-          "atLeast": 14,
-          "pct": 99
-        },
-        {
-          "atLeast": 15,
-          "pct": 99
-        },
-        {
-          "atLeast": 16,
-          "pct": 99
-        },
-        {
-          "atLeast": 17,
-          "pct": 99
-        },
-        {
-          "atLeast": 18,
-          "pct": 96
-        },
-        {
-          "atLeast": 19,
-          "pct": 99
-        },
-        {
-          "atLeast": 20,
-          "pct": 95
-        },
-        {
-          "atLeast": 21,
-          "pct": 99.5
-        },
-        {
-          "atLeast": 22,
-          "pct": 97.5
-        },
-        {
-          "atLeast": 23,
-          "pct": 3.5
-        }
-      ]
-    },
     "blueWave": {
       "event": "KXBLUEWAVECOMBO-27FEB",
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
-      "pct": 99.8
+      "pct": 99.9
     },
     "redWave": {
       "event": "KXREDWAVECOMBO-27FEBB",
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-18T02:54:30.161Z"
+    "fetchedAt": "2026-11-18T11:41:53.091Z"
   },
   "markets": {
     "blueWave": {
       "event": "KXBLUEWAVECOMBO-27FEB",
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
-      "pct": 99.8
+      "pct": 99.9
     },
     "popVoteMarginD": 14.1,
     "houseSeatsD": 260.1,
-    "senateSeatsWonD": 22.5
+    "senateSeatsWonD": null
   },
   "governors": [
     {
@@ -1769,7 +1706,7 @@
         "expected": -3.5,
         "pollMargin": 1.5,
         "overUnder": 5,
-        "kalshiD": 0.998
+        "kalshiD": 0.9990000000000001
       },
       {
         "state": "SC",
@@ -1865,9 +1802,43 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-18T02:54:30.172Z",
-    "day": [],
+    "updated": "2026-11-18T11:41:53.105Z",
+    "day": [
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 4.4,
+        "ch1": -3.6,
+        "ch7": -3.7,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 4.9,
+        "ch1": -1.6,
+        "ch7": -0.8,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
+        "thirdParty": false
+      }
+    ],
     "week": [
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 4.4,
+        "ch1": -3.6,
+        "ch7": -3.7,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
+        "thirdParty": false
+      },
       {
         "key": "H-TN-04",
         "name": "TN-4",
@@ -1880,14 +1851,14 @@
         "thirdParty": false
       },
       {
-        "key": "S-AK",
-        "name": "Alaska",
-        "type": "Senate",
-        "now": 99.8,
-        "ch1": 0,
-        "ch7": 1.5,
-        "dem": null,
-        "rep": null,
+        "key": "H-MN-01",
+        "name": "MN-1",
+        "type": "House",
+        "now": 97.4,
+        "ch1": 0.3,
+        "ch7": 1.8,
+        "dem": "Jake Johnson",
+        "rep": "Brad Finstad",
         "thirdParty": false
       },
       {
@@ -1896,20 +1867,9 @@
         "type": "House",
         "now": 0.2,
         "ch1": 0,
-        "ch7": -1.3,
+        "ch7": -1.7,
         "dem": null,
         "rep": null,
-        "thirdParty": false
-      },
-      {
-        "key": "H-LA-06",
-        "name": "LA-6",
-        "type": "House",
-        "now": 6.5,
-        "ch1": 0,
-        "ch7": -1,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ]
@@ -2013,14 +1973,6 @@
     },
     {
       "chamber": "House",
-      "id": "NC-05",
-      "holder": "R",
-      "incumbent": "Virginia Foxx",
-      "favored": "D",
-      "prob": 100
-    },
-    {
-      "chamber": "House",
       "id": "PA-01",
       "holder": "R",
       "incumbent": "Brian K. Fitzpatrick",
@@ -2085,14 +2037,6 @@
     },
     {
       "chamber": "Senate",
-      "id": "AK",
-      "holder": "R",
-      "incumbent": "Dan Sullivan",
-      "favored": "D",
-      "prob": 100
-    },
-    {
-      "chamber": "Senate",
       "id": "NC",
       "holder": "R",
       "incumbent": "Thom Tillis",
@@ -2120,6 +2064,14 @@
       "id": "TX",
       "holder": "R",
       "incumbent": "John Cornyn",
+      "favored": "D",
+      "prob": 100
+    },
+    {
+      "chamber": "Senate",
+      "id": "AK",
+      "holder": "R",
+      "incumbent": "Dan Sullivan",
       "favored": "D",
       "prob": 100
     },
@@ -2181,6 +2133,14 @@
     },
     {
       "chamber": "House",
+      "id": "NC-05",
+      "holder": "R",
+      "incumbent": "Virginia Foxx",
+      "favored": "D",
+      "prob": 99
+    },
+    {
+      "chamber": "House",
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
@@ -2225,7 +2185,7 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 94
+      "prob": 95
     }
   ],
   "flipCounts": {
@@ -2238,28 +2198,22 @@
   },
   "tossups": [
     {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
-      "dPct": 8
-    },
-    {
       "id": "NH-01",
       "holder": "D",
       "incumbent": "Chris Pappas",
       "dPct": 93
     },
     {
-      "id": "LA-06",
-      "holder": "D",
-      "incumbent": "Cleo Fields",
-      "dPct": 7
-    },
-    {
       "id": "NY-19",
       "holder": "D",
       "incumbent": "Josh Riley",
       "dPct": 94
+    },
+    {
+      "id": "LA-06",
+      "holder": "D",
+      "incumbent": "Cleo Fields",
+      "dPct": 5
     },
     {
       "id": "MI-08",
@@ -2274,16 +2228,16 @@
       "dPct": 96
     },
     {
+      "id": "LA-05",
+      "holder": "R",
+      "incumbent": "Julia Letlow",
+      "dPct": 4
+    },
+    {
       "id": "TX-32",
       "holder": "D",
       "incumbent": "Julie Johnson",
       "dPct": 4
-    },
-    {
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "dPct": 97
     },
     {
       "id": "VA-10",
@@ -2295,6 +2249,12 @@
       "id": "IN-07",
       "holder": "D",
       "incumbent": "André Carson",
+      "dPct": 97
+    },
+    {
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
       "dPct": 97
     },
     {
@@ -2329,7 +2289,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-18T02:54:30.178Z",
+    "kalshiUpdated": "2026-11-18T11:41:53.112Z",
     "nytUpdated": "2026-11-18T07:42:49.265Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
