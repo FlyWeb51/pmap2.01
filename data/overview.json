@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T20:48:40.810Z",
+  "generatedAt": "2026-11-20T00:56:38.206Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -693,7 +693,7 @@
         },
         {
           "atLeast": 14,
-          "pct": 94
+          "pct": 92.5
         },
         {
           "atLeast": 14.2,
@@ -780,7 +780,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 4
+          "pct": 4.5
         },
         {
           "atLeast": 266,
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-19T18:41:04.626Z"
+    "fetchedAt": "2026-11-20T00:56:38.074Z"
   },
   "markets": {
     "blueWave": {
@@ -1802,41 +1802,63 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-19T18:41:04.640Z",
+    "updated": "2026-11-20T00:56:38.084Z",
     "day": [
       {
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
-        "now": 6.4,
-        "ch1": 1.9,
-        "ch7": 0.6,
+        "now": 7,
+        "ch1": 2.5,
+        "ch7": 2.8,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 5.5,
+        "ch1": 1.3,
+        "ch7": 0.5,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
         "thirdParty": false
       }
     ],
     "week": [
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 7,
+        "ch1": 2.5,
+        "ch7": 2.8,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
+        "thirdParty": false
+      },
+      {
+        "key": "H-MN-01",
+        "name": "MN-1",
+        "type": "House",
+        "now": 97.2,
+        "ch1": 0,
+        "ch7": -1,
+        "dem": "Jake Johnson",
+        "rep": "Brad Finstad",
+        "thirdParty": false
+      },
       {
         "key": "H-NC-07",
         "name": "NC-7",
         "type": "House",
         "now": 0.2,
         "ch1": 0,
-        "ch7": -1.4,
+        "ch7": -1,
         "dem": null,
         "rep": null,
-        "thirdParty": false
-      },
-      {
-        "key": "H-NC-10",
-        "name": "NC-10",
-        "type": "House",
-        "now": 0.6,
-        "ch1": 0,
-        "ch7": -1,
-        "dem": "Ashley Bell",
-        "rep": "Pat Harrigan",
         "thirdParty": false
       }
     ]
@@ -1935,6 +1957,14 @@
       "id": "NY-17",
       "holder": "R",
       "incumbent": "Michael Lawler",
+      "favored": "D",
+      "prob": 100
+    },
+    {
+      "chamber": "House",
+      "id": "NC-05",
+      "holder": "R",
+      "incumbent": "Virginia Foxx",
       "favored": "D",
       "prob": 100
     },
@@ -2100,14 +2130,6 @@
     },
     {
       "chamber": "House",
-      "id": "NC-05",
-      "holder": "R",
-      "incumbent": "Virginia Foxx",
-      "favored": "D",
-      "prob": 99
-    },
-    {
-      "chamber": "House",
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
@@ -2152,7 +2174,7 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 94
+      "prob": 93
     }
   ],
   "flipCounts": {
@@ -2174,7 +2196,7 @@
       "id": "LA-06",
       "holder": "D",
       "incumbent": "Cleo Fields",
-      "dPct": 6
+      "dPct": 7
     },
     {
       "id": "NY-19",
@@ -2183,16 +2205,16 @@
       "dPct": 94
     },
     {
+      "id": "LA-05",
+      "holder": "R",
+      "incumbent": "Julia Letlow",
+      "dPct": 6
+    },
+    {
       "id": "MI-08",
       "holder": "D",
       "incumbent": "Kristen McDonald Rivet",
       "dPct": 95
-    },
-    {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
-      "dPct": 5
     },
     {
       "id": "CA-49",
@@ -2256,7 +2278,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-19T18:41:04.648Z",
+    "kalshiUpdated": "2026-11-20T00:56:38.089Z",
     "nytUpdated": "2026-11-19T20:48:40.386Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
