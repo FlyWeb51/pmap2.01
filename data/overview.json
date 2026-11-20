@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T08:32:53.445Z",
+  "generatedAt": "2026-11-20T17:18:35.479Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -705,7 +705,7 @@
         },
         {
           "atLeast": 14.5,
-          "pct": 5.5
+          "pct": 6
         },
         {
           "atLeast": 15,
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-20T08:32:53.312Z"
+    "fetchedAt": "2026-11-20T17:18:35.337Z"
   },
   "markets": {
     "blueWave": {
@@ -1802,15 +1802,15 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-20T08:32:53.322Z",
+    "updated": "2026-11-20T17:18:35.349Z",
     "day": [
       {
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
-        "now": 7.2,
-        "ch1": 2.7,
-        "ch7": 3,
+        "now": 6.6,
+        "ch1": 1.4,
+        "ch7": 1.7,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
         "thirdParty": false
@@ -1821,9 +1821,9 @@
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
-        "now": 7.2,
-        "ch1": 2.7,
-        "ch7": 3,
+        "now": 6.6,
+        "ch1": 1.4,
+        "ch7": 1.7,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
         "thirdParty": false
@@ -1837,6 +1837,17 @@
         "ch7": 1.7,
         "dem": "Victoria Broderick",
         "rep": "Scott DesJarlais",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 5.4,
+        "ch1": -0.9,
+        "ch7": 1.1,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
         "thirdParty": false
       }
     ]
@@ -1935,6 +1946,14 @@
       "id": "NY-17",
       "holder": "R",
       "incumbent": "Michael Lawler",
+      "favored": "D",
+      "prob": 100
+    },
+    {
+      "chamber": "House",
+      "id": "NC-05",
+      "holder": "R",
+      "incumbent": "Virginia Foxx",
       "favored": "D",
       "prob": 100
     },
@@ -2100,14 +2119,6 @@
     },
     {
       "chamber": "House",
-      "id": "NC-05",
-      "holder": "R",
-      "incumbent": "Virginia Foxx",
-      "favored": "D",
-      "prob": 99
-    },
-    {
-      "chamber": "House",
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
@@ -2165,16 +2176,16 @@
   },
   "tossups": [
     {
-      "id": "LA-06",
-      "holder": "D",
-      "incumbent": "Cleo Fields",
-      "dPct": 7
-    },
-    {
       "id": "NH-01",
       "holder": "D",
       "incumbent": "Chris Pappas",
       "dPct": 93
+    },
+    {
+      "id": "LA-06",
+      "holder": "D",
+      "incumbent": "Cleo Fields",
+      "dPct": 7
     },
     {
       "id": "NY-19",
@@ -2256,7 +2267,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-20T08:32:53.328Z",
+    "kalshiUpdated": "2026-11-20T17:18:35.357Z",
     "nytUpdated": "2026-11-20T07:29:54.715Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
