@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T07:26:28.910Z",
+  "generatedAt": "2026-11-21T13:02:25.711Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -697,7 +697,7 @@
         },
         {
           "atLeast": 14.2,
-          "pct": 33.5
+          "pct": 32.5
         },
         {
           "atLeast": 14.4,
@@ -705,7 +705,7 @@
         },
         {
           "atLeast": 14.5,
-          "pct": 7.5
+          "pct": 8
         },
         {
           "atLeast": 15,
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-21T04:17:56.182Z"
+    "fetchedAt": "2026-11-21T13:02:25.560Z"
   },
   "markets": {
     "blueWave": {
@@ -1802,17 +1802,28 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-21T04:17:56.195Z",
+    "updated": "2026-11-21T13:02:25.574Z",
     "day": [
       {
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 6.9,
-        "ch1": 1.4,
-        "ch7": 0.8,
+        "now": 7.1,
+        "ch1": 2.1,
+        "ch7": 1,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 5.8,
+        "ch1": -1.4,
+        "ch7": -0.6,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ],
@@ -1826,6 +1837,17 @@
         "ch7": 1.7,
         "dem": "Victoria Broderick",
         "rep": "Scott DesJarlais",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 7.1,
+        "ch1": 2.1,
+        "ch7": 1,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
         "thirdParty": false
       }
     ]
@@ -2154,28 +2176,28 @@
   },
   "tossups": [
     {
-      "id": "NH-01",
-      "holder": "D",
-      "incumbent": "Chris Pappas",
-      "dPct": 93
-    },
-    {
       "id": "LA-05",
       "holder": "R",
       "incumbent": "Julia Letlow",
       "dPct": 7
     },
     {
-      "id": "LA-06",
+      "id": "NH-01",
       "holder": "D",
-      "incumbent": "Cleo Fields",
-      "dPct": 6
+      "incumbent": "Chris Pappas",
+      "dPct": 93
     },
     {
       "id": "NY-19",
       "holder": "D",
       "incumbent": "Josh Riley",
       "dPct": 94
+    },
+    {
+      "id": "LA-06",
+      "holder": "D",
+      "incumbent": "Cleo Fields",
+      "dPct": 6
     },
     {
       "id": "MI-08",
@@ -2245,7 +2267,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-21T04:17:56.202Z",
+    "kalshiUpdated": "2026-11-21T13:02:25.583Z",
     "nytUpdated": "2026-11-21T07:26:28.613Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
