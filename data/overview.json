@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T00:21:00.582Z",
+  "generatedAt": "2026-11-22T04:03:39.015Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -602,11 +602,11 @@
     ]
   },
   "generic": {
-    "dem": 50.5,
+    "dem": 50.6,
     "rep": 42.3,
     "margin": 8.2,
-    "polls": 112,
-    "source": "112 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
+    "polls": 108,
+    "source": "108 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
     "asOf": "2026-11-01",
     "label": "Blue wave"
   },
@@ -1519,11 +1519,11 @@
         "special": false,
         "dem": "Edward J. Markey",
         "rep": "John Deaton",
-        "polls": 10,
+        "polls": 9,
         "pres2024": 25.2,
         "expected": 34.9,
-        "pollMargin": 24.8,
-        "overUnder": -10.1,
+        "pollMargin": 25,
+        "overUnder": -9.9,
         "kalshiD": 0.998
       },
       {
@@ -1558,11 +1558,11 @@
         "special": false,
         "dem": "Chris Pappas",
         "rep": "John E. Sununu",
-        "polls": 23,
+        "polls": 22,
         "pres2024": 2.8,
         "expected": 12.5,
-        "pollMargin": 7.8,
-        "overUnder": -4.7,
+        "pollMargin": 8,
+        "overUnder": -4.5,
         "kalshiD": 0.9990000000000001
       },
       {
@@ -1649,11 +1649,11 @@
         "special": false,
         "dem": "Jack Reed",
         "rep": "Raymond McKay",
-        "polls": 8,
+        "polls": 7,
         "pres2024": 13.8,
         "expected": 23.5,
-        "pollMargin": 25.7,
-        "overUnder": 2.2,
+        "pollMargin": 26,
+        "overUnder": 2.5,
         "kalshiD": 0.9990000000000001
       },
       {
@@ -1714,7 +1714,7 @@
         "special": false,
         "dem": "Annie Andrews",
         "rep": "Darline Graham",
-        "polls": 19,
+        "polls": 18,
         "pres2024": -17.9,
         "expected": -8.2,
         "pollMargin": -2,
@@ -1740,7 +1740,7 @@
         "special": false,
         "dem": "James Talarico",
         "rep": "Ken Paxton",
-        "polls": 86,
+        "polls": 83,
         "pres2024": -13.7,
         "expected": -4,
         "pollMargin": 3.4,
@@ -1804,7 +1804,19 @@
   "movers": {
     "updated": "2026-11-22T00:21:00.440Z",
     "day": [],
-    "week": []
+    "week": [
+      {
+        "key": "H-NC-07",
+        "name": "NC-7",
+        "type": "House",
+        "now": 0.2,
+        "ch1": 0,
+        "ch7": -1.4,
+        "dem": null,
+        "rep": null,
+        "thirdParty": false
+      }
+    ]
   },
   "flips": [
     {
