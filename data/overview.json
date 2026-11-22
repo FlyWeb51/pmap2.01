@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T07:28:56.626Z",
+  "generatedAt": "2026-11-22T15:41:53.868Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-22T07:28:56.489Z"
+    "fetchedAt": "2026-11-22T15:41:53.729Z"
   },
   "markets": {
     "blueWave": {
@@ -1802,30 +1802,17 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-22T07:28:56.504Z",
+    "updated": "2026-11-22T15:41:53.743Z",
     "day": [
       {
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
         "now": 7.4,
-        "ch1": 1,
-        "ch7": 0.2,
+        "ch1": 1.6,
+        "ch7": -0.5,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
-        "thirdParty": false
-      }
-    ],
-    "week": [
-      {
-        "key": "H-NC-07",
-        "name": "NC-7",
-        "type": "House",
-        "now": 0.2,
-        "ch1": 0,
-        "ch7": -1.4,
-        "dem": null,
-        "rep": null,
         "thirdParty": false
       },
       {
@@ -1833,10 +1820,45 @@
         "name": "LA-5",
         "type": "House",
         "now": 6.1,
-        "ch1": -0.8,
+        "ch1": -1,
         "ch7": -1.2,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
+        "thirdParty": false
+      }
+    ],
+    "week": [
+      {
+        "key": "H-TN-04",
+        "name": "TN-4",
+        "type": "House",
+        "now": 99.8,
+        "ch1": 0,
+        "ch7": 1.3,
+        "dem": "Victoria Broderick",
+        "rep": "Scott DesJarlais",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 6.1,
+        "ch1": -1,
+        "ch7": -1.2,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-07",
+        "name": "NC-7",
+        "type": "House",
+        "now": 0.2,
+        "ch1": 0,
+        "ch7": -1.2,
+        "dem": null,
+        "rep": null,
         "thirdParty": false
       }
     ]
@@ -2256,7 +2278,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-22T07:28:56.511Z",
+    "kalshiUpdated": "2026-11-22T15:41:53.751Z",
     "nytUpdated": "2026-11-22T07:06:56.259Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
