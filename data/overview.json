@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T07:06:56.666Z",
+  "generatedAt": "2026-11-22T07:28:56.626Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -677,7 +677,7 @@
         },
         {
           "atLeast": 11,
-          "pct": 98.5
+          "pct": 98
         },
         {
           "atLeast": 12,
@@ -689,15 +689,15 @@
         },
         {
           "atLeast": 13.5,
-          "pct": 98
+          "pct": 97.5
         },
         {
           "atLeast": 14,
-          "pct": 93.5
+          "pct": 94.5
         },
         {
           "atLeast": 14.2,
-          "pct": 32
+          "pct": 32.5
         },
         {
           "atLeast": 14.4,
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-22T00:21:00.427Z"
+    "fetchedAt": "2026-11-22T07:28:56.489Z"
   },
   "markets": {
     "blueWave": {
@@ -1802,8 +1802,20 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-22T00:21:00.440Z",
-    "day": [],
+    "updated": "2026-11-22T07:28:56.504Z",
+    "day": [
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 7.4,
+        "ch1": 1,
+        "ch7": 0.2,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
+        "thirdParty": false
+      }
+    ],
     "week": [
       {
         "key": "H-NC-07",
@@ -1814,6 +1826,17 @@
         "ch7": -1.4,
         "dem": null,
         "rep": null,
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 6.1,
+        "ch1": -0.8,
+        "ch7": -1.2,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
         "thirdParty": false
       }
     ]
@@ -2129,7 +2152,7 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 94
+      "prob": 93
     }
   ],
   "flipCounts": {
@@ -2142,9 +2165,9 @@
   },
   "tossups": [
     {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
+      "id": "LA-06",
+      "holder": "D",
+      "incumbent": "Cleo Fields",
       "dPct": 7
     },
     {
@@ -2154,9 +2177,9 @@
       "dPct": 93
     },
     {
-      "id": "LA-06",
-      "holder": "D",
-      "incumbent": "Cleo Fields",
+      "id": "LA-05",
+      "holder": "R",
+      "incumbent": "Julia Letlow",
       "dPct": 6
     },
     {
@@ -2184,6 +2207,12 @@
       "dPct": 4
     },
     {
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
+      "dPct": 97
+    },
+    {
       "id": "VA-10",
       "holder": "D",
       "incumbent": "Suhas Subramanyam",
@@ -2193,12 +2222,6 @@
       "id": "IN-07",
       "holder": "D",
       "incumbent": "André Carson",
-      "dPct": 97
-    },
-    {
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
       "dPct": 97
     },
     {
@@ -2233,7 +2256,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-22T00:21:00.448Z",
+    "kalshiUpdated": "2026-11-22T07:28:56.511Z",
     "nytUpdated": "2026-11-22T07:06:56.259Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
