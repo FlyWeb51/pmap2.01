@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T00:04:11.696Z",
+  "generatedAt": "2026-11-24T06:27:00.681Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -649,7 +649,7 @@
         },
         {
           "atLeast": 4,
-          "pct": 99.5
+          "pct": 99
         },
         {
           "atLeast": 5,
@@ -685,7 +685,7 @@
         },
         {
           "atLeast": 13,
-          "pct": 98
+          "pct": 98.5
         },
         {
           "atLeast": 13.5,
@@ -693,11 +693,11 @@
         },
         {
           "atLeast": 14,
-          "pct": 93.5
+          "pct": 95
         },
         {
           "atLeast": 14.2,
-          "pct": 32
+          "pct": 32.5
         },
         {
           "atLeast": 14.4,
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-23T22:39:29.651Z"
+    "fetchedAt": "2026-11-24T06:27:00.565Z"
   },
   "markets": {
     "blueWave": {
@@ -1789,28 +1789,39 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-23T22:39:29.661Z",
+    "updated": "2026-11-24T06:27:00.574Z",
     "day": [
+      {
+        "key": "H-MN-01",
+        "name": "MN-1",
+        "type": "House",
+        "now": 98.6,
+        "ch1": 1.8,
+        "ch7": 1.5,
+        "dem": "Jake Johnson",
+        "rep": "Brad Finstad",
+        "thirdParty": false
+      },
       {
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 3.3,
-        "ch1": -2.8,
-        "ch7": -4,
+        "now": 4.7,
+        "ch1": -1.4,
+        "ch7": -3.3,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
       },
       {
-        "key": "H-MN-01",
-        "name": "MN-1",
+        "key": "H-LA-06",
+        "name": "LA-6",
         "type": "House",
-        "now": 97.8,
-        "ch1": 1.3,
-        "ch7": 0.8,
-        "dem": "Jake Johnson",
-        "rep": "Brad Finstad",
+        "now": 6.5,
+        "ch1": -1,
+        "ch7": 0,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ],
@@ -1819,22 +1830,33 @@
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 3.3,
-        "ch1": -2.8,
-        "ch7": -4,
+        "now": 4.7,
+        "ch1": -1.4,
+        "ch7": -3.3,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
       },
       {
-        "key": "H-TN-04",
-        "name": "TN-4",
+        "key": "H-MN-01",
+        "name": "MN-1",
         "type": "House",
-        "now": 99.8,
+        "now": 98.6,
+        "ch1": 1.8,
+        "ch7": 1.5,
+        "dem": "Jake Johnson",
+        "rep": "Brad Finstad",
+        "thirdParty": false
+      },
+      {
+        "key": "H-NC-10",
+        "name": "NC-10",
+        "type": "House",
+        "now": 0.5,
         "ch1": 0,
-        "ch7": 1.8,
-        "dem": "Victoria Broderick",
-        "rep": "Scott DesJarlais",
+        "ch7": -1.1,
+        "dem": null,
+        "rep": null,
         "thirdParty": false
       }
     ]
@@ -2098,6 +2120,14 @@
     },
     {
       "chamber": "House",
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
+      "favored": "D",
+      "prob": 99
+    },
+    {
+      "chamber": "House",
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
@@ -2111,14 +2141,6 @@
       "incumbent": "Bryan Steil",
       "favored": "D",
       "prob": 99
-    },
-    {
-      "chamber": "House",
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "favored": "D",
-      "prob": 98
     },
     {
       "chamber": "House",
@@ -2142,7 +2164,7 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 93
+      "prob": 94
     }
   ],
   "flipCounts": {
@@ -2179,6 +2201,12 @@
       "dPct": 95
     },
     {
+      "id": "LA-05",
+      "holder": "R",
+      "incumbent": "Julia Letlow",
+      "dPct": 5
+    },
+    {
       "id": "CA-49",
       "holder": "D",
       "incumbent": "Mike Levin",
@@ -2189,12 +2217,6 @@
       "holder": "D",
       "incumbent": "Julie Johnson",
       "dPct": 4
-    },
-    {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
-      "dPct": 3
     },
     {
       "id": "VA-10",
@@ -2221,12 +2243,6 @@
       "dPct": 98
     },
     {
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "dPct": 98
-    },
-    {
       "id": "NY-18",
       "holder": "D",
       "incumbent": "Patrick Ryan",
@@ -2243,10 +2259,16 @@
       "holder": "D",
       "incumbent": "Josh Gottheimer",
       "dPct": 98
+    },
+    {
+      "id": "UT-02",
+      "holder": "R",
+      "incumbent": "Celeste Maloy",
+      "dPct": 2
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-23T22:39:29.668Z",
+    "kalshiUpdated": "2026-11-24T06:27:00.580Z",
     "nytUpdated": "2026-11-24T00:04:11.283Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
