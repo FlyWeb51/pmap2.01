@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T10:06:22.139Z",
+  "generatedAt": "2026-11-24T18:20:55.548Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -24,10 +24,10 @@
       "tiltR": 7,
       "R": 213
     },
-    "expectedD": 238,
-    "expectedR": 197,
-    "kalshiMarkets": 79,
-    "netD": 25
+    "expectedD": 237,
+    "expectedR": 198,
+    "kalshiMarkets": 78,
+    "netD": 24
   },
   "senate": {
     "current": {
@@ -693,11 +693,11 @@
         },
         {
           "atLeast": 14,
-          "pct": 95
+          "pct": 93.5
         },
         {
           "atLeast": 14.2,
-          "pct": 32.5
+          "pct": 32
         },
         {
           "atLeast": 14.4,
@@ -705,7 +705,7 @@
         },
         {
           "atLeast": 14.5,
-          "pct": 8
+          "pct": 7.5
         },
         {
           "atLeast": 15,
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-24T06:27:00.565Z"
+    "fetchedAt": "2026-11-24T18:20:55.458Z"
   },
   "markets": {
     "blueWave": {
@@ -1789,15 +1789,15 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-24T06:27:00.574Z",
+    "updated": "2026-11-24T18:20:55.465Z",
     "day": [
       {
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
-        "now": 98.6,
-        "ch1": 1.8,
-        "ch7": 1.5,
+        "now": 98.7,
+        "ch1": 2,
+        "ch7": 1.7,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
         "thirdParty": false
@@ -1806,22 +1806,11 @@
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 4.7,
-        "ch1": -1.4,
-        "ch7": -3.3,
+        "now": 5.1,
+        "ch1": -1,
+        "ch7": -2.8,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
-        "thirdParty": false
-      },
-      {
-        "key": "H-LA-06",
-        "name": "LA-6",
-        "type": "House",
-        "now": 6.5,
-        "ch1": -1,
-        "ch7": 0,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ],
@@ -1830,9 +1819,9 @@
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 4.7,
-        "ch1": -1.4,
-        "ch7": -3.3,
+        "now": 5.1,
+        "ch1": -1,
+        "ch7": -2.8,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
@@ -1841,9 +1830,9 @@
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
-        "now": 98.6,
-        "ch1": 1.8,
-        "ch7": 1.5,
+        "now": 98.7,
+        "ch1": 2,
+        "ch7": 1.7,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
         "thirdParty": false
@@ -1979,14 +1968,6 @@
       "id": "PA-10",
       "holder": "R",
       "incumbent": "Scott Perry",
-      "favored": "D",
-      "prob": 100
-    },
-    {
-      "chamber": "House",
-      "id": "TN-04",
-      "holder": "R",
-      "incumbent": "Scott DesJarlais",
       "favored": "D",
       "prob": 100
     },
@@ -2164,12 +2145,12 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 94
+      "prob": 93
     }
   ],
   "flipCounts": {
     "houseDtoR": 3,
-    "houseRtoD": 26,
+    "houseRtoD": 25,
     "senateDtoR": 0,
     "senateRtoD": 9,
     "govRtoD": 6,
@@ -2195,16 +2176,16 @@
       "dPct": 94
     },
     {
-      "id": "MI-08",
-      "holder": "D",
-      "incumbent": "Kristen McDonald Rivet",
-      "dPct": 95
-    },
-    {
       "id": "LA-05",
       "holder": "R",
       "incumbent": "Julia Letlow",
       "dPct": 5
+    },
+    {
+      "id": "MI-08",
+      "holder": "D",
+      "incumbent": "Kristen McDonald Rivet",
+      "dPct": 95
     },
     {
       "id": "CA-49",
@@ -2268,7 +2249,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-24T06:27:00.580Z",
+    "kalshiUpdated": "2026-11-24T18:20:55.469Z",
     "nytUpdated": "2026-11-24T10:06:21.825Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
