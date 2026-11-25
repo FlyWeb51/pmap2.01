@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:51:47.793Z",
+  "generatedAt": "2026-11-25T12:55:28.711Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -633,7 +633,7 @@
     "housePopVoteMarginD": {
       "event": "KXHOUSEPOPVOTEMARGIND-26NOV03",
       "title": "2026 Midterms: House popular vote margin of victory? (Directional)",
-      "median": 14.2,
+      "median": 14.3,
       "ladder": [
         {
           "atLeast": 2,
@@ -641,7 +641,7 @@
         },
         {
           "atLeast": 4,
-          "pct": 99
+          "pct": 98.5
         },
         {
           "atLeast": 5,
@@ -681,7 +681,7 @@
         },
         {
           "atLeast": 13.5,
-          "pct": 93
+          "pct": 94.5
         },
         {
           "atLeast": 14,
@@ -689,7 +689,7 @@
         },
         {
           "atLeast": 14.2,
-          "pct": 60
+          "pct": 70.5
         },
         {
           "atLeast": 14.4,
@@ -716,7 +716,7 @@
     "houseSeatsD": {
       "event": "KXDHOUSEWON-26NOV03",
       "title": "How many House seats will Democrats win in the Midterms?",
-      "median": 260,
+      "median": 260.1,
       "ladder": [
         {
           "atLeast": 210,
@@ -772,7 +772,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 4
+          "pct": 4.5
         },
         {
           "atLeast": 266,
@@ -798,7 +798,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-25T02:48:24.002Z"
+    "fetchedAt": "2026-11-25T12:55:28.570Z"
   },
   "markets": {
     "blueWave": {
@@ -806,8 +806,8 @@
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
       "pct": 100
     },
-    "popVoteMarginD": 14.2,
-    "houseSeatsD": 260,
+    "popVoteMarginD": 14.3,
+    "houseSeatsD": 260.1,
     "senateSeatsWonD": null
   },
   "governors": [
@@ -1781,7 +1781,7 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-25T02:48:24.014Z",
+    "updated": "2026-11-25T12:55:28.583Z",
     "day": [
       {
         "key": "H-LA-06",
@@ -1789,7 +1789,7 @@
         "type": "House",
         "now": 8.4,
         "ch1": 1.9,
-        "ch7": 1.9,
+        "ch7": 3.5,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
         "thirdParty": false
@@ -1800,7 +1800,7 @@
         "type": "House",
         "now": 5.7,
         "ch1": 1,
-        "ch7": -2.2,
+        "ch7": 1.3,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
@@ -1808,36 +1808,25 @@
     ],
     "week": [
       {
-        "key": "H-LA-05",
-        "name": "LA-5",
-        "type": "House",
-        "now": 5.7,
-        "ch1": 1,
-        "ch7": -2.2,
-        "dem": "Pat Moore",
-        "rep": "Gabe Firment",
-        "thirdParty": false
-      },
-      {
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
         "now": 8.4,
         "ch1": 1.9,
-        "ch7": 1.9,
+        "ch7": 3.5,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
         "thirdParty": false
       },
       {
-        "key": "H-MN-01",
-        "name": "MN-1",
+        "key": "H-LA-05",
+        "name": "LA-5",
         "type": "House",
-        "now": 98.6,
-        "ch1": 0,
-        "ch7": 1.7,
-        "dem": "Jake Johnson",
-        "rep": "Brad Finstad",
+        "now": 5.7,
+        "ch1": 1,
+        "ch7": 1.3,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
         "thirdParty": false
       },
       {
@@ -1846,7 +1835,7 @@
         "type": "House",
         "now": 0.5,
         "ch1": 0,
-        "ch7": -1.1,
+        "ch7": -1,
         "dem": null,
         "rep": null,
         "thirdParty": false
@@ -2104,14 +2093,6 @@
     },
     {
       "chamber": "House",
-      "id": "MN-01",
-      "holder": "R",
-      "incumbent": "Brad Finstad",
-      "favored": "D",
-      "prob": 99
-    },
-    {
-      "chamber": "House",
       "id": "VA-01",
       "holder": "R",
       "incumbent": "Robert J. Wittman",
@@ -2125,6 +2106,14 @@
       "incumbent": "Bryan Steil",
       "favored": "D",
       "prob": 99
+    },
+    {
+      "chamber": "House",
+      "id": "MN-01",
+      "holder": "R",
+      "incumbent": "Brad Finstad",
+      "favored": "D",
+      "prob": 98
     },
     {
       "chamber": "House",
@@ -2252,7 +2241,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-25T02:48:24.021Z",
+    "kalshiUpdated": "2026-11-25T12:55:28.590Z",
     "nytUpdated": "2026-11-25T08:51:47.328Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
