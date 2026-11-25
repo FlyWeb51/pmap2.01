@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T06:10:16.340Z",
+  "generatedAt": "2026-11-25T08:51:47.793Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -375,7 +375,7 @@
         "kalshiD": 0.9990000000000001,
         "nyt": {
           "averageMargin": 3.9,
-          "averagePolls": 45,
+          "averagePolls": 43,
           "latest": {
             "pollster": "Research Co.",
             "endDate": "2026-11-02",
@@ -1263,8 +1263,8 @@
       "dem": "Gina Hinojosa",
       "rep": "Greg Abbott",
       "poll": {
-        "averageMargin": -1.2,
-        "averagePolls": 39,
+        "averageMargin": -1.1,
+        "averagePolls": 37,
         "latest": {
           "pollster": "Research Co.",
           "endDate": "2026-11-02",
@@ -1403,8 +1403,8 @@
       "dem": "Aaron Ford",
       "rep": "Joe Lombardo",
       "poll": {
-        "averageMargin": 0.7,
-        "averagePolls": 5,
+        "averageMargin": 1.3,
+        "averagePolls": 3,
         "latest": {
           "pollster": "Noble Predictive Insights",
           "endDate": "2026-10-28",
@@ -1784,25 +1784,25 @@
     "updated": "2026-11-25T02:48:24.014Z",
     "day": [
       {
-        "key": "H-LA-05",
-        "name": "LA-5",
-        "type": "House",
-        "now": 5.7,
-        "ch1": 2.4,
-        "ch7": -2.2,
-        "dem": "Pat Moore",
-        "rep": "Gabe Firment",
-        "thirdParty": false
-      },
-      {
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
         "now": 8.4,
-        "ch1": 1.8,
+        "ch1": 1.9,
         "ch7": 1.9,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 5.7,
+        "ch1": 1,
+        "ch7": -2.2,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
         "thirdParty": false
       }
     ],
@@ -1812,7 +1812,7 @@
         "name": "LA-5",
         "type": "House",
         "now": 5.7,
-        "ch1": 2.4,
+        "ch1": 1,
         "ch7": -2.2,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
@@ -1823,7 +1823,7 @@
         "name": "LA-6",
         "type": "House",
         "now": 8.4,
-        "ch1": 1.8,
+        "ch1": 1.9,
         "ch7": 1.9,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
@@ -1834,7 +1834,7 @@
         "name": "MN-1",
         "type": "House",
         "now": 98.6,
-        "ch1": 0.8,
+        "ch1": 0,
         "ch7": 1.7,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
@@ -2253,7 +2253,7 @@
   ],
   "sources": {
     "kalshiUpdated": "2026-11-25T02:48:24.021Z",
-    "nytUpdated": "2026-11-24T22:36:54.398Z",
+    "nytUpdated": "2026-11-25T08:51:47.328Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
