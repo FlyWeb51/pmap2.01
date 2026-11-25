@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T22:36:54.886Z",
+  "generatedAt": "2026-11-25T02:48:24.139Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -641,7 +641,7 @@
     "housePopVoteMarginD": {
       "event": "KXHOUSEPOPVOTEMARGIND-26NOV03",
       "title": "2026 Midterms: House popular vote margin of victory? (Directional)",
-      "median": 14.1,
+      "median": 14.2,
       "ladder": [
         {
           "atLeast": 2,
@@ -689,23 +689,23 @@
         },
         {
           "atLeast": 13.5,
-          "pct": 97.5
+          "pct": 93
         },
         {
           "atLeast": 14,
-          "pct": 93.5
+          "pct": 95
         },
         {
           "atLeast": 14.2,
-          "pct": 32
+          "pct": 60
         },
         {
           "atLeast": 14.4,
-          "pct": 10
+          "pct": 5
         },
         {
           "atLeast": 14.5,
-          "pct": 7.5
+          "pct": 4
         },
         {
           "atLeast": 15,
@@ -806,7 +806,7 @@
       "question": "Yes",
       "pct": 1
     },
-    "fetchedAt": "2026-11-24T18:20:55.458Z"
+    "fetchedAt": "2026-11-25T02:48:24.002Z"
   },
   "markets": {
     "blueWave": {
@@ -814,7 +814,7 @@
       "question": "Will Democrats hold 218 or more seats in the House AND hold 49 or more seats in the Senate?",
       "pct": 100
     },
-    "popVoteMarginD": 14.1,
+    "popVoteMarginD": 14.2,
     "houseSeatsD": 260,
     "senateSeatsWonD": null
   },
@@ -1789,28 +1789,28 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-24T18:20:55.465Z",
+    "updated": "2026-11-25T02:48:24.014Z",
     "day": [
-      {
-        "key": "H-MN-01",
-        "name": "MN-1",
-        "type": "House",
-        "now": 98.7,
-        "ch1": 2,
-        "ch7": 1.7,
-        "dem": "Jake Johnson",
-        "rep": "Brad Finstad",
-        "thirdParty": false
-      },
       {
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 5.1,
-        "ch1": -1,
-        "ch7": -2.8,
+        "now": 5.7,
+        "ch1": 2.4,
+        "ch7": -2.2,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 8.4,
+        "ch1": 1.8,
+        "ch7": 2,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ],
@@ -1819,20 +1819,31 @@
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 5.1,
-        "ch1": -1,
-        "ch7": -2.8,
+        "now": 5.7,
+        "ch1": 2.4,
+        "ch7": -2.2,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 8.4,
+        "ch1": 1.8,
+        "ch7": 2,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       },
       {
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
-        "now": 98.7,
-        "ch1": 2,
-        "ch7": 1.7,
+        "now": 98.6,
+        "ch1": 0.8,
+        "ch7": 1.6,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
         "thirdParty": false
@@ -2145,7 +2156,7 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 93
+      "prob": 92
     }
   ],
   "flipCounts": {
@@ -2158,16 +2169,16 @@
   },
   "tossups": [
     {
+      "id": "LA-06",
+      "holder": "D",
+      "incumbent": "Cleo Fields",
+      "dPct": 8
+    },
+    {
       "id": "NH-01",
       "holder": "D",
       "incumbent": "Chris Pappas",
       "dPct": 93
-    },
-    {
-      "id": "LA-06",
-      "holder": "D",
-      "incumbent": "Cleo Fields",
-      "dPct": 7
     },
     {
       "id": "NY-19",
@@ -2179,7 +2190,7 @@
       "id": "LA-05",
       "holder": "R",
       "incumbent": "Julia Letlow",
-      "dPct": 5
+      "dPct": 6
     },
     {
       "id": "MI-08",
@@ -2249,7 +2260,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-24T18:20:55.469Z",
+    "kalshiUpdated": "2026-11-25T02:48:24.021Z",
     "nytUpdated": "2026-11-24T22:36:54.398Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
