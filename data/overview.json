@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T21:27:59.501Z",
+  "generatedAt": "2026-11-27T23:45:04.416Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -633,7 +633,7 @@
     "housePopVoteMarginD": {
       "event": "KXHOUSEPOPVOTEMARGIND-26NOV03",
       "title": "2026 Midterms: House popular vote margin of victory? (Directional)",
-      "median": 14.2,
+      "median": 14.3,
       "ladder": [
         {
           "atLeast": 2,
@@ -653,7 +653,7 @@
         },
         {
           "atLeast": 7,
-          "pct": 98
+          "pct": 98.5
         },
         {
           "atLeast": 8,
@@ -685,19 +685,19 @@
         },
         {
           "atLeast": 14,
-          "pct": 95
+          "pct": 94.5
         },
         {
           "atLeast": 14.2,
-          "pct": 61
+          "pct": 64
         },
         {
           "atLeast": 14.4,
-          "pct": 7
+          "pct": 13
         },
         {
           "atLeast": 14.5,
-          "pct": 6
+          "pct": 8
         },
         {
           "atLeast": 15,
@@ -788,11 +788,11 @@
         }
       ]
     },
-    "fetchedAt": "2026-11-27T15:37:07.457Z"
+    "fetchedAt": "2026-11-27T23:45:04.269Z"
   },
   "markets": {
     "blueWave": null,
-    "popVoteMarginD": 14.2,
+    "popVoteMarginD": 14.3,
     "houseSeatsD": 260.1,
     "senateSeatsWonD": null
   },
@@ -1766,21 +1766,20 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-27T15:37:07.467Z",
-    "day": [
-      {
-        "key": "H-LA-06",
-        "name": "LA-6",
-        "type": "House",
-        "now": 7.4,
-        "ch1": -1.7,
-        "ch7": 0.8,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
-        "thirdParty": false
-      }
-    ],
+    "updated": "2026-11-27T23:45:04.282Z",
+    "day": [],
     "week": [
+      {
+        "key": "H-LA-05",
+        "name": "LA-5",
+        "type": "House",
+        "now": 4.1,
+        "ch1": -0.5,
+        "ch7": -3,
+        "dem": "Pat Moore",
+        "rep": "Gabe Firment",
+        "thirdParty": false
+      },
       {
         "key": "H-MN-01",
         "name": "MN-1",
@@ -2135,7 +2134,7 @@
       "id": "LA-05",
       "holder": "R",
       "incumbent": "Julia Letlow",
-      "dPct": 5
+      "dPct": 4
     },
     {
       "id": "TX-32",
@@ -2193,7 +2192,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-27T15:37:07.471Z",
+    "kalshiUpdated": "2026-11-27T23:45:04.289Z",
     "nytUpdated": "2026-11-27T21:27:59.214Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
