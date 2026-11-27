@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:48:48.316Z",
+  "generatedAt": "2026-11-27T15:37:07.563Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -653,7 +653,7 @@
         },
         {
           "atLeast": 7,
-          "pct": 99
+          "pct": 98
         },
         {
           "atLeast": 8,
@@ -669,7 +669,7 @@
         },
         {
           "atLeast": 11,
-          "pct": 88.5
+          "pct": 98
         },
         {
           "atLeast": 12,
@@ -681,19 +681,19 @@
         },
         {
           "atLeast": 13.5,
-          "pct": 88.5
+          "pct": 97.5
         },
         {
           "atLeast": 14,
-          "pct": 94.5
+          "pct": 95
         },
         {
           "atLeast": 14.2,
-          "pct": 60
+          "pct": 61
         },
         {
           "atLeast": 14.4,
-          "pct": 5
+          "pct": 7
         },
         {
           "atLeast": 14.5,
@@ -788,7 +788,7 @@
         }
       ]
     },
-    "fetchedAt": "2026-11-27T05:22:47.099Z"
+    "fetchedAt": "2026-11-27T15:37:07.457Z"
   },
   "markets": {
     "blueWave": null,
@@ -1766,29 +1766,30 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-27T05:22:47.113Z",
-    "day": [],
+    "updated": "2026-11-27T15:37:07.467Z",
+    "day": [
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 7.4,
+        "ch1": -1.7,
+        "ch7": 0.2,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
+        "thirdParty": false
+      }
+    ],
     "week": [
       {
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
         "now": 98.7,
-        "ch1": 0,
+        "ch1": 0.1,
         "ch7": 1.5,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
-        "thirdParty": false
-      },
-      {
-        "key": "H-LA-06",
-        "name": "LA-6",
-        "type": "House",
-        "now": 8.3,
-        "ch1": -0.3,
-        "ch7": 1.1,
-        "dem": "Chauna Banks",
-        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ]
@@ -2088,7 +2089,7 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 92
+      "prob": 93
     }
   ],
   "flipCounts": {
@@ -2104,7 +2105,7 @@
       "id": "LA-06",
       "holder": "D",
       "incumbent": "Cleo Fields",
-      "dPct": 8
+      "dPct": 7
     },
     {
       "id": "NH-01",
@@ -2125,16 +2126,16 @@
       "dPct": 95
     },
     {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
-      "dPct": 5
-    },
-    {
       "id": "CA-49",
       "holder": "D",
       "incumbent": "Mike Levin",
       "dPct": 96
+    },
+    {
+      "id": "LA-05",
+      "holder": "R",
+      "incumbent": "Julia Letlow",
+      "dPct": 5
     },
     {
       "id": "TX-32",
@@ -2192,7 +2193,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-27T05:22:47.120Z",
+    "kalshiUpdated": "2026-11-27T15:37:07.471Z",
     "nytUpdated": "2026-11-27T08:48:47.973Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
