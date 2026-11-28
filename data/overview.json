@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T05:32:43.008Z",
+  "generatedAt": "2026-11-28T07:49:15.635Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -653,7 +653,7 @@
         },
         {
           "atLeast": 7,
-          "pct": 98.5
+          "pct": 99
         },
         {
           "atLeast": 8,
@@ -689,15 +689,15 @@
         },
         {
           "atLeast": 14.2,
-          "pct": 64
+          "pct": 64.5
         },
         {
           "atLeast": 14.4,
-          "pct": 13
+          "pct": 12.5
         },
         {
           "atLeast": 14.5,
-          "pct": 8
+          "pct": 7
         },
         {
           "atLeast": 15,
@@ -772,7 +772,7 @@
         },
         {
           "atLeast": 262,
-          "pct": 6.5
+          "pct": 6
         },
         {
           "atLeast": 266,
@@ -788,7 +788,7 @@
         }
       ]
     },
-    "fetchedAt": "2026-11-27T23:45:04.269Z"
+    "fetchedAt": "2026-11-28T07:49:15.525Z"
   },
   "markets": {
     "blueWave": null,
@@ -1766,16 +1766,16 @@
     ]
   },
   "movers": {
-    "updated": "2026-11-27T23:45:04.282Z",
+    "updated": "2026-11-28T07:49:15.534Z",
     "day": [],
     "week": [
       {
         "key": "H-LA-05",
         "name": "LA-5",
         "type": "House",
-        "now": 4.1,
-        "ch1": -0.6,
-        "ch7": -2.8,
+        "now": 4.6,
+        "ch1": -0.1,
+        "ch7": -2.3,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
@@ -1784,9 +1784,9 @@
         "key": "H-MN-01",
         "name": "MN-1",
         "type": "House",
-        "now": 98.7,
-        "ch1": 0,
-        "ch7": 1.5,
+        "now": 98.8,
+        "ch1": 0.1,
+        "ch7": 1.6,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
         "thirdParty": false
@@ -1795,9 +1795,9 @@
         "key": "H-LA-06",
         "name": "LA-6",
         "type": "House",
-        "now": 7.4,
-        "ch1": -0.9,
-        "ch7": 1,
+        "now": 7.8,
+        "ch1": -0.5,
+        "ch7": 1.4,
         "dem": "Chauna Banks",
         "rep": "Blake Miguez",
         "thirdParty": false
@@ -2099,7 +2099,7 @@
       "holder": "D",
       "incumbent": "Cleo Fields",
       "favored": "R",
-      "prob": 93
+      "prob": 92
     }
   ],
   "flipCounts": {
@@ -2115,7 +2115,7 @@
       "id": "LA-06",
       "holder": "D",
       "incumbent": "Cleo Fields",
-      "dPct": 7
+      "dPct": 8
     },
     {
       "id": "NH-01",
@@ -2136,16 +2136,16 @@
       "dPct": 95
     },
     {
+      "id": "LA-05",
+      "holder": "R",
+      "incumbent": "Julia Letlow",
+      "dPct": 5
+    },
+    {
       "id": "CA-49",
       "holder": "D",
       "incumbent": "Mike Levin",
       "dPct": 96
-    },
-    {
-      "id": "LA-05",
-      "holder": "R",
-      "incumbent": "Julia Letlow",
-      "dPct": 4
     },
     {
       "id": "TX-32",
@@ -2203,7 +2203,7 @@
     }
   ],
   "sources": {
-    "kalshiUpdated": "2026-11-27T23:45:04.289Z",
+    "kalshiUpdated": "2026-11-28T07:49:15.538Z",
     "nytUpdated": "2026-11-27T21:27:59.214Z",
     "nytAttribution": {
       "text": "Polling data: The New York Times, licensed CC BY 4.0",
