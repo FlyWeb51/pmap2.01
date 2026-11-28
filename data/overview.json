@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T23:45:04.416Z",
+  "generatedAt": "2026-11-28T05:32:43.008Z",
   "electionDate": "2026-11-03",
   "house": {
     "current": {
@@ -594,11 +594,11 @@
     ]
   },
   "generic": {
-    "dem": 50.6,
+    "dem": 50.7,
     "rep": 42.3,
     "margin": 8.3,
-    "polls": 106,
-    "source": "106 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
+    "polls": 103,
+    "source": "103 polls from the last 90 days (Wikipedia, PollingSource), recency-weighted",
     "asOf": "2026-11-01",
     "label": "Blue wave"
   },
@@ -1535,11 +1535,11 @@
         "special": false,
         "dem": "Chris Pappas",
         "rep": "John E. Sununu",
-        "polls": 22,
+        "polls": 21,
         "pres2024": 2.8,
         "expected": 12.6,
-        "pollMargin": 8,
-        "overUnder": -4.6,
+        "pollMargin": 8.1,
+        "overUnder": -4.5,
         "kalshiD": 0.9990000000000001
       },
       {
@@ -1774,8 +1774,8 @@
         "name": "LA-5",
         "type": "House",
         "now": 4.1,
-        "ch1": -0.5,
-        "ch7": -3,
+        "ch1": -0.6,
+        "ch7": -2.8,
         "dem": "Pat Moore",
         "rep": "Gabe Firment",
         "thirdParty": false
@@ -1785,10 +1785,21 @@
         "name": "MN-1",
         "type": "House",
         "now": 98.7,
-        "ch1": 0.1,
+        "ch1": 0,
         "ch7": 1.5,
         "dem": "Jake Johnson",
         "rep": "Brad Finstad",
+        "thirdParty": false
+      },
+      {
+        "key": "H-LA-06",
+        "name": "LA-6",
+        "type": "House",
+        "now": 7.4,
+        "ch1": -0.9,
+        "ch7": 1,
+        "dem": "Chauna Banks",
+        "rep": "Blake Miguez",
         "thirdParty": false
       }
     ]
